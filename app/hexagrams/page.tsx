@@ -8,7 +8,7 @@ export default function HexagramListPage() {
       <ul className="space-y-2">
         {HEXAGRAMS.map((h) => (
           <li key={h.id} className="border rounded-xl p-4 hover:bg-neutral-50">
-            <Link href={`/hexagrams/${h.id}`}>
+            <Link href={h.id === 1 ? "/qian" : `/hexagrams/${h.id}`}>
               <p className="font-semibold">{h.id}. {h.nameKo} <span className="text-sm text-neutral-500">({h.nameEn})</span></p>
               <p className="text-sm text-neutral-700 mt-1">{h.summary}</p>
             </Link>
