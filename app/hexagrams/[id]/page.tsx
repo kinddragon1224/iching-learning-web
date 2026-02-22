@@ -1,9 +1,13 @@
 import Link from "next/link";
-import { findHexagram } from "@/data/hexagrams";
+import { HEXAGRAMS, findHexagram } from "@/data/hexagrams";
 import { notFound } from "next/navigation";
 
-export default async function HexagramDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export function generateStaticParams() {
+  return HEXAGRAMS.map((h) => ({ id: String(h.id) }));
+}
+
+export default function HexagramDetailPage({ params }: { params: { id: string } }) {
+  const { id } = params;
   const hex = findHexagram(Number(id));
   if (!hex) return notFound();
 
