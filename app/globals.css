@@ -18,7 +18,10 @@
 }
 
 body {
-  background: radial-gradient(circle at 50% -20%, #1a2754, var(--indigo-deep) 60%);
+  background:
+    radial-gradient(circle at 20% -10%, rgba(127, 89, 255, 0.22), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(74, 154, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 50% -20%, #1a2754, var(--indigo-deep) 60%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -33,4 +36,36 @@ body {
   border: 1px solid rgba(212, 178, 106, 0.5);
   color: #f0dfb5;
   background: rgba(212, 178, 106, 0.08);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .hero-main {
+    grid-row: span 2;
+  }
+}
+
+.glow-orb {
+  background: radial-gradient(circle, rgba(212, 178, 106, 0.28), rgba(212, 178, 106, 0) 70%);
+  filter: blur(10px);
+}
+
+.panel-hover {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.panel-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 178, 106, 0.7);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
