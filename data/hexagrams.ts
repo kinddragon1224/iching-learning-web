@@ -5,6 +5,9 @@ export type Hexagram = {
   summary: string;
   keywords: string[];
   lines: string[];
+  learningNotes?: string[];
+  reflectionQuestions?: string[];
+  faithGuide?: string;
 };
 
 const base: Record<number, Partial<Hexagram>> = {
@@ -22,6 +25,19 @@ const base: Record<number, Partial<Hexagram>> = {
       "구오: 비룡재천. 영향력이 커지는 자리, 책임 윤리가 핵심이다.",
       "상구: 항룡유회. 극점의 교만을 경계하고 균형을 회복한다.",
     ],
+    learningNotes: [
+      "건괘의 핵심은 '강함의 과시'가 아니라 '강함의 운용'에 있다.",
+      "시작의 추진력은 중요하지만, 중간에는 점검이 필요하고 정점에서는 겸손이 필요하다.",
+      "같은 양효의 반복은 에너지 크기보다 에너지 운용의 품격을 요구한다.",
+    ],
+    reflectionQuestions: [
+      "지금의 추진은 소명인가, 조급함인가?",
+      "성과를 내는 방식이 타인을 살리는가, 소모시키는가?",
+      "멈춰 점검해야 할 신호를 무시하고 있지는 않은가?",
+      "정점에서 더 강해지려는가, 더 바르게 쓰려는가?",
+    ],
+    faithGuide:
+      "이 해설은 학습과 성찰을 위한 참고 자료이며 미래를 단정하지 않습니다. 중요한 결정은 기도와 분별, 양심, 공동체 조언을 함께 따르세요.",
   },
   2: {
     nameKo: "곤(坤)",

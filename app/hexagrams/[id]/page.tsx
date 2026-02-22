@@ -11,6 +11,7 @@ export default function HexagramDetailPage({ params }: { params: { id: string } 
   const { id } = params;
   const hex = findHexagram(Number(id));
   if (!hex) return notFound();
+  const qianImgSrc = process.env.NODE_ENV === "production" ? "/iching-learning-web/cards-qian-temp.png" : "/cards-qian-temp.png";
 
   return (
     <main className="mx-auto max-w-3xl p-6 space-y-5">
@@ -24,7 +25,7 @@ export default function HexagramDetailPage({ params }: { params: { id: string } 
       {hex.id === 1 && (
         <section className="rounded-2xl border p-3 bg-neutral-50">
           <Image
-            src="/cards-qian-temp.png"
+            src={qianImgSrc}
             alt="건괘 임시 카드 이미지"
             width={1024}
             height={1024}

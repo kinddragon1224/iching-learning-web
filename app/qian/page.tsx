@@ -4,6 +4,7 @@ import { findHexagram } from "@/data/hexagrams";
 
 export default function QianPage() {
   const hex = findHexagram(1)!;
+  const imgSrc = process.env.NODE_ENV === "production" ? "/iching-learning-web/cards-qian-temp.png" : "/cards-qian-temp.png";
 
   return (
     <main className="mx-auto max-w-3xl p-6 space-y-5">
@@ -16,7 +17,7 @@ export default function QianPage() {
 
       <section className="rounded-2xl border p-3 bg-neutral-50">
         <Image
-          src="/cards-qian-temp.png"
+          src={imgSrc}
           alt="건괘 임시 카드 이미지"
           width={1024}
           height={1024}
@@ -42,6 +43,35 @@ export default function QianPage() {
           ))}
         </ol>
       </section>
+
+      {hex.learningNotes && (
+        <section>
+          <h2 className="font-semibold mb-2">학습 해설</h2>
+          <ul className="space-y-2">
+            {hex.learningNotes.map((n, i) => (
+              <li key={i} className="border rounded-lg p-3 text-sm">{n}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {hex.reflectionQuestions && (
+        <section>
+          <h2 className="font-semibold mb-2">적용 질문</h2>
+          <ul className="space-y-2">
+            {hex.reflectionQuestions.map((q, i) => (
+              <li key={i} className="border rounded-lg p-3 text-sm">{q}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {hex.faithGuide && (
+        <section className="rounded-xl border border-amber-300 bg-amber-50 p-4">
+          <h2 className="font-semibold mb-2">신앙/윤리 가드레일</h2>
+          <p className="text-sm">{hex.faithGuide}</p>
+        </section>
+      )}
     </main>
   );
 }
