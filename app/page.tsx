@@ -1,11 +1,17 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { FAQS } from "@/data/faq";
 import { Card } from "@/components/ui/Card";
 import { ButtonLink } from "@/components/ui/Button";
+
+const KnowledgeUniverse = dynamic(
+  () => import("@/components/graph/KnowledgeUniverse").then((m) => m.KnowledgeUniverse),
+  { ssr: false }
+);
 
 type Step = "concept" | "apply" | "reflect";
 
@@ -38,6 +44,8 @@ export default function Home() {
           오늘의 괘를 학습 플로우로 바로 연결하고, 퀴즈/오답노트/복습으로 기억에 남기는 구조.
         </p>
       </header>
+
+      <KnowledgeUniverse />
 
       <section className="grid gap-3 lg:grid-cols-3">
         <Card className="lg:col-span-2 p-6 relative overflow-hidden">
