@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0f1730;
-  --foreground: #efe7d2;
-  --indigo-deep: #0f1730;
-  --indigo-panel: #152043;
+  --background: #050507;
+  --foreground: #f3f0e8;
+  --indigo-deep: #050507;
+  --indigo-panel: #121217;
   --gold-soft: #d4b26a;
-  --gold-line: #b89452;
-  --text-muted: #c8c0ad;
+  --gold-line: #c6a35c;
+  --text-muted: #b9b7c2;
 }
 
 @theme inline {
@@ -19,17 +19,19 @@
 
 body {
   background:
-    radial-gradient(circle at 20% -10%, rgba(127, 89, 255, 0.22), transparent 35%),
-    radial-gradient(circle at 80% 0%, rgba(74, 154, 255, 0.18), transparent 32%),
-    radial-gradient(circle at 50% -20%, #1a2754, var(--indigo-deep) 60%);
+    radial-gradient(circle at 15% 5%, rgba(167, 114, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(80, 186, 255, 0.16), transparent 30%),
+    radial-gradient(circle at 50% 120%, rgba(255, 171, 96, 0.10), transparent 35%),
+    linear-gradient(180deg, #09090c 0%, #050507 65%, #030304 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .paper-panel {
-  background: linear-gradient(180deg, rgba(21, 32, 67, 0.96), rgba(12, 21, 45, 0.96));
-  border: 1px solid rgba(184, 148, 82, 0.45);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, rgba(18, 18, 23, 0.88), rgba(8, 8, 12, 0.84));
+  border: 1px solid rgba(198, 163, 92, 0.45);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
 }
 
 .gold-chip {
@@ -94,4 +96,16 @@ body {
   border: 1px solid rgba(246, 183, 95, 0.5);
   background: rgba(246, 183, 95, 0.12);
   color: #f7e4be;
+}
+
+.node-label {
+  border: 1px solid rgba(198, 163, 92, 0.55);
+  background: rgba(8, 8, 12, 0.76);
+  color: #f3e4be;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 999px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  backdrop-filter: blur(2px);
 }
