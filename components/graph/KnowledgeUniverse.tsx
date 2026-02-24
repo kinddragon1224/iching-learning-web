@@ -248,12 +248,12 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#f0c46a"
+          color="#f2c86f"
           map={noiseTex}
           roughness={0.78}
           metalness={0.04}
-          emissive="#ffcf6d"
-          emissiveIntensity={0.24}
+          emissive="#ffd46f"
+          emissiveIntensity={0.3}
         />
       </mesh>
 
