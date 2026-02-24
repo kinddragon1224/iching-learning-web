@@ -6,6 +6,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
+import { BRAND } from "@/constants/brand";
 
 type LabelMode = "auto" | "always" | "none";
 type ViewMode = "featured" | "all";
@@ -388,9 +389,10 @@ export function KnowledgeUniverse() {
 
       <div className="absolute inset-0 pointer-events-none">
         <div className="pointer-events-auto absolute top-4 left-4 right-4 flex items-start justify-between text-[12px] tracking-wide text-white/85 md:top-6 md:left-6 md:right-6">
-          <div>
-            <p className="text-lg font-semibold leading-none md:text-xl">세개의 행성</p>
-            <p className="mt-1 text-[10px] text-white/55 md:mt-2 md:text-[11px]">I CHING UNIVERSE · 4축 해석</p>
+          <div className="max-w-[58vw] md:max-w-none">
+            <p className="text-lg font-bold leading-tight break-keep md:text-2xl">{BRAND.mainTitle}</p>
+            <p className="mt-1 text-[11px] text-white/70 break-keep md:text-sm">{BRAND.subTitle}</p>
+            <p className="mt-0.5 text-[10px] text-white/50 break-words md:text-xs">{BRAND.tagline}</p>
           </div>
           <div className="flex flex-col items-end gap-2 text-[12px]">
             <div className="flex rounded-lg border border-white/30 bg-black/45 p-1">
@@ -512,7 +514,7 @@ export function KnowledgeUniverse() {
         <div className="pointer-events-none absolute bottom-4 left-4 right-4 hidden items-end justify-between text-[11px] text-white/55 md:flex md:bottom-6 md:left-6 md:right-6">
           <span>ABOUT</span>
           <span>{hoverId ? "HOVER MODE" : "ORBIT MODE"}</span>
-          <span>THREE PLANETS</span>
+          <span>{BRAND.mainTitle}</span>
         </div>
       </div>
     </section>
