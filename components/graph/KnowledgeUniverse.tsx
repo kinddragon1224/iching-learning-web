@@ -420,7 +420,7 @@ export function KnowledgeUniverse() {
               }
               className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
             >
-              라벨: {labelMode}
+              라벨: {labelMode === "auto" ? "자동" : labelMode === "always" ? "항상" : "끔"}
             </button>
           </div>
         </div>
@@ -504,10 +504,19 @@ export function KnowledgeUniverse() {
 
         {showGuide && (
           <div className={`pointer-events-auto absolute rounded-xl border border-white/25 bg-black/55 px-4 py-2 text-xs text-white/90 backdrop-blur-sm ${
-            isMobile ? "left-3 right-3 top-20" : "bottom-20 left-1/2 -translate-x-1/2"
+            isMobile ? "left-3 right-3 top-24" : "bottom-20 left-1/2 -translate-x-1/2"
           }`}>
-            처음엔 <b>대표 보기</b>, 익숙해지면 <b>전체 64</b>로 전환해 탐색해봐.
-            <button onClick={() => setShowGuide(false)} className="ml-3 text-white/70 underline">닫기</button>
+            <div className="flex items-start justify-between gap-3">
+              <p>
+                처음엔 <b>대표 보기</b>, 익숙해지면 <b>전체 64</b>로 전환해 탐색해봐.
+              </p>
+              <button
+                onClick={() => setShowGuide(false)}
+                className="shrink-0 rounded border border-white/25 bg-white/10 px-2 py-0.5 text-[10px] text-white/80"
+              >
+                닫기
+              </button>
+            </div>
           </div>
         )}
 
