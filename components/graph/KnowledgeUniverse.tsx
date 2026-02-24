@@ -667,13 +667,13 @@ export function KnowledgeUniverse() {
         </div>
 
         {(!isMobile || !panelOpen) && (
-          <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 bottom-24" : "right-6 top-32"}`}>
+          <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 bottom-24" : "right-6 bottom-8"}`}>
             <button
               onClick={() => {
                 setPanelOpen((v) => !v);
                 if (isMobile) setHoverId(null);
               }}
-              className="rounded-md border border-white/30 bg-black/55 px-4 py-2 text-sm text-white shadow-lg"
+              className="rounded-md border border-white/30 bg-black/60 px-4 py-2 text-sm text-white shadow-lg"
             >
               {panelOpen ? "닫기" : "4축 보기"}
             </button>
