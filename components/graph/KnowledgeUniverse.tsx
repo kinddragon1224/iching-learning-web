@@ -184,6 +184,7 @@ function NodeCloud({
   selectedId,
   hoverId,
   labelMode,
+  isMobile,
   onHover,
   onSelect,
 }: {
@@ -191,6 +192,7 @@ function NodeCloud({
   selectedId: number;
   hoverId: number | null;
   labelMode: LabelMode;
+  isMobile: boolean;
   onHover: (id: number | null) => void;
   onSelect: (id: number) => void;
 }) {
@@ -206,9 +208,7 @@ function NodeCloud({
       {nodes.map((n) => {
         const selected = n.id === selectedId;
         const hovered = n.id === hoverId;
-        const showLabel =
-          labelMode === "always" ||
-          (labelMode === "auto" && (selected || hovered));
+        const showLabel = selected || labelMode === "always" || (labelMode === "auto" && hovered);
 
         return (
           <group key={n.id} position={n.position}>
@@ -226,7 +226,7 @@ function NodeCloud({
                 onHover(null);
               }}
             >
-              <sphereGeometry args={[selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size, 18, 18]} />
+              <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1), 18, 18]} />
               <meshStandardMaterial
                 color={selected ? "#ffffff" : "#79b9ff"}
                 emissive={selected ? "#ffffff" : "#2b65d9"}
@@ -370,8 +370,15 @@ export function KnowledgeUniverse() {
           selectedId={selectedId}
           hoverId={hoverId}
           labelMode={labelMode}
+          isMobile={isMobile}
           onHover={setHoverId}
-          onSelect={setSelectedId}
+          onSelect={(id) => {
+            setSelectedId(id);
+            if (isMobile) {
+              setPanelOpen(true);
+              setMobilePanelExpanded(false);
+            }
+          }}
         />
 
         <OrbitControls enablePan={false} minDistance={8} maxDistance={18} />
