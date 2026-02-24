@@ -1,4 +1,5 @@
 import { HEXAGRAMS } from "@/data/hexagrams";
+import starterPack from "@/data/hexagrams_pack_12.json";
 import seedAliases from "@/search/hexagram_search_index.json";
 import { HEXAGRAM_ALIAS_OVERRIDES } from "@/search/hexagram_alias_overrides";
 
@@ -24,9 +25,11 @@ export function normalizeQuery(value: string) {
 export function buildHexagramSearchIndex(): HexagramSearchEntry[] {
   const seedMap = new Map<number, string[]>((seedAliases ?? []).map((r) => [r.id, r.aliases]));
   const overrideMap = new Map(HEXAGRAM_ALIAS_OVERRIDES.map((o) => [o.id, o]));
+  const starterMap = new Map<number, { name_short?: string; name_full?: string }>((starterPack as any[]).map((x) => [x.id, x]));
 
   return HEXAGRAMS.map((h) => {
     const override = overrideMap.get(h.id);
+    const starter = starterMap.get(h.id);
     const seed = seedMap.get(h.id) ?? [];
 
     const aliases = uniq([
@@ -35,6 +38,8 @@ export function buildHexagramSearchIndex(): HexagramSearchEntry[] {
       `${h.id}번`,
       `${h.id}괘`,
       h.nameKo,
+      ...(starter?.name_short ? [starter.name_short] : []),
+      ...(starter?.name_full ? [starter.name_full] : []),
       ...(override?.full_name_ko ? [override.full_name_ko] : []),
       ...(override?.trigram_pair_ko ? [override.trigram_pair_ko] : []),
       ...(override?.extra_aliases ?? []),
@@ -43,8 +48,8 @@ export function buildHexagramSearchIndex(): HexagramSearchEntry[] {
 
     return {
       id: h.id,
-      nameKo: h.nameKo,
-      fullNameKo: override?.full_name_ko,
+      nameKo: starter?.name_short ?? h.nameKo,
+      fullNameKo: starter?.name_full ?? override?.full_name_ko,
       trigramPairKo: override?.trigram_pair_ko,
       aliases,
     };

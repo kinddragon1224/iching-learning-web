@@ -2,16 +2,17 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { CardImageWithFallback } from "@/components/CardImageWithFallback";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
 import { buildHexagramSearchIndex, searchHexagrams, type HexagramSearchEntry } from "@/search/build_index";
-import { getCardForHexagram, getHexagramContent, toPublicAsset } from "@/lib/card-index";
+import { getCardForHexagram, getHexagramContent } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { AXIS_LABEL, todayKST, upsertAction, loadActions, type Axis } from "@/lib/action-loop";
+import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 
 type ViewMode = "featured" | "all";
 type AxisKey = "money" | "work" | "relation" | "time";
@@ -26,7 +27,7 @@ type Node = {
   size: number;
 };
 
-const FEATURED_IDS = [1, 2, 11, 12, 29, 30, 63, 64, 24, 14, 15, 16, 31, 32];
+const FEATURED_IDS = [1, 2, 11, 12, 29, 30, 51, 57, 52, 58, 63, 64];
 
 const AXIS_COLORS: Record<AxisKey, string> = {
   money: "#5f86d9",
@@ -763,13 +764,18 @@ export function KnowledgeUniverse() {
             )}
             <p className="text-xs text-white/60">카드 미리보기</p>
             <div className="mt-2 overflow-hidden rounded-xl border border-white/15 bg-black/35">
-              <Image
-                src={toPublicAsset(selectedCard.card_image)}
-                alt={`#${selected.id} 카드 이미지`}
-                width={640}
-                height={360}
-                className="h-36 w-full object-cover"
-              />
+              <div className="relative">
+                <CardImageWithFallback
+                  src={selectedCard.card_image}
+                  alt={`#${selected.id} 카드 이미지`}
+                  width={640}
+                  height={360}
+                  className="h-36 w-full object-cover"
+                />
+                <div className="pointer-events-none absolute inset-x-0 bottom-1 flex justify-center">
+                  <HexagramLinesOverlay lines={selectedContent.lines} size="small" styleVariant="gold" />
+                </div>
+              </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold">
                   {selectedCard.full_name

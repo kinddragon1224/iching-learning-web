@@ -1,5 +1,5 @@
 import cardIndex from "@/data/card_index.json";
-import hexagramContent from "@/data/hexagram_content.json";
+import hexagramContent from "@/data/hexagrams_pack_12.json";
 import { findHexagram } from "@/data/hexagrams";
 
 type AxisMap = Partial<Record<"money" | "work" | "relation" | "time", string>>;
@@ -24,6 +24,7 @@ type ContentSeed = {
   summary?: string;
   axes?: AxisMap;
   questions?: AxisMap;
+  lines?: number[];
 };
 
 export type HexagramCard = {
@@ -41,6 +42,7 @@ export type HexagramContent = {
   summary: string;
   axes: AxisMap;
   questions: AxisMap;
+  lines: number[];
 };
 
 const byId = new Map<number, CardSeed>((cardIndex as CardSeed[]).map((c) => [c.id, c]));
@@ -93,6 +95,7 @@ export function getHexagramContent(id: number): HexagramContent {
       relation: seed?.questions?.relation ?? fallbackQuestions.relation,
       time: seed?.questions?.time ?? fallbackQuestions.time,
     },
+    lines: seed?.lines ?? [0, 0, 0, 0, 0, 0],
   };
 }
 
