@@ -44,7 +44,6 @@ const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
 
 const NODE_BASE_COLOR = "#8c949f";
 const NODE_BASE_EMISSIVE = "#2a2f38";
-const HALO_NEUTRAL = "#9aa3af";
 
 const HEX_AXIS_STRENGTH: Record<number, Partial<Record<AxisKey, AxisStrength>>> = {
   1: { work: 3, time: 2, money: 1 },
@@ -345,7 +344,7 @@ function NodeCloud({
   hoverId: number | null;
   isMobile: boolean;
   showSelectedLabel: boolean;
-  getPrimaryAxis: (id: number) => AxisKey | null;
+  getPrimaryAxis: (id: number) => AxisKey;
   onHover: (id: number | null) => void;
   onSelect: (id: number) => void;
 }) {
@@ -362,7 +361,7 @@ function NodeCloud({
         const selected = n.id === selectedId;
         const hovered = n.id === hoverId;
         const axis = getPrimaryAxis(n.id);
-        const axisColor = axis ? AXIS_COLORS[axis] : HALO_NEUTRAL;
+        const axisColor = AXIS_COLORS[axis];
         const showLabel = showSelectedLabel && selected;
 
         return (
@@ -393,7 +392,7 @@ function NodeCloud({
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.02 : 0.01, 10, 48]} />
-              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 0.8 : 0.35} transparent opacity={selected ? 0.9 : 0.45} />
+              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 0.96 : hovered ? 0.62 : 0.48} transparent opacity={selected ? 0.95 : hovered ? 0.7 : 0.58} />
             </mesh>
 
             {showLabel && (
@@ -515,10 +514,7 @@ export function KnowledgeUniverse() {
     [nodes, viewMode]
   );
 
-  const getPrimaryAxis = (id: number): AxisKey | null => {
-    const raw = getPrimaryAxisById(id);
-    return raw ?? null;
-  };
+  const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
 
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
   const selectedCard = getCardForHexagram(selected.id);
@@ -695,7 +691,7 @@ export function KnowledgeUniverse() {
                     : `#${selected.id} ${selectedCard.short_name}`}
                 </h3>
                 <span className="mt-1 inline-block rounded-full border border-white/25 bg-white/10 px-2 py-0.5 text-[11px]">
-                  {AXIS_META[getPrimaryAxis(selected.id) ?? "work"].label}
+                  {AXIS_META[getPrimaryAxis(selected.id)].label}
                 </span>
                 <p className="mt-1 text-xs text-white/75">{selectedCard.one_liner}</p>
                 <div className="mt-2 flex gap-2">
@@ -808,7 +804,7 @@ export function KnowledgeUniverse() {
                       onClick={() => jumpToHexagram(r.id)}
                       className="block w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-left text-sm text-white/90"
                     >
-                      {(r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`) + ` · ${AXIS_META[axis ?? "work"].label}`}
+                      {(r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`) + ` · ${AXIS_META[axis].label}`}
                     </button>
                   );
                 })}
