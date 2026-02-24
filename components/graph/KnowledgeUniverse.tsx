@@ -105,35 +105,125 @@ function makeSubtleNoiseTexture() {
   return t;
 }
 
-function CoreTaeguk({ isMobile }: { isMobile: boolean }) {
+const BAGUA_PATTERNS = [
+  [1, 1, 1],
+  [0, 1, 1],
+  [1, 0, 1],
+  [0, 0, 1],
+  [1, 1, 0],
+  [0, 1, 0],
+  [1, 0, 0],
+  [0, 0, 0],
+] as const;
+
+function BaguaRing({ radius, isMobile }: { radius: number; isMobile: boolean }) {
+  const iconScale = isMobile ? 0.72 : 1;
+  return (
+    <group>
+      {BAGUA_PATTERNS.map((pattern, idx) => {
+        const ang = (idx / 8) * Math.PI * 2;
+        const x = Math.cos(ang) * radius;
+        const z = Math.sin(ang) * radius;
+        return (
+          <group key={idx} position={[x, 0, z]} rotation={[0, -ang + Math.PI / 2, 0]}>
+            {pattern.map((v, li) => {
+              const y = (li - 1) * 0.07 * iconScale;
+              return v === 1 ? (
+                <mesh key={li} position={[0, y, 0]}>
+                  <planeGeometry args={[0.16 * iconScale, 0.014 * iconScale]} />
+                  <meshBasicMaterial color="#d8dde2" transparent opacity={0.42} />
+                </mesh>
+              ) : (
+                <group key={li} position={[0, y, 0]}>
+                  <mesh position={[-0.048 * iconScale, 0, 0]}>
+                    <planeGeometry args={[0.055 * iconScale, 0.014 * iconScale]} />
+                    <meshBasicMaterial color="#d8dde2" transparent opacity={0.42} />
+                  </mesh>
+                  <mesh position={[0.048 * iconScale, 0, 0]}>
+                    <planeGeometry args={[0.055 * iconScale, 0.014 * iconScale]} />
+                    <meshBasicMaterial color="#d8dde2" transparent opacity={0.42} />
+                  </mesh>
+                </group>
+              );
+            })}
+          </group>
+        );
+      })}
+    </group>
+  );
+}
+
+function HexagramPulseSeal({ selectedId, isMobile }: { selectedId: number; isMobile: boolean }) {
+  const groupRef = useRef<THREE.Group>(null);
+  const matRef = useRef<THREE.MeshBasicMaterial>(null);
+  const lifeRef = useRef(0);
+
+  useEffect(() => {
+    lifeRef.current = 1;
+  }, [selectedId]);
+
+  const bits = useMemo(() => {
+    const n = Math.max(0, Math.min(63, selectedId - 1));
+    return Array.from({ length: 6 }, (_, i) => ((n >> i) & 1) as 0 | 1);
+  }, [selectedId]);
+
+  useFrame((_, delta) => {
+    lifeRef.current = Math.max(0, lifeRef.current - delta * 0.32); // 조절: 6효 각인 지속시간
+    if (matRef.current) matRef.current.opacity = 0.32 * lifeRef.current;
+    if (groupRef.current) groupRef.current.rotation.y += delta * 0.05;
+  });
+
+  if (lifeRef.current <= 0.001) return null;
+
+  const s = isMobile ? 0.82 : 1;
+  return (
+    <group ref={groupRef} rotation={[0.36, 0.12, 0]} position={[0, 0, 1.63]}>
+      {bits.map((v, i) => {
+        const y = (i - 2.5) * 0.1 * s;
+        return v === 1 ? (
+          <mesh key={i} position={[0, y, 0]}>
+            <planeGeometry args={[0.28 * s, 0.02 * s]} />
+            <meshBasicMaterial ref={i === 0 ? matRef : undefined} color="#dfe9f6" transparent opacity={0.3} />
+          </mesh>
+        ) : (
+          <group key={i} position={[0, y, 0]}>
+            <mesh position={[-0.085 * s, 0, 0]}>
+              <planeGeometry args={[0.1 * s, 0.02 * s]} />
+              <meshBasicMaterial ref={i === 0 ? matRef : undefined} color="#dfe9f6" transparent opacity={0.3} />
+            </mesh>
+            <mesh position={[0.085 * s, 0, 0]}>
+              <planeGeometry args={[0.1 * s, 0.02 * s]} />
+              <meshBasicMaterial color="#dfe9f6" transparent opacity={0.3} />
+            </mesh>
+          </group>
+        );
+      })}
+    </group>
+  );
+}
+
+function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: number }) {
   const ref = useRef<THREE.Group>(null);
   const haloRef = useRef<THREE.Mesh>(null);
   const ribbonARef = useRef<THREE.Mesh>(null);
   const ribbonBRef = useRef<THREE.Mesh>(null);
   const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
 
-  const seg = isMobile ? 56 : 88;
+  const seg = isMobile ? 48 : 76;
 
   useFrame((state, delta) => {
     if (!ref.current) return;
     const t = state.clock.elapsedTime;
 
-    ref.current.rotation.y += delta * 0.06;
-    ref.current.rotation.z = Math.sin(t * 0.12) * 0.03;
+    ref.current.rotation.y += delta * 0.045;
 
     if (haloRef.current) {
       const m = haloRef.current.material as THREE.MeshStandardMaterial;
-      m.emissiveIntensity = 0.42 + Math.sin(t * 0.7) * 0.08; // 조절: 헤일로 밝기 호흡
+      m.emissiveIntensity = 0.32 + Math.sin(t * 0.55) * 0.07; // 조절: 헤일로 밝기
     }
 
-    if (ribbonARef.current) {
-      ribbonARef.current.rotation.y += delta * 0.09; // 조절: 리본 속도
-      ribbonARef.current.rotation.x = Math.sin(t * 0.21) * 0.16;
-    }
-    if (ribbonBRef.current) {
-      ribbonBRef.current.rotation.y -= delta * 0.09; // 조절: 리본 속도
-      ribbonBRef.current.rotation.x = Math.sin(t * 0.21 + Math.PI) * 0.16;
-    }
+    if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.055; // 조절: 리본 속도
+    if (ribbonBRef.current) ribbonBRef.current.rotation.y += delta * 0.055;
   });
 
   return (
@@ -141,47 +231,43 @@ function CoreTaeguk({ isMobile }: { isMobile: boolean }) {
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#eef1f3"
+          color="#eceff1"
           map={noiseTex}
-          roughness={0.86}
-          metalness={0.03}
-          emissive="#d7e1ea"
-          emissiveIntensity={0.06}
+          roughness={0.9}
+          metalness={0.02}
+          emissive="#d4dde6"
+          emissiveIntensity={0.05}
         />
       </mesh>
 
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[1.95, 0.015, 12, isMobile ? 96 : 160]} />
-        <meshStandardMaterial
-          color="#cfe7ff"
-          emissive="#a8d6ff"
-          emissiveIntensity={0.42}
-          transparent
-          opacity={0.6}
-        />
+        <torusGeometry args={[1.95, 0.012, 10, isMobile ? 80 : 132]} />
+        <meshStandardMaterial color="#d9ecff" emissive="#b8ddff" emissiveIntensity={0.32} transparent opacity={0.5} />
       </mesh>
 
-      <mesh ref={ribbonARef} rotation={[Math.PI / 2.1, 0, 0]}>
-        <torusGeometry args={[2.18, 0.022, 10, isMobile ? 96 : 180]} />
-        <meshStandardMaterial
-          color="#ffffff"
-          emissive="#e9f5ff"
-          emissiveIntensity={0.3}
-          transparent
-          opacity={0.48}
-        />
-      </mesh>
+      <group ref={ribbonARef} rotation={[Math.PI / 2.2, 0, 0]}>
+        <mesh>
+          <torusGeometry args={[2.16, 0.015, 10, isMobile ? 96 : 168]} />
+          <meshStandardMaterial color="#fafbfd" emissive="#ecf5ff" emissiveIntensity={0.2} transparent opacity={0.34} />
+        </mesh>
+      </group>
 
-      <mesh ref={ribbonBRef} rotation={[Math.PI / 2.1, Math.PI, 0]}>
-        <torusGeometry args={[2.18, 0.022, 10, isMobile ? 96 : 180]} />
-        <meshStandardMaterial
-          color="#111418"
-          emissive="#5f7085"
-          emissiveIntensity={0.28}
-          transparent
-          opacity={0.44}
-        />
-      </mesh>
+      <group ref={ribbonBRef} rotation={[Math.PI / 2.2, Math.PI, 0]}>
+        <mesh>
+          <torusGeometry args={[2.16, 0.015, 10, isMobile ? 96 : 168]} />
+          <meshStandardMaterial color="#1c2127" emissive="#637488" emissiveIntensity={0.18} transparent opacity={0.32} />
+        </mesh>
+      </group>
+
+      <group rotation={[Math.PI / 2.45, 0.3, 0.12]}>
+        <mesh>
+          <torusGeometry args={[1.84, 0.008, 8, isMobile ? 96 : 144]} />
+          <meshBasicMaterial color="#d7dde4" transparent opacity={0.25} />
+        </mesh>
+        <BaguaRing radius={1.84} isMobile={isMobile} />
+      </group>
+
+      <HexagramPulseSeal selectedId={selectedId} isMobile={isMobile} />
     </group>
   );
 }
@@ -427,7 +513,7 @@ export function KnowledgeUniverse() {
 
         <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
-        <CoreTaeguk isMobile={isMobile} />
+        <CoreTaeguk isMobile={isMobile} selectedId={selected.id} />
         <AxisOrbits strengths={axisStrengths} />
         <NodeCloud
           nodes={visibleNodes}
