@@ -219,7 +219,7 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
 
     if (haloRef.current) {
       const m = haloRef.current.material as THREE.MeshStandardMaterial;
-      m.emissiveIntensity = 0.48 + Math.sin(t * 0.55) * 0.12; // 조절: 헤일로 밝기
+      m.emissiveIntensity = 0.52 + Math.sin(t * 0.55) * 0.14; // 조절: 헤일로 밝기
     }
 
     if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.045; // 조절: 리본 속도
@@ -231,36 +231,36 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#f4f7fb"
+          color="#f8f3e6"
           map={noiseTex}
           roughness={0.84}
           metalness={0.03}
-          emissive="#d9eaff"
-          emissiveIntensity={0.1}
+          emissive="#ffe3a8"
+          emissiveIntensity={0.12}
         />
       </mesh>
 
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[1.95, 0.013, 10, isMobile ? 80 : 132]} />
-        <meshStandardMaterial color="#e8f4ff" emissive="#cfe9ff" emissiveIntensity={0.48} transparent opacity={0.62} />
+        <meshStandardMaterial color="#ffe8b0" emissive="#ffd978" emissiveIntensity={0.52} transparent opacity={0.64} />
       </mesh>
 
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[2.03, 0.008, 8, isMobile ? 72 : 116]} />
-        <meshBasicMaterial color="#cfe8ff" transparent opacity={0.32} />
+        <meshBasicMaterial color="#ffd98f" transparent opacity={0.34} />
       </mesh>
 
       <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
         <mesh>
           <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#ffffff" emissive="#f0f7ff" emissiveIntensity={0.34} transparent opacity={0.62} />
+          <meshStandardMaterial color="#fff8e6" emissive="#ffe8ad" emissiveIntensity={0.36} transparent opacity={0.62} />
         </mesh>
       </group>
 
       <group ref={ribbonBRef} rotation={[Math.PI / 2.15, Math.PI + 0.18, 0]}>
         <mesh>
           <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#171b21" emissive="#5f7085" emissiveIntensity={0.24} transparent opacity={0.5} />
+          <meshStandardMaterial color="#2a2418" emissive="#8f6f33" emissiveIntensity={0.22} transparent opacity={0.5} />
         </mesh>
       </group>
 
