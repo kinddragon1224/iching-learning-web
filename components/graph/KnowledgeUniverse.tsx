@@ -399,8 +399,15 @@ function NodeCloud({
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.024 : 0.011, 10, 48]} />
-              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.82 : 0.68} transparent opacity={selected ? 0.98 : hovered ? 0.86 : 0.78} />
+              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : 0.9} />
             </mesh>
+
+            {selected && (
+              <mesh rotation={[Math.PI / 2, 0, 0]}>
+                <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.11, 0.009, 10, 48]} />
+                <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={0.95} transparent opacity={0.78} />
+              </mesh>
+            )}
 
             {showLabel && (
               <Html center distanceFactor={14} position={[0, n.size * 2.2, 0]}>
@@ -631,6 +638,15 @@ export function KnowledgeUniverse() {
               >
                 64
               </button>
+            </div>
+
+            <div className="flex flex-wrap justify-end gap-1 rounded border border-white/20 bg-black/35 px-2 py-1 text-[10px] text-white/75">
+              {(Object.keys(AXIS_META) as AxisKey[]).map((axis) => (
+                <span key={axis} className="inline-flex items-center gap-1 rounded-full px-1.5 py-0.5">
+                  <span className="inline-block h-1.5 w-1.5 rounded-full" style={{ backgroundColor: AXIS_META[axis].color }} />
+                  {AXIS_META[axis].label}
+                </span>
+              ))}
             </div>
 
             <div className="flex items-center gap-2">
