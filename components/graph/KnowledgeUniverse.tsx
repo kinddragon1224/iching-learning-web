@@ -222,8 +222,8 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       m.emissiveIntensity = 0.32 + Math.sin(t * 0.55) * 0.07; // 조절: 헤일로 밝기
     }
 
-    if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.055; // 조절: 리본 속도
-    if (ribbonBRef.current) ribbonBRef.current.rotation.y += delta * 0.055;
+    if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.045; // 조절: 리본 속도
+    if (ribbonBRef.current) ribbonBRef.current.rotation.y -= delta * 0.045;
   });
 
   return (
@@ -245,17 +245,17 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
         <meshStandardMaterial color="#d9ecff" emissive="#b8ddff" emissiveIntensity={0.32} transparent opacity={0.5} />
       </mesh>
 
-      <group ref={ribbonARef} rotation={[Math.PI / 2.2, 0, 0]}>
+      <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
         <mesh>
-          <torusGeometry args={[2.16, 0.015, 10, isMobile ? 96 : 168]} />
-          <meshStandardMaterial color="#fafbfd" emissive="#ecf5ff" emissiveIntensity={0.2} transparent opacity={0.34} />
+          <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
+          <meshStandardMaterial color="#f6f8fb" emissive="#ebf4ff" emissiveIntensity={0.26} transparent opacity={0.5} />
         </mesh>
       </group>
 
-      <group ref={ribbonBRef} rotation={[Math.PI / 2.2, Math.PI, 0]}>
+      <group ref={ribbonBRef} rotation={[Math.PI / 2.15, Math.PI + 0.18, 0]}>
         <mesh>
-          <torusGeometry args={[2.16, 0.015, 10, isMobile ? 96 : 168]} />
-          <meshStandardMaterial color="#1c2127" emissive="#637488" emissiveIntensity={0.18} transparent opacity={0.32} />
+          <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
+          <meshStandardMaterial color="#171b21" emissive="#5f7085" emissiveIntensity={0.24} transparent opacity={0.5} />
         </mesh>
       </group>
 
