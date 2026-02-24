@@ -4,10 +4,13 @@ import { notFound } from "next/navigation";
 import { HEXAGRAMS, findHexagram } from "@/data/hexagrams";
 import { getCardForHexagram, toPublicAsset } from "@/lib/card-index";
 import { TodayActionButton } from "@/components/TodayActionButton";
+import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 
 export function generateStaticParams() {
   return HEXAGRAMS.map((h) => ({ id: String(h.id) }));
 }
+
+const AXIS_LABEL = { money: "돈", work: "일", relation: "관계", time: "시간" } as const;
 
 function get4AxisQuestions(id: number) {
   const byId: Record<number, Partial<Record<"money" | "work" | "relationship" | "time", string>>> = {
@@ -49,6 +52,7 @@ export default function HexagramCardDetailPage({ params }: { params: { id: strin
 
   const card = getCardForHexagram(id);
   const q = get4AxisQuestions(id);
+  const primaryAxis = getPrimaryAxisById(id);
 
   return (
     <main className="mx-auto max-w-3xl space-y-5 p-6">
@@ -68,6 +72,7 @@ export default function HexagramCardDetailPage({ params }: { params: { id: strin
       <header>
         <h1 className="text-2xl font-bold">#{id} {card.full_name ?? card.short_name}</h1>
         <p className="text-neutral-500">({card.short_name}){card.trigram_pair ? ` · ${card.trigram_pair}` : ""}</p>
+        <span className="mt-2 inline-block rounded-full border px-2 py-0.5 text-xs">{AXIS_LABEL[primaryAxis]}</span>
         <p className="mt-2">{card.one_liner}</p>
       </header>
 

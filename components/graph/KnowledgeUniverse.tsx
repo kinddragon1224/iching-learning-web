@@ -10,10 +10,10 @@ import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
 import { buildHexagramSearchIndex, searchHexagrams, type HexagramSearchEntry } from "@/search/build_index";
 import { getCardForHexagram, toPublicAsset } from "@/lib/card-index";
+import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 
-type LabelMode = "auto" | "always" | "none";
 type ViewMode = "featured" | "all";
-type AxisKey = "money" | "work" | "relationship" | "time";
+type AxisKey = "money" | "work" | "relation" | "time";
 type AxisStrength = 1 | 2 | 3;
 
 type Node = {
@@ -28,27 +28,27 @@ type Node = {
 const FEATURED_IDS = [1, 2, 11, 12, 29, 30, 63, 64, 24, 14, 15, 16, 31, 32];
 
 const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
-  money: { label: "돈", color: "#84a5ff" },
-  work: { label: "일", color: "#6ce6d8" },
-  relationship: { label: "관계", color: "#f29fd5" },
-  time: { label: "시간", color: "#f7d08a" },
+  money: { label: "돈", color: "#7c8fbc" },
+  work: { label: "일", color: "#6f9d95" },
+  relation: { label: "관계", color: "#a183a7" },
+  time: { label: "시간", color: "#a99574" },
 };
 
 const HEX_AXIS_STRENGTH: Record<number, Partial<Record<AxisKey, AxisStrength>>> = {
   1: { work: 3, time: 2, money: 1 },
-  2: { relationship: 3, work: 2, time: 1 },
-  11: { relationship: 3, money: 2, work: 1 },
-  12: { relationship: 3, time: 2, money: 1 },
-  14: { money: 3, work: 2, relationship: 1 },
-  15: { relationship: 2, time: 3, work: 1 },
-  16: { work: 2, relationship: 3, time: 1 },
-  24: { time: 3, work: 2, relationship: 1 },
+  2: { relation: 3, work: 2, time: 1 },
+  11: { relation: 3, money: 2, work: 1 },
+  12: { relation: 3, time: 2, money: 1 },
+  14: { money: 3, work: 2, relation: 1 },
+  15: { relation: 2, time: 3, work: 1 },
+  16: { work: 2, relation: 3, time: 1 },
+  24: { time: 3, work: 2, relation: 1 },
   29: { money: 3, time: 3, work: 1 },
-  30: { work: 3, time: 2, relationship: 1 },
-  31: { relationship: 3, work: 2, time: 1 },
-  32: { time: 3, relationship: 2, work: 1 },
+  30: { work: 3, time: 2, relation: 1 },
+  31: { relation: 3, work: 2, time: 1 },
+  32: { time: 3, relation: 2, work: 1 },
   63: { time: 3, work: 2, money: 1 },
-  64: { money: 2, time: 3, relationship: 1 },
+  64: { money: 2, time: 3, relation: 1 },
 };
 
 function hashRand(seed: number) {
@@ -187,18 +187,18 @@ function NodeCloud({
   nodes,
   selectedId,
   hoverId,
-  labelMode,
   isMobile,
   showSelectedLabel,
+  getPrimaryAxis,
   onHover,
   onSelect,
 }: {
   nodes: Node[];
   selectedId: number;
   hoverId: number | null;
-  labelMode: LabelMode;
   isMobile: boolean;
   showSelectedLabel: boolean;
+  getPrimaryAxis: (id: number) => AxisKey;
   onHover: (id: number | null) => void;
   onSelect: (id: number) => void;
 }) {
@@ -214,9 +214,9 @@ function NodeCloud({
       {nodes.map((n) => {
         const selected = n.id === selectedId;
         const hovered = n.id === hoverId;
-        const showLabel = isMobile
-          ? showSelectedLabel && selected
-          : (showSelectedLabel && selected) || labelMode === "always" || (labelMode === "auto" && hovered);
+        const axis = getPrimaryAxis(n.id);
+        const axisColor = AXIS_META[axis].color;
+        const showLabel = showSelectedLabel && selected;
 
         return (
           <group key={n.id} position={n.position}>
@@ -236,12 +236,17 @@ function NodeCloud({
             >
               <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1), 18, 18]} />
               <meshStandardMaterial
-                color={selected ? "#ffffff" : "#79b9ff"}
-                emissive={selected ? "#ffffff" : "#2b65d9"}
-                emissiveIntensity={selected ? 0.95 : hovered ? 0.6 : 0.34}
-                roughness={0.22}
-                metalness={0.36}
+                color={selected ? "#ffffff" : axisColor}
+                emissive={axisColor}
+                emissiveIntensity={selected ? 0.58 : hovered ? 0.44 : 0.26}
+                roughness={0.28}
+                metalness={0.2}
               />
+            </mesh>
+
+            <mesh rotation={[Math.PI / 2, 0, 0]}>
+              <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.02 : 0.01, 10, 48]} />
+              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 0.8 : 0.35} transparent opacity={selected ? 0.9 : 0.45} />
             </mesh>
 
             {showLabel && (
@@ -279,7 +284,7 @@ const HEX_AXIS_COPY: Record<number, Partial<Record<AxisKey, string>>> = {
     time: "성급함 대신 점검 시간을 의도적으로 확보했는가?",
   },
   2: {
-    relationship: "협업이 막히는 지점을 ‘지원 요청’으로 바꿔 전달했는가?",
+    relation: "협업이 막히는 지점을 ‘지원 요청’으로 바꿔 전달했는가?",
     work: "반복 업무 1개를 운영 규칙으로 고정했는가?",
   },
   29: {
@@ -306,14 +311,14 @@ function build4AxisQuestions(hexId: number, strengths: Partial<Record<AxisKey, A
   const fallbackByAxis: Record<AxisKey, string> = {
     money: "현금흐름을 불안하게 만드는 작은 누수 1개를 찾았나?",
     work: "지금 해야 할 핵심 행동 1개가 문장으로 명확한가?",
-    relationship: "협업을 어렵게 만든 오해를 풀기 위한 확인 질문을 했는가?",
+    relation: "협업을 어렵게 만든 오해를 풀기 위한 확인 질문을 했는가?",
     time: "이번 주 회복/집중 시간 블록을 캘린더에 실제로 넣었는가?",
   };
 
   const lowPriorityFallbackByAxis: Record<AxisKey, string> = {
     money: "이번 주 지출 구조에서 멈춰도 되는 항목 1개를 골랐는가?",
     work: "성과와 무관한 작업을 오늘 1개 줄일 수 있는가?",
-    relationship: "대화 비용을 줄이기 위해 전달 문장을 더 단순화했는가?",
+    relation: "대화 비용을 줄이기 위해 전달 문장을 더 단순화했는가?",
     time: "우선순위 밖 일정 1개를 뒤로 미룰 수 있는가?",
   };
 
@@ -331,7 +336,6 @@ export function KnowledgeUniverse() {
   const [hoverId, setHoverId] = useState<number | null>(null);
   const [panelOpen, setPanelOpen] = useState(true);
   const [viewMode, setViewMode] = useState<ViewMode>("featured");
-  const [labelMode, setLabelMode] = useState<LabelMode>("auto");
   const [showGuide, setShowGuide] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -343,7 +347,6 @@ export function KnowledgeUniverse() {
       const mobile = mql.matches;
       setIsMobile(mobile);
       setPanelOpen(mobile ? false : true);
-      setLabelMode(mobile ? "none" : "auto");
     };
     apply();
     mql.addEventListener("change", apply);
@@ -356,10 +359,12 @@ export function KnowledgeUniverse() {
     [nodes, viewMode]
   );
 
+  const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
+
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
   const selectedCard = getCardForHexagram(selected.id);
   const nextHex = pickNextRecommendation(selected.id);
-  const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2, time: 2 };
+  const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2 };
   const axisQuestions = build4AxisQuestions(selected.id, axisStrengths);
 
   const searchIndex = useMemo(() => buildHexagramSearchIndex(), []);
@@ -389,9 +394,9 @@ export function KnowledgeUniverse() {
           nodes={visibleNodes}
           selectedId={selectedId}
           hoverId={hoverId}
-          labelMode={labelMode}
           isMobile={isMobile}
           showSelectedLabel={!isMobile || panelOpen}
+          getPrimaryAxis={getPrimaryAxis}
           onHover={setHoverId}
           onSelect={(id) => {
             setSelectedId(id);
@@ -431,24 +436,14 @@ export function KnowledgeUniverse() {
               </button>
             </div>
 
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() =>
-                  setLabelMode((m) => (m === "auto" ? "always" : m === "always" ? "none" : "auto"))
-                }
-                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
-              >
-                라벨: {labelMode === "auto" ? "자동" : labelMode === "always" ? "항상" : "끔"}
-              </button>
-              <button
-                onClick={() => setSearchOpen(true)}
-                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
-                aria-label="괘 검색"
-                title="괘 검색"
-              >
-                🔍 검색
-              </button>
-            </div>
+            <button
+              onClick={() => setSearchOpen(true)}
+              className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
+              aria-label="괘 검색"
+              title="괘 검색"
+            >
+              🔍 검색
+            </button>
           </div>
         </div>
 
@@ -500,6 +495,9 @@ export function KnowledgeUniverse() {
                     ? `#${selected.id} ${selectedCard.full_name} (${selectedCard.short_name})`
                     : `#${selected.id} ${selectedCard.short_name}`}
                 </h3>
+                <span className="mt-1 inline-block rounded-full border border-white/25 bg-white/10 px-2 py-0.5 text-[11px]">
+                  {AXIS_META[getPrimaryAxis(selected.id)].label}
+                </span>
                 <p className="mt-1 text-xs text-white/75">{selectedCard.one_liner}</p>
                 <div className="mt-2 flex gap-2">
                   <Link href={`/hexagram/${selected.id}`} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">
@@ -547,7 +545,7 @@ export function KnowledgeUniverse() {
               <ul className="mt-2 space-y-2 text-xs text-white/85">
                 <li><b>[돈]</b> {axisQuestions.money}</li>
                 <li><b>[일]</b> {axisQuestions.work}</li>
-                <li><b>[관계]</b> {axisQuestions.relationship}</li>
+                <li><b>[관계]</b> {axisQuestions.relation}</li>
                 <li><b>[시간]</b> {axisQuestions.time}</li>
               </ul>
             </div>
@@ -600,15 +598,18 @@ export function KnowledgeUniverse() {
                 {searchResults.length === 0 && (
                   <p className="text-xs text-white/60">검색 결과가 없어. 번호/괘이름/별칭으로 다시 시도해줘.</p>
                 )}
-                {searchResults.map((r: HexagramSearchEntry) => (
-                  <button
-                    key={r.id}
-                    onClick={() => jumpToHexagram(r.id)}
-                    className="block w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-left text-sm text-white/90"
-                  >
-                    {r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`}
-                  </button>
-                ))}
+                {searchResults.map((r: HexagramSearchEntry) => {
+                  const axis = getPrimaryAxis(r.id);
+                  return (
+                    <button
+                      key={r.id}
+                      onClick={() => jumpToHexagram(r.id)}
+                      className="block w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-left text-sm text-white/90"
+                    >
+                      {(r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`) + ` · ${AXIS_META[axis].label}`}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
