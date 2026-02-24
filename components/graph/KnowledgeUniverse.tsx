@@ -3,8 +3,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
+import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
@@ -183,6 +184,36 @@ function AxisOrbits({ strengths }: { strengths: Partial<Record<AxisKey, AxisStre
   );
 }
 
+function CameraFocusRig({
+  focus,
+  isMobile,
+  controlsRef,
+}: {
+  focus: [number, number, number];
+  isMobile: boolean;
+  controlsRef: { current: OrbitControlsImpl | null };
+}) {
+  const { camera } = useThree();
+  const target = useRef(new THREE.Vector3(0, 0, 0));
+
+  useFrame((_, delta) => {
+    target.current.set(focus[0], focus[1], focus[2]);
+
+    const desiredDistance = isMobile ? 7.2 : 6.2;
+    const desiredPos = new THREE.Vector3(
+      target.current.x + desiredDistance,
+      target.current.y + desiredDistance * 0.42,
+      target.current.z + desiredDistance
+    );
+
+    camera.position.lerp(desiredPos, Math.min(1, delta * 2.2));
+    controlsRef.current?.target.lerp(target.current, Math.min(1, delta * 2.8));
+    controlsRef.current?.update();
+  });
+
+  return null;
+}
+
 function NodeCloud({
   nodes,
   selectedId,
@@ -353,6 +384,8 @@ export function KnowledgeUniverse() {
     return () => mql.removeEventListener("change", apply);
   }, []);
 
+  const controlsRef = useRef<OrbitControlsImpl | null>(null);
+
   const nodes = useMemo(() => buildNodes(), []);
   const visibleNodes = useMemo(
     () => (viewMode === "all" ? nodes : nodes.filter((n) => FEATURED_IDS.includes(n.id))),
@@ -362,6 +395,7 @@ export function KnowledgeUniverse() {
   const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
 
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
+  const focusPoint: [number, number, number] = selected.position;
   const selectedCard = getCardForHexagram(selected.id);
   const nextHex = pickNextRecommendation(selected.id);
   const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2 };
@@ -390,6 +424,7 @@ export function KnowledgeUniverse() {
 
         <CoreTaeguk />
         <AxisOrbits strengths={axisStrengths} />
+        <CameraFocusRig focus={focusPoint} isMobile={isMobile} controlsRef={controlsRef} />
         <NodeCloud
           nodes={visibleNodes}
           selectedId={selectedId}
@@ -406,7 +441,7 @@ export function KnowledgeUniverse() {
           }}
         />
 
-        <OrbitControls enablePan={false} minDistance={8} maxDistance={18} />
+        <OrbitControls ref={controlsRef} enablePan={false} minDistance={5.5} maxDistance={18} />
       </Canvas>
 
       <div className="absolute inset-0 pointer-events-none">
