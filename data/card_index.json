@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "short_name": "건",
+    "full_name": "중천건",
+    "trigram_pair": "천천",
+    "one_liner": "시작의 국면. 책임 있는 추진이 핵심이다.",
+    "keywords": ["시작", "추진", "책임"],
+    "card_image": "/cards/001.png"
+  },
+  {
+    "id": 25,
+    "short_name": "무망",
+    "full_name": "천뢰무망",
+    "trigram_pair": "천뢰",
+    "one_liner": "정지의 국면. 내부 정비가 우선.",
+    "keywords": ["정비", "멈춤", "정리"],
+    "card_image": "/cards/025.png"
+  },
+  {
+    "id": 64,
+    "short_name": "미제",
+    "full_name": "화수미제",
+    "trigram_pair": "화수",
+    "one_liner": "마무리 전 국면. 검증 후 전진.",
+    "keywords": ["검증", "전환", "미완"],
+    "card_image": "/cards/064.png"
+  }
+]

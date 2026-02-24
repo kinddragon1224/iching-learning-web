@@ -2,12 +2,14 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
 import { buildHexagramSearchIndex, searchHexagrams, type HexagramSearchEntry } from "@/search/build_index";
+import { getCardForHexagram, toPublicAsset } from "@/lib/card-index";
 
 type LabelMode = "auto" | "always" | "none";
 type ViewMode = "featured" | "all";
@@ -355,6 +357,7 @@ export function KnowledgeUniverse() {
   );
 
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
+  const selectedCard = getCardForHexagram(selected.id);
   const nextHex = pickNextRecommendation(selected.id);
   const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2, time: 2 };
   const axisQuestions = build4AxisQuestions(selected.id, axisStrengths);
@@ -482,9 +485,38 @@ export function KnowledgeUniverse() {
                 </button>
               </div>
             )}
-            <p className="text-xs text-white/60">선택 노드</p>
-            <h3 className="mt-1 text-xl font-semibold">#{selected.id} {selected.label}</h3>
-            <p className="mt-2 text-sm text-white/70 line-clamp-3">{selected.summary}</p>
+            <p className="text-xs text-white/60">카드 미리보기</p>
+            <div className="mt-2 overflow-hidden rounded-xl border border-white/15 bg-black/35">
+              <Image
+                src={toPublicAsset(selectedCard.card_image)}
+                alt={`#${selected.id} 카드 이미지`}
+                width={640}
+                height={360}
+                className="h-36 w-full object-cover"
+              />
+              <div className="p-3">
+                <h3 className="text-base font-semibold">
+                  {selectedCard.full_name
+                    ? `#${selected.id} ${selectedCard.full_name} (${selectedCard.short_name})`
+                    : `#${selected.id} ${selectedCard.short_name}`}
+                </h3>
+                <p className="mt-1 text-xs text-white/75">{selectedCard.one_liner}</p>
+                <div className="mt-2 flex gap-2">
+                  <Link href={`/hexagram/${selected.id}`} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">
+                    상세 보기
+                  </Link>
+                  <button
+                    onClick={() => {
+                      setPanelOpen(false);
+                      setHoverId(null);
+                    }}
+                    className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs"
+                  >
+                    닫기
+                  </button>
+                </div>
+              </div>
+            </div>
 
             {isMobile && (
               <p className="mt-2 text-[11px] text-white/60">패널 내부를 위아래로 스크롤해서 전체 해석을 볼 수 있어.</p>
@@ -520,7 +552,7 @@ export function KnowledgeUniverse() {
               </ul>
             </div>
 
-            <Link href={`/hexagrams/${selected.id}`} className="mt-4 inline-block text-xs underline text-white/85">
+            <Link href={`/hexagram/${selected.id}`} className="mt-4 inline-block text-xs underline text-white/85">
               상세 학습으로 이동
             </Link>
           </aside>
