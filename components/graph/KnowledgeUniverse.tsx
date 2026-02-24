@@ -9,7 +9,7 @@ import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
 import { buildHexagramSearchIndex, searchHexagrams, type HexagramSearchEntry } from "@/search/build_index";
-import { getCardForHexagram, toPublicAsset } from "@/lib/card-index";
+import { getCardForHexagram, getHexagramContent, toPublicAsset } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { AXIS_LABEL, todayKST, upsertAction, loadActions, type Axis } from "@/lib/action-loop";
 
@@ -532,9 +532,10 @@ export function KnowledgeUniverse() {
 
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
   const selectedCard = getCardForHexagram(selected.id);
+  const selectedContent = getHexagramContent(selected.id);
   const nextHex = pickNextRecommendation(selected.id);
   const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2 };
-  const axisQuestions = build4AxisQuestions(selected.id, axisStrengths);
+  const axisQuestions = selectedContent.questions as Record<AxisKey, string>;
 
   const searchIndex = useMemo(() => buildHexagramSearchIndex(), []);
   const searchResults = useMemo(() => searchHexagrams(searchIndex, searchInput, 5), [searchIndex, searchInput]);
