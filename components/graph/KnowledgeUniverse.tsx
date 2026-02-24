@@ -28,10 +28,10 @@ type Node = {
 const FEATURED_IDS = [1, 2, 11, 12, 29, 30, 63, 64, 24, 14, 15, 16, 31, 32];
 
 const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
-  money: { label: "돈", color: "#d8b15e" },
-  work: { label: "일", color: "#e0bf74" },
-  relation: { label: "관계", color: "#cfa85b" },
-  time: { label: "시간", color: "#e8c97f" },
+  money: { label: "돈", color: "#7c8fbc" },
+  work: { label: "일", color: "#6f9d95" },
+  relation: { label: "관계", color: "#a183a7" },
+  time: { label: "시간", color: "#a99574" },
 };
 
 const HEX_AXIS_STRENGTH: Record<number, Partial<Record<AxisKey, AxisStrength>>> = {
