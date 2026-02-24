@@ -528,7 +528,7 @@ export function KnowledgeUniverse() {
       ? `#${selected.id} ${selectedCard.full_name} (${selectedCard.short_name})`
       : `#${selected.id} ${selectedCard.short_name}`;
 
-    const out = upsertAction({
+    const payload = {
       date: todayKST(),
       hexagram_id: selected.id,
       hexagram_title: title,
@@ -537,10 +537,24 @@ export function KnowledgeUniverse() {
       question_text: axisQuestions[questionAxis],
       answer_state: answerState,
       note: "",
-    });
+    };
 
+    const exists = loadActions().some(
+      (r) => r.date === payload.date && r.hexagram_id === payload.hexagram_id && r.question_axis === payload.question_axis
+    );
+    if (exists) {
+      const ok = window.confirm("이미 오늘 같은 항목이 있어. 수정할까?");
+      if (!ok) return;
+    }
+
+    const out = upsertAction(payload, { replace: true });
+
+    if (navigator.vibrate) navigator.vibrate(18);
+
+    const nextCount = loadActions().filter((r) => r.date === todayKST()).length;
+    setTodayCount(nextCount);
     setSaveOpen(false);
-    setSaveToast(out.replaced ? "수정 저장됨" : "저장됨");
+    setSaveToast(out.replaced ? `수정 저장됨. 오늘 ${nextCount}/4` : `저장됨. 오늘 ${nextCount}/4`);
     setTimeout(() => setSaveToast(""), 1300);
   };
 
