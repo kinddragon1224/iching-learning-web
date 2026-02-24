@@ -418,7 +418,7 @@ export function KnowledgeUniverse() {
           </div>
         </div>
 
-        <div className={`pointer-events-auto absolute ${isMobile ? "right-4 bottom-16" : "right-6 top-24"}`}>
+        <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 bottom-16" : "right-6 top-24"}`}>
           <button
             onClick={() => setPanelOpen((v) => !v)}
             className="rounded-md border border-white/30 bg-black/45 px-4 py-2 text-sm text-white"
@@ -428,11 +428,21 @@ export function KnowledgeUniverse() {
         </div>
 
         {panelOpen && (
-          <aside className={`pointer-events-auto absolute border border-white/20 bg-black/55 text-sm text-white/90 backdrop-blur-sm ${
+          <aside className={`pointer-events-auto absolute z-30 border border-white/20 bg-black/55 text-sm text-white/90 backdrop-blur-sm ${
             isMobile
               ? "left-3 right-3 bottom-3 top-auto max-h-[68vh] overflow-y-auto rounded-2xl p-4"
               : "right-6 top-36 w-[380px] rounded-2xl p-4"
           }`}>
+            {isMobile && (
+              <div className="mb-2 flex justify-end">
+                <button
+                  onClick={() => setPanelOpen(false)}
+                  className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs"
+                >
+                  닫기
+                </button>
+              </div>
+            )}
             <p className="text-xs text-white/60">선택 노드</p>
             <h3 className="mt-1 text-xl font-semibold">#{selected.id} {selected.label}</h3>
             <p className="mt-2 text-sm text-white/70 line-clamp-3">{selected.summary}</p>
