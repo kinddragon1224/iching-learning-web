@@ -19,6 +19,6 @@ export const PRIMARY_AXIS_MAP: Partial<Record<number, PrimaryAxis>> = {
   64: "time",
 };
 
-export function getPrimaryAxisById(id: number): PrimaryAxis {
-  return PRIMARY_AXIS_MAP[id] ?? "work";
+export function getPrimaryAxisById(id: number): PrimaryAxis | null {
+  return PRIMARY_AXIS_MAP[id] ?? null;
 }

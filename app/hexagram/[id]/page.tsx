@@ -52,7 +52,7 @@ export default function HexagramCardDetailPage({ params }: { params: { id: strin
 
   const card = getCardForHexagram(id);
   const q = get4AxisQuestions(id);
-  const primaryAxis = getPrimaryAxisById(id);
+  const primaryAxis = getPrimaryAxisById(id) ?? "work";
 
   return (
     <main className="mx-auto max-w-3xl space-y-5 p-6">

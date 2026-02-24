@@ -28,12 +28,23 @@ type Node = {
 
 const FEATURED_IDS = [1, 2, 11, 12, 29, 30, 63, 64, 24, 14, 15, 16, 31, 32];
 
-const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
-  money: { label: "돈", color: "#7c8fbc" },
-  work: { label: "일", color: "#6f9d95" },
-  relation: { label: "관계", color: "#a183a7" },
-  time: { label: "시간", color: "#a99574" },
+const AXIS_COLORS: Record<AxisKey, string> = {
+  money: "#5f86d9",
+  work: "#4fb8a8",
+  relation: "#b06ccf",
+  time: "#d7a353",
 };
+
+const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
+  money: { label: "돈", color: AXIS_COLORS.money },
+  work: { label: "일", color: AXIS_COLORS.work },
+  relation: { label: "관계", color: AXIS_COLORS.relation },
+  time: { label: "시간", color: AXIS_COLORS.time },
+};
+
+const NODE_BASE_COLOR = "#8c949f";
+const NODE_BASE_EMISSIVE = "#2a2f38";
+const HALO_NEUTRAL = "#9aa3af";
 
 const HEX_AXIS_STRENGTH: Record<number, Partial<Record<AxisKey, AxisStrength>>> = {
   1: { work: 3, time: 2, money: 1 },
@@ -334,7 +345,7 @@ function NodeCloud({
   hoverId: number | null;
   isMobile: boolean;
   showSelectedLabel: boolean;
-  getPrimaryAxis: (id: number) => AxisKey;
+  getPrimaryAxis: (id: number) => AxisKey | null;
   onHover: (id: number | null) => void;
   onSelect: (id: number) => void;
 }) {
@@ -351,7 +362,7 @@ function NodeCloud({
         const selected = n.id === selectedId;
         const hovered = n.id === hoverId;
         const axis = getPrimaryAxis(n.id);
-        const axisColor = AXIS_META[axis].color;
+        const axisColor = axis ? AXIS_COLORS[axis] : HALO_NEUTRAL;
         const showLabel = showSelectedLabel && selected;
 
         return (
@@ -372,11 +383,11 @@ function NodeCloud({
             >
               <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1), 18, 18]} />
               <meshStandardMaterial
-                color={selected ? "#ffffff" : axisColor}
-                emissive={axisColor}
-                emissiveIntensity={selected ? 0.58 : hovered ? 0.44 : 0.26}
-                roughness={0.28}
-                metalness={0.2}
+                color={NODE_BASE_COLOR}
+                emissive={NODE_BASE_EMISSIVE}
+                emissiveIntensity={selected ? 0.32 : hovered ? 0.24 : 0.18}
+                roughness={0.34}
+                metalness={0.16}
               />
             </mesh>
 
@@ -504,7 +515,10 @@ export function KnowledgeUniverse() {
     [nodes, viewMode]
   );
 
-  const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
+  const getPrimaryAxis = (id: number): AxisKey | null => {
+    const raw = getPrimaryAxisById(id);
+    return raw ?? null;
+  };
 
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
   const selectedCard = getCardForHexagram(selected.id);
@@ -681,7 +695,7 @@ export function KnowledgeUniverse() {
                     : `#${selected.id} ${selectedCard.short_name}`}
                 </h3>
                 <span className="mt-1 inline-block rounded-full border border-white/25 bg-white/10 px-2 py-0.5 text-[11px]">
-                  {AXIS_META[getPrimaryAxis(selected.id)].label}
+                  {AXIS_META[getPrimaryAxis(selected.id) ?? "work"].label}
                 </span>
                 <p className="mt-1 text-xs text-white/75">{selectedCard.one_liner}</p>
                 <div className="mt-2 flex gap-2">
@@ -794,7 +808,7 @@ export function KnowledgeUniverse() {
                       onClick={() => jumpToHexagram(r.id)}
                       className="block w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-left text-sm text-white/90"
                     >
-                      {(r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`) + ` · ${AXIS_META[axis].label}`}
+                      {(r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`) + ` · ${AXIS_META[axis ?? "work"].label}`}
                     </button>
                   );
                 })}
