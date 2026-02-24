@@ -195,20 +195,30 @@ function CameraFocusRig({
 }) {
   const { camera } = useThree();
   const target = useRef(new THREE.Vector3(0, 0, 0));
+  const desiredPosRef = useRef(new THREE.Vector3(0, 0, 0));
+  const animatingRef = useRef(false);
 
-  useFrame((_, delta) => {
+  useEffect(() => {
     target.current.set(focus[0], focus[1], focus[2]);
-
-    const desiredDistance = isMobile ? 7.2 : 6.2;
-    const desiredPos = new THREE.Vector3(
+    const desiredDistance = isMobile ? 8.8 : 7.6;
+    desiredPosRef.current.set(
       target.current.x + desiredDistance,
-      target.current.y + desiredDistance * 0.42,
+      target.current.y + desiredDistance * 0.36,
       target.current.z + desiredDistance
     );
+    animatingRef.current = true;
+  }, [focus, isMobile]);
 
-    camera.position.lerp(desiredPos, Math.min(1, delta * 2.2));
-    controlsRef.current?.target.lerp(target.current, Math.min(1, delta * 2.8));
+  useFrame((_, delta) => {
+    if (!animatingRef.current) return;
+
+    camera.position.lerp(desiredPosRef.current, Math.min(1, delta * 2.1));
+    controlsRef.current?.target.lerp(target.current, Math.min(1, delta * 2.5));
     controlsRef.current?.update();
+
+    const posDone = camera.position.distanceTo(desiredPosRef.current) < 0.06;
+    const targetDone = !controlsRef.current || controlsRef.current.target.distanceTo(target.current) < 0.06;
+    if (posDone && targetDone) animatingRef.current = false;
   });
 
   return null;
@@ -441,7 +451,7 @@ export function KnowledgeUniverse() {
           }}
         />
 
-        <OrbitControls ref={controlsRef} enablePan={false} minDistance={5.5} maxDistance={18} />
+        <OrbitControls ref={controlsRef} enablePan={false} minDistance={7} maxDistance={18} />
       </Canvas>
 
       <div className="absolute inset-0 pointer-events-none">
