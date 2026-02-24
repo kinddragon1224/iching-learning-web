@@ -219,7 +219,7 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
 
     if (haloRef.current) {
       const m = haloRef.current.material as THREE.MeshStandardMaterial;
-      m.emissiveIntensity = 0.32 + Math.sin(t * 0.55) * 0.07; // 조절: 헤일로 밝기
+      m.emissiveIntensity = 0.48 + Math.sin(t * 0.55) * 0.12; // 조절: 헤일로 밝기
     }
 
     if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.045; // 조절: 리본 속도
@@ -231,24 +231,29 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#eceff1"
+          color="#f4f7fb"
           map={noiseTex}
-          roughness={0.9}
-          metalness={0.02}
-          emissive="#d4dde6"
-          emissiveIntensity={0.05}
+          roughness={0.84}
+          metalness={0.03}
+          emissive="#d9eaff"
+          emissiveIntensity={0.1}
         />
       </mesh>
 
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[1.95, 0.012, 10, isMobile ? 80 : 132]} />
-        <meshStandardMaterial color="#d9ecff" emissive="#b8ddff" emissiveIntensity={0.32} transparent opacity={0.5} />
+        <torusGeometry args={[1.95, 0.013, 10, isMobile ? 80 : 132]} />
+        <meshStandardMaterial color="#e8f4ff" emissive="#cfe9ff" emissiveIntensity={0.48} transparent opacity={0.62} />
+      </mesh>
+
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[2.03, 0.008, 8, isMobile ? 72 : 116]} />
+        <meshBasicMaterial color="#cfe8ff" transparent opacity={0.32} />
       </mesh>
 
       <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
         <mesh>
           <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#f6f8fb" emissive="#ebf4ff" emissiveIntensity={0.26} transparent opacity={0.5} />
+          <meshStandardMaterial color="#ffffff" emissive="#f0f7ff" emissiveIntensity={0.34} transparent opacity={0.62} />
         </mesh>
       </group>
 
