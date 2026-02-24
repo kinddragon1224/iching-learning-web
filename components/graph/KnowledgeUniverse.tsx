@@ -74,25 +74,46 @@ function hashRand(seed: number) {
 }
 
 function buildNodes(): Node[] {
+  const placed: [number, number, number][] = [];
+  const minDistance = 1.15; // 밀도 완화 핵심
+
   return HEXAGRAMS.map((h) => {
-    const r1 = hashRand(h.id * 3.1);
-    const r2 = hashRand(h.id * 7.7);
-    const r3 = hashRand(h.id * 11.3);
+    let chosen: [number, number, number] = [0, 0, 0];
 
-    const radius = 2.4 + r1 * 4.2;
-    const theta = r2 * Math.PI * 2;
-    const phi = Math.acos(2 * r3 - 1);
+    for (let attempt = 0; attempt < 36; attempt++) {
+      const r1 = hashRand(h.id * 3.1 + attempt * 1.13);
+      const r2 = hashRand(h.id * 7.7 + attempt * 1.97);
+      const r3 = hashRand(h.id * 11.3 + attempt * 2.31);
 
-    const x = radius * Math.sin(phi) * Math.cos(theta);
-    const y = radius * Math.cos(phi) * 0.85;
-    const z = radius * Math.sin(phi) * Math.sin(theta);
+      const radius = 3.4 + r1 * 5.8; // 전체 반지름 확장
+      const theta = r2 * Math.PI * 2;
+      const phi = Math.acos(2 * r3 - 1);
+
+      const x = radius * Math.sin(phi) * Math.cos(theta);
+      const y = radius * Math.cos(phi) * 0.78;
+      const z = radius * Math.sin(phi) * Math.sin(theta);
+
+      const ok = placed.every(([px, py, pz]) => {
+        const dx = x - px;
+        const dy = y - py;
+        const dz = z - pz;
+        return Math.sqrt(dx * dx + dy * dy + dz * dz) >= minDistance;
+      });
+
+      if (ok || attempt === 35) {
+        chosen = [x, y, z];
+        break;
+      }
+    }
+
+    placed.push(chosen);
 
     return {
       id: h.id,
       label: h.nameKo,
       summary: h.summary,
       keywords: h.keywords,
-      position: [x, y, z],
+      position: chosen,
       size: 0.09 + hashRand(h.id * 17.2) * 0.11,
     };
   });
@@ -340,6 +361,7 @@ function NodeCloud({
   selectedId,
   hoverId,
   isMobile,
+  lowDensity,
   showSelectedLabel,
   getPrimaryAxis,
   onHover,
@@ -349,6 +371,7 @@ function NodeCloud({
   selectedId: number;
   hoverId: number | null;
   isMobile: boolean;
+  lowDensity: boolean;
   showSelectedLabel: boolean;
   getPrimaryAxis: (id: number) => AxisKey;
   onHover: (id: number | null) => void;
@@ -370,6 +393,7 @@ function NodeCloud({
         const axisColor = AXIS_COLORS[axis];
         const bodyTint = tintWithAxis(NODE_BASE_COLOR, axisColor, 0.07);
         const showLabel = showSelectedLabel && selected;
+        const scale = lowDensity ? 0.75 : 1;
 
         return (
           <group key={n.id} position={n.position}>
@@ -387,7 +411,7 @@ function NodeCloud({
                 onHover(null);
               }}
             >
-              <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1), 18, 18]} />
+              <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1) * scale, 18, 18]} />
               <meshStandardMaterial
                 color={bodyTint}
                 emissive={NODE_BASE_EMISSIVE}
@@ -399,7 +423,7 @@ function NodeCloud({
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.024 : 0.011, 10, 48]} />
-              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : 0.9} />
+              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : lowDensity ? 0.56 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : lowDensity ? 0.48 : 0.9} />
             </mesh>
 
             {selected && (
@@ -503,6 +527,8 @@ export function KnowledgeUniverse() {
   const [saveOpen, setSaveOpen] = useState(false);
   const [saveToast, setSaveToast] = useState("");
   const [todayCount, setTodayCount] = useState(0);
+  const [lowDensity, setLowDensity] = useState(false);
+  const [revealCount, setRevealCount] = useState(16);
 
   useEffect(() => {
     const mql = window.matchMedia("(max-width: 768px)");
@@ -522,11 +548,40 @@ export function KnowledgeUniverse() {
     setTodayCount(count);
   }, [selectedId, panelOpen, saveToast]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    setLowDensity(localStorage.getItem("gwaedo_low_density_v1") === "1");
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    localStorage.setItem("gwaedo_low_density_v1", lowDensity ? "1" : "0");
+  }, [lowDensity]);
+
   const nodes = useMemo(() => buildNodes(), []);
-  const visibleNodes = useMemo(
-    () => (viewMode === "all" ? nodes : nodes.filter((n) => FEATURED_IDS.includes(n.id))),
-    [nodes, viewMode]
-  );
+  const visibleNodes = useMemo(() => {
+    const featured = nodes.filter((n) => FEATURED_IDS.includes(n.id));
+    if (viewMode !== "all") return featured;
+    return nodes.slice(0, Math.min(revealCount, nodes.length));
+  }, [nodes, viewMode, revealCount]);
+
+  useEffect(() => {
+    if (lowDensity && viewMode === "all") {
+      setViewMode("featured");
+      return;
+    }
+
+    if (viewMode !== "all") {
+      setRevealCount(16);
+      return;
+    }
+
+    setRevealCount(16);
+    const timer = setInterval(() => {
+      setRevealCount((prev) => (prev >= 64 ? prev : prev + 16));
+    }, 220);
+    return () => clearInterval(timer);
+  }, [viewMode, lowDensity]);
 
   const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
 
@@ -585,7 +640,7 @@ export function KnowledgeUniverse() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <Canvas camera={{ position: [0, 0, isMobile ? 14.5 : 13], fov: isMobile ? 56 : 50 }}>
+      <Canvas camera={{ position: [0, 0, isMobile ? 16.2 : 14.2], fov: isMobile ? 58 : 52 }}>
         <fog attach="fog" args={["#05060a", 8, 28]} />
         <ambientLight intensity={0.52} />
         <pointLight position={[8, 8, 8]} intensity={1.1} color="#dce8ff" />
@@ -600,6 +655,7 @@ export function KnowledgeUniverse() {
           selectedId={selectedId}
           hoverId={hoverId}
           isMobile={isMobile}
+          lowDensity={lowDensity}
           showSelectedLabel={!isMobile || panelOpen}
           getPrimaryAxis={getPrimaryAxis}
           onHover={setHoverId}
@@ -651,6 +707,12 @@ export function KnowledgeUniverse() {
             </div>
 
             <div className="flex items-center gap-2">
+              <button
+                onClick={() => setLowDensity((v) => !v)}
+                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
+              >
+                저밀도 {lowDensity ? "ON" : "OFF"}
+              </button>
               <Link href="/saved" className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5">
                 오늘 저장 {todayCount}/4
               </Link>
