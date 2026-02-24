@@ -11,6 +11,7 @@ import { BRAND } from "@/constants/brand";
 import { buildHexagramSearchIndex, searchHexagrams, type HexagramSearchEntry } from "@/search/build_index";
 import { getCardForHexagram, toPublicAsset } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
+import { AXIS_LABEL, todayKST, upsertAction, loadActions, type Axis } from "@/lib/action-loop";
 
 type ViewMode = "featured" | "all";
 type AxisKey = "money" | "work" | "relation" | "time";
@@ -475,6 +476,9 @@ export function KnowledgeUniverse() {
   const [isMobile, setIsMobile] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchInput, setSearchInput] = useState("");
+  const [saveOpen, setSaveOpen] = useState(false);
+  const [saveToast, setSaveToast] = useState("");
+  const [todayCount, setTodayCount] = useState(0);
 
   useEffect(() => {
     const mql = window.matchMedia("(max-width: 768px)");
@@ -487,6 +491,12 @@ export function KnowledgeUniverse() {
     mql.addEventListener("change", apply);
     return () => mql.removeEventListener("change", apply);
   }, []);
+
+  useEffect(() => {
+    const today = todayKST();
+    const count = loadActions().filter((r) => r.date === today).length;
+    setTodayCount(count);
+  }, [selectedId, panelOpen, saveToast]);
 
   const nodes = useMemo(() => buildNodes(), []);
   const visibleNodes = useMemo(
@@ -511,6 +521,27 @@ export function KnowledgeUniverse() {
     setPanelOpen(true);
     setSearchOpen(false);
     setSearchInput("");
+  };
+
+  const saveTodayAction = (questionAxis: Axis, answerState: "done" | "defer") => {
+    const title = selectedCard.full_name
+      ? `#${selected.id} ${selectedCard.full_name} (${selectedCard.short_name})`
+      : `#${selected.id} ${selectedCard.short_name}`;
+
+    const out = upsertAction({
+      date: todayKST(),
+      hexagram_id: selected.id,
+      hexagram_title: title,
+      axis: getPrimaryAxis(selected.id),
+      question_axis: questionAxis,
+      question_text: axisQuestions[questionAxis],
+      answer_state: answerState,
+      note: "",
+    });
+
+    setSaveOpen(false);
+    setSaveToast(out.replaced ? "수정 저장됨" : "저장됨");
+    setTimeout(() => setSaveToast(""), 1300);
   };
 
   return (
@@ -571,14 +602,19 @@ export function KnowledgeUniverse() {
               </button>
             </div>
 
-            <button
-              onClick={() => setSearchOpen(true)}
-              className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
-              aria-label="괘 검색"
-              title="괘 검색"
-            >
-              🔍 검색
-            </button>
+            <div className="flex items-center gap-2">
+              <Link href="/saved" className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5">
+                오늘 저장 {todayCount}/4
+              </Link>
+              <button
+                onClick={() => setSearchOpen(true)}
+                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
+                aria-label="괘 검색"
+                title="괘 검색"
+              >
+                🔍 검색
+              </button>
+            </div>
           </div>
         </div>
 
@@ -635,6 +671,9 @@ export function KnowledgeUniverse() {
                 </span>
                 <p className="mt-1 text-xs text-white/75">{selectedCard.one_liner}</p>
                 <div className="mt-2 flex gap-2">
+                  <button onClick={() => setSaveOpen(true)} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">
+                    오늘 실행 저장
+                  </button>
                   <Link href={`/hexagram/${selected.id}`} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">
                     상세 보기
                   </Link>
@@ -747,6 +786,36 @@ export function KnowledgeUniverse() {
                 })}
               </div>
             </div>
+          </div>
+        )}
+
+        {saveOpen && (
+          <div className="pointer-events-auto absolute inset-0 z-50 bg-black/50">
+            <div className={`absolute border border-white/25 bg-black/85 backdrop-blur-md ${isMobile ? "left-0 right-0 bottom-0 rounded-t-2xl p-4" : "left-1/2 top-24 w-[480px] -translate-x-1/2 rounded-2xl p-4"}`}>
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-sm font-semibold text-white">어느 질문을 저장할까?</p>
+                <button className="text-xs text-white/80 underline" onClick={() => setSaveOpen(false)}>닫기</button>
+              </div>
+
+              {(Object.keys(axisQuestions) as Axis[]).map((axis) => (
+                <div key={axis} className="mb-2 rounded-lg border border-white/20 bg-white/5 p-3">
+                  <p className="text-xs text-white/70">[{AXIS_LABEL[axis]}]</p>
+                  <p className="mt-1 text-sm text-white/90">{axisQuestions[axis]}</p>
+                  <div className="mt-2 flex gap-2">
+                    <button onClick={() => saveTodayAction(axis, "done")} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">했다</button>
+                    <button onClick={() => saveTodayAction(axis, "defer")} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">내일로</button>
+                  </div>
+                </div>
+              ))}
+
+              <Link href="/saved" className="mt-2 inline-block text-xs underline text-white/80">저장 목록 보기</Link>
+            </div>
+          </div>
+        )}
+
+        {saveToast && (
+          <div className="pointer-events-none absolute left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 rounded-lg border border-white/25 bg-black/70 px-3 py-2 text-xs text-white">
+            {saveToast}
           </div>
         )}
 
