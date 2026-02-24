@@ -105,14 +105,14 @@ function makeSubtleNoiseTexture() {
   c.height = size;
   const ctx = c.getContext("2d")!;
 
-  ctx.fillStyle = "#f2f4f6";
+  ctx.fillStyle = "#f5e8c8";
   ctx.fillRect(0, 0, size, size);
 
   for (let i = 0; i < size * 10; i++) {
     const x = Math.floor(Math.random() * size);
     const y = Math.floor(Math.random() * size);
-    const a = 0.025 + Math.random() * 0.03;
-    ctx.fillStyle = `rgba(20,24,30,${a})`;
+    const a = 0.018 + Math.random() * 0.022;
+    ctx.fillStyle = `rgba(36,28,10,${a})`;
     ctx.fillRect(x, y, 1, 1);
   }
 
@@ -248,12 +248,12 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#f6e3b4"
+          color="#f0c46a"
           map={noiseTex}
-          roughness={0.8}
-          metalness={0.03}
-          emissive="#ffd98a"
-          emissiveIntensity={0.18}
+          roughness={0.78}
+          metalness={0.04}
+          emissive="#ffcf6d"
+          emissiveIntensity={0.24}
         />
       </mesh>
 
