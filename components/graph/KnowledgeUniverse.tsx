@@ -131,17 +131,17 @@ function BaguaRing({ radius, isMobile }: { radius: number; isMobile: boolean }) 
               return v === 1 ? (
                 <mesh key={li} position={[0, y, 0]}>
                   <planeGeometry args={[0.16 * iconScale, 0.014 * iconScale]} />
-                  <meshBasicMaterial color="#d8dde2" transparent opacity={0.42} />
+                  <meshBasicMaterial color="#e9eef3" transparent opacity={0.5} />
                 </mesh>
               ) : (
                 <group key={li} position={[0, y, 0]}>
                   <mesh position={[-0.048 * iconScale, 0, 0]}>
                     <planeGeometry args={[0.055 * iconScale, 0.014 * iconScale]} />
-                    <meshBasicMaterial color="#d8dde2" transparent opacity={0.42} />
+                    <meshBasicMaterial color="#e9eef3" transparent opacity={0.5} />
                   </mesh>
                   <mesh position={[0.048 * iconScale, 0, 0]}>
                     <planeGeometry args={[0.055 * iconScale, 0.014 * iconScale]} />
-                    <meshBasicMaterial color="#d8dde2" transparent opacity={0.42} />
+                    <meshBasicMaterial color="#e9eef3" transparent opacity={0.5} />
                   </mesh>
                 </group>
               );
@@ -231,43 +231,48 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#f8f3e6"
+          color="#fcfaf2"
           map={noiseTex}
-          roughness={0.84}
-          metalness={0.03}
-          emissive="#ffe3a8"
-          emissiveIntensity={0.12}
+          roughness={0.82}
+          metalness={0.02}
+          emissive="#fff0c8"
+          emissiveIntensity={0.11}
         />
       </mesh>
 
+      <mesh>
+        <sphereGeometry args={[1.63, seg, seg]} />
+        <meshStandardMaterial color="#fff9ea" emissive="#ffe7ad" emissiveIntensity={0.08} transparent opacity={0.08} />
+      </mesh>
+
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[1.95, 0.013, 10, isMobile ? 80 : 132]} />
-        <meshStandardMaterial color="#ffe8b0" emissive="#ffd978" emissiveIntensity={0.52} transparent opacity={0.64} />
+        <torusGeometry args={[1.95, 0.011, 10, isMobile ? 80 : 132]} />
+        <meshStandardMaterial color="#ffe9b8" emissive="#ffdd86" emissiveIntensity={0.46} transparent opacity={0.52} />
       </mesh>
 
       <mesh rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[2.03, 0.008, 8, isMobile ? 72 : 116]} />
-        <meshBasicMaterial color="#ffd98f" transparent opacity={0.34} />
+        <torusGeometry args={[2.03, 0.005, 8, isMobile ? 72 : 116]} />
+        <meshBasicMaterial color="#ffe1a3" transparent opacity={0.14} />
       </mesh>
 
       <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
         <mesh>
-          <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#fff8e6" emissive="#ffe8ad" emissiveIntensity={0.36} transparent opacity={0.62} />
+          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
+          <meshStandardMaterial color="#fffaf0" emissive="#ffecb8" emissiveIntensity={0.44} transparent opacity={0.68} />
         </mesh>
       </group>
 
       <group ref={ribbonBRef} rotation={[Math.PI / 2.15, Math.PI + 0.18, 0]}>
         <mesh>
-          <torusKnotGeometry args={[1.95, 0.018, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#2a2418" emissive="#8f6f33" emissiveIntensity={0.22} transparent opacity={0.5} />
+          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
+          <meshStandardMaterial color="#231f16" emissive="#a88444" emissiveIntensity={0.28} transparent opacity={0.56} />
         </mesh>
       </group>
 
       <group rotation={[Math.PI / 2.45, 0.3, 0.12]}>
         <mesh>
-          <torusGeometry args={[1.84, 0.008, 8, isMobile ? 96 : 144]} />
-          <meshBasicMaterial color="#d7dde4" transparent opacity={0.25} />
+          <torusGeometry args={[1.84, 0.006, 8, isMobile ? 96 : 144]} />
+          <meshBasicMaterial color="#e4e9ef" transparent opacity={0.18} />
         </mesh>
         <BaguaRing radius={1.84} isMobile={isMobile} />
       </group>
