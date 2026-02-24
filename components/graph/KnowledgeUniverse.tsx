@@ -7,6 +7,7 @@ import { Html, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
+import { buildHexagramSearchIndex, searchHexagrams, type HexagramSearchEntry } from "@/search/build_index";
 
 type LabelMode = "auto" | "always" | "none";
 type ViewMode = "featured" | "all";
@@ -331,6 +332,8 @@ export function KnowledgeUniverse() {
   const [labelMode, setLabelMode] = useState<LabelMode>("auto");
   const [showGuide, setShowGuide] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     const mql = window.matchMedia("(max-width: 768px)");
@@ -355,6 +358,17 @@ export function KnowledgeUniverse() {
   const nextHex = pickNextRecommendation(selected.id);
   const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2, time: 2 };
   const axisQuestions = build4AxisQuestions(selected.id, axisStrengths);
+
+  const searchIndex = useMemo(() => buildHexagramSearchIndex(), []);
+  const searchResults = useMemo(() => searchHexagrams(searchIndex, searchInput, 5), [searchIndex, searchInput]);
+
+  const jumpToHexagram = (id: number) => {
+    setSelectedId(id);
+    setViewMode("all");
+    setPanelOpen(true);
+    setSearchOpen(false);
+    setSearchInput("");
+  };
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -414,14 +428,24 @@ export function KnowledgeUniverse() {
               </button>
             </div>
 
-            <button
-              onClick={() =>
-                setLabelMode((m) => (m === "auto" ? "always" : m === "always" ? "none" : "auto"))
-              }
-              className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
-            >
-              라벨: {labelMode === "auto" ? "자동" : labelMode === "always" ? "항상" : "끔"}
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() =>
+                  setLabelMode((m) => (m === "auto" ? "always" : m === "always" ? "none" : "auto"))
+                }
+                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
+              >
+                라벨: {labelMode === "auto" ? "자동" : labelMode === "always" ? "항상" : "끔"}
+              </button>
+              <button
+                onClick={() => setSearchOpen(true)}
+                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
+                aria-label="괘 검색"
+                title="괘 검색"
+              >
+                🔍 검색
+              </button>
+            </div>
           </div>
         </div>
 
@@ -516,6 +540,44 @@ export function KnowledgeUniverse() {
               >
                 닫기
               </button>
+            </div>
+          </div>
+        )}
+
+        {searchOpen && (
+          <div className="pointer-events-auto absolute inset-0 z-50 bg-black/50">
+            <div
+              className={`absolute border border-white/25 bg-black/85 backdrop-blur-md ${
+                isMobile
+                  ? "left-0 right-0 bottom-0 rounded-t-2xl p-4"
+                  : "left-1/2 top-20 w-[440px] -translate-x-1/2 rounded-2xl p-4"
+              }`}
+            >
+              <div className="mb-3 flex items-center justify-between">
+                <p className="text-sm font-semibold text-white">괘 검색</p>
+                <button className="text-xs text-white/80 underline" onClick={() => setSearchOpen(false)}>닫기</button>
+              </div>
+              <input
+                autoFocus
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
+                placeholder="번호, 괘 이름으로 검색 (예: 25, 무망)"
+                className="w-full rounded-lg border border-white/25 bg-black/50 px-3 py-2 text-sm text-white outline-none"
+              />
+              <div className="mt-3 space-y-2">
+                {searchResults.length === 0 && (
+                  <p className="text-xs text-white/60">검색 결과가 없어. 번호/괘이름/별칭으로 다시 시도해줘.</p>
+                )}
+                {searchResults.map((r: HexagramSearchEntry) => (
+                  <button
+                    key={r.id}
+                    onClick={() => jumpToHexagram(r.id)}
+                    className="block w-full rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-left text-sm text-white/90"
+                  >
+                    {r.fullNameKo ? `#${r.id} ${r.fullNameKo} (${r.nameKo})` : `#${r.id} ${r.nameKo}`}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         )}
