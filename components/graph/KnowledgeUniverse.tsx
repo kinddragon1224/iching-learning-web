@@ -81,85 +81,107 @@ function buildNodes(): Node[] {
   });
 }
 
-function makeTaegukTexture() {
-  const size = 1024;
+function makeSubtleNoiseTexture() {
+  const size = 512;
   const c = document.createElement("canvas");
   c.width = size;
   c.height = size;
   const ctx = c.getContext("2d")!;
 
-  ctx.fillStyle = "#0f1014";
+  ctx.fillStyle = "#f2f4f6";
   ctx.fillRect(0, 0, size, size);
 
-  const cx = size / 2;
-  const cy = size / 2;
-  const r = size * 0.38;
+  for (let i = 0; i < size * 10; i++) {
+    const x = Math.floor(Math.random() * size);
+    const y = Math.floor(Math.random() * size);
+    const a = 0.025 + Math.random() * 0.03;
+    ctx.fillStyle = `rgba(20,24,30,${a})`;
+    ctx.fillRect(x, y, 1, 1);
+  }
 
-  ctx.beginPath();
-  ctx.arc(cx, cy, r, 0, Math.PI * 2);
-  ctx.fillStyle = "#ffffff";
-  ctx.fill();
-
-  ctx.beginPath();
-  ctx.arc(cx, cy + r / 2, r / 2, 0, Math.PI * 2);
-  ctx.fillStyle = "#0f1014";
-  ctx.fill();
-
-  ctx.beginPath();
-  ctx.arc(cx, cy - r / 2, r / 2, 0, Math.PI * 2);
-  ctx.fillStyle = "#ffffff";
-  ctx.fill();
-
-  ctx.beginPath();
-  ctx.arc(cx, cy + r / 2, r / 8, 0, Math.PI * 2);
-  ctx.fillStyle = "#ffffff";
-  ctx.fill();
-
-  ctx.beginPath();
-  ctx.arc(cx, cy - r / 2, r / 8, 0, Math.PI * 2);
-  ctx.fillStyle = "#0f1014";
-  ctx.fill();
-
-  return new THREE.CanvasTexture(c);
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  t.repeat.set(2, 2);
+  return t;
 }
 
-function CoreTaeguk() {
+function CoreTaeguk({ isMobile }: { isMobile: boolean }) {
   const ref = useRef<THREE.Group>(null);
-  const ringRef = useRef<THREE.Group>(null);
-  const tex = useMemo(() => makeTaegukTexture(), []);
+  const haloRef = useRef<THREE.Mesh>(null);
+  const ribbonARef = useRef<THREE.Mesh>(null);
+  const ribbonBRef = useRef<THREE.Mesh>(null);
+  const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
+
+  const seg = isMobile ? 56 : 88;
 
   useFrame((state, delta) => {
     if (!ref.current) return;
-    ref.current.rotation.y += delta * 0.12;
-    ref.current.rotation.z = Math.sin(state.clock.elapsedTime * 0.16) * 0.06;
-    if (ringRef.current) {
-      ringRef.current.rotation.y -= delta * 0.22;
-      ringRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.22) * 0.2;
+    const t = state.clock.elapsedTime;
+
+    ref.current.rotation.y += delta * 0.06;
+    ref.current.rotation.z = Math.sin(t * 0.12) * 0.03;
+
+    if (haloRef.current) {
+      const m = haloRef.current.material as THREE.MeshStandardMaterial;
+      m.emissiveIntensity = 0.42 + Math.sin(t * 0.7) * 0.08; // 조절: 헤일로 밝기 호흡
+    }
+
+    if (ribbonARef.current) {
+      ribbonARef.current.rotation.y += delta * 0.09; // 조절: 리본 속도
+      ribbonARef.current.rotation.x = Math.sin(t * 0.21) * 0.16;
+    }
+    if (ribbonBRef.current) {
+      ribbonBRef.current.rotation.y -= delta * 0.09; // 조절: 리본 속도
+      ribbonBRef.current.rotation.x = Math.sin(t * 0.21 + Math.PI) * 0.16;
     }
   });
 
   return (
     <group ref={ref}>
       <mesh>
-        <sphereGeometry args={[1.6, 96, 96]} />
-        <meshStandardMaterial map={tex} emissive="#ffffff" emissiveIntensity={0.2} roughness={0.38} metalness={0.12} />
+        <sphereGeometry args={[1.58, seg, seg]} />
+        <meshStandardMaterial
+          color="#eef1f3"
+          map={noiseTex}
+          roughness={0.86}
+          metalness={0.03}
+          emissive="#d7e1ea"
+          emissiveIntensity={0.06}
+        />
       </mesh>
 
-      <mesh>
-        <sphereGeometry args={[1.72, 64, 64]} />
-        <meshStandardMaterial color="#b9d8ff" emissive="#9ecbff" emissiveIntensity={0.22} transparent opacity={0.08} />
+      <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[1.95, 0.015, 12, isMobile ? 96 : 160]} />
+        <meshStandardMaterial
+          color="#cfe7ff"
+          emissive="#a8d6ff"
+          emissiveIntensity={0.42}
+          transparent
+          opacity={0.6}
+        />
       </mesh>
 
-      <group ref={ringRef}>
-        <mesh rotation={[Math.PI / 2.2, 0.2, 0]}>
-          <torusGeometry args={[2.2, 0.026, 16, 180]} />
-          <meshStandardMaterial color="#9ad8ff" emissive="#7ac7ff" emissiveIntensity={0.85} transparent opacity={0.62} />
-        </mesh>
-        <mesh rotation={[Math.PI / 2.05, -0.3, 0.4]}>
-          <torusGeometry args={[2.48, 0.014, 12, 160]} />
-          <meshStandardMaterial color="#d7f3ff" emissive="#bfe7ff" emissiveIntensity={0.6} transparent opacity={0.38} />
-        </mesh>
-      </group>
+      <mesh ref={ribbonARef} rotation={[Math.PI / 2.1, 0, 0]}>
+        <torusGeometry args={[2.18, 0.022, 10, isMobile ? 96 : 180]} />
+        <meshStandardMaterial
+          color="#ffffff"
+          emissive="#e9f5ff"
+          emissiveIntensity={0.3}
+          transparent
+          opacity={0.48}
+        />
+      </mesh>
+
+      <mesh ref={ribbonBRef} rotation={[Math.PI / 2.1, Math.PI, 0]}>
+        <torusGeometry args={[2.18, 0.022, 10, isMobile ? 96 : 180]} />
+        <meshStandardMaterial
+          color="#111418"
+          emissive="#5f7085"
+          emissiveIntensity={0.28}
+          transparent
+          opacity={0.44}
+        />
+      </mesh>
     </group>
   );
 }
@@ -405,7 +427,7 @@ export function KnowledgeUniverse() {
 
         <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
-        <CoreTaeguk />
+        <CoreTaeguk isMobile={isMobile} />
         <AxisOrbits strengths={axisStrengths} />
         <NodeCloud
           nodes={visibleNodes}
