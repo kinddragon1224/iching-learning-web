@@ -210,7 +210,9 @@ function NodeCloud({
       {nodes.map((n) => {
         const selected = n.id === selectedId;
         const hovered = n.id === hoverId;
-        const showLabel = (showSelectedLabel && selected) || labelMode === "always" || (labelMode === "auto" && hovered);
+        const showLabel = isMobile
+          ? showSelectedLabel && selected
+          : (showSelectedLabel && selected) || labelMode === "always" || (labelMode === "auto" && hovered);
 
         return (
           <group key={n.id} position={n.position}>
@@ -424,7 +426,10 @@ export function KnowledgeUniverse() {
         {(!isMobile || !panelOpen) && (
           <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 bottom-16" : "right-6 top-24"}`}>
             <button
-              onClick={() => setPanelOpen((v) => !v)}
+              onClick={() => {
+                setPanelOpen((v) => !v);
+                if (isMobile) setHoverId(null);
+              }}
               className="rounded-md border border-white/30 bg-black/45 px-4 py-2 text-sm text-white"
             >
               {panelOpen ? "닫기" : "4축 보기"}
@@ -441,7 +446,10 @@ export function KnowledgeUniverse() {
             {isMobile && (
               <div className="mb-2 flex justify-end">
                 <button
-                  onClick={() => setPanelOpen(false)}
+                  onClick={() => {
+                    setPanelOpen(false);
+                    setHoverId(null);
+                  }}
                   className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs"
                 >
                   닫기
