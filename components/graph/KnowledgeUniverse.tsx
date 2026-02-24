@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
@@ -325,6 +325,20 @@ export function KnowledgeUniverse() {
   const [viewMode, setViewMode] = useState<ViewMode>("featured");
   const [labelMode, setLabelMode] = useState<LabelMode>("auto");
   const [showGuide, setShowGuide] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 768px)");
+    const apply = () => {
+      const mobile = mql.matches;
+      setIsMobile(mobile);
+      setPanelOpen(mobile ? false : true);
+      setLabelMode(mobile ? "none" : "auto");
+    };
+    apply();
+    mql.addEventListener("change", apply);
+    return () => mql.removeEventListener("change", apply);
+  }, []);
 
   const nodes = useMemo(() => buildNodes(), []);
   const visibleNodes = useMemo(
@@ -339,13 +353,13 @@ export function KnowledgeUniverse() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <Canvas camera={{ position: [0, 0, 13], fov: 50 }}>
+      <Canvas camera={{ position: [0, 0, isMobile ? 14.5 : 13], fov: isMobile ? 56 : 50 }}>
         <fog attach="fog" args={["#05060a", 8, 28]} />
         <ambientLight intensity={0.52} />
         <pointLight position={[8, 8, 8]} intensity={1.1} color="#dce8ff" />
         <pointLight position={[-9, -6, 6]} intensity={0.55} color="#59bbff" />
 
-        <Stars radius={80} depth={42} count={680} factor={1.8} fade speed={0.18} />
+        <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
         <CoreTaeguk />
         <AxisOrbits strengths={axisStrengths} />
@@ -362,28 +376,28 @@ export function KnowledgeUniverse() {
       </Canvas>
 
       <div className="absolute inset-0 pointer-events-none">
-        <div className="pointer-events-auto absolute top-6 left-6 right-6 flex items-start justify-between text-[12px] tracking-wide text-white/85">
+        <div className="pointer-events-auto absolute top-4 left-4 right-4 flex items-start justify-between text-[12px] tracking-wide text-white/85 md:top-6 md:left-6 md:right-6">
           <div>
-            <p className="text-xl font-semibold leading-none">세개의 행성</p>
-            <p className="mt-2 text-[11px] text-white/55">I CHING UNIVERSE · 4축 해석</p>
+            <p className="text-lg font-semibold leading-none md:text-xl">세개의 행성</p>
+            <p className="mt-1 text-[10px] text-white/55 md:mt-2 md:text-[11px]">I CHING UNIVERSE · 4축 해석</p>
           </div>
           <div className="flex flex-col items-end gap-2 text-[12px]">
             <div className="flex rounded-lg border border-white/30 bg-black/45 p-1">
               <button
                 onClick={() => setViewMode("featured")}
-                className={`rounded px-3 py-1.5 text-sm ${
+                className={`rounded px-3 py-2 text-sm md:px-3 md:py-1.5 ${
                   viewMode === "featured" ? "bg-white/20 text-white" : "text-white/75"
                 }`}
               >
-                대표 보기
+                대표
               </button>
               <button
                 onClick={() => setViewMode("all")}
-                className={`rounded px-3 py-1.5 text-sm ${
+                className={`rounded px-3 py-2 text-sm md:px-3 md:py-1.5 ${
                   viewMode === "all" ? "bg-white/20 text-white" : "text-white/75"
                 }`}
               >
-                전체 64
+                64
               </button>
             </div>
 
@@ -391,24 +405,28 @@ export function KnowledgeUniverse() {
               onClick={() =>
                 setLabelMode((m) => (m === "auto" ? "always" : m === "always" ? "none" : "auto"))
               }
-              className="rounded border border-white/30 bg-black/45 px-3 py-1.5 text-xs text-white"
+              className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
             >
               라벨: {labelMode}
             </button>
           </div>
         </div>
 
-        <div className="pointer-events-auto absolute right-6 top-24">
+        <div className={`pointer-events-auto absolute ${isMobile ? "right-4 bottom-16" : "right-6 top-24"}`}>
           <button
             onClick={() => setPanelOpen((v) => !v)}
-            className="rounded-md border border-white/30 bg-black/35 px-3 py-1.5 text-xs text-white"
+            className="rounded-md border border-white/30 bg-black/45 px-4 py-2 text-sm text-white"
           >
-            {panelOpen ? "CLOSE" : "DATA"}
+            {panelOpen ? "닫기" : "4축 보기"}
           </button>
         </div>
 
         {panelOpen && (
-          <aside className="pointer-events-auto absolute right-6 top-36 w-[380px] rounded-2xl border border-white/20 bg-black/45 p-4 text-sm text-white/90 backdrop-blur-sm">
+          <aside className={`pointer-events-auto absolute border border-white/20 bg-black/55 text-sm text-white/90 backdrop-blur-sm ${
+            isMobile
+              ? "left-3 right-3 bottom-3 top-auto max-h-[52vh] overflow-y-auto rounded-2xl p-4"
+              : "right-6 top-36 w-[380px] rounded-2xl p-4"
+          }`}>
             <p className="text-xs text-white/60">선택 노드</p>
             <h3 className="mt-1 text-xl font-semibold">#{selected.id} {selected.label}</h3>
             <p className="mt-2 text-sm text-white/70 line-clamp-3">{selected.summary}</p>
@@ -438,9 +456,18 @@ export function KnowledgeUniverse() {
               <ul className="mt-2 space-y-2 text-xs text-white/85">
                 <li><b>[돈]</b> {axisQuestions.money}</li>
                 <li><b>[일]</b> {axisQuestions.work}</li>
-                <li><b>[관계]</b> {axisQuestions.relationship}</li>
-                <li><b>[시간]</b> {axisQuestions.time}</li>
+                {!isMobile && <li><b>[관계]</b> {axisQuestions.relationship}</li>}
+                {!isMobile && <li><b>[시간]</b> {axisQuestions.time}</li>}
               </ul>
+              {isMobile && (
+                <details className="mt-2 text-xs text-white/75">
+                  <summary>관계/시간 질문 더보기</summary>
+                  <div className="mt-2 space-y-2">
+                    <p><b>[관계]</b> {axisQuestions.relationship}</p>
+                    <p><b>[시간]</b> {axisQuestions.time}</p>
+                  </div>
+                </details>
+              )}
             </div>
 
             <Link href={`/hexagrams/${selected.id}`} className="mt-4 inline-block text-xs underline text-white/85">
@@ -450,13 +477,15 @@ export function KnowledgeUniverse() {
         )}
 
         {showGuide && (
-          <div className="pointer-events-auto absolute bottom-20 left-1/2 -translate-x-1/2 rounded-xl border border-white/25 bg-black/55 px-4 py-2 text-xs text-white/90 backdrop-blur-sm">
+          <div className={`pointer-events-auto absolute rounded-xl border border-white/25 bg-black/55 px-4 py-2 text-xs text-white/90 backdrop-blur-sm ${
+            isMobile ? "left-3 right-3 top-20" : "bottom-20 left-1/2 -translate-x-1/2"
+          }`}>
             처음엔 <b>대표 보기</b>, 익숙해지면 <b>전체 64</b>로 전환해 탐색해봐.
             <button onClick={() => setShowGuide(false)} className="ml-3 text-white/70 underline">닫기</button>
           </div>
         )}
 
-        <div className="pointer-events-none absolute bottom-6 left-6 right-6 flex items-end justify-between text-[11px] text-white/55">
+        <div className="pointer-events-none absolute bottom-4 left-4 right-4 hidden items-end justify-between text-[11px] text-white/55 md:flex md:bottom-6 md:left-6 md:right-6">
           <span>ABOUT</span>
           <span>{hoverId ? "HOVER MODE" : "ORBIT MODE"}</span>
           <span>THREE PLANETS</span>
