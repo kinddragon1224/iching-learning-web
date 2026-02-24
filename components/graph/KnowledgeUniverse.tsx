@@ -326,6 +326,7 @@ export function KnowledgeUniverse() {
   const [labelMode, setLabelMode] = useState<LabelMode>("auto");
   const [showGuide, setShowGuide] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [mobilePanelExpanded, setMobilePanelExpanded] = useState(false);
 
   useEffect(() => {
     const mql = window.matchMedia("(max-width: 768px)");
@@ -334,6 +335,7 @@ export function KnowledgeUniverse() {
       setIsMobile(mobile);
       setPanelOpen(mobile ? false : true);
       setLabelMode(mobile ? "none" : "auto");
+      setMobilePanelExpanded(false);
     };
     apply();
     mql.addEventListener("change", apply);
@@ -424,12 +426,26 @@ export function KnowledgeUniverse() {
         {panelOpen && (
           <aside className={`pointer-events-auto absolute border border-white/20 bg-black/55 text-sm text-white/90 backdrop-blur-sm ${
             isMobile
-              ? "left-3 right-3 bottom-3 top-auto max-h-[52vh] overflow-y-auto rounded-2xl p-4"
+              ? mobilePanelExpanded
+                ? "left-3 right-3 bottom-3 top-auto max-h-[52vh] overflow-y-auto rounded-2xl p-4"
+                : "left-3 right-3 bottom-3 top-auto max-h-[24vh] overflow-y-auto rounded-2xl p-3"
               : "right-6 top-36 w-[380px] rounded-2xl p-4"
           }`}>
             <p className="text-xs text-white/60">선택 노드</p>
             <h3 className="mt-1 text-xl font-semibold">#{selected.id} {selected.label}</h3>
             <p className="mt-2 text-sm text-white/70 line-clamp-3">{selected.summary}</p>
+
+            {isMobile && (
+              <div className="mt-2 flex items-center gap-2 text-[11px]">
+                <button
+                  onClick={() => setMobilePanelExpanded((v) => !v)}
+                  className="rounded border border-white/30 bg-white/10 px-2 py-1"
+                >
+                  {mobilePanelExpanded ? "미니" : "확장"}
+                </button>
+                <span className="text-white/60">패널을 줄이면 아래 괘를 더 쉽게 누를 수 있어</span>
+              </div>
+            )}
 
             <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
               {(Object.keys(AXIS_META) as AxisKey[]).map((axis) => (
@@ -444,35 +460,33 @@ export function KnowledgeUniverse() {
               ))}
             </div>
 
-            <div className="mt-4 space-y-1 text-xs text-white/70">
-              <div className="flex justify-between"><span>현재 괘</span><b>#{selected.id}</b></div>
-              <div className="flex justify-between"><span>진도</span><b>{viewMode === "featured" ? "대표 모드" : "전체 모드"}</b></div>
-              <div className="flex justify-between"><span>오늘 학습시간</span><b>27분</b></div>
-              <div className="flex justify-between"><span>다음 추천</span><b>#{nextHex.id} {nextHex.nameKo}</b></div>
-            </div>
+            {(!isMobile || mobilePanelExpanded) && (
+              <div className="mt-4 space-y-1 text-xs text-white/70">
+                <div className="flex justify-between"><span>현재 괘</span><b>#{selected.id}</b></div>
+                <div className="flex justify-between"><span>진도</span><b>{viewMode === "featured" ? "대표 모드" : "전체 모드"}</b></div>
+                <div className="flex justify-between"><span>오늘 학습시간</span><b>27분</b></div>
+                <div className="flex justify-between"><span>다음 추천</span><b>#{nextHex.id} {nextHex.nameKo}</b></div>
+              </div>
+            )}
 
             <div className="mt-4 rounded-lg border border-white/15 bg-black/25 p-3">
               <p className="text-xs text-white/60">4축 질문</p>
               <ul className="mt-2 space-y-2 text-xs text-white/85">
                 <li><b>[돈]</b> {axisQuestions.money}</li>
                 <li><b>[일]</b> {axisQuestions.work}</li>
-                {!isMobile && <li><b>[관계]</b> {axisQuestions.relationship}</li>}
-                {!isMobile && <li><b>[시간]</b> {axisQuestions.time}</li>}
+                {(!isMobile || mobilePanelExpanded) && <li><b>[관계]</b> {axisQuestions.relationship}</li>}
+                {(!isMobile || mobilePanelExpanded) && <li><b>[시간]</b> {axisQuestions.time}</li>}
               </ul>
-              {isMobile && (
-                <details className="mt-2 text-xs text-white/75">
-                  <summary>관계/시간 질문 더보기</summary>
-                  <div className="mt-2 space-y-2">
-                    <p><b>[관계]</b> {axisQuestions.relationship}</p>
-                    <p><b>[시간]</b> {axisQuestions.time}</p>
-                  </div>
-                </details>
+              {isMobile && !mobilePanelExpanded && (
+                <p className="mt-2 text-[11px] text-white/60">확장하면 관계/시간 질문도 볼 수 있어.</p>
               )}
             </div>
 
-            <Link href={`/hexagrams/${selected.id}`} className="mt-4 inline-block text-xs underline text-white/85">
-              상세 학습으로 이동
-            </Link>
+            {(!isMobile || mobilePanelExpanded) && (
+              <Link href={`/hexagrams/${selected.id}`} className="mt-4 inline-block text-xs underline text-white/85">
+                상세 학습으로 이동
+              </Link>
+            )}
           </aside>
         )}
 
