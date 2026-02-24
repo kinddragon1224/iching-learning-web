@@ -3,9 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
-import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import * as THREE from "three";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { BRAND } from "@/constants/brand";
@@ -126,24 +125,41 @@ function makeTaegukTexture() {
 
 function CoreTaeguk() {
   const ref = useRef<THREE.Group>(null);
+  const ringRef = useRef<THREE.Group>(null);
   const tex = useMemo(() => makeTaegukTexture(), []);
 
   useFrame((state, delta) => {
     if (!ref.current) return;
-    ref.current.rotation.y += delta * 0.18;
-    ref.current.rotation.z = Math.sin(state.clock.elapsedTime * 0.2) * 0.08;
+    ref.current.rotation.y += delta * 0.12;
+    ref.current.rotation.z = Math.sin(state.clock.elapsedTime * 0.16) * 0.06;
+    if (ringRef.current) {
+      ringRef.current.rotation.y -= delta * 0.22;
+      ringRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.22) * 0.2;
+    }
   });
 
   return (
     <group ref={ref}>
       <mesh>
-        <sphereGeometry args={[1.55, 96, 96]} />
-        <meshStandardMaterial map={tex} emissive="#ffffff" emissiveIntensity={0.16} roughness={0.5} metalness={0.05} />
+        <sphereGeometry args={[1.6, 96, 96]} />
+        <meshStandardMaterial map={tex} emissive="#ffffff" emissiveIntensity={0.2} roughness={0.38} metalness={0.12} />
       </mesh>
-      <mesh rotation={[Math.PI / 2.3, 0.2, 0]}>
-        <torusGeometry args={[2.2, 0.03, 16, 180]} />
-        <meshStandardMaterial color="#98dcff" emissive="#67c9ff" emissiveIntensity={0.65} transparent opacity={0.55} />
+
+      <mesh>
+        <sphereGeometry args={[1.72, 64, 64]} />
+        <meshStandardMaterial color="#b9d8ff" emissive="#9ecbff" emissiveIntensity={0.22} transparent opacity={0.08} />
       </mesh>
+
+      <group ref={ringRef}>
+        <mesh rotation={[Math.PI / 2.2, 0.2, 0]}>
+          <torusGeometry args={[2.2, 0.026, 16, 180]} />
+          <meshStandardMaterial color="#9ad8ff" emissive="#7ac7ff" emissiveIntensity={0.85} transparent opacity={0.62} />
+        </mesh>
+        <mesh rotation={[Math.PI / 2.05, -0.3, 0.4]}>
+          <torusGeometry args={[2.48, 0.014, 12, 160]} />
+          <meshStandardMaterial color="#d7f3ff" emissive="#bfe7ff" emissiveIntensity={0.6} transparent opacity={0.38} />
+        </mesh>
+      </group>
     </group>
   );
 }
@@ -182,46 +198,6 @@ function AxisOrbits({ strengths }: { strengths: Partial<Record<AxisKey, AxisStre
       })}
     </group>
   );
-}
-
-function CameraFocusRig({
-  focus,
-  isMobile,
-  controlsRef,
-}: {
-  focus: [number, number, number];
-  isMobile: boolean;
-  controlsRef: { current: OrbitControlsImpl | null };
-}) {
-  const { camera } = useThree();
-  const target = useRef(new THREE.Vector3(0, 0, 0));
-  const desiredPosRef = useRef(new THREE.Vector3(0, 0, 0));
-  const animatingRef = useRef(false);
-
-  useEffect(() => {
-    target.current.set(focus[0], focus[1], focus[2]);
-    const desiredDistance = isMobile ? 8.8 : 7.6;
-    desiredPosRef.current.set(
-      target.current.x + desiredDistance,
-      target.current.y + desiredDistance * 0.36,
-      target.current.z + desiredDistance
-    );
-    animatingRef.current = true;
-  }, [focus, isMobile]);
-
-  useFrame((_, delta) => {
-    if (!animatingRef.current) return;
-
-    camera.position.lerp(desiredPosRef.current, Math.min(1, delta * 2.1));
-    controlsRef.current?.target.lerp(target.current, Math.min(1, delta * 2.5));
-    controlsRef.current?.update();
-
-    const posDone = camera.position.distanceTo(desiredPosRef.current) < 0.06;
-    const targetDone = !controlsRef.current || controlsRef.current.target.distanceTo(target.current) < 0.06;
-    if (posDone && targetDone) animatingRef.current = false;
-  });
-
-  return null;
 }
 
 function NodeCloud({
@@ -394,8 +370,6 @@ export function KnowledgeUniverse() {
     return () => mql.removeEventListener("change", apply);
   }, []);
 
-  const controlsRef = useRef<OrbitControlsImpl | null>(null);
-
   const nodes = useMemo(() => buildNodes(), []);
   const visibleNodes = useMemo(
     () => (viewMode === "all" ? nodes : nodes.filter((n) => FEATURED_IDS.includes(n.id))),
@@ -405,7 +379,6 @@ export function KnowledgeUniverse() {
   const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
 
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
-  const focusPoint: [number, number, number] = selected.position;
   const selectedCard = getCardForHexagram(selected.id);
   const nextHex = pickNextRecommendation(selected.id);
   const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2 };
@@ -434,7 +407,6 @@ export function KnowledgeUniverse() {
 
         <CoreTaeguk />
         <AxisOrbits strengths={axisStrengths} />
-        <CameraFocusRig focus={focusPoint} isMobile={isMobile} controlsRef={controlsRef} />
         <NodeCloud
           nodes={visibleNodes}
           selectedId={selectedId}
@@ -451,7 +423,7 @@ export function KnowledgeUniverse() {
           }}
         />
 
-        <OrbitControls ref={controlsRef} enablePan={false} minDistance={7} maxDistance={18} />
+        <OrbitControls enablePan={false} minDistance={6.5} maxDistance={18} />
       </Canvas>
 
       <div className="absolute inset-0 pointer-events-none">
