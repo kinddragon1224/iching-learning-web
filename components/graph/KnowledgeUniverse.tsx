@@ -616,7 +616,7 @@ export function KnowledgeUniverse() {
 
       <div className="absolute inset-0 pointer-events-none">
         <div className="pointer-events-auto absolute top-4 left-4 right-4 flex items-start justify-between text-[12px] tracking-wide text-white/85 md:top-6 md:left-6 md:right-6">
-          <div className="max-w-[58vw] md:max-w-none">
+          <div className="max-w-[62vw] md:max-w-none">
             <p className="text-lg font-bold leading-tight break-keep md:text-2xl">{BRAND.mainTitle}</p>
             <p className="mt-1 text-[11px] text-white/70 break-keep md:text-sm">{BRAND.subTitle}</p>
             <p className="mt-0.5 text-[10px] text-white/50 break-words md:text-xs">{BRAND.tagline}</p>
@@ -641,9 +641,9 @@ export function KnowledgeUniverse() {
               </button>
             </div>
 
-            <div className="flex flex-wrap justify-end gap-1 rounded border border-white/20 bg-black/35 px-2 py-1 text-[10px] text-white/75">
+            <div className="hidden md:flex flex-nowrap justify-end gap-1 rounded border border-white/20 bg-black/35 px-2 py-1 text-[10px] text-white/75">
               {(Object.keys(AXIS_META) as AxisKey[]).map((axis) => (
-                <span key={axis} className="inline-flex items-center gap-1 rounded-full px-1.5 py-0.5">
+                <span key={axis} className="inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 whitespace-nowrap">
                   <span className="inline-block h-1.5 w-1.5 rounded-full" style={{ backgroundColor: AXIS_META[axis].color }} />
                   {AXIS_META[axis].label}
                 </span>
