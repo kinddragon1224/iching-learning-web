@@ -667,7 +667,7 @@ export function KnowledgeUniverse() {
         </div>
 
         {(!isMobile || !panelOpen) && (
-          <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 top-28" : "right-6 bottom-8"}`}>
+          <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 top-40" : "right-6 bottom-8"}`}>
             <button
               onClick={() => {
                 setPanelOpen((v) => !v);
