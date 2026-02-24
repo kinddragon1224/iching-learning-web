@@ -185,6 +185,7 @@ function NodeCloud({
   hoverId,
   labelMode,
   isMobile,
+  showSelectedLabel,
   onHover,
   onSelect,
 }: {
@@ -193,6 +194,7 @@ function NodeCloud({
   hoverId: number | null;
   labelMode: LabelMode;
   isMobile: boolean;
+  showSelectedLabel: boolean;
   onHover: (id: number | null) => void;
   onSelect: (id: number) => void;
 }) {
@@ -208,7 +210,7 @@ function NodeCloud({
       {nodes.map((n) => {
         const selected = n.id === selectedId;
         const hovered = n.id === hoverId;
-        const showLabel = selected || labelMode === "always" || (labelMode === "auto" && hovered);
+        const showLabel = (showSelectedLabel && selected) || labelMode === "always" || (labelMode === "auto" && hovered);
 
         return (
           <group key={n.id} position={n.position}>
@@ -369,6 +371,7 @@ export function KnowledgeUniverse() {
           hoverId={hoverId}
           labelMode={labelMode}
           isMobile={isMobile}
+          showSelectedLabel={!isMobile || panelOpen}
           onHover={setHoverId}
           onSelect={(id) => {
             setSelectedId(id);
@@ -418,14 +421,16 @@ export function KnowledgeUniverse() {
           </div>
         </div>
 
-        <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 bottom-16" : "right-6 top-24"}`}>
-          <button
-            onClick={() => setPanelOpen((v) => !v)}
-            className="rounded-md border border-white/30 bg-black/45 px-4 py-2 text-sm text-white"
-          >
-            {panelOpen ? "닫기" : "4축 보기"}
-          </button>
-        </div>
+        {(!isMobile || !panelOpen) && (
+          <div className={`pointer-events-auto absolute z-40 ${isMobile ? "right-4 bottom-16" : "right-6 top-24"}`}>
+            <button
+              onClick={() => setPanelOpen((v) => !v)}
+              className="rounded-md border border-white/30 bg-black/45 px-4 py-2 text-sm text-white"
+            >
+              {panelOpen ? "닫기" : "4축 보기"}
+            </button>
+          </div>
+        )}
 
         {panelOpen && (
           <aside className={`pointer-events-auto absolute z-30 border border-white/20 bg-black/55 text-sm text-white/90 backdrop-blur-sm ${
