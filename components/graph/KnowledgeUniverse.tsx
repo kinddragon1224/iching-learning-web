@@ -45,6 +45,12 @@ const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
 const NODE_BASE_COLOR = "#8c949f";
 const NODE_BASE_EMISSIVE = "#2a2f38";
 
+function tintWithAxis(base: string, axis: string, amount = 0.07) {
+  const b = new THREE.Color(base);
+  const a = new THREE.Color(axis);
+  return b.lerp(a, amount).getStyle();
+}
+
 const HEX_AXIS_STRENGTH: Record<number, Partial<Record<AxisKey, AxisStrength>>> = {
   1: { work: 3, time: 2, money: 1 },
   2: { relation: 3, work: 2, time: 1 },
@@ -362,6 +368,7 @@ function NodeCloud({
         const hovered = n.id === hoverId;
         const axis = getPrimaryAxis(n.id);
         const axisColor = AXIS_COLORS[axis];
+        const bodyTint = tintWithAxis(NODE_BASE_COLOR, axisColor, 0.07);
         const showLabel = showSelectedLabel && selected;
 
         return (
@@ -382,17 +389,17 @@ function NodeCloud({
             >
               <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1), 18, 18]} />
               <meshStandardMaterial
-                color={NODE_BASE_COLOR}
+                color={bodyTint}
                 emissive={NODE_BASE_EMISSIVE}
-                emissiveIntensity={selected ? 0.32 : hovered ? 0.24 : 0.18}
+                emissiveIntensity={selected ? 0.34 : hovered ? 0.26 : 0.2}
                 roughness={0.34}
                 metalness={0.16}
               />
             </mesh>
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
-              <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.02 : 0.01, 10, 48]} />
-              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 0.96 : hovered ? 0.62 : 0.48} transparent opacity={selected ? 0.95 : hovered ? 0.7 : 0.58} />
+              <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.024 : 0.011, 10, 48]} />
+              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.82 : 0.68} transparent opacity={selected ? 0.98 : hovered ? 0.86 : 0.78} />
             </mesh>
 
             {showLabel && (
