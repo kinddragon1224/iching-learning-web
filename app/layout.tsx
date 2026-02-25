@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSansKr = Noto_Sans_KR({
+  variable: "--font-noto-sans-kr",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+const notoSerifKr = Noto_Serif_KR({
+  variable: "--font-noto-serif-kr",
+  subsets: ["latin"],
+  weight: ["500", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -25,22 +32,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="fixed right-3 top-3 z-[100] flex gap-2">
-          <Link href="/" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            홈
-          </Link>
-          <Link href="/faq" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            자주 묻는 질문
-          </Link>
-          <Link href="/compare" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            비교
-          </Link>
-          <Link href="/checkout" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            결제
-          </Link>
-        </div>
-        {children}
+      <body className={`${notoSansKr.variable} ${notoSerifKr.variable} ${geistMono.variable} antialiased`}>
+        <nav className="fixed inset-x-0 top-0 z-[100] px-3 pt-2">
+          <div className="mx-auto flex max-w-4xl gap-2 overflow-x-auto rounded-xl border border-white/20 bg-black/55 p-2 backdrop-blur">
+            <Link href="/" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">홈</Link>
+            <Link href="/faq" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">자주 묻는 질문</Link>
+            <Link href="/compare" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">비교</Link>
+            <Link href="/checkout" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">결제</Link>
+          </div>
+        </nav>
+        <div className="pt-16">{children}</div>
       </body>
     </html>
   );
