@@ -861,7 +861,15 @@ export function KnowledgeUniverse() {
             >
               <div className="mb-3 flex items-center justify-between">
                 <p className="text-sm font-semibold text-white">괘 검색</p>
-                <button className="text-xs text-white/80 underline" onClick={() => setSearchOpen(false)}>닫기</button>
+                <button
+                  className="text-xs text-white/80 underline"
+                  onClick={() => {
+                    setSearchOpen(false);
+                    setSearchInput("");
+                  }}
+                >
+                  닫기
+                </button>
               </div>
               <input
                 autoFocus
@@ -889,6 +897,17 @@ export function KnowledgeUniverse() {
               </div>
             </div>
           </div>
+        )}
+
+        {!searchOpen && (
+          <button
+            onClick={() => setSearchOpen(true)}
+            className="pointer-events-auto absolute bottom-20 right-4 z-40 rounded-full border border-white/35 bg-black/70 px-4 py-2 text-xs text-white shadow-lg backdrop-blur md:bottom-6 md:right-6"
+            aria-label="괘 검색 열기"
+            title="괘 검색"
+          >
+            🔍 검색
+          </button>
         )}
 
         {saveOpen && (
