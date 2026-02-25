@@ -185,7 +185,7 @@ function makeTaegeukTexture() {
   ctx.closePath();
   ctx.fill();
 
-  // Inner swirl circles
+  // Taegeuk wave (yin-yang flow)
   ctx.fillStyle = "#0047a0";
   ctx.beginPath();
   ctx.arc(cx, cy - r / 2, r / 2, 0, Math.PI * 2);
@@ -195,6 +195,16 @@ function makeTaegeukTexture() {
   ctx.beginPath();
   ctx.arc(cx, cy + r / 2, r / 2, 0, Math.PI * 2);
   ctx.fill();
+
+  // Highlight the S-wave so it reads clearly on mobile
+  ctx.strokeStyle = "rgba(255,255,255,0.45)";
+  ctx.lineWidth = size * 0.01;
+  ctx.beginPath();
+  ctx.arc(cx, cy - r / 2, r / 2, Math.PI * 0.05, Math.PI * 0.95, true);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(cx, cy + r / 2, r / 2, Math.PI * 1.05, Math.PI * 1.95, false);
+  ctx.stroke();
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
