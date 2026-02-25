@@ -1,0 +1,23 @@
+# I Ching Learning Web
+
+> I Ching Learning Web is a learning and reflection platform based on the 64 hexagrams of the I Ching. It is designed for structured self-reflection, not fortune-telling.
+
+## Main Sections
+
+- [Home](/): Universe-style navigation to explore hexagrams
+- [Hexagram Detail](/hexagram/1): 64 hexagram study pages with 4-axis interpretation (money/work/relationship/time)
+- [Hexagram List](/hexagrams): Browse all 64 hexagrams
+- [FAQ](/faq): Common questions and direct answers
+- [Comparison](/compare): Learning tool vs fortune-telling apps
+- [Checkout](/checkout): Subscription checkout page
+
+## Key Facts
+
+- Core content: 64 hexagram detail pages
+- Reflection framework: 4-axis questions (money/work/relationship/time)
+- Format: static pages optimized for fast global delivery
+
+## Contact
+
+- Project: I Ching Learning Web
+- Language support in progress: Korean, English, Japanese

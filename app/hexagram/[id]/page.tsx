@@ -67,6 +67,17 @@ export default function HexagramCardDetailPage({ params }: { params: { id: strin
       </section>
 
       <section className="rounded-xl border p-4">
+        <h2 className="mb-3 font-semibold">6효 학습 포인트</h2>
+        <ol className="space-y-2 text-sm">
+          {content.lineTexts.map((line, idx) => (
+            <li key={idx} className="rounded-lg bg-neutral-50 px-3 py-2">
+              {line}
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="rounded-xl border p-4">
         <h2 className="mb-3 font-semibold">4축 질문</h2>
         <div className="space-y-3 text-sm">
           <div><b>[돈]</b> {q.money}<QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="money" question={q.money ?? ""} /></div>
