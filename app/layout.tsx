@@ -36,8 +36,9 @@ export default function RootLayout({
         <nav className="fixed inset-x-0 top-0 z-[100] px-3 pt-2">
           <div className="mx-auto flex max-w-4xl gap-2 overflow-x-auto rounded-xl border border-white/20 bg-black/55 p-2 backdrop-blur">
             <Link href="/" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">홈</Link>
+            <Link href="/bagua" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">8괘 입문</Link>
+            <Link href="/explore" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">64괘 탐색</Link>
             <Link href="/faq" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">자주 묻는 질문</Link>
-            <Link href="/compare" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">비교</Link>
             <Link href="/checkout" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">결제</Link>
           </div>
         </nav>
