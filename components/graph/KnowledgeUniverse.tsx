@@ -37,6 +37,18 @@ const AXIS_COLORS: Record<AxisKey, string> = {
   time: "#d7a353",
 };
 
+// 설괘전 모티브 8괘 고유 색상 (중첩괘 대표 행성)
+const BAGUA_PLANET_COLORS: Record<number, string> = {
+  1: "#f2c14e", // 건(하늘)
+  2: "#8b6f47", // 곤(땅)
+  29: "#2f4f9f", // 감(물)
+  30: "#d1495b", // 리(불)
+  51: "#7a52c7", // 진(우레)
+  57: "#2aa198", // 손(바람)
+  52: "#6b7280", // 간(산)
+  58: "#4da3d9", // 태(연못)
+};
+
 const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
   money: { label: "돈", color: AXIS_COLORS.money },
   work: { label: "일", color: AXIS_COLORS.work },
@@ -51,6 +63,10 @@ function tintWithAxis(base: string, axis: string, amount = 0.07) {
   const b = new THREE.Color(base);
   const a = new THREE.Color(axis);
   return b.lerp(a, amount).getStyle();
+}
+
+function getPlanetColor(id: number, axisColor: string) {
+  return BAGUA_PLANET_COLORS[id] ?? axisColor;
 }
 
 const HEX_AXIS_STRENGTH: Record<number, Partial<Record<AxisKey, AxisStrength>>> = {
@@ -394,7 +410,8 @@ function NodeCloud({
         const hovered = n.id === hoverId;
         const axis = getPrimaryAxis(n.id);
         const axisColor = AXIS_COLORS[axis];
-        const bodyTint = tintWithAxis(NODE_BASE_COLOR, axisColor, 0.07);
+        const planetColor = getPlanetColor(n.id, axisColor);
+        const bodyTint = tintWithAxis(NODE_BASE_COLOR, planetColor, 0.16);
         const showLabel = showSelectedLabel && selected;
         const scale = lowDensity ? 0.75 : 1;
 
@@ -426,13 +443,13 @@ function NodeCloud({
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.024 : 0.011, 10, 48]} />
-              <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : lowDensity ? 0.56 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : lowDensity ? 0.48 : 0.9} />
+              <meshStandardMaterial color={planetColor} emissive={planetColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : lowDensity ? 0.56 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : lowDensity ? 0.48 : 0.9} />
             </mesh>
 
             {selected && (
               <mesh rotation={[Math.PI / 2, 0, 0]}>
                 <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.11, 0.009, 10, 48]} />
-                <meshStandardMaterial color={axisColor} emissive={axisColor} emissiveIntensity={0.95} transparent opacity={0.78} />
+                <meshStandardMaterial color={planetColor} emissive={planetColor} emissiveIntensity={0.95} transparent opacity={0.78} />
               </mesh>
             )}
 
