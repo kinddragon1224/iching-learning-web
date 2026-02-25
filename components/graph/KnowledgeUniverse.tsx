@@ -140,70 +140,20 @@ function makeSubtleNoiseTexture() {
   c.height = size;
   const ctx = c.getContext("2d")!;
 
-  ctx.fillStyle = "#ffffff";
+  ctx.fillStyle = "#f5e8c8";
   ctx.fillRect(0, 0, size, size);
 
-  for (let i = 0; i < size * 8; i++) {
+  for (let i = 0; i < size * 10; i++) {
     const x = Math.floor(Math.random() * size);
     const y = Math.floor(Math.random() * size);
-    const a = 0.01 + Math.random() * 0.015;
-    ctx.fillStyle = `rgba(0,0,0,${a})`;
+    const a = 0.018 + Math.random() * 0.022;
+    ctx.fillStyle = `rgba(36,28,10,${a})`;
     ctx.fillRect(x, y, 1, 1);
   }
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
-  t.repeat.set(1.2, 1.2);
-  return t;
-}
-
-function makeTaegeukTexture() {
-  const size = 1024;
-  const c = document.createElement("canvas");
-  c.width = size;
-  c.height = size;
-  const ctx = c.getContext("2d")!;
-
-  const red = "#b3131b";
-  const blue = "#0b2a78";
-
-  const cx = size / 2;
-  const cy = size / 2;
-  const R = size * 0.44;
-
-  // 원형 클립(태극 바깥은 투명)
-  ctx.save();
-  ctx.beginPath();
-  ctx.arc(cx, cy, R, 0, Math.PI * 2);
-  ctx.closePath();
-  ctx.clip();
-
-  // 북(상단)=빨강, 남(하단)=파랑
-  ctx.fillStyle = red;
-  ctx.fillRect(cx - R, cy - R, R * 2, R);
-
-  ctx.fillStyle = blue;
-  ctx.fillRect(cx - R, cy, R * 2, R);
-
-  // 중앙 물결(S-curve)
-  const r = R / 2;
-  ctx.fillStyle = blue;
-  ctx.beginPath();
-  ctx.arc(cx, cy - r, r, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.fillStyle = red;
-  ctx.beginPath();
-  ctx.arc(cx, cy + r, r, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.restore();
-
-  const t = new THREE.CanvasTexture(c);
-  t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
-  t.center.set(0.5, 0.5);
-  t.rotation = 0;
-  t.needsUpdate = true;
+  t.repeat.set(2, 2);
   return t;
 }
 
@@ -306,28 +256,78 @@ function HexagramPulseSeal({ selectedId, isMobile }: { selectedId: number; isMob
 
 function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: number }) {
   const ref = useRef<THREE.Group>(null);
-  const taegeukTex = useMemo(() => makeTaegeukTexture(), []);
+  const haloRef = useRef<THREE.Mesh>(null);
+  const ribbonARef = useRef<THREE.Mesh>(null);
+  const ribbonBRef = useRef<THREE.Mesh>(null);
+  const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
 
   const seg = isMobile ? 48 : 76;
 
-  useFrame(() => {
+  useFrame((state, delta) => {
     if (!ref.current) return;
-    ref.current.rotation.y = 0; // 북=빨강, 남=파랑 방향 고정
+    const t = state.clock.elapsedTime;
+
+    ref.current.rotation.y += delta * 0.045;
+
+    if (haloRef.current) {
+      const m = haloRef.current.material as THREE.MeshStandardMaterial;
+      m.emissiveIntensity = 0.52 + Math.sin(t * 0.55) * 0.14; // 조절: 헤일로 밝기
+    }
+
+    if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.045; // 조절: 리본 속도
+    if (ribbonBRef.current) ribbonBRef.current.rotation.y -= delta * 0.045;
   });
 
   return (
     <group ref={ref}>
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
-        <meshStandardMaterial color="#0f1118" roughness={0.7} metalness={0.08} emissive="#121826" emissiveIntensity={0.18} />
+        <meshStandardMaterial
+          color="#f2c86f"
+          map={noiseTex}
+          roughness={0.78}
+          metalness={0.04}
+          emissive="#ffd46f"
+          emissiveIntensity={0.3}
+        />
       </mesh>
 
-      <sprite position={[0, 0, 1.6]} scale={[2.85, 2.85, 1]}>
-        <spriteMaterial map={taegeukTex} transparent opacity={1} toneMapped={false} depthWrite={false} />
-      </sprite>
-      <sprite position={[0, 0, -1.6]} scale={[2.85, 2.85, 1]}>
-        <spriteMaterial map={taegeukTex} transparent opacity={1} toneMapped={false} rotation={Math.PI} depthWrite={false} />
-      </sprite>
+      <mesh>
+        <sphereGeometry args={[1.63, seg, seg]} />
+        <meshStandardMaterial color="#ffeec7" emissive="#ffd47a" emissiveIntensity={0.14} transparent opacity={0.1} />
+      </mesh>
+
+      <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[1.95, 0.011, 10, isMobile ? 80 : 132]} />
+        <meshStandardMaterial color="#ffe9b8" emissive="#ffdd86" emissiveIntensity={0.46} transparent opacity={0.52} />
+      </mesh>
+
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[2.03, 0.005, 8, isMobile ? 72 : 116]} />
+        <meshBasicMaterial color="#ffe1a3" transparent opacity={0.14} />
+      </mesh>
+
+      <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
+        <mesh>
+          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
+          <meshStandardMaterial color="#fffaf0" emissive="#ffecb8" emissiveIntensity={0.44} transparent opacity={0.68} />
+        </mesh>
+      </group>
+
+      <group ref={ribbonBRef} rotation={[Math.PI / 2.15, Math.PI + 0.18, 0]}>
+        <mesh>
+          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
+          <meshStandardMaterial color="#231f16" emissive="#a88444" emissiveIntensity={0.28} transparent opacity={0.56} />
+        </mesh>
+      </group>
+
+      <group rotation={[Math.PI / 2.45, 0.3, 0.12]}>
+        <mesh>
+          <torusGeometry args={[1.84, 0.006, 8, isMobile ? 96 : 144]} />
+          <meshBasicMaterial color="#e4e9ef" transparent opacity={0.18} />
+        </mesh>
+        <BaguaRing radius={1.84} isMobile={isMobile} />
+      </group>
 
       <HexagramPulseSeal selectedId={selectedId} isMobile={isMobile} />
     </group>
@@ -655,6 +655,7 @@ export function KnowledgeUniverse() {
         <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
         <CoreTaeguk isMobile={isMobile} selectedId={selected.id} />
+        <AxisOrbits strengths={axisStrengths} />
         <NodeCloud
           nodes={visibleNodes}
           selectedId={selectedId}
