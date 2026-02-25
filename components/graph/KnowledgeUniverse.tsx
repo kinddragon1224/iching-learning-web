@@ -191,6 +191,9 @@ function makeTaegeukTexture() {
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
+  t.center.set(0.5, 0.5);
+  // 전면에서 태극 물결이 보이도록 UV 회전 보정
+  t.rotation = -Math.PI / 2;
   t.needsUpdate = true;
   return t;
 }
@@ -324,11 +327,10 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
         <meshStandardMaterial
           color="#ffffff"
           map={taegeukTex}
-          roughnessMap={noiseTex}
-          roughness={0.7}
-          metalness={0.05}
+          roughness={0.62}
+          metalness={0.04}
           emissive="#ffffff"
-          emissiveIntensity={0.06}
+          emissiveIntensity={0.04}
         />
       </mesh>
 
