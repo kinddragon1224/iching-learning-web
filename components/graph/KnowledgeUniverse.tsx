@@ -164,42 +164,34 @@ function makeTaegeukTexture() {
   c.height = size;
   const ctx = c.getContext("2d")!;
 
-  // transparent base
-  ctx.clearRect(0, 0, size, size);
+  const red = "#c60c30";
+  const blue = "#003478";
+
+  // 전체를 빨강/파랑 반반으로 채운 뒤,
+  // 중앙 물결(S-curve)을 원형 2개로 만든다.
+  ctx.fillStyle = red;
+  ctx.fillRect(0, 0, size, size / 2);
+
+  ctx.fillStyle = blue;
+  ctx.fillRect(0, size / 2, size, size / 2);
 
   const cx = size / 2;
-  const cy = size / 2;
-  const r = size * 0.42;
+  const r = size / 4;
 
-  // Red top half (Taegeukgi red)
-  ctx.fillStyle = "#c60c30";
+  // 윗부분에 파랑 원, 아랫부분에 빨강 원
+  ctx.fillStyle = blue;
   ctx.beginPath();
-  ctx.arc(cx, cy, r, Math.PI, 0, false);
-  ctx.closePath();
+  ctx.arc(cx, size / 4, r, 0, Math.PI * 2);
   ctx.fill();
 
-  // Blue bottom half (Taegeukgi blue)
-  ctx.fillStyle = "#003478";
+  ctx.fillStyle = red;
   ctx.beginPath();
-  ctx.arc(cx, cy, r, 0, Math.PI, false);
-  ctx.closePath();
+  ctx.arc(cx, (size * 3) / 4, r, 0, Math.PI * 2);
   ctx.fill();
-
-  // Taegeuk wave (yin-yang flow)
-  ctx.fillStyle = "#003478";
-  ctx.beginPath();
-  ctx.arc(cx, cy - r / 2, r / 2, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.fillStyle = "#c60c30";
-  ctx.beginPath();
-  ctx.arc(cx, cy + r / 2, r / 2, 0, Math.PI * 2);
-  ctx.fill();
-
-  // no extra stroke; keep authentic Taegeuk shape colors only
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
+  t.needsUpdate = true;
   return t;
 }
 
@@ -330,28 +322,19 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#f6f7fb"
-          map={noiseTex}
-          roughness={0.72}
+          color="#ffffff"
+          map={taegeukTex}
+          roughnessMap={noiseTex}
+          roughness={0.7}
           metalness={0.05}
           emissive="#ffffff"
-          emissiveIntensity={0.1}
+          emissiveIntensity={0.06}
         />
-      </mesh>
-
-      {/* 태극 문양을 구체 표면 전/후면에 밀착 배치 */}
-      <mesh position={[0, 0, 1.582]}>
-        <circleGeometry args={[1.28, 128]} />
-        <meshStandardMaterial map={taegeukTex} transparent opacity={0.99} roughness={0.45} metalness={0.02} emissive="#ffffff" emissiveIntensity={0.03} />
-      </mesh>
-      <mesh position={[0, 0, -1.582]} rotation={[0, Math.PI, 0]}>
-        <circleGeometry args={[1.28, 128]} />
-        <meshStandardMaterial map={taegeukTex} transparent opacity={0.99} roughness={0.45} metalness={0.02} emissive="#ffffff" emissiveIntensity={0.03} />
       </mesh>
 
       <mesh>
         <sphereGeometry args={[1.63, seg, seg]} />
-        <meshStandardMaterial color="#ffffff" emissive="#ffffff" emissiveIntensity={0.08} transparent opacity={0.07} />
+        <meshStandardMaterial color="#ffffff" emissive="#ffffff" emissiveIntensity={0.06} transparent opacity={0.05} />
       </mesh>
 
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
