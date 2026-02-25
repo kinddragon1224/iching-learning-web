@@ -295,7 +295,6 @@ function HexagramPulseSeal({ selectedId, isMobile }: { selectedId: number; isMob
 
 function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: number }) {
   const ref = useRef<THREE.Group>(null);
-  const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
   const taegeukTex = useMemo(() => makeTaegeukTexture(), []);
 
   const seg = isMobile ? 48 : 76;
@@ -309,19 +308,12 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
     <group ref={ref}>
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
-        <meshStandardMaterial
-          color="#ffffff"
-          map={taegeukTex}
-          roughness={0.62}
-          metalness={0.04}
-          emissive="#ffffff"
-          emissiveIntensity={0.04}
-        />
+        <meshBasicMaterial map={taegeukTex} toneMapped={false} />
       </mesh>
 
       <mesh>
-        <sphereGeometry args={[1.63, seg, seg]} />
-        <meshStandardMaterial color="#ffffff" emissive="#ffffff" emissiveIntensity={0.06} transparent opacity={0.05} />
+        <sphereGeometry args={[1.615, seg, seg]} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.02} toneMapped={false} />
       </mesh>
 
       <HexagramPulseSeal selectedId={selectedId} isMobile={isMobile} />
