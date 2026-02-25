@@ -283,18 +283,18 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#f2c86f"
+          color="#cd2e3a"
           map={noiseTex}
           roughness={0.78}
           metalness={0.04}
-          emissive="#ffd46f"
-          emissiveIntensity={0.3}
+          emissive="#cd2e3a"
+          emissiveIntensity={0.28}
         />
       </mesh>
 
       <mesh>
         <sphereGeometry args={[1.63, seg, seg]} />
-        <meshStandardMaterial color="#ffeec7" emissive="#ffd47a" emissiveIntensity={0.14} transparent opacity={0.1} />
+        <meshStandardMaterial color="#0047a0" emissive="#0047a0" emissiveIntensity={0.18} transparent opacity={0.16} />
       </mesh>
 
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
