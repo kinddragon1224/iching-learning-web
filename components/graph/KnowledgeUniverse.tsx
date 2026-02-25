@@ -196,15 +196,7 @@ function makeTaegeukTexture() {
   ctx.arc(cx, cy + r / 2, r / 2, 0, Math.PI * 2);
   ctx.fill();
 
-  // Highlight the S-wave so it reads clearly on mobile
-  ctx.strokeStyle = "rgba(255,255,255,0.45)";
-  ctx.lineWidth = size * 0.01;
-  ctx.beginPath();
-  ctx.arc(cx, cy - r / 2, r / 2, Math.PI * 0.05, Math.PI * 0.95, true);
-  ctx.stroke();
-  ctx.beginPath();
-  ctx.arc(cx, cy + r / 2, r / 2, Math.PI * 1.05, Math.PI * 1.95, false);
-  ctx.stroke();
+  // no extra stroke; keep authentic Taegeuk shape colors only
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
@@ -338,14 +330,23 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#ffffff"
-          map={taegeukTex}
-          roughnessMap={noiseTex}
-          roughness={0.74}
-          metalness={0.04}
+          color="#f6f7fb"
+          map={noiseTex}
+          roughness={0.72}
+          metalness={0.05}
           emissive="#ffffff"
-          emissiveIntensity={0.08}
+          emissiveIntensity={0.1}
         />
+      </mesh>
+
+      {/* 태극 문양을 구체 표면 전/후면에 배치 */}
+      <mesh position={[0, 0, 1.59]}>
+        <circleGeometry args={[1.08, 96]} />
+        <meshBasicMaterial map={taegeukTex} transparent opacity={0.98} />
+      </mesh>
+      <mesh position={[0, 0, -1.59]} rotation={[0, Math.PI, 0]}>
+        <circleGeometry args={[1.08, 96]} />
+        <meshBasicMaterial map={taegeukTex} transparent opacity={0.98} />
       </mesh>
 
       <mesh>
