@@ -140,20 +140,64 @@ function makeSubtleNoiseTexture() {
   c.height = size;
   const ctx = c.getContext("2d")!;
 
-  ctx.fillStyle = "#f5e8c8";
+  ctx.fillStyle = "#ffffff";
   ctx.fillRect(0, 0, size, size);
 
-  for (let i = 0; i < size * 10; i++) {
+  for (let i = 0; i < size * 8; i++) {
     const x = Math.floor(Math.random() * size);
     const y = Math.floor(Math.random() * size);
-    const a = 0.018 + Math.random() * 0.022;
-    ctx.fillStyle = `rgba(36,28,10,${a})`;
+    const a = 0.01 + Math.random() * 0.015;
+    ctx.fillStyle = `rgba(0,0,0,${a})`;
     ctx.fillRect(x, y, 1, 1);
   }
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
-  t.repeat.set(2, 2);
+  t.repeat.set(1.2, 1.2);
+  return t;
+}
+
+function makeTaegeukTexture() {
+  const size = 1024;
+  const c = document.createElement("canvas");
+  c.width = size;
+  c.height = size;
+  const ctx = c.getContext("2d")!;
+
+  // transparent base
+  ctx.clearRect(0, 0, size, size);
+
+  const cx = size / 2;
+  const cy = size / 2;
+  const r = size * 0.42;
+
+  // Red top half
+  ctx.fillStyle = "#cd2e3a";
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, Math.PI, 0, false);
+  ctx.closePath();
+  ctx.fill();
+
+  // Blue bottom half
+  ctx.fillStyle = "#0047a0";
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, 0, Math.PI, false);
+  ctx.closePath();
+  ctx.fill();
+
+  // Inner swirl circles
+  ctx.fillStyle = "#0047a0";
+  ctx.beginPath();
+  ctx.arc(cx, cy - r / 2, r / 2, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.fillStyle = "#cd2e3a";
+  ctx.beginPath();
+  ctx.arc(cx, cy + r / 2, r / 2, 0, Math.PI * 2);
+  ctx.fill();
+
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
   return t;
 }
 
@@ -260,6 +304,7 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
   const ribbonARef = useRef<THREE.Mesh>(null);
   const ribbonBRef = useRef<THREE.Mesh>(null);
   const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
+  const taegeukTex = useMemo(() => makeTaegeukTexture(), []);
 
   const seg = isMobile ? 48 : 76;
 
@@ -281,32 +326,21 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
   return (
     <group ref={ref}>
       <mesh>
-        <sphereGeometry args={[1.58, seg, seg, 0, Math.PI * 2, 0, Math.PI / 2]} />
+        <sphereGeometry args={[1.58, seg, seg]} />
         <meshStandardMaterial
-          color="#cd2e3a"
-          map={noiseTex}
-          roughness={0.72}
-          metalness={0.05}
-          emissive="#cd2e3a"
-          emissiveIntensity={0.34}
-        />
-      </mesh>
-
-      <mesh>
-        <sphereGeometry args={[1.58, seg, seg, 0, Math.PI * 2, Math.PI / 2, Math.PI / 2]} />
-        <meshStandardMaterial
-          color="#0047a0"
-          map={noiseTex}
-          roughness={0.72}
-          metalness={0.05}
-          emissive="#0047a0"
-          emissiveIntensity={0.34}
+          color="#ffffff"
+          map={taegeukTex}
+          roughnessMap={noiseTex}
+          roughness={0.74}
+          metalness={0.04}
+          emissive="#ffffff"
+          emissiveIntensity={0.08}
         />
       </mesh>
 
       <mesh>
         <sphereGeometry args={[1.63, seg, seg]} />
-        <meshStandardMaterial color="#ffffff" emissive="#ffffff" emissiveIntensity={0.08} transparent opacity={0.08} />
+        <meshStandardMaterial color="#ffffff" emissive="#ffffff" emissiveIntensity={0.08} transparent opacity={0.07} />
       </mesh>
 
       <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
