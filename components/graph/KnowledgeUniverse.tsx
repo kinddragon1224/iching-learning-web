@@ -56,14 +56,9 @@ const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
   time: { label: "시간", color: AXIS_COLORS.time },
 };
 
-const NODE_BASE_COLOR = "#8c949f";
 const NODE_BASE_EMISSIVE = "#2a2f38";
-
-function tintWithAxis(base: string, axis: string, amount = 0.07) {
-  const b = new THREE.Color(base);
-  const a = new THREE.Color(axis);
-  return b.lerp(a, amount).getStyle();
-}
+const GOLD_RING_COLOR = "#d4b26a";
+const GOLD_RING_EMISSIVE = "#e7c989";
 
 function getPlanetColor(id: number, axisColor: string) {
   return BAGUA_PLANET_COLORS[id] ?? axisColor;
@@ -411,7 +406,6 @@ function NodeCloud({
         const axis = getPrimaryAxis(n.id);
         const axisColor = AXIS_COLORS[axis];
         const planetColor = getPlanetColor(n.id, axisColor);
-        const bodyTint = tintWithAxis(NODE_BASE_COLOR, planetColor, 0.16);
         const showLabel = showSelectedLabel && selected;
         const scale = lowDensity ? 0.75 : 1;
 
@@ -433,7 +427,7 @@ function NodeCloud({
             >
               <sphereGeometry args={[(selected ? n.size * 1.8 : hovered ? n.size * 1.45 : n.size) * (isMobile ? 1.35 : 1) * scale, 18, 18]} />
               <meshStandardMaterial
-                color={bodyTint}
+                color={planetColor}
                 emissive={NODE_BASE_EMISSIVE}
                 emissiveIntensity={selected ? 0.34 : hovered ? 0.26 : 0.2}
                 roughness={0.34}
@@ -443,13 +437,13 @@ function NodeCloud({
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.024 : 0.011, 10, 48]} />
-              <meshStandardMaterial color={planetColor} emissive={planetColor} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : lowDensity ? 0.56 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : lowDensity ? 0.48 : 0.9} />
+              <meshStandardMaterial color={GOLD_RING_COLOR} emissive={GOLD_RING_EMISSIVE} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : lowDensity ? 0.56 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : lowDensity ? 0.48 : 0.9} />
             </mesh>
 
             {selected && (
               <mesh rotation={[Math.PI / 2, 0, 0]}>
                 <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.11, 0.009, 10, 48]} />
-                <meshStandardMaterial color={planetColor} emissive={planetColor} emissiveIntensity={0.95} transparent opacity={0.78} />
+                <meshStandardMaterial color={GOLD_RING_COLOR} emissive={GOLD_RING_EMISSIVE} emissiveIntensity={0.95} transparent opacity={0.78} />
               </mesh>
             )}
 
