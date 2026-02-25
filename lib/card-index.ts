@@ -1,5 +1,5 @@
 import cardIndex from "@/data/card_index.json";
-import hexagramContent from "@/data/hexagrams_pack_12.json";
+import hexagramContent from "@/data/hexagram_content.json";
 import { findHexagram } from "@/data/hexagrams";
 
 type AxisMap = Partial<Record<"money" | "work" | "relation" | "time", string>>;
