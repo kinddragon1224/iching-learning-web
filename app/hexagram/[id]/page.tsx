@@ -13,8 +13,13 @@ export function generateStaticParams() {
 
 const AXIS_LABEL = { money: "돈", work: "일", relation: "관계", time: "시간" } as const;
 
-export default function HexagramCardDetailPage({ params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export default async function HexagramCardDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id: rawId } = await params;
+  const id = Number(rawId);
   const hex = findHexagram(id);
   if (!hex) return notFound();
 
