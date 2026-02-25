@@ -164,11 +164,10 @@ function makeTaegeukTexture() {
   c.height = size;
   const ctx = c.getContext("2d")!;
 
-  const red = "#c60c30";
-  const blue = "#003478";
+  const red = "#b3131b";
+  const blue = "#0b2a78";
 
-  // 전체를 빨강/파랑 반반으로 채운 뒤,
-  // 중앙 물결(S-curve)을 원형 2개로 만든다.
+  // 북(상단)=빨강, 남(하단)=파랑 + 중앙 물결 경계
   ctx.fillStyle = red;
   ctx.fillRect(0, 0, size, size / 2);
 
@@ -178,7 +177,7 @@ function makeTaegeukTexture() {
   const cx = size / 2;
   const r = size / 4;
 
-  // 윗부분에 파랑 원, 아랫부분에 빨강 원
+  // 태극 물결(S-curve)
   ctx.fillStyle = blue;
   ctx.beginPath();
   ctx.arc(cx, size / 4, r, 0, Math.PI * 2);
@@ -192,8 +191,7 @@ function makeTaegeukTexture() {
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
   t.center.set(0.5, 0.5);
-  // 전면에서 태극 물결이 보이도록 UV 회전 보정
-  t.rotation = -Math.PI / 2;
+  t.rotation = 0;
   t.needsUpdate = true;
   return t;
 }
@@ -297,27 +295,14 @@ function HexagramPulseSeal({ selectedId, isMobile }: { selectedId: number; isMob
 
 function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: number }) {
   const ref = useRef<THREE.Group>(null);
-  const haloRef = useRef<THREE.Mesh>(null);
-  const ribbonARef = useRef<THREE.Mesh>(null);
-  const ribbonBRef = useRef<THREE.Mesh>(null);
   const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
   const taegeukTex = useMemo(() => makeTaegeukTexture(), []);
 
   const seg = isMobile ? 48 : 76;
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (!ref.current) return;
-    const t = state.clock.elapsedTime;
-
-    ref.current.rotation.y += delta * 0.045;
-
-    if (haloRef.current) {
-      const m = haloRef.current.material as THREE.MeshStandardMaterial;
-      m.emissiveIntensity = 0.52 + Math.sin(t * 0.55) * 0.14; // 조절: 헤일로 밝기
-    }
-
-    if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.045; // 조절: 리본 속도
-    if (ribbonBRef.current) ribbonBRef.current.rotation.y -= delta * 0.045;
+    ref.current.rotation.y += delta * 0.02;
   });
 
   return (
@@ -338,38 +323,6 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
         <sphereGeometry args={[1.63, seg, seg]} />
         <meshStandardMaterial color="#ffffff" emissive="#ffffff" emissiveIntensity={0.06} transparent opacity={0.05} />
       </mesh>
-
-      <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[1.95, 0.011, 10, isMobile ? 80 : 132]} />
-        <meshStandardMaterial color="#ffe9b8" emissive="#ffdd86" emissiveIntensity={0.46} transparent opacity={0.52} />
-      </mesh>
-
-      <mesh rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[2.03, 0.005, 8, isMobile ? 72 : 116]} />
-        <meshBasicMaterial color="#ffe1a3" transparent opacity={0.14} />
-      </mesh>
-
-      <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
-        <mesh>
-          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#fffaf0" emissive="#ffecb8" emissiveIntensity={0.44} transparent opacity={0.68} />
-        </mesh>
-      </group>
-
-      <group ref={ribbonBRef} rotation={[Math.PI / 2.15, Math.PI + 0.18, 0]}>
-        <mesh>
-          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#231f16" emissive="#a88444" emissiveIntensity={0.28} transparent opacity={0.56} />
-        </mesh>
-      </group>
-
-      <group rotation={[Math.PI / 2.45, 0.3, 0.12]}>
-        <mesh>
-          <torusGeometry args={[1.84, 0.006, 8, isMobile ? 96 : 144]} />
-          <meshBasicMaterial color="#e4e9ef" transparent opacity={0.18} />
-        </mesh>
-        <BaguaRing radius={1.84} isMobile={isMobile} />
-      </group>
 
       <HexagramPulseSeal selectedId={selectedId} isMobile={isMobile} />
     </group>
@@ -697,7 +650,6 @@ export function KnowledgeUniverse() {
         <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
         <CoreTaeguk isMobile={isMobile} selectedId={selected.id} />
-        <AxisOrbits strengths={axisStrengths} />
         <NodeCloud
           nodes={visibleNodes}
           selectedId={selectedId}
