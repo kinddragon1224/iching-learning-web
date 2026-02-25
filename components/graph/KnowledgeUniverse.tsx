@@ -80,6 +80,7 @@ function buildNodes(): Node[] {
   const minDistance = 1.15; // 밀도 완화 핵심
 
   return HEXAGRAMS.map((h) => {
+    const card = getCardForHexagram(h.id);
     let chosen: [number, number, number] = [0, 0, 0];
 
     for (let attempt = 0; attempt < 36; attempt++) {
@@ -112,7 +113,7 @@ function buildNodes(): Node[] {
 
     return {
       id: h.id,
-      label: h.nameKo,
+      label: card.full_name ?? h.nameKo,
       summary: h.summary,
       keywords: h.keywords,
       position: chosen,
