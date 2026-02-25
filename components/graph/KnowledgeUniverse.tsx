@@ -27,7 +27,8 @@ type Node = {
   size: number;
 };
 
-const FEATURED_IDS = [1, 2, 11, 12, 29, 30, 51, 57, 52, 58, 63, 64];
+// 대표 행성: 8괘 중첩(팔순괘)만 노출
+const FEATURED_IDS = [1, 2, 29, 30, 51, 57, 52, 58];
 
 const AXIS_COLORS: Record<AxisKey, string> = {
   money: "#5f86d9",
