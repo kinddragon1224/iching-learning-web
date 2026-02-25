@@ -167,26 +167,37 @@ function makeTaegeukTexture() {
   const red = "#b3131b";
   const blue = "#0b2a78";
 
-  // 북(상단)=빨강, 남(하단)=파랑 + 중앙 물결 경계
-  ctx.fillStyle = red;
-  ctx.fillRect(0, 0, size, size / 2);
-
-  ctx.fillStyle = blue;
-  ctx.fillRect(0, size / 2, size, size / 2);
-
   const cx = size / 2;
-  const r = size / 4;
+  const cy = size / 2;
+  const R = size * 0.44;
 
-  // 태극 물결(S-curve)
+  // 원형 클립(태극 바깥은 투명)
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(cx, cy, R, 0, Math.PI * 2);
+  ctx.closePath();
+  ctx.clip();
+
+  // 북(상단)=빨강, 남(하단)=파랑
+  ctx.fillStyle = red;
+  ctx.fillRect(cx - R, cy - R, R * 2, R);
+
+  ctx.fillStyle = blue;
+  ctx.fillRect(cx - R, cy, R * 2, R);
+
+  // 중앙 물결(S-curve)
+  const r = R / 2;
   ctx.fillStyle = blue;
   ctx.beginPath();
-  ctx.arc(cx, size / 4, r, 0, Math.PI * 2);
+  ctx.arc(cx, cy - r, r, 0, Math.PI * 2);
   ctx.fill();
 
   ctx.fillStyle = red;
   ctx.beginPath();
-  ctx.arc(cx, (size * 3) / 4, r, 0, Math.PI * 2);
+  ctx.arc(cx, cy + r, r, 0, Math.PI * 2);
   ctx.fill();
+
+  ctx.restore();
 
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
@@ -299,22 +310,24 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
 
   const seg = isMobile ? 48 : 76;
 
-  useFrame((_, delta) => {
+  useFrame(() => {
     if (!ref.current) return;
-    ref.current.rotation.y += delta * 0.02;
+    ref.current.rotation.y = 0; // 북=빨강, 남=파랑 방향 고정
   });
 
   return (
     <group ref={ref}>
       <mesh>
         <sphereGeometry args={[1.58, seg, seg]} />
-        <meshBasicMaterial map={taegeukTex} toneMapped={false} />
+        <meshStandardMaterial color="#0f1118" roughness={0.7} metalness={0.08} emissive="#121826" emissiveIntensity={0.18} />
       </mesh>
 
-      <mesh>
-        <sphereGeometry args={[1.615, seg, seg]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.02} toneMapped={false} />
-      </mesh>
+      <sprite position={[0, 0, 1.6]} scale={[2.85, 2.85, 1]}>
+        <spriteMaterial map={taegeukTex} transparent opacity={1} toneMapped={false} depthWrite={false} />
+      </sprite>
+      <sprite position={[0, 0, -1.6]} scale={[2.85, 2.85, 1]}>
+        <spriteMaterial map={taegeukTex} transparent opacity={1} toneMapped={false} rotation={Math.PI} depthWrite={false} />
+      </sprite>
 
       <HexagramPulseSeal selectedId={selectedId} isMobile={isMobile} />
     </group>
