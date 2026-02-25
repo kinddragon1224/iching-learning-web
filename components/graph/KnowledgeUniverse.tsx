@@ -171,27 +171,27 @@ function makeTaegeukTexture() {
   const cy = size / 2;
   const r = size * 0.42;
 
-  // Red top half
-  ctx.fillStyle = "#cd2e3a";
+  // Red top half (Taegeukgi red)
+  ctx.fillStyle = "#c60c30";
   ctx.beginPath();
   ctx.arc(cx, cy, r, Math.PI, 0, false);
   ctx.closePath();
   ctx.fill();
 
-  // Blue bottom half
-  ctx.fillStyle = "#0047a0";
+  // Blue bottom half (Taegeukgi blue)
+  ctx.fillStyle = "#003478";
   ctx.beginPath();
   ctx.arc(cx, cy, r, 0, Math.PI, false);
   ctx.closePath();
   ctx.fill();
 
   // Taegeuk wave (yin-yang flow)
-  ctx.fillStyle = "#0047a0";
+  ctx.fillStyle = "#003478";
   ctx.beginPath();
   ctx.arc(cx, cy - r / 2, r / 2, 0, Math.PI * 2);
   ctx.fill();
 
-  ctx.fillStyle = "#cd2e3a";
+  ctx.fillStyle = "#c60c30";
   ctx.beginPath();
   ctx.arc(cx, cy + r / 2, r / 2, 0, Math.PI * 2);
   ctx.fill();
@@ -339,14 +339,14 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
         />
       </mesh>
 
-      {/* 태극 문양을 구체 표면 전/후면에 배치 */}
-      <mesh position={[0, 0, 1.59]}>
-        <circleGeometry args={[1.08, 96]} />
-        <meshBasicMaterial map={taegeukTex} transparent opacity={0.98} />
+      {/* 태극 문양을 구체 표면 전/후면에 밀착 배치 */}
+      <mesh position={[0, 0, 1.582]}>
+        <circleGeometry args={[1.28, 128]} />
+        <meshStandardMaterial map={taegeukTex} transparent opacity={0.99} roughness={0.45} metalness={0.02} emissive="#ffffff" emissiveIntensity={0.03} />
       </mesh>
-      <mesh position={[0, 0, -1.59]} rotation={[0, Math.PI, 0]}>
-        <circleGeometry args={[1.08, 96]} />
-        <meshBasicMaterial map={taegeukTex} transparent opacity={0.98} />
+      <mesh position={[0, 0, -1.582]} rotation={[0, Math.PI, 0]}>
+        <circleGeometry args={[1.28, 128]} />
+        <meshStandardMaterial map={taegeukTex} transparent opacity={0.99} roughness={0.45} metalness={0.02} emissive="#ffffff" emissiveIntensity={0.03} />
       </mesh>
 
       <mesh>
