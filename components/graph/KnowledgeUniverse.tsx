@@ -528,7 +528,7 @@ export function KnowledgeUniverse() {
   const [saveOpen, setSaveOpen] = useState(false);
   const [saveToast, setSaveToast] = useState("");
   const [todayCount, setTodayCount] = useState(0);
-  const [lowDensity, setLowDensity] = useState(false);
+  const lowDensity = true;
   const [revealCount, setRevealCount] = useState(16);
 
   useEffect(() => {
@@ -549,15 +549,7 @@ export function KnowledgeUniverse() {
     setTodayCount(count);
   }, [selectedId, panelOpen, saveToast]);
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    setLowDensity(localStorage.getItem("gwaedo_low_density_v1") === "1");
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    localStorage.setItem("gwaedo_low_density_v1", lowDensity ? "1" : "0");
-  }, [lowDensity]);
+  // low-density mode is now always on by default
 
   const nodes = useMemo(() => buildNodes(), []);
   const visibleNodes = useMemo(() => {
@@ -708,12 +700,6 @@ export function KnowledgeUniverse() {
             </div>
 
             <div className="flex items-center gap-2">
-              <button
-                onClick={() => setLowDensity((v) => !v)}
-                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
-              >
-                저밀도 {lowDensity ? "ON" : "OFF"}
-              </button>
               <Link href="/saved" className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5">
                 오늘 저장 {todayCount}/4
               </Link>
