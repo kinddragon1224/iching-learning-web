@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I Ching Learning FAQ",
+  title: "자주 묻는 질문 | 주역 학습 웹",
   description:
-    "Frequently asked questions about I Ching Learning Web, a structured reflection and learning tool built on the 64 hexagrams.",
+    "64괘 기반 주역 학습 웹의 자주 묻는 질문. 점술이 아닌 학습/성찰 도구로서의 사용법을 안내합니다.",
 };
 
 const faqs = [
   {
-    q: "What is I Ching Learning Web?",
-    a: "I Ching Learning Web is a structured learning and reflection platform based on the 64 hexagrams. It helps users think through decisions using 4 practical axes: money, work, relationship, and time.",
+    q: "주역 학습 웹은 무엇인가요?",
+    a: "64괘를 기반으로 의사결정을 성찰하는 학습 플랫폼입니다. 돈/일/관계/시간의 4축 질문으로 생각을 구조화하도록 돕습니다.",
   },
   {
-    q: "Is this a fortune-telling app?",
-    a: "No. It is designed as a learning and reflection tool. The focus is interpretation, self-check questions, and actionable thinking—not deterministic prediction.",
+    q: "점술 앱인가요?",
+    a: "아니요. 미래를 단정하는 예언형 도구가 아니라, 해석과 자기 점검 질문을 통해 행동을 설계하는 학습/성찰 도구입니다.",
   },
   {
-    q: "How should I use a hexagram page?",
-    a: "Read the summary, review the 4-axis interpretation, check the six-line learning points, then answer one question and convert it into a concrete action for today.",
+    q: "괘 상세 페이지는 어떻게 활용하나요?",
+    a: "요약 → 4축 해석 → 6효 학습 포인트 → 4축 질문 순서로 보고, 오늘 실행할 행동 1개로 연결하면 됩니다.",
   },
   {
-    q: "Who is this product for?",
-    a: "It is for creators, founders, operators, and learners who want a disciplined framework for reflection and better decision quality.",
+    q: "누가 쓰면 좋나요?",
+    a: "창작자, 창업가, 운영자, 실무자처럼 복잡한 선택을 자주 해야 하는 사용자에게 적합합니다.",
   },
   {
-    q: "How many hexagrams are supported?",
-    a: "All 64 hexagrams are supported with detail pages and practical reflection prompts.",
+    q: "몇 개의 괘를 지원하나요?",
+    a: "64괘 전체를 상세 페이지로 지원합니다.",
   },
 ];
 
@@ -47,8 +47,8 @@ export default function FaqPage() {
     <main className="mx-auto max-w-3xl space-y-6 p-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <header>
-        <h1 className="text-2xl font-bold">FAQ</h1>
-        <p className="text-sm text-neutral-600">Last updated: 2026-02-25</p>
+        <h1 className="text-2xl font-bold">자주 묻는 질문</h1>
+        <p className="text-sm text-neutral-600">최종 업데이트: 2026-02-25</p>
       </header>
 
       <section className="space-y-4">

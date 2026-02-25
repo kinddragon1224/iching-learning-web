@@ -24,17 +24,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="fixed right-3 top-3 z-[100] flex gap-2">
+          <Link href="/" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
+            홈
+          </Link>
           <Link href="/faq" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            FAQ
+            자주 묻는 질문
           </Link>
           <Link href="/compare" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            Compare
+            비교
           </Link>
           <Link href="/checkout" className="rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white backdrop-blur">
-            Checkout
+            결제
           </Link>
         </div>
         {children}
