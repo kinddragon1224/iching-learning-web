@@ -337,30 +337,35 @@ function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: n
 function AxisOrbits({ strengths }: { strengths: Partial<Record<AxisKey, AxisStrength>> }) {
   const ref = useRef<THREE.Group>(null);
 
+  const axesToRender = (Object.keys(AXIS_META) as AxisKey[])
+    .map((axis) => ({ axis, strength: strengths[axis] ?? 0 }))
+    .filter((x) => x.strength > 0)
+    .sort((a, b) => b.strength - a.strength)
+    .slice(0, 2);
+
   useFrame((_, delta) => {
     if (!ref.current) return;
     const maxStrength = Math.max(...Object.values(strengths), 1);
-    ref.current.rotation.y -= delta * (0.02 + maxStrength * 0.012);
+    ref.current.rotation.y -= delta * (0.02 + maxStrength * 0.01);
   });
 
   return (
     <group ref={ref}>
-      {(Object.keys(AXIS_META) as AxisKey[]).map((axis, idx) => {
-        const strength = strengths[axis] ?? 0;
-        const tube = strength === 3 ? 0.03 : strength === 2 ? 0.022 : strength === 1 ? 0.017 : 0.012;
-        const opacity = strength === 3 ? 0.92 : strength === 2 ? 0.72 : strength === 1 ? 0.5 : 0.25;
-        const emissiveIntensity = strength === 3 ? 0.9 : strength === 2 ? 0.65 : strength === 1 ? 0.4 : 0.18;
+      {axesToRender.map(({ axis, strength }, idx) => {
+        const tube = strength === 3 ? 0.026 : strength === 2 ? 0.02 : 0.015;
+        const opacity = strength === 3 ? 0.7 : strength === 2 ? 0.52 : 0.36;
+        const emissiveIntensity = strength === 3 ? 0.75 : strength === 2 ? 0.52 : 0.32;
 
         return (
-          <group key={axis} rotation={[idx * 0.7, idx * 0.4, idx * 0.25]}>
+          <group key={axis} rotation={[idx * 0.78, idx * 0.52, idx * 0.32]}>
             <mesh>
-              <torusGeometry args={[3.1 + idx * 0.2, Math.max(0.009, tube * 0.8), 16, 180]} />
+              <torusGeometry args={[3.12 + idx * 0.24, Math.max(0.009, tube * 0.78), 16, 180]} />
               <meshStandardMaterial
                 color={AXIS_META[axis].color}
                 emissive={AXIS_META[axis].color}
                 emissiveIntensity={emissiveIntensity}
                 transparent
-                opacity={opacity * 0.55}
+                opacity={opacity}
               />
             </mesh>
           </group>
