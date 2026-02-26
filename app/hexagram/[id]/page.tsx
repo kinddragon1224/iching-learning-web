@@ -64,7 +64,7 @@ export default async function HexagramCardDetailPage({
 
       <header>
         <h1 className="text-2xl font-bold">#{id} {card.full_name ?? card.short_name}</h1>
-        <p className="text-neutral-500">({card.short_name}){card.trigram_pair ? ` · ${card.trigram_pair}` : ""}</p>
+        <p className="text-[var(--text-muted)]">({card.short_name}){card.trigram_pair ? ` · ${card.trigram_pair}` : ""}</p>
         <span className="mt-2 inline-block rounded-full border px-2 py-0.5 text-xs">{AXIS_LABEL[primaryAxis]}</span>
         <p className="mt-2">{content.summary}</p>
         <div className="mt-2 flex flex-wrap gap-2 text-xs">
@@ -79,11 +79,11 @@ export default async function HexagramCardDetailPage({
           <div>
             <h2 className="font-semibold">무료 해석 (원문+현대)</h2>
             <p className="mt-2 text-sm"><b>원문 앵커:</b> {track.freePreview.classicalAnchor}</p>
-            <p className="text-sm text-neutral-600">{track.freePreview.plainMeaning}</p>
+            <p className="text-sm text-[var(--text-muted)]">{track.freePreview.plainMeaning}</p>
             <p className="mt-1 text-sm">{track.freePreview.modernTeaser}</p>
           </div>
 
-          <div className="rounded-lg border bg-neutral-50 p-3">
+          <div className="rounded-lg border border-white/20 bg-black/20 p-3">
             <h3 className="font-medium text-sm">Pro 상담 프레임 (맛보기)</h3>
             <ul className="mt-2 space-y-1 text-sm">
               <li><b>진단:</b> {track.proFrame.diagnosis}</li>
@@ -97,31 +97,31 @@ export default async function HexagramCardDetailPage({
       <section className="rounded-xl border p-4">
         <h2 className="mb-3 font-semibold">4축 해석 + 질문</h2>
         <div className="grid gap-3 md:grid-cols-2 text-sm">
-          <article className="rounded-lg bg-neutral-50 p-3">
+          <article className="rounded-lg bg-black/20 p-3">
             <p className="font-semibold">[돈]</p>
             <p className="mt-1">{content.axes.money}</p>
-            <p className="mt-2 text-neutral-600">Q. {q.money}</p>
+            <p className="mt-2 text-[var(--text-muted)]">Q. {q.money}</p>
             <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="money" question={q.money ?? ""} />
           </article>
 
-          <article className="rounded-lg bg-neutral-50 p-3">
+          <article className="rounded-lg bg-black/20 p-3">
             <p className="font-semibold">[일]</p>
             <p className="mt-1">{content.axes.work}</p>
-            <p className="mt-2 text-neutral-600">Q. {q.work}</p>
+            <p className="mt-2 text-[var(--text-muted)]">Q. {q.work}</p>
             <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="work" question={q.work ?? ""} />
           </article>
 
-          <article className="rounded-lg bg-neutral-50 p-3">
+          <article className="rounded-lg bg-black/20 p-3">
             <p className="font-semibold">[관계]</p>
             <p className="mt-1">{content.axes.relation}</p>
-            <p className="mt-2 text-neutral-600">Q. {q.relation}</p>
+            <p className="mt-2 text-[var(--text-muted)]">Q. {q.relation}</p>
             <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="relation" question={q.relation ?? ""} />
           </article>
 
-          <article className="rounded-lg bg-neutral-50 p-3">
+          <article className="rounded-lg bg-black/20 p-3">
             <p className="font-semibold">[시간]</p>
             <p className="mt-1">{content.axes.time}</p>
-            <p className="mt-2 text-neutral-600">Q. {q.time}</p>
+            <p className="mt-2 text-[var(--text-muted)]">Q. {q.time}</p>
             <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="time" question={q.time ?? ""} />
           </article>
         </div>
@@ -131,7 +131,7 @@ export default async function HexagramCardDetailPage({
         <h2 className="mb-3 font-semibold">6효 학습 포인트</h2>
         <ol className="space-y-2 text-sm">
           {content.lineTexts.map((line, idx) => (
-            <li key={idx} className="rounded-lg bg-neutral-50 px-3 py-2">
+            <li key={idx} className="rounded-lg bg-black/20 px-3 py-2">
               {track?.linesKorean?.[idx] ? <b className="mr-1">[{track.linesKorean[idx]}]</b> : null}
               {line}
             </li>

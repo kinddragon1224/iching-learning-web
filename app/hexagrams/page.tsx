@@ -100,23 +100,29 @@ export default function HexagramListPage() {
         <p className="text-xs text-[var(--text-muted)]">검색 결과: {results.length}개</p>
       </section>
 
-      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {results.map((h) => (
-          <Link key={h.id} href={`/hexagram/${h.id}`} className="paper-panel rounded-xl p-4 panel-hover">
-            <div className="flex items-center justify-between gap-2">
-              <p className="text-xs text-[var(--text-muted)]">#{h.id.toString().padStart(2, "0")}</p>
-              <p className="text-[10px] text-[var(--text-muted)] line-clamp-1">{h.nameEn}</p>
-            </div>
-            <h2 className="mt-1 font-semibold">{h.nameKo}</h2>
-            <p className="mt-2 line-clamp-2 text-sm text-[var(--text-muted)]">{h.summary}</p>
-            <div className="mt-2 flex flex-wrap gap-1">
-              {h.keywords.slice(0, 2).map((k) => (
-                <span key={k} className="gold-chip rounded-full px-2 py-0.5 text-[10px]">#{k}</span>
-              ))}
-            </div>
-          </Link>
-        ))}
-      </section>
+      {results.length === 0 ? (
+        <section className="paper-panel rounded-xl p-6 text-sm text-[var(--text-muted)]">
+          검색 결과가 없습니다. 다른 키워드(괘 이름/번호/주제)로 다시 시도해보세요.
+        </section>
+      ) : (
+        <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {results.map((h) => (
+            <Link key={h.id} href={`/hexagram/${h.id}`} className="paper-panel rounded-xl p-4 panel-hover">
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-xs text-[var(--text-muted)]">#{h.id.toString().padStart(2, "0")}</p>
+                <p className="text-[10px] text-[var(--text-muted)] line-clamp-1">{h.nameEn}</p>
+              </div>
+              <h2 className="mt-1 font-semibold">{h.nameKo}</h2>
+              <p className="mt-2 line-clamp-2 text-sm text-[var(--text-muted)]">{h.summary}</p>
+              <div className="mt-2 flex flex-wrap gap-1">
+                {h.keywords.slice(0, 2).map((k) => (
+                  <span key={k} className="gold-chip rounded-full px-2 py-0.5 text-[10px]">#{k}</span>
+                ))}
+              </div>
+            </Link>
+          ))}
+        </section>
+      )}
     </main>
   );
 }
