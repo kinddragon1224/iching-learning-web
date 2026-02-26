@@ -591,7 +591,7 @@ export function KnowledgeUniverse() {
   const [saveOpen, setSaveOpen] = useState(false);
   const [saveToast, setSaveToast] = useState("");
   const [todayCount, setTodayCount] = useState(0);
-  const lowDensity = true;
+  const lowDensity = false;
   const [revealCount, setRevealCount] = useState(16);
 
   useEffect(() => {
