@@ -35,7 +35,7 @@ export default async function HexagramCardDetailPage({
 
   return (
     <main className="mx-auto max-w-3xl space-y-5 p-6">
-      <Link href="/" className="text-sm underline">← 우주 화면으로</Link>
+      <Link href="/" className="text-sm underline">← 홈으로 돌아가기</Link>
 
       <section className="overflow-hidden rounded-2xl border bg-neutral-50">
         <div className="relative">

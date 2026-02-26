@@ -5,7 +5,7 @@ export default function HexagramListPage() {
   return (
     <main className="mx-auto max-w-3xl p-6">
       <h1 className="mb-2 text-2xl font-bold">괘 목록</h1>
-      <p className="mb-4 text-sm text-neutral-600">학습하고 싶은 괘를 선택해서 4축 해석과 질문으로 들어가자.</p>
+      <p className="mb-4 text-sm text-neutral-600">학습하고 싶은 괘를 선택해 4축 해석과 질문으로 들어가보세요.</p>
 
       <ul className="space-y-2">
         {HEXAGRAMS.map((h) => (
