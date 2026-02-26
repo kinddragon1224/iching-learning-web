@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     q: "점술 앱인가요?",
-    a: "아니요. 미래를 단정하는 예언형 도구가 아니라, 해석과 자기 점검 질문을 통해 행동을 설계하는 학습/성찰 도구입니다.",
+    a: "아닙니다. 미래를 단정하는 예언형 도구가 아니라, 해석과 자기 점검 질문을 통해 행동을 설계하는 학습/성찰 도구입니다.",
   },
   {
     q: "괘 상세 페이지는 어떻게 활용하나요?",
-    a: "요약 → 4축 해석 → 6효 학습 포인트 → 4축 질문 순서로 보고, 오늘 실행할 행동 1개로 연결하면 됩니다.",
+    a: "요약 → 4축 해석 → 6효 학습 포인트 → 4축 질문 순서로 보고, 오늘 실행할 행동 1개로 연결하시면 됩니다.",
   },
   {
     q: "누가 쓰면 좋나요?",
@@ -44,18 +44,18 @@ const faqSchema = {
 
 export default function FaqPage() {
   return (
-    <main className="mx-auto max-w-3xl space-y-6 p-6">
+    <main className="mx-auto max-w-3xl space-y-6 p-6 pt-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <header>
         <h1 className="text-2xl font-bold">자주 묻는 질문</h1>
-        <p className="text-sm text-neutral-600">최종 업데이트: 2026-02-25</p>
+        <p className="text-sm text-[var(--text-muted)]">최종 업데이트: 2026-02-26</p>
       </header>
 
       <section className="space-y-4">
         {faqs.map((f) => (
-          <article key={f.q} className="rounded-xl border p-4">
+          <article key={f.q} className="paper-panel rounded-xl p-4">
             <h2 className="font-semibold">{f.q}</h2>
-            <p className="mt-2 text-sm text-neutral-700">{f.a}</p>
+            <p className="mt-2 text-sm text-[var(--text-muted)]">{f.a}</p>
           </article>
         ))}
       </section>
