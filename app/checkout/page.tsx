@@ -35,7 +35,7 @@ const PLANS: Plan[] = [
     priceLabel: "월 49,000원",
     priceValue: 49000,
     badge: "가장 많이 선택",
-    features: ["세션 모드 기본", "월 100건 세션 저장", "기본 PDF 리포트"],
+    features: ["세션 모드", "월 100건 저장", "PDF 리포트"],
   },
   {
     key: "team",
@@ -43,14 +43,14 @@ const PLANS: Plan[] = [
     subtitle: "팀/소규모 센터",
     priceLabel: "월 189,000원 (기본 5석)",
     priceValue: 189000,
-    features: ["팀 계정/권한", "케이스 공유 노트", "월 1,000건 세션 저장"],
+    features: ["팀 계정/권한", "케이스 공유", "월 1,000건 저장"],
   },
   {
     key: "enterprise",
     title: "Enterprise/Education",
     subtitle: "기관/기업",
     priceLabel: "별도 견적",
-    features: ["SSO/감사로그", "맞춤 리포트", "온보딩/교육 지원"],
+    features: ["SSO/감사로그", "맞춤 리포트", "온보딩 지원"],
   },
 ];
 
@@ -116,6 +116,9 @@ export default function CheckoutPage() {
       <header>
         <h1 className="text-2xl font-bold">결제 / 플랜 선택</h1>
         <p className="mt-1 text-sm text-[var(--text-muted)]">전문가용 주역 상담 워크스페이스 플랜</p>
+        <p className="mt-2 inline-block rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs text-amber-200">
+          데모 단계 · 실제 결제는 진행되지 않음
+        </p>
       </header>
 
       <section className="grid gap-3 md:grid-cols-3">
@@ -198,14 +201,24 @@ export default function CheckoutPage() {
         </div>
       </section>
 
-      <button
-        type="button"
-        onClick={handleSubmit}
-        disabled={!canPay || isSubmitting}
-        className="w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
-      >
-        {isSubmitting ? "처리 중..." : canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해줘"}
-      </button>
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+        <button
+          type="button"
+          onClick={handleSubmit}
+          disabled={!canPay || isSubmitting}
+          className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+        >
+          {isSubmitting && <span className="h-4 w-4 animate-spin rounded-full border-2 border-black/30 border-t-black" />}
+          {isSubmitting ? "처리 중..." : canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해줘"}
+        </button>
+
+        <Link
+          href="mailto:hello@kinddragon.ai?subject=I%20Ching%20Pro%20문의"
+          className="text-center text-xs text-[var(--text-muted)] underline sm:text-sm"
+        >
+          문의하기 (도입/결제 상담)
+        </Link>
+      </div>
     </main>
   );
 }
