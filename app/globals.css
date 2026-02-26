@@ -261,11 +261,11 @@ h3 {
   height: 78%;
   z-index: 0;
   background:
-    radial-gradient(circle at 34% 42%, rgba(214, 44, 44, 0.34), transparent 44%),
-    radial-gradient(circle at 64% 50%, rgba(0, 71, 160, 0.38), transparent 46%),
-    radial-gradient(circle at 50% 68%, rgba(255, 255, 255, 0.09), transparent 38%),
-    radial-gradient(circle at 82% 24%, rgba(88, 152, 255, 0.24), transparent 40%);
-  filter: blur(10px) saturate(1.25);
+    radial-gradient(circle at 34% 42%, rgba(234, 38, 38, 0.44), transparent 44%),
+    radial-gradient(circle at 64% 50%, rgba(0, 92, 214, 0.46), transparent 46%),
+    radial-gradient(circle at 50% 68%, rgba(255, 255, 255, 0.11), transparent 38%),
+    radial-gradient(circle at 82% 24%, rgba(82, 176, 255, 0.34), transparent 40%);
+  filter: blur(9px) saturate(1.55) contrast(1.08);
   animation: nebulaFloat 8.2s ease-in-out infinite;
   pointer-events: none;
 }
@@ -298,8 +298,8 @@ h3 {
 }
 
 @keyframes starsTwinkle {
-  0%, 100% { opacity: 0.62; filter: brightness(1); }
-  50% { opacity: 1; filter: brightness(1.45); }
+  0%, 100% { opacity: 0.66; filter: brightness(1.1) saturate(1.15); }
+  50% { opacity: 1; filter: brightness(1.6) saturate(1.25); }
 }
 
 .home-stars-layer-2 {
