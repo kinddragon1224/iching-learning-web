@@ -4,8 +4,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-5xl p-6 pt-24">
-      <header className="space-y-3 text-center">
+    <main className="home-hero-bg mx-auto max-w-5xl p-6 pt-24">
+      <div className="home-nebula-layer" aria-hidden />
+      <div className="home-stars-layer" aria-hidden />
+
+      <header className="relative z-10 space-y-3 text-center">
         <p className="text-sm text-[var(--text-muted)] home-fade-in">주역 학습 플랫폼</p>
         <div className="home-title-wrap">
           <div className="home-title-aura" aria-hidden />
@@ -16,7 +19,7 @@ export default function Home() {
         <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙하면 64괘로 확장해.</p>
       </header>
 
-      <section className="mt-8 grid gap-4 md:grid-cols-3">
+      <section className="relative z-10 mt-8 grid gap-4 md:grid-cols-3">
         <Link href="/bagua" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
           <p className="text-xs text-[var(--text-muted)]">입문 트랙 · START HERE</p>
           <h2 className="mt-1 text-xl font-semibold">8괘부터 배우기</h2>
