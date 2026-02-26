@@ -30,6 +30,8 @@ export default async function HexagramCardDetailPage({
   const primaryAxis = getPrimaryAxisById(id) ?? "work";
   const title = card.full_name ? `#${id} ${card.full_name} (${card.short_name})` : `#${id} ${card.short_name}`;
   const track = getHexagramTrack(id);
+  const prevId = id > 1 ? id - 1 : 64;
+  const nextId = id < 64 ? id + 1 : 1;
 
   return (
     <main className="mx-auto max-w-3xl space-y-5 p-6">
@@ -84,13 +86,36 @@ export default async function HexagramCardDetailPage({
       )}
 
       <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">4축 해석</h2>
-        <ul className="space-y-2 text-sm">
-          <li><b>[돈]</b> {content.axes.money}</li>
-          <li><b>[일]</b> {content.axes.work}</li>
-          <li><b>[관계]</b> {content.axes.relation}</li>
-          <li><b>[시간]</b> {content.axes.time}</li>
-        </ul>
+        <h2 className="mb-3 font-semibold">4축 해석 + 질문</h2>
+        <div className="grid gap-3 md:grid-cols-2 text-sm">
+          <article className="rounded-lg bg-neutral-50 p-3">
+            <p className="font-semibold">[돈]</p>
+            <p className="mt-1">{content.axes.money}</p>
+            <p className="mt-2 text-neutral-600">Q. {q.money}</p>
+            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="money" question={q.money ?? ""} />
+          </article>
+
+          <article className="rounded-lg bg-neutral-50 p-3">
+            <p className="font-semibold">[일]</p>
+            <p className="mt-1">{content.axes.work}</p>
+            <p className="mt-2 text-neutral-600">Q. {q.work}</p>
+            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="work" question={q.work ?? ""} />
+          </article>
+
+          <article className="rounded-lg bg-neutral-50 p-3">
+            <p className="font-semibold">[관계]</p>
+            <p className="mt-1">{content.axes.relation}</p>
+            <p className="mt-2 text-neutral-600">Q. {q.relation}</p>
+            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="relation" question={q.relation ?? ""} />
+          </article>
+
+          <article className="rounded-lg bg-neutral-50 p-3">
+            <p className="font-semibold">[시간]</p>
+            <p className="mt-1">{content.axes.time}</p>
+            <p className="mt-2 text-neutral-600">Q. {q.time}</p>
+            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="time" question={q.time ?? ""} />
+          </article>
+        </div>
       </section>
 
       <section className="rounded-xl border p-4">
@@ -106,12 +131,12 @@ export default async function HexagramCardDetailPage({
       </section>
 
       <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">4축 질문</h2>
-        <div className="space-y-3 text-sm">
-          <div><b>[돈]</b> {q.money}<QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="money" question={q.money ?? ""} /></div>
-          <div><b>[일]</b> {q.work}<QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="work" question={q.work ?? ""} /></div>
-          <div><b>[관계]</b> {q.relation}<QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="relation" question={q.relation ?? ""} /></div>
-          <div><b>[시간]</b> {q.time}<QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="time" question={q.time ?? ""} /></div>
+        <h2 className="mb-3 font-semibold">다른 괘 바로 보기</h2>
+        <div className="flex flex-wrap gap-2 text-sm">
+          <Link href={`/hexagram/${prevId}`} className="rounded-lg border px-3 py-2">← 이전 괘 #{prevId}</Link>
+          <Link href="/hexagrams" className="rounded-lg border px-3 py-2">전체 64괘 보기</Link>
+          <Link href="/search" className="rounded-lg border px-3 py-2">검색으로 이동</Link>
+          <Link href={`/hexagram/${nextId}`} className="rounded-lg border px-3 py-2">다음 괘 #{nextId} →</Link>
         </div>
       </section>
     </main>
