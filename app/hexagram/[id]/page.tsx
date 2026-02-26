@@ -6,6 +6,7 @@ import { getCardForHexagram, getHexagramContent } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 import { QuestionActionButtons } from "@/components/QuestionActionButtons";
+import { getHexagramTrack } from "@/data/pro_tracks";
 
 export function generateStaticParams() {
   return HEXAGRAMS.map((h) => ({ id: String(h.id) }));
@@ -28,6 +29,7 @@ export default async function HexagramCardDetailPage({
   const q = content.questions;
   const primaryAxis = getPrimaryAxisById(id) ?? "work";
   const title = card.full_name ? `#${id} ${card.full_name} (${card.short_name})` : `#${id} ${card.short_name}`;
+  const track = getHexagramTrack(id);
 
   return (
     <main className="mx-auto max-w-3xl space-y-5 p-6">
@@ -61,6 +63,26 @@ export default async function HexagramCardDetailPage({
         </div>
       </header>
 
+      {track && (
+        <section className="rounded-xl border p-4 space-y-4">
+          <div>
+            <h2 className="font-semibold">무료 해석 (원문+현대)</h2>
+            <p className="mt-2 text-sm"><b>원문 앵커:</b> {track.freePreview.classicalAnchor}</p>
+            <p className="text-sm text-neutral-600">{track.freePreview.plainMeaning}</p>
+            <p className="mt-1 text-sm">{track.freePreview.modernTeaser}</p>
+          </div>
+
+          <div className="rounded-lg border bg-neutral-50 p-3">
+            <h3 className="font-medium text-sm">Pro 상담 프레임 (맛보기)</h3>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li><b>진단:</b> {track.proFrame.diagnosis}</li>
+              <li><b>코칭 질문:</b> {track.proFrame.coachingQuestion}</li>
+              <li><b>실행 1스텝:</b> {track.proFrame.actionStep}</li>
+            </ul>
+          </div>
+        </section>
+      )}
+
       <section className="rounded-xl border p-4">
         <h2 className="mb-3 font-semibold">4축 해석</h2>
         <ul className="space-y-2 text-sm">
@@ -76,6 +98,7 @@ export default async function HexagramCardDetailPage({
         <ol className="space-y-2 text-sm">
           {content.lineTexts.map((line, idx) => (
             <li key={idx} className="rounded-lg bg-neutral-50 px-3 py-2">
+              {track?.linesKorean?.[idx] ? <b className="mr-1">[{track.linesKorean[idx]}]</b> : null}
               {line}
             </li>
           ))}
