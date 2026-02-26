@@ -182,6 +182,216 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     },
     linesKorean: ["초육", "구이", "육삼", "구사", "육오", "상구"],
   },
+  {
+    id: 3,
+    title: "水雷屯(수뢰둔)",
+    freePreview: {
+      classicalAnchor: "屯 元亨利貞 勿用有攸往",
+      plainMeaning: "시작은 길하나 혼란기엔 무리한 전진을 삼가야 한다.",
+      modernTeaser: "초기 혼란은 정상이다. 확장보다 정렬이 먼저다.",
+    },
+    proFrame: {
+      diagnosis: "초기 단계 변수 과다로 의사결정 피로가 높은 상태.",
+      coachingQuestion: "지금 반드시 해결할 변수 1개가 선명한가?",
+      actionStep: "이번 주 우선순위 1개만 고정하고 나머지는 보류 리스트로 분리한다.",
+    },
+    linesKorean: ["초구", "육이", "육삼", "육사", "구오", "상육"],
+  },
+  {
+    id: 4,
+    title: "山水蒙(산수몽)",
+    freePreview: {
+      classicalAnchor: "蒙 亨 匪我求童蒙 童蒙求我",
+      plainMeaning: "배움의 때에는 묻고 익히는 자세가 형통을 만든다.",
+      modernTeaser: "모를수록 체면보다 질문의 질이 중요하다.",
+    },
+    proFrame: {
+      diagnosis: "지식 격차로 실행 지연이 발생하는 학습 병목 구간.",
+      coachingQuestion: "지금 막힌 지점을 한 문장 질문으로 만들었는가?",
+      actionStep: "핵심 질문 3개를 정리해 멘토/자료로 즉시 검증한다.",
+    },
+    linesKorean: ["초육", "구이", "육삼", "육사", "육오", "상구"],
+  },
+  {
+    id: 5,
+    title: "水天需(수천수)",
+    freePreview: {
+      classicalAnchor: "需 有孚 光亨 貞吉",
+      plainMeaning: "기다림 속 신뢰를 지키면 결국 길하다.",
+      modernTeaser: "조급한 실행보다 준비 밀도가 성패를 가른다.",
+    },
+    proFrame: {
+      diagnosis: "타이밍 미성숙 구간으로 성급한 결정 시 손실 위험이 큼.",
+      coachingQuestion: "지금 전진을 막는 핵심 조건은 무엇인가?",
+      actionStep: "실행 전 충족해야 할 조건 3개를 정의하고 체크한다.",
+    },
+    linesKorean: ["초구", "구이", "구삼", "육사", "구오", "상육"],
+  },
+  {
+    id: 6,
+    title: "天水訟(천수송)",
+    freePreview: {
+      classicalAnchor: "訟 有孚 窒 惕",
+      plainMeaning: "다툼의 때엔 신중히 경계하고 바름을 지켜야 한다.",
+      modernTeaser: "감정 승부가 아니라 사실·기준·문서가 해법이다.",
+    },
+    proFrame: {
+      diagnosis: "책임/권한 충돌이 누적된 분쟁 국면.",
+      coachingQuestion: "우리는 의견이 아니라 기준을 합의했는가?",
+      actionStep: "쟁점별로 사실·해석·결정안을 분리해 문서로 합의한다.",
+    },
+    linesKorean: ["초육", "구이", "육삼", "구사", "구오", "상구"],
+  },
+  {
+    id: 7,
+    title: "地水師(지수사)",
+    freePreview: {
+      classicalAnchor: "師 貞 丈人 吉",
+      plainMeaning: "조직은 바른 규율과 성숙한 리더십이 길하다.",
+      modernTeaser: "의욕보다 구조와 규칙이 실행력을 만든다.",
+    },
+    proFrame: {
+      diagnosis: "팀 에너지는 있으나 역할·보고 체계 미정렬 상태.",
+      coachingQuestion: "누가 무엇을 언제 책임지는지 명확한가?",
+      actionStep: "역할표(R&R)와 보고 주기를 1페이지로 고정해 공유한다.",
+    },
+    linesKorean: ["초육", "구이", "육삼", "육사", "육오", "상육"],
+  },
+  {
+    id: 8,
+    title: "水地比(수지비)",
+    freePreview: {
+      classicalAnchor: "比 吉 原筮 元永貞",
+      plainMeaning: "함께함은 길하나 바른 기준으로 모여야 한다.",
+      modernTeaser: "누구와 붙을지보다 어떤 기준으로 붙을지가 핵심이다.",
+    },
+    proFrame: {
+      diagnosis: "연결 수요는 높지만 경계·기대치 불명확으로 마찰 위험 존재.",
+      coachingQuestion: "이 관계의 기대치와 경계를 서로 확인했는가?",
+      actionStep: "협업 시작 전 기대치·역할·정산 규칙을 먼저 합의한다.",
+    },
+    linesKorean: ["초육", "육이", "육삼", "육사", "구오", "상육"],
+  },
+  {
+    id: 13,
+    title: "天火同人(천화동인)",
+    freePreview: {
+      classicalAnchor: "同人 于野 亨",
+      plainMeaning: "뜻을 함께하면 형통하다.",
+      modernTeaser: "개인 성과보다 공통 목표 정렬이 먼저다.",
+    },
+    proFrame: {
+      diagnosis: "협업 잠재력은 높지만 목표 정의가 분산된 상태.",
+      coachingQuestion: "팀이 같은 목표 문장을 말할 수 있는가?",
+      actionStep: "공통 목표 1문장 + 금지사항 3개를 합의해 게시한다.",
+    },
+    linesKorean: ["초구", "육이", "구삼", "구사", "구오", "상구"],
+  },
+  {
+    id: 14,
+    title: "火天大有(화천대유)",
+    freePreview: {
+      classicalAnchor: "大有 元亨",
+      plainMeaning: "크게 소유한 때는 책임 있게 운용해야 형통하다.",
+      modernTeaser: "성장기일수록 관리 체계를 먼저 세워야 오래 간다.",
+    },
+    proFrame: {
+      diagnosis: "성과 확대 구간으로 운영 부채 누적 위험이 존재.",
+      coachingQuestion: "확장 속도에 맞는 관리 체계를 갖췄는가?",
+      actionStep: "성과 사용 원칙(저축·재투자·운영비)을 비율로 고정한다.",
+    },
+    linesKorean: ["초구", "구이", "구삼", "구사", "육오", "상구"],
+  },
+  {
+    id: 15,
+    title: "地山謙(지산겸)",
+    freePreview: {
+      classicalAnchor: "謙 亨 君子有終",
+      plainMeaning: "겸손은 형통하며 끝을 좋게 만든다.",
+      modernTeaser: "과시를 줄이고 균형을 맞출수록 길이 열린다.",
+    },
+    proFrame: {
+      diagnosis: "성과 편차로 관계 피로가 생기기 쉬운 구간.",
+      coachingQuestion: "내 기여를 증명하려다 균형을 깨고 있지 않은가?",
+      actionStep: "이번 주 과시성 행동 1개를 줄이고 협업성 행동 1개를 늘린다.",
+    },
+    linesKorean: ["초육", "육이", "구삼", "육사", "육오", "상육"],
+  },
+  {
+    id: 16,
+    title: "雷地豫(뇌지예)",
+    freePreview: {
+      classicalAnchor: "豫 利建侯行師",
+      plainMeaning: "기세가 오를 때 준비된 움직임이 이롭다.",
+      modernTeaser: "동기부여만으론 부족하다. 준비된 시동이 필요하다.",
+    },
+    proFrame: {
+      diagnosis: "의욕은 높으나 실행 체크포인트 부재로 이탈 위험 존재.",
+      coachingQuestion: "시작 전 중간 점검과 마감 기준이 정해졌는가?",
+      actionStep: "시작-중간-마감 3지점 점검 캘린더를 먼저 설정한다.",
+    },
+    linesKorean: ["초육", "육이", "육삼", "구사", "육오", "상육"],
+  },
+  {
+    id: 51,
+    title: "震爲雷(중뢰진)",
+    freePreview: {
+      classicalAnchor: "震 亨 震來虩虩",
+      plainMeaning: "충격 속에서도 중심을 잡으면 형통하다.",
+      modernTeaser: "위기는 공포보다 복구 순서가 먼저다.",
+    },
+    proFrame: {
+      diagnosis: "예상 밖 충격으로 판단·소통 혼선이 큰 상태.",
+      coachingQuestion: "지금 가장 먼저 복구해야 할 핵심은 무엇인가?",
+      actionStep: "24시간 복구 우선순위 1~3을 정해 즉시 실행한다.",
+    },
+    linesKorean: ["초구", "육이", "육삼", "구사", "육오", "상육"],
+  },
+  {
+    id: 52,
+    title: "艮爲山(중산간)",
+    freePreview: {
+      classicalAnchor: "艮 其背 不獲其身",
+      plainMeaning: "멈춰야 할 때 멈추면 허물을 줄인다.",
+      modernTeaser: "과열 구간에선 정지가 전략이다.",
+    },
+    proFrame: {
+      diagnosis: "업무/감정 과열로 판단 정확도가 떨어진 상태.",
+      coachingQuestion: "지금 멈추지 않으면 무엇이 무너지는가?",
+      actionStep: "신규 일 추가를 중단하고 진행 중 1건 마무리에 집중한다.",
+    },
+    linesKorean: ["초육", "육이", "구삼", "육사", "육오", "상구"],
+  },
+  {
+    id: 57,
+    title: "巽爲風(중풍손)",
+    freePreview: {
+      classicalAnchor: "巽 小亨 利有攸往",
+      plainMeaning: "작게 스며들어도 방향이 맞으면 형통하다.",
+      modernTeaser: "강한 한 번보다 작은 반복이 구조를 바꾼다.",
+    },
+    proFrame: {
+      diagnosis: "큰 전환보다 미세 개선 누적이 적합한 상태.",
+      coachingQuestion: "오늘의 1% 개선 포인트는 무엇인가?",
+      actionStep: "매일 15분 개선 루틴을 고정하고 주간 누적을 점검한다.",
+    },
+    linesKorean: ["초육", "구이", "구삼", "육사", "구오", "상구"],
+  },
+  {
+    id: 58,
+    title: "兌爲澤(중택태)",
+    freePreview: {
+      classicalAnchor: "兌 亨 利貞",
+      plainMeaning: "기쁨의 소통이 형통을 만들되 바름이 필요하다.",
+      modernTeaser: "분위기와 목표를 함께 잡아야 교류가 성과가 된다.",
+    },
+    proFrame: {
+      diagnosis: "대화량은 충분하나 실행 연결이 약해 공회전 위험 존재.",
+      coachingQuestion: "좋은 대화를 실행으로 연결했는가?",
+      actionStep: "회의마다 액션 아이템 1개와 담당/기한을 즉시 확정한다.",
+    },
+    linesKorean: ["초구", "구이", "육삼", "구사", "구오", "상육"],
+  },
 ];
 
 const byId = new Map<number, HexagramTrack>(HEXAGRAM_TRACKS.map((t) => [t.id, t]));
