@@ -15,6 +15,18 @@ type Plan = {
   features: string[];
 };
 
+type CheckoutPayload = {
+  plan: PlanKey;
+  planTitle: string;
+  email: string;
+  requestId: string;
+  createdAt: string;
+  webhookSent?: boolean;
+  webhookError?: string;
+};
+
+const WEBHOOK_URL = process.env.NEXT_PUBLIC_CHECKOUT_WEBHOOK_URL;
+
 const PLANS: Plan[] = [
   {
     key: "solo",
@@ -60,20 +72,38 @@ export default function CheckoutPage() {
   const [plan, setPlan] = useState<PlanKey>("solo");
   const [agreePolicy, setAgreePolicy] = useState(false);
   const [agreeRefund, setAgreeRefund] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const selectedPlan = useMemo(() => PLANS.find((p) => p.key === plan) ?? PLANS[0], [plan]);
   const canPay = email.includes("@") && agreePolicy && agreeRefund;
 
-  const handleSubmit = () => {
-    if (!canPay) return;
+  const handleSubmit = async () => {
+    if (!canPay || isSubmitting) return;
+    setIsSubmitting(true);
 
-    const payload = {
+    const payload: CheckoutPayload = {
       plan,
       planTitle: selectedPlan.title,
       email,
       requestId: makeRequestId(),
       createdAt: new Date().toISOString(),
     };
+
+    if (WEBHOOK_URL) {
+      try {
+        const res = await fetch(WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        payload.webhookSent = res.ok;
+        if (!res.ok) payload.webhookError = `HTTP ${res.status}`;
+      } catch (err) {
+        payload.webhookSent = false;
+        payload.webhookError = err instanceof Error ? err.message : "Unknown error";
+      }
+    }
 
     if (typeof window !== "undefined") {
       window.sessionStorage.setItem("iching_pro_checkout", JSON.stringify(payload));
@@ -139,6 +169,9 @@ export default function CheckoutPage() {
             <b>{selectedPlan.priceValue ? won(selectedPlan.priceValue) : "별도 견적"}</b>
           </div>
           <p className="text-xs text-[var(--text-muted)]">* 데모 단계: 실제 PG/인보이스 연동 전</p>
+          {!WEBHOOK_URL && (
+            <p className="text-xs text-amber-300">* 저장 연동 전: 현재는 브라우저 내 데모 저장만 동작</p>
+          )}
         </div>
 
         <div className="space-y-2 text-sm">
@@ -168,10 +201,10 @@ export default function CheckoutPage() {
       <button
         type="button"
         onClick={handleSubmit}
-        disabled={!canPay}
+        disabled={!canPay || isSubmitting}
         className="w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
       >
-        {canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해줘"}
+        {isSubmitting ? "처리 중..." : canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해줘"}
       </button>
     </main>
   );

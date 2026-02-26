@@ -9,6 +9,8 @@ type CheckoutPayload = {
   email: string;
   requestId: string;
   createdAt: string;
+  webhookSent?: boolean;
+  webhookError?: string;
 };
 
 const FALLBACK: CheckoutPayload = {
@@ -40,7 +42,9 @@ export default function CheckoutSuccessPage() {
       <header className="space-y-2">
         <p className="text-sm text-[var(--text-muted)]">신청 완료 (데모)</p>
         <h1 className="text-2xl font-bold">{payload.planTitle} 신청이 접수됐어</h1>
-        <p className="text-sm text-[var(--text-muted)]">접수 이메일: <b>{payload.email}</b></p>
+        <p className="text-sm text-[var(--text-muted)]">
+          접수 이메일: <b>{payload.email}</b>
+        </p>
       </header>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
@@ -49,6 +53,15 @@ export default function CheckoutSuccessPage() {
           <b>{payload.requestId}</b>
         </div>
         <p className="text-xs text-[var(--text-muted)]">문의 시 신청번호를 함께 전달하면 더 빠르게 확인할 수 있어.</p>
+      </section>
+
+      <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
+        <p>연동 상태</p>
+        {payload.webhookSent === true && <p className="text-emerald-300">✓ 신청 데이터가 외부 저장소로 전송됨</p>}
+        {payload.webhookSent === false && (
+          <p className="text-amber-300">! 외부 저장 전송 실패 ({payload.webhookError ?? "unknown"}) — 데모 로컬 저장은 완료</p>
+        )}
+        {payload.webhookSent === undefined && <p className="text-[var(--text-muted)]">외부 저장 연동 없이 데모 모드로 처리됨</p>}
       </section>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
