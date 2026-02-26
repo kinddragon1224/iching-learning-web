@@ -232,10 +232,10 @@ h3 {
   height: 70%;
   z-index: 0;
   background:
-    radial-gradient(circle at 18% 38%, rgba(130, 86, 255, 0.2), transparent 40%),
-    radial-gradient(circle at 82% 28%, rgba(84, 180, 255, 0.18), transparent 38%),
-    radial-gradient(circle at 50% 75%, rgba(255, 196, 120, 0.13), transparent 42%);
-  filter: blur(14px);
+    radial-gradient(circle at 18% 38%, rgba(136, 82, 255, 0.36), transparent 42%),
+    radial-gradient(circle at 82% 28%, rgba(66, 178, 255, 0.32), transparent 40%),
+    radial-gradient(circle at 50% 75%, rgba(255, 188, 92, 0.26), transparent 44%);
+  filter: blur(10px) saturate(1.2);
   animation: nebulaFloat 9s ease-in-out infinite;
   pointer-events: none;
 }
@@ -245,15 +245,15 @@ h3 {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.75;
+  opacity: 0.92;
   background-image:
-    radial-gradient(circle at 6% 18%, rgba(255,255,255,0.75) 0 1px, transparent 2px),
-    radial-gradient(circle at 22% 62%, rgba(255,255,255,0.55) 0 1px, transparent 2px),
-    radial-gradient(circle at 38% 35%, rgba(255,255,255,0.65) 0 1px, transparent 2px),
-    radial-gradient(circle at 53% 70%, rgba(255,255,255,0.5) 0 1px, transparent 2px),
-    radial-gradient(circle at 67% 22%, rgba(255,255,255,0.62) 0 1px, transparent 2px),
-    radial-gradient(circle at 79% 58%, rgba(255,255,255,0.55) 0 1px, transparent 2px),
-    radial-gradient(circle at 91% 32%, rgba(255,255,255,0.7) 0 1px, transparent 2px);
+    radial-gradient(circle at 6% 18%, rgba(255,255,255,0.95) 0 1px, transparent 2px),
+    radial-gradient(circle at 22% 62%, rgba(255,255,255,0.82) 0 1px, transparent 2px),
+    radial-gradient(circle at 38% 35%, rgba(255,255,255,0.88) 0 1px, transparent 2px),
+    radial-gradient(circle at 53% 70%, rgba(255,255,255,0.78) 0 1px, transparent 2px),
+    radial-gradient(circle at 67% 22%, rgba(255,255,255,0.86) 0 1px, transparent 2px),
+    radial-gradient(circle at 79% 58%, rgba(255,255,255,0.8) 0 1px, transparent 2px),
+    radial-gradient(circle at 91% 32%, rgba(255,255,255,0.9) 0 1px, transparent 2px);
   animation: starsTwinkle 4.6s ease-in-out infinite;
 }
 
