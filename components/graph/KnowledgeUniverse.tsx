@@ -714,16 +714,8 @@ export function KnowledgeUniverse() {
 
             <div className="flex items-center gap-2">
               <Link href="/saved" className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5">
-                오늘 저장 {todayCount}/4
+                저장 {todayCount}/4
               </Link>
-              <button
-                onClick={() => setSearchOpen(true)}
-                className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5"
-                aria-label="괘 검색"
-                title="괘 검색"
-              >
-                🔍 검색
-              </button>
             </div>
           </div>
         </div>
@@ -737,7 +729,7 @@ export function KnowledgeUniverse() {
               }}
               className="rounded-md border border-white/30 bg-black/60 px-4 py-2 text-sm text-white shadow-lg"
             >
-              {panelOpen ? "닫기" : "4축 보기"}
+              {panelOpen ? "패널 닫기" : "핵심 보기"}
             </button>
           </div>
         )}
@@ -825,8 +817,7 @@ export function KnowledgeUniverse() {
             <div className="mt-4 space-y-1 text-xs text-white/70">
               <div className="flex justify-between"><span>현재 괘</span><b>#{selected.id}</b></div>
               <div className="flex justify-between"><span>진도</span><b>{viewMode === "featured" ? "대표 모드" : "전체 모드"}</b></div>
-              <div className="flex justify-between"><span>오늘 학습시간</span><b>27분</b></div>
-              <div className="flex justify-between"><span>다음 추천</span><b>#{nextHex.id} {nextHex.nameKo}</b></div>
+                            <div className="flex justify-between"><span>다음 추천</span><b>#{nextHex.id} {nextHex.nameKo}</b></div>
             </div>
 
             <div className="mt-4 rounded-lg border border-white/15 bg-black/25 p-3">
@@ -851,7 +842,7 @@ export function KnowledgeUniverse() {
           }`}>
             <div className="flex items-start justify-between gap-3">
               <p>
-                처음엔 <b>대표 보기</b>, 익숙해지면 <b>전체 64</b>로 전환해 탐색해봐.
+                처음에는 <b>대표 보기</b>로 시작하고, 익숙해지면 <b>전체 64</b>로 확장해보세요.
               </p>
               <button
                 onClick={() => setShowGuide(false)}
@@ -919,7 +910,7 @@ export function KnowledgeUniverse() {
             aria-label="괘 검색 열기"
             title="괘 검색"
           >
-            🔍 검색
+            🔍 괘 검색
           </button>
         )}
 
