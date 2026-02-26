@@ -505,6 +505,49 @@ const HEX_AXIS_COPY: Record<number, Partial<Record<AxisKey, string>>> = {
   },
 };
 
+
+function CinematicFX({ isMobile }: { isMobile: boolean }) {
+  const groupRef = useRef<THREE.Group>(null);
+  const ringRef = useRef<THREE.Mesh>(null);
+
+  useFrame((state, delta) => {
+    const t = state.clock.elapsedTime;
+    if (groupRef.current) {
+      groupRef.current.rotation.y += delta * 0.1;
+      groupRef.current.rotation.x = Math.sin(t * 0.2) * 0.04;
+    }
+    if (ringRef.current) {
+      const mat = ringRef.current.material as THREE.MeshBasicMaterial;
+      mat.opacity = 0.18 + (Math.sin(t * 1.4) + 1) * 0.08;
+      ringRef.current.scale.setScalar(1 + Math.sin(t * 1.2) * 0.02);
+    }
+  });
+
+  const count = isMobile ? 60 : 120;
+  const nodes = Array.from({ length: count }, (_, i) => {
+    const a = (i / count) * Math.PI * 2;
+    const r = 2.45 + (i % 7) * 0.045;
+    const y = ((i % 9) - 4) * 0.03;
+    return [Math.cos(a) * r, y, Math.sin(a) * r] as [number, number, number];
+  });
+
+  return (
+    <group ref={groupRef}>
+      <mesh ref={ringRef} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[2.38, 0.015, 12, isMobile ? 120 : 220]} />
+        <meshBasicMaterial color="#ffd98a" transparent opacity={0.24} />
+      </mesh>
+
+      {nodes.map((pos, idx) => (
+        <mesh key={idx} position={pos}>
+          <sphereGeometry args={[isMobile ? 0.012 : 0.014, 8, 8]} />
+          <meshBasicMaterial color={idx % 3 === 0 ? "#ffd08a" : idx % 3 === 1 ? "#88c8ff" : "#d49bff"} transparent opacity={0.65} />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+
 function build4AxisQuestions(hexId: number, strengths: Partial<Record<AxisKey, AxisStrength>>) {
   const custom = HEX_AXIS_COPY[hexId] ?? {};
 
@@ -657,6 +700,7 @@ export function KnowledgeUniverse() {
         <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
         <CoreTaeguk isMobile={isMobile} selectedId={selected.id} />
+        <CinematicFX isMobile={isMobile} />
         <AxisOrbits strengths={axisStrengths} />
         <NodeCloud
           nodes={visibleNodes}
