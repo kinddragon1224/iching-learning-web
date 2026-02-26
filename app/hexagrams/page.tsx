@@ -55,38 +55,38 @@ export default function HexagramListPage() {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSection("all")}
-            className={`rounded-lg px-3 py-1.5 text-xs border ${section === "all" ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
+            className={`rounded-lg px-3 py-2 text-xs border ${section === "all" ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
           >
             전체 64괘
           </button>
           <button
             onClick={() => setSection("upper")}
-            className={`rounded-lg px-3 py-1.5 text-xs border ${section === "upper" ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
+            className={`rounded-lg px-3 py-2 text-xs border ${section === "upper" ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
           >
             상경 1~30
           </button>
           <button
             onClick={() => setSection("lower")}
-            className={`rounded-lg px-3 py-1.5 text-xs border ${section === "lower" ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
+            className={`rounded-lg px-3 py-2 text-xs border ${section === "lower" ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
           >
             하경 31~64
           </button>
 
           <button
             onClick={() => setCoreOnly((v) => !v)}
-            className={`rounded-lg px-3 py-1.5 text-xs border ${coreOnly ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
+            className={`rounded-lg px-3 py-2 text-xs border ${coreOnly ? "border-[var(--gold-line)] bg-[rgba(212,178,106,0.14)]" : "border-white/25"}`}
           >
             핵심괘만
           </button>
 
           <button
             onClick={() => setSortMode((m) => (m === "id" ? "ko" : "id"))}
-            className="rounded-lg border border-white/25 px-3 py-1.5 text-xs"
+            className="rounded-lg border border-white/25 px-3 py-2 text-xs"
           >
             정렬: {sortMode === "id" ? "번호순" : "이름순"}
           </button>
 
-          <Link href={`/hexagram/${randomHexagram.id}`} className="rounded-lg border border-white/25 px-3 py-1.5 text-xs">
+          <Link href={`/hexagram/${randomHexagram.id}`} className="rounded-lg border border-white/25 px-3 py-2 text-xs">
             랜덤 괘 보기 #{randomHexagram.id}
           </Link>
         </div>
