@@ -224,6 +224,11 @@ h3 {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  min-height: calc(100vh - 8rem);
+  background:
+    radial-gradient(circle at 50% -10%, rgba(52, 82, 170, 0.28), transparent 46%),
+    radial-gradient(circle at 10% 20%, rgba(110, 68, 190, 0.2), transparent 40%),
+    linear-gradient(180deg, #070a14 0%, #05070d 45%, #04050a 100%);
 }
 
 .home-nebula-layer {
@@ -245,15 +250,18 @@ h3 {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.92;
+  opacity: 1;
   background-image:
-    radial-gradient(circle at 6% 18%, rgba(255,255,255,0.95) 0 1px, transparent 2px),
-    radial-gradient(circle at 22% 62%, rgba(255,255,255,0.82) 0 1px, transparent 2px),
-    radial-gradient(circle at 38% 35%, rgba(255,255,255,0.88) 0 1px, transparent 2px),
-    radial-gradient(circle at 53% 70%, rgba(255,255,255,0.78) 0 1px, transparent 2px),
-    radial-gradient(circle at 67% 22%, rgba(255,255,255,0.86) 0 1px, transparent 2px),
-    radial-gradient(circle at 79% 58%, rgba(255,255,255,0.8) 0 1px, transparent 2px),
-    radial-gradient(circle at 91% 32%, rgba(255,255,255,0.9) 0 1px, transparent 2px);
+    radial-gradient(circle at 6% 18%, rgba(255,255,255,0.95) 0 1.4px, transparent 2.6px),
+    radial-gradient(circle at 22% 62%, rgba(255,255,255,0.82) 0 1.2px, transparent 2.4px),
+    radial-gradient(circle at 38% 35%, rgba(255,255,255,0.88) 0 1.6px, transparent 2.8px),
+    radial-gradient(circle at 53% 70%, rgba(255,255,255,0.78) 0 1.3px, transparent 2.5px),
+    radial-gradient(circle at 67% 22%, rgba(255,255,255,0.86) 0 1.5px, transparent 2.7px),
+    radial-gradient(circle at 79% 58%, rgba(255,255,255,0.8) 0 1.2px, transparent 2.4px),
+    radial-gradient(circle at 91% 32%, rgba(255,255,255,0.9) 0 1.5px, transparent 2.7px),
+    radial-gradient(circle at 14% 42%, rgba(178, 219, 255, 0.7) 0 1.1px, transparent 2.3px),
+    radial-gradient(circle at 73% 14%, rgba(255, 232, 186, 0.75) 0 1.1px, transparent 2.3px);
+  mix-blend-mode: screen;
   animation: starsTwinkle 4.6s ease-in-out infinite;
 }
 
