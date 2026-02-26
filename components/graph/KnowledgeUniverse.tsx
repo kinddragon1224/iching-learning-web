@@ -354,13 +354,13 @@ function AxisOrbits({ strengths }: { strengths: Partial<Record<AxisKey, AxisStre
         return (
           <group key={axis} rotation={[idx * 0.7, idx * 0.4, idx * 0.25]}>
             <mesh>
-              <torusGeometry args={[3.1 + idx * 0.2, tube, 16, 180]} />
+              <torusGeometry args={[3.1 + idx * 0.2, Math.max(0.009, tube * 0.8), 16, 180]} />
               <meshStandardMaterial
                 color={AXIS_META[axis].color}
                 emissive={AXIS_META[axis].color}
                 emissiveIntensity={emissiveIntensity}
                 transparent
-                opacity={opacity}
+                opacity={opacity * 0.55}
               />
             </mesh>
           </group>
@@ -429,15 +429,17 @@ function NodeCloud({
               <meshStandardMaterial
                 color={planetColor}
                 emissive={NODE_BASE_EMISSIVE}
-                emissiveIntensity={selected ? 0.34 : hovered ? 0.26 : 0.2}
+                emissiveIntensity={selected ? 0.38 : hovered ? 0.26 : 0.14}
                 roughness={0.34}
                 metalness={0.16}
+                transparent
+                opacity={selected ? 1 : hovered ? 0.9 : 0.52}
               />
             </mesh>
 
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <torusGeometry args={[(n.size * (isMobile ? 1.5 : 1.2)) + 0.06, selected ? 0.024 : 0.011, 10, 48]} />
-              <meshStandardMaterial color={GOLD_RING_COLOR} emissive={GOLD_RING_EMISSIVE} emissiveIntensity={selected ? 1.25 : hovered ? 0.92 : lowDensity ? 0.56 : 0.82} transparent opacity={selected ? 0.98 : hovered ? 0.92 : lowDensity ? 0.48 : 0.9} />
+              <meshStandardMaterial color={GOLD_RING_COLOR} emissive={GOLD_RING_EMISSIVE} emissiveIntensity={selected ? 1.35 : hovered ? 0.9 : lowDensity ? 0.4 : 0.65} transparent opacity={selected ? 1 : hovered ? 0.82 : lowDensity ? 0.28 : 0.52} />
             </mesh>
 
             {selected && (
@@ -673,7 +675,15 @@ export function KnowledgeUniverse() {
           }}
         />
 
-        <OrbitControls enablePan={false} minDistance={6.5} maxDistance={18} />
+        <OrbitControls
+          enablePan={false}
+          minDistance={6.5}
+          maxDistance={18}
+          enableDamping
+          dampingFactor={0.06}
+          autoRotate
+          autoRotateSpeed={0.22}
+        />
       </Canvas>
 
       <div className="absolute inset-0 pointer-events-none">
