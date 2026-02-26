@@ -33,6 +33,15 @@ export default async function HexagramCardDetailPage({
   const prevId = id > 1 ? id - 1 : 64;
   const nextId = id < 64 ? id + 1 : 1;
 
+  const related = HEXAGRAMS
+    .filter((h) => h.id !== id)
+    .map((h) => {
+      const overlap = h.keywords.filter((k) => card.keywords.includes(k)).length;
+      return { ...h, overlap };
+    })
+    .sort((a, b) => b.overlap - a.overlap || Math.abs(a.id - id) - Math.abs(b.id - id))
+    .slice(0, 3);
+
   return (
     <main className="mx-auto max-w-3xl space-y-5 p-6">
       <Link href="/" className="text-sm underline">← 홈으로 돌아가기</Link>
@@ -130,13 +139,24 @@ export default async function HexagramCardDetailPage({
         </ol>
       </section>
 
-      <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">다른 괘 바로 보기</h2>
+      <section className="rounded-xl border p-4 space-y-3">
+        <h2 className="font-semibold">다른 괘 바로 보기</h2>
         <div className="flex flex-wrap gap-2 text-sm">
           <Link href={`/hexagram/${prevId}`} className="rounded-lg border px-3 py-2">← 이전 괘 #{prevId}</Link>
           <Link href="/hexagrams" className="rounded-lg border px-3 py-2">전체 64괘 보기</Link>
           <Link href="/search" className="rounded-lg border px-3 py-2">검색으로 이동</Link>
           <Link href={`/hexagram/${nextId}`} className="rounded-lg border px-3 py-2">다음 괘 #{nextId} →</Link>
+        </div>
+
+        <div>
+          <p className="mb-2 text-sm font-medium">관련 괘 추천</p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            {related.map((r) => (
+              <Link key={r.id} href={`/hexagram/${r.id}`} className="rounded-lg border px-3 py-2">
+                #{r.id} {r.nameKo}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>
