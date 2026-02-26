@@ -1,32 +1,52 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
-function makeRequestId() {
-  const d = new Date();
-  const y = d.getFullYear().toString().slice(-2);
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  const rand = Math.floor(1000 + Math.random() * 9000);
-  return `IC-${y}${m}${day}-${rand}`;
-}
+type CheckoutPayload = {
+  plan: "solo" | "team" | "enterprise";
+  planTitle: string;
+  email: string;
+  requestId: string;
+  createdAt: string;
+};
+
+const FALLBACK: CheckoutPayload = {
+  plan: "solo",
+  planTitle: "Solo Practitioner",
+  email: "-",
+  requestId: "IC-DEMO-0000",
+  createdAt: new Date().toISOString(),
+};
 
 export default function CheckoutSuccessPage() {
-  const requestId = useMemo(() => makeRequestId(), []);
+  const [payload, setPayload] = useState<CheckoutPayload>(FALLBACK);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const raw = window.sessionStorage.getItem("iching_pro_checkout");
+    if (!raw) return;
+
+    try {
+      const parsed = JSON.parse(raw) as CheckoutPayload;
+      setPayload(parsed);
+    } catch {
+      // ignore invalid session storage payload
+    }
+  }, []);
 
   return (
     <main className="mx-auto max-w-3xl space-y-6 p-6 pt-24">
       <header className="space-y-2">
         <p className="text-sm text-[var(--text-muted)]">신청 완료 (데모)</p>
-        <h1 className="text-2xl font-bold">플랜 신청이 접수됐어</h1>
-        <p className="text-sm text-[var(--text-muted)]">입력한 이메일로 온보딩 안내가 발송될 예정이야.</p>
+        <h1 className="text-2xl font-bold">{payload.planTitle} 신청이 접수됐어</h1>
+        <p className="text-sm text-[var(--text-muted)]">접수 이메일: <b>{payload.email}</b></p>
       </header>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <div className="flex items-center justify-between rounded-lg border border-[rgba(212,178,106,0.25)] px-3 py-2">
           <span className="text-[var(--text-muted)]">신청번호</span>
-          <b>{requestId}</b>
+          <b>{payload.requestId}</b>
         </div>
         <p className="text-xs text-[var(--text-muted)]">문의 시 신청번호를 함께 전달하면 더 빠르게 확인할 수 있어.</p>
       </section>

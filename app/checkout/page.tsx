@@ -46,6 +46,15 @@ function won(v: number) {
   return `${v.toLocaleString("ko-KR")}원`;
 }
 
+function makeRequestId() {
+  const d = new Date();
+  const y = d.getFullYear().toString().slice(-2);
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  const rand = Math.floor(1000 + Math.random() * 9000);
+  return `IC-${y}${m}${day}-${rand}`;
+}
+
 export default function CheckoutPage() {
   const [email, setEmail] = useState("");
   const [plan, setPlan] = useState<PlanKey>("solo");
@@ -54,7 +63,23 @@ export default function CheckoutPage() {
 
   const selectedPlan = useMemo(() => PLANS.find((p) => p.key === plan) ?? PLANS[0], [plan]);
   const canPay = email.includes("@") && agreePolicy && agreeRefund;
-  const nextHref = "/checkout/success";
+
+  const handleSubmit = () => {
+    if (!canPay) return;
+
+    const payload = {
+      plan,
+      planTitle: selectedPlan.title,
+      email,
+      requestId: makeRequestId(),
+      createdAt: new Date().toISOString(),
+    };
+
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem("iching_pro_checkout", JSON.stringify(payload));
+      window.location.href = "/checkout/success";
+    }
+  };
 
   return (
     <main className="mx-auto max-w-4xl space-y-6 p-6 pt-24">
@@ -140,22 +165,14 @@ export default function CheckoutPage() {
         </div>
       </section>
 
-      {canPay ? (
-        <Link
-          href={nextHref}
-          className="inline-block w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-center text-sm font-semibold text-black sm:w-auto"
-        >
-          신청 완료 페이지로 이동
-        </Link>
-      ) : (
-        <button
-          type="button"
-          disabled
-          className="w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
-        >
-          필수 항목을 입력/동의해줘
-        </button>
-      )}
+      <button
+        type="button"
+        onClick={handleSubmit}
+        disabled={!canPay}
+        className="w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+      >
+        {canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해줘"}
+      </button>
     </main>
   );
 }
