@@ -392,6 +392,231 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     },
     linesKorean: ["초구", "구이", "육삼", "구사", "구오", "상육"],
   },
+  {
+    id: 17,
+    title: "澤雷隨(택뢰수)",
+    freePreview: {
+      classicalAnchor: "隨 元亨利貞",
+      plainMeaning: "따름의 도를 바르게 지키면 형통하다.",
+      modernTeaser: "무작정 추종보다 기준 있는 협력이 핵심이다.",
+    },
+    proFrame: {
+      diagnosis: "변화 속에서 방향 합의가 필요한 정렬 구간.",
+      coachingQuestion: "나는 흐름을 따르되 기준을 지키고 있는가?",
+      actionStep: "이번 주 협업 기준 1개를 정하고 모두에게 공유한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 18,
+    title: "山風蠱(산풍고)",
+    freePreview: {
+      classicalAnchor: "蠱 元亨",
+      plainMeaning: "무너진 것을 바로잡으면 형통하다.",
+      modernTeaser: "문제를 덮기보다 구조를 수리하는 때다.",
+    },
+    proFrame: {
+      diagnosis: "누적된 운영 부채가 성과를 잠식하는 상태.",
+      coachingQuestion: "지금 가장 먼저 고쳐야 할 시스템 결함은 무엇인가?",
+      actionStep: "핵심 결함 1개를 선정해 원인-대응-재발방지로 정리한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 19,
+    title: "地澤臨(지택림)",
+    freePreview: {
+      classicalAnchor: "臨 元亨利貞",
+      plainMeaning: "다가가 돌보는 리더십이 길하다.",
+      modernTeaser: "확장기일수록 현장과의 접점을 늘려야 한다.",
+    },
+    proFrame: {
+      diagnosis: "성장 초기의 관리 폭증 구간.",
+      coachingQuestion: "리더의 관여가 통제인가 지원인가?",
+      actionStep: "현장 점검 루틴을 주 1회 고정하고 피드백을 문서화한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 20,
+    title: "風地觀(풍지관)",
+    freePreview: {
+      classicalAnchor: "觀 盥而不薦",
+      plainMeaning: "겉치레보다 내실을 살피는 관찰이 중요하다.",
+      modernTeaser: "속도보다 관찰과 판단의 질을 올리는 구간이다.",
+    },
+    proFrame: {
+      diagnosis: "판단 자료는 있으나 시야 정리가 부족한 상태.",
+      coachingQuestion: "지금 내가 못 보고 있는 관점은 무엇인가?",
+      actionStep: "결정 전 관점 3개(고객/팀/재무)로 재점검한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 21,
+    title: "火雷噬嗑(화뢰서합)",
+    freePreview: {
+      classicalAnchor: "噬嗑 亨 利用獄",
+      plainMeaning: "막힌 것을 깨물어 해결하면 형통하다.",
+      modernTeaser: "미루던 문제를 정확히 처리해야 흐름이 열린다.",
+    },
+    proFrame: {
+      diagnosis: "핵심 장애물이 방치되어 전체 진행을 막는 상태.",
+      coachingQuestion: "지금 반드시 처리해야 할 병목은 무엇인가?",
+      actionStep: "병목 1개를 오늘 해결하고 영향도를 기록한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 22,
+    title: "山火賁(산화비)",
+    freePreview: {
+      classicalAnchor: "賁 亨",
+      plainMeaning: "아름다움은 본질을 살릴 때 의미가 있다.",
+      modernTeaser: "디자인은 장식이 아니라 전달력을 높이는 도구다.",
+    },
+    proFrame: {
+      diagnosis: "표현 강화 필요 구간이나 본질 희석 리스크 존재.",
+      coachingQuestion: "우리는 보기 좋음보다 이해됨을 만들고 있는가?",
+      actionStep: "핵심 메시지 1문장을 먼저 고정한 뒤 시각 요소를 정렬한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 23,
+    title: "山地剝(산지박)",
+    freePreview: {
+      classicalAnchor: "剝 不利有攸往",
+      plainMeaning: "깎여 나가는 때엔 무리한 전진이 불리하다.",
+      modernTeaser: "지금은 축소·정리·보존이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "기반 약화로 확장 시 손실이 커질 위험 구간.",
+      coachingQuestion: "무엇을 지키고 무엇을 버릴지 정했는가?",
+      actionStep: "중단할 것 1개와 유지할 핵심 1개를 명확히 분리한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 24,
+    title: "地雷復(지뢰복)",
+    freePreview: {
+      classicalAnchor: "復 亨",
+      plainMeaning: "되돌아옴의 길은 회복과 재시작을 뜻한다.",
+      modernTeaser: "작은 복귀 루틴이 큰 반전을 만든다.",
+    },
+    proFrame: {
+      diagnosis: "리듬 이탈 후 재정렬이 필요한 회복 국면.",
+      coachingQuestion: "다시 시작하기 위한 최소 행동은 무엇인가?",
+      actionStep: "하루 1개 복귀 루틴을 7일 연속 실행한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 25,
+    title: "天雷无妄(천뢰무망)",
+    freePreview: {
+      classicalAnchor: "无妄 元亨利貞",
+      plainMeaning: "꾸밈없이 바르면 형통하다.",
+      modernTeaser: "요령보다 정직한 실행이 리스크를 줄인다.",
+    },
+    proFrame: {
+      diagnosis: "성과 압박으로 무리수가 나오기 쉬운 구간.",
+      coachingQuestion: "지금 선택은 정직한가, 조급한가?",
+      actionStep: "근거 없는 가정 1개를 제거하고 사실 기반으로 재결정한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 26,
+    title: "山天大畜(산천대축)",
+    freePreview: {
+      classicalAnchor: "大畜 利貞",
+      plainMeaning: "크게 쌓아 두는 인내가 이롭다.",
+      modernTeaser: "지금의 억제는 더 큰 도약을 위한 축적이다.",
+    },
+    proFrame: {
+      diagnosis: "확장 전 자원 축적이 필요한 준비 단계.",
+      coachingQuestion: "무엇을 더 쌓아야 다음 레벨로 갈 수 있는가?",
+      actionStep: "핵심 자산(기술/콘텐츠/현금) 중 1개를 집중 축적한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 27,
+    title: "山雷頤(산뢰이)",
+    freePreview: {
+      classicalAnchor: "頤 貞吉",
+      plainMeaning: "기름의 도를 바르게 지키면 길하다.",
+      modernTeaser: "무엇을 먹고(정보/관계) 무엇을 말하는지가 삶을 만든다.",
+    },
+    proFrame: {
+      diagnosis: "입력 품질 저하로 판단/에너지 효율이 떨어진 상태.",
+      coachingQuestion: "내가 매일 섭취하는 정보는 나를 살리는가?",
+      actionStep: "정보 식단을 정리해 유해 입력 1개를 제거한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 28,
+    title: "澤風大過(택풍대과)",
+    freePreview: {
+      classicalAnchor: "大過 棟橈",
+      plainMeaning: "지나침의 때엔 구조 보강이 먼저다.",
+      modernTeaser: "버티는 힘이 한계에 왔으면 설계를 바꿔야 한다.",
+    },
+    proFrame: {
+      diagnosis: "부하 과중으로 시스템 붕괴 위험이 높은 상태.",
+      coachingQuestion: "지금 구조에서 가장 먼저 무너질 지점은 어디인가?",
+      actionStep: "업무 하중을 재배분하고 중단 항목 1개를 즉시 실행한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 31,
+    title: "澤山咸(택산함)",
+    freePreview: {
+      classicalAnchor: "咸 亨",
+      plainMeaning: "감응이 통하면 형통하다.",
+      modernTeaser: "영향은 강요보다 진정성 있는 공명에서 나온다.",
+    },
+    proFrame: {
+      diagnosis: "관계 에너지는 높지만 경계 설정이 필요한 상태.",
+      coachingQuestion: "이 감응이 단기 감정인가, 장기 정렬인가?",
+      actionStep: "기대치와 경계를 동시에 명문화해 감정 소모를 줄인다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 32,
+    title: "雷風恒(뇌풍항)",
+    freePreview: {
+      classicalAnchor: "恒 亨 无咎",
+      plainMeaning: "지속의 도를 지키면 허물이 없다.",
+      modernTeaser: "지속은 의지보다 구조에서 나온다.",
+    },
+    proFrame: {
+      diagnosis: "루틴은 있으나 유지 장치가 약한 상태.",
+      coachingQuestion: "지속을 방해하는 반복 패턴은 무엇인가?",
+      actionStep: "주간 유지 점검표를 만들고 이탈 시 복귀 규칙을 고정한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 33,
+    title: "天山遯(천산둔)",
+    freePreview: {
+      classicalAnchor: "遯 亨",
+      plainMeaning: "물러남의 지혜가 형통을 지킨다.",
+      modernTeaser: "후퇴는 패배가 아니라 재배치를 위한 선택이다.",
+    },
+    proFrame: {
+      diagnosis: "정면 돌파 비용이 과도한 국면.",
+      coachingQuestion: "지금 물러나야 할 전선은 어디인가?",
+      actionStep: "우선순위가 낮은 전투 1개를 종료하고 핵심에 집중한다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
 ];
 
 const byId = new Map<number, HexagramTrack>(HEXAGRAM_TRACKS.map((t) => [t.id, t]));
