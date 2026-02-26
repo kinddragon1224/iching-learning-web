@@ -7,6 +7,7 @@ export default function Home() {
     <main className="home-hero-bg mx-auto max-w-5xl p-6 pt-24">
       <div className="home-nebula-layer" aria-hidden />
       <div className="home-stars-layer" aria-hidden />
+      <div className="home-stars-layer-2" aria-hidden />
 
       <header className="relative z-10 space-y-3 text-center">
         <p className="text-sm text-[var(--text-muted)] home-fade-in">주역 학습 플랫폼</p>
