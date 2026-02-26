@@ -54,6 +54,7 @@ export default function CheckoutPage() {
 
   const selectedPlan = useMemo(() => PLANS.find((p) => p.key === plan) ?? PLANS[0], [plan]);
   const canPay = email.includes("@") && agreePolicy && agreeRefund;
+  const nextHref = "/checkout/success";
 
   return (
     <main className="mx-auto max-w-4xl space-y-6 p-6 pt-24">
@@ -129,13 +130,22 @@ export default function CheckoutPage() {
         </div>
       </section>
 
-      <button
-        type="button"
-        disabled={!canPay}
-        className="rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        {canPay ? `${selectedPlan.title} 신청 진행` : "필수 항목을 입력/동의해줘"}
-      </button>
+      {canPay ? (
+        <Link
+          href={nextHref}
+          className="inline-block rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black"
+        >
+          {selectedPlan.title} 신청 진행
+        </Link>
+      ) : (
+        <button
+          type="button"
+          disabled
+          className="rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          필수 항목을 입력/동의해줘
+        </button>
+      )}
     </main>
   );
 }
