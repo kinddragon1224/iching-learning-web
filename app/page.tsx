@@ -12,9 +12,10 @@ export default function Home() {
       <header className="relative z-10 space-y-3 text-center">
         <p className="text-sm text-[var(--text-muted)] home-fade-in">주역 학습 플랫폼</p>
         <div className="home-title-wrap">
+          <div className="home-title-backdrop" aria-hidden />
           <div className="home-title-aura" aria-hidden />
           <div className="home-title-particles" aria-hidden />
-          <h1 className="text-3xl font-bold home-title-glow">易 · I Ching</h1>
+          <h1 className="text-4xl font-bold home-title-glow">易 · I Ching</h1>
         </div>
         <p className="text-lg font-semibold home-fade-up">어디서부터 시작할까요?</p>
         <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙해지면 64괘로 확장해보세요.</p>
