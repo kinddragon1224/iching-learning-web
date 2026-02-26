@@ -11,7 +11,7 @@ export default function Home() {
         </p>
       </header>
 
-      <section className="mt-8 grid gap-4 md:grid-cols-2">
+      <section className="mt-8 grid gap-4 md:grid-cols-3">
         <Link href="/bagua" className="paper-panel rounded-2xl p-5 panel-hover">
           <p className="text-xs text-[var(--text-muted)]">입문 트랙</p>
           <h2 className="mt-1 text-xl font-semibold">8괘부터 배우기</h2>
@@ -25,6 +25,14 @@ export default function Home() {
           <h2 className="mt-1 text-xl font-semibold">64괘 탐색하기</h2>
           <p className="mt-2 text-sm text-[var(--text-muted)]">
             우주 뷰에서 괘를 탐색하고 상세 해석으로 들어가.
+          </p>
+        </Link>
+
+        <Link href="/pro" className="paper-panel rounded-2xl p-5 panel-hover">
+          <p className="text-xs text-[var(--text-muted)]">전문가 트랙</p>
+          <h2 className="mt-1 text-xl font-semibold">Pro 상담 워크스페이스</h2>
+          <p className="mt-2 text-sm text-[var(--text-muted)]">
+            상담사/코치용 세션 모드와 팀 운영 기능을 확인해.
           </p>
         </Link>
       </section>
