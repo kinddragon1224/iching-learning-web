@@ -1,12 +1,15 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-5xl p-6 pt-24">
       <header className="space-y-3 text-center">
-        <p className="text-sm text-[var(--text-muted)]">주역 학습 플랫폼</p>
-        <h1 className="text-3xl font-bold">어디서부터 시작할까?</h1>
-        <p className="text-sm text-[var(--text-muted)]">처음이라면 8괘부터, 익숙하면 64괘로 확장해.</p>
+        <p className="text-sm text-[var(--text-muted)] home-fade-in">주역 학습 플랫폼</p>
+        <h1 className="text-3xl font-bold home-title-glow">易 · I Ching</h1>
+        <p className="text-lg font-semibold home-fade-up">어디서부터 시작할까?</p>
+        <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙하면 64괘로 확장해.</p>
       </header>
 
       <section className="mt-8 grid gap-4 md:grid-cols-3">
