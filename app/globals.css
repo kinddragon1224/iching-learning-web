@@ -144,17 +144,17 @@ h3 {
 .home-title-glow {
   position: relative;
   z-index: 2;
-  background: linear-gradient(90deg, #fff3a8 0%, #ffd11a 28%, #ffcc00 55%, #ffe680 100%);
+  background: linear-gradient(90deg, #fff4b4 0%, #ffd23a 28%, #ffcf1d 55%, #ffe98f 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #ffd400;
-  -webkit-text-stroke: 0;
+  color: #ffd73a;
+  -webkit-text-stroke: 0.6px rgba(90, 56, 0, 0.35);
   text-shadow:
-    0 0 10px rgba(255, 211, 0, 0.76),
-    0 0 26px rgba(255, 211, 0, 0.64),
-    0 0 46px rgba(255, 225, 90, 0.6);
-  animation: titleGlowPulse 2s ease-in-out infinite;
+    0 0 8px rgba(255, 214, 50, 0.58),
+    0 0 18px rgba(255, 214, 50, 0.46),
+    0 0 30px rgba(255, 230, 120, 0.42);
+  animation: titleGlowPulse 2.2s ease-in-out infinite;
 }
 
 .home-title-aura {
@@ -217,15 +217,15 @@ h3 {
 @keyframes titleGlowPulse {
   0%, 100% {
     text-shadow:
-      0 0 10px rgba(255, 211, 0, 0.7),
-      0 0 24px rgba(255, 211, 0, 0.6),
-      0 0 40px rgba(255, 230, 100, 0.56);
+      0 0 8px rgba(255, 214, 50, 0.5),
+      0 0 16px rgba(255, 214, 50, 0.4),
+      0 0 26px rgba(255, 228, 110, 0.36);
   }
   50% {
     text-shadow:
-      0 0 16px rgba(255, 220, 40, 0.92),
-      0 0 36px rgba(255, 220, 40, 0.82),
-      0 0 60px rgba(255, 235, 120, 0.78);
+      0 0 12px rgba(255, 220, 70, 0.64),
+      0 0 22px rgba(255, 220, 70, 0.54),
+      0 0 34px rgba(255, 235, 130, 0.5);
   }
 }
 
