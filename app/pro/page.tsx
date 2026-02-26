@@ -40,11 +40,14 @@ export default function ProPage() {
         </ol>
       </section>
 
-      <div className="flex gap-2">
-        <Link href="/checkout" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 text-sm font-semibold text-black">
-          플랜 선택
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <Link href="/checkout" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 text-center text-sm font-semibold text-black">
+          플랜 신청하기
         </Link>
-        <Link href="/explore" className="rounded-lg border border-white/30 px-4 py-2 text-sm">
+        <Link href="/pricing" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
+          요금표 보기
+        </Link>
+        <Link href="/explore" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
           데모 체험
         </Link>
       </div>

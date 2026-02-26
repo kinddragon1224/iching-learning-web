@@ -117,15 +117,25 @@ export default function CheckoutPage() {
         </div>
 
         <div className="space-y-2 text-sm">
-          <label className="flex items-start gap-2">
-            <input type="checkbox" checked={agreePolicy} onChange={(e) => setAgreePolicy(e.target.checked)} className="mt-0.5" />
-            <span>
+          <label className="flex items-start gap-2 rounded-lg p-1">
+            <input
+              type="checkbox"
+              checked={agreePolicy}
+              onChange={(e) => setAgreePolicy(e.target.checked)}
+              className="mt-0.5 h-4 w-4 shrink-0"
+            />
+            <span className="leading-relaxed">
               <Link href="/policy" className="underline">이용약관/개인정보처리방침</Link>에 동의합니다.
             </span>
           </label>
-          <label className="flex items-start gap-2">
-            <input type="checkbox" checked={agreeRefund} onChange={(e) => setAgreeRefund(e.target.checked)} className="mt-0.5" />
-            <span>환불 정책(결제 후 7일 이내, 미사용 조건)에 동의합니다.</span>
+          <label className="flex items-start gap-2 rounded-lg p-1">
+            <input
+              type="checkbox"
+              checked={agreeRefund}
+              onChange={(e) => setAgreeRefund(e.target.checked)}
+              className="mt-0.5 h-4 w-4 shrink-0"
+            />
+            <span className="leading-relaxed">환불 정책(결제 후 7일 이내, 미사용 조건)에 동의합니다.</span>
           </label>
         </div>
       </section>
@@ -133,15 +143,15 @@ export default function CheckoutPage() {
       {canPay ? (
         <Link
           href={nextHref}
-          className="inline-block rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black"
+          className="inline-block w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-center text-sm font-semibold text-black sm:w-auto"
         >
-          {selectedPlan.title} 신청 진행
+          신청 완료 페이지로 이동
         </Link>
       ) : (
         <button
           type="button"
           disabled
-          className="rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
         >
           필수 항목을 입력/동의해줘
         </button>

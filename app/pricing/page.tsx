@@ -44,9 +44,14 @@ export default function PricingPage() {
         <p>• 본 서비스는 성찰/의사결정 지원 도구이며 단정적 예언을 제공하지 않음</p>
       </section>
 
-      <Link href="/checkout" className="inline-block rounded-lg bg-[var(--gold-line)] px-4 py-2 text-sm font-semibold text-black">
-        플랜 신청하기
-      </Link>
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <Link href="/checkout" className="inline-block rounded-lg bg-[var(--gold-line)] px-4 py-2 text-center text-sm font-semibold text-black">
+          플랜 신청하기
+        </Link>
+        <Link href="/pro" className="inline-block rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
+          Pro 소개 보기
+        </Link>
+      </div>
     </main>
   );
 }
