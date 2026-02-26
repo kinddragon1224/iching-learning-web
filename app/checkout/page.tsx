@@ -117,7 +117,7 @@ export default function CheckoutPage() {
         <h1 className="text-2xl font-bold">결제 / 플랜 선택</h1>
         <p className="mt-1 text-sm text-[var(--text-muted)]">전문가용 주역 상담 워크스페이스 플랜</p>
         <p className="mt-2 inline-block rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs text-amber-200">
-          데모 단계 · 실제 결제는 진행되지 않음
+          데모 단계 · 실제 결제는 진행되지 않습니다
         </p>
       </header>
 
@@ -209,7 +209,7 @@ export default function CheckoutPage() {
           className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[var(--gold-line)] px-4 py-3 text-sm font-semibold text-black disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
         >
           {isSubmitting && <span className="h-4 w-4 animate-spin rounded-full border-2 border-black/30 border-t-black" />}
-          {isSubmitting ? "처리 중..." : canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해줘"}
+          {isSubmitting ? "처리 중..." : canPay ? "신청 완료 페이지로 이동" : "필수 항목을 입력/동의해 주세요"}
         </button>
 
         <Link

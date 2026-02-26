@@ -3,7 +3,7 @@ export default function PolicyPage() {
     <main className="mx-auto max-w-3xl space-y-4 p-6 pt-24">
       <h1 className="text-2xl font-bold">이용약관 · 개인정보 · 환불 정책</h1>
       <p className="text-sm text-[var(--text-muted)]">
-        I Ching Pro(상담사/코치용) 데모 운영 기준의 기본 정책 안내
+        I Ching Pro(상담사/코치용) 데모 운영 기준의 기본 정책 안내입니다.
       </p>
 
       <section className="space-y-2">

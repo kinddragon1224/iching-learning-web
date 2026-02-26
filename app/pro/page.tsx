@@ -47,8 +47,11 @@ export default function ProPage() {
         <Link href="/pricing" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
           요금표 보기
         </Link>
+        <Link href="/policy" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
+          정책 확인하기
+        </Link>
         <Link href="/explore" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
-          데모 체험
+          데모 체험하기
         </Link>
       </div>
     </main>
