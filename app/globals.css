@@ -144,17 +144,10 @@ h3 {
 .home-title-glow {
   position: relative;
   z-index: 2;
-  background: linear-gradient(90deg, #fff4b4 0%, #ffd23a 28%, #ffcf1d 55%, #ffe98f 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #ffd73a;
-  -webkit-text-stroke: 0.6px rgba(90, 56, 0, 0.35);
-  text-shadow:
-    0 0 8px rgba(255, 214, 50, 0.58),
-    0 0 18px rgba(255, 214, 50, 0.46),
-    0 0 30px rgba(255, 230, 120, 0.42);
-  animation: titleGlowPulse 2.2s ease-in-out infinite;
+  color: #ffd400;
+  -webkit-text-fill-color: #ffd400;
+  text-shadow: 0 0 6px rgba(255, 212, 0, 0.18);
+  animation: none;
 }
 
 .home-title-aura {
@@ -293,8 +286,8 @@ h3 {
 }
 
 @keyframes starsTwinkle {
-  0%, 100% { opacity: 0.66; filter: brightness(1.1) saturate(1.15); }
-  50% { opacity: 1; filter: brightness(1.6) saturate(1.25); }
+  0%, 100% { opacity: 0.62; filter: brightness(1.02) saturate(1.05); }
+  50% { opacity: 0.9; filter: brightness(1.25) saturate(1.1); }
 }
 
 .home-stars-layer-2 {
