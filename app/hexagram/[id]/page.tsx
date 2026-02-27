@@ -5,7 +5,6 @@ import { HEXAGRAMS, findHexagram } from "@/data/hexagrams";
 import { getCardForHexagram, getHexagramContent } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
-import { QuestionActionButtons } from "@/components/QuestionActionButtons";
 import { getHexagramTrack } from "@/data/pro_tracks";
 
 export function generateStaticParams() {
@@ -26,9 +25,7 @@ export default async function HexagramCardDetailPage({
 
   const card = getCardForHexagram(id);
   const content = getHexagramContent(id);
-  const q = content.questions;
   const primaryAxis = getPrimaryAxisById(id) ?? "work";
-  const title = card.full_name ? `#${id} ${card.full_name} (${card.short_name})` : `#${id} ${card.short_name}`;
   const track = getHexagramTrack(id);
   const prevId = id > 1 ? id - 1 : 64;
   const nextId = id < 64 ? id + 1 : 1;
@@ -93,39 +90,6 @@ export default async function HexagramCardDetailPage({
           </div>
         </section>
       )}
-
-      <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">4축 해석 + 질문</h2>
-        <div className="grid gap-3 md:grid-cols-2 text-sm">
-          <article className="rounded-lg bg-black/20 p-3">
-            <p className="font-semibold">[돈]</p>
-            <p className="mt-1">{content.axes.money}</p>
-            <p className="mt-2 text-[var(--text-muted)]">Q. {q.money}</p>
-            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="money" question={q.money ?? ""} />
-          </article>
-
-          <article className="rounded-lg bg-black/20 p-3">
-            <p className="font-semibold">[일]</p>
-            <p className="mt-1">{content.axes.work}</p>
-            <p className="mt-2 text-[var(--text-muted)]">Q. {q.work}</p>
-            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="work" question={q.work ?? ""} />
-          </article>
-
-          <article className="rounded-lg bg-black/20 p-3">
-            <p className="font-semibold">[관계]</p>
-            <p className="mt-1">{content.axes.relation}</p>
-            <p className="mt-2 text-[var(--text-muted)]">Q. {q.relation}</p>
-            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="relation" question={q.relation ?? ""} />
-          </article>
-
-          <article className="rounded-lg bg-black/20 p-3">
-            <p className="font-semibold">[시간]</p>
-            <p className="mt-1">{content.axes.time}</p>
-            <p className="mt-2 text-[var(--text-muted)]">Q. {q.time}</p>
-            <QuestionActionButtons hexagramId={id} hexagramTitle={title} axis="time" question={q.time ?? ""} />
-          </article>
-        </div>
-      </section>
 
       <section className="rounded-xl border p-4">
         <h2 className="mb-3 font-semibold">6효 학습 포인트</h2>
