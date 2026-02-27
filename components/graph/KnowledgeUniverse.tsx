@@ -155,27 +155,32 @@ function buildNodes(): Node[] {
   });
 }
 
-function makeSubtleNoiseTexture() {
-  const size = 512;
+function makeWaveSplitTexture() {
+  const w = 1024;
+  const h = 512;
   const c = document.createElement("canvas");
-  c.width = size;
-  c.height = size;
+  c.width = w;
+  c.height = h;
   const ctx = c.getContext("2d")!;
 
-  ctx.fillStyle = "#f5e8c8";
-  ctx.fillRect(0, 0, size, size);
+  const amp = 20;
+  const freq = 4;
 
-  for (let i = 0; i < size * 10; i++) {
-    const x = Math.floor(Math.random() * size);
-    const y = Math.floor(Math.random() * size);
-    const a = 0.018 + Math.random() * 0.022;
-    ctx.fillStyle = `rgba(36,28,10,${a})`;
-    ctx.fillRect(x, y, 1, 1);
+  for (let x = 0; x < w; x++) {
+    const yMid = h / 2 + Math.sin((x / w) * Math.PI * 2 * freq) * amp;
+
+    ctx.fillStyle = "#e85b66";
+    ctx.fillRect(x, 0, 1, yMid);
+
+    ctx.fillStyle = "#4b7dff";
+    ctx.fillRect(x, yMid, 1, h - yMid);
   }
 
   const t = new THREE.CanvasTexture(c);
-  t.wrapS = t.wrapT = THREE.RepeatWrapping;
-  t.repeat.set(2, 2);
+  t.wrapS = THREE.RepeatWrapping;
+  t.wrapT = THREE.ClampToEdgeWrapping;
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.needsUpdate = true;
   return t;
 }
 
@@ -279,6 +284,7 @@ function HexagramPulseSeal({ selectedId, isMobile }: { selectedId: number; isMob
 function CoreTaeguk({ isMobile }: { isMobile: boolean; selectedId: number }) {
   const ref = useRef<THREE.Group>(null);
   const seg = isMobile ? 56 : 84;
+  const waveMap = useMemo(() => makeWaveSplitTexture(), []);
 
   useFrame((_, delta) => {
     if (!ref.current) return;
@@ -288,12 +294,8 @@ function CoreTaeguk({ isMobile }: { isMobile: boolean; selectedId: number }) {
   return (
     <group ref={ref}>
       <mesh>
-        <sphereGeometry args={[1.62, seg, seg, 0, Math.PI * 2, 0, Math.PI / 2]} />
-        <meshStandardMaterial color="#e85b66" emissive="#8a2831" emissiveIntensity={0.24} roughness={0.52} metalness={0.08} />
-      </mesh>
-      <mesh>
-        <sphereGeometry args={[1.62, seg, seg, 0, Math.PI * 2, Math.PI / 2, Math.PI / 2]} />
-        <meshStandardMaterial color="#4b7dff" emissive="#1e3f95" emissiveIntensity={0.24} roughness={0.52} metalness={0.08} />
+        <sphereGeometry args={[1.62, seg, seg]} />
+        <meshStandardMaterial map={waveMap} emissive="#0c1220" emissiveIntensity={0.16} roughness={0.52} metalness={0.08} />
       </mesh>
     </group>
   );
