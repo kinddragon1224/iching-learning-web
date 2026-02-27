@@ -1,5 +1,6 @@
 import cardIndex from "@/data/card_index.json";
 import hexagramContent from "@/data/hexagram_content.json";
+import cardAssets from "@/data/card_assets.json";
 import { findHexagram } from "@/data/hexagrams";
 
 type AxisMap = Partial<Record<"money" | "work" | "relation" | "time", string>>;
@@ -46,8 +47,20 @@ export type HexagramContent = {
   lineTexts: string[];
 };
 
+type CardAssetsSeed = {
+  default?: string;
+  items?: Record<string, string | null>;
+};
+
 const byId = new Map<number, CardSeed>((cardIndex as CardSeed[]).map((c) => [c.id, c]));
 const contentById = new Map<number, ContentSeed>((hexagramContent as ContentSeed[]).map((c) => [c.id, c]));
+const assetSeed = cardAssets as CardAssetsSeed;
+
+function getCardImagePath(id: number) {
+  const mapped = assetSeed.items?.[String(id)];
+  if (mapped && mapped.trim()) return mapped.trim();
+  return assetSeed.default || "/cards/placeholder.png";
+}
 
 function firstSentence(text: string) {
   const t = text?.trim() ?? "";
@@ -70,7 +83,7 @@ export function getCardForHexagram(id: number): HexagramCard {
     trigram_pair: seed?.trigram_pair ?? content?.trigram_pair,
     one_liner: seed?.one_liner ?? firstSentence(summary),
     keywords: seed?.keywords ?? content?.keywords ?? base?.keywords ?? ["학습", "해석"],
-    card_image: seed?.card_image ?? content?.image ?? "/cards/placeholder.png",
+    card_image: getCardImagePath(id),
   };
 }
 
