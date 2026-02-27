@@ -22,16 +22,16 @@ export default function Home() {
       </header>
 
       <section className="relative z-10 mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <Link href="/bagua" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
-          <p className="text-xs text-[var(--text-muted)]">START HERE</p>
-          <h2 className="mt-1 text-xl font-semibold">8괘부터 배우기</h2>
-          <p className="mt-2 text-sm text-[var(--text-muted)]">기초 8괘의 상징과 핵심 의미를 먼저 익혀보세요.</p>
-        </Link>
-
-        <Link href="/principles" className="paper-panel rounded-2xl p-5 panel-hover">
-          <p className="text-xs text-[var(--text-muted)]">입문 원리</p>
+        <Link href="/principles" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
+          <p className="text-xs text-[var(--text-muted)]">첫걸음</p>
           <h2 className="mt-1 text-xl font-semibold">역의 기본 원리</h2>
           <p className="mt-2 text-sm text-[var(--text-muted)]">음양과 변화의 기본 구조를 먼저 이해해보세요.</p>
+        </Link>
+
+        <Link href="/bagua" className="paper-panel rounded-2xl p-5 panel-hover">
+          <p className="text-xs text-[var(--text-muted)]">입문 학습</p>
+          <h2 className="mt-1 text-xl font-semibold">8괘부터 배우기</h2>
+          <p className="mt-2 text-sm text-[var(--text-muted)]">기초 8괘의 상징과 핵심 의미를 익혀보세요.</p>
         </Link>
 
         <Link href="/hexagrams" className="paper-panel rounded-2xl p-5 panel-hover">
