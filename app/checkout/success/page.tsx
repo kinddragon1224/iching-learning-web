@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type CheckoutPayload = {
-  plan: "solo" | "team" | "enterprise";
+  plan: "report" | "subscription" | "session";
   planTitle: string;
   email: string;
   requestId: string;
@@ -14,8 +14,8 @@ type CheckoutPayload = {
 };
 
 const FALLBACK: CheckoutPayload = {
-  plan: "solo",
-  planTitle: "Solo Practitioner",
+  plan: "report",
+  planTitle: "역 리딩 리포트 1회",
   email: "-",
   requestId: "IC-DEMO-0000",
   createdAt: new Date().toISOString(),
@@ -67,9 +67,9 @@ export default function CheckoutSuccessPage() {
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <p>다음 단계</p>
         <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
-          <li>운영팀이 1영업일 내 온보딩 안내를 보낸다.</li>
-          <li>팀/엔터프라이즈는 좌석 및 권한 정책 확인 후 개설된다.</li>
-          <li>현재는 데모 단계로 실제 결제는 진행되지 않는다.</li>
+          <li>결제 정보 접수 후 24시간 내 1차 결과물 안내를 보냅니다.</li>
+          <li>리포트 상품은 1회 수정 요청을 받을 수 있습니다.</li>
+          <li>현재는 데모 단계로 실제 결제는 진행되지 않습니다.</li>
         </ul>
       </section>
 

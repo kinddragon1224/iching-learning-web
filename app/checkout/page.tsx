@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-type PlanKey = "solo" | "team" | "enterprise";
+type PlanKey = "report" | "subscription" | "session";
 
 type Plan = {
   key: PlanKey;
@@ -29,28 +29,29 @@ const WEBHOOK_URL = process.env.NEXT_PUBLIC_CHECKOUT_WEBHOOK_URL;
 
 const PLANS: Plan[] = [
   {
-    key: "solo",
-    title: "Solo Practitioner",
-    subtitle: "1인 상담사/코치",
+    key: "report",
+    title: "역 리딩 리포트 1회",
+    subtitle: "2주 실행판 (초기 베타)",
+    priceLabel: "19,000원",
+    priceValue: 19000,
+    badge: "빠른 시작",
+    features: ["현재 국면 요약 5줄", "리스크 3 / 기회 3", "2주 실행 플랜", "수정 1회"],
+  },
+  {
+    key: "subscription",
+    title: "월간 정렬 구독",
+    subtitle: "주 1회 점검",
     priceLabel: "월 49,000원",
     priceValue: 49000,
-    badge: "가장 많이 선택",
-    features: ["세션 모드", "월 100건 저장", "PDF 리포트"],
+    features: ["월 4회 리딩", "실행 피드백", "월간 정리 리포트"],
   },
   {
-    key: "team",
-    title: "Studio/Clinic Team",
-    subtitle: "팀/소규모 센터",
-    priceLabel: "월 189,000원 (기본 5석)",
-    priceValue: 189000,
-    features: ["팀 계정/권한", "케이스 공유", "월 1,000건 저장"],
-  },
-  {
-    key: "enterprise",
-    title: "Enterprise/Education",
-    subtitle: "기관/기업",
-    priceLabel: "별도 견적",
-    features: ["SSO/감사로그", "맞춤 리포트", "온보딩 지원"],
+    key: "session",
+    title: "심화 1:1 세션",
+    subtitle: "60분 라이브",
+    priceLabel: "150,000원",
+    priceValue: 150000,
+    features: ["핵심 의사결정 1건", "세션 후 요약 제공", "후속 Q&A 1회"],
   },
 ];
 
@@ -69,7 +70,7 @@ function makeRequestId() {
 
 export default function CheckoutPage() {
   const [email, setEmail] = useState("");
-  const [plan, setPlan] = useState<PlanKey>("solo");
+  const [plan, setPlan] = useState<PlanKey>("report");
   const [agreePolicy, setAgreePolicy] = useState(false);
   const [agreeRefund, setAgreeRefund] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -114,8 +115,8 @@ export default function CheckoutPage() {
   return (
     <main className="mx-auto max-w-4xl space-y-6 p-6 pt-24">
       <header>
-        <h1 className="text-2xl font-bold">결제 / 플랜 선택</h1>
-        <p className="mt-1 text-sm text-[var(--text-muted)]">전문가용 주역 상담 워크스페이스 플랜</p>
+        <h1 className="text-2xl font-bold">결제 / 상품 선택</h1>
+        <p className="mt-1 text-sm text-[var(--text-muted)]">예언이 아니라 실행 설계를 돕는 역 기반 리딩 상품</p>
         <p className="mt-2 inline-block rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs text-amber-200">
           데모 단계 · 실제 결제는 진행되지 않습니다
         </p>
@@ -171,7 +172,7 @@ export default function CheckoutPage() {
             <span>결제 금액</span>
             <b>{selectedPlan.priceValue ? won(selectedPlan.priceValue) : "별도 견적"}</b>
           </div>
-          <p className="text-xs text-[var(--text-muted)]">* 데모 단계: 실제 PG/인보이스 연동 전</p>
+          <p className="text-xs text-[var(--text-muted)]">* 결제 후 24시간 내 1차 결과물 전달(데모 정책 기준)</p>
           {!WEBHOOK_URL && (
             <p className="text-xs text-amber-300">* 저장 연동 전: 현재는 브라우저 내 데모 저장만 동작</p>
           )}
@@ -196,7 +197,7 @@ export default function CheckoutPage() {
               onChange={(e) => setAgreeRefund(e.target.checked)}
               className="mt-0.5 h-4 w-4 shrink-0"
             />
-            <span className="leading-relaxed">환불 정책(결제 후 7일 이내, 미사용 조건)에 동의합니다.</span>
+            <span className="leading-relaxed">환불 정책(결제 후 7일 이내, 결과물 미사용 조건)에 동의합니다.</span>
           </label>
         </div>
       </section>
