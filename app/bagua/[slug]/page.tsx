@@ -36,6 +36,18 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
         <p>{item.seolgwaBody}</p>
       </section>
 
+      <section className="paper-panel rounded-xl p-4 text-sm space-y-3">
+        <h2 className="font-semibold">설괘전 상징 원문 매핑</h2>
+        <div className="flex flex-wrap gap-2 text-xs text-[var(--text-muted)]">
+          {item.shuoGuaSymbols.map((s) => (
+            <span key={s} className="rounded-full border px-2 py-1">{s}</span>
+          ))}
+        </div>
+        <p className="text-[11px] text-[var(--text-muted)]">
+          출전: 《周易》 說卦傳 (예: 「乾為馬，坤為牛，震為龍，巽為雞，坎為豕，離為雉，艮為狗，兌為羊」)
+        </p>
+      </section>
+
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <h2 className="font-semibold">학습 포인트</h2>
         <ul className="list-disc pl-5 space-y-1 text-[var(--text-muted)]">
