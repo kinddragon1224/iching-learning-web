@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   basePath: normalizedBasePath,
   assetPrefix: normalizedBasePath ? `${normalizedBasePath}/` : "",
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;

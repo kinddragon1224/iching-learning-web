@@ -50,3 +50,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Smoke check deployed pages
+        run: |
+          set -euo pipefail
+          BASE_URL="${{ steps.deployment.outputs.page_url }}"
+          echo "Smoke checking: ${BASE_URL}"
+          curl -fsSL "${BASE_URL}/" >/dev/null
+          curl -fsSL "${BASE_URL}/explore/" >/dev/null
+          curl -fsSL "${BASE_URL}/hexagram/1/" >/dev/null
+          echo "Smoke check passed"
