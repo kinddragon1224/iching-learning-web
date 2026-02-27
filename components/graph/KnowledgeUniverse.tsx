@@ -570,11 +570,6 @@ export function KnowledgeUniverse() {
   }, [nodes, viewMode, revealCount]);
 
   useEffect(() => {
-    if (lowDensity && viewMode === "all") {
-      setViewMode("featured");
-      return;
-    }
-
     if (viewMode !== "all") {
       setRevealCount(16);
       return;
@@ -585,7 +580,7 @@ export function KnowledgeUniverse() {
       setRevealCount((prev) => (prev >= 64 ? prev : prev + 16));
     }, 220);
     return () => clearInterval(timer);
-  }, [viewMode, lowDensity]);
+  }, [viewMode]);
 
   const getPrimaryAxis = (id: number): AxisKey => getPrimaryAxisById(id);
 
