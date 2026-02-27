@@ -617,6 +617,367 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     },
     linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
   },
+  {
+    id: 34,
+    title: "大壯(대장)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 35,
+    title: "晉(진)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 36,
+    title: "明夷(명이)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 37,
+    title: "家人(가인)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 38,
+    title: "睽(규)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 39,
+    title: "蹇(건)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 40,
+    title: "解(해)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 41,
+    title: "損(손)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 42,
+    title: "益(익)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 43,
+    title: "夬(쾌)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 44,
+    title: "姤(구)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 45,
+    title: "萃(췌)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 46,
+    title: "升(승)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 47,
+    title: "困(곤)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 48,
+    title: "井(정)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 49,
+    title: "革(혁)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 50,
+    title: "鼎(정)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 53,
+    title: "漸(점)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 55,
+    title: "豐(풍)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 56,
+    title: "旅(려)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 59,
+    title: "渙(환)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 60,
+    title: "節(절)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 61,
+    title: "中孚(중부)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+  {
+    id: 62,
+    title: "小過(소과)",
+    freePreview: {
+      classicalAnchor: "해설 준비중",
+      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
+      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+    },
+    proFrame: {
+      diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
+      coachingQuestion: "이 괘를 지금 상황에 적용할 때 가장 먼저 조정할 1가지는 무엇인가?",
+      actionStep: "오늘 실행 1개를 정하고, 결과를 기록해 다음 해석의 근거로 쓴다.",
+    },
+    linesKorean: ["초효", "이효", "삼효", "사효", "오효", "상효"],
+  },
+
 ];
 
 const byId = new Map<number, HexagramTrack>(HEXAGRAM_TRACKS.map((t) => [t.id, t]));

@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { CardImageWithFallback } from "@/components/CardImageWithFallback";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
@@ -59,6 +58,12 @@ const AXIS_META: Record<AxisKey, { label: string; color: string }> = {
 const NODE_BASE_EMISSIVE = "#2a2f38";
 const GOLD_RING_COLOR = "#d4b26a";
 const GOLD_RING_EMISSIVE = "#e7c989";
+
+function splitHexagramName(nameKo: string) {
+  const m = nameKo.match(/^(.*)\((.*)\)$/);
+  if (!m) return { full: nameKo, hanja: "" };
+  return { full: m[1], hanja: m[2] };
+}
 
 function getPlanetColor(id: number, axisColor: string) {
   return BAGUA_PLANET_COLORS[id] ?? axisColor;
@@ -644,6 +649,8 @@ export function KnowledgeUniverse() {
   const selected = nodes.find((n) => n.id === (hoverId ?? selectedId)) ?? nodes[0];
   const selectedCard = getCardForHexagram(selected.id);
   const selectedContent = getHexagramContent(selected.id);
+  const selectedHex = HEXAGRAMS.find((h) => h.id === selected.id);
+  const selectedName = splitHexagramName(selectedHex?.nameKo ?? selectedCard.short_name);
   const nextHex = pickNextRecommendation(selected.id);
   const axisStrengths = HEX_AXIS_STRENGTH[selected.id] ?? { work: 2 };
   const axisQuestions = selectedContent.questions as Record<AxisKey, string>;
@@ -679,7 +686,7 @@ export function KnowledgeUniverse() {
       (r) => r.date === payload.date && r.hexagram_id === payload.hexagram_id && r.question_axis === payload.question_axis
     );
     if (exists) {
-      const ok = window.confirm("이미 오늘 같은 항목이 있어. 수정할까?");
+      const ok = window.confirm("이미 오늘 같은 항목이 있습니다. 수정하시겠습니까?");
       if (!ok) return;
     }
 
@@ -814,84 +821,20 @@ export function KnowledgeUniverse() {
             )}
             <p className="text-xs text-white/60">카드 미리보기</p>
             <div className="mt-2 overflow-hidden rounded-xl border border-white/15 bg-black/35">
-              <div className="relative">
-                <CardImageWithFallback
-                  src={selectedCard.card_image}
-                  alt={`#${selected.id} 카드 이미지`}
-                  width={640}
-                  height={360}
-                  className="h-36 w-full object-cover"
-                />
-                <div className="pointer-events-none absolute inset-x-0 bottom-1 flex justify-center">
+              <div className="relative flex h-36 w-full items-center justify-center bg-black/20">
+                <div className="pointer-events-none flex justify-center">
                   <HexagramLinesOverlay lines={selectedContent.lines} size="small" styleVariant="gold" />
                 </div>
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold">
-                  {selectedCard.full_name
-                    ? `#${selected.id} ${selectedCard.full_name} (${selectedCard.short_name})`
-                    : `#${selected.id} ${selectedCard.short_name}`}
+                  #{selected.id} {selectedName.full}{selectedName.hanja ? ` (${selectedName.hanja})` : ""}
                 </h3>
-                <span className="mt-1 inline-block rounded-full border border-white/25 bg-white/10 px-2 py-0.5 text-[11px]">
-                  {AXIS_META[getPrimaryAxis(selected.id)].label}
-                </span>
-                <p className="mt-1 text-xs text-white/75">{selectedCard.one_liner}</p>
-                <div className="mt-2 flex gap-2">
-                  <button onClick={() => setSaveOpen(true)} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">
-                    오늘 실행 저장
-                  </button>
-                  <Link href={`/hexagram/${selected.id}`} className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs">
-                    상세 보기
-                  </Link>
-                  <button
-                    onClick={() => {
-                      setPanelOpen(false);
-                      setHoverId(null);
-                    }}
-                    className="rounded border border-white/30 bg-white/10 px-2 py-1 text-xs"
-                  >
-                    닫기
-                  </button>
-                </div>
+                <Link href={`/hexagram/${selected.id}`} className="mt-2 inline-block text-xs underline text-white/85">
+                  자세히 보기
+                </Link>
               </div>
             </div>
-
-            {isMobile && (
-              <p className="mt-2 text-[11px] text-white/60">패널 내부를 위아래로 스크롤해서 전체 해석을 볼 수 있어.</p>
-            )}
-
-            <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-              {(Object.keys(AXIS_META) as AxisKey[]).map((axis) => (
-                <span
-                  key={axis}
-                  className={`rounded-full border px-2 py-0.5 ${
-                    (axisStrengths[axis] ?? 0) >= 2 ? "border-white/60 bg-white/15" : "border-white/20 bg-white/5 text-white/60"
-                  }`}
-                >
-                  {AXIS_META[axis].label} {(axisStrengths[axis] ?? 0) > 0 ? `·${axisStrengths[axis]}` : ""}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-4 space-y-1 text-xs text-white/70">
-              <div className="flex justify-between"><span>현재 괘</span><b>#{selected.id}</b></div>
-              <div className="flex justify-between"><span>진도</span><b>{viewMode === "featured" ? "대표 모드" : "전체 모드"}</b></div>
-                            <div className="flex justify-between"><span>다음 추천</span><b>#{nextHex.id} {nextHex.nameKo}</b></div>
-            </div>
-
-            <div className="mt-4 rounded-lg border border-white/15 bg-black/25 p-3">
-              <p className="text-xs text-white/60">4축 질문</p>
-              <ul className="mt-2 space-y-2 text-xs text-white/85">
-                <li><b>[돈]</b> {axisQuestions.money}</li>
-                <li><b>[일]</b> {axisQuestions.work}</li>
-                <li><b>[관계]</b> {axisQuestions.relation}</li>
-                <li><b>[시간]</b> {axisQuestions.time}</li>
-              </ul>
-            </div>
-
-            <Link href={`/hexagram/${selected.id}`} className="mt-4 inline-block text-xs underline text-white/85">
-              상세 학습으로 이동
-            </Link>
           </aside>
         )}
 
@@ -943,7 +886,7 @@ export function KnowledgeUniverse() {
               />
               <div className="mt-3 space-y-2">
                 {searchResults.length === 0 && (
-                  <p className="text-xs text-white/60">검색 결과가 없어. 번호/괘이름/별칭으로 다시 시도해줘.</p>
+                  <p className="text-xs text-white/60">검색 결과가 없습니다. 번호/괘이름/별칭으로 다시 시도해 주세요.</p>
                 )}
                 {searchResults.map((r: HexagramSearchEntry) => {
                   const axis = getPrimaryAxis(r.id);
@@ -977,7 +920,7 @@ export function KnowledgeUniverse() {
           <div className="pointer-events-auto absolute inset-0 z-50 bg-black/50">
             <div className={`absolute border border-white/25 bg-black/85 backdrop-blur-md ${isMobile ? "left-0 right-0 bottom-0 rounded-t-2xl p-4" : "left-1/2 top-24 w-[480px] -translate-x-1/2 rounded-2xl p-4"}`}>
               <div className="mb-3 flex items-center justify-between">
-                <p className="text-sm font-semibold text-white">어느 질문을 저장할까?</p>
+                <p className="text-sm font-semibold text-white">어떤 질문을 저장하시겠습니까?</p>
                 <button className="text-xs text-white/80 underline" onClick={() => setSaveOpen(false)}>닫기</button>
               </div>
 
