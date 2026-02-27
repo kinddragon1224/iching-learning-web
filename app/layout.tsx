@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "주역 학습 웹 MVP",
-  description: "점술 기능이 아닌 주역 학습/탐색용 웹 서비스 MVP",
+  title: "역 학습 웹 MVP",
+  description: "점술 기능이 아닌 역 학습/탐색용 웹 서비스 MVP",
 };
 
 export default function RootLayout({
@@ -38,7 +38,6 @@ export default function RootLayout({
             <Link href="/" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">홈</Link>
             <Link href="/bagua" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">8괘 입문</Link>
             <Link href="/explore" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">64괘 탐색</Link>
-            <Link href="/principles" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">기본 원리</Link>
             <Link href="/pro" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">Pro</Link>
             <Link href="/faq" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">자주 묻는 질문</Link>
             <Link href="/checkout" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">결제</Link>

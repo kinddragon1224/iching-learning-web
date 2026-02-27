@@ -10,7 +10,7 @@ export default function Home() {
       <div className="home-stars-layer-2" aria-hidden />
 
       <header className="relative z-10 mx-auto max-w-2xl space-y-4 text-center">
-        <p className="text-sm text-[var(--text-muted)] home-fade-in">주역 학습 플랫폼</p>
+        <p className="text-sm text-[var(--text-muted)] home-fade-in">역 학습 플랫폼</p>
         <div className="home-title-wrap">
           <div className="home-title-backdrop" aria-hidden />
           <div className="home-title-aura" aria-hidden />
@@ -21,11 +21,17 @@ export default function Home() {
         <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙해지면 64괘로 확장해보세요.</p>
       </header>
 
-      <section className="relative z-10 mt-12 grid gap-4 md:grid-cols-3">
+      <section className="relative z-10 mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Link href="/bagua" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
           <p className="text-xs text-[var(--text-muted)]">START HERE</p>
           <h2 className="mt-1 text-xl font-semibold">8괘부터 배우기</h2>
           <p className="mt-2 text-sm text-[var(--text-muted)]">기초 8괘의 상징과 핵심 의미를 먼저 익혀보세요.</p>
+        </Link>
+
+        <Link href="/principles" className="paper-panel rounded-2xl p-5 panel-hover">
+          <p className="text-xs text-[var(--text-muted)]">입문 원리</p>
+          <h2 className="mt-1 text-xl font-semibold">역의 기본 원리</h2>
+          <p className="mt-2 text-sm text-[var(--text-muted)]">음양과 변화의 기본 구조를 먼저 이해해보세요.</p>
         </Link>
 
         <Link href="/hexagrams" className="paper-panel rounded-2xl p-5 panel-hover">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "역의 기본 원리 | 주역 학습 웹",
-  description: "계사전 관점을 바탕으로 음양과 변화의 기본 원리를 이해하는 입문 페이지",
+  title: "역의 기본 원리 | 역 학습 웹",
+  description: "음양과 변화의 기본 원리를 이해하는 입문 페이지",
 };
 
 export default function PrinciplesPage() {
@@ -12,14 +12,14 @@ export default function PrinciplesPage() {
         <p className="text-sm text-[var(--text-muted)]">입문 원리</p>
         <h1 className="text-3xl font-bold">역의 기본 원리: 음양과 변화</h1>
         <p className="mt-2 text-sm text-[var(--text-muted)]">
-          이 페이지는 <b>계사전</b>의 핵심 관점을 참고해, 주역을 처음 접하는 분도 이해할 수 있도록 정리했습니다.
+          이 페이지는 역을 처음 접하는 분도 이해할 수 있도록, 음양과 변화의 핵심을 간단히 정리했습니다.
         </p>
       </header>
 
       <section className="paper-panel rounded-xl p-4 space-y-2 text-sm">
         <h2 className="font-semibold">1) 음양은 선악이 아니라 리듬입니다</h2>
         <p>
-          계사전의 핵심 구절로 자주 인용되는 “<b>일음일양지위도(一陰一陽之謂道)</b>”는,
+          “<b>일음일양지위도(一陰一陽之謂道)</b>”라는 표현은,
           음과 양이 번갈아 작용하는 흐름 자체를 ‘도’로 본다는 뜻입니다.
         </p>
         <p className="text-[var(--text-muted)]">
@@ -28,9 +28,9 @@ export default function PrinciplesPage() {
       </section>
 
       <section className="paper-panel rounded-xl p-4 space-y-2 text-sm">
-        <h2 className="font-semibold">2) 주역은 고정 해석이 아니라 변화의 읽기입니다</h2>
+        <h2 className="font-semibold">2) 역은 고정 해석이 아니라 변화의 읽기입니다</h2>
         <p>
-          계사전은 역을 ‘변화의 원리’를 읽는 학문으로 봅니다. 그래서 괘는 정답 카드가 아니라,
+          역은 ‘변화의 원리’를 읽는 학문으로 볼 수 있습니다. 그래서 괘는 정답 카드가 아니라,
           현재 흐름을 점검하고 다음 행동을 설계하는 프레임입니다.
         </p>
         <p className="text-[var(--text-muted)]">
