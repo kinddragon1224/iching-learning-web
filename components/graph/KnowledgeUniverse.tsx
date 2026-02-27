@@ -29,6 +29,18 @@ type Node = {
 // 대표 행성: 8괘 중첩(팔순괘)만 노출
 const FEATURED_IDS = [1, 2, 29, 30, 51, 57, 52, 58];
 
+// 대표 8괘 전용 고정 배치 (우측 공간 비어 보임 방지)
+const FEATURED_LAYOUT: Record<number, [number, number, number]> = {
+  1: [4.8, 0.45, 0.1],
+  2: [-4.6, -0.25, -0.2],
+  29: [3.2, 2.15, -1.55],
+  30: [3.35, -2.05, 1.45],
+  51: [0.2, 2.75, 2.55],
+  57: [-0.25, -2.65, -2.45],
+  52: [-3.15, 2.05, 1.45],
+  58: [-3.35, -2.05, -1.55],
+};
+
 const AXIS_COLORS: Record<AxisKey, string> = {
   money: "#5f86d9",
   work: "#4fb8a8",
@@ -99,29 +111,34 @@ function buildNodes(): Node[] {
     const card = getCardForHexagram(h.id);
     let chosen: [number, number, number] = [0, 0, 0];
 
-    for (let attempt = 0; attempt < 36; attempt++) {
-      const r1 = hashRand(h.id * 3.1 + attempt * 1.13);
-      const r2 = hashRand(h.id * 7.7 + attempt * 1.97);
-      const r3 = hashRand(h.id * 11.3 + attempt * 2.31);
+    const fixed = FEATURED_LAYOUT[h.id];
+    if (fixed) {
+      chosen = fixed;
+    } else {
+      for (let attempt = 0; attempt < 36; attempt++) {
+        const r1 = hashRand(h.id * 3.1 + attempt * 1.13);
+        const r2 = hashRand(h.id * 7.7 + attempt * 1.97);
+        const r3 = hashRand(h.id * 11.3 + attempt * 2.31);
 
-      const radius = 3.4 + r1 * 5.8; // 전체 반지름 확장
-      const theta = r2 * Math.PI * 2;
-      const phi = Math.acos(2 * r3 - 1);
+        const radius = 3.4 + r1 * 5.8; // 전체 반지름 확장
+        const theta = r2 * Math.PI * 2;
+        const phi = Math.acos(2 * r3 - 1);
 
-      const x = radius * Math.sin(phi) * Math.cos(theta);
-      const y = radius * Math.cos(phi) * 0.78;
-      const z = radius * Math.sin(phi) * Math.sin(theta);
+        const x = radius * Math.sin(phi) * Math.cos(theta);
+        const y = radius * Math.cos(phi) * 0.78;
+        const z = radius * Math.sin(phi) * Math.sin(theta);
 
-      const ok = placed.every(([px, py, pz]) => {
-        const dx = x - px;
-        const dy = y - py;
-        const dz = z - pz;
-        return Math.sqrt(dx * dx + dy * dy + dz * dz) >= minDistance;
-      });
+        const ok = placed.every(([px, py, pz]) => {
+          const dx = x - px;
+          const dy = y - py;
+          const dz = z - pz;
+          return Math.sqrt(dx * dx + dy * dy + dz * dz) >= minDistance;
+        });
 
-      if (ok || attempt === 35) {
-        chosen = [x, y, z];
-        break;
+        if (ok || attempt === 35) {
+          chosen = [x, y, z];
+          break;
+        }
       }
     }
 
