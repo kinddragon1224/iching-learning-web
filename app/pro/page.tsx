@@ -19,6 +19,9 @@ export default function ProPage() {
             <li>해석 프레임 기본 훈련</li>
             <li>주차별 학습 미션</li>
           </ul>
+          <Link href="/programs/basic-track" className="mt-3 inline-block text-xs underline text-[var(--text-muted)]">
+            커리큘럼 보기
+          </Link>
         </article>
 
         <article className="rounded-xl border border-white/20 bg-black/30 p-4">
