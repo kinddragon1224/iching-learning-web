@@ -282,45 +282,8 @@ function CoreTaeguk({ isMobile }: { isMobile: boolean; selectedId: number }) {
   );
 }
 
-function AxisOrbits({ strengths }: { strengths: Partial<Record<AxisKey, AxisStrength>> }) {
-  const ref = useRef<THREE.Group>(null);
-
-  const axesToRender = (Object.keys(AXIS_META) as AxisKey[])
-    .map((axis) => ({ axis, strength: strengths[axis] ?? 0 }))
-    .filter((x) => x.strength > 0)
-    .sort((a, b) => b.strength - a.strength)
-    .slice(0, 2);
-
-  useFrame((_, delta) => {
-    if (!ref.current) return;
-    const maxStrength = Math.max(...Object.values(strengths), 1);
-    ref.current.rotation.y -= delta * (0.02 + maxStrength * 0.01);
-  });
-
-  return (
-    <group ref={ref}>
-      {axesToRender.map(({ axis, strength }, idx) => {
-        const tube = strength === 3 ? 0.026 : strength === 2 ? 0.02 : 0.015;
-        const opacity = strength === 3 ? 0.7 : strength === 2 ? 0.52 : 0.36;
-        const emissiveIntensity = strength === 3 ? 0.75 : strength === 2 ? 0.52 : 0.32;
-
-        return (
-          <group key={axis} rotation={[idx * 0.78, idx * 0.52, idx * 0.32]}>
-            <mesh>
-              <torusGeometry args={[3.12 + idx * 0.24, Math.max(0.009, tube * 0.78), 16, 180]} />
-              <meshStandardMaterial
-                color={AXIS_META[axis].color}
-                emissive={AXIS_META[axis].color}
-                emissiveIntensity={emissiveIntensity}
-                transparent
-                opacity={opacity}
-              />
-            </mesh>
-          </group>
-        );
-      })}
-    </group>
-  );
+function AxisOrbits() {
+  return null;
 }
 
 function NodeCloud({
@@ -651,7 +614,7 @@ export function KnowledgeUniverse() {
 
         <CoreTaeguk isMobile={isMobile} selectedId={selected.id} />
         <CinematicFX isMobile={isMobile} />
-        <AxisOrbits strengths={axisStrengths} />
+        <AxisOrbits />
         <NodeCloud
           nodes={visibleNodes}
           selectedId={selectedId}
