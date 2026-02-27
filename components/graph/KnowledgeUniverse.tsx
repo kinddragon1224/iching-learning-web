@@ -595,10 +595,10 @@ export function KnowledgeUniverse() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <Canvas camera={cameraPreset}>
-        <fog attach="fog" args={["#05060a", 8, 28]} />
-        <ambientLight intensity={0.52} />
-        <pointLight position={[8, 8, 8]} intensity={1.1} color="#dce8ff" />
-        <pointLight position={[-9, -6, 6]} intensity={0.55} color="#59bbff" />
+        <fog attach="fog" args={[isMobile ? "#0a1220" : "#05060a", isMobile ? 10 : 8, isMobile ? 34 : 28]} />
+        <ambientLight intensity={isMobile ? 0.68 : 0.52} />
+        <pointLight position={[8, 8, 8]} intensity={isMobile ? 1.35 : 1.1} color="#dce8ff" />
+        <pointLight position={[-9, -6, 6]} intensity={isMobile ? 0.82 : 0.55} color="#59bbff" />
 
         <Stars radius={80} depth={42} count={isMobile ? 260 : 680} factor={isMobile ? 1.2 : 1.8} fade speed={0.18} />
 
