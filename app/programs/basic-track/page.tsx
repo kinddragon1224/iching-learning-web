@@ -94,6 +94,38 @@ export default function BasicTrackPage() {
         </div>
       </section>
 
+      <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
+        <h2 className="font-semibold">2주차 학습 콘텐츠 (구조 읽기)</h2>
+        <p className="text-[var(--text-muted)]">
+          2주차는 64괘를 “외우는 대상”이 아니라 “상괘/하괘 조합 규칙”으로 이해하는 주간입니다.
+        </p>
+
+        <div className="space-y-2">
+          <p><b>Step 1. 조합 분해</b></p>
+          <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
+            <li>한 괘를 고른 뒤 상괘/하괘를 먼저 분리한다.</li>
+            <li>각 괘의 상징군을 1개씩 뽑아 “상황 충돌/보완”을 본다.</li>
+          </ul>
+        </div>
+
+        <div className="space-y-2">
+          <p><b>Step 2. 10괘 요약 노트</b></p>
+          <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
+            <li>대표 10괘를 골라 괘마다 2문장 요약을 만든다.</li>
+            <li>문장 형식: “이 괘는 ___ 상황에서 ___를 우선한다.”</li>
+          </ul>
+        </div>
+
+        <div className="space-y-2">
+          <p><b>Step 3. 저메모리용 오늘 Top-3</b></p>
+          <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
+            <li>오늘 볼 괘 1개 정하기</li>
+            <li>상괘/하괘 한 줄로 분리하기</li>
+            <li>실행 문장 1개 캘린더에 넣기</li>
+          </ul>
+        </div>
+      </section>
+
       <div className="flex flex-wrap gap-2 text-sm">
         <Link href="/checkout" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 font-semibold text-black">
           이 트랙 신청하기
