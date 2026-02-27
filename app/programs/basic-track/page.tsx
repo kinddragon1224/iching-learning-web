@@ -23,11 +23,13 @@ const weeks = [
     title: "3주차 · 해석 프레임 훈련",
     goal: "같은 괘를 상황별로 다르게 해석하는 기준을 익힌다.",
     tasks: ["케이스 3개 해석", "해석 근거 문장화", "피드백 기반 수정"],
+    href: "/programs/basic-track/week-3",
   },
   {
     title: "4주차 · 적용과 정리",
     goal: "학습 내용을 실무/일상 의사결정에 연결한다.",
     tasks: ["적용 보고서 1회", "재사용 템플릿 정리", "다음 학습 계획 수립"],
+    href: "/programs/basic-track/week-4",
   },
 ];
 
