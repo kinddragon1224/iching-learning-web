@@ -38,6 +38,7 @@ export default function RootLayout({
             <Link href="/" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">홈</Link>
             <Link href="/bagua" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">8괘 입문</Link>
             <Link href="/explore" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">64괘 탐색</Link>
+            <Link href="/principles" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">기본 원리</Link>
             <Link href="/pro" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">Pro</Link>
             <Link href="/faq" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">자주 묻는 질문</Link>
             <Link href="/checkout" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">결제</Link>
