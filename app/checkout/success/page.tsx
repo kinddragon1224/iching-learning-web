@@ -74,7 +74,10 @@ export default function CheckoutSuccessPage() {
       </section>
 
       <div className="flex flex-col gap-2 sm:flex-row">
-        <Link href="/pro" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 text-center text-sm font-semibold text-black">
+        <Link href="/programs/basic-track/week-1" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 text-center text-sm font-semibold text-black">
+          기초 트랙 시작하기
+        </Link>
+        <Link href="/pro" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
           Pro 소개로 돌아가기
         </Link>
         <Link href="/pricing" className="rounded-lg border border-white/30 px-4 py-2 text-center text-sm">
