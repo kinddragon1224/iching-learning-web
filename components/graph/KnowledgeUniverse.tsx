@@ -705,15 +705,6 @@ export function KnowledgeUniverse() {
               </button>
             </div>
 
-            <div className="hidden md:flex flex-nowrap justify-end gap-1 rounded border border-white/20 bg-black/35 px-2 py-1 text-[10px] text-white/75">
-              {(Object.keys(AXIS_META) as AxisKey[]).map((axis) => (
-                <span key={axis} className="inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 whitespace-nowrap">
-                  <span className="inline-block h-1.5 w-1.5 rounded-full" style={{ backgroundColor: AXIS_META[axis].color }} />
-                  {AXIS_META[axis].label}
-                </span>
-              ))}
-            </div>
-
             <div className="flex items-center gap-2">
               <Link href="/saved" className="rounded border border-white/30 bg-black/45 px-3 py-2 text-xs text-white md:py-1.5">
                 저장 {todayCount}/4
