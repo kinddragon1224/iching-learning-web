@@ -60,6 +60,40 @@ export default function BasicTrackPage() {
         ))}
       </section>
 
+      <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
+        <h2 className="font-semibold">1주차 학습 콘텐츠 (실전)</h2>
+        <p className="text-[var(--text-muted)]">
+          이번 주의 핵심은 “상징을 외우는 것”이 아니라 “상징을 상황 문장으로 바꾸는 것”입니다.
+          아래 순서대로 진행해 보세요.
+        </p>
+
+        <div className="space-y-2">
+          <p><b>Step 1. 음양 문장화</b></p>
+          <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
+            <li>양: 확장·추진·표현이 필요한 상태를 한 문장으로 적기</li>
+            <li>음: 정리·수용·축적이 필요한 상태를 한 문장으로 적기</li>
+          </ul>
+        </div>
+
+        <div className="space-y-2">
+          <p><b>Step 2. 8괘 상징 적용</b></p>
+          <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
+            <li>건/곤/진/손/감/리/간/태 중 현재 상황에 가장 가까운 괘 1개 선택</li>
+            <li>선택한 괘의 상징군(자연·가족·신체·동물)을 2개 이상 연결해 해석</li>
+            <li>해석을 “지금 나는 ___를 해야 한다” 문장으로 마무리</li>
+          </ul>
+        </div>
+
+        <div className="space-y-2">
+          <p><b>Step 3. 체크리스트</b></p>
+          <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
+            <li>상징을 그대로 복붙하지 않고 내 상황 언어로 바꿨는가?</li>
+            <li>감정 해소가 아니라 행동 선택으로 연결했는가?</li>
+            <li>24시간 내 실행할 1개 행동을 캘린더에 넣었는가?</li>
+          </ul>
+        </div>
+      </section>
+
       <div className="flex flex-wrap gap-2 text-sm">
         <Link href="/checkout" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 font-semibold text-black">
           이 트랙 신청하기
