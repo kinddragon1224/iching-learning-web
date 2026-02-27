@@ -683,7 +683,7 @@ export function KnowledgeUniverse() {
           <aside className={`pointer-events-auto absolute z-30 border border-white/20 bg-black/55 text-sm text-white/90 backdrop-blur-sm ${
             isMobile
               ? "left-3 right-3 bottom-3 top-auto max-h-[68vh] overflow-y-auto rounded-2xl p-4"
-              : "right-6 top-36 w-[380px] rounded-2xl p-4"
+              : "right-6 top-20 w-[380px] rounded-2xl p-4"
           }`}>
             {isMobile && (
               <div className="mb-2 flex justify-end">
