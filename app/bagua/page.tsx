@@ -7,7 +7,7 @@ export default function BaguaPage() {
       <header>
         <p className="text-sm text-[var(--text-muted)]">입문관</p>
         <h1 className="text-3xl font-bold">8괘 세부 학습</h1>
-        <p className="mt-1 text-sm text-[var(--text-muted)]">각 괘의 상징·핵심 의미·현대 적용 포인트를 빠르게 익혀보세요.</p>
+        <p className="mt-1 text-sm text-[var(--text-muted)]">설괘전 본문 관점을 반영해 각 괘의 상징·핵심 의미·현대 적용 포인트를 익혀보세요.</p>
       </header>
 
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

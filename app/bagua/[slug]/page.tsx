@@ -31,6 +31,11 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
       </section>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
+        <h2 className="font-semibold">설괘전 본문 적용</h2>
+        <p>{item.seolgwaBody}</p>
+      </section>
+
+      <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <h2 className="font-semibold">학습 포인트</h2>
         <ul className="list-disc pl-5 space-y-1 text-[var(--text-muted)]">
           {item.studyPoints.map((p) => (
