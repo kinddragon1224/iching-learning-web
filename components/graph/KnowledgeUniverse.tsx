@@ -259,82 +259,25 @@ function HexagramPulseSeal({ selectedId, isMobile }: { selectedId: number; isMob
   );
 }
 
-function CoreTaeguk({ isMobile, selectedId }: { isMobile: boolean; selectedId: number }) {
+function CoreTaeguk({ isMobile }: { isMobile: boolean; selectedId: number }) {
   const ref = useRef<THREE.Group>(null);
-  const haloRef = useRef<THREE.Mesh>(null);
-  const ribbonARef = useRef<THREE.Mesh>(null);
-  const ribbonBRef = useRef<THREE.Mesh>(null);
-  const noiseTex = useMemo(() => makeSubtleNoiseTexture(), []);
+  const seg = isMobile ? 56 : 84;
 
-  const seg = isMobile ? 48 : 76;
-
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (!ref.current) return;
-    const t = state.clock.elapsedTime;
-
-    ref.current.rotation.y += delta * 0.045;
-
-    if (haloRef.current) {
-      const m = haloRef.current.material as THREE.MeshStandardMaterial;
-      m.emissiveIntensity = 0.52 + Math.sin(t * 0.55) * 0.14; // 조절: 헤일로 밝기
-    }
-
-    if (ribbonARef.current) ribbonARef.current.rotation.y += delta * 0.045; // 조절: 리본 속도
-    if (ribbonBRef.current) ribbonBRef.current.rotation.y -= delta * 0.045;
+    ref.current.rotation.y += delta * 0.03;
   });
 
   return (
     <group ref={ref}>
       <mesh>
-        <sphereGeometry args={[1.58, seg, seg]} />
-        <meshStandardMaterial
-          color="#f2c86f"
-          map={noiseTex}
-          roughness={0.78}
-          metalness={0.04}
-          emissive="#ffd46f"
-          emissiveIntensity={0.3}
-        />
+        <sphereGeometry args={[1.62, seg, seg, 0, Math.PI * 2, 0, Math.PI / 2]} />
+        <meshStandardMaterial color="#e85b66" emissive="#8a2831" emissiveIntensity={0.24} roughness={0.52} metalness={0.08} />
       </mesh>
-
       <mesh>
-        <sphereGeometry args={[1.63, seg, seg]} />
-        <meshStandardMaterial color="#ffeec7" emissive="#ffd47a" emissiveIntensity={0.14} transparent opacity={0.1} />
+        <sphereGeometry args={[1.62, seg, seg, 0, Math.PI * 2, Math.PI / 2, Math.PI / 2]} />
+        <meshStandardMaterial color="#4b7dff" emissive="#1e3f95" emissiveIntensity={0.24} roughness={0.52} metalness={0.08} />
       </mesh>
-
-      <mesh ref={haloRef} rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[1.95, 0.011, 10, isMobile ? 80 : 132]} />
-        <meshStandardMaterial color="#ffe9b8" emissive="#ffdd86" emissiveIntensity={0.46} transparent opacity={0.52} />
-      </mesh>
-
-      <mesh rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[2.03, 0.005, 8, isMobile ? 72 : 116]} />
-        <meshBasicMaterial color="#ffe1a3" transparent opacity={0.14} />
-      </mesh>
-
-      <group ref={ribbonARef} rotation={[Math.PI / 2.15, 0.18, 0]}>
-        <mesh>
-          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#fffaf0" emissive="#ffecb8" emissiveIntensity={0.44} transparent opacity={0.68} />
-        </mesh>
-      </group>
-
-      <group ref={ribbonBRef} rotation={[Math.PI / 2.15, Math.PI + 0.18, 0]}>
-        <mesh>
-          <torusKnotGeometry args={[1.95, 0.021, isMobile ? 120 : 180, 18, 2, 1]} />
-          <meshStandardMaterial color="#231f16" emissive="#a88444" emissiveIntensity={0.28} transparent opacity={0.56} />
-        </mesh>
-      </group>
-
-      <group rotation={[Math.PI / 2.45, 0.3, 0.12]}>
-        <mesh>
-          <torusGeometry args={[1.84, 0.006, 8, isMobile ? 96 : 144]} />
-          <meshBasicMaterial color="#e4e9ef" transparent opacity={0.18} />
-        </mesh>
-        <BaguaRing radius={1.84} isMobile={isMobile} />
-      </group>
-
-      <HexagramPulseSeal selectedId={selectedId} isMobile={isMobile} />
     </group>
   );
 }
@@ -821,7 +764,7 @@ export function KnowledgeUniverse() {
             )}
             <p className="text-xs text-white/60">카드 미리보기</p>
             <div className="mt-2 overflow-hidden rounded-xl border border-white/15 bg-black/35">
-              <div className="relative flex h-36 w-full items-center justify-center bg-black/20">
+              <div className="relative flex w-full aspect-[9/16] items-center justify-center bg-black/20">
                 <div className="pointer-events-none flex justify-center">
                   <HexagramLinesOverlay lines={selectedContent.lines} size="small" styleVariant="gold" />
                 </div>
