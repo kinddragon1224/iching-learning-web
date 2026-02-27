@@ -312,6 +312,7 @@ function NodeCloud({
   isMobile,
   lowDensity,
   showSelectedLabel,
+  freezeRotation,
   getPrimaryAxis,
   onHover,
   onSelect,
@@ -322,6 +323,7 @@ function NodeCloud({
   isMobile: boolean;
   lowDensity: boolean;
   showSelectedLabel: boolean;
+  freezeRotation: boolean;
   getPrimaryAxis: (id: number) => AxisKey;
   onHover: (id: number | null) => void;
   onSelect: (id: number) => void;
@@ -329,7 +331,7 @@ function NodeCloud({
   const ref = useRef<THREE.Group>(null);
 
   useFrame((_, delta) => {
-    if (!ref.current) return;
+    if (!ref.current || freezeRotation) return;
     ref.current.rotation.y += delta * 0.05;
   });
 
@@ -557,10 +559,10 @@ export function KnowledgeUniverse() {
       return;
     }
 
-    setRevealCount(16);
+    setRevealCount(8);
     const timer = setInterval(() => {
-      setRevealCount((prev) => (prev >= 64 ? prev : prev + 16));
-    }, 220);
+      setRevealCount((prev) => (prev >= 64 ? prev : prev + 8));
+    }, 140);
     return () => clearInterval(timer);
   }, [viewMode]);
 
@@ -577,6 +579,19 @@ export function KnowledgeUniverse() {
 
   const searchIndex = useMemo(() => buildHexagramSearchIndex(), []);
   const searchResults = useMemo(() => searchHexagrams(searchIndex, searchInput, 5), [searchIndex, searchInput]);
+
+  const freezeRotation = hoverId !== null || panelOpen;
+  const cameraPreset = useMemo(() => {
+    if (isMobile) {
+      return viewMode === "all"
+        ? { position: [0.2, 0.35, 17.4] as [number, number, number], fov: 62 }
+        : { position: [0.45, 0.55, 15.9] as [number, number, number], fov: 58 };
+    }
+
+    return viewMode === "all"
+      ? { position: [0.1, 0.2, 14.8] as [number, number, number], fov: 54 }
+      : { position: [0.45, 0.35, 13.6] as [number, number, number], fov: 50 };
+  }, [isMobile, viewMode]);
 
   const jumpToHexagram = (id: number) => {
     setSelectedId(id);
@@ -623,7 +638,7 @@ export function KnowledgeUniverse() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <Canvas camera={{ position: [0, 0, isMobile ? 16.2 : 14.2], fov: isMobile ? 58 : 52 }}>
+      <Canvas camera={cameraPreset}>
         <fog attach="fog" args={["#05060a", 8, 28]} />
         <ambientLight intensity={0.52} />
         <pointLight position={[8, 8, 8]} intensity={1.1} color="#dce8ff" />
@@ -641,6 +656,7 @@ export function KnowledgeUniverse() {
           isMobile={isMobile}
           lowDensity={lowDensity}
           showSelectedLabel={!isMobile || panelOpen}
+          freezeRotation={freezeRotation}
           getPrimaryAxis={getPrimaryAxis}
           onHover={setHoverId}
           onSelect={(id) => {
@@ -657,7 +673,7 @@ export function KnowledgeUniverse() {
           maxDistance={18}
           enableDamping
           dampingFactor={0.06}
-          autoRotate
+          autoRotate={!freezeRotation}
           autoRotateSpeed={0.22}
         />
       </Canvas>
