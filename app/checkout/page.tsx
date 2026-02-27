@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-type PlanKey = "report" | "subscription" | "session";
+type PlanKey = "basic" | "practical" | "ops";
 
 type Plan = {
   key: PlanKey;
@@ -29,29 +29,29 @@ const WEBHOOK_URL = process.env.NEXT_PUBLIC_CHECKOUT_WEBHOOK_URL;
 
 const PLANS: Plan[] = [
   {
-    key: "report",
-    title: "역 리딩 리포트 1회",
-    subtitle: "2주 실행판 (초기 베타)",
-    priceLabel: "19,000원",
-    priceValue: 19000,
-    badge: "빠른 시작",
-    features: ["현재 국면 요약 5줄", "리스크 3 / 기회 3", "2주 실행 플랜", "수정 1회"],
+    key: "basic",
+    title: "기초 학습 트랙 (4주)",
+    subtitle: "8괘 → 64괘 구조 입문",
+    priceLabel: "99,000원",
+    priceValue: 99000,
+    badge: "첫 시작",
+    features: ["주차별 학습 미션", "핵심 개념 워크북", "복습 체크리스트"],
   },
   {
-    key: "subscription",
-    title: "월간 정렬 구독",
-    subtitle: "주 1회 점검",
+    key: "practical",
+    title: "실전 학습 트랙 (8주)",
+    subtitle: "해석 적용 훈련",
+    priceLabel: "290,000원",
+    priceValue: 290000,
+    features: ["케이스 적용 과제", "질문 설계 훈련", "피드백 루프"],
+  },
+  {
+    key: "ops",
+    title: "운영 도구 구독",
+    subtitle: "템플릿/리포트 자동화",
     priceLabel: "월 49,000원",
     priceValue: 49000,
-    features: ["월 4회 리딩", "실행 피드백", "월간 정리 리포트"],
-  },
-  {
-    key: "session",
-    title: "심화 1:1 세션",
-    subtitle: "60분 라이브",
-    priceLabel: "150,000원",
-    priceValue: 150000,
-    features: ["핵심 의사결정 1건", "세션 후 요약 제공", "후속 Q&A 1회"],
+    features: ["기록 템플릿", "학습 리포트 자동화", "운영 보드"],
   },
 ];
 
@@ -70,7 +70,7 @@ function makeRequestId() {
 
 export default function CheckoutPage() {
   const [email, setEmail] = useState("");
-  const [plan, setPlan] = useState<PlanKey>("report");
+  const [plan, setPlan] = useState<PlanKey>("basic");
   const [agreePolicy, setAgreePolicy] = useState(false);
   const [agreeRefund, setAgreeRefund] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -115,8 +115,8 @@ export default function CheckoutPage() {
   return (
     <main className="mx-auto max-w-4xl space-y-6 p-6 pt-24">
       <header>
-        <h1 className="text-2xl font-bold">결제 / 상품 선택</h1>
-        <p className="mt-1 text-sm text-[var(--text-muted)]">예언이 아니라 실행 설계를 돕는 역 기반 리딩 상품</p>
+        <h1 className="text-2xl font-bold">결제 / 학습 상품 선택</h1>
+        <p className="mt-1 text-sm text-[var(--text-muted)]">점술 서비스가 아닌 해석 역량 강화를 위한 학습 상품</p>
         <p className="mt-2 inline-block rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs text-amber-200">
           데모 단계 · 실제 결제는 진행되지 않습니다
         </p>
@@ -172,7 +172,7 @@ export default function CheckoutPage() {
             <span>결제 금액</span>
             <b>{selectedPlan.priceValue ? won(selectedPlan.priceValue) : "별도 견적"}</b>
           </div>
-          <p className="text-xs text-[var(--text-muted)]">* 결제 후 24시간 내 1차 결과물 전달(데모 정책 기준)</p>
+          <p className="text-xs text-[var(--text-muted)]">* 결제 후 24시간 내 학습 시작 안내를 전달합니다(데모 정책 기준)</p>
           {!WEBHOOK_URL && (
             <p className="text-xs text-amber-300">* 저장 연동 전: 현재는 브라우저 내 데모 저장만 동작</p>
           )}

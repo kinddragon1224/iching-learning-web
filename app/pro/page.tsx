@@ -4,39 +4,48 @@ export default function ProPage() {
   return (
     <main className="mx-auto max-w-4xl space-y-6 p-6 pt-24">
       <header>
-        <p className="text-sm text-[var(--text-muted)]">전문가용</p>
-        <h1 className="text-2xl font-bold">I Ching Pro (B2B)</h1>
+        <p className="text-sm text-[var(--text-muted)]">학습 프로그램</p>
+        <h1 className="text-2xl font-bold">역 학습 Pro</h1>
         <p className="mt-1 text-sm text-[var(--text-muted)]">
-          심리상담사/코치를 위한 구조화된 의사결정·성찰 워크스페이스
+          해석 역량과 상담 실무 정리 능력을 키우는 학습 중심 프로그램
         </p>
       </header>
 
-      <section className="grid gap-4 md:grid-cols-2">
+      <section className="grid gap-4 md:grid-cols-3">
         <article className="rounded-xl border border-white/20 bg-black/30 p-4">
-          <h2 className="font-semibold">세션 모드</h2>
+          <h2 className="font-semibold">기초 트랙 (4주)</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--text-muted)]">
-            <li>Intake → Session → Action → Follow-up</li>
-            <li>해석 근거 트레이스(Explainability)</li>
-            <li>상담 요약 PDF 출력</li>
+            <li>8괘 → 64괘 핵심 구조</li>
+            <li>해석 프레임 기본 훈련</li>
+            <li>주차별 학습 미션</li>
           </ul>
         </article>
 
         <article className="rounded-xl border border-white/20 bg-black/30 p-4">
-          <h2 className="font-semibold">팀 운영</h2>
+          <h2 className="font-semibold">실전 트랙 (8주)</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--text-muted)]">
-            <li>팀 계정/권한 관리</li>
-            <li>케이스 공유 노트</li>
-            <li>품질 KPI 대시보드</li>
+            <li>상담 케이스 정리법</li>
+            <li>질문 설계/피드백 루프</li>
+            <li>재상담 연결 구조</li>
+          </ul>
+        </article>
+
+        <article className="rounded-xl border border-white/20 bg-black/30 p-4">
+          <h2 className="font-semibold">운영 도구 구독</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--text-muted)]">
+            <li>기록 템플릿</li>
+            <li>학습 리포트 자동화</li>
+            <li>운영 보드/히스토리 관리</li>
           </ul>
         </article>
       </section>
 
       <section className="rounded-xl border border-[rgba(212,178,106,0.3)] p-4">
-        <h2 className="font-semibold">도입 순서 (권장)</h2>
+        <h2 className="font-semibold">학습 도입 순서 (권장)</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-[var(--text-muted)]">
-          <li>Solo 파일럿 2주 진행</li>
-          <li>팀 플랜으로 확장(좌석/권한)</li>
-          <li>리포트/KPI 기반 정식 도입</li>
+          <li>기초 트랙 4주로 공통 언어 정렬</li>
+          <li>실전 트랙 8주로 케이스 적용</li>
+          <li>운영 도구 구독으로 루틴 고정</li>
         </ol>
       </section>
 

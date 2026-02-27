@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type CheckoutPayload = {
-  plan: "report" | "subscription" | "session";
+  plan: "basic" | "practical" | "ops";
   planTitle: string;
   email: string;
   requestId: string;
@@ -14,8 +14,8 @@ type CheckoutPayload = {
 };
 
 const FALLBACK: CheckoutPayload = {
-  plan: "report",
-  planTitle: "역 리딩 리포트 1회",
+  plan: "basic",
+  planTitle: "기초 학습 트랙 (4주)",
   email: "-",
   requestId: "IC-DEMO-0000",
   createdAt: new Date().toISOString(),
@@ -67,8 +67,8 @@ export default function CheckoutSuccessPage() {
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <p>다음 단계</p>
         <ul className="list-disc pl-5 text-[var(--text-muted)] space-y-1">
-          <li>결제 정보 접수 후 24시간 내 1차 결과물 안내를 보냅니다.</li>
-          <li>리포트 상품은 1회 수정 요청을 받을 수 있습니다.</li>
+          <li>결제 정보 접수 후 24시간 내 학습 시작 안내를 보냅니다.</li>
+          <li>선택하신 트랙의 커리큘럼/자료 안내가 함께 제공됩니다.</li>
           <li>현재는 데모 단계로 실제 결제는 진행되지 않습니다.</li>
         </ul>
       </section>
