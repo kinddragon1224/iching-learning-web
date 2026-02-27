@@ -5,6 +5,7 @@ export type BaguaItem = {
   symbol: string;
   keyword: string;
   element: string;
+  symbolicSet: string;
   direction: string;
   season: string;
   freeSummary: string;
@@ -21,6 +22,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☰",
     keyword: "하늘 · 창조",
     element: "천(天)",
+    symbolicSet: "하늘 · 아버지 · 머리",
     direction: "서북",
     season: "초겨울",
     freeSummary: "건은 시작하고 이끄는 힘이다. 다만 속도보다 기준을 먼저 세울 때 길하다.",
@@ -36,6 +38,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☷",
     keyword: "땅 · 수용",
     element: "지(地)",
+    symbolicSet: "땅 · 어머니 · 배",
     direction: "남서",
     season: "늦여름",
     freeSummary: "곤은 받아주고 지탱하는 힘이다. 화려함보다 기반을 단단히 만드는 국면에 적합하다.",
@@ -51,6 +54,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☳",
     keyword: "우레 · 시작",
     element: "뢰(雷)",
+    symbolicSet: "우레 · 장남 · 발",
     direction: "동",
     season: "봄 시작",
     freeSummary: "진은 충격과 각성의 힘이다. 흔들림 이후 재시동을 설계할 때 의미가 커진다.",
@@ -66,6 +70,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☴",
     keyword: "바람 · 스며듦",
     element: "풍(風)",
+    symbolicSet: "바람 · 장녀 · 넓적다리",
     direction: "동남",
     season: "늦봄",
     freeSummary: "손은 강하게 밀기보다 스며들어 변화를 만드는 힘이다. 반복 개선에 강하다.",
@@ -81,6 +86,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☵",
     keyword: "물 · 위험",
     element: "수(水)",
+    symbolicSet: "물 · 중남 · 귀",
     direction: "북",
     season: "겨울",
     freeSummary: "감은 위험을 건너는 지혜다. 감정 반응보다 원칙과 루틴으로 통과해야 한다.",
@@ -96,6 +102,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☲",
     keyword: "불 · 밝음",
     element: "화(火)",
+    symbolicSet: "불 · 중녀 · 눈",
     direction: "남",
     season: "여름",
     freeSummary: "리는 밝히고 분별하는 힘이다. 기준이 선명할수록 의사결정 정확도가 올라간다.",
@@ -111,6 +118,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☶",
     keyword: "산 · 멈춤",
     element: "산(山)",
+    symbolicSet: "산 · 소남 · 손",
     direction: "북동",
     season: "환절기",
     freeSummary: "간은 멈춤과 경계의 힘이다. 과열 구간에서 정지하는 선택이 오히려 전진을 만든다.",
@@ -126,6 +134,7 @@ export const BAGUA_ITEMS: BaguaItem[] = [
     symbol: "☱",
     keyword: "연못 · 기쁨",
     element: "택(澤)",
+    symbolicSet: "연못 · 소녀 · 입",
     direction: "서",
     season: "가을",
     freeSummary: "태는 열린 소통과 기쁨의 힘이다. 분위기와 목표를 함께 잡아야 성과로 이어진다.",

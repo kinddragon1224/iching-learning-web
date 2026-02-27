@@ -21,6 +21,7 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <p><b>자연 상징:</b> {item.element}</p>
+        <p><b>상징군:</b> {item.symbolicSet}</p>
         <p><b>방위:</b> {item.direction}</p>
         <p><b>계절 감각:</b> {item.season}</p>
       </section>
