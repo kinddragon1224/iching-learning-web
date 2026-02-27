@@ -52,6 +52,15 @@ export default function Home() {
           <p className="mt-2 text-sm text-[var(--text-muted)]">김일부의 후천 관점을 간단히 이해해보세요.</p>
         </Link>
       </section>
+
+      <div className="relative z-10 mt-6 flex justify-center">
+        <Link
+          href="/checkout"
+          className="rounded-xl border border-[rgba(212,178,106,0.55)] bg-black/60 px-6 py-3 text-sm font-semibold text-white backdrop-blur panel-hover"
+        >
+          Pro 결제
+        </Link>
+      </div>
     </main>
   );
 }
