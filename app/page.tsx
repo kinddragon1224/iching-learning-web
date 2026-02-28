@@ -52,6 +52,12 @@ export default function Home() {
           <p className="mt-2 text-sm text-[var(--text-muted)]">랜덤 괘 퀴즈와 느낌 기록으로 64괘/384효 패턴을 익혀보세요.</p>
         </Link>
       </section>
+
+      <div className="home-bottom-center-tab-wrap" aria-hidden={false}>
+        <Link href="/daily" className="home-bottom-center-tab">
+          오늘의 물음
+        </Link>
+      </div>
     </main>
   );
 }
