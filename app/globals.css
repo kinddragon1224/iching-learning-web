@@ -364,6 +364,54 @@ h3 {
   100% { opacity: 1; transform: scale(1); }
 }
 
+.daily-cast-enter {
+  animation: dailyEnter 420ms ease-out;
+}
+
+.daily-glow-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.daily-glow-panel::after {
+  content: "";
+  position: absolute;
+  inset: -40% -30%;
+  background: radial-gradient(circle, rgba(212, 178, 106, 0.16), transparent 52%);
+  animation: dailyAura 4.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.daily-cast-btn {
+  background: linear-gradient(90deg, #d4b26a, #f1d79b);
+  box-shadow: 0 0 16px rgba(212, 178, 106, 0.28);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.daily-cast-btn:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 0 20px rgba(212, 178, 106, 0.4);
+}
+
+.daily-card-pop {
+  animation: dailyCardPop 360ms ease-out both;
+}
+
+@keyframes dailyEnter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dailyAura {
+  0%, 100% { opacity: 0.5; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes dailyCardPop {
+  0% { opacity: 0; transform: translateY(8px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .studio-answer-btn,
   .studio-answer-correct,
@@ -376,7 +424,10 @@ h3 {
   .relation-line,
   .relation-core,
   .hex-from-studio,
-  .hex-hero-pop {
+  .hex-hero-pop,
+  .daily-cast-enter,
+  .daily-glow-panel::after,
+  .daily-card-pop {
     animation: none !important;
     transition: none !important;
     transform: none !important;
