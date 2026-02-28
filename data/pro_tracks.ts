@@ -621,9 +621,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 34,
     title: "大壯(대장)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "大壯 利貞",
+      plainMeaning: "크게 강성한 때일수록 바름을 지켜야 이롭다.",
+      modernTeaser: "힘이 클수록 절제와 책임이 운을 지킨다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -636,9 +636,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 35,
     title: "晉(진)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "晉 康侯用錫馬蕃庶 晝日三接",
+      plainMeaning: "나아감의 때에는 공을 드러내고 신뢰를 쌓아야 길하다.",
+      modernTeaser: "전진 국면일수록 기준을 밝히고 관계를 정렬해라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -651,9 +651,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 36,
     title: "明夷(명이)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "明夷 利艱貞",
+      plainMeaning: "빛이 상한 때에는 내면의 바름을 지키는 것이 이롭다.",
+      modernTeaser: "드러내기보다 보호와 인내가 먼저인 구간이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -666,9 +666,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 37,
     title: "家人(가인)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "家人 利女貞",
+      plainMeaning: "집과 조직은 각자의 역할과 바름이 설 때 안정된다.",
+      modernTeaser: "관계의 질서는 규칙과 책임 분담에서 나온다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -681,9 +681,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 38,
     title: "睽(규)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "睽 小事吉",
+      plainMeaning: "어긋남의 때에는 작은 일부터 맞추면 길하다.",
+      modernTeaser: "대립을 크게 키우지 말고 공통분모부터 맞춰라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -696,9 +696,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 39,
     title: "蹇(건)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "蹇 利西南 不利東北 利見大人 貞吉",
+      plainMeaning: "막힘의 때에는 우회와 도움을 구하는 것이 이롭다.",
+      modernTeaser: "정면 돌파보다 방향 전환과 조력자 확보가 해법이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -711,9 +711,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 40,
     title: "解(해)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "解 利西南 无所往 其來復吉 有攸往 夙吉",
+      plainMeaning: "풀림의 때에는 긴장을 풀고 빠르게 제자리로 복귀하면 길하다.",
+      modernTeaser: "문제 해소 후에는 즉시 질서를 회복해야 성과가 이어진다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -726,9 +726,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 41,
     title: "損(손)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "損 有孚 元吉 无咎 可貞 利有攸往",
+      plainMeaning: "덜어냄은 신의를 지키며 본질을 살릴 때 길하다.",
+      modernTeaser: "과잉을 줄이면 핵심 성과가 선명해진다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -741,9 +741,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 42,
     title: "益(익)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "益 利有攸往 利涉大川",
+      plainMeaning: "보탬의 때에는 바른 방향으로 나아가면 큰일도 건널 수 있다.",
+      modernTeaser: "증가는 배분 원칙이 있을 때 진짜 성장으로 이어진다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -756,9 +756,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 43,
     title: "夬(쾌)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "夬 揚于王庭 孚號 有厲 告自邑 不利即戎 利有攸往",
+      plainMeaning: "결단의 때에는 분명히 알리되 성급한 충돌은 피해야 한다.",
+      modernTeaser: "강한 결정일수록 공개 기준과 후속 실행이 중요하다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -771,9 +771,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 44,
     title: "姤(구)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "姤 女壯 勿用取女",
+      plainMeaning: "강한 만남의 때에는 경계를 세우고 섣부른 결합을 피해야 한다.",
+      modernTeaser: "끌림이 커질수록 조건과 한계를 먼저 확인해라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -786,9 +786,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 45,
     title: "萃(췌)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "萃 亨 王假有廟 利見大人 亨 利貞",
+      plainMeaning: "모임의 때에는 목적과 바름이 있을 때 형통하다.",
+      modernTeaser: "사람을 모을수록 원칙과 리더십이 더 중요해진다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -801,9 +801,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 46,
     title: "升(승)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "升 元亨 用見大人 勿恤 南征吉",
+      plainMeaning: "오름의 때에는 꾸준히 나아가면 형통하다.",
+      modernTeaser: "작은 상승을 누적해 구조적 성장을 만들어라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -816,9 +816,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 47,
     title: "困(곤)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "困 亨 貞 大人吉 无咎 有言不信",
+      plainMeaning: "곤궁의 때에도 바름을 지키면 결국 길하다.",
+      modernTeaser: "압박 구간에선 감정보다 원칙과 체력이 해법이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -831,9 +831,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 48,
     title: "井(정)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "井 改邑不改井 无喪无得 往來井井",
+      plainMeaning: "근본 자원은 바뀌지 않으니 잘 정비해 함께 써야 한다.",
+      modernTeaser: "기반을 고치면 흐름 전체가 회복된다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -846,9 +846,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 49,
     title: "革(혁)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "革 己日乃孚 元亨利貞 悔亡",
+      plainMeaning: "변혁은 때를 맞춰 바르게 단행하면 후회가 없다.",
+      modernTeaser: "바꿀 때는 명분·타이밍·합의를 함께 맞춰라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -861,9 +861,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 50,
     title: "鼎(정)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "鼎 元吉 亨",
+      plainMeaning: "솥처럼 가치를 조리해 새 질서를 세우면 길하다.",
+      modernTeaser: "전환의 핵심은 재료가 아니라 운영 철학이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -876,9 +876,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 53,
     title: "漸(점)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "漸 女歸吉 利貞",
+      plainMeaning: "점진적 전개는 순서를 지킬 때 길하다.",
+      modernTeaser: "천천히라도 방향이 맞으면 결국 멀리 간다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -891,9 +891,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 55,
     title: "豐(풍)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "豐 亨 王假之 勿憂 宜日中",
+      plainMeaning: "풍성한 때에는 밝게 다스리면 형통하다.",
+      modernTeaser: "많을수록 관리 체계를 세워 균형을 지켜라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -906,9 +906,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 56,
     title: "旅(려)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "旅 小亨 旅貞吉",
+      plainMeaning: "나그네의 때에는 작게 형통하니 바름이 길하다.",
+      modernTeaser: "임시 국면일수록 원칙을 가볍게 지켜라.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -921,9 +921,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 59,
     title: "渙(환)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "渙 亨 王假有廟 利涉大川 利貞",
+      plainMeaning: "흩어짐의 때에는 중심을 모아 건너면 형통하다.",
+      modernTeaser: "분산된 힘을 다시 묶는 것이 우선이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -936,9 +936,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 60,
     title: "節(절)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "節 亨 苦節不可貞",
+      plainMeaning: "절제는 형통하나 지나친 절제는 오래가지 못한다.",
+      modernTeaser: "한계 설정은 유연해야 지속된다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -951,9 +951,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 61,
     title: "中孚(중부)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "中孚 豚魚吉 利涉大川 利貞",
+      plainMeaning: "내면의 신의가 있으면 작은 것에서도 길함이 생긴다.",
+      modernTeaser: "진실성은 관계와 의사결정의 최종 기준이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
@@ -966,9 +966,9 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
     id: 62,
     title: "小過(소과)",
     freePreview: {
-      classicalAnchor: "해설 준비중",
-      plainMeaning: "핵심 의미를 정리 중이다. 우선 기본 원칙 중심으로 해석하자.",
-      modernTeaser: "지금은 과속보다 기준 정렬이 우선이다.",
+      classicalAnchor: "小過 亨 利貞 可小事 不可大事",
+      plainMeaning: "작은 지나침의 때에는 작은 일은 길하나 큰일은 불리하다.",
+      modernTeaser: "큰 도약보다 미세 조정이 맞는 구간이다.",
     },
     proFrame: {
       diagnosis: "세부 해설 작성 전의 임시 진단 상태.",
