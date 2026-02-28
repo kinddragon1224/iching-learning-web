@@ -6,6 +6,7 @@ import { getCardForHexagram, getHexagramContent } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 import { getHexagramTrack } from "@/data/pro_tracks";
+import { getClassicalAnchorTranslation } from "@/lib/classical-anchor";
 
 export function generateStaticParams() {
   return HEXAGRAMS.map((h) => ({ id: String(h.id) }));
@@ -75,7 +76,8 @@ export default async function HexagramCardDetailPage({
         <section className="rounded-xl border p-4 space-y-4">
           <div>
             <h2 className="font-semibold">무료 해석 (원문+현대)</h2>
-            <p className="mt-2 text-sm"><b>원문 앵커:</b> {track.freePreview.classicalAnchor}</p>
+            <p className="mt-2 text-sm"><b>원문:</b> {track.freePreview.classicalAnchor}</p>
+            <p className="text-sm"><b>한국어 번역:</b> {getClassicalAnchorTranslation(track.freePreview.classicalAnchor, "ko")}</p>
             <p className="text-sm text-[var(--text-muted)]">{track.freePreview.plainMeaning}</p>
             <p className="mt-1 text-sm">{track.freePreview.modernTeaser}</p>
           </div>

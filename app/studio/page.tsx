@@ -6,6 +6,7 @@ import { HEXAGRAMS } from "@/data/hexagrams";
 import { getHexagramContent } from "@/lib/card-index";
 import { getHexagramTrack } from "@/data/pro_tracks";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
+import { getClassicalAnchorTranslation } from "@/lib/classical-anchor";
 
 type QuizState = "idle" | "correct" | "wrong";
 
@@ -108,7 +109,10 @@ export default function StudioPage() {
               <p className="text-sm"><b>정답</b>: {hex.nameKo}</p>
               <p className="mt-1 text-[var(--text-muted)]"><b>원문 상황(요약)</b>: {hex.summary}</p>
               {hexTrack?.freePreview?.classicalAnchor ? (
-                <p className="mt-1 text-[var(--text-muted)]"><b>괘사/원문 앵커</b>: {hexTrack.freePreview.classicalAnchor}</p>
+                <>
+                  <p className="mt-1 text-[var(--text-muted)]"><b>괘사/원문</b>: {hexTrack.freePreview.classicalAnchor}</p>
+                  <p className="mt-1 text-[var(--text-muted)]"><b>한국어 번역</b>: {getClassicalAnchorTranslation(hexTrack.freePreview.classicalAnchor, "ko")}</p>
+                </>
               ) : null}
               {hexTrack?.freePreview?.plainMeaning ? (
                 <p className="mt-1 text-[var(--text-muted)]"><b>현대적 풀이</b>: {hexTrack.freePreview.plainMeaning}</p>
