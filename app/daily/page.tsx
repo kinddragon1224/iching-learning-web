@@ -45,7 +45,7 @@ export default function DailyPage() {
   const [isCasting, setIsCasting] = useState(false);
 
   const todayKey = kstDateKey();
-  const canCast = !castedDate || castedDate !== todayKey;
+  const canCast = true;
 
   useEffect(() => {
     try {
