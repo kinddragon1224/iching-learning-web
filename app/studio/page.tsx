@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { getHexagramContent } from "@/lib/card-index";
+import { getHexagramTrack } from "@/data/pro_tracks";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 
 type QuizState = "idle" | "correct" | "wrong";
@@ -30,6 +31,7 @@ export default function StudioPage() {
 
   const hex = useMemo(() => HEXAGRAMS.find((h) => h.id === currentId) ?? HEXAGRAMS[0], [currentId]);
   const hexContent = useMemo(() => getHexagramContent(currentId), [currentId]);
+  const hexTrack = useMemo(() => getHexagramTrack(currentId), [currentId]);
   const options = useMemo(() => makeOptions(currentId), [currentId]);
 
   const [seenHex, setSeenHex] = useState<Set<number>>(new Set());
@@ -102,8 +104,17 @@ export default function StudioPage() {
           <p className="text-[var(--text-muted)]">먼저 이름 맞히기를 시도해줘. 정답/오답 후에 대조 학습이 열립니다.</p>
         ) : (
           <>
-            <p className="text-[var(--text-muted)]"><b>원문 상황(요약)</b>: {hex.summary}</p>
-            <p className="text-xs text-[var(--text-muted)]"><b>효 패턴</b>: {hexContent.lines.join("")}</p>
+            <div className="rounded-lg border border-white/15 bg-black/20 p-3">
+              <p className="text-sm"><b>정답</b>: {hex.nameKo}</p>
+              <p className="mt-1 text-[var(--text-muted)]"><b>원문 상황(요약)</b>: {hex.summary}</p>
+              {hexTrack?.freePreview?.classicalAnchor ? (
+                <p className="mt-1 text-[var(--text-muted)]"><b>괘사/원문 앵커</b>: {hexTrack.freePreview.classicalAnchor}</p>
+              ) : null}
+              {hexTrack?.freePreview?.plainMeaning ? (
+                <p className="mt-1 text-[var(--text-muted)]"><b>현대적 풀이</b>: {hexTrack.freePreview.plainMeaning}</p>
+              ) : null}
+              <p className="mt-1 text-xs text-[var(--text-muted)]"><b>효 패턴</b>: {hexContent.lines.join("")}</p>
+            </div>
 
             <label className="block">
               <p className="mb-1 text-xs text-[var(--text-muted)]">이 괘를 보고 떠오른 느낌</p>
