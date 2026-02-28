@@ -98,8 +98,8 @@ export default async function HexagramCardDetailPage({
       {(track || corpus.gua_text.original) && (
         <section className="rounded-xl border p-4 space-y-2">
           <h2 className="font-semibold">괘사</h2>
-          {corpus.gua_text.original ? <p className="text-sm"><b>원문:</b> {corpus.gua_text.original}</p> : null}
-          <p className="text-sm"><b>Ko:</b> {corpus.gua_text.reading_ko ?? card.full_name ?? card.short_name}</p>
+          {corpus.gua_text.original ? <p className="text-sm"><b>원문(한자):</b> {corpus.gua_text.original}</p> : null}
+          <p className="text-sm"><b>한글 읽기:</b> {corpus.gua_text.reading_ko ?? card.full_name ?? card.short_name}</p>
           <p className="text-sm"><b>보편 해석:</b> {track?.freePreview.plainMeaning ?? content.summary}</p>
           <p className="text-sm text-[var(--text-muted)]"><b>현대 해석:</b> {track?.freePreview.modernTeaser ?? content.summary}</p>
         </section>
@@ -119,7 +119,7 @@ export default async function HexagramCardDetailPage({
             interpretive_ko: undefined as string | undefined,
           }))).map((row, idx) => {
             const lineLabel = row.label_ko ?? track?.linesKorean?.[idx] ?? `${idx + 1}효`;
-            const koReading = row.reading_ko ?? row.original ?? lineLabel;
+            const koReading = row.reading_ko ?? lineLabel;
             const plainMeaning = row.literal_ko ?? content.lineTexts[idx];
             const modernMeaning = row.interpretive_ko && row.interpretive_ko !== row.literal_ko
               ? row.interpretive_ko
@@ -135,8 +135,8 @@ export default async function HexagramCardDetailPage({
                 className="rounded-lg bg-black/20 px-3 py-2 space-y-1 line-step-reveal"
                 style={{ animationDelay: `${idx * 90}ms` }}
               >
-                <p><b>{lineHanja} : {lineLabel} :</b> {lineOriginalBody}</p>
-                <p><b>Ko:</b> {koReading}</p>
+                <p><b>{lineHanja}</b> : {lineOriginalBody}</p>
+                <p><b>{lineLabel}</b> {koReading}</p>
                 <p><b>보편 해석:</b> {plainMeaning}</p>
                 <p className="text-[var(--text-muted)]"><b>현대 해석:</b> {modernMeaning}</p>
               </li>
