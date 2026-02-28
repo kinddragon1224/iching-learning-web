@@ -73,7 +73,7 @@ export default function StudioPage() {
 
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
         <p className="text-xs text-[var(--text-muted)]">현재 문제</p>
-        <h2 className="text-xl font-semibold">#{hex.id} 이 괘의 이름은?</h2>
+        <h2 className="text-xl font-semibold">이 괘의 이름은?</h2>
         <div className="flex justify-center py-2">
           <HexagramLinesOverlay lines={hexContent.lines} size="small" styleVariant="gold" />
         </div>
@@ -87,7 +87,7 @@ export default function StudioPage() {
                 onClick={() => handleAnswer(id)}
                 className={`rounded-lg border px-3 py-2 text-left ${active ? "border-[var(--gold-line)]" : "border-white/20"}`}
               >
-                #{h.id} {h.nameKo}
+                {h.nameKo}
               </button>
             );
           })}
@@ -98,28 +98,34 @@ export default function StudioPage() {
 
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
         <h2 className="font-semibold">원문 상황 vs 내 상황 대조</h2>
-        <p className="text-[var(--text-muted)]"><b>원문 상황(요약)</b>: {hex.summary}</p>
-        <p className="text-xs text-[var(--text-muted)]"><b>효 패턴</b>: {hexContent.lines.join("")}</p>
+        {quizState === "idle" ? (
+          <p className="text-[var(--text-muted)]">먼저 이름 맞히기를 시도해줘. 정답/오답 후에 대조 학습이 열립니다.</p>
+        ) : (
+          <>
+            <p className="text-[var(--text-muted)]"><b>원문 상황(요약)</b>: {hex.summary}</p>
+            <p className="text-xs text-[var(--text-muted)]"><b>효 패턴</b>: {hexContent.lines.join("")}</p>
 
-        <label className="block">
-          <p className="mb-1 text-xs text-[var(--text-muted)]">이 괘를 보고 떠오른 느낌</p>
-          <textarea value={feeling} onChange={(e) => setFeeling(e.target.value)} rows={3} className="w-full rounded-lg border border-white/20 bg-transparent p-2" />
-        </label>
+            <label className="block">
+              <p className="mb-1 text-xs text-[var(--text-muted)]">이 괘를 보고 떠오른 느낌</p>
+              <textarea value={feeling} onChange={(e) => setFeeling(e.target.value)} rows={3} className="w-full rounded-lg border border-white/20 bg-transparent p-2" />
+            </label>
 
-        <label className="block">
-          <p className="mb-1 text-xs text-[var(--text-muted)]">내 현재 상황에 적용하면</p>
-          <textarea value={myContext} onChange={(e) => setMyContext(e.target.value)} rows={3} className="w-full rounded-lg border border-white/20 bg-transparent p-2" />
-        </label>
+            <label className="block">
+              <p className="mb-1 text-xs text-[var(--text-muted)]">내 현재 상황에 적용하면</p>
+              <textarea value={myContext} onChange={(e) => setMyContext(e.target.value)} rows={3} className="w-full rounded-lg border border-white/20 bg-transparent p-2" />
+            </label>
 
-        <div className="flex flex-wrap items-center gap-2">
-          <label className="text-xs text-[var(--text-muted)]">연결할 효</label>
-          <select value={lineNo} onChange={(e) => setLineNo(Number(e.target.value))} className="rounded border border-white/20 bg-black/30 px-2 py-1 text-xs">
-            {[1, 2, 3, 4, 5, 6].map((n) => (
-              <option key={n} value={n}>{n}효</option>
-            ))}
-          </select>
-          <button onClick={saveReflection} className="rounded-lg bg-[var(--gold-line)] px-3 py-1.5 text-xs font-semibold text-black">기록 저장</button>
-        </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <label className="text-xs text-[var(--text-muted)]">연결할 효</label>
+              <select value={lineNo} onChange={(e) => setLineNo(Number(e.target.value))} className="rounded border border-white/20 bg-black/30 px-2 py-1 text-xs">
+                {[1, 2, 3, 4, 5, 6].map((n) => (
+                  <option key={n} value={n}>{n}효</option>
+                ))}
+              </select>
+              <button onClick={saveReflection} className="rounded-lg bg-[var(--gold-line)] px-3 py-1.5 text-xs font-semibold text-black">기록 저장</button>
+            </div>
+          </>
+        )}
       </section>
 
       <div className="flex flex-wrap gap-2 text-sm">
