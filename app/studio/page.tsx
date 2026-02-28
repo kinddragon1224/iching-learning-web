@@ -113,7 +113,6 @@ export default function StudioPage() {
               {hexTrack?.freePreview?.plainMeaning ? (
                 <p className="mt-1 text-[var(--text-muted)]"><b>현대적 풀이</b>: {hexTrack.freePreview.plainMeaning}</p>
               ) : null}
-              <p className="mt-1 text-xs text-[var(--text-muted)]"><b>효 패턴</b>: {hexContent.lines.join("")}</p>
             </div>
 
             <label className="block">
