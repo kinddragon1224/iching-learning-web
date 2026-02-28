@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { WeekProgressPanel } from "@/components/programs/WeekProgressPanel";
 
 const STORAGE_KEY = "basic-track-week1-checklist";
 
@@ -82,6 +83,8 @@ export default function BasicTrackWeek1Page() {
           ))}
         </div>
       </section>
+
+      <WeekProgressPanel week={1} dailyTask="건/곤/진/손 중 오늘 내 상황에 가장 가까운 괘 1개를 고르고 실행 문장 1개를 작성하기" nextHref="/programs/basic-track/week-2" />
 
       <div className="flex flex-wrap gap-2 text-sm">
         <Link href="/programs/basic-track/week-2" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 font-semibold text-black">

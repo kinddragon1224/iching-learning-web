@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WeekProgressPanel } from "@/components/programs/WeekProgressPanel";
 
 export default function BasicTrackWeek4Page() {
   return (
@@ -34,6 +35,8 @@ export default function BasicTrackWeek4Page() {
           <li>다음 4주 학습 목표를 1문장으로 작성합니다.</li>
         </ul>
       </section>
+
+      <WeekProgressPanel week={4} dailyTask="적용 보고서 1회 작성 후 다음 4주 학습 목표를 1문장으로 고정하기" />
 
       <div className="flex flex-wrap gap-2 text-sm">
         <Link href="/pro" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 font-semibold text-black">

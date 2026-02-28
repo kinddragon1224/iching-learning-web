@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WeekProgressPanel } from "@/components/programs/WeekProgressPanel";
 
 export default function BasicTrackWeek3Page() {
   return (
@@ -34,6 +35,8 @@ export default function BasicTrackWeek3Page() {
           <li>최종 문장을 “행동 선택” 문장으로 다시 고정합니다.</li>
         </ul>
       </section>
+
+      <WeekProgressPanel week={3} dailyTask="같은 괘를 서로 다른 케이스 2개에 적용해 근거 문장 차이 기록하기" nextHref="/programs/basic-track/week-4" />
 
       <div className="flex flex-wrap gap-2 text-sm">
         <Link href="/programs/basic-track/week-4" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 font-semibold text-black">

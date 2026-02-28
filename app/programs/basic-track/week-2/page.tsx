@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WeekProgressPanel } from "@/components/programs/WeekProgressPanel";
 
 export default function BasicTrackWeek2Page() {
   return (
@@ -27,7 +28,12 @@ export default function BasicTrackWeek2Page() {
         </ul>
       </section>
 
+      <WeekProgressPanel week={2} dailyTask="64괘 중 1개를 고르고 상괘/하괘를 분해해 2문장 요약 작성하기" nextHref="/programs/basic-track/week-3" />
+
       <div className="flex flex-wrap gap-2 text-sm">
+        <Link href="/programs/basic-track/week-3" className="rounded-lg bg-[var(--gold-line)] px-4 py-2 font-semibold text-black">
+          3주차로 이동
+        </Link>
         <Link href="/programs/basic-track" className="rounded-lg border border-white/30 px-4 py-2">
           커리큘럼으로 돌아가기
         </Link>

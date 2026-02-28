@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TrackProgressSummary } from "@/components/programs/TrackProgressSummary";
 
 export const metadata: Metadata = {
   title: "기초 학습 트랙(4주) | 역 학습 웹",
@@ -49,6 +50,8 @@ export default function BasicTrackPage() {
         <p className="mt-1"><b>형태:</b> 주차별 미션 + 체크리스트 + 적용 노트</p>
         <p className="mt-1"><b>성과:</b> 8괘~64괘를 상황에 맞게 설명하고 적용하는 기본 역량</p>
       </section>
+
+      <TrackProgressSummary />
 
       <section className="space-y-3">
         {weeks.map((w) => (
