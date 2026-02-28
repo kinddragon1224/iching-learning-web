@@ -61,21 +61,39 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-3">
         <h2 className="font-semibold">이 괘가 포함된 64괘 구조</h2>
-        <div>
+        <div className="rounded-xl border border-white/15 p-3">
           <p className="mb-2 text-xs text-[var(--text-muted)]">상괘(위)로 쓰인 경우</p>
           <div className="flex flex-wrap gap-2 text-xs">
-            {relatedUpper.map((h) => (
-              <Link key={`u-${h.id}`} href={`/hexagram/${h.id}`} className="rounded-full border px-2 py-1">
+            {relatedUpper.map((h, idx) => (
+              <Link
+                key={`u-${h.id}`}
+                href={`/hexagram/${h.id}`}
+                className="relation-node rounded-full border px-2 py-1"
+                style={{ animationDelay: `${idx * 45}ms` }}
+              >
                 #{h.id} {h.nameKo.split("(")[0]}
               </Link>
             ))}
           </div>
         </div>
-        <div>
+
+        <div className="relative py-2">
+          <div className="relation-line" />
+          <div className="mx-auto w-fit rounded-full border border-[var(--gold-line)] bg-black/40 px-3 py-1 text-xs text-[#f0dfb5] relation-core">
+            {item.symbol} {item.nameKo}
+          </div>
+        </div>
+
+        <div className="rounded-xl border border-white/15 p-3">
           <p className="mb-2 text-xs text-[var(--text-muted)]">하괘(아래)로 쓰인 경우</p>
           <div className="flex flex-wrap gap-2 text-xs">
-            {relatedLower.map((h) => (
-              <Link key={`l-${h.id}`} href={`/hexagram/${h.id}`} className="rounded-full border px-2 py-1">
+            {relatedLower.map((h, idx) => (
+              <Link
+                key={`l-${h.id}`}
+                href={`/hexagram/${h.id}`}
+                className="relation-node rounded-full border px-2 py-1"
+                style={{ animationDelay: `${idx * 45}ms` }}
+              >
                 #{h.id} {h.nameKo.split("(")[0]}
               </Link>
             ))}
