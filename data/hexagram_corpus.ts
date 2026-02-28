@@ -6,8 +6,10 @@ export type HexagramLineCorpus = {
   label_ko?: string;
   label_hanja?: string;
   original?: string;
+  reading_ko?: string; // 한자 원문의 한글 독음(예: 潛龍勿用 -> 잠룡물용)
   literal_ko?: string;
   interpretive_ko?: string;
+  gloss_en?: string; // 글로벌 사용자용 짧은 영문 풀이
   notes?: string[];
   ambiguities?: string[];
 };
@@ -16,8 +18,10 @@ export type HexagramCorpus = {
   id: number;
   gua_text: {
     original?: string;
+    reading_ko?: string;
     literal_ko?: string;
     interpretive_ko?: string;
+    gloss_en?: string;
     notes?: string[];
   };
   lines: HexagramLineCorpus[];
