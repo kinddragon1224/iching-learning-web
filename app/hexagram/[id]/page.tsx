@@ -1,4 +1,3 @@
-import { CardImageWithFallback } from "@/components/CardImageWithFallback";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { HEXAGRAMS, findHexagram } from "@/data/hexagrams";
@@ -73,17 +72,10 @@ export default async function HexagramCardDetailPage({
         <Link href="/studio" className="underline">학습실험실로 가기</Link>
       </div>
 
-      <section className="overflow-hidden rounded-2xl border bg-neutral-50 hex-hero-pop">
-        <div className="relative">
-          <CardImageWithFallback
-            src={card.card_image}
-            alt={`#${id} 카드`}
-            width={1024}
-            height={1024}
-            className="h-auto w-full"
-            priority
-          />
-          <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-center">
+      <section className="overflow-hidden rounded-2xl border border-[rgba(198,163,92,0.35)] bg-[rgba(8,10,16,0.75)] hex-hero-pop">
+        <div className="relative flex min-h-[360px] items-center justify-center">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,178,106,0.08),transparent_58%)]" />
+          <div className="relative z-10 rounded-full border border-[rgba(198,163,92,0.4)] px-10 py-8">
             <HexagramLinesOverlay lines={content.lines} size="medium" styleVariant="gold" />
           </div>
         </div>
