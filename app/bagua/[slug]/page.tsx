@@ -15,6 +15,56 @@ const TRIGRAM_KEY: Record<string, string> = {
   tae: "택",
 };
 
+const SHUOGUA_GLOSS: Record<string, string> = {
+  天: "하늘",
+  圜: "둥근 것",
+  君: "군자/리더",
+  父: "아버지",
+  首: "머리",
+  馬: "말",
+  玉: "옥",
+  金: "쇠/금속",
+  寒: "추움",
+  冰: "얼음",
+  大赤: "큰 붉음",
+  木果: "나무 열매",
+  地: "땅",
+  母: "어머니",
+  腹: "배",
+  牛: "소",
+  布: "베/천",
+  釜: "가마솥",
+  黑: "검음",
+  雷: "우레",
+  龍: "용",
+  動: "움직임",
+  風: "바람",
+  木: "나무",
+  雞: "닭",
+  入: "들어감",
+  水: "물",
+  耳: "귀",
+  豕: "돼지",
+  陷: "빠짐/험함",
+  火: "불",
+  日: "해",
+  電: "번개",
+  目: "눈",
+  雉: "꿩",
+  山: "산",
+  手: "손",
+  狗: "개",
+  止: "멈춤",
+  澤: "못/연못",
+  口: "입",
+  羊: "양",
+  說: "기쁨/말함",
+};
+
+function glossSymbol(s: string) {
+  return `${s}${SHUOGUA_GLOSS[s] ? ` (${SHUOGUA_GLOSS[s]})` : ""}`;
+}
+
 export function generateStaticParams() {
   return BAGUA_ITEMS.map((item) => ({ slug: item.slug }));
 }
@@ -105,7 +155,7 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
         <h2 className="font-semibold">설괘전 상징 원문 매핑</h2>
         <div className="flex flex-wrap gap-2 text-xs text-[var(--text-muted)]">
           {item.shuoGuaSymbols.map((s) => (
-            <span key={s} className="rounded-full border px-2 py-1">{s}</span>
+            <span key={s} className="rounded-full border px-2 py-1">{glossSymbol(s)}</span>
           ))}
         </div>
         <p className="text-[11px] text-[var(--text-muted)]">
