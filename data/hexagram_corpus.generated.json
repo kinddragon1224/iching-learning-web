@@ -4,7 +4,11 @@
     "source": "auto-bootstrap-zhouyi-pm+gtx",
     "updatedAt": "2026-02-28T17:53:10.461Z",
     "normalizedAt": "2026-02-28T18:01:28.414Z",
-    "normalization": "term-unification-v1"
+    "normalization": "term-unification-v1",
+    "refinedAt": "2026-02-28T18:20:01.822Z",
+    "refinement": "pass2-transliteration-cleanup",
+    "refinedAtPass3": "2026-02-28T18:20:45.146Z",
+    "refinement3": "remove-latin-artifacts"
   },
   "hexagrams": [
     {
@@ -100,8 +104,8 @@
       "id": 2,
       "gua_text": {
         "original": "坤，元亨，利牝馬之貞。君子有攸往，先迷后得主。利西南，得朋，東北，喪朋。安貞，吉。",
-        "literal_ko": "Kun, Yuanheng, Li Ma Zhen. 군자는 어디든 가고자 할 때 먼저 자신을 잃고 나서 승리한다. 남서부 지역에 이익이 되려면 친구를 사귀십시오. 북동쪽으로 가면 친구를 잃게 됩니다. 안젠, 지.",
-        "interpretive_ko": "Kun, Yuanheng, Li Ma Zhen. 군자는 어디든 가고자 할 때 먼저 자신을 잃고 나서 승리한다. 남서부 지역에 이익이 되려면 친구를 사귀십시오. 북동쪽으로 가면 친구를 잃게 됩니다. 안젠, 지.",
+        "literal_ko": "곤, 원형, 리 정. 군자는 어디든 가고자 할 때 먼저 자신을 잃고 나서 승리한다. 서남에 이익이 되려면 벗을 얻는다. 동북으로 가면 벗을 잃는다. 안젠, 지.",
+        "interpretive_ko": "곤, 원형, 리 정. 군자는 어디든 가고자 할 때 먼저 자신을 잃고 나서 승리한다. 서남에 이익이 되려면 벗을 얻는다. 동북으로 가면 벗을 잃는다. 안젠, 지.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -189,8 +193,8 @@
       "id": 3,
       "gua_text": {
         "original": "屯，元亨，利貞，勿用有攸往，利建侯。",
-        "literal_ko": "Tun, Yuanheng은 Zhen에게 유익합니다. 후작 설립에 이익을 주기 위해 Youyou를 이용하지 마십시오.",
-        "interpretive_ko": "Tun, Yuanheng은 Zhen에게 유익합니다. 후작 설립에 이익을 주기 위해 Youyou를 이용하지 마십시오.",
+        "literal_ko": "둔, 원형은 정에게 유익합니다. 후작 설립에 이익을 주기 위해 를 이용하지 마십시오.",
+        "interpretive_ko": "둔, 원형은 정에게 유익합니다. 후작 설립에 이익을 주기 위해 를 이용하지 마십시오.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -201,8 +205,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "磐桓，利居貞，利建侯。",
-          "literal_ko": "Panhuan은 Juzhen에게 좋고 Jianhou에게 좋습니다.",
-          "interpretive_ko": "Panhuan은 Juzhen에게 좋고 Jianhou에게 좋습니다.",
+          "literal_ko": "은 에게 좋고 건후에게 좋습니다.",
+          "interpretive_ko": "은 에게 좋고 건후에게 좋습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -278,8 +282,8 @@
       "id": 4,
       "gua_text": {
         "original": "蒙，亨。匪我求童蒙，童蒙求我。初噬告，再三瀆，瀆則不告。利貞。",
-        "literal_ko": "멍, 헝. 나는 Tong Meng에게 간청하고 Tong Meng은 나에게 간청합니다. 처음에 불평하면 계속해서 모독하게 될 것입니다. 당신이 계속해서 신성모독을 해도 불평하지 않을 것입니다. 리젠.",
-        "interpretive_ko": "멍, 헝. 나는 Tong Meng에게 간청하고 Tong Meng은 나에게 간청합니다. 처음에 불평하면 계속해서 모독하게 될 것입니다. 당신이 계속해서 신성모독을 해도 불평하지 않을 것입니다. 리젠.",
+        "literal_ko": "멍, 헝. 나는 몽에게 간청하고 몽은 나에게 간청합니다. 처음에 불평하면 계속해서 모독하게 될 것입니다. 만약 계속해서 신성모독을 해도 불평하지 않을 것입니다. 리젠.",
+        "interpretive_ko": "멍, 헝. 나는 몽에게 간청하고 몽은 나에게 간청합니다. 처음에 불평하면 계속해서 모독하게 될 것입니다. 만약 계속해서 신성모독을 해도 불평하지 않을 것입니다. 리젠.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -302,8 +306,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "包蒙吉。納婦吉。子克家。",
-          "literal_ko": "바오 멍지. 나비지. Zi Ke 가족.",
-          "interpretive_ko": "바오 멍지. 나비지. Zi Ke 가족.",
+          "literal_ko": "바오 멍지. 나비지. 자 극 가족.",
+          "interpretive_ko": "바오 멍지. 나비지. 자 극 가족.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -367,8 +371,8 @@
       "id": 5,
       "gua_text": {
         "original": "需，有孚，光亨，貞吉。利涉大川。",
-        "literal_ko": "필요, Youfu, Guangheng, Zhenji. 큰 강의 이로움을 누리세요.",
-        "interpretive_ko": "필요, Youfu, Guangheng, Zhenji. 큰 강의 이로움을 누리세요.",
+        "literal_ko": "필요, 유부,  정길. 큰 강의 이로움을 누리세요.",
+        "interpretive_ko": "필요, 유부,  정길. 큰 강의 이로움을 누리세요.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -379,8 +383,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "需于郊，利用恆，無咎。",
-          "literal_ko": "교외에서 필요하신 분들은 활용해 보세요. 그러면 비난이 없을 것입니다.",
-          "interpretive_ko": "교외에서 필요하신 분들은 활용해 보세요. 그러면 비난이 없을 것입니다.",
+          "literal_ko": "교외에서 필요하신 분들은 활용해 보세요. 그러면 허물이 없을 것입니다.",
+          "interpretive_ko": "교외에서 필요하신 분들은 활용해 보세요. 그러면 허물이 없을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -569,8 +573,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "在師中，吉，無咎，王三錫命。",
-          "literal_ko": "부문에서 행운을 빌어요, 비난은 없습니다, Wang Sanxi Ming.",
-          "interpretive_ko": "부문에서 행운을 빌어요, 비난은 없습니다, Wang Sanxi Ming.",
+          "literal_ko": "부문에서 행운을 빌어요, 허물 없음, 왕",
+          "interpretive_ko": "부문에서 행운을 빌어요, 허물 없음, 왕",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -593,8 +597,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "師左次，無咎。",
-          "literal_ko": "Zuo Ci 선생님, 비난하지 마세요.",
-          "interpretive_ko": "Zuo Ci 선생님, 비난하지 마세요.",
+          "literal_ko": "선생님, 허물하지 마세요.",
+          "interpretive_ko": "선생님, 허물하지 마세요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -634,8 +638,8 @@
       "id": 8,
       "gua_text": {
         "original": "比，吉。原筮元永貞，無咎。不寧方來，后夫凶。",
-        "literal_ko": "비, 지. 원래 Yuan Yongzhen에는 잘못이 없습니다. 불안은 미래의 남편이 맹렬할 때만 찾아온다.",
-        "interpretive_ko": "비, 지. 원래 Yuan Yongzhen에는 잘못이 없습니다. 불안은 미래의 남편이 맹렬할 때만 찾아온다.",
+        "literal_ko": "비, 지. 원래 에는 잘못이 없습니다. 불안은 미래의 남편이 맹렬할 때만 찾아온다.",
+        "interpretive_ko": "비, 지. 원래 에는 잘못이 없습니다. 불안은 미래의 남편이 맹렬할 때만 찾아온다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -646,8 +650,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "有孚比之，無咎。有孚盈缶，終來有他，吉。",
-          "literal_ko": "다른 사람과 비교하는 것에는 아무런 잘못이 없습니다. Fu Yingfou가 있다면 그는 결국 거기에 있게 될 것이며 이는 상서로운 일입니다.",
-          "interpretive_ko": "다른 사람과 비교하는 것에는 아무런 잘못이 없습니다. Fu Yingfou가 있다면 그는 결국 거기에 있게 될 것이며 이는 상서로운 일입니다.",
+          "literal_ko": "다른 사람과 비교하는 것에는 아무런 잘못이 없습니다. 부 가 있다면 그는 결국 거기에 있게 될 것이며 이는 길함입니다.",
+          "interpretive_ko": "다른 사람과 비교하는 것에는 아무런 잘못이 없습니다. 부 가 있다면 그는 결국 거기에 있게 될 것이며 이는 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -694,8 +698,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "顯比，王用三驅，失前禽，邑人不誡，吉。",
-          "literal_ko": "왕 선비는 세 개의 드라이브를 사용하여 이전 새를 잃어버리고 도시 사람들은 규칙을 따르지 않는 상서로운 일입니다.",
-          "interpretive_ko": "왕 선비는 세 개의 드라이브를 사용하여 이전 새를 잃어버리고 도시 사람들은 규칙을 따르지 않는 상서로운 일입니다.",
+          "literal_ko": "왕 선비는 세 개의 드라이브를 사용하여 이전 새를 잃어버리고 도시 사람들은 규칙을 따르지 않는 길함입니다.",
+          "interpretive_ko": "왕 선비는 세 개의 드라이브를 사용하여 이전 새를 잃어버리고 도시 사람들은 규칙을 따르지 않는 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -771,8 +775,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "有孚，血去惕出，無咎。",
-          "literal_ko": "푸가 있으면 피가 나오고 비난이 없을 것입니다.",
-          "interpretive_ko": "푸가 있으면 피가 나오고 비난이 없을 것입니다.",
+          "literal_ko": "푸가 있으면 피가 나오고 허물이 없을 것입니다.",
+          "interpretive_ko": "푸가 있으면 피가 나오고 허물이 없을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -872,8 +876,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "夬履，貞厲。",
-          "literal_ko": "Chuanlu, 바름과 날카로움.",
-          "interpretive_ko": "Chuanlu, 바름과 날카로움.",
+          "literal_ko": "바름과 날카로움.",
+          "interpretive_ko": "바름과 날카로움.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -925,8 +929,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "包荒，用馮河，不遐遺，朋亡，得尚于中行。",
-          "literal_ko": "Baohuang은 Yiyi가 아닌 Fenghe를 사용하고 친구는 죽었고 여전히 Zhongxing에 남아 있습니다.",
-          "interpretive_ko": "Baohuang은 Yiyi가 아닌 Fenghe를 사용하고 친구는 죽었고 여전히 Zhongxing에 남아 있습니다.",
+          "literal_ko": "은 가 아닌 를 사용하고 친구는 죽었고 여전히 에 남아 있습니다.",
+          "interpretive_ko": "은 가 아닌 를 사용하고 친구는 죽었고 여전히 에 남아 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -937,8 +941,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "無平不陂，無往不復，艱貞無咎。勿恤其孚，于食有福。",
-          "literal_ko": "평화도 실패도 없고, 돌아올 것도 없고, 고난도 없고, 비난도 없습니다. 재산을 걱정하지 마십시오. 음식의 축복을 받게 될 것입니다.",
-          "interpretive_ko": "평화도 실패도 없고, 돌아올 것도 없고, 고난도 없고, 비난도 없습니다. 재산을 걱정하지 마십시오. 음식의 축복을 받게 될 것입니다.",
+          "literal_ko": "평화도 실패도 없고, 돌아올 것도 없고, 고난도 없고, 허물도 없습니다. 재산을 걱정하지 마십시오. 음식의 축복을 받게 될 것입니다.",
+          "interpretive_ko": "평화도 실패도 없고, 돌아올 것도 없고, 고난도 없고, 허물도 없습니다. 재산을 걱정하지 마십시오. 음식의 축복을 받게 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -973,8 +977,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "城復于隍，勿用師。自邑告命，貞吝。",
-          "literal_ko": "성이 복위되면 선생을 고용하지 말라. 도시가 진실을 말하기 때문에 Zhen은 인색합니다.",
-          "interpretive_ko": "성이 복위되면 선생을 고용하지 말라. 도시가 진실을 말하기 때문에 Zhen은 인색합니다.",
+          "literal_ko": "성이 복위되면 군사를 동원하지 말라. 도시가 진실을 말하기 때문에 정은 인색합니다.",
+          "interpretive_ko": "성이 복위되면 군사를 동원하지 말라. 도시가 진실을 말하기 때문에 정은 인색합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1002,8 +1006,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "拔茅茹，以其夤，貞吉亨。",
-          "literal_ko": "Mao Ru를 뽑아서 그것을 사용하여 번영하고 번영하게 만드십시오.",
-          "interpretive_ko": "Mao Ru를 뽑아서 그것을 사용하여 번영하고 번영하게 만드십시오.",
+          "literal_ko": "를 뽑아서 그것을 사용하여 번영하고 번영하게 만드십시오.",
+          "interpretive_ko": "를 뽑아서 그것을 사용하여 번영하고 번영하게 만드십시오.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1180,8 +1184,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "無交害，匪咎，艱則無咎。",
-          "literal_ko": "피해가 없다면 비난도 없을 것입니다. 어려움이 있어도 비난할 것이 없습니다.",
-          "interpretive_ko": "피해가 없다면 비난도 없을 것입니다. 어려움이 있어도 비난할 것이 없습니다.",
+          "literal_ko": "피해가 없다면 허물도 없을 것입니다. 어려움이 있어도 허물할 것이 없습니다.",
+          "interpretive_ko": "피해가 없다면 허물도 없을 것입니다. 어려움이 있어도 허물할 것이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1192,8 +1196,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "大車以載，有攸往，無咎。",
-          "literal_ko": "큰 수레는 그것을 운반할 수 있으며, 거기에 가는 것에 대한 비난은 없습니다.",
-          "interpretive_ko": "큰 수레는 그것을 운반할 수 있으며, 거기에 가는 것에 대한 비난은 없습니다.",
+          "literal_ko": "큰 수레는 그것을 운반할 수 있으며, 거기에 가는 것에 대한 허물 없음.",
+          "interpretive_ko": "큰 수레는 그것을 운반할 수 있으며, 거기에 가는 것에 대한 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1228,8 +1232,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "厥孚交如，威如，吉。",
-          "literal_ko": "Jue Fu Jiao Ru, 웨이 루, Ji.",
-          "interpretive_ko": "Jue Fu Jiao Ru, 웨이 루, Ji.",
+          "literal_ko": "부 구, 웨이 루, 길.",
+          "interpretive_ko": "부 구, 웨이 루, 길.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1346,8 +1350,8 @@
       "id": 16,
       "gua_text": {
         "original": "豫，利建侯行師。",
-        "literal_ko": "Yu Li Jianhou는 군대에 갔다.",
-        "interpretive_ko": "Yu Li Jianhou는 군대에 갔다.",
+        "literal_ko": "리 건후는 군대에 갔다.",
+        "interpretive_ko": "리 건후는 군대에 갔다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -1435,8 +1439,8 @@
       "id": 17,
       "gua_text": {
         "original": "隨，元亨，利貞，無咎。",
-        "literal_ko": "Sui, 원형이정.은 비난이 아닙니다.",
-        "interpretive_ko": "Sui, 원형이정.은 비난이 아닙니다.",
+        "literal_ko": "원형이정.은 허물이 아닙니다.",
+        "interpretive_ko": "원형이정.은 허물이 아닙니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -1459,8 +1463,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "系小子，失丈夫。",
-          "literal_ko": "당신이 소년이라면 남편을 잃게 될 것입니다.",
-          "interpretive_ko": "당신이 소년이라면 남편을 잃게 될 것입니다.",
+          "literal_ko": "만약 소년이라면 남편을 잃게 될 것입니다.",
+          "interpretive_ko": "만약 소년이라면 남편을 잃게 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1483,8 +1487,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "隨有獲，貞凶。有孚在道，以明，何咎？",
-          "literal_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 비난해야 합니까?",
-          "interpretive_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 비난해야 합니까?",
+          "literal_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 허물해야 합니까?",
+          "interpretive_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 허물해야 합니까?",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1507,8 +1511,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "拘系之，乃從維之。王用亨于西山。",
-          "literal_ko": "그것을 억제하는 것은 그것을 유지하는 것이다. Wang Yongheng은 Xishan에있었습니다.",
-          "interpretive_ko": "그것을 억제하는 것은 그것을 유지하는 것이다. Wang Yongheng은 Xishan에있었습니다.",
+          "literal_ko": "그것을 억제하는 것은 그것을 유지하는 것이다. 왕 은 에있었습니다.",
+          "interpretive_ko": "그것을 억제하는 것은 그것을 유지하는 것이다. 왕 은 에있었습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1524,8 +1528,8 @@
       "id": 18,
       "gua_text": {
         "original": "蠱，元亨，利涉大川。先甲三日，后甲三日。",
-        "literal_ko": "Gu Yuanheng은 Dachuan의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
-        "interpretive_ko": "Gu Yuanheng은 Dachuan의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
+        "literal_ko": "고 원형은 대천의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
+        "interpretive_ko": "고 원형은 대천의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -1649,8 +1653,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "甘臨，無攸利。既憂之，無咎。",
-          "literal_ko": "Ganlin, 이익이 없습니다. 걱정하신다면 책임은 없습니다.",
-          "interpretive_ko": "Ganlin, 이익이 없습니다. 걱정하신다면 책임은 없습니다.",
+          "literal_ko": "이익이 없습니다. 걱정하신다면 책임은 없습니다.",
+          "interpretive_ko": "이익이 없습니다. 걱정하신다면 책임은 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1661,8 +1665,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "至臨，無咎。",
-          "literal_ko": "그것이 오면 비난이 없습니다.",
-          "interpretive_ko": "그것이 오면 비난이 없습니다.",
+          "literal_ko": "그것이 오면 허물이 없습니다.",
+          "interpretive_ko": "그것이 오면 허물이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1673,8 +1677,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "知臨，大君之宜，吉。",
-          "literal_ko": "왕이 오신다는 것을 아는 것은 상서로운 일이다.",
-          "interpretive_ko": "왕이 오신다는 것을 아는 것은 상서로운 일이다.",
+          "literal_ko": "왕이 오신다는 것을 아는 것은 길함이다.",
+          "interpretive_ko": "왕이 오신다는 것을 아는 것은 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1702,8 +1706,8 @@
       "id": 20,
       "gua_text": {
         "original": "觀，盥而不荐，有孚顒若。",
-        "literal_ko": "보기, 세탁은 권장하지 않지만 Fu Yongruo가 있습니다.",
-        "interpretive_ko": "보기, 세탁은 권장하지 않지만 Fu Yongruo가 있습니다.",
+        "literal_ko": "보기, 세탁은 권장하지 않지만 부 가 있습니다.",
+        "interpretive_ko": "보기, 세탁은 권장하지 않지만 부 가 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -1803,8 +1807,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "履校滅趾，無咎。",
-          "literal_ko": "학교에 가서 발가락을 없애면 비난이 없습니다.",
-          "interpretive_ko": "학교에 가서 발가락을 없애면 비난이 없습니다.",
+          "literal_ko": "학교에 가서 발가락을 없애면 허물이 없습니다.",
+          "interpretive_ko": "학교에 가서 발가락을 없애면 허물이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1815,8 +1819,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "噬膚滅鼻，無咎。",
-          "literal_ko": "그것은 피부를 물고 코를 파괴하는데, 그것은 비난이 아닙니다.",
-          "interpretive_ko": "그것은 피부를 물고 코를 파괴하는데, 그것은 비난이 아닙니다.",
+          "literal_ko": "그것은 피부를 물고 코를 파괴하는데, 그것은 허물이 아닙니다.",
+          "interpretive_ko": "그것은 피부를 물고 코를 파괴하는데, 그것은 허물이 아닙니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1827,8 +1831,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "噬臘肉，遇毒。小吝，無咎。",
-          "literal_ko": "베이컨을 먹고 독을 만난다. 약간의 인색함은 비난할 것이 아닙니다.",
-          "interpretive_ko": "베이컨을 먹고 독을 만난다. 약간의 인색함은 비난할 것이 아닙니다.",
+          "literal_ko": "베이컨을 먹고 독을 만난다. 약간의 인색함은 허물할 것이 아닙니다.",
+          "interpretive_ko": "베이컨을 먹고 독을 만난다. 약간의 인색함은 허물할 것이 아닙니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1940,8 +1944,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "賁于丘園，束帛戔戔，吝，終吉。",
-          "literal_ko": "Qiuyuan의 Ben은 실크와 실크를 묶고 인색하며 마침내 운이 좋습니다.",
-          "interpretive_ko": "Qiuyuan의 Ben은 실크와 실크를 묶고 인색하며 마침내 운이 좋습니다.",
+          "literal_ko": "의 은 실크와 실크를 묶고 인색하며 마침내 운이 좋습니다.",
+          "interpretive_ko": "의 은 실크와 실크를 묶고 인색하며 마침내 운이 좋습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2005,8 +2009,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "剝之，無咎。",
-          "literal_ko": "껍질을 벗겨보세요. 비난은 없습니다.",
-          "interpretive_ko": "껍질을 벗겨보세요. 비난은 없습니다.",
+          "literal_ko": "껍질을 벗겨보세요. 허물 없음.",
+          "interpretive_ko": "껍질을 벗겨보세요. 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2058,8 +2062,8 @@
       "id": 24,
       "gua_text": {
         "original": "復，亨。出入無疾，朋來無咎。反復其道，七日來復，利有攸往。",
-        "literal_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 비난이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
-        "interpretive_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 비난이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
+        "literal_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 허물이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
+        "interpretive_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 허물이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -2106,8 +2110,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "中行獨復。",
-          "literal_ko": "BOC는 독립을 되찾았습니다.",
-          "interpretive_ko": "BOC는 독립을 되찾았습니다.",
+          "literal_ko": "는 독립을 되찾았습니다.",
+          "interpretive_ko": "는 독립을 되찾았습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2248,8 +2252,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "有厲，利已。",
-          "literal_ko": "당신이 치열하면 자신에게 이익이 될 것입니다.",
-          "interpretive_ko": "당신이 치열하면 자신에게 이익이 될 것입니다.",
+          "literal_ko": "만약 흉하면 자신에게 이익이 될 것입니다.",
+          "interpretive_ko": "만약 흉하면 자신에게 이익이 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2284,8 +2288,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "童豕之牿，元吉。",
-          "literal_ko": "어린이돼지 퇴치는 상서로운 일이다.",
-          "interpretive_ko": "어린이돼지 퇴치는 상서로운 일이다.",
+          "literal_ko": "어린이돼지 퇴치는 길함이다.",
+          "interpretive_ko": "어린이돼지 퇴치는 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2308,8 +2312,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "何天之衢，亨。",
-          "literal_ko": "Hetian의 도로는 번영합니다.",
-          "interpretive_ko": "Hetian의 도로는 번영합니다.",
+          "literal_ko": "의 도로는 번영합니다.",
+          "interpretive_ko": "의 도로는 번영합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2325,8 +2329,8 @@
       "id": 27,
       "gua_text": {
         "original": "頤，貞吉。觀頤，自求口實。",
-        "literal_ko": "이, 젠지. Yi를 지켜보고 자신의 입에서 진실을 찾으십시오.",
-        "interpretive_ko": "이, 젠지. Yi를 지켜보고 자신의 입에서 진실을 찾으십시오.",
+        "literal_ko": "이, 젠지. 이를 지켜보고 자신의 입에서 진실을 찾으십시오.",
+        "interpretive_ko": "이, 젠지. 이를 지켜보고 자신의 입에서 진실을 찾으십시오.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -2373,8 +2377,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "顛頤吉，虎視眈眈，其欲逐逐，無咎。",
-          "literal_ko": "당신이 이지를 보면 호랑이는 간절한 눈빛으로 당신을 바라보고 있고, 당신을 쫓아내고 싶어하니 비난할 여지가 없습니다.",
-          "interpretive_ko": "당신이 이지를 보면 호랑이는 간절한 눈빛으로 당신을 바라보고 있고, 당신을 쫓아내고 싶어하니 비난할 여지가 없습니다.",
+          "literal_ko": "만약 이지를 보면 호랑이는 간절한 눈빛으로 당신을 바라보고 있고, 당신을 쫓아내고 싶어하니 허물 없음.",
+          "interpretive_ko": "만약 이지를 보면 호랑이는 간절한 눈빛으로 당신을 바라보고 있고, 당신을 쫓아내고 싶어하니 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2426,8 +2430,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "藉用白茅，無咎。",
-          "literal_ko": "Imperata baicalensis를 빌리는 것에 대한 책임은 없습니다.",
-          "interpretive_ko": "Imperata baicalensis를 빌리는 것에 대한 책임은 없습니다.",
+          "literal_ko": "를 빌리는 것에 대한 책임은 없습니다.",
+          "interpretive_ko": "를 빌리는 것에 대한 책임은 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2474,8 +2478,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "枯楊生華，老婦得其士夫，無咎無譽。",
-          "literal_ko": "시든 미루나무는 꽃을 피우고, 노파는 아무런 비난도 명예도 없이 학자 남편을 맞이한다.",
-          "interpretive_ko": "시든 미루나무는 꽃을 피우고, 노파는 아무런 비난도 명예도 없이 학자 남편을 맞이한다.",
+          "literal_ko": "시든 미루나무는 꽃을 피우고, 노파는 아무런 허물도 명예도 없이 학자 남편을 맞이한다.",
+          "interpretive_ko": "시든 미루나무는 꽃을 피우고, 노파는 아무런 허물도 명예도 없이 학자 남편을 맞이한다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2486,8 +2490,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "過涉滅頂，凶，無咎。",
-          "literal_ko": "과도한 개입은 죽음, 불운, 비난 없음으로 이어질 것입니다.",
-          "interpretive_ko": "과도한 개입은 죽음, 불운, 비난 없음으로 이어질 것입니다.",
+          "literal_ko": "과도한 개입은 죽음, 불운, 허물 없음으로 이어질 것입니다.",
+          "interpretive_ko": "과도한 개입은 죽음, 불운, 허물 없음으로 이어질 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2551,8 +2555,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "樽酒簋貳，用缶，納約自牖，終無咎。",
-          "literal_ko": "두 개의 기스가 있는 병 와인, 그 기스를 사용하고 약속을 받아들이고 자신을 구하면 결국 비난은 없을 것입니다.",
-          "interpretive_ko": "두 개의 기스가 있는 병 와인, 그 기스를 사용하고 약속을 받아들이고 자신을 구하면 결국 비난은 없을 것입니다.",
+          "literal_ko": "두 개의 기스가 있는 병 와인, 간소한 예로 약속을 받아들이고 자신을 구하면 결국 허물은 없을 것입니다.",
+          "interpretive_ko": "두 개의 기스가 있는 병 와인, 간소한 예로 약속을 받아들이고 자신을 구하면 결국 허물은 없을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2652,8 +2656,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "出涕沱若，戚嗟若，吉。",
-          "literal_ko": "눈물을 흘리고 한숨을 쉬는 것은 상서로운 일입니다.",
-          "interpretive_ko": "눈물을 흘리고 한숨을 쉬는 것은 상서로운 일입니다.",
+          "literal_ko": "눈물을 흘리고 한숨을 쉬는 것은 길함입니다.",
+          "interpretive_ko": "눈물을 흘리고 한숨을 쉬는 것은 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2705,8 +2709,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "咸其腓，凶，居吉。",
-          "literal_ko": "Xian Qifei는 불운하고 상서로운 인물입니다.",
-          "interpretive_ko": "Xian Qifei는 불운하고 상서로운 인물입니다.",
+          "literal_ko": "는 불운하고 길함입니다.",
+          "interpretive_ko": "는 불운하고 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2729,8 +2733,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "貞吉悔亡，憧憧往來，朋從爾思。",
-          "literal_ko": "Zhenji는 자신의 죽음을 후회하고 교류를 갈망하며 친구들은 당신을 따르고 당신에 대해 생각합니다.",
-          "interpretive_ko": "Zhenji는 자신의 죽음을 후회하고 교류를 갈망하며 친구들은 당신을 따르고 당신에 대해 생각합니다.",
+          "literal_ko": "정길는 자신의 죽음을 후회하고 교류를 갈망하며 친구들은 당신을 따르고 당신에 대해 생각합니다.",
+          "interpretive_ko": "정길는 자신의 죽음을 후회하고 교류를 갈망하며 친구들은 당신을 따르고 당신에 대해 생각합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2782,8 +2786,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "浚恆，貞凶，無攸利。",
-          "literal_ko": "Jun Heng, 바름과 불운, 이익이 없습니다.",
-          "interpretive_ko": "Jun Heng, 바름과 불운, 이익이 없습니다.",
+          "literal_ko": "형, 바름과 불운, 이익이 없습니다.",
+          "interpretive_ko": "형, 바름과 불운, 이익이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2842,8 +2846,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "振恆，凶。",
-          "literal_ko": "Zhenheng, 치열합니다.",
-          "interpretive_ko": "Zhenheng, 치열합니다.",
+          "literal_ko": "흉하다.",
+          "interpretive_ko": "흉하다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2859,8 +2863,8 @@
       "id": 33,
       "gua_text": {
         "original": "遯，亨，小利貞。",
-        "literal_ko": "탈출, Heng, Xiaoli Zhen.",
-        "interpretive_ko": "탈출, Heng, Xiaoli Zhen.",
+        "literal_ko": "탈출, 형, 정.",
+        "interpretive_ko": "탈출, 형, 정.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3049,8 +3053,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "晉如，摧如，貞吉。罔孚，裕，無咎。",
-          "literal_ko": "진루, 데루, 젠지. 푸, 유, 비난하지 마세요.",
-          "interpretive_ko": "진루, 데루, 젠지. 푸, 유, 비난하지 마세요.",
+          "literal_ko": "진루, 데루, 젠지. 푸, 유, 허물하지 마세요.",
+          "interpretive_ko": "진루, 데루, 젠지. 푸, 유, 허물하지 마세요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3109,8 +3113,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "晉其角，維用伐邑，厲，吉，無咎，貞吝。",
-          "literal_ko": "Jin Qijiao, Wei Yong은 도시를 정복하고 Li, Ji, Wu Ji, Zhen은 인색합니다.",
-          "interpretive_ko": "Jin Qijiao, Wei Yong은 도시를 정복하고 Li, Ji, Wu Ji, Zhen은 인색합니다.",
+          "literal_ko": "위 은 도시를 정복하고 리, 길, 길, 정은 인색합니다.",
+          "interpretive_ko": "위 은 도시를 정복하고 리, 길, 길, 정은 인색합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3126,8 +3130,8 @@
       "id": 36,
       "gua_text": {
         "original": "明夷，利艱貞。",
-        "literal_ko": "Mingyi, 이익, 고난 및 바름.",
-        "interpretive_ko": "Mingyi, 이익, 고난 및 바름.",
+        "literal_ko": "이익, 고난 및 바름.",
+        "interpretive_ko": "이익, 고난 및 바름.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3150,8 +3154,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "明夷，夷于左股，用拯馬壯，吉。",
-          "literal_ko": "민이 이(Mingyi Yi)는 왼쪽 허벅지에 있으며 말을 강하게 만드는데 사용되는데 상서로운 일이다.",
-          "interpretive_ko": "민이 이(Mingyi Yi)는 왼쪽 허벅지에 있으며 말을 강하게 만드는데 사용되는데 상서로운 일이다.",
+          "literal_ko": "민이 이( 이)는 왼쪽 허벅지에 있으며 말을 강하게 만드는데 사용되는데 길함이다.",
+          "interpretive_ko": "민이 이( 이)는 왼쪽 허벅지에 있으며 말을 강하게 만드는데 사용되는데 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3186,8 +3190,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "箕子之明夷，利貞。",
-          "literal_ko": "Jizi의 Ming Yi는 Zhen에게 유익합니다.",
-          "interpretive_ko": "Jizi의 Ming Yi는 Zhen에게 유익합니다.",
+          "literal_ko": "의 이는 정에게 유익합니다.",
+          "interpretive_ko": "의 이는 정에게 유익합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3287,8 +3291,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "有孚威如，終吉。",
-          "literal_ko": "후웨이루가 있다면 결국에는 상서로운 일이 될 것입니다.",
-          "interpretive_ko": "후웨이루가 있다면 결국에는 상서로운 일이 될 것입니다.",
+          "literal_ko": "후웨이루가 있다면 결국에는 길함이 될 것입니다.",
+          "interpretive_ko": "후웨이루가 있다면 결국에는 길함이 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3316,8 +3320,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "悔亡，喪馬勿逐，自復。見惡人無咎。",
-          "literal_ko": "죽음을 후회하세요. 잃어버린 말을 쫓아내지 마세요. 말은 저절로 회복될 것입니다. 악한 사람들을 비난하지 말고 보십시오.",
-          "interpretive_ko": "죽음을 후회하세요. 잃어버린 말을 쫓아내지 마세요. 말은 저절로 회복될 것입니다. 악한 사람들을 비난하지 말고 보십시오.",
+          "literal_ko": "죽음을 후회하세요. 잃어버린 말을 쫓아내지 마세요. 말은 저절로 회복될 것입니다. 악한 사람들을 허물하지 말고 보십시오.",
+          "interpretive_ko": "죽음을 후회하세요. 잃어버린 말을 쫓아내지 마세요. 말은 저절로 회복될 것입니다. 악한 사람들을 허물하지 말고 보십시오.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3364,8 +3368,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "悔亡，厥宗噬膚，往何咎。",
-          "literal_ko": "죽음을 후회하며 Jue Zong은 피부를 물었습니다. 무슨 죄입니까?",
-          "interpretive_ko": "죽음을 후회하며 Jue Zong은 피부를 물었습니다. 무슨 죄입니까?",
+          "literal_ko": "죽음을 후회하며 은 피부를 물었습니다. 무슨 죄입니까?",
+          "interpretive_ko": "죽음을 후회하며 은 피부를 물었습니다. 무슨 죄입니까?",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3393,8 +3397,8 @@
       "id": 39,
       "gua_text": {
         "original": "蹇，利西南，不利東北。利見大人。貞吉。",
-        "literal_ko": "Jian은 남서쪽에는 이롭지만 북동쪽에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
-        "interpretive_ko": "Jian은 남서쪽에는 이롭지만 북동쪽에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
+        "literal_ko": "건은 남서쪽에는 이롭지만 동북에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
+        "interpretive_ko": "건은 남서쪽에는 이롭지만 동북에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3494,8 +3498,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "無咎。",
-          "literal_ko": "비난하지 마세요.",
-          "interpretive_ko": "비난하지 마세요.",
+          "literal_ko": "허물하지 마세요.",
+          "interpretive_ko": "허물하지 마세요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3530,8 +3534,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "解而拇，朋至斯孚。",
-          "literal_ko": "이해하고 엄지 손가락으로 친구들이 Sifu에 왔습니다.",
-          "interpretive_ko": "이해하고 엄지 손가락으로 친구들이 Sifu에 왔습니다.",
+          "literal_ko": "이해하고 엄지 손가락으로 친구들이 에 왔습니다.",
+          "interpretive_ko": "이해하고 엄지 손가락으로 친구들이 에 왔습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3571,8 +3575,8 @@
       "id": 41,
       "gua_text": {
         "original": "損，有孚，元吉，無咎，可貞，利有攸往。曷之用二簋，可用享。",
-        "literal_ko": "상실이란 행운, 행운, 비난 없음, 바름, 행운을 의미합니다. 두 개의 Gui를 사용하여 즐길 수 있습니다.",
-        "interpretive_ko": "상실이란 행운, 행운, 비난 없음, 바름, 행운을 의미합니다. 두 개의 Gui를 사용하여 즐길 수 있습니다.",
+        "literal_ko": "상실이란 행운, 행운, 허물 없음, 바름, 행운을 의미합니다. 두 개의 를 사용하여 즐길 수 있습니다.",
+        "interpretive_ko": "상실이란 행운, 행운, 허물 없음, 바름, 행운을 의미합니다. 두 개의 를 사용하여 즐길 수 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3619,8 +3623,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "損其疾，使遄有喜，無咎。",
-          "literal_ko": "그의 질병을 치료하고 그를 행복하게 해주고 비난받지 않게 해주세요.",
-          "interpretive_ko": "그의 질병을 치료하고 그를 행복하게 해주고 비난받지 않게 해주세요.",
+          "literal_ko": "그의 질병을 치료하고 그를 행복하게 해주고 허물받지 않게 해주세요.",
+          "interpretive_ko": "그의 질병을 치료하고 그를 행복하게 해주고 허물받지 않게 해주세요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3631,8 +3635,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "或益之，十朋之龜弗克違，元吉。",
-          "literal_ko": "아니면 이익이 될 수도 있고, 열 친구의 거북이가 위반을 극복하면 상서로운 일이 될 수도 있습니다.",
-          "interpretive_ko": "아니면 이익이 될 수도 있고, 열 친구의 거북이가 위반을 극복하면 상서로운 일이 될 수도 있습니다.",
+          "literal_ko": "아니면 이익이 될 수도 있고, 열 친구의 거북이가 위반을 극복하면 길함이 될 수도 있습니다.",
+          "interpretive_ko": "아니면 이익이 될 수도 있고, 열 친구의 거북이가 위반을 극복하면 길함이 될 수도 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3643,8 +3647,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "弗損，益之，無咎，貞吉，利有攸往。得臣無家。",
-          "literal_ko": "손실이 없으면 이익이 있을 것입니다. 비난은 없을 것입니다. 바름하고 상서로운 일이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
-          "interpretive_ko": "손실이 없으면 이익이 있을 것입니다. 비난은 없을 것입니다. 바름하고 상서로운 일이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
+          "literal_ko": "손실이 없으면 이익이 있을 것입니다. 허물은 없을 것입니다. 바름하고 길함이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
+          "interpretive_ko": "손실이 없으면 이익이 있을 것입니다. 허물은 없을 것입니다. 바름하고 길함이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3672,8 +3676,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "利用為大作，元吉，無咎。",
-          "literal_ko": "걸작으로 사용하세요. 행운을 빕니다. 비난은 없습니다.",
-          "interpretive_ko": "걸작으로 사용하세요. 행운을 빕니다. 비난은 없습니다.",
+          "literal_ko": "걸작으로 사용하세요. 행운을 빕니다. 허물 없음.",
+          "interpretive_ko": "걸작으로 사용하세요. 행운을 빕니다. 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3684,8 +3688,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。",
-          "literal_ko": "또는 그에게 유익할 수도 있습니다. 만약 열 친구의 거북이가 그의 불순종을 극복할 수 있다면 그는 항상 충성스럽고 상서로울 것입니다. 왕이 황제로부터 향유하는 것은 상서로운 일이다.",
-          "interpretive_ko": "또는 그에게 유익할 수도 있습니다. 만약 열 친구의 거북이가 그의 불순종을 극복할 수 있다면 그는 항상 충성스럽고 상서로울 것입니다. 왕이 황제로부터 향유하는 것은 상서로운 일이다.",
+          "literal_ko": "또는 그에게 유익할 수도 있습니다. 만약 열 친구의 거북이가 그의 불순종을 극복할 수 있다면 그는 항상 충성스럽고 상서로울 것입니다. 왕이 황제로부터 향유하는 것은 길함이다.",
+          "interpretive_ko": "또는 그에게 유익할 수도 있습니다. 만약 열 친구의 거북이가 그의 불순종을 극복할 수 있다면 그는 항상 충성스럽고 상서로울 것입니다. 왕이 황제로부터 향유하는 것은 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3696,8 +3700,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "益之用凶事，無咎。有孚中行，告公用圭。",
-          "literal_ko": "악한 것을 선을 위해 사용하면 비난이 없습니다. Youfu Zhonghang, 대중에게 Gui를 사용하라고 말하세요.",
-          "interpretive_ko": "악한 것을 선을 위해 사용하면 비난이 없습니다. Youfu Zhonghang, 대중에게 Gui를 사용하라고 말하세요.",
+          "literal_ko": "악한 것을 선을 위해 사용하면 허물이 없습니다. 유부, 대중에게 를 사용하라고 말하세요.",
+          "interpretive_ko": "악한 것을 선을 위해 사용하면 허물이 없습니다. 유부, 대중에게 를 사용하라고 말하세요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3720,8 +3724,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "有孚惠心，勿問元吉。有孚惠我德。",
-          "literal_ko": "마음이 좋으면 Yuan Ji에 대해 묻지 마세요. 나의 미덕에는 축복이 있습니다.",
-          "interpretive_ko": "마음이 좋으면 Yuan Ji에 대해 묻지 마세요. 나의 미덕에는 축복이 있습니다.",
+          "literal_ko": "마음이 좋으면 길에 대해 묻지 마세요. 나의 미덕에는 축복이 있습니다.",
+          "interpretive_ko": "마음이 좋으면 길에 대해 묻지 마세요. 나의 미덕에는 축복이 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3809,8 +3813,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "莧陸夬夬中行，無咎。",
-          "literal_ko": "아마란서스와 루는 정의의 한가운데를 걷고 있으며, 비난할 여지가 없습니다.",
-          "interpretive_ko": "아마란서스와 루는 정의의 한가운데를 걷고 있으며, 비난할 여지가 없습니다.",
+          "literal_ko": "아마란서스와 루는 정의의 한가운데를 걷고 있으며, 허물 없음.",
+          "interpretive_ko": "아마란서스와 루는 정의의 한가운데를 걷고 있으며, 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3850,8 +3854,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "系于金柅，貞吉，有攸往，見凶，羸豕踟躅。",
-          "literal_ko": "바름과 행운을 상징하는 진즈(Jin Zhi)와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
-          "interpretive_ko": "바름과 행운을 상징하는 진즈(Jin Zhi)와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
+          "literal_ko": "바름과 행운을 상징하는 진즈( 와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
+          "interpretive_ko": "바름과 행운을 상징하는 진즈( 와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3862,8 +3866,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "包有魚，無咎，不利賓。",
-          "literal_ko": "패키지에 생선이 들어 있으면 비난은 없지만 손님에게는 좋지 않습니다.",
-          "interpretive_ko": "패키지에 생선이 들어 있으면 비난은 없지만 손님에게는 좋지 않습니다.",
+          "literal_ko": "패키지에 생선이 들어 있으면 허물은 없지만 손님에게는 좋지 않습니다.",
+          "interpretive_ko": "패키지에 생선이 들어 있으면 허물은 없지만 손님에게는 좋지 않습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3910,8 +3914,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "姤其角，吝，無咎。",
-          "literal_ko": "인색하고 인색한 것에 대한 비난은 없습니다.",
-          "interpretive_ko": "인색하고 인색한 것에 대한 비난은 없습니다.",
+          "literal_ko": "인색하고 인색한 것에 대한 허물 없음.",
+          "interpretive_ko": "인색하고 인색한 것에 대한 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3939,8 +3943,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "有孚不終，乃亂乃萃，若號，一握為笑，勿恤，往無咎。",
-          "literal_ko": "끝이 있으면 혼돈과 혼돈이 있을 것입니다. 소리치면 안으면 미소가 지어집니다. 미안해하지 마십시오. 비난은 없을 것입니다.",
-          "interpretive_ko": "끝이 있으면 혼돈과 혼돈이 있을 것입니다. 소리치면 안으면 미소가 지어집니다. 미안해하지 마십시오. 비난은 없을 것입니다.",
+          "literal_ko": "끝이 있으면 혼돈과 혼돈이 있을 것입니다. 소리치면 안으면 미소가 지어집니다. 미안해하지 마십시오. 허물은 없을 것입니다.",
+          "interpretive_ko": "끝이 있으면 혼돈과 혼돈이 있을 것입니다. 소리치면 안으면 미소가 지어집니다. 미안해하지 마십시오. 허물은 없을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3951,8 +3955,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "引吉，無咎，孚乃利用禴。",
-          "literal_ko": "행운을 가져다주는 데는 비난이 없으며 푸는 행운을 사용하는 것입니다.",
-          "interpretive_ko": "행운을 가져다주는 데는 비난이 없으며 푸는 행운을 사용하는 것입니다.",
+          "literal_ko": "행운을 가져다주는 데는 허물이 없으며 푸는 행운을 사용하는 것입니다.",
+          "interpretive_ko": "행운을 가져다주는 데는 허물이 없으며 푸는 행운을 사용하는 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3963,8 +3967,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "萃如，嗟如，無攸利，往無咎，小吝。",
-          "literal_ko": "Cui는 마치 한숨과 같고 이익도없고 비난도없고 인색합니다.",
-          "interpretive_ko": "Cui는 마치 한숨과 같고 이익도없고 비난도없고 인색합니다.",
+          "literal_ko": "는 마치 한숨과 같고 이익도없고 허물도없고 인색합니다.",
+          "interpretive_ko": "는 마치 한숨과 같고 이익도없고 허물도없고 인색합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3975,8 +3979,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "大吉，無咎。",
-          "literal_ko": "행운을 빕니다. 비난은 없습니다.",
-          "interpretive_ko": "행운을 빕니다. 비난은 없습니다.",
+          "literal_ko": "행운을 빕니다. 허물 없음.",
+          "interpretive_ko": "행운을 빕니다. 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3987,8 +3991,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "萃有位，無咎。匪孚，元永貞，悔亡。",
-          "literal_ko": "컬렉션에는 결함이 없습니다. 산적 푸 위안전(Yuan Yongzhen)은 자신의 죽음을 후회했습니다.",
-          "interpretive_ko": "컬렉션에는 결함이 없습니다. 산적 푸 위안전(Yuan Yongzhen)은 자신의 죽음을 후회했습니다.",
+          "literal_ko": "컬렉션에는 결함이 없습니다. 산적 푸 위안전( 은 자신의 죽음을 후회했습니다.",
+          "interpretive_ko": "컬렉션에는 결함이 없습니다. 산적 푸 위안전( 은 자신의 죽음을 후회했습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4016,8 +4020,8 @@
       "id": 46,
       "gua_text": {
         "original": "升，元亨，用見大人，勿恤。南征吉。",
-        "literal_ko": "Sheng, Yuanheng은 그것을 사용하여 어른들을 만나고 자비를 베풀지 마십시오. 남쪽에 행운을 빕니다.",
-        "interpretive_ko": "Sheng, Yuanheng은 그것을 사용하여 어른들을 만나고 자비를 베풀지 마십시오. 남쪽에 행운을 빕니다.",
+        "literal_ko": "원형은 그것을 사용하여 어른들을 만나고 자비를 베풀지 마십시오. 남쪽에 행운을 빕니다.",
+        "interpretive_ko": "원형은 그것을 사용하여 어른들을 만나고 자비를 베풀지 마십시오. 남쪽에 행운을 빕니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -4064,8 +4068,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "王用亨于岐山，吉無咎。",
-          "literal_ko": "Wang Yongheng은 Qishan에 살았으며 상서롭고 용서할 수 없었습니다.",
-          "interpretive_ko": "Wang Yongheng은 Qishan에 살았으며 상서롭고 용서할 수 없었습니다.",
+          "literal_ko": "왕 은 에 살았으며 상서롭고 용서할 수 없었습니다.",
+          "interpretive_ko": "왕 은 에 살았으며 상서롭고 용서할 수 없었습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4088,8 +4092,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "冥升，利于不息之貞。",
-          "literal_ko": "Ming Sheng은 끝없는 바름에 도움이 됩니다.",
-          "interpretive_ko": "Ming Sheng은 끝없는 바름에 도움이 됩니다.",
+          "literal_ko": "은 끝없는 바름에 도움이 됩니다.",
+          "interpretive_ko": "은 끝없는 바름에 도움이 됩니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4105,8 +4109,8 @@
       "id": 47,
       "gua_text": {
         "original": "困，亨，貞大人吉，無咎。有言不信。",
-        "literal_ko": "졸음, 번영, 바름은 상서롭고 비난이 없습니다. 믿거나 말거나.",
-        "interpretive_ko": "졸음, 번영, 바름은 상서롭고 비난이 없습니다. 믿거나 말거나.",
+        "literal_ko": "졸음, 번영, 바름은 상서롭고 허물이 없습니다. 믿거나 말거나.",
+        "interpretive_ko": "졸음, 번영, 바름은 상서롭고 허물이 없습니다. 믿거나 말거나.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -4165,8 +4169,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "劓刖，困于赤紱，乃徐有說，利用祭祀。",
-          "literal_ko": "Xu You는 주홍색 장막에 갇혀 희생을 치렀다고 말했습니다.",
-          "interpretive_ko": "Xu You는 주홍색 장막에 갇혀 희생을 치렀다고 말했습니다.",
+          "literal_ko": "는 주홍색 장막에 갇혀 희생을 치렀다고 말했습니다.",
+          "interpretive_ko": "는 주홍색 장막에 갇혀 희생을 치렀다고 말했습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4177,8 +4181,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "困于葛藟，于臲卼，曰動悔，有悔，征吉。",
-          "literal_ko": "Ge Shu에 갇힌 Yu Xian은 감동적인 후회, 후회, Zhengji를 말했습니다.",
-          "interpretive_ko": "Ge Shu에 갇힌 Yu Xian은 감동적인 후회, 후회, Zhengji를 말했습니다.",
+          "literal_ko": "에 갇힌 은 감동적인 후회, 후회, 를 말했습니다.",
+          "interpretive_ko": "에 갇힌 은 감동적인 후회, 후회, 를 말했습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4331,8 +4335,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "悔亡，有孚改命，吉。",
-          "literal_ko": "죽음을 후회하면 운명이 바뀔 수도 있는데 이는 상서로운 일이다.",
-          "interpretive_ko": "죽음을 후회하면 운명이 바뀔 수도 있는데 이는 상서로운 일이다.",
+          "literal_ko": "죽음을 후회하면 운명이 바뀔 수도 있는데 이는 길함이다.",
+          "interpretive_ko": "죽음을 후회하면 운명이 바뀔 수도 있는데 이는 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4396,8 +4400,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "鼎有實，我仇有疾，不我能即，吉。",
-          "literal_ko": "삼각대가 단단해서 미움과 병이 있습니다. 내가 할 수 없다면 상서로운 일이다.",
-          "interpretive_ko": "삼각대가 단단해서 미움과 병이 있습니다. 내가 할 수 없다면 상서로운 일이다.",
+          "literal_ko": "삼각대가 단단해서 미움과 병이 있습니다. 내가 할 수 없다면 길함이다.",
+          "interpretive_ko": "삼각대가 단단해서 미움과 병이 있습니다. 내가 할 수 없다면 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4408,8 +4412,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。",
-          "literal_ko": "삼각대의 귀 가죽이 막혀 꿩 연고를 먹을 수 없습니다. Fang Yu는 후회하겠지만 결국에는 좋을 것입니다.",
-          "interpretive_ko": "삼각대의 귀 가죽이 막혀 꿩 연고를 먹을 수 없습니다. Fang Yu는 후회하겠지만 결국에는 좋을 것입니다.",
+          "literal_ko": "삼각대의 귀 가죽이 막혀 꿩 연고를 먹을 수 없습니다. 는 후회하겠지만 결국에는 좋을 것입니다.",
+          "interpretive_ko": "삼각대의 귀 가죽이 막혀 꿩 연고를 먹을 수 없습니다. 는 후회하겠지만 결국에는 좋을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4420,8 +4424,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "鼎折足，覆公餗，其形渥，凶。",
-          "literal_ko": "삼각대는 다리를 부러 뜨리고 수컷 혈관을 덮습니다. 그 모양은 풍부하고 치열합니다.",
-          "interpretive_ko": "삼각대는 다리를 부러 뜨리고 수컷 혈관을 덮습니다. 그 모양은 풍부하고 치열합니다.",
+          "literal_ko": "삼각대는 다리를 부러 뜨리고 수컷 혈관을 덮습니다. 그 모양은 풍부하고 흉하다.",
+          "interpretive_ko": "삼각대는 다리를 부러 뜨리고 수컷 혈관을 덮습니다. 그 모양은 풍부하고 흉하다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4444,8 +4448,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "鼎玉鉉，大吉，無不利。",
-          "literal_ko": "Ding Yuxuan, 행운을 빌며 해로움이 없다.",
-          "interpretive_ko": "Ding Yuxuan, 행운을 빌며 해로움이 없다.",
+          "literal_ko": "행운을 빌며 해로움이 없다.",
+          "interpretive_ko": "행운을 빌며 해로움이 없다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4497,8 +4501,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "震蘇蘇，震行無眚。",
-          "literal_ko": "충격적인 수수, 충격적인 Xingwuyi.",
-          "interpretive_ko": "충격적인 수수, 충격적인 Xingwuyi.",
+          "literal_ko": "충격적인 수수, 충격적인",
+          "interpretive_ko": "충격적인 수수, 충격적인",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4533,8 +4537,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "震索索，視矍矍，征凶。震不于其躬，于其鄰，無咎。婚媾有言。",
-          "literal_ko": "밧줄을 흔들고, 건강하고 왕성한 표정을 짓고, 악을 위협합니다. 그것은 활에 충격을 주지 않으며 이웃을 비난하지도 않습니다. 결혼에도 말이 있다.",
-          "interpretive_ko": "밧줄을 흔들고, 건강하고 왕성한 표정을 짓고, 악을 위협합니다. 그것은 활에 충격을 주지 않으며 이웃을 비난하지도 않습니다. 결혼에도 말이 있다.",
+          "literal_ko": "밧줄을 흔들고, 건강하고 왕성한 표정을 짓고, 악을 위협합니다. 그것은 활에 충격을 주지 않으며 이웃을 허물하지도 않습니다. 결혼에도 말이 있다.",
+          "interpretive_ko": "밧줄을 흔들고, 건강하고 왕성한 표정을 짓고, 악을 위협합니다. 그것은 활에 충격을 주지 않으며 이웃을 허물하지도 않습니다. 결혼에도 말이 있다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4562,8 +4566,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "艮其趾，無咎，利永貞。",
-          "literal_ko": "Gen의 발가락은 비난에서 자유롭고 Yongzhen에게 이익이됩니다.",
-          "interpretive_ko": "Gen의 발가락은 비난에서 자유롭고 Yongzhen에게 이익이됩니다.",
+          "literal_ko": "의 발가락은 허물에서 자유롭고 에게 이익이됩니다.",
+          "interpretive_ko": "의 발가락은 허물에서 자유롭고 에게 이익이됩니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4574,8 +4578,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "艮其腓，不拯其隨，其心不快。",
-          "literal_ko": "Qifei 장군이 추종자들을 구하지 않으면 그의 마음은 행복하지 않을 것입니다.",
-          "interpretive_ko": "Qifei 장군이 추종자들을 구하지 않으면 그의 마음은 행복하지 않을 것입니다.",
+          "literal_ko": "장군이 추종자들을 구하지 않으면 그의 마음은 행복하지 않을 것입니다.",
+          "interpretive_ko": "장군이 추종자들을 구하지 않으면 그의 마음은 행복하지 않을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4586,8 +4590,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "艮其限，列其夤，厲薰心。",
-          "literal_ko": "Gen의 한계가 나열되고, 그의 미덕이 나열되고, 그의 마음이 날카로워집니다.",
-          "interpretive_ko": "Gen의 한계가 나열되고, 그의 미덕이 나열되고, 그의 마음이 날카로워집니다.",
+          "literal_ko": "의 한계가 나열되고, 그의 미덕이 나열되고, 그의 마음이 날카로워집니다.",
+          "interpretive_ko": "의 한계가 나열되고, 그의 미덕이 나열되고, 그의 마음이 날카로워집니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4610,8 +4614,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "艮其輔，言有序，悔亡。",
-          "literal_ko": "Gen Qi는 돕고, 질서있게 말하고, 그의 죽음을 후회합니다.",
-          "interpretive_ko": "Gen Qi는 돕고, 질서있게 말하고, 그의 죽음을 후회합니다.",
+          "literal_ko": "는 돕고, 질서있게 말하고, 그의 죽음을 후회합니다.",
+          "interpretive_ko": "는 돕고, 질서있게 말하고, 그의 죽음을 후회합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4651,8 +4655,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "鴻漸于干，小子厲。有言，無咎。",
-          "literal_ko": "홍지안은 일을 잘하는데 소년은 일을 열심히 한다. 비난할 여지가 없습니다.",
-          "interpretive_ko": "홍지안은 일을 잘하는데 소년은 일을 열심히 한다. 비난할 여지가 없습니다.",
+          "literal_ko": "홍지안은 일을 잘하는데 소년은 일을 열심히 한다. 허물 없음.",
+          "interpretive_ko": "홍지안은 일을 잘하는데 소년은 일을 열심히 한다. 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4687,8 +4691,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "鴻漸于木，或得其桷，無咎。",
-          "literal_ko": "Hongjian은 숲 속에 있었고 그가 Jie를 얻었을 수도 있고 잘못이 없을 것입니다.",
-          "interpretive_ko": "Hongjian은 숲 속에 있었고 그가 Jie를 얻었을 수도 있고 잘못이 없을 것입니다.",
+          "literal_ko": "은 숲 속에 있었고 그가 를 얻었을 수도 있고 잘못이 없을 것입니다.",
+          "interpretive_ko": "은 숲 속에 있었고 그가 를 얻었을 수도 있고 잘못이 없을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4699,8 +4703,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "鴻漸于陵，婦三歲不孕，終莫之勝，吉。",
-          "literal_ko": "홍건이 능에 있을 때 그의 아내는 세 살 때 불임이었기 때문에 결국 승리를 거두었으니 이는 상서로운 일이다.",
-          "interpretive_ko": "홍건이 능에 있을 때 그의 아내는 세 살 때 불임이었기 때문에 결국 승리를 거두었으니 이는 상서로운 일이다.",
+          "literal_ko": "홍건이 능에 있을 때 그의 아내는 세 살 때 불임이었기 때문에 결국 승리를 거두었으니 이는 길함이다.",
+          "interpretive_ko": "홍건이 능에 있을 때 그의 아내는 세 살 때 불임이었기 때문에 결국 승리를 거두었으니 이는 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4711,8 +4715,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "鴻漸于逵，其羽可用為儀，吉。",
-          "literal_ko": "Hongjian은 Kui에 있으며 그의 깃털은 의식 도구와 행운으로 사용될 수 있습니다.",
-          "interpretive_ko": "Hongjian은 Kui에 있으며 그의 깃털은 의식 도구와 행운으로 사용될 수 있습니다.",
+          "literal_ko": "은 에 있으며 그의 깃털은 의식 도구와 행운으로 사용될 수 있습니다.",
+          "interpretive_ko": "은 에 있으며 그의 깃털은 의식 도구와 행운으로 사용될 수 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4740,8 +4744,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "歸妹以娣，跛能履，征吉。",
-          "literal_ko": "내 여동생 이디(Yidi)에게 돌아오자 그녀는 절뚝거리고 걸을 수 있게 되었는데, 이는 상서로운 일이다.",
-          "interpretive_ko": "내 여동생 이디(Yidi)에게 돌아오자 그녀는 절뚝거리고 걸을 수 있게 되었는데, 이는 상서로운 일이다.",
+          "literal_ko": "내 여동생 이디(에게 돌아오자 그녀는 절뚝거리고 걸을 수 있게 되었는데, 이는 길함이다.",
+          "interpretive_ko": "내 여동생 이디(에게 돌아오자 그녀는 절뚝거리고 걸을 수 있게 되었는데, 이는 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4788,8 +4792,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "帝乙歸妹，其君之袂，不如其娣之袂良，月几望，吉。",
-          "literal_ko": "이순신 황제는 여동생에게로 돌아가고, 왕의 소매는 후궁의 소매만큼 좋지 않습니다. 달을 바라보는 것은 상서로운 일이다.",
-          "interpretive_ko": "이순신 황제는 여동생에게로 돌아가고, 왕의 소매는 후궁의 소매만큼 좋지 않습니다. 달을 바라보는 것은 상서로운 일이다.",
+          "literal_ko": "이순신 황제는 여동생에게로 돌아가고, 왕의 소매는 후궁의 소매만큼 좋지 않습니다. 달을 바라보는 것은 길함이다.",
+          "interpretive_ko": "이순신 황제는 여동생에게로 돌아가고, 왕의 소매는 후궁의 소매만큼 좋지 않습니다. 달을 바라보는 것은 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4877,8 +4881,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "來章，有慶譽，吉。",
-          "literal_ko": "장(張)에 오면 좋은 평판을 얻을 수 있어 상서로운 일이다.",
-          "interpretive_ko": "장(張)에 오면 좋은 평판을 얻을 수 있어 상서로운 일이다.",
+          "literal_ko": "장(張)에 오면 좋은 평판을 얻을 수 있어 길함이다.",
+          "interpretive_ko": "장(張)에 오면 좋은 평판을 얻을 수 있어 길함이다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4942,8 +4946,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "旅焚其次，喪其童仆，貞厲。",
-          "literal_ko": "두 번째는 도로가 불타고 그의 젊은 종인 Zhenli를 잃은 것입니다.",
-          "interpretive_ko": "두 번째는 도로가 불타고 그의 젊은 종인 Zhenli를 잃은 것입니다.",
+          "literal_ko": "두 번째는 도로가 불타고 그의 젊은 종인 를 잃은 것입니다.",
+          "interpretive_ko": "두 번째는 도로가 불타고 그의 젊은 종인 를 잃은 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4995,8 +4999,8 @@
       "id": 57,
       "gua_text": {
         "original": "巽，小亨，利有攸往，利見大人。",
-        "literal_ko": "Xun, Xiaoheng은 미래와 어른들을 만나는 데 좋습니다.",
-        "interpretive_ko": "Xun, Xiaoheng은 미래와 어른들을 만나는 데 좋습니다.",
+        "literal_ko": "은 미래와 어른들을 만나는 데 좋습니다.",
+        "interpretive_ko": "은 미래와 어른들을 만나는 데 좋습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -5019,8 +5023,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "巽在床下，用史巫紛若，吉無咎。",
-          "literal_ko": "Xun은 침대 밑에 있고 그의 역사는 마녀와 불행으로 가득 차 있지만 그에게는 잘못이 없습니다.",
-          "interpretive_ko": "Xun은 침대 밑에 있고 그의 역사는 마녀와 불행으로 가득 차 있지만 그에게는 잘못이 없습니다.",
+          "literal_ko": "은 침대 밑에 있고 그의 역사는 마녀와 불행으로 가득 차 있지만 그에게는 잘못이 없습니다.",
+          "interpretive_ko": "은 침대 밑에 있고 그의 역사는 마녀와 불행으로 가득 차 있지만 그에게는 잘못이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5043,8 +5047,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "悔亡，田獲三品。",
-          "literal_ko": "죽음을 후회하며 Tian은 3학년을 받았습니다.",
-          "interpretive_ko": "죽음을 후회하며 Tian은 3학년을 받았습니다.",
+          "literal_ko": "죽음을 후회하며 은 3학년을 받았습니다.",
+          "interpretive_ko": "죽음을 후회하며 은 3학년을 받았습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5067,8 +5071,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "巽在床下，喪其資斧，貞凶。",
-          "literal_ko": "Xun은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
-          "interpretive_ko": "Xun은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
+          "literal_ko": "은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
+          "interpretive_ko": "은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5132,8 +5136,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "商兌，未寧，介疾有喜。",
-          "literal_ko": "Shangdui는 평화롭지 않으며 질병에는 기쁨이 있습니다.",
-          "interpretive_ko": "Shangdui는 평화롭지 않으며 질병에는 기쁨이 있습니다.",
+          "literal_ko": "는 평화롭지 않으며 질병에는 기쁨이 있습니다.",
+          "interpretive_ko": "는 평화롭지 않으며 질병에는 기쁨이 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5185,8 +5189,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "用拯馬壯，吉。",
-          "literal_ko": "말을 강하게 만드는 데 사용하는 것은 상서로운 일입니다.",
-          "interpretive_ko": "말을 강하게 만드는 데 사용하는 것은 상서로운 일입니다.",
+          "literal_ko": "말을 강하게 만드는 데 사용하는 것은 길함입니다.",
+          "interpretive_ko": "말을 강하게 만드는 데 사용하는 것은 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5197,8 +5201,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "渙奔其機，悔亡。",
-          "literal_ko": "Huan은 기회를 놓치지 않고 자신의 죽음을 후회했습니다.",
-          "interpretive_ko": "Huan은 기회를 놓치지 않고 자신의 죽음을 후회했습니다.",
+          "literal_ko": "은 기회를 놓치지 않고 자신의 죽음을 후회했습니다.",
+          "interpretive_ko": "은 기회를 놓치지 않고 자신의 죽음을 후회했습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5209,8 +5213,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "渙其躬，無悔。",
-          "literal_ko": "그의 활을 Huan, 후회하지 않습니다.",
-          "interpretive_ko": "그의 활을 Huan, 후회하지 않습니다.",
+          "literal_ko": "그의 활을, 후회하지 않습니다.",
+          "interpretive_ko": "그의 활을, 후회하지 않습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5221,8 +5225,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "渙其群，元吉。渙有丘，匪夷所思。",
-          "literal_ko": "Huan의 그룹, Yuan Ji. Huan에는 언덕이 있는데 정말 놀랍습니다.",
-          "interpretive_ko": "Huan의 그룹, Yuan Ji. Huan에는 언덕이 있는데 정말 놀랍습니다.",
+          "literal_ko": "의 그룹, 길. 에는 언덕이 있는데 정말 놀랍습니다.",
+          "interpretive_ko": "의 그룹, 길. 에는 언덕이 있는데 정말 놀랍습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5298,8 +5302,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "不節若，則嗟若，無咎。",
-          "literal_ko": "구속이 없으면 비난도 없을 것입니다.",
-          "interpretive_ko": "구속이 없으면 비난도 없을 것입니다.",
+          "literal_ko": "구속이 없으면 허물도 없을 것입니다.",
+          "interpretive_ko": "구속이 없으면 허물도 없을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5440,8 +5444,8 @@
       "id": 62,
       "gua_text": {
         "original": "小過，亨，利貞，可小事，不可大事。飛鳥遺之音，不宜上宜下，大吉。",
-        "literal_ko": "Xiaoguo, Henry, Li Zhen은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
-        "interpretive_ko": "Xiaoguo, Henry, Li Zhen은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
+        "literal_ko": "리 정은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
+        "interpretive_ko": "리 정은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -5541,8 +5545,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "曳其輪，濡其尾，無咎。",
-          "literal_ko": "바퀴를 끌고, 꼬리를 적시고, 비난하지 마세요.",
-          "interpretive_ko": "바퀴를 끌고, 꼬리를 적시고, 비난하지 마세요.",
+          "literal_ko": "바퀴를 끌고, 꼬리를 적시고, 허물하지 마세요.",
+          "interpretive_ko": "바퀴를 끌고, 꼬리를 적시고, 허물하지 마세요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5642,8 +5646,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "曳其輪，貞吉。",
-          "literal_ko": "바퀴를 당기는 것은 바름하고 상서로운 일입니다.",
-          "interpretive_ko": "바퀴를 당기는 것은 바름하고 상서로운 일입니다.",
+          "literal_ko": "바퀴를 당기는 것은 바름하고 길함입니다.",
+          "interpretive_ko": "바퀴를 당기는 것은 바름하고 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
