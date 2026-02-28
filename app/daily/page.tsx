@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { HEXAGRAMS } from "@/data/hexagrams";
 import { getHexagramContent } from "@/lib/card-index";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
@@ -43,6 +43,7 @@ export default function DailyPage() {
   const [draw, setDraw] = useState<Draw | null>(null);
   const [castedDate, setCastedDate] = useState<string | null>(null);
   const [isCasting, setIsCasting] = useState(false);
+  const questionInputRef = useRef<HTMLInputElement | null>(null);
 
   const todayKey = kstDateKey();
   const canCast = true;
@@ -62,6 +63,13 @@ export default function DailyPage() {
       // noop
     }
   }, [todayKey]);
+
+  useEffect(() => {
+    const t = window.setTimeout(() => {
+      questionInputRef.current?.focus();
+    }, 120);
+    return () => window.clearTimeout(t);
+  }, []);
 
   const baseHex = useMemo(() => (draw ? HEXAGRAMS.find((h) => h.id === draw.baseId) ?? null : null), [draw]);
   const changedHex = useMemo(
@@ -144,6 +152,8 @@ export default function DailyPage() {
         <label className="block">
           <p className="mb-1 text-xs text-[var(--text-muted)]">오늘의 질문 (선택)</p>
           <input
+            ref={questionInputRef}
+            autoFocus
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             disabled={!canCast}
