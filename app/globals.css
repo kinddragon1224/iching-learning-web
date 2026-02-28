@@ -345,6 +345,25 @@ h3 {
   50% { box-shadow: 0 0 16px rgba(212, 178, 106, 0.28); }
 }
 
+.hex-from-studio {
+  animation: hexPageEnter 300ms ease-out;
+}
+
+.hex-hero-pop {
+  animation: hexHeroPop 360ms ease-out;
+}
+
+@keyframes hexPageEnter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hexHeroPop {
+  0% { opacity: 0; transform: scale(0.985); }
+  65% { opacity: 1; transform: scale(1.006); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .studio-answer-btn,
   .studio-answer-correct,
@@ -355,7 +374,9 @@ h3 {
   .line-step-reveal,
   .relation-node,
   .relation-line,
-  .relation-core {
+  .relation-core,
+  .hex-from-studio,
+  .hex-hero-pop {
     animation: none !important;
     transition: none !important;
     transform: none !important;

@@ -67,10 +67,13 @@ export default async function HexagramCardDetailPage({
     .slice(0, 3);
 
   return (
-    <main className="mx-auto max-w-3xl space-y-5 p-6">
-      <Link href="/" className="text-sm underline">← 홈으로 돌아가기</Link>
+    <main className="mx-auto max-w-3xl space-y-5 p-6 hex-from-studio">
+      <div className="flex flex-wrap gap-3 text-sm">
+        <Link href="/" className="underline">← 홈으로 돌아가기</Link>
+        <Link href="/studio" className="underline">학습실험실로 가기</Link>
+      </div>
 
-      <section className="overflow-hidden rounded-2xl border bg-neutral-50">
+      <section className="overflow-hidden rounded-2xl border bg-neutral-50 hex-hero-pop">
         <div className="relative">
           <CardImageWithFallback
             src={card.card_image}
