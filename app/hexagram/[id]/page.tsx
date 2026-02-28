@@ -100,14 +100,13 @@ export default async function HexagramCardDetailPage({
           <h2 className="font-semibold">괘사</h2>
           {corpus.gua_text.original ? <p className="text-sm"><b>원문:</b> {corpus.gua_text.original}</p> : null}
           <p className="text-sm"><b>Ko:</b> {corpus.gua_text.reading_ko ?? card.full_name ?? card.short_name}</p>
-          <p className="text-sm"><b>En:</b> {corpus.gua_text.gloss_en ?? hex.nameEn}</p>
           <p className="text-sm"><b>보편 해석:</b> {track?.freePreview.plainMeaning ?? content.summary}</p>
           <p className="text-sm text-[var(--text-muted)]"><b>현대 해석:</b> {track?.freePreview.modernTeaser ?? content.summary}</p>
         </section>
       )}
 
       <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">6효 (원문 · Ko/En · 보편/현대 해석)</h2>
+        <h2 className="mb-3 font-semibold">6효 (원문 · Ko · 보편/현대 해석)</h2>
         <ol className="space-y-2 text-sm">
           {(corpus.lines.length > 0 ? corpus.lines : content.lineTexts.map((line, idx) => ({
             line_no: idx + 1,
@@ -120,7 +119,6 @@ export default async function HexagramCardDetailPage({
           }))).map((row, idx) => {
             const lineLabel = row.label_ko ?? track?.linesKorean?.[idx] ?? `${idx + 1}효`;
             const koReading = row.reading_ko ?? row.original ?? lineLabel;
-            const enReading = row.gloss_en ?? `Line ${idx + 1}`;
             const plainMeaning = row.literal_ko ?? content.lineTexts[idx];
             const modernMeaning = row.interpretive_ko && row.interpretive_ko !== row.literal_ko
               ? row.interpretive_ko
@@ -134,7 +132,6 @@ export default async function HexagramCardDetailPage({
               >
                 <p><b>{lineLabel}:</b> {row.original ?? "원문 준비 중"}</p>
                 <p><b>Ko:</b> {koReading}</p>
-                <p><b>En:</b> {enReading}</p>
                 <p><b>보편 해석:</b> {plainMeaning}</p>
                 <p className="text-[var(--text-muted)]"><b>현대 해석:</b> {modernMeaning}</p>
               </li>
