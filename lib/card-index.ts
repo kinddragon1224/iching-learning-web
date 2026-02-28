@@ -78,8 +78,8 @@ export function getCardForHexagram(id: number): HexagramCard {
 
   return {
     id,
-    short_name: seed?.short_name ?? content?.name_short ?? base?.nameKo ?? `제${id}괘`,
-    full_name: seed?.full_name ?? content?.name_full,
+    short_name: seed?.short_name ?? content?.name_short ?? `제${id}괘`,
+    full_name: seed?.full_name ?? base?.nameKo ?? content?.name_full,
     trigram_pair: seed?.trigram_pair ?? content?.trigram_pair,
     one_liner: seed?.one_liner ?? firstSentence(summary),
     keywords: seed?.keywords ?? content?.keywords ?? base?.keywords ?? ["학습", "해석"],

@@ -6,13 +6,39 @@ import { getCardForHexagram, getHexagramContent } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 import { getHexagramTrack } from "@/data/pro_tracks";
-import { getClassicalAnchorTranslation } from "@/lib/classical-anchor";
 
 export function generateStaticParams() {
   return HEXAGRAMS.map((h) => ({ id: String(h.id) }));
 }
 
 const AXIS_LABEL = { money: "돈", work: "일", relation: "관계", time: "시간" } as const;
+
+function toClassicalLineLabel(label?: string, idx?: number) {
+  const map: Record<string, string> = {
+    "초구": "初九",
+    "초육": "初六",
+    "구이": "九二",
+    "육이": "六二",
+    "구삼": "九三",
+    "육삼": "六三",
+    "구사": "九四",
+    "육사": "六四",
+    "구오": "九五",
+    "육오": "六五",
+    "상구": "上九",
+    "상육": "上六",
+    "초효": "初爻",
+    "이효": "二爻",
+    "삼효": "三爻",
+    "사효": "四爻",
+    "오효": "五爻",
+    "상효": "上爻",
+  };
+
+  if (label && map[label]) return map[label];
+  const fallback = ["初爻", "二爻", "三爻", "四爻", "五爻", "上爻"];
+  return fallback[idx ?? 0] ?? "爻";
+}
 
 export default async function HexagramCardDetailPage({
   params,
@@ -73,33 +99,21 @@ export default async function HexagramCardDetailPage({
       </header>
 
       {track && (
-        <section className="rounded-xl border p-4 space-y-4">
-          <div>
-            <h2 className="font-semibold">무료 해석 (원문+현대)</h2>
-            <p className="mt-2 text-sm"><b>원문:</b> {track.freePreview.classicalAnchor}</p>
-            <p className="text-sm"><b>한국어 번역:</b> {getClassicalAnchorTranslation(track.freePreview.classicalAnchor, "ko")}</p>
-            <p className="text-sm text-[var(--text-muted)]">{track.freePreview.plainMeaning}</p>
-            <p className="mt-1 text-sm">{track.freePreview.modernTeaser}</p>
-          </div>
-
-          <div className="rounded-lg border border-white/20 bg-black/20 p-3">
-            <h3 className="font-medium text-sm">Pro 상담 프레임 (맛보기)</h3>
-            <ul className="mt-2 space-y-1 text-sm">
-              <li><b>진단:</b> {track.proFrame.diagnosis}</li>
-              <li><b>코칭 질문:</b> {track.proFrame.coachingQuestion}</li>
-              <li><b>실행 1스텝:</b> {track.proFrame.actionStep}</li>
-            </ul>
-          </div>
+        <section className="rounded-xl border p-4 space-y-2">
+          <h2 className="font-semibold">해석 (원문+현대)</h2>
+          <p className="text-sm"><b>원문:</b> {track.freePreview.classicalAnchor}</p>
+          <p className="text-sm"><b>해석:</b> {track.freePreview.plainMeaning}</p>
+          <p className="text-sm text-[var(--text-muted)]">{track.freePreview.modernTeaser}</p>
         </section>
       )}
 
       <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">6효 학습 포인트</h2>
+        <h2 className="mb-3 font-semibold">6효 원문 + 보편 해석</h2>
         <ol className="space-y-2 text-sm">
           {content.lineTexts.map((line, idx) => (
-            <li key={idx} className="rounded-lg bg-black/20 px-3 py-2">
-              {track?.linesKorean?.[idx] ? <b className="mr-1">[{track.linesKorean[idx]}]</b> : null}
-              {line}
+            <li key={idx} className="rounded-lg bg-black/20 px-3 py-2 space-y-1">
+              <p><b>원문:</b> {toClassicalLineLabel(track?.linesKorean?.[idx], idx)}</p>
+              <p><b>해석:</b> {line}</p>
             </li>
           ))}
         </ol>
