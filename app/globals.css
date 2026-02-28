@@ -412,6 +412,39 @@ h3 {
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
+.daily-cast-chamber {
+  border: 1px solid rgba(212, 178, 106, 0.45);
+  background: radial-gradient(circle at center, rgba(212, 178, 106, 0.08), rgba(8, 8, 12, 0.75) 60%);
+}
+
+.daily-bars {
+  width: 72px;
+  height: 72px;
+  position: relative;
+}
+
+.daily-bars::before,
+.daily-bars::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid rgba(212, 178, 106, 0.65);
+  animation: dailySpin 1.2s linear infinite;
+}
+
+.daily-bars::after {
+  inset: 10px;
+  border-color: rgba(212, 178, 106, 0.35);
+  animation-direction: reverse;
+  animation-duration: 1.6s;
+}
+
+@keyframes dailySpin {
+  from { transform: rotate(0deg) scale(0.98); opacity: 0.65; }
+  to { transform: rotate(360deg) scale(1.02); opacity: 1; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .studio-answer-btn,
   .studio-answer-correct,
@@ -427,7 +460,9 @@ h3 {
   .hex-hero-pop,
   .daily-cast-enter,
   .daily-glow-panel::after,
-  .daily-card-pop {
+  .daily-card-pop,
+  .daily-bars::before,
+  .daily-bars::after {
     animation: none !important;
     transition: none !important;
     transform: none !important;
