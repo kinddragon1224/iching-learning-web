@@ -13,7 +13,8 @@
     "corpus:validate": "node scripts/validate-corpus.mjs",
     "corpus:normalize": "node scripts/normalize-corpus-terms.mjs",
     "corpus:refine2": "node scripts/refine-corpus-pass2.mjs",
-    "corpus:refine3": "node scripts/refine-corpus-pass3.mjs"
+    "corpus:refine3": "node scripts/refine-corpus-pass3.mjs",
+    "corpus:refine4": "node scripts/refine-corpus-pass4.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
