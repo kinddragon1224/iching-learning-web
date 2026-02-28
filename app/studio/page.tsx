@@ -10,6 +10,23 @@ import { getClassicalAnchorTranslation } from "@/lib/classical-anchor";
 
 type QuizState = "idle" | "correct" | "wrong";
 
+type ReflectionItem = {
+  hexId: number;
+  lineNo: number;
+  feeling: string;
+  context: string;
+  createdAt: number;
+};
+
+const LINE_LABEL: Record<number, string> = {
+  1: "초효 · 시작",
+  2: "2효 · 정렬",
+  3: "3효 · 긴장",
+  4: "4효 · 전환",
+  5: "5효 · 핵심",
+  6: "상효 · 마무리",
+};
+
 function randId() {
   return Math.floor(Math.random() * 64) + 1;
 }
@@ -29,6 +46,7 @@ export default function StudioPage() {
   const [feeling, setFeeling] = useState("");
   const [myContext, setMyContext] = useState("");
   const [lineNo, setLineNo] = useState(1);
+  const [reflections, setReflections] = useState<ReflectionItem[]>([]);
 
   const hex = useMemo(() => HEXAGRAMS.find((h) => h.id === currentId) ?? HEXAGRAMS[0], [currentId]);
   const hexContent = useMemo(() => getHexagramContent(currentId), [currentId]);
@@ -37,6 +55,19 @@ export default function StudioPage() {
 
   const [seenHex, setSeenHex] = useState<Set<number>>(new Set());
   const [seenLines, setSeenLines] = useState<Set<string>>(new Set());
+
+  const lineCounts = useMemo(() => {
+    const base: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
+    reflections.forEach((r) => {
+      base[r.lineNo] += 1;
+    });
+    return base;
+  }, [reflections]);
+
+  const currentHexReflections = useMemo(
+    () => reflections.filter((r) => r.hexId === currentId).slice(0, 3),
+    [reflections, currentId]
+  );
 
   const handleAnswer = (id: number) => {
     setSelected(id);
@@ -48,6 +79,16 @@ export default function StudioPage() {
   const saveReflection = () => {
     if (!feeling.trim() && !myContext.trim()) return;
     setSeenLines((prev) => new Set([...prev, `${currentId}-${lineNo}`]));
+    setReflections((prev) => [
+      {
+        hexId: currentId,
+        lineNo,
+        feeling: feeling.trim(),
+        context: myContext.trim(),
+        createdAt: Date.now(),
+      },
+      ...prev,
+    ]);
     setFeeling("");
     setMyContext("");
   };
@@ -156,8 +197,43 @@ export default function StudioPage() {
                   <option key={n} value={n}>{n}효</option>
                 ))}
               </select>
+              <span className="text-xs text-[var(--text-muted)]">{LINE_LABEL[lineNo]}</span>
               <button onClick={saveReflection} className="rounded-lg bg-[var(--gold-line)] px-3 py-1.5 text-xs font-semibold text-black">기록 저장</button>
             </div>
+
+            <div className="rounded-lg border border-white/15 bg-black/20 p-3">
+              <p className="text-xs text-[var(--text-muted)] mb-2">효 패턴 맵 (현재 세션)</p>
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                {[1, 2, 3, 4, 5, 6].map((n) => {
+                  const count = lineCounts[n];
+                  const active = n === lineNo;
+                  return (
+                    <button
+                      key={n}
+                      type="button"
+                      onClick={() => setLineNo(n)}
+                      className={`rounded-lg border px-2 py-2 text-left ${active ? "border-[var(--gold-line)]" : "border-white/20"}`}
+                    >
+                      <p className="text-[11px] text-[var(--text-muted)]">{n}효</p>
+                      <p className="text-sm font-semibold">{count}회</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {currentHexReflections.length > 0 && (
+              <div className="rounded-lg border border-white/15 bg-black/20 p-3 space-y-2">
+                <p className="text-xs text-[var(--text-muted)]">이 괘에 남긴 최근 기록</p>
+                {currentHexReflections.map((r) => (
+                  <div key={r.createdAt} className="rounded border border-white/10 px-2 py-1.5 text-xs">
+                    <p className="text-[var(--gold-soft)]">{LINE_LABEL[r.lineNo]}</p>
+                    {r.feeling ? <p>느낌: {r.feeling}</p> : null}
+                    {r.context ? <p>적용: {r.context}</p> : null}
+                  </div>
+                ))}
+              </div>
+            )}
           </>
         )}
       </section>
