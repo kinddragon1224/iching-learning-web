@@ -46,21 +46,12 @@ export default function Home() {
           <p className="mt-2 text-sm text-[var(--text-muted)]">우주 뷰에서 괘를 탐색하며 흐름을 직관적으로 살펴보세요.</p>
         </Link>
 
-        <Link href="/jeongyeok" className="paper-panel rounded-2xl p-5 panel-hover">
-          <p className="text-xs text-[var(--text-muted)]">심화 관점</p>
-          <h2 className="mt-1 text-xl font-semibold">정역 입문</h2>
-          <p className="mt-2 text-sm text-[var(--text-muted)]">김일부의 후천 관점을 간단히 이해해보세요.</p>
+        <Link href="/studio" className="paper-panel rounded-2xl p-5 panel-hover">
+          <p className="text-xs text-[var(--text-muted)]">실전 학습</p>
+          <h2 className="mt-1 text-xl font-semibold">랜덤 괘 실험실</h2>
+          <p className="mt-2 text-sm text-[var(--text-muted)]">랜덤 괘 퀴즈와 느낌 기록으로 64괘/384효 패턴을 익혀보세요.</p>
         </Link>
       </section>
-
-      <div className="relative z-10 mt-6 flex justify-center">
-        <Link
-          href="/checkout"
-          className="rounded-xl border border-[rgba(212,178,106,0.55)] bg-black/60 px-6 py-3 text-sm font-semibold text-white backdrop-blur panel-hover"
-        >
-          Pro 결제
-        </Link>
-      </div>
     </main>
   );
 }
