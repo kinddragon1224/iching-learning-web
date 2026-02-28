@@ -114,6 +114,7 @@ export default async function HexagramCardDetailPage({
             reading_ko: undefined as string | undefined,
             gloss_en: undefined as string | undefined,
             label_ko: track?.linesKorean?.[idx],
+            label_hanja: undefined as string | undefined,
             literal_ko: undefined as string | undefined,
             interpretive_ko: undefined as string | undefined,
           }))).map((row, idx) => {
@@ -124,13 +125,17 @@ export default async function HexagramCardDetailPage({
               ? row.interpretive_ko
               : content.lineTexts[idx];
 
+            const matched = (row.original ?? "").match(/^(初九|初六|九二|六二|九三|六三|九四|六四|九五|六五|上九|上六)[,：:\s]*(.*)$/);
+            const lineHanja = row.label_hanja ?? matched?.[1] ?? (row.original ?? "");
+            const lineOriginalBody = matched?.[2]?.trim() || "원문 준비 중";
+
             return (
               <li
                 key={idx}
                 className="rounded-lg bg-black/20 px-3 py-2 space-y-1 line-step-reveal"
                 style={{ animationDelay: `${idx * 90}ms` }}
               >
-                <p><b>{lineLabel}:</b> {row.original ?? "원문 준비 중"}</p>
+                <p><b>{lineHanja} : {lineLabel} :</b> {lineOriginalBody}</p>
                 <p><b>Ko:</b> {koReading}</p>
                 <p><b>보편 해석:</b> {plainMeaning}</p>
                 <p className="text-[var(--text-muted)]"><b>현대 해석:</b> {modernMeaning}</p>
