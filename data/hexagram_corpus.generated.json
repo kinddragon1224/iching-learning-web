@@ -121,99 +121,99 @@
     {
       "id": 2,
       "gua_text": {
-        "original": "坤，元亨，利牝馬之貞。君子有攸往，先迷后得主。利西南，得朋，東北，喪朋。安貞，吉。",
-        "literal_ko": "곤: 크게 형통하니 암말의 바름이 이롭다. 군자가 길을 나서면 먼저 미혹하나 뒤에 주인을 얻는다. 서남에서 벗을 얻고 동북에서 벗을 잃는다. 바르게 편안하면 길하다.",
-        "interpretive_ko": "곤: 크게 형통하니 암말의 바름이 이롭다. 군자가 길을 나서면 먼저 미혹하나 뒤에 주인을 얻는다. 서남에서 벗을 얻고 동북에서 벗을 잃는다. 바르게 편안하면 길하다.",
+        "original": "坤 元亨 利牝馬之貞 君子有攸往 先迷後得主 利西南得朋 東北喪朋 安貞吉",
+        "reading_ko": "곤 원형 이빈마지정 군자유유왕 선미후득주 리서남득붕 동북상붕 안정길",
+        "literal_ko": "곤은 크게 형통하니 암말의 바름이 이롭다. 군자가 길을 나서면 먼저 미혹하나 뒤에 주인을 얻는다. 서남에서 벗을 얻고 동북에서 벗을 잃는다. 편안히 바름을 지키면 길하다.",
+        "interpretive_ko": "받아들이고 지탱하는 힘이 핵심인 때다. 앞서 나서기보다 질서에 맞춰 따를 때 성과가 커진다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "곤, 원형, 리빈마지정. 군자유유왕, 선미후득주. 리서남, 득붕, 동배, 상붕. 안정, 길.",
-        "gloss_en": "Kun, Yuanheng, Li Ma Zhen. When a gentleman wants to go somewhere, he loses himself first and then wins. To benefit the southwest, gain friends; to the northeast, lose friends. Anzhen, Ji."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "履霜，堅冰至。",
-          "literal_ko": "서리 위를 걷다 보면 얼음이 찾아온다.",
-          "interpretive_ko": "서리 위를 걷다 보면 얼음이 찾아온다.",
+          "label_ko": "초육",
+          "original": "履霜 堅冰至",
+          "reading_ko": "이상 견빙지",
+          "literal_ko": "서리를 밟으면 단단한 얼음이 이른다.",
+          "interpretive_ko": "작은 징후를 가볍게 여기지 말고 초기에 바로잡아야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "리상, 견빙지.",
-          "gloss_en": "Walking on frost, the ice arrives."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "直，方，大，不習無不利。",
-          "literal_ko": "직선형, 정사각형형, 대형형으로 익숙하지 않으면 단점이 없습니다.",
-          "interpretive_ko": "직선형, 정사각형형, 대형형으로 익숙하지 않으면 단점이 없습니다.",
+          "label_ko": "육이",
+          "original": "直方大 不習无不利",
+          "reading_ko": "직방대 불습무불리",
+          "literal_ko": "곧고 반듯하고 크니, 익히지 않아도 이롭지 않음이 없다.",
+          "interpretive_ko": "기본 원칙을 곧게 지키면 억지 기술 없이도 길이 열린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "직, 방, 대, 부습무부리.",
-          "gloss_en": "Straight, square, and big, there is no disadvantage if you don’t get used to it."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "含章，可貞。或從王事，無成有終。",
-          "literal_ko": "장이 포함되어 있으며 바름할 수 있습니다. 아니면 왕을 위해 일하면 성공하지 못할 것입니다.",
-          "interpretive_ko": "장이 포함되어 있으며 바름할 수 있습니다. 아니면 왕을 위해 일하면 성공하지 못할 것입니다.",
+          "label_ko": "육삼",
+          "original": "含章可貞 或從王事 无成有終",
+          "reading_ko": "함장가정 혹종왕사 무성유종",
+          "literal_ko": "빛남을 머금어 바름을 지킬 수 있다. 혹 왕의 일을 따르면 이룸은 없어도 마침은 있다.",
+          "interpretive_ko": "공을 앞세우지 말고 맡은 역할을 완수하면 신뢰가 쌓인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함장, 가정. 혹종왕사, 무성유종.",
-          "gloss_en": "Contains chapter, can be chastity. Or if you work for the king, there will be no success."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "括囊，無咎，無譽。",
-          "literal_ko": "허물도 없고 평판도 없습니다.",
-          "interpretive_ko": "허물도 없고 평판도 없습니다.",
+          "label_ko": "육사",
+          "original": "括囊 无咎无譽",
+          "reading_ko": "괄낭 무구무예",
+          "literal_ko": "주머니를 묶으니 허물도 칭찬도 없다.",
+          "interpretive_ko": "말과 행동을 절제해 불필요한 마찰을 피하는 구간이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "괄낭, 무구, 무예.",
-          "gloss_en": "There is no blame, no reputation."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "黃裳，元吉。",
-          "literal_ko": "황상, 위안지.",
-          "interpretive_ko": "황상, 위안지.",
+          "label_ko": "육오",
+          "original": "黃裳 元吉",
+          "reading_ko": "황상 원길",
+          "literal_ko": "누런 치마이니 크게 길하다.",
+          "interpretive_ko": "중용의 덕을 지키는 리더십이 가장 안정적이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "황상, 원길.",
-          "gloss_en": "Huang Shang, Yuan Ji."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "龍戰於野，其血玄黃。",
-          "literal_ko": "용들이 야생에서 싸울 때, 그들의 피는 검은색과 노란색입니다.",
-          "interpretive_ko": "용들이 야생에서 싸울 때, 그들의 피는 검은색과 노란색입니다.",
+          "label_ko": "상육",
+          "original": "龍戰于野 其血玄黃",
+          "reading_ko": "용전우야 기혈현황",
+          "literal_ko": "용이 들에서 싸우니 그 피가 검고 누렇다.",
+          "interpretive_ko": "극단의 대립은 모두를 소모시킨다. 과열되기 전에 멈춰야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "룡전어야, 기혈현황.",
-          "gloss_en": "When dragons fight in the wild, their blood is black and yellow."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -224,99 +224,99 @@
     {
       "id": 3,
       "gua_text": {
-        "original": "屯，元亨，利貞，勿用有攸往，利建侯。",
-        "literal_ko": "둔: 크게 형통하니 바름이 이롭다. 함부로 나아가지 말고 제후를 세움이 이롭다.",
-        "interpretive_ko": "둔: 크게 형통하니 바름이 이롭다. 함부로 나아가지 말고 제후를 세움이 이롭다.",
+        "original": "屯 元亨利貞 勿用有攸往 利建侯",
+        "reading_ko": "둔 원형리정 물용유유왕 리건후",
+        "literal_ko": "둔은 크게 형통하고 바름이 이롭다. 함부로 나아가지 말고 제후를 세움이 이롭다.",
+        "interpretive_ko": "시작의 혼란기에는 무리한 확장보다 기반과 사람을 세우는 것이 우선이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "둔, 원형, 리정, 물용유유왕, 리건후.",
-        "gloss_en": "Tun, Yuanheng, is beneficial to Zhen. Do not use Youyou to benefit the establishment of a marquis."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "磐桓，利居貞，利建侯。",
-          "literal_ko": "은 에게 좋고 건후에게 좋습니다.",
-          "interpretive_ko": "은 에게 좋고 건후에게 좋습니다.",
+          "label_ko": "초구",
+          "original": "磐桓 利居貞 利建侯",
+          "reading_ko": "반환 이거정 리건후",
+          "literal_ko": "머뭇거림이니, 머물러 바름을 지킴이 이롭고 제후를 세움이 이롭다.",
+          "interpretive_ko": "서두르지 말고 진영을 정비한 뒤 출발해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "반환, 리거정, 리건후.",
-          "gloss_en": "Panhuan is good for Juzhen and good for Jianhou."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "屯如邅如，乘馬班如，匪寇，婚媾。女子貞不字，十年乃字。",
-          "literal_ko": "마을은 종루같고, 말은 반루같고, 도적은 도적같고, 부부는 섹스를 하고 있다. 여자의 바름은 말이 아니지만 10년은 말이 된다.",
-          "interpretive_ko": "마을은 종루같고, 말은 반루같고, 도적은 도적같고, 부부는 섹스를 하고 있다. 여자의 바름은 말이 아니지만 10년은 말이 된다.",
+          "label_ko": "육이",
+          "original": "屯如邅如 乘馬班如 匪寇婚媾 女子貞不字 十年乃字",
+          "reading_ko": "둔여전여 승마반여 비구혼구 여자정부자 십년내자",
+          "literal_ko": "막히고 더디다. 말이 되돌아온다. 도적이 아니라 혼인을 청함이다. 여자가 바르게 지켜 시집가지 않다가 십년 뒤에야 시집간다.",
+          "interpretive_ko": "지연은 실패가 아니라 적절한 때를 기다리는 과정일 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "둔여전여, 승마반여, 비구, 혼구. 녀자정부자, 십년내자.",
-          "gloss_en": "The villages are like Zongru, the horses are like Banru, the bandits are bandits, and the couples are having sex. A woman's chastity is not a word, but ten years is a word."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "即鹿無虞，惟入于林中，君子几不如舍，往吝。",
-          "literal_ko": "즉, 사슴은 위험이 없지만 숲에 들어가면 군자가 꺼려하고 인색하게 놔두는 것입니다.",
-          "interpretive_ko": "즉, 사슴은 위험이 없지만 숲에 들어가면 군자가 꺼려하고 인색하게 놔두는 것입니다.",
+          "label_ko": "육삼",
+          "original": "即鹿无虞 惟入于林中 君子幾不如舍 往吝",
+          "reading_ko": "즉록무우 유입우림중 군자기불여사 왕린",
+          "literal_ko": "사냥꾼 없이 사슴을 쫓아 숲에 드니, 군자는 그만두는 것만 못하다. 가면 인색하다.",
+          "interpretive_ko": "준비 없이 밀어붙이면 손실이 커진다. 철수도 전략이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "즉녹무우, 유입우림중, 군자궤부여사, 왕린.",
-          "gloss_en": "That is to say, there is no danger of a deer, but when it enters the forest, a gentleman would be reluctant to leave it alone and be stingy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "乘馬班如，求婚媾，無不利。",
-          "literal_ko": "말을 타고 프러포즈하고 섹스를 하면 불이로움이 없다.",
-          "interpretive_ko": "말을 타고 프러포즈하고 섹스를 하면 불이로움이 없다.",
+          "label_ko": "육사",
+          "original": "乘馬班如 求婚媾 往吉 无不利",
+          "reading_ko": "승마반여 구혼구 왕길 무불리",
+          "literal_ko": "말이 되돌아오나 혼인을 구하면 가서 길하고 이롭지 않음이 없다.",
+          "interpretive_ko": "좋은 제안에는 응답하라. 협력의 문이 열리는 시점이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "승마반여, 구혼구, 무부리.",
-          "gloss_en": "Riding on a horse, proposing and having sex, there is no disadvantage."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "屯其膏，小貞吉，大貞凶。",
-          "literal_ko": "연고를 넣으면 작은 바름이면 상서롭고, 큰 바름이면 불길하다.",
-          "interpretive_ko": "연고를 넣으면 작은 바름이면 상서롭고, 큰 바름이면 불길하다.",
+          "label_ko": "구오",
+          "original": "屯其膏 小貞吉 大貞凶",
+          "reading_ko": "둔기고 소정길 대정흉",
+          "literal_ko": "은택이 막힌다. 작은 바름은 길하고 큰 바름은 흉하다.",
+          "interpretive_ko": "자원 제약기엔 작은 실행이 맞다. 대규모 결단은 위험하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "둔기고, 소정길, 대정흉.",
-          "gloss_en": "If you put the ointment in it, it will be auspicious if it is a small chastity, and it will be unlucky if it is a big chastity."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "乘馬班如，泣血漣如。",
-          "literal_ko": "말을 타는 것은 울고 피를 흘리는 수업과 같습니다.",
-          "interpretive_ko": "말을 타는 것은 울고 피를 흘리는 수업과 같습니다.",
+          "label_ko": "상육",
+          "original": "乘馬班如 泣血漣如",
+          "reading_ko": "승마반여 읍혈연여",
+          "literal_ko": "말이 되돌아오고 피눈물을 흘린다.",
+          "interpretive_ko": "끝까지 방향을 못 잡으면 소모만 남는다. 결단이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "승마반여, 읍혈련여.",
-          "gloss_en": "Riding a horse is like a class, crying and bleeding."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -327,99 +327,99 @@
     {
       "id": 4,
       "gua_text": {
-        "original": "蒙，亨。匪我求童蒙，童蒙求我。初噬告，再三瀆，瀆則不告。利貞。",
-        "literal_ko": "몽: 형통하다. 내가 어린 이를 구하는 것이 아니라 어린 이가 나를 구한다. 처음 물으면 알려주되, 거듭 어지럽히면 알리지 않는다. 바름이 이롭다.",
-        "interpretive_ko": "몽: 형통하다. 내가 어린 이를 구하는 것이 아니라 어린 이가 나를 구한다. 처음 물으면 알려주되, 거듭 어지럽히면 알리지 않는다. 바름이 이롭다.",
+        "original": "蒙 亨 匪我求童蒙 童蒙求我 初筮告 再三瀆 瀆則不告 利貞",
+        "reading_ko": "몽 형 비아구동몽 동몽구아 초서고 재삼독 독즉불고 이정",
+        "literal_ko": "몽은 형통하다. 내가 어린 이를 구하는 것이 아니라 어린 이가 나를 구한다. 처음 점에만 알리고, 거듭 어지럽히면 알리지 않는다. 바름이 이롭다.",
+        "interpretive_ko": "배움의 시작에는 질문의 태도가 중요하다. 같은 실수를 반복하면 배움이 막힌다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "몽, 형. 비아구동몽, 동몽구아. 초서고, 재삼독, 독칙부고. 리정.",
-        "gloss_en": "Meng, Heng. I beg Tong Meng, and Tong Meng beg me. If you complain at the beginning, you will blaspheme again and again. If you blaspheme again and again, you will not complain. Li Zhen."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "發蒙，利用刑人，用說桎梏，以往吝。",
-          "literal_ko": "깨달음은 사람을 고문하고, 말로 족쇄를 채우는 것이 인색했습니다.",
-          "interpretive_ko": "깨달음은 사람을 고문하고, 말로 족쇄를 채우는 것이 인색했습니다.",
+          "label_ko": "초육",
+          "original": "發蒙 利用刑人 用說桎梏 以往吝",
+          "reading_ko": "발몽 이용형인 용설질곡 이왕린",
+          "literal_ko": "몽매함을 열어주되 형벌을 씀이 이롭다. 족쇄를 풀어주고, 더 나아가면 인색하다.",
+          "interpretive_ko": "초기 교정은 분명해야 하되 과잉 통제는 오히려 해롭다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "발몽, 리용형인, 용설질곡, 이왕린.",
-          "gloss_en": "Enlightenment, using torture people, using words to shackles, used to be stingy."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "包蒙吉。納婦吉。子克家。",
-          "literal_ko": "바오 멍지. 나비지. 자 극 가족.",
-          "interpretive_ko": "바오 멍지. 나비지. 자 극 가족.",
+          "label_ko": "구이",
+          "original": "包蒙吉 納婦吉 子克家",
+          "reading_ko": "포몽길 납부길 자극가",
+          "literal_ko": "몽매함을 포용하면 길하다. 아내를 맞이하면 길하고, 자식이 집안을 다스린다.",
+          "interpretive_ko": "포용적 교육과 역할 부여가 조직을 안정시킨다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "포몽길. 납부길. 자극가.",
-          "gloss_en": "Bao Mengji. Navji. Zi Ke family."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "勿用娶女，見金，夫不有躬，無攸利。",
-          "literal_ko": "여자와 결혼하지 말라. 그 여자는 금을 볼 것이고, 그 남편은 활도 없고 이익도 없을 것이다.",
-          "interpretive_ko": "여자와 결혼하지 말라. 그 여자는 금을 볼 것이고, 그 남편은 활도 없고 이익도 없을 것이다.",
+          "label_ko": "육삼",
+          "original": "勿用取女 見金夫 不有躬 无攸利",
+          "reading_ko": "물용취녀 견금부 불유궁 무유리",
+          "literal_ko": "여인을 취하지 말라. 재물을 좇는 남자를 보면 몸가짐을 잃으니 이로움이 없다.",
+          "interpretive_ko": "가치보다 이익만 좇는 선택은 장기적으로 손해다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "물용취녀, 견금, 부부유궁, 무유리.",
-          "gloss_en": "Don't marry a girl, she will see gold, her husband will have no bow, and there will be no profit."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "困蒙，吝。",
-          "literal_ko": "졸리고 인색합니다.",
-          "interpretive_ko": "졸리고 인색합니다.",
+          "label_ko": "육사",
+          "original": "困蒙 吝",
+          "reading_ko": "곤몽 린",
+          "literal_ko": "막힌 몽매함이니 인색하다.",
+          "interpretive_ko": "배움을 거부하면 정체가 길어진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "곤몽, 린.",
-          "gloss_en": "Sleepy, stingy."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "童蒙，吉。",
-          "literal_ko": "통멍, 지.",
-          "interpretive_ko": "통멍, 지.",
+          "label_ko": "육오",
+          "original": "童蒙吉",
+          "reading_ko": "동몽길",
+          "literal_ko": "어린 몽매함이니 길하다.",
+          "interpretive_ko": "겸손히 배우는 태도 자체가 길함을 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "동몽, 길.",
-          "gloss_en": "Tong Meng, Ji."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "擊蒙。不利為寇，利御寇。",
-          "literal_ko": "몽골을 쳐라. 도적이 되는 것은 불리하지만, 도적을 저항하는 것은 유리하다.",
-          "interpretive_ko": "몽골을 쳐라. 도적이 되는 것은 불리하지만, 도적을 저항하는 것은 유리하다.",
+          "label_ko": "상구",
+          "original": "擊蒙 不利為寇 利禦寇",
+          "reading_ko": "격몽 불리위구 이어구",
+          "literal_ko": "몽매함을 쳐서 깨우친다. 도적이 되는 것은 이롭지 않고 도적을 막음이 이롭다.",
+          "interpretive_ko": "강한 개입은 방어 목적일 때만 정당하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "격몽. 부리為구, 리어구.",
-          "gloss_en": "Hit Mongolia. It is disadvantageous to be a bandit, but it is advantageous to resist bandits."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -430,99 +430,99 @@
     {
       "id": 5,
       "gua_text": {
-        "original": "需，有孚，光亨，貞吉。利涉大川。",
-        "literal_ko": "필요, 유부, 정길. 큰 내를 건넘이 이롭다.",
-        "interpretive_ko": "필요, 유부, 정길. 큰 내를 건넘이 이롭다.",
+        "original": "需 有孚 光亨 貞吉 利涉大川",
+        "reading_ko": "수 유부 광형 정길 리섭대천",
+        "literal_ko": "수는 믿음이 있으면 크게 형통하고 바르게 하면 길하다. 큰 내를 건넘이 이롭다.",
+        "interpretive_ko": "기다림의 때에는 신뢰를 지키며 준비를 완성해야 한다. 준비된 도전은 통한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "수, 유부, 광형, 정길. 리섭대천.",
-        "gloss_en": "Need, Youfu, Guangheng, Zhenji. Benefit from the great rivers."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "需于郊，利用恆，無咎。",
-          "literal_ko": "교외에서 필요하신 분들은 활용해 보세요. 그러면 허물이 없을 것입니다.",
-          "interpretive_ko": "교외에서 필요하신 분들은 활용해 보세요. 그러면 허물이 없을 것입니다.",
+          "label_ko": "초구",
+          "original": "需于郊 利用恒 无咎",
+          "reading_ko": "수우교 이용항 무구",
+          "literal_ko": "들판에서 기다리니, 항상함을 씀이 이롭고 허물이 없다.",
+          "interpretive_ko": "초기엔 조급함을 버리고 루틴을 지키는 것이 최선이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "수우교, 리용항, 무구.",
-          "gloss_en": "If you need it in the suburbs, make use of it, and there will be no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "需于沙，小有言，終吉。",
-          "literal_ko": "모래 속에 있어야하고, 작은 말, 결국 행운을 빕니다.",
-          "interpretive_ko": "모래 속에 있어야하고, 작은 말, 결국 행운을 빕니다.",
+          "label_ko": "구이",
+          "original": "需于沙 小有言 終吉",
+          "reading_ko": "수우사 소유언 종길",
+          "literal_ko": "모래밭에서 기다리니 작은 말썽이 있으나 끝내 길하다.",
+          "interpretive_ko": "잡음은 있어도 원칙을 지키면 결국 안정된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "수우사, 소유언, 종길.",
-          "gloss_en": "Need to be in the sand, small words, good luck in the end."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "需于泥，致寇至。",
-          "literal_ko": "진흙 속에 있어야 도적들이 도착할 수 있습니다.",
-          "interpretive_ko": "진흙 속에 있어야 도적들이 도착할 수 있습니다.",
+          "label_ko": "구삼",
+          "original": "需于泥 致寇至",
+          "reading_ko": "수우니 치구지",
+          "literal_ko": "진흙에서 기다리면 도적을 불러온다.",
+          "interpretive_ko": "애매한 위치에서 머뭇거리면 리스크가 급증한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "수우니, 치구지.",
-          "gloss_en": "Need to be in the mud, causing the bandits to arrive."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "需于血，出自穴。",
-          "literal_ko": "혈액이 필요하며 경혈에서 나옵니다.",
-          "interpretive_ko": "혈액이 필요하며 경혈에서 나옵니다.",
+          "label_ko": "육사",
+          "original": "需于血 出自穴",
+          "reading_ko": "수우혈 출자혈",
+          "literal_ko": "피흘림 가운데 기다리다가 굴에서 나온다.",
+          "interpretive_ko": "위험 구간에서도 침착히 버티면 탈출구가 생긴다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "수우혈, 출자혈.",
-          "gloss_en": "It needs blood and comes from acupuncture points."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "需于酒食，貞吉。",
-          "literal_ko": "마시고 먹고 바름하고 행운이 필요합니다.",
-          "interpretive_ko": "마시고 먹고 바름하고 행운이 필요합니다.",
+          "label_ko": "구오",
+          "original": "需于酒食 貞吉",
+          "reading_ko": "수우주식 정길",
+          "literal_ko": "주식(잔치) 가운데 기다리니 바르게 하면 길하다.",
+          "interpretive_ko": "자원이 있을 때일수록 절제와 기준이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "수우주식, 정길.",
-          "gloss_en": "Need to drink and eat, chastity and luck."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "入于穴，有不速之客三人來，敬之終吉。",
-          "literal_ko": "동굴에 들어서자 세 명의 불청객이 찾아와 행운을 빌어주었다.",
-          "interpretive_ko": "동굴에 들어서자 세 명의 불청객이 찾아와 행운을 빌어주었다.",
+          "label_ko": "상육",
+          "original": "入于穴 有不速之客三人來 敬之終吉",
+          "reading_ko": "입우혈 유불속지객삼인래 경지종길",
+          "literal_ko": "굴로 들어가니 뜻밖의 손님 셋이 온다. 공경하면 마침내 길하다.",
+          "interpretive_ko": "예상 밖 변수는 예의와 유연성으로 다뤄야 기회가 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "입우혈, 유부속지객삼인내, 경지종길.",
-          "gloss_en": "Entering the cave, three uninvited guests came to wish them good luck."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
