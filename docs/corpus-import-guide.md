@@ -15,6 +15,25 @@ npm run corpus:import
 생성 파일:
 - `data/hexagram_corpus.generated.json`
 
+## 3) 검증 실행
+
+```bash
+npm run corpus:validate
+```
+
+- 64괘 개수
+- 괘사 필드 누락
+- 효사 line_no(1~6) 정합성
+- 효사 6줄 완성 여부
+
+검증 실패 시 콘솔에 상세 원인 출력
+
+## 4) 운영 모니터링
+
+- 웹에서 `/corpus` 접속하면 반영률 대시보드 확인 가능
+
+## 5) 앱 반영
+
 ## 3) 앱 반영
 
 `getHexagramCorpus()`는 generated JSON을 우선 사용하고,

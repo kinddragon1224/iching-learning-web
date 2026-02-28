@@ -42,6 +42,7 @@ export default function RootLayout({
             <Link href="/explore" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">64괘 탐색</Link>
             <Link href="/studio" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">학습 실험실</Link>
             <Link href="/daily" className="shrink-0 rounded border border-[var(--gold-line)] bg-[rgba(212,178,106,0.12)] px-3 py-1.5 text-xs text-[#f3e4be]">오늘의 물음</Link>
+            <Link href="/corpus" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">코퍼스 현황</Link>
             <Link href="/faq" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white">자주 묻는 질문</Link>
           </div>
         </nav>
