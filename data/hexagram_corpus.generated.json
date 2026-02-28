@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "version": "v1",
+    "updatedAt": null,
+    "notes": "Run npm run corpus:import to populate from reports/corpus_input.json"
+  },
+  "hexagrams": []
+}

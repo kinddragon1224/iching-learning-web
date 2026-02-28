@@ -1,4 +1,5 @@
 import { getHexagramTrack } from "@/data/pro_tracks";
+import generated from "@/data/hexagram_corpus.generated.json";
 
 export type HexagramLineCorpus = {
   line_no: number;
@@ -24,11 +25,21 @@ export type HexagramCorpus = {
   risk_flags?: string[];
 };
 
+type CorpusJson = {
+  meta?: { version?: string; updatedAt?: string | null };
+  hexagrams?: HexagramCorpus[];
+};
+
+const corpusJson = generated as CorpusJson;
+const byId = new Map<number, HexagramCorpus>((corpusJson.hexagrams ?? []).map((h) => [h.id, h]));
+
 /**
- * v1: pro_tracks 데이터를 corpus 스키마로 어댑팅.
- * v2부터는 Gemini Deep Research 산출(JSON)로 lines/core_terms/risk_flags를 채우면 됨.
+ * v1: generated JSON 우선 + 기존 pro_tracks fallback.
  */
 export function getHexagramCorpus(id: number): HexagramCorpus {
+  const fromJson = byId.get(id);
+  if (fromJson) return fromJson;
+
   const track = getHexagramTrack(id);
 
   return {

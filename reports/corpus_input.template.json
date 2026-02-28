@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "version": "v1",
+    "source": "gemini-deep-research",
+    "notes": "Fill hexagrams[] and save as reports/corpus_input.json"
+  },
+  "hexagrams": [
+    {
+      "id": 1,
+      "gua_text": {
+        "original": "元亨利貞",
+        "literal_ko": "크게 형통하고 바름을 지키는 것이 이롭다.",
+        "interpretive_ko": "시작의 힘이 크지만 기준을 지킬 때 길이 열린다.",
+        "notes": ["샘플"]
+      },
+      "lines": [
+        {
+          "line_no": 1,
+          "label_ko": "초구",
+          "label_hanja": "初九",
+          "original": "潛龍勿用",
+          "literal_ko": "잠룡이니 쓰지 말라.",
+          "interpretive_ko": "실력을 숨기고 때를 기다려라.",
+          "notes": []
+        }
+      ],
+      "core_terms": [
+        {
+          "term": "貞",
+          "render": "바름을 지킴",
+          "rationale": "상황에 맞는 정당한 기준을 유지한다는 뜻"
+        }
+      ],
+      "risk_flags": ["점술적 단정 금지"]
+    }
+  ]
+}
