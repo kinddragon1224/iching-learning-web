@@ -2,15 +2,17 @@
   "meta": {
     "version": "v1",
     "source": "auto-bootstrap-zhouyi-pm+gtx",
-    "updatedAt": "2026-02-28T17:53:10.461Z"
+    "updatedAt": "2026-02-28T17:53:10.461Z",
+    "normalizedAt": "2026-02-28T18:01:28.414Z",
+    "normalization": "term-unification-v1"
   },
   "hexagrams": [
     {
       "id": 1,
       "gua_text": {
         "original": "乾，元亨，利貞。",
-        "literal_ko": "Qian, Yuanheng, Li Zhen.",
-        "interpretive_ko": "Qian, Yuanheng, Li Zhen.",
+        "literal_ko": "건, 원형이정.",
+        "interpretive_ko": "건, 원형이정.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -21,8 +23,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "潛龍勿用。",
-          "literal_ko": "Qianlong을 사용하지 마십시오.",
-          "interpretive_ko": "Qianlong을 사용하지 마십시오.",
+          "literal_ko": "잠룡을 쓰지 말라.",
+          "interpretive_ko": "잠룡을 쓰지 말라.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -134,8 +136,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "含章，可貞。或從王事，無成有終。",
-          "literal_ko": "장이 포함되어 있으며 순결할 수 있습니다. 아니면 왕을 위해 일하면 성공하지 못할 것입니다.",
-          "interpretive_ko": "장이 포함되어 있으며 순결할 수 있습니다. 아니면 왕을 위해 일하면 성공하지 못할 것입니다.",
+          "literal_ko": "장이 포함되어 있으며 바름할 수 있습니다. 아니면 왕을 위해 일하면 성공하지 못할 것입니다.",
+          "interpretive_ko": "장이 포함되어 있으며 바름할 수 있습니다. 아니면 왕을 위해 일하면 성공하지 못할 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -146,8 +148,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "括囊，無咎，無譽。",
-          "literal_ko": "비난도 없고 평판도 없습니다.",
-          "interpretive_ko": "비난도 없고 평판도 없습니다.",
+          "literal_ko": "허물도 없고 평판도 없습니다.",
+          "interpretive_ko": "허물도 없고 평판도 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -211,8 +213,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "屯如邅如，乘馬班如，匪寇，婚媾。女子貞不字，十年乃字。",
-          "literal_ko": "마을은 종루같고, 말은 반루같고, 도적은 도적같고, 부부는 섹스를 하고 있다. 여자의 순결은 말이 아니지만 10년은 말이 된다.",
-          "interpretive_ko": "마을은 종루같고, 말은 반루같고, 도적은 도적같고, 부부는 섹스를 하고 있다. 여자의 순결은 말이 아니지만 10년은 말이 된다.",
+          "literal_ko": "마을은 종루같고, 말은 반루같고, 도적은 도적같고, 부부는 섹스를 하고 있다. 여자의 바름은 말이 아니지만 10년은 말이 된다.",
+          "interpretive_ko": "마을은 종루같고, 말은 반루같고, 도적은 도적같고, 부부는 섹스를 하고 있다. 여자의 바름은 말이 아니지만 10년은 말이 된다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -247,8 +249,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "屯其膏，小貞吉，大貞凶。",
-          "literal_ko": "연고를 넣으면 작은 순결이면 상서롭고, 큰 순결이면 불길하다.",
-          "interpretive_ko": "연고를 넣으면 작은 순결이면 상서롭고, 큰 순결이면 불길하다.",
+          "literal_ko": "연고를 넣으면 작은 바름이면 상서롭고, 큰 바름이면 불길하다.",
+          "interpretive_ko": "연고를 넣으면 작은 바름이면 상서롭고, 큰 바름이면 불길하다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -365,8 +367,8 @@
       "id": 5,
       "gua_text": {
         "original": "需，有孚，光亨，貞吉。利涉大川。",
-        "literal_ko": "필요, Youfu, Guangheng, Zhenji. 큰 강의 혜택을 누리세요.",
-        "interpretive_ko": "필요, Youfu, Guangheng, Zhenji. 큰 강의 혜택을 누리세요.",
+        "literal_ko": "필요, Youfu, Guangheng, Zhenji. 큰 강의 이로움을 누리세요.",
+        "interpretive_ko": "필요, Youfu, Guangheng, Zhenji. 큰 강의 이로움을 누리세요.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -425,8 +427,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "需于酒食，貞吉。",
-          "literal_ko": "마시고 먹고 순결하고 행운이 필요합니다.",
-          "interpretive_ko": "마시고 먹고 순결하고 행운이 필요합니다.",
+          "literal_ko": "마시고 먹고 바름하고 행운이 필요합니다.",
+          "interpretive_ko": "마시고 먹고 바름하고 행운이 필요합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -490,8 +492,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "食舊德，貞厲，終吉。或從王事，無成。",
-          "literal_ko": "오래된 미덕을 먹고 순결하고 확고하며 궁극적으로 행운을 누리십시오. 아니면 왕을 위해 일하면 아무 일도 일어나지 않을 것입니다.",
-          "interpretive_ko": "오래된 미덕을 먹고 순결하고 확고하며 궁극적으로 행운을 누리십시오. 아니면 왕을 위해 일하면 아무 일도 일어나지 않을 것입니다.",
+          "literal_ko": "오래된 미덕을 먹고 바름하고 확고하며 궁극적으로 행운을 누리십시오. 아니면 왕을 위해 일하면 아무 일도 일어나지 않을 것입니다.",
+          "interpretive_ko": "오래된 미덕을 먹고 바름하고 확고하며 궁극적으로 행운을 누리십시오. 아니면 왕을 위해 일하면 아무 일도 일어나지 않을 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -603,8 +605,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "田有禽，利執言，無咎。長子帥師，弟子輿尸，貞凶。",
-          "literal_ko": "들에는 새들이 있으니 말하는 데에 흠이 없느니라. 큰 아들은 잘 생긴 선생님이고 그의 제자들은 시체를 담당합니다. 그는 순결하고 사납다.",
-          "interpretive_ko": "들에는 새들이 있으니 말하는 데에 흠이 없느니라. 큰 아들은 잘 생긴 선생님이고 그의 제자들은 시체를 담당합니다. 그는 순결하고 사납다.",
+          "literal_ko": "들에는 새들이 있으니 말하는 데에 흠이 없느니라. 큰 아들은 잘 생긴 선생님이고 그의 제자들은 시체를 담당합니다. 그는 바름하고 사납다.",
+          "interpretive_ko": "들에는 새들이 있으니 말하는 데에 흠이 없느니라. 큰 아들은 잘 생긴 선생님이고 그의 제자들은 시체를 담당합니다. 그는 바름하고 사납다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -656,8 +658,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "比之自內，貞吉。",
-          "literal_ko": "내부와 비교하면 순결하고 상서로운 것입니다.",
-          "interpretive_ko": "내부와 비교하면 순결하고 상서로운 것입니다.",
+          "literal_ko": "내부와 비교하면 바름하고 상서로운 것입니다.",
+          "interpretive_ko": "내부와 비교하면 바름하고 상서로운 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -680,8 +682,8 @@
           "label_ko": "육사",
           "label_hanja": "六四",
           "original": "外比之，貞吉。",
-          "literal_ko": "외부 비교, 순결 및 행운을 빕니다.",
-          "interpretive_ko": "외부 비교, 순결 및 행운을 빕니다.",
+          "literal_ko": "외부 비교, 바름 및 행운을 빕니다.",
+          "interpretive_ko": "외부 비교, 바름 및 행운을 빕니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -793,8 +795,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "既雨既處，尚德載，婦貞厲。月几望，君子征凶。",
-          "literal_ko": "비가 오고 비가 내리는 곳에는 덕이 높고 여자는 순결하고 강하다. 달을 보면 신사가 위험해진다.",
-          "interpretive_ko": "비가 오고 비가 내리는 곳에는 덕이 높고 여자는 순결하고 강하다. 달을 보면 신사가 위험해진다.",
+          "literal_ko": "비가 오고 비가 내리는 곳에는 덕이 높고 여자는 바름하고 강하다. 달을 보면 신사가 위험해진다.",
+          "interpretive_ko": "비가 오고 비가 내리는 곳에는 덕이 높고 여자는 바름하고 강하다. 달을 보면 신사가 위험해진다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -834,8 +836,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "履道坦坦，幽人貞吉。",
-          "literal_ko": "길은 평탄하고 사람은 순결하고 상서롭다.",
-          "interpretive_ko": "길은 평탄하고 사람은 순결하고 상서롭다.",
+          "literal_ko": "길은 평탄하고 사람은 바름하고 상서롭다.",
+          "interpretive_ko": "길은 평탄하고 사람은 바름하고 상서롭다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -870,8 +872,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "夬履，貞厲。",
-          "literal_ko": "Chuanlu, 순결과 날카로움.",
-          "interpretive_ko": "Chuanlu, 순결과 날카로움.",
+          "literal_ko": "Chuanlu, 바름과 날카로움.",
+          "interpretive_ko": "Chuanlu, 바름과 날카로움.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -882,8 +884,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "視履考祥，其旋元吉。",
-          "literal_ko": "신발을 보고 길조를 시험해 보면 그 회전이 길조일 것입니다.",
-          "interpretive_ko": "신발을 보고 길조를 시험해 보면 그 회전이 길조일 것입니다.",
+          "literal_ko": "신발을 보고 길함를 시험해 보면 그 회전이 길함일 것입니다.",
+          "interpretive_ko": "신발을 보고 길함를 시험해 보면 그 회전이 길함일 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1327,8 +1329,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "鳴謙，利用行師，征邑國。",
-          "literal_ko": "Ming Qian은 군대를 사용하여 국가를 정복했습니다.",
-          "interpretive_ko": "Ming Qian은 군대를 사용하여 국가를 정복했습니다.",
+          "literal_ko": "Ming 건은 군대를 사용하여 국가를 정복했습니다.",
+          "interpretive_ko": "Ming 건은 군대를 사용하여 국가를 정복했습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1368,8 +1370,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "介于石，不終日，貞吉。",
-          "literal_ko": "돌 사이에는 결코 영원히 지속되지 않으며 순결하고 상서로운 것이 될 것입니다.",
-          "interpretive_ko": "돌 사이에는 결코 영원히 지속되지 않으며 순결하고 상서로운 것이 될 것입니다.",
+          "literal_ko": "돌 사이에는 결코 영원히 지속되지 않으며 바름하고 상서로운 것이 될 것입니다.",
+          "interpretive_ko": "돌 사이에는 결코 영원히 지속되지 않으며 바름하고 상서로운 것이 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1433,8 +1435,8 @@
       "id": 17,
       "gua_text": {
         "original": "隨，元亨，利貞，無咎。",
-        "literal_ko": "Sui, Yuanheng, Li Zhen은 비난이 아닙니다.",
-        "interpretive_ko": "Sui, Yuanheng, Li Zhen은 비난이 아닙니다.",
+        "literal_ko": "Sui, 원형이정.은 비난이 아닙니다.",
+        "interpretive_ko": "Sui, 원형이정.은 비난이 아닙니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -1445,8 +1447,8 @@
           "label_ko": "초구",
           "label_hanja": "初九",
           "original": "官有渝，貞吉。出門交有功。",
-          "literal_ko": "관리는 순결과 행운을 상징하는 충칭을 가지고 있습니다. 나가서 공덕을 쌓으십시오.",
-          "interpretive_ko": "관리는 순결과 행운을 상징하는 충칭을 가지고 있습니다. 나가서 공덕을 쌓으십시오.",
+          "literal_ko": "관리는 바름과 행운을 상징하는 충칭을 가지고 있습니다. 나가서 공덕을 쌓으십시오.",
+          "interpretive_ko": "관리는 바름과 행운을 상징하는 충칭을 가지고 있습니다. 나가서 공덕을 쌓으십시오.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1469,8 +1471,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "系丈夫，失小子。隨有求得，利居貞。",
-          "literal_ko": "남편이에요. 저는 아들을 잃었어요. 무엇이든 구한다면 순결을 유지하는 것이 유익할 것입니다.",
-          "interpretive_ko": "남편이에요. 저는 아들을 잃었어요. 무엇이든 구한다면 순결을 유지하는 것이 유익할 것입니다.",
+          "literal_ko": "남편이에요. 저는 아들을 잃었어요. 무엇이든 구한다면 바름을 유지하는 것이 유익할 것입니다.",
+          "interpretive_ko": "남편이에요. 저는 아들을 잃었어요. 무엇이든 구한다면 바름을 유지하는 것이 유익할 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1481,8 +1483,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "隨有獲，貞凶。有孚在道，以明，何咎？",
-          "literal_ko": "이득, 순결, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 비난해야 합니까?",
-          "interpretive_ko": "이득, 순결, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 비난해야 합니까?",
+          "literal_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 비난해야 합니까?",
+          "interpretive_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 비난해야 합니까?",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1522,8 +1524,8 @@
       "id": 18,
       "gua_text": {
         "original": "蠱，元亨，利涉大川。先甲三日，后甲三日。",
-        "literal_ko": "Gu Yuanheng은 Dachuan의 혜택을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
-        "interpretive_ko": "Gu Yuanheng은 Dachuan의 혜택을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
+        "literal_ko": "Gu Yuanheng은 Dachuan의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
+        "interpretive_ko": "Gu Yuanheng은 Dachuan의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -1546,8 +1548,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "干母之蠱，不可貞。",
-          "literal_ko": "대모의 독은 순결할 수 없습니다.",
-          "interpretive_ko": "대모의 독은 순결할 수 없습니다.",
+          "literal_ko": "대모의 독은 바름할 수 없습니다.",
+          "interpretive_ko": "대모의 독은 바름할 수 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1683,8 +1685,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "敦臨，吉，無咎。",
-          "literal_ko": "Dunlin, 길조, 잘못 없음.",
-          "interpretive_ko": "Dunlin, 길조, 잘못 없음.",
+          "literal_ko": "Dunlin, 길함, 허물 없음.",
+          "interpretive_ko": "Dunlin, 길함, 허물 없음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1724,8 +1726,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "窺觀，利女貞。",
-          "literal_ko": "엿보는 것, 혜택을 누리십시오.",
-          "interpretive_ko": "엿보는 것, 혜택을 누리십시오.",
+          "literal_ko": "엿보는 것, 이로움을 누리십시오.",
+          "interpretive_ko": "엿보는 것, 이로움을 누리십시오.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1837,8 +1839,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "噬乾胏，得金矢，利艱貞，吉。",
-          "literal_ko": "줄기를 물면 고난과 순결에 유익하고 상서로운 황금 화살을 얻습니다.",
-          "interpretive_ko": "줄기를 물면 고난과 순결에 유익하고 상서로운 황금 화살을 얻습니다.",
+          "literal_ko": "줄기를 물면 고난과 바름에 유익하고 상서로운 황금 화살을 얻습니다.",
+          "interpretive_ko": "줄기를 물면 고난과 바름에 유익하고 상서로운 황금 화살을 얻습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1914,8 +1916,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "賁如濡如，永貞吉。",
-          "literal_ko": "촉촉한 것처럼 온유하고, 영원히 순결하고 상서롭습니다.",
-          "interpretive_ko": "촉촉한 것처럼 온유하고, 영원히 순결하고 상서롭습니다.",
+          "literal_ko": "촉촉한 것처럼 온유하고, 영원히 바름하고 상서롭습니다.",
+          "interpretive_ko": "촉촉한 것처럼 온유하고, 영원히 바름하고 상서롭습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1979,8 +1981,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "剝床以足，蔑貞凶。",
-          "literal_ko": "침대를 벗겨내는 것만으로도 순결과 악을 경멸하기에 충분합니다.",
-          "interpretive_ko": "침대를 벗겨내는 것만으로도 순결과 악을 경멸하기에 충분합니다.",
+          "literal_ko": "침대를 벗겨내는 것만으로도 바름과 악을 경멸하기에 충분합니다.",
+          "interpretive_ko": "침대를 벗겨내는 것만으로도 바름과 악을 경멸하기에 충분합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -1991,8 +1993,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "剝床以辨，蔑貞凶。",
-          "literal_ko": "순결과 악을 식별하고 경멸하기 위해 침대를 벗겨냅니다.",
-          "interpretive_ko": "순결과 악을 식별하고 경멸하기 위해 침대를 벗겨냅니다.",
+          "literal_ko": "바름과 악을 식별하고 경멸하기 위해 침대를 벗겨냅니다.",
+          "interpretive_ko": "바름과 악을 식별하고 경멸하기 위해 침대를 벗겨냅니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2193,8 +2195,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "可貞，無咎。",
-          "literal_ko": "순결하고 흠이 없습니다.",
-          "interpretive_ko": "순결하고 흠이 없습니다.",
+          "literal_ko": "바름하고 흠이 없습니다.",
+          "interpretive_ko": "바름하고 흠이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2234,8 +2236,8 @@
       "id": 26,
       "gua_text": {
         "original": "大畜，利貞。不家食吉，利涉大川。",
-        "literal_ko": "순결에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
-        "interpretive_ko": "순결에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
+        "literal_ko": "바름에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
+        "interpretive_ko": "바름에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -2270,8 +2272,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "良馬逐，利艱貞。曰閑輿衛，利有攸往。",
-          "literal_ko": "좋은 말은 서로 쫓아다니며 어렵고 순결한 것이 장점이다. 자유롭게 지키면 거기에 가면 유익이 있을 것이라고 합니다.",
-          "interpretive_ko": "좋은 말은 서로 쫓아다니며 어렵고 순결한 것이 장점이다. 자유롭게 지키면 거기에 가면 유익이 있을 것이라고 합니다.",
+          "literal_ko": "좋은 말은 서로 쫓아다니며 어렵고 바름한 것이 장점이다. 자유롭게 지키면 거기에 가면 유익이 있을 것이라고 합니다.",
+          "interpretive_ko": "좋은 말은 서로 쫓아다니며 어렵고 바름한 것이 장점이다. 자유롭게 지키면 거기에 가면 유익이 있을 것이라고 합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2359,8 +2361,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "拂頤，貞凶，十年勿用，無攸利。",
-          "literal_ko": "복의(富伯), 순결함과 악함은 10년 동안 사용하지 않으면 유익하지 않습니다.",
-          "interpretive_ko": "복의(富伯), 순결함과 악함은 10년 동안 사용하지 않으면 유익하지 않습니다.",
+          "literal_ko": "복의(富伯), 바름함과 악함은 10년 동안 사용하지 않으면 유익하지 않습니다.",
+          "interpretive_ko": "복의(富伯), 바름함과 악함은 10년 동안 사용하지 않으면 유익하지 않습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2537,8 +2539,8 @@
           "label_ko": "육삼",
           "label_hanja": "六三",
           "original": "來之坎坎，險且枕，入于坎窞，勿用。",
-          "literal_ko": "울퉁불퉁한 도로에서는 베개로 사용할 수 있도록 준비하세요. 거친 지형에 직면하면 사용하지 마십시오.",
-          "interpretive_ko": "울퉁불퉁한 도로에서는 베개로 사용할 수 있도록 준비하세요. 거친 지형에 직면하면 사용하지 마십시오.",
+          "literal_ko": "울퉁불퉁한 도로에서는 베개로 사용할 수 있도록 준비하세요. 거친 지형에 직면하면 쓰지 말라.",
+          "interpretive_ko": "울퉁불퉁한 도로에서는 베개로 사용할 수 있도록 준비하세요. 거친 지형에 직면하면 쓰지 말라.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2590,8 +2592,8 @@
       "id": 30,
       "gua_text": {
         "original": "離，利貞，亨。畜牝牛吉。",
-        "literal_ko": "리, 리젠, 헝. 동물은 길조입니다.",
-        "interpretive_ko": "리, 리젠, 헝. 동물은 길조입니다.",
+        "literal_ko": "리, 리젠, 헝. 동물은 길함입니다.",
+        "interpretive_ko": "리, 리젠, 헝. 동물은 길함입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -2768,8 +2770,8 @@
       "id": 32,
       "gua_text": {
         "original": "恆，亨，無咎，利貞，利有攸往。",
-        "literal_ko": "형(興)은 형통하고 흠이 없고 순결하고 유익하며 형통하다.",
-        "interpretive_ko": "형(興)은 형통하고 흠이 없고 순결하고 유익하며 형통하다.",
+        "literal_ko": "형(興)은 형통하고 흠이 없고 바름하고 유익하며 형통하다.",
+        "interpretive_ko": "형(興)은 형통하고 흠이 없고 바름하고 유익하며 형통하다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -2780,8 +2782,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "浚恆，貞凶，無攸利。",
-          "literal_ko": "Jun Heng, 순결과 불운, 이익이 없습니다.",
-          "interpretive_ko": "Jun Heng, 순결과 불운, 이익이 없습니다.",
+          "literal_ko": "Jun Heng, 바름과 불운, 이익이 없습니다.",
+          "interpretive_ko": "Jun Heng, 바름과 불운, 이익이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2828,8 +2830,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "恆其德，貞婦人吉，夫子凶。",
-          "literal_ko": "덕을 지키면 순결한 여자는 복을 받고 남편은 불행하게 된다.",
-          "interpretive_ko": "덕을 지키면 순결한 여자는 복을 받고 남편은 불행하게 된다.",
+          "literal_ko": "덕을 지키면 바름한 여자는 복을 받고 남편은 불행하게 된다.",
+          "interpretive_ko": "덕을 지키면 바름한 여자는 복을 받고 남편은 불행하게 된다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -2946,8 +2948,8 @@
       "id": 34,
       "gua_text": {
         "original": "大壯，利貞。",
-        "literal_ko": "크고 강하며 순결에 유익합니다.",
-        "interpretive_ko": "크고 강하며 순결에 유익합니다.",
+        "literal_ko": "크고 강하며 바름에 유익합니다.",
+        "interpretive_ko": "크고 강하며 바름에 유익합니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -2982,8 +2984,8 @@
           "label_ko": "구삼",
           "label_hanja": "九三",
           "original": "小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。",
-          "literal_ko": "악당은 힘을 사용해야 하고, 신사는 무자비함과 순결을 사용해야 합니다. 숫양이 영주에게 닿으면 뿔이 부러진다.",
-          "interpretive_ko": "악당은 힘을 사용해야 하고, 신사는 무자비함과 순결을 사용해야 합니다. 숫양이 영주에게 닿으면 뿔이 부러진다.",
+          "literal_ko": "악당은 힘을 사용해야 하고, 신사는 무자비함과 바름을 사용해야 합니다. 숫양이 영주에게 닿으면 뿔이 부러진다.",
+          "interpretive_ko": "악당은 힘을 사용해야 하고, 신사는 무자비함과 바름을 사용해야 합니다. 숫양이 영주에게 닿으면 뿔이 부러진다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3059,8 +3061,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "晉如，愁如，貞吉。受茲介福于其王母。",
-          "literal_ko": "진은 그렇고, 걱정은 그렇고, 순결이 좋은 것 같아요. 나는 그의 여왕 어머니의 축복을 받았습니다.",
-          "interpretive_ko": "진은 그렇고, 걱정은 그렇고, 순결이 좋은 것 같아요. 나는 그의 여왕 어머니의 축복을 받았습니다.",
+          "literal_ko": "진은 그렇고, 걱정은 그렇고, 바름이 좋은 것 같아요. 나는 그의 여왕 어머니의 축복을 받았습니다.",
+          "interpretive_ko": "진은 그렇고, 걱정은 그렇고, 바름이 좋은 것 같아요. 나는 그의 여왕 어머니의 축복을 받았습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3083,8 +3085,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "晉如碩鼠，貞厲。",
-          "literal_ko": "진은 쥐같고 순결하고 사나워요.",
-          "interpretive_ko": "진은 쥐같고 순결하고 사나워요.",
+          "literal_ko": "진은 쥐같고 바름하고 사나워요.",
+          "interpretive_ko": "진은 쥐같고 바름하고 사나워요.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3124,8 +3126,8 @@
       "id": 36,
       "gua_text": {
         "original": "明夷，利艱貞。",
-        "literal_ko": "Mingyi, 이익, 고난 및 순결.",
-        "interpretive_ko": "Mingyi, 이익, 고난 및 순결.",
+        "literal_ko": "Mingyi, 이익, 고난 및 바름.",
+        "interpretive_ko": "Mingyi, 이익, 고난 및 바름.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3213,8 +3215,8 @@
       "id": 37,
       "gua_text": {
         "original": "家人，利女貞。",
-        "literal_ko": "가족, 혜택을 누리세요.",
-        "interpretive_ko": "가족, 혜택을 누리세요.",
+        "literal_ko": "가족, 이로움을 누리세요.",
+        "interpretive_ko": "가족, 이로움을 누리세요.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3374,8 +3376,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "睽孤，見豕負涂，載鬼一車，先張之弧，后說之弧，匪寇婚媾，往遇雨則吉。",
-          "literal_ko": "귀구는 돼지가 투를 안고 귀신을 수레에 태운 것을 보고 먼저 호를 그린 다음 호에 도적과 도적이 결혼하고 비를 만나러 가면 길조가 될 것이라고 전한다.",
-          "interpretive_ko": "귀구는 돼지가 투를 안고 귀신을 수레에 태운 것을 보고 먼저 호를 그린 다음 호에 도적과 도적이 결혼하고 비를 만나러 가면 길조가 될 것이라고 전한다.",
+          "literal_ko": "귀구는 돼지가 투를 안고 귀신을 수레에 태운 것을 보고 먼저 호를 그린 다음 호에 도적과 도적이 결혼하고 비를 만나러 가면 길함가 될 것이라고 전한다.",
+          "interpretive_ko": "귀구는 돼지가 투를 안고 귀신을 수레에 태운 것을 보고 먼저 호를 그린 다음 호에 도적과 도적이 결혼하고 비를 만나러 가면 길함가 될 것이라고 전한다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3463,8 +3465,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "往蹇來碩，吉。利見大人。",
-          "literal_ko": "큰 재산을 얻기 위해 Jian에 가면 길조입니다. 어른들을 볼 수 있는 이점이 있습니다.",
-          "interpretive_ko": "큰 재산을 얻기 위해 Jian에 가면 길조입니다. 어른들을 볼 수 있는 이점이 있습니다.",
+          "literal_ko": "큰 재산을 얻기 위해 Jian에 가면 길함입니다. 어른들을 볼 수 있는 이점이 있습니다.",
+          "interpretive_ko": "큰 재산을 얻기 위해 Jian에 가면 길함입니다. 어른들을 볼 수 있는 이점이 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3480,8 +3482,8 @@
       "id": 40,
       "gua_text": {
         "original": "解，利西南。無所往，其來復吉。有攸往，夙吉。",
-        "literal_ko": "해결책은 남서쪽에 혜택을 주는 것입니다. 갈 곳이 없고, 오면 행운이 찾아올 것이다. 어딘가에 가면 길조입니다.",
-        "interpretive_ko": "해결책은 남서쪽에 혜택을 주는 것입니다. 갈 곳이 없고, 오면 행운이 찾아올 것이다. 어딘가에 가면 길조입니다.",
+        "literal_ko": "해결책은 남서쪽에 이로움을 주는 것입니다. 갈 곳이 없고, 오면 길함이 온다. 어딘가에 가면 길함입니다.",
+        "interpretive_ko": "해결책은 남서쪽에 이로움을 주는 것입니다. 갈 곳이 없고, 오면 길함이 온다. 어딘가에 가면 길함입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3569,8 +3571,8 @@
       "id": 41,
       "gua_text": {
         "original": "損，有孚，元吉，無咎，可貞，利有攸往。曷之用二簋，可用享。",
-        "literal_ko": "상실이란 행운, 행운, 비난 없음, 순결, 행운을 의미합니다. 두 개의 Gui를 사용하여 즐길 수 있습니다.",
-        "interpretive_ko": "상실이란 행운, 행운, 비난 없음, 순결, 행운을 의미합니다. 두 개의 Gui를 사용하여 즐길 수 있습니다.",
+        "literal_ko": "상실이란 행운, 행운, 비난 없음, 바름, 행운을 의미합니다. 두 개의 Gui를 사용하여 즐길 수 있습니다.",
+        "interpretive_ko": "상실이란 행운, 행운, 비난 없음, 바름, 행운을 의미합니다. 두 개의 Gui를 사용하여 즐길 수 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3593,8 +3595,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "利貞，征凶，弗損益之。",
-          "literal_ko": "그것은 순결에 유익하고, 악을 정복하며, 얻거나 잃는 데 사용될 수 없습니다.",
-          "interpretive_ko": "그것은 순결에 유익하고, 악을 정복하며, 얻거나 잃는 데 사용될 수 없습니다.",
+          "literal_ko": "그것은 바름에 유익하고, 악을 정복하며, 얻거나 잃는 데 사용될 수 없습니다.",
+          "interpretive_ko": "그것은 바름에 유익하고, 악을 정복하며, 얻거나 잃는 데 사용될 수 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3641,8 +3643,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "弗損，益之，無咎，貞吉，利有攸往。得臣無家。",
-          "literal_ko": "손실이 없으면 이익이 있을 것입니다. 비난은 없을 것입니다. 순결하고 상서로운 일이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
-          "interpretive_ko": "손실이 없으면 이익이 있을 것입니다. 비난은 없을 것입니다. 순결하고 상서로운 일이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
+          "literal_ko": "손실이 없으면 이익이 있을 것입니다. 비난은 없을 것입니다. 바름하고 상서로운 일이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
+          "interpretive_ko": "손실이 없으면 이익이 있을 것입니다. 비난은 없을 것입니다. 바름하고 상서로운 일이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3836,8 +3838,8 @@
       "id": 44,
       "gua_text": {
         "original": "姤，女壯，勿用取女。",
-        "literal_ko": "Jiao, 소녀는 강합니다. 소녀를 얻기 위해 그것을 사용하지 마십시오.",
-        "interpretive_ko": "Jiao, 소녀는 강합니다. 소녀를 얻기 위해 그것을 사용하지 마십시오.",
+        "literal_ko": "Jiao, 소녀는 강합니다. 소녀를 얻기 위해 그것을 쓰지 말라.",
+        "interpretive_ko": "Jiao, 소녀는 강합니다. 소녀를 얻기 위해 그것을 쓰지 말라.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -3848,8 +3850,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "系于金柅，貞吉，有攸往，見凶，羸豕踟躅。",
-          "literal_ko": "순결과 행운을 상징하는 진즈(Jin Zhi)와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
-          "interpretive_ko": "순결과 행운을 상징하는 진즈(Jin Zhi)와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
+          "literal_ko": "바름과 행운을 상징하는 진즈(Jin Zhi)와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
+          "interpretive_ko": "바름과 행운을 상징하는 진즈(Jin Zhi)와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -3925,8 +3927,8 @@
       "id": 45,
       "gua_text": {
         "original": "萃，亨。王假有廟，利見大人，亨，利貞。用大牲吉，利有攸往。",
-        "literal_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 순결해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
-        "interpretive_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 순결해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
+        "literal_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 바름해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
+        "interpretive_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 바름해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -4086,8 +4088,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "冥升，利于不息之貞。",
-          "literal_ko": "Ming Sheng은 끝없는 순결에 도움이 됩니다.",
-          "interpretive_ko": "Ming Sheng은 끝없는 순결에 도움이 됩니다.",
+          "literal_ko": "Ming Sheng은 끝없는 바름에 도움이 됩니다.",
+          "interpretive_ko": "Ming Sheng은 끝없는 바름에 도움이 됩니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4103,8 +4105,8 @@
       "id": 47,
       "gua_text": {
         "original": "困，亨，貞大人吉，無咎。有言不信。",
-        "literal_ko": "졸음, 번영, 순결은 상서롭고 비난이 없습니다. 믿거나 말거나.",
-        "interpretive_ko": "졸음, 번영, 순결은 상서롭고 비난이 없습니다. 믿거나 말거나.",
+        "literal_ko": "졸음, 번영, 바름은 상서롭고 비난이 없습니다. 믿거나 말거나.",
+        "interpretive_ko": "졸음, 번영, 바름은 상서롭고 비난이 없습니다. 믿거나 말거나.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -4430,8 +4432,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "鼎黃耳金鉉，利貞。",
-          "literal_ko": "삼각대의 노란색 귀는 금색으로 순결에 유익합니다.",
-          "interpretive_ko": "삼각대의 노란색 귀는 금색으로 순결에 유익합니다.",
+          "literal_ko": "삼각대의 노란색 귀는 금색으로 바름에 유익합니다.",
+          "interpretive_ko": "삼각대의 노란색 귀는 금색으로 바름에 유익합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4442,8 +4444,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "鼎玉鉉，大吉，無不利。",
-          "literal_ko": "Ding Yuxuan, 행운을 빌며 불이익은 없습니다.",
-          "interpretive_ko": "Ding Yuxuan, 행운을 빌며 불이익은 없습니다.",
+          "literal_ko": "Ding Yuxuan, 행운을 빌며 해로움이 없다.",
+          "interpretive_ko": "Ding Yuxuan, 행운을 빌며 해로움이 없다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4661,8 +4663,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "鴻漸于磐，飲食衎衎，吉。",
-          "literal_ko": "Hongjian은 바위에 있고 먹고 마시는 것이 길조입니다.",
-          "interpretive_ko": "Hongjian은 바위에 있고 먹고 마시는 것이 길조입니다.",
+          "literal_ko": "Hongjian은 바위에 있고 먹고 마시는 것이 길함입니다.",
+          "interpretive_ko": "Hongjian은 바위에 있고 먹고 마시는 것이 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4750,8 +4752,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "眇能視，利幽人之貞。",
-          "literal_ko": "전갈은 사람들의 순결에 도움이 될 수 있는 것을 볼 수 있습니다.",
-          "interpretive_ko": "전갈은 사람들의 순결에 도움이 될 수 있는 것을 볼 수 있습니다.",
+          "literal_ko": "전갈은 사람들의 바름에 도움이 될 수 있는 것을 볼 수 있습니다.",
+          "interpretive_ko": "전갈은 사람들의 바름에 도움이 될 수 있는 것을 볼 수 있습니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -4839,8 +4841,8 @@
           "label_ko": "육이",
           "label_hanja": "六二",
           "original": "丰其蔀，日中見斗，往得疑疾，有孚發若，吉。",
-          "literal_ko": "풍부하면 대소싸움을 보게 되고, 의심스러운 질병에 걸리게 된다. 당신이 번영한다면 길조가 될 것입니다.",
-          "interpretive_ko": "풍부하면 대소싸움을 보게 되고, 의심스러운 질병에 걸리게 된다. 당신이 번영한다면 길조가 될 것입니다.",
+          "literal_ko": "풍부하면 대소싸움을 보게 되고, 의심스러운 질병에 걸리게 된다. 당신이 번영한다면 길함가 될 것입니다.",
+          "interpretive_ko": "풍부하면 대소싸움을 보게 되고, 의심스러운 질병에 걸리게 된다. 당신이 번영한다면 길함가 될 것입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5005,8 +5007,8 @@
           "label_ko": "초육",
           "label_hanja": "初六",
           "original": "進退，利武人之貞。",
-          "literal_ko": "전진하고 후퇴하여 전사의 순결을 이롭게 합니다.",
-          "interpretive_ko": "전진하고 후퇴하여 전사의 순결을 이롭게 합니다.",
+          "literal_ko": "전진하고 후퇴하여 전사의 바름을 이롭게 합니다.",
+          "interpretive_ko": "전진하고 후퇴하여 전사의 바름을 이롭게 합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5053,8 +5055,8 @@
           "label_ko": "구오",
           "label_hanja": "九五",
           "original": "貞吉悔亡，無不利。無初有終，先庚三日，后庚三日，吉。",
-          "literal_ko": "Zhenji는 자신의 죽음을 후회하며 불이익은 없습니다. 시작은 없고 끝만 있습니다. 첫째는 3일, 둘째는 3일이다. 길조입니다.",
-          "interpretive_ko": "Zhenji는 자신의 죽음을 후회하며 불이익은 없습니다. 시작은 없고 끝만 있습니다. 첫째는 3일, 둘째는 3일이다. 길조입니다.",
+          "literal_ko": "Zhenji는 자신의 죽음을 후회하며 해로움이 없다. 시작은 없고 끝만 있습니다. 첫째는 3일, 둘째는 3일이다. 길함입니다.",
+          "interpretive_ko": "Zhenji는 자신의 죽음을 후회하며 해로움이 없다. 시작은 없고 끝만 있습니다. 첫째는 3일, 둘째는 3일이다. 길함입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5065,8 +5067,8 @@
           "label_ko": "상구",
           "label_hanja": "上九",
           "original": "巽在床下，喪其資斧，貞凶。",
-          "literal_ko": "Xun은 침대 밑에서 도끼를 놓치고 순결하고 맹렬합니다.",
-          "interpretive_ko": "Xun은 침대 밑에서 도끼를 놓치고 순결하고 맹렬합니다.",
+          "literal_ko": "Xun은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
+          "interpretive_ko": "Xun은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5260,8 +5262,8 @@
       "id": 60,
       "gua_text": {
         "original": "節，亨。苦節，不可貞。",
-        "literal_ko": "축제, 편. 그것은 쓰라린 축제이며 순결할 수 없습니다.",
-        "interpretive_ko": "축제, 편. 그것은 쓰라린 축제이며 순결할 수 없습니다.",
+        "literal_ko": "축제, 편. 그것은 쓰라린 축제이며 바름할 수 없습니다.",
+        "interpretive_ko": "축제, 편. 그것은 쓰라린 축제이며 바름할 수 없습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -5332,8 +5334,8 @@
           "label_ko": "상육",
           "label_hanja": "上六",
           "original": "苦節，貞凶，悔亡。",
-          "literal_ko": "쓰라린 축제, 순결과 악, 후회와 죽음.",
-          "interpretive_ko": "쓰라린 축제, 순결과 악, 후회와 죽음.",
+          "literal_ko": "쓰라린 축제, 바름과 악, 후회와 죽음.",
+          "interpretive_ko": "쓰라린 축제, 바름과 악, 후회와 죽음.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5349,8 +5351,8 @@
       "id": 61,
       "gua_text": {
         "original": "中孚，豚魚吉，利涉大川，利貞。",
-        "literal_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 순결에 이롭습니다.",
-        "interpretive_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 순결에 이롭습니다.",
+        "literal_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 바름에 이롭습니다.",
+        "interpretive_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 바름에 이롭습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -5486,8 +5488,8 @@
           "label_ko": "구사",
           "label_hanja": "九四",
           "original": "無咎，弗過遇之。往厲必戒，勿用永貞。",
-          "literal_ko": "비난도 없고 만남의 잘못도 없습니다. 열심히한다면 조심해야하지만 영원한 순결을 사용하지 마십시오.",
-          "interpretive_ko": "비난도 없고 만남의 잘못도 없습니다. 열심히한다면 조심해야하지만 영원한 순결을 사용하지 마십시오.",
+          "literal_ko": "허물도 없고 만남의 잘못도 없습니다. 열심히한다면 조심해야하지만 영원한 바름을 쓰지 말라.",
+          "interpretive_ko": "허물도 없고 만남의 잘못도 없습니다. 열심히한다면 조심해야하지만 영원한 바름을 쓰지 말라.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5527,8 +5529,8 @@
       "id": 63,
       "gua_text": {
         "original": "既濟，亨，小利貞，初吉終亂。",
-        "literal_ko": "경제적이고 번영하며 이익과 순결이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
-        "interpretive_ko": "경제적이고 번영하며 이익과 순결이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
+        "literal_ko": "경제적이고 번영하며 이익과 바름이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
+        "interpretive_ko": "경제적이고 번영하며 이익과 바름이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
         ]
@@ -5640,8 +5642,8 @@
           "label_ko": "구이",
           "label_hanja": "九二",
           "original": "曳其輪，貞吉。",
-          "literal_ko": "바퀴를 당기는 것은 순결하고 상서로운 일입니다.",
-          "interpretive_ko": "바퀴를 당기는 것은 순결하고 상서로운 일입니다.",
+          "literal_ko": "바퀴를 당기는 것은 바름하고 상서로운 일입니다.",
+          "interpretive_ko": "바퀴를 당기는 것은 바름하고 상서로운 일입니다.",
           "notes": [
             "auto-bootstrapped; review required"
           ],
@@ -5676,8 +5678,8 @@
           "label_ko": "육오",
           "label_hanja": "六五",
           "original": "貞吉，無悔，君子之光，有孚，吉。",
-          "literal_ko": "순결과 상서로움, 후회 없음, 신사의 빛, 번영과 행운.",
-          "interpretive_ko": "순결과 상서로움, 후회 없음, 신사의 빛, 번영과 행운.",
+          "literal_ko": "바름과 상서로움, 후회 없음, 신사의 빛, 번영과 행운.",
+          "interpretive_ko": "바름과 상서로움, 후회 없음, 신사의 빛, 번영과 행운.",
           "notes": [
             "auto-bootstrapped; review required"
           ],

@@ -10,7 +10,8 @@
     "validate:data": "node scripts/validate-data.mjs",
     "cards:apply": "node scripts/apply-card-assets.mjs",
     "corpus:import": "node scripts/import-corpus.mjs",
-    "corpus:validate": "node scripts/validate-corpus.mjs"
+    "corpus:validate": "node scripts/validate-corpus.mjs",
+    "corpus:normalize": "node scripts/normalize-corpus-terms.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
