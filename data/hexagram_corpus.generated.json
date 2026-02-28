@@ -18,13 +18,13 @@
     {
       "id": 1,
       "gua_text": {
-        "original": "乾，元亨，利貞。",
-        "literal_ko": "건: 크게 형통하니 바름을 지키는 것이 이롭다.",
-        "interpretive_ko": "건괘는 창조의 근원으로, 시작의 힘이 클수록 기준과 바름을 지켜야 길하다.",
+        "original": "乾 元亨利貞",
+        "literal_ko": "건은 크게 형통하니, 바름을 지킴이 이롭다.",
+        "interpretive_ko": "시작의 힘이 클수록 원칙과 절도를 지켜야 길하다.",
         "notes": [
           "auto-bootstrapped; review required"
         ],
-        "reading_ko": "건, 원형, 리정.",
+        "reading_ko": "건 원형이정",
         "gloss_en": "Qian, Yuanheng, Li Zhen."
       },
       "lines": [
@@ -32,85 +32,85 @@
           "line_no": 1,
           "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "潛龍勿用。",
-          "literal_ko": "잠룡이니 쓰지 말라.",
-          "interpretive_ko": "때가 아직 무르익지 않았으니 드러내기보다 내실을 다질 때다.",
+          "original": "潛龍勿用",
+          "reading_ko": "잠룡물용",
+          "literal_ko": "잠겨 있는 용이니 쓰지 말라.",
+          "interpretive_ko": "때가 아직 이르지 않았으니 드러내지 말고 실력을 기를 때다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v1"
           ],
-          "ambiguities": [],
-          "reading_ko": "잠룡물용.",
-          "gloss_en": "Do not use Qianlong."
+          "ambiguities": []
         },
         {
           "line_no": 2,
           "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "見龍再田，利見大人。",
-          "literal_ko": "들판에서 용을 다시 보는 것은 어른들을 만나는 좋은 방법이다.",
-          "interpretive_ko": "들판에서 용을 다시 보는 것은 어른들을 만나는 좋은 방법이다.",
+          "original": "見龍在田 利見大人",
+          "reading_ko": "현룡재전 이견대인",
+          "literal_ko": "들판에 나타난 용이니, 대인을 만남이 이롭다.",
+          "interpretive_ko": "역량이 드러나기 시작하는 시기이니, 올바른 스승과 협력자를 만나야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v1"
           ],
-          "ambiguities": [],
-          "reading_ko": "견룡재전, 리견대인.",
-          "gloss_en": "Seeing the dragon again in the field is a good way to meet the adults."
+          "ambiguities": []
         },
         {
           "line_no": 3,
           "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "君子終日乾乾，夕惕若，厲，無咎。",
-          "literal_ko": "군자는 하루 종일 수고하고 밤에는 경계합니다. 그는 엄격하고 흠이 없으시다.",
-          "interpretive_ko": "군자는 하루 종일 수고하고 밤에는 경계합니다. 그는 엄격하고 흠이 없으시다.",
+          "original": "君子終日乾乾 夕惕若 厲无咎",
+          "reading_ko": "군자종일건건 석척약 려무구",
+          "literal_ko": "군자가 종일토록 힘쓰고 저녁에도 두려워하면, 위태로워도 허물이 없다.",
+          "interpretive_ko": "성과가 나도 방심하지 말고 긴장을 유지하면 큰 실수를 피할 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v1"
           ],
-          "ambiguities": [],
-          "reading_ko": "군자종일건건, 석척야, 려, 무구.",
-          "gloss_en": "A gentleman works hard all day long and is vigilant at night. He is strict and blameless."
+          "ambiguities": []
         },
         {
           "line_no": 4,
           "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "或躍在淵，無咎。",
-          "literal_ko": "아니면 심연으로 뛰어들어도 상관없습니다.",
-          "interpretive_ko": "아니면 심연으로 뛰어들어도 상관없습니다.",
+          "original": "或躍在淵 无咎",
+          "reading_ko": "혹약재연 무구",
+          "literal_ko": "혹은 뛰어오르고 혹은 연못에 있으니, 허물이 없다.",
+          "interpretive_ko": "도약 직전의 전환기다. 성급히 확정하지 말고 상황을 보며 타이밍을 잡아라.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v1"
           ],
-          "ambiguities": [],
-          "reading_ko": "혹약재연, 무구.",
-          "gloss_en": "Or jump into the abyss, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
           "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "飛龍在天，利見大人。",
-          "literal_ko": "날아 다니는 용이 하늘에있어 어른들을 만나기에 좋습니다.",
-          "interpretive_ko": "날아 다니는 용이 하늘에있어 어른들을 만나기에 좋습니다.",
+          "original": "飛龍在天 利見大人",
+          "reading_ko": "비룡재천 이견대인",
+          "literal_ko": "하늘을 나는 용이니, 대인을 만남이 이롭다.",
+          "interpretive_ko": "주도권을 쥘 수 있는 자리다. 큰 책임을 감당할 파트너십이 성패를 가른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v1"
           ],
-          "ambiguities": [],
-          "reading_ko": "비룡재천, 리견대인.",
-          "gloss_en": "The flying dragon is in the sky, which is good for meeting adults."
+          "ambiguities": []
         },
         {
           "line_no": 6,
           "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "亢龍有悔。",
-          "literal_ko": "자랑스러운 용은 후회합니다.",
-          "interpretive_ko": "자랑스러운 용은 후회합니다.",
+          "original": "亢龍有悔",
+          "reading_ko": "항룡유회",
+          "literal_ko": "지나치게 높이 오른 용은 뉘우침이 있다.",
+          "interpretive_ko": "정점일수록 과잉 자신을 경계해야 한다. 넘치면 곧 꺾인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v1"
           ],
-          "ambiguities": [],
-          "reading_ko": "항룡유회.",
-          "gloss_en": "A proud dragon has regrets."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
