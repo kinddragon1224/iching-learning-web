@@ -279,15 +279,35 @@ h3 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.line-step-reveal {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: lineStepReveal 320ms ease-out forwards;
+}
+
+@keyframes lineStepReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .studio-answer-btn,
   .studio-answer-correct,
   .studio-answer-wrong,
   .studio-pop-in,
   .studio-shake,
-  .studio-fade-in {
+  .studio-fade-in,
+  .line-step-reveal {
     animation: none !important;
     transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
   }
 }
 

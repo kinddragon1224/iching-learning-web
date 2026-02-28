@@ -111,7 +111,11 @@ export default async function HexagramCardDetailPage({
         <h2 className="mb-3 font-semibold">6효 원문 + 보편 해석</h2>
         <ol className="space-y-2 text-sm">
           {content.lineTexts.map((line, idx) => (
-            <li key={idx} className="rounded-lg bg-black/20 px-3 py-2 space-y-1">
+            <li
+              key={idx}
+              className="rounded-lg bg-black/20 px-3 py-2 space-y-1 line-step-reveal"
+              style={{ animationDelay: `${idx * 90}ms` }}
+            >
               <p><b>원문:</b> {toClassicalLineLabel(track?.linesKorean?.[idx], idx)}</p>
               <p><b>해석:</b> {line}</p>
             </li>
