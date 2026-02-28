@@ -10,7 +10,9 @@
     "refinedAtPass3": "2026-02-28T18:20:45.146Z",
     "refinement3": "remove-latin-artifacts",
     "refinedAtPass4": "2026-02-28T19:21:17.380Z",
-    "refinement4": "tone-unification-declarative-v1"
+    "refinement4": "tone-unification-declarative-v1",
+    "enrichedAt": "2026-02-28T20:01:36Z",
+    "enrichment": "kHangul-reading + gtx-en-gloss"
   },
   "hexagrams": [
     {
@@ -21,7 +23,9 @@
         "interpretive_ko": "건괘는 창조의 근원으로, 시작의 힘이 클수록 기준과 바름을 지켜야 길하다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "건, 원형, 리정.",
+        "gloss_en": "Qian, Yuanheng, Li Zhen."
       },
       "lines": [
         {
@@ -34,7 +38,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "잠룡물용.",
+          "gloss_en": "Do not use Qianlong."
         },
         {
           "line_no": 2,
@@ -46,7 +52,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "견룡재전, 리견대인.",
+          "gloss_en": "Seeing the dragon again in the field is a good way to meet the adults."
         },
         {
           "line_no": 3,
@@ -58,7 +66,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "군자종일건건, 석척야, 려, 무구.",
+          "gloss_en": "A gentleman works hard all day long and is vigilant at night. He is strict and blameless."
         },
         {
           "line_no": 4,
@@ -70,7 +80,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "혹약재연, 무구.",
+          "gloss_en": "Or jump into the abyss, no blame."
         },
         {
           "line_no": 5,
@@ -82,7 +94,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비룡재천, 리견대인.",
+          "gloss_en": "The flying dragon is in the sky, which is good for meeting adults."
         },
         {
           "line_no": 6,
@@ -94,7 +108,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "항룡유회.",
+          "gloss_en": "A proud dragon has regrets."
         }
       ],
       "core_terms": [],
@@ -110,7 +126,9 @@
         "interpretive_ko": "곤: 크게 형통하니 암말의 바름이 이롭다. 군자가 길을 나서면 먼저 미혹하나 뒤에 주인을 얻는다. 서남에서 벗을 얻고 동북에서 벗을 잃는다. 바르게 편안하면 길하다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "곤, 원형, 리빈마지정. 군자유유왕, 선미후득주. 리서남, 득붕, 동배, 상붕. 안정, 길.",
+        "gloss_en": "Kun, Yuanheng, Li Ma Zhen. When a gentleman wants to go somewhere, he loses himself first and then wins. To benefit the southwest, gain friends; to the northeast, lose friends. Anzhen, Ji."
       },
       "lines": [
         {
@@ -123,7 +141,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리상, 견빙지.",
+          "gloss_en": "Walking on frost, the ice arrives."
         },
         {
           "line_no": 2,
@@ -135,7 +155,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "직, 방, 대, 부습무부리.",
+          "gloss_en": "Straight, square, and big, there is no disadvantage if you don’t get used to it."
         },
         {
           "line_no": 3,
@@ -147,7 +169,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함장, 가정. 혹종왕사, 무성유종.",
+          "gloss_en": "Contains chapter, can be chastity. Or if you work for the king, there will be no success."
         },
         {
           "line_no": 4,
@@ -159,7 +183,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "괄낭, 무구, 무예.",
+          "gloss_en": "There is no blame, no reputation."
         },
         {
           "line_no": 5,
@@ -171,7 +197,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "황상, 원길.",
+          "gloss_en": "Huang Shang, Yuan Ji."
         },
         {
           "line_no": 6,
@@ -183,7 +211,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "룡전어야, 기혈현황.",
+          "gloss_en": "When dragons fight in the wild, their blood is black and yellow."
         }
       ],
       "core_terms": [],
@@ -199,7 +229,9 @@
         "interpretive_ko": "둔: 크게 형통하니 바름이 이롭다. 함부로 나아가지 말고 제후를 세움이 이롭다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "둔, 원형, 리정, 물용유유왕, 리건후.",
+        "gloss_en": "Tun, Yuanheng, is beneficial to Zhen. Do not use Youyou to benefit the establishment of a marquis."
       },
       "lines": [
         {
@@ -212,7 +244,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "반환, 리거정, 리건후.",
+          "gloss_en": "Panhuan is good for Juzhen and good for Jianhou."
         },
         {
           "line_no": 2,
@@ -224,7 +258,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "둔여전여, 승마반여, 비구, 혼구. 녀자정부자, 십년내자.",
+          "gloss_en": "The villages are like Zongru, the horses are like Banru, the bandits are bandits, and the couples are having sex. A woman's chastity is not a word, but ten years is a word."
         },
         {
           "line_no": 3,
@@ -236,7 +272,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "즉녹무우, 유입우림중, 군자궤부여사, 왕린.",
+          "gloss_en": "That is to say, there is no danger of a deer, but when it enters the forest, a gentleman would be reluctant to leave it alone and be stingy."
         },
         {
           "line_no": 4,
@@ -248,7 +286,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "승마반여, 구혼구, 무부리.",
+          "gloss_en": "Riding on a horse, proposing and having sex, there is no disadvantage."
         },
         {
           "line_no": 5,
@@ -260,7 +300,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "둔기고, 소정길, 대정흉.",
+          "gloss_en": "If you put the ointment in it, it will be auspicious if it is a small chastity, and it will be unlucky if it is a big chastity."
         },
         {
           "line_no": 6,
@@ -272,7 +314,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "승마반여, 읍혈련여.",
+          "gloss_en": "Riding a horse is like a class, crying and bleeding."
         }
       ],
       "core_terms": [],
@@ -288,7 +332,9 @@
         "interpretive_ko": "몽: 형통하다. 내가 어린 이를 구하는 것이 아니라 어린 이가 나를 구한다. 처음 물으면 알려주되, 거듭 어지럽히면 알리지 않는다. 바름이 이롭다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "몽, 형. 비아구동몽, 동몽구아. 초서고, 재삼독, 독칙부고. 리정.",
+        "gloss_en": "Meng, Heng. I beg Tong Meng, and Tong Meng beg me. If you complain at the beginning, you will blaspheme again and again. If you blaspheme again and again, you will not complain. Li Zhen."
       },
       "lines": [
         {
@@ -301,7 +347,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "발몽, 리용형인, 용설질곡, 이왕린.",
+          "gloss_en": "Enlightenment, using torture people, using words to shackles, used to be stingy."
         },
         {
           "line_no": 2,
@@ -313,7 +361,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "포몽길. 납부길. 자극가.",
+          "gloss_en": "Bao Mengji. Navji. Zi Ke family."
         },
         {
           "line_no": 3,
@@ -325,7 +375,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "물용취녀, 견금, 부부유궁, 무유리.",
+          "gloss_en": "Don't marry a girl, she will see gold, her husband will have no bow, and there will be no profit."
         },
         {
           "line_no": 4,
@@ -337,7 +389,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "곤몽, 린.",
+          "gloss_en": "Sleepy, stingy."
         },
         {
           "line_no": 5,
@@ -349,7 +403,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동몽, 길.",
+          "gloss_en": "Tong Meng, Ji."
         },
         {
           "line_no": 6,
@@ -361,7 +417,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "격몽. 부리為구, 리어구.",
+          "gloss_en": "Hit Mongolia. It is disadvantageous to be a bandit, but it is advantageous to resist bandits."
         }
       ],
       "core_terms": [],
@@ -377,7 +435,9 @@
         "interpretive_ko": "필요, 유부, 정길. 큰 내를 건넘이 이롭다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "수, 유부, 광형, 정길. 리섭대천.",
+        "gloss_en": "Need, Youfu, Guangheng, Zhenji. Benefit from the great rivers."
       },
       "lines": [
         {
@@ -390,7 +450,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "수우교, 리용항, 무구.",
+          "gloss_en": "If you need it in the suburbs, make use of it, and there will be no blame."
         },
         {
           "line_no": 2,
@@ -402,7 +464,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "수우사, 소유언, 종길.",
+          "gloss_en": "Need to be in the sand, small words, good luck in the end."
         },
         {
           "line_no": 3,
@@ -414,7 +478,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "수우니, 치구지.",
+          "gloss_en": "Need to be in the mud, causing the bandits to arrive."
         },
         {
           "line_no": 4,
@@ -426,7 +492,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "수우혈, 출자혈.",
+          "gloss_en": "It needs blood and comes from acupuncture points."
         },
         {
           "line_no": 5,
@@ -438,7 +506,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "수우주식, 정길.",
+          "gloss_en": "Need to drink and eat, chastity and luck."
         },
         {
           "line_no": 6,
@@ -450,7 +520,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "입우혈, 유부속지객삼인내, 경지종길.",
+          "gloss_en": "Entering the cave, three uninvited guests came to wish them good luck."
         }
       ],
       "core_terms": [],
@@ -466,7 +538,9 @@
         "interpretive_ko": "소송, 행운, 질식과 경계, 행운, 결국 불운. 어른들을 만나는 것은 좋지만 강을 건너는 것은 좋지 않습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "송, 유부, 질척, 중길, 종흉. 리견대인, 부리섭대천.",
+        "gloss_en": "Litigation, good fortune, suffocation and vigilance, good luck, bad luck in the end. It's good to meet the adults, but it's not good to cross the river."
       },
       "lines": [
         {
@@ -479,7 +553,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부영소사, 소유언, 종길.",
+          "gloss_en": "If you don't do things forever, if you have small words, it will be good in the end."
         },
         {
           "line_no": 2,
@@ -491,7 +567,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부극송, 귀이포, 기읍인삼백호, 무생.",
+          "gloss_en": "Unable to overcome the lawsuit, he returned to his homeland and became stubborn. There were three hundred households in his town, but none of them had any relatives."
         },
         {
           "line_no": 3,
@@ -503,7 +581,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "식구덕, 정려, 종길. 혹종왕사, 무성.",
+          "gloss_en": "Eat old virtues, be chaste and firm, and ultimately be lucky. Or if you work for the king, nothing will happen."
         },
         {
           "line_no": 4,
@@ -515,7 +595,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부극송, 복자명투, 안정, 길.",
+          "gloss_en": "If you can't overcome the lawsuit, you will be named Chongqing, An Zhen, and Ji."
         },
         {
           "line_no": 5,
@@ -527,7 +609,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "송원길.",
+          "gloss_en": "Litigation Yuanji."
         },
         {
           "line_no": 6,
@@ -539,7 +623,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "혹석지鞶대, 종조삼치지.",
+          "gloss_en": "Or the tin belt will be worn out three times in the end."
         }
       ],
       "core_terms": [],
@@ -555,7 +641,9 @@
         "interpretive_ko": "스승님, 저희 시아버지는 상서로우시니 죄가 없습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "사, 정장인길, 무구.",
+        "gloss_en": "Master, my father-in-law is auspicious and there is no blame."
       },
       "lines": [
         {
@@ -568,7 +656,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "사출이률, 부장흉.",
+          "gloss_en": "If the teacher comes out with the law, it will be a disaster."
         },
         {
           "line_no": 2,
@@ -580,7 +670,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "재사중, 길, 무구, 왕삼석명.",
+          "gloss_en": "In the division, good luck, no blame, Wang Sanxi Ming."
         },
         {
           "line_no": 3,
@@ -592,7 +684,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "사혹여시, 흉.",
+          "gloss_en": "The teacher or the corpse is unlucky."
         },
         {
           "line_no": 4,
@@ -604,7 +698,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "사좌차, 무구.",
+          "gloss_en": "Master Zuo Ci, no blame."
         },
         {
           "line_no": 5,
@@ -616,7 +712,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "전유금, 리집언, 무구. 장자솔사, 제자여시, 정흉.",
+          "gloss_en": "There are poultry in the field, and there is no fault in speaking. The eldest son is a handsome teacher, and his disciples are responsible for the corpse. He is chaste and fierce."
         },
         {
           "line_no": 6,
@@ -628,7 +726,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "대군유명, 개국승가, 소인물용.",
+          "gloss_en": "The great king has a destiny to found the country and inherit the family, but the villain should not use it."
         }
       ],
       "core_terms": [],
@@ -644,7 +744,9 @@
         "interpretive_ko": "비, 지. 원래 에는 잘못이 없습니다. 불안은 미래의 남편이 맹렬할 때만 찾아온다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "비, 길. 원서원영정, 무구. 부녕방내, 후부흉.",
+        "gloss_en": "Bi, Ji. The original Yuan Yongzhen has no fault. Unrest comes only when the future husband is fierce."
       },
       "lines": [
         {
@@ -657,7 +759,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부비지, 무구. 유부영부, 종내유타, 길.",
+          "gloss_en": "There is no fault in comparing it with others. If there is Fu Yingfou, he will eventually be there, which is auspicious."
         },
         {
           "line_no": 2,
@@ -669,7 +773,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비지자내, 정길.",
+          "gloss_en": "Compared with from within, it is chaste and auspicious."
         },
         {
           "line_no": 3,
@@ -681,7 +787,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비지비인.",
+          "gloss_en": "Compared to bandits."
         },
         {
           "line_no": 4,
@@ -693,7 +801,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "외비지, 정길.",
+          "gloss_en": "External comparison, chastity and good luck."
         },
         {
           "line_no": 5,
@@ -705,7 +815,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "현비, 왕용삼구, 실전금, 읍인부계, 길.",
+          "gloss_en": "Xianbi, the king uses three drives, loses the previous bird, and the people of the city do not follow the rules, which is auspicious."
         },
         {
           "line_no": 6,
@@ -717,7 +829,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비지무수, 흉.",
+          "gloss_en": "Compared with being headless, it is more fierce."
         }
       ],
       "core_terms": [],
@@ -733,7 +847,9 @@
         "interpretive_ko": "작은 동물, 암탉. 짙은 구름이 있지만 비는 내리지 않습니다. 나는 서쪽 교외에 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "소축, 형. 밀운부우, 자아서교.",
+        "gloss_en": "Small animal, Hen. Dense clouds but no rain, I am in the western suburbs."
       },
       "lines": [
         {
@@ -746,7 +862,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "복자도, 하기구? 길.",
+          "gloss_en": "What's the blame for regaining one's own way? lucky."
         },
         {
           "line_no": 2,
@@ -758,7 +876,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "견복, 길.",
+          "gloss_en": "Qianfu, Ji."
         },
         {
           "line_no": 3,
@@ -770,7 +890,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "여설복, 부처반목.",
+          "gloss_en": "Public opinion spreads, and husband and wife turn against each other."
         },
         {
           "line_no": 4,
@@ -782,7 +904,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부, 혈거척출, 무구.",
+          "gloss_en": "If there is Fu, the blood will come out and there will be no blame."
         },
         {
           "line_no": 5,
@@ -794,7 +918,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부련여, 부이기린.",
+          "gloss_en": "If there is a rich man like him, his neighbor will be rich."
         },
         {
           "line_no": 6,
@@ -806,7 +932,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "既우既처, 尚덕재, 부정려. 월궤망, 군자정흉.",
+          "gloss_en": "When it rains and where it rains, virtue is high and women are chaste and strong. When you look at the moon, a gentleman will be in danger."
         }
       ],
       "core_terms": [],
@@ -822,7 +950,9 @@
         "interpretive_ko": "신발을 신고, 호랑이 꼬리를 따라 걷는 것은 짜증나지 않고 번영합니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "리, 리호미, 부희인, 형.",
+        "gloss_en": "Shoeing, walking on the tail of a tiger, not annoying, but prosperous."
       },
       "lines": [
         {
@@ -835,7 +965,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "소리왕, 무구.",
+          "gloss_en": "There is no fault in walking as usual."
         },
         {
           "line_no": 2,
@@ -847,7 +979,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리도탄탄, 유인정길.",
+          "gloss_en": "The road is smooth and smooth, and the person is chaste and auspicious."
         },
         {
           "line_no": 3,
@@ -859,7 +993,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "묘능시, 파능리, 리호미, 희인, 흉. 무인為우대군.",
+          "gloss_en": "The scorpion can see, the lame can walk on the tail of a tiger, and it is harmful to people. A warrior is a great king."
         },
         {
           "line_no": 4,
@@ -871,7 +1007,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리호미, 소소, 종길.",
+          "gloss_en": "Walking on the tail of a tiger, you will be happy and have good luck in the end."
         },
         {
           "line_no": 5,
@@ -883,7 +1021,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "쾌리, 정려.",
+          "gloss_en": "Chuanlu, chastity and sharpness."
         },
         {
           "line_no": 6,
@@ -895,7 +1035,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "시리고상, 기선원길.",
+          "gloss_en": "If you look at the shoes and test their auspiciousness, their rotation will be auspicious."
         }
       ],
       "core_terms": [],
@@ -911,7 +1053,9 @@
         "interpretive_ko": "타이, 작은 것부터 큰 것까지, 지헨.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "태, 소왕대내, 길형.",
+        "gloss_en": "Tai, small to big, Jiheng."
       },
       "lines": [
         {
@@ -924,7 +1068,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "발모여, 이기인, 정길.",
+          "gloss_en": "Pull out the maoru and use it to conquer good luck."
         },
         {
           "line_no": 2,
@@ -936,7 +1082,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "포황, 용풍하, 부하유, 붕망, 득尚우중항.",
+          "gloss_en": "Baohuang, use Fenghe, not Yiyi, friends died, and still have to stay in Zhongxing."
         },
         {
           "line_no": 3,
@@ -948,7 +1096,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무평부피, 무왕부복, 간정무구. 물휼기부, 우식유복.",
+          "gloss_en": "There is no peace or failure, no return, no hardship, no blame. Don't worry about your wealth, you will be blessed with food."
         },
         {
           "line_no": 4,
@@ -960,7 +1110,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "편편부부, 이기린, 부계이부.",
+          "gloss_en": "If you are elegant but not rich, you will be like your neighbors, and if you are not careful, you will be rich."
         },
         {
           "line_no": 5,
@@ -972,7 +1124,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "제을귀매, 이지원길.",
+          "gloss_en": "Emperor Yi returned to his sister's home to bring good luck to Yuan Yuan."
         },
         {
           "line_no": 6,
@@ -984,7 +1138,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "성복우황, 물용사. 자읍고명, 정린.",
+          "gloss_en": "When the city is restored to the emperor, do not use teachers. Since the city tells the truth, Zhen stingy."
         }
       ],
       "core_terms": [],
@@ -1000,7 +1156,9 @@
         "interpretive_ko": "아니요, 아니요, 도둑질은 신사의 성실성에 좋지 않습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "부, 부지비인, 부리군자정, 대왕소내.",
+        "gloss_en": "No, no, banditry is not good for a gentleman's integrity."
       },
       "lines": [
         {
@@ -1013,7 +1171,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "발모여, 이기인, 정길형.",
+          "gloss_en": "Pull out Mao Ru and use it to make it prosperous and prosperous."
         },
         {
           "line_no": 2,
@@ -1025,7 +1185,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "포승, 소인길, 대인부형.",
+          "gloss_en": "Acceptance, the villain will be lucky, the adults will be prosperous."
         },
         {
           "line_no": 3,
@@ -1037,7 +1199,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "포수.",
+          "gloss_en": "Shameful."
         },
         {
           "line_no": 4,
@@ -1049,7 +1213,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유명무구, 주리지.",
+          "gloss_en": "There is no blame for fate, and it is good to be away from home."
         },
         {
           "line_no": 5,
@@ -1061,7 +1227,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "휴부, 대인길. 기망기망, 계우포상.",
+          "gloss_en": "If you don't, it's good luck, sir. Its death and its death are tied to the buds and mulberry trees."
         },
         {
           "line_no": 6,
@@ -1073,7 +1241,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "경부, 선부후희.",
+          "gloss_en": "Whether to pour or not, first deny and then be happy."
         }
       ],
       "core_terms": [],
@@ -1089,7 +1259,9 @@
         "interpretive_ko": "사람과 함께 일하고, 야생에서 사람과 함께 일하고, 발전하고, 큰 강을 건너는 데 이익을 얻고, 군자의 성실함을 이롭게 합니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "동인, 동인우야, 형, 리섭대천, 리군자정.",
+        "gloss_en": "Working with people, working with people in the wild, making progress, benefiting from crossing large rivers, and benefiting a gentleman's integrity."
       },
       "lines": [
         {
@@ -1102,7 +1274,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동인우문, 무구.",
+          "gloss_en": "There is no blame for being in the same household."
         },
         {
           "line_no": 2,
@@ -1114,7 +1288,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동인우종, 린.",
+          "gloss_en": "The same people are in the clan, and they are stingy."
         },
         {
           "line_no": 3,
@@ -1126,7 +1302,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "복융우망, 승기고능, 삼세부흥.",
+          "gloss_en": "He served as a soldier in Mang and was promoted to a high mausoleum. He was depressed at the age of three."
         },
         {
           "line_no": 4,
@@ -1138,7 +1316,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "승기용, 불극공, 길.",
+          "gloss_en": "If you take advantage of the attack, it will be auspicious for you to attack."
         },
         {
           "line_no": 5,
@@ -1150,7 +1330,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동인, 선호啕이후소, 대사극상우.",
+          "gloss_en": "Friends, first howl and then laugh, masters will defeat each other."
         },
         {
           "line_no": 6,
@@ -1162,7 +1344,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동인우교, 무회.",
+          "gloss_en": "Staying with people in the suburbs has no regrets."
         }
       ],
       "core_terms": [],
@@ -1178,7 +1362,9 @@
         "interpretive_ko": "대유, 위안헝.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "대유, 원형.",
+        "gloss_en": "Dayou, Yuanheng."
       },
       "lines": [
         {
@@ -1191,7 +1377,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무교해, 비구, 간칙무구.",
+          "gloss_en": "If there is no harm, there will be no blame. If there is difficulty, there will be no blame."
         },
         {
           "line_no": 2,
@@ -1203,7 +1391,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "대거이재, 유유왕, 무구.",
+          "gloss_en": "A large cart can carry it, and there is no blame for going there."
         },
         {
           "line_no": 3,
@@ -1215,7 +1405,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "공용형우천자, 소인불극.",
+          "gloss_en": "The public is prosperous in the emperor, and the villain is Fuke."
         },
         {
           "line_no": 4,
@@ -1227,7 +1419,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비기팽, 무구.",
+          "gloss_en": "There is no blame for robbing others."
         },
         {
           "line_no": 5,
@@ -1239,7 +1433,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "궐부교여, 위여, 길.",
+          "gloss_en": "Jue Fu Jiao Ru, Wei Ru, Ji."
         },
         {
           "line_no": 6,
@@ -1251,7 +1447,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "자천우지, 길무부리.",
+          "gloss_en": "Since God bless you, everything will be good and bad."
         }
       ],
       "core_terms": [],
@@ -1267,7 +1465,9 @@
         "interpretive_ko": "겸손, 번영, 신사는 결국 죽습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "겸, 형, 군자유종.",
+        "gloss_en": "Modesty, prosperity, a gentleman will eventually die."
       },
       "lines": [
         {
@@ -1280,7 +1480,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "겸겸군자, 용섭대천, 길.",
+          "gloss_en": "If you are a humble gentleman, it is auspicious to cross the great river."
         },
         {
           "line_no": 2,
@@ -1292,7 +1494,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명겸, 정길.",
+          "gloss_en": "Ming Qian, Zhenji."
         },
         {
           "line_no": 3,
@@ -1304,7 +1508,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "노겸군자, 유종길.",
+          "gloss_en": "A gentleman who works hard will have good luck in the end."
         },
         {
           "line_no": 4,
@@ -1316,7 +1522,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무부리, 휘겸.",
+          "gloss_en": "No disadvantages, humble."
         },
         {
           "line_no": 5,
@@ -1328,7 +1536,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부부, 이기린, 리용침벌, 무부리.",
+          "gloss_en": "If you are not rich, you will have no disadvantage if you take advantage of your neighbors and exploit them."
         },
         {
           "line_no": 6,
@@ -1340,7 +1550,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명겸, 리용항사, 정읍국.",
+          "gloss_en": "Ming Qian used his army to conquer the country."
         }
       ],
       "core_terms": [],
@@ -1356,7 +1568,9 @@
         "interpretive_ko": "리 건후는 군대에 갔다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "서, 리건후항사.",
+        "gloss_en": "Yu, Li Jianhou went to the army."
       },
       "lines": [
         {
@@ -1369,7 +1583,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명서, 흉.",
+          "gloss_en": "Ming Yu, fierce."
         },
         {
           "line_no": 2,
@@ -1381,7 +1597,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "개우석, 부종일, 정길.",
+          "gloss_en": "Between the stone, it will never last forever, and it will be chaste and auspicious."
         },
         {
           "line_no": 3,
@@ -1393,7 +1611,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "우서, 회. 지유회.",
+          "gloss_en": "Xuyu, regret. Too late to regret."
         },
         {
           "line_no": 4,
@@ -1405,7 +1625,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유서, 대유득. 물의붕합잠.",
+          "gloss_en": "From Yu, there is great gain. Don't doubt your friend's hairpin."
         },
         {
           "line_no": 5,
@@ -1417,7 +1639,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정질, 항부사.",
+          "gloss_en": "If you are sick, you will never die."
         },
         {
           "line_no": 6,
@@ -1429,7 +1653,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명서, 성유투, 무구.",
+          "gloss_en": "Mingyu, success has Chongqing, no blame."
         }
       ],
       "core_terms": [],
@@ -1445,7 +1671,9 @@
         "interpretive_ko": "원형이정.은 허물이 아닙니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "수, 원형, 리정, 무구.",
+        "gloss_en": "Sui, Yuanheng, Li Zhen, no blame."
       },
       "lines": [
         {
@@ -1458,7 +1686,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "관유투, 정길. 출문교유공.",
+          "gloss_en": "The official has Chongqing, which is chastity and good luck. Go out and make meritorious service."
         },
         {
           "line_no": 2,
@@ -1470,7 +1700,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "계소자, 실장부.",
+          "gloss_en": "If you are a boy, you will lose your husband."
         },
         {
           "line_no": 3,
@@ -1482,7 +1714,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "계장부, 실소자. 수유구득, 리거정.",
+          "gloss_en": "It's my husband, I lost my son. If you seek for anything, it will be beneficial to stay in chastity."
         },
         {
           "line_no": 4,
@@ -1494,7 +1728,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "수유획, 정흉. 유부재도, 이명, 하구?",
+          "gloss_en": "There will be gains, chastity and evil. If you have good luck in the Tao and understand it, why should you blame it?"
         },
         {
           "line_no": 5,
@@ -1506,7 +1742,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부우가, 길.",
+          "gloss_en": "Fu Yu Jia, Ji."
         },
         {
           "line_no": 6,
@@ -1518,7 +1756,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "구계지, 내종유지. 왕용형우서산.",
+          "gloss_en": "To restrain it is to maintain it. Wang Yongheng was in Xishan."
         }
       ],
       "core_terms": [],
@@ -1534,7 +1774,9 @@
         "interpretive_ko": "고 원형은 대천의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "고, 원형, 리섭대천. 선갑삼일, 후갑삼일.",
+        "gloss_en": "Gu, Yuanheng, benefited from Dachuan. The first one is three days, the second one is three days."
       },
       "lines": [
         {
@@ -1547,7 +1789,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간부지고, 유자, 고무구, 려, 종길.",
+          "gloss_en": "The godfather's poison, if there is a son, there will be no fault in the test, if it is severe, it will end well."
         },
         {
           "line_no": 2,
@@ -1559,7 +1803,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간모지고, 부가정.",
+          "gloss_en": "The godmother's poison cannot be chaste."
         },
         {
           "line_no": 3,
@@ -1571,7 +1817,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간부지고, 소유회, 무대구.",
+          "gloss_en": "The godfather's poison is small and obscure, but not a big fault."
         },
         {
           "line_no": 4,
@@ -1583,7 +1831,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부지고, 왕견린.",
+          "gloss_en": "The poison of rich father is stinginess."
         },
         {
           "line_no": 5,
@@ -1595,7 +1845,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간부지고, 용예.",
+          "gloss_en": "The godfather's trick is to use reputation."
         },
         {
           "line_no": 6,
@@ -1607,7 +1859,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부사왕후, 고尚기사.",
+          "gloss_en": "Don't do anything to the prince, do it noble."
         }
       ],
       "core_terms": [],
@@ -1623,7 +1877,9 @@
         "interpretive_ko": "린, 위안헝, 리젠. 8월은 운이 좋지 않을 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "림, 원형, 리정. 지우팔월유흉.",
+        "gloss_en": "Lin, Yuanheng, Li Zhen. As for August, it will be unlucky."
       },
       "lines": [
         {
@@ -1636,7 +1892,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함림, 정길.",
+          "gloss_en": "Xianlin, Zhenji."
         },
         {
           "line_no": 2,
@@ -1648,7 +1906,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함림, 길무부리.",
+          "gloss_en": "When Xian comes, it is auspicious and has no disadvantages."
         },
         {
           "line_no": 3,
@@ -1660,7 +1920,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "감림, 무유리. 既우지, 무구.",
+          "gloss_en": "Ganlin, no profit. If you are worried about it, there is no blame."
         },
         {
           "line_no": 4,
@@ -1672,7 +1934,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "지림, 무구.",
+          "gloss_en": "When it comes, there is no blame."
         },
         {
           "line_no": 5,
@@ -1684,7 +1948,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "지림, 대군지의, 길.",
+          "gloss_en": "Knowing that the king is coming is auspicious."
         },
         {
           "line_no": 6,
@@ -1696,7 +1962,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "돈림, 길, 무구.",
+          "gloss_en": "Dunlin, auspicious, no fault."
         }
       ],
       "core_terms": [],
@@ -1712,7 +1980,9 @@
         "interpretive_ko": "관: 손을 씻되 제물을 올리지는 않는다. 정성과 공경이 드러난다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "관, 관이부천, 유부옹야.",
+        "gloss_en": "View, wash but not recommend, there is Fu Yongruo."
       },
       "lines": [
         {
@@ -1725,7 +1995,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동관, 소인무구, 군자린.",
+          "gloss_en": "A child's view is that a villain has no fault, but a gentleman is stingy."
         },
         {
           "line_no": 2,
@@ -1737,7 +2009,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "규관, 리녀정.",
+          "gloss_en": "Peeping, benefit privet."
         },
         {
           "line_no": 3,
@@ -1749,7 +2023,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "관아생, 진퇴.",
+          "gloss_en": "Observe my life, advance and retreat."
         },
         {
           "line_no": 4,
@@ -1761,7 +2037,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "관국지광, 리용빈우왕.",
+          "gloss_en": "Observe the light of the country and make use of it as a guest to the king."
         },
         {
           "line_no": 5,
@@ -1773,7 +2051,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "관아생, 군자무구.",
+          "gloss_en": "Looking at my life, a gentleman has no fault."
         },
         {
           "line_no": 6,
@@ -1785,7 +2065,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "관기생, 군자무구.",
+          "gloss_en": "Looking at his life, a gentleman has no fault."
         }
       ],
       "core_terms": [],
@@ -1801,7 +2083,9 @@
         "interpretive_ko": "먹고, 기다려라. 감옥을 이용하세요.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "서합, 형. 리용옥.",
+        "gloss_en": "Eat, hang. Use prison."
       },
       "lines": [
         {
@@ -1814,7 +2098,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리교멸지, 무구.",
+          "gloss_en": "If you go to school and get rid of your toes, there is no blame."
         },
         {
           "line_no": 2,
@@ -1826,7 +2112,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "서부멸비, 무구.",
+          "gloss_en": "It bites the skin and destroys the nose, no blame."
         },
         {
           "line_no": 3,
@@ -1838,7 +2126,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "서납육, 우독. 소린, 무구.",
+          "gloss_en": "Eat bacon and encounter poison. A little stinginess is nothing to blame."
         },
         {
           "line_no": 4,
@@ -1850,7 +2140,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "서건胏, 득금시, 리간정, 길.",
+          "gloss_en": "Bite the stem and get a golden arrow, which is beneficial to hardship and chastity, and is auspicious."
         },
         {
           "line_no": 5,
@@ -1862,7 +2154,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "서건육, 득황금, 정려, 무구.",
+          "gloss_en": "Eat dried meat and you will get gold, you will be pure and strong, and you will have no guilt."
         },
         {
           "line_no": 6,
@@ -1874,7 +2168,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "하교멸이, 흉.",
+          "gloss_en": "He Xiao's ears are destroyed, which is bad."
         }
       ],
       "core_terms": [],
@@ -1890,7 +2186,9 @@
         "interpretive_ko": "비, 헝. 작은 이익은 어딘가로 이동합니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "분, 형. 소리유소왕.",
+        "gloss_en": "Bi, Heng. Small profits go somewhere."
       },
       "lines": [
         {
@@ -1903,7 +2201,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "분기지, 사거이도.",
+          "gloss_en": "Bend his toes, abandon the cart and walk away."
         },
         {
           "line_no": 2,
@@ -1915,7 +2215,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "분기수.",
+          "gloss_en": "Bend his whiskers."
         },
         {
           "line_no": 3,
@@ -1927,7 +2229,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "분여유여, 영정길.",
+          "gloss_en": "Be as gentle as moist, and be everlastingly chaste and auspicious."
         },
         {
           "line_no": 4,
@@ -1939,7 +2243,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "분여파여, 백마한여, 비구혼구.",
+          "gloss_en": "Ben is like Bo, white horse is like Han, bandits are getting married."
         },
         {
           "line_no": 5,
@@ -1951,7 +2257,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "분우구원, 속백잔잔, 린, 종길.",
+          "gloss_en": "Ben in Qiuyuan, bundle silk and silk, be stingy, and finally be lucky."
         },
         {
           "line_no": 6,
@@ -1963,7 +2271,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "백분, 무구.",
+          "gloss_en": "Bai Ben, no fault."
         }
       ],
       "core_terms": [],
@@ -1979,7 +2289,9 @@
         "interpretive_ko": "껍질을 벗기면 불리합니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "박, 부리유유왕.",
+        "gloss_en": "If you peel it off, it will be unfavorable."
       },
       "lines": [
         {
@@ -1992,7 +2304,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "박상이족, 멸정흉.",
+          "gloss_en": "Peeling off the bed is enough to despise chastity and evil."
         },
         {
           "line_no": 2,
@@ -2004,7 +2318,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "박상이변, 멸정흉.",
+          "gloss_en": "Peeling off the bed to identify, despise chastity and evil."
         },
         {
           "line_no": 3,
@@ -2016,7 +2332,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "박지, 무구.",
+          "gloss_en": "Peel it off, no blame."
         },
         {
           "line_no": 4,
@@ -2028,7 +2346,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "박상이부, 흉.",
+          "gloss_en": "Stripping the bed with skin is bad luck."
         },
         {
           "line_no": 5,
@@ -2040,7 +2360,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "관어, 이궁인총, 무부리.",
+          "gloss_en": "There is no disadvantage in being favored by people in the palace."
         },
         {
           "line_no": 6,
@@ -2052,7 +2374,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "석과부식, 군자득여, 소인박려.",
+          "gloss_en": "If you don't eat the fruit, the gentleman will gain public support, but the villain will strip him of his hut."
         }
       ],
       "core_terms": [],
@@ -2068,7 +2392,9 @@
         "interpretive_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 허물이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "복, 형. 출입무질, 붕내무구. 반복기도, 칠일내복, 리유유왕.",
+        "gloss_en": "Fu, Heng. There will be no trouble in going in and out, and there will be no blame when friends come. Repeat the method, come back in seven days, and you will be successful."
       },
       "lines": [
         {
@@ -2081,7 +2407,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부복원, 무지회, 원길.",
+          "gloss_en": "Not far away, no regrets, good luck."
         },
         {
           "line_no": 2,
@@ -2093,7 +2421,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "휴복, 길.",
+          "gloss_en": "Rest and recovery, good luck."
         },
         {
           "line_no": 3,
@@ -2105,7 +2435,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "빈복, 려, 무구.",
+          "gloss_en": "Frequent, severe, blameless."
         },
         {
           "line_no": 4,
@@ -2117,7 +2449,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "중항독복.",
+          "gloss_en": "BOC regained its independence."
         },
         {
           "line_no": 5,
@@ -2129,7 +2463,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "돈복, 무회.",
+          "gloss_en": "Be honest and have no regrets."
         },
         {
           "line_no": 6,
@@ -2141,7 +2477,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "미복, 흉, 유재생. 용항사, 종유대패, 이기국군흉. 지우십년부극정.",
+          "gloss_en": "Confused, fierce, and prone to disaster. If you use an expert, you will eventually be defeated, and your country will be unlucky. As for the ten years of invincibility."
         }
       ],
       "core_terms": [],
@@ -2157,7 +2495,9 @@
         "interpretive_ko": "우우, 위안헝, 리젠. 깡패에게는 밝은 미래가 있지만 불리한 깡패에게는 위험한 미래가 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "무망, 원형, 리정. 기비정유생, 부리유유왕.",
+        "gloss_en": "Wuwu, Yuanheng, Li Zhen. The gangsters have a bright future, but the unfavorable ones have a dangerous future."
       },
       "lines": [
         {
@@ -2170,7 +2510,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무망왕, 길.",
+          "gloss_en": "Don't go rashly, good luck."
         },
         {
           "line_no": 2,
@@ -2182,7 +2524,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부경획, 부치畬, 칙리유유왕.",
+          "gloss_en": "If you don't cultivate crops and don't cultivate crops, you will have a bright future."
         },
         {
           "line_no": 3,
@@ -2194,7 +2538,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무망지재, 혹계지우, 항인지득, 읍인지재.",
+          "gloss_en": "Unexpected disasters may be caused by oxen, pedestrians, and disasters for the people of the town."
         },
         {
           "line_no": 4,
@@ -2206,7 +2552,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "가정, 무구.",
+          "gloss_en": "Chaste, blameless."
         },
         {
           "line_no": 5,
@@ -2218,7 +2566,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무망지질, 물약유희.",
+          "gloss_en": "If there is no unreasonable disease, don’t take the medicine for joy."
         },
         {
           "line_no": 6,
@@ -2230,7 +2580,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무망항, 유생, 무유리.",
+          "gloss_en": "There is no rash action, no ambition, no profit."
         }
       ],
       "core_terms": [],
@@ -2246,7 +2598,9 @@
         "interpretive_ko": "바름에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "대축, 리정. 부가식길, 리섭대천.",
+        "gloss_en": "Big animals, beneficial to chastity. If the family is not lucky, it will benefit the river."
       },
       "lines": [
         {
@@ -2259,7 +2613,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유려, 리이.",
+          "gloss_en": "If you are fierce, you will benefit yourself."
         },
         {
           "line_no": 2,
@@ -2271,7 +2627,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "여설복.",
+          "gloss_en": "Public opinion spreads."
         },
         {
           "line_no": 3,
@@ -2283,7 +2641,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "량마축, 리간정. 왈한여위, 리유유왕.",
+          "gloss_en": "Good horses chase each other, and the advantages are difficult and chaste. It is said that you are free to guard, and you will go there with benefit."
         },
         {
           "line_no": 4,
@@ -2295,7 +2655,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동시지牿, 원길.",
+          "gloss_en": "The eradication of children's pigs is auspicious."
         },
         {
           "line_no": 5,
@@ -2307,7 +2669,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "豶시지아, 길.",
+          "gloss_en": "The fang of a pig is auspicious."
         },
         {
           "line_no": 6,
@@ -2319,7 +2683,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "하천지구, 형.",
+          "gloss_en": "Hetian's thoroughfare is prosperous."
         }
       ],
       "core_terms": [],
@@ -2335,7 +2701,9 @@
         "interpretive_ko": "이, 젠지. 이를 지켜보고 자신의 입에서 진실을 찾으십시오.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "이, 정길. 관이, 자구구실.",
+        "gloss_en": "Yi, Zhenji. Watch Yi and seek truth from your own mouth."
       },
       "lines": [
         {
@@ -2348,7 +2716,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "사이령구, 관아朵이, 흉.",
+          "gloss_en": "Sheer spirit turtle, watching me feast, is fierce."
         },
         {
           "line_no": 2,
@@ -2360,7 +2730,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "顛이, 불경, 우구이, 정흉.",
+          "gloss_en": "Bian Yi, brushing the scriptures, and attacking Qiu Yi, attacking the evil."
         },
         {
           "line_no": 3,
@@ -2372,7 +2744,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "불이, 정흉, 십년물용, 무유리.",
+          "gloss_en": "Fu Yi, chastity and evil, do not use it for ten years, it will not be beneficial."
         },
         {
           "line_no": 4,
@@ -2384,7 +2758,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "顛이길, 호시탐탐, 기욕축축, 무구.",
+          "gloss_en": "When you look at Yiji, the tiger looks at you with eager eyes, and he wants to chase you away, so there is no blame."
         },
         {
           "line_no": 5,
@@ -2396,7 +2772,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "불경, 거정길, 부가섭대천.",
+          "gloss_en": "If you brush the scriptures, you will live in Zhenji, and you will not be able to cross the big rivers."
         },
         {
           "line_no": 6,
@@ -2408,7 +2786,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유이, 려, 길, 리섭대천.",
+          "gloss_en": "From Yi, Li, Ji, Li crosses the great river."
         }
       ],
       "core_terms": [],
@@ -2424,7 +2804,9 @@
         "interpretive_ko": "큰 실수라면 일이 번창하고 번창할 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "대과, 동요, 리유유왕, 형.",
+        "gloss_en": "If it's a big mistake, it will be prosperous and prosperous."
       },
       "lines": [
         {
@@ -2437,7 +2819,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "자용백모, 무구.",
+          "gloss_en": "There is no blame for borrowing Imperata baicalensis."
         },
         {
           "line_no": 2,
@@ -2449,7 +2833,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "고양생제, 노부득기녀처, 무부리.",
+          "gloss_en": "Withered poplars give birth to wild crops, and I have no disadvantages in getting my female wife."
         },
         {
           "line_no": 3,
@@ -2461,7 +2847,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동요, 흉.",
+          "gloss_en": "Dongru, fierce."
         },
         {
           "line_no": 4,
@@ -2473,7 +2861,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동륭, 길. 유它린.",
+          "gloss_en": "Donglong, Ji. It's stingy."
         },
         {
           "line_no": 5,
@@ -2485,7 +2875,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "고양생화, 노부득기사부, 무구무예.",
+          "gloss_en": "Withered poplars give birth to flowers, and the old woman gets her scholar husband, with no blame or honor."
         },
         {
           "line_no": 6,
@@ -2497,7 +2889,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "과섭멸정, 흉, 무구.",
+          "gloss_en": "Excessive involvement will lead to death, bad luck, no blame."
         }
       ],
       "core_terms": [],
@@ -2513,7 +2907,9 @@
         "interpretive_ko": "칸아, 칸에게 배워서, 번영하고, 건강한 마음을 유지하고, 행실을 잘 지키라.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "감, 습감, 유부, 유심형, 항유尚.",
+        "gloss_en": "Kan, learn from Kan, be prosperous, maintain a healthy mind, and conduct well."
       },
       "lines": [
         {
@@ -2526,7 +2922,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "습감, 입우감窞, 흉.",
+          "gloss_en": "Getting used to the ridge, entering the ridge, it is fierce."
         },
         {
           "line_no": 2,
@@ -2538,7 +2936,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "감유험, 구소득.",
+          "gloss_en": "There are dangers, so seek small gains."
         },
         {
           "line_no": 3,
@@ -2550,7 +2950,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "내지감감, 험차침, 입우감窞, 물용.",
+          "gloss_en": "When it comes to bumpy roads, be prepared to use it as a pillow. If you encounter rough terrain, don’t use it."
         },
         {
           "line_no": 4,
@@ -2562,7 +2964,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "준주궤이, 용부, 납약자유, 종무구.",
+          "gloss_en": "Bottle wine with two guis, use the gui, accept the promise, and save yourself, there will be no blame in the end."
         },
         {
           "line_no": 5,
@@ -2574,7 +2978,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "감부영, 기既평, 무구.",
+          "gloss_en": "The hurdle is not full, but it is flat, and there is no fault."
         },
         {
           "line_no": 6,
@@ -2586,7 +2992,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "계용휘纆, 치우총극, 삼세부득, 흉.",
+          "gloss_en": "It is tied with Huixi and placed on a bush of thorns. If it is not allowed to reach the age of three, it is unlucky."
         }
       ],
       "core_terms": [],
@@ -2602,7 +3010,9 @@
         "interpretive_ko": "밝음을 잃지 않고 기준을 지키면 형통하다. 유순하고 지속적인 태도가 길함을 만든다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "리, 리정, 형. 축빈우길.",
+        "gloss_en": "Li, Li Zhen, Heng. The animal is auspicious."
       },
       "lines": [
         {
@@ -2615,7 +3025,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리착연, 경지무구.",
+          "gloss_en": "If you step on the wrong foot, there is no blame for it."
         },
         {
           "line_no": 2,
@@ -2627,7 +3039,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "황리, 원길.",
+          "gloss_en": "Huangli, Yuanji."
         },
         {
           "line_no": 3,
@@ -2639,7 +3053,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "일측지리, 부고부이가, 칙대耋지차, 흉.",
+          "gloss_en": "When the sun is gone, if you sing without drumming and fou, the old man will sigh and be fierce."
         },
         {
           "line_no": 4,
@@ -2651,7 +3067,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "돌여기내여, 분여, 사여, 기여.",
+          "gloss_en": "Like coming out of the blue, like burning, like dying, like abandoning."
         },
         {
           "line_no": 5,
@@ -2663,7 +3081,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "출체타야, 척차야, 길.",
+          "gloss_en": "It is auspicious to shed tears and sigh."
         },
         {
           "line_no": 6,
@@ -2675,7 +3095,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕용출정, 유가절수, 획기비축, 무구.",
+          "gloss_en": "When Wang Yong went on an expedition, he lost his head if he was a good person, and he was captured by a bandit who was ugly, so he had no fault."
         }
       ],
       "core_terms": [],
@@ -2691,7 +3113,9 @@
         "interpretive_ko": "시안, 헨리, 리젠. 여성에게 행운을 빕니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "함, 형, 리정. 취녀길.",
+        "gloss_en": "Xian, Henry, Li Zhen. Good luck to women."
       },
       "lines": [
         {
@@ -2704,7 +3128,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함기무.",
+          "gloss_en": "Salty thumb."
         },
         {
           "line_no": 2,
@@ -2716,7 +3142,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함기비, 흉, 거길.",
+          "gloss_en": "Xian Qifei is unlucky and auspicious."
         },
         {
           "line_no": 3,
@@ -2728,7 +3156,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함기고, 집기수, 왕린.",
+          "gloss_en": "Salt your stock, hold on to it, and be stingy."
         },
         {
           "line_no": 4,
@@ -2740,7 +3170,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길회망, 동동왕내, 붕종이사.",
+          "gloss_en": "Zhenji regrets his death, longs for exchanges, and friends follow you and think about you."
         },
         {
           "line_no": 5,
@@ -2752,7 +3184,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함기脢, 무회.",
+          "gloss_en": "Salt your jacket and have no regrets."
         },
         {
           "line_no": 6,
@@ -2764,7 +3198,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "함기보, 협, 설.",
+          "gloss_en": "Salty for its auxiliary, cheek, and tongue."
         }
       ],
       "core_terms": [],
@@ -2780,7 +3216,9 @@
         "interpretive_ko": "형(興)은 형통하고 흠이 없고 바름하고 유익하며 형통하다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "항, 형, 무구, 리정, 리유유왕.",
+        "gloss_en": "Heng, prosperous, blameless, chaste, beneficial and prosperous."
       },
       "lines": [
         {
@@ -2793,7 +3231,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "준항, 정흉, 무유리.",
+          "gloss_en": "Jun Heng, chastity and bad luck, no profit."
         },
         {
           "line_no": 2,
@@ -2805,7 +3245,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "회망.",
+          "gloss_en": "Regret death."
         },
         {
           "line_no": 3,
@@ -2817,7 +3259,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부항기덕, 혹승지수, 정린.",
+          "gloss_en": "If you don't persist in your virtue, you may be ashamed and stingy."
         },
         {
           "line_no": 4,
@@ -2829,7 +3273,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "전무금.",
+          "gloss_en": "There are no birds in the field."
         },
         {
           "line_no": 5,
@@ -2841,7 +3287,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "항기덕, 정부인길, 부자흉.",
+          "gloss_en": "If you keep your virtue, a chaste woman will be lucky, and a husband will be unlucky."
         },
         {
           "line_no": 6,
@@ -2853,7 +3301,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진항, 흉.",
+          "gloss_en": "Zhenheng, fierce."
         }
       ],
       "core_terms": [],
@@ -2869,7 +3319,9 @@
         "interpretive_ko": "탈출, 형, 정.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "둔, 형, 소리정.",
+        "gloss_en": "Escape, Heng, Xiaoli Zhen."
       },
       "lines": [
         {
@@ -2882,7 +3334,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "둔미, 려, 물용유유왕.",
+          "gloss_en": "Escape the tail, be sharp, don't use it, you will go there."
         },
         {
           "line_no": 2,
@@ -2894,7 +3348,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "집지용황우지혁, 막지승설.",
+          "gloss_en": "If you insist on using the leather of an ox, Mo Zhi wins."
         },
         {
           "line_no": 3,
@@ -2906,7 +3362,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "계둔, 유질려, 축신첩길.",
+          "gloss_en": "If it is due to escape, there will be severe illness, animals, ministers and concubines will be auspicious."
         },
         {
           "line_no": 4,
@@ -2918,7 +3376,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "호둔, 군자길, 소인부.",
+          "gloss_en": "A good escape is good for a gentleman, but bad for a villain."
         },
         {
           "line_no": 5,
@@ -2930,7 +3390,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "가둔, 정길.",
+          "gloss_en": "Jia Dun, Zhen Ji."
         },
         {
           "line_no": 6,
@@ -2942,7 +3404,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비둔, 무부리.",
+          "gloss_en": "There is no disadvantage in fat escape."
         }
       ],
       "core_terms": [],
@@ -2958,7 +3422,9 @@
         "interpretive_ko": "크고 강하며 바름에 유익합니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "대장, 리정.",
+        "gloss_en": "Big and strong, beneficial to chastity."
       },
       "lines": [
         {
@@ -2971,7 +3437,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "장우지, 정흉, 유부.",
+          "gloss_en": "Stronger than the toes, it conquers evil and brings prosperity."
         },
         {
           "line_no": 2,
@@ -2983,7 +3451,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길.",
+          "gloss_en": "Sadaki."
         },
         {
           "line_no": 3,
@@ -2995,7 +3465,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "소인용장, 군자용망, 정려. 저양촉번, 리기각.",
+          "gloss_en": "A villain should use strength, a gentleman should use ruthlessness and chastity. If a ram touches the feudal lord, its horn will be broken."
         },
         {
           "line_no": 4,
@@ -3007,7 +3479,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길회망, 번결부리, 장우대여지복.",
+          "gloss_en": "Zhenji regrets his death, and the vassal will never fail, and he will be stronger than the support of the general public."
         },
         {
           "line_no": 5,
@@ -3019,7 +3493,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "상양우역, 무회.",
+          "gloss_en": "Losing a sheep in Yi has no regrets."
         },
         {
           "line_no": 6,
@@ -3031,7 +3507,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "저양촉번, 부능퇴, 부능수, 무유리, 간칙길.",
+          "gloss_en": "If the sheep touches the feudal vassal, they cannot retreat or succeed, and there is no profit. Difficulties are good."
         }
       ],
       "core_terms": [],
@@ -3047,7 +3525,9 @@
         "interpretive_ko": "진나라 때 강후가 양철말을 이용해 서민들에게 먹이를 주었고, 하루에 세 번씩 양철말을 받았다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "진, 강후용석마번서, 주일삼접.",
+        "gloss_en": "In the Jin Dynasty, the Marquis of Kang used tin horses to feed the common people, and received them three times a day."
       },
       "lines": [
         {
@@ -3060,7 +3540,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진여, 최여, 정길. 망부, 유, 무구.",
+          "gloss_en": "Jinru, Deru, Zhenji. Fu, Yu, no blame."
         },
         {
           "line_no": 2,
@@ -3072,7 +3554,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진여, 수여, 정길. 수자개복우기왕모.",
+          "gloss_en": "Jin is like, worry is like, chastity is good. I am blessed by his Queen Mother."
         },
         {
           "line_no": 3,
@@ -3084,7 +3568,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "중윤, 회망.",
+          "gloss_en": "Everyone agrees and regrets his death."
         },
         {
           "line_no": 4,
@@ -3096,7 +3582,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진여석서, 정려.",
+          "gloss_en": "Jin is like a rat, chaste and fierce."
         },
         {
           "line_no": 5,
@@ -3108,7 +3596,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "회망, 실득물휼, 왕길, 무부리.",
+          "gloss_en": "Regret your death, don’t pity your gains and losses, go to good luck and have no disadvantages."
         },
         {
           "line_no": 6,
@@ -3120,7 +3610,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진기각, 유용벌읍, 려, 길, 무구, 정린.",
+          "gloss_en": "Jin Qijiao, Wei Yong conquered the city, Li, Ji, Wu Ji, Zhen stingy."
         }
       ],
       "core_terms": [],
@@ -3136,7 +3628,9 @@
         "interpretive_ko": "이익, 고난 및 바름.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "명이, 리간정.",
+        "gloss_en": "Mingyi, benefit, hardship and chastity."
       },
       "lines": [
         {
@@ -3149,7 +3643,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명이우비, 수기익. 군자우항, 삼일부식. 유유왕, 주인유언.",
+          "gloss_en": "Ming Yi is flying, and his wings are hanging down. A gentleman goes about his business without eating for three days. Where there is a journey, the master has something to say."
         },
         {
           "line_no": 2,
@@ -3161,7 +3657,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명이, 이우좌고, 용증마장, 길.",
+          "gloss_en": "Mingyi, Yi is in the left thigh, and it is used to make the horse strong, which is auspicious."
         },
         {
           "line_no": 3,
@@ -3173,7 +3671,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명이우남수, 득기대수, 부가질정.",
+          "gloss_en": "The Ming Yi hunted in the south and got the big head, so they couldn't be quick."
         },
         {
           "line_no": 4,
@@ -3185,7 +3685,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "입우좌복, 획명이지심, 우출문정.",
+          "gloss_en": "It enters the left abdomen and obtains the heart of Ming Yi, which is located in the outer court."
         },
         {
           "line_no": 5,
@@ -3197,7 +3699,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "기자지명이, 리정.",
+          "gloss_en": "Jizi's Ming Yi is beneficial to Zhen."
         },
         {
           "line_no": 6,
@@ -3209,7 +3713,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부명회, 초등우천, 후입우지.",
+          "gloss_en": "It is unclear, it first ascends to the sky, and then enters the earth."
         }
       ],
       "core_terms": [],
@@ -3225,7 +3731,9 @@
         "interpretive_ko": "가족, 이로움을 누리세요.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "가인, 리녀정.",
+        "gloss_en": "Family, benefit privet."
       },
       "lines": [
         {
@@ -3238,7 +3746,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "한유가, 회망.",
+          "gloss_en": "I have a home in my spare time and regret my death."
         },
         {
           "line_no": 2,
@@ -3250,7 +3760,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무유수, 재중궤, 정길.",
+          "gloss_en": "Without Yousui, in the middle of the feeding, Zhenji."
         },
         {
           "line_no": 3,
@@ -3262,7 +3774,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "가인학학, 회려길. 부자희희, 종린.",
+          "gloss_en": "The family gnaws and regrets. The woman is always stingy."
         },
         {
           "line_no": 4,
@@ -3274,7 +3788,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부가, 대길.",
+          "gloss_en": "Rich family, good luck."
         },
         {
           "line_no": 5,
@@ -3286,7 +3802,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕가유가, 물휼길.",
+          "gloss_en": "If the king has a family, don't worry about it."
         },
         {
           "line_no": 6,
@@ -3298,7 +3816,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부위여, 종길.",
+          "gloss_en": "If there is Fuweiru, it will be auspicious in the end."
         }
       ],
       "core_terms": [],
@@ -3314,7 +3834,9 @@
         "interpretive_ko": "보세요, 작은 일이 상서롭습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "규, 소사길.",
+        "gloss_en": "Look, small things are auspicious."
       },
       "lines": [
         {
@@ -3327,7 +3849,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "회망, 상마물축, 자복. 견악인무구.",
+          "gloss_en": "Regret your death, don’t drive away the lost horse, it will recover on its own. See evil people without blame."
         },
         {
           "line_no": 2,
@@ -3339,7 +3863,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "우주우항, 무구.",
+          "gloss_en": "If you meet the master in an alley, there is no blame."
         },
         {
           "line_no": 3,
@@ -3351,7 +3877,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "견여예, 기우掣, 기인천차의, 무초유종.",
+          "gloss_en": "Seeing the carriage dragging, the oxen pulling, the people and the sky moving, there is no beginning or end."
         },
         {
           "line_no": 4,
@@ -3363,7 +3891,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "규고, 우원부, 교부, 려, 무구.",
+          "gloss_en": "Suigu, when he met his husband Yuan, he met Fu, Li, and had no fault."
         },
         {
           "line_no": 5,
@@ -3375,7 +3905,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "회망, 궐종서부, 왕하구.",
+          "gloss_en": "Regret for death, Jue Zong bites the skin, what's the blame?"
         },
         {
           "line_no": 6,
@@ -3387,7 +3919,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "규고, 견시부도, 재귀일거, 선장지호, 후설지호, 비구혼구, 왕우우칙길.",
+          "gloss_en": "Gui Gu, seeing a pig carrying Tu, carrying ghosts in a cart, first draw the arc, and then tell the arc, bandits and bandits are getting married, and if they go to meet the rain, it will be auspicious."
         }
       ],
       "core_terms": [],
@@ -3403,7 +3937,9 @@
         "interpretive_ko": "건은 남서쪽에는 이롭지만 동북에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "건, 리서남, 부리동배. 리견대인. 정길.",
+        "gloss_en": "Jian is beneficial to the southwest, but detrimental to the northeast. Benefit to see the adults. Sadaki."
       },
       "lines": [
         {
@@ -3416,7 +3952,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕건, 내예.",
+          "gloss_en": "Go to Jian, come to praise."
         },
         {
           "line_no": 2,
@@ -3428,7 +3966,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕신건건, 비궁지고.",
+          "gloss_en": "The reason why the king and his ministers are jianjian is because the bandit bows."
         },
         {
           "line_no": 3,
@@ -3440,7 +3980,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕건내반.",
+          "gloss_en": "Go back and forth."
         },
         {
           "line_no": 4,
@@ -3452,7 +3994,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕건내련.",
+          "gloss_en": "Go back and forth."
         },
         {
           "line_no": 5,
@@ -3464,7 +4008,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "대건붕내.",
+          "gloss_en": "Big Jian friends are coming."
         },
         {
           "line_no": 6,
@@ -3476,7 +4022,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕건내석, 길. 리견대인.",
+          "gloss_en": "If you go to Jian to get a big fortune, it is auspicious. Benefit to see the adults."
         }
       ],
       "core_terms": [],
@@ -3492,7 +4040,9 @@
         "interpretive_ko": "풀림의 때에는 긴장을 완화하고 제자리로 복귀하라. 새로 움직일 때는 빠르게 착수하는 것이 좋다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "해, 리서남. 무소왕, 기내복길. 유유왕, 숙길.",
+        "gloss_en": "Solution, benefit the southwest. There is nowhere to go, and good luck will come when it comes. If you are going somewhere, it is auspicious."
       },
       "lines": [
         {
@@ -3505,7 +4055,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무구.",
+          "gloss_en": "No blame."
         },
         {
           "line_no": 2,
@@ -3517,7 +4069,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "전획삼호, 득황시, 정길.",
+          "gloss_en": "The field has three foxes and a yellow arrow, which is auspicious."
         },
         {
           "line_no": 3,
@@ -3529,7 +4083,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부차승, 치구지, 정린.",
+          "gloss_en": "If it is negative and multiplied, it will lead to bandits and stinginess."
         },
         {
           "line_no": 4,
@@ -3541,7 +4097,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "해이무, 붕지사부.",
+          "gloss_en": "Understanding and thumbing, friends come to Sifu."
         },
         {
           "line_no": 5,
@@ -3553,7 +4111,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "군자유유해, 길. 유부우소인.",
+          "gloss_en": "A gentleman has a solution, which is auspicious. Be blessed by the villain."
         },
         {
           "line_no": 6,
@@ -3565,7 +4125,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "공용사준우고용지상, 획지, 무부리.",
+          "gloss_en": "If you shoot a falcon on a high mountain, there will be no disadvantage in catching it."
         }
       ],
       "core_terms": [],
@@ -3581,7 +4143,9 @@
         "interpretive_ko": "상실이란 행운, 행운, 허물 없음, 바름, 행운을 의미합니다. 두 개의 를 사용하여 즐길 수 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "손, 유부, 원길, 무구, 가정, 리유유왕. 갈지용이궤, 가용향.",
+        "gloss_en": "Loss means good fortune, good fortune, no blame, chastity, and good fortune. You can enjoy it by using two Gui."
       },
       "lines": [
         {
@@ -3594,7 +4158,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "이사遄왕, 무구, 작손지.",
+          "gloss_en": "Things have already happened, and there is no blame for them. Let’s consider the damage."
         },
         {
           "line_no": 2,
@@ -3606,7 +4172,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리정, 정흉, 불손익지.",
+          "gloss_en": "It is beneficial to chastity, it conquers evil, and it cannot be used to gain or lose."
         },
         {
           "line_no": 3,
@@ -3618,7 +4186,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "삼인항, 칙손일인. 일인항, 칙득기우.",
+          "gloss_en": "If three people travel together, one person will be harmed. If you go alone, you will find friends."
         },
         {
           "line_no": 4,
@@ -3630,7 +4200,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "손기질, 사遄유희, 무구.",
+          "gloss_en": "Damage his disease, make him happy and free from blame."
         },
         {
           "line_no": 5,
@@ -3642,7 +4214,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "혹익지, 십붕지구불극위, 원길.",
+          "gloss_en": "Or it may be beneficial, if the tortoise of ten friends can overcome the violation, it will be auspicious."
         },
         {
           "line_no": 6,
@@ -3654,7 +4228,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "불손, 익지, 무구, 정길, 리유유왕. 득신무가.",
+          "gloss_en": "If there is no loss, there will be benefit. There will be no blame. It will be chaste and auspicious, and the benefit will be destined to the future. The minister has no home."
         }
       ],
       "core_terms": [],
@@ -3670,7 +4246,9 @@
         "interpretive_ko": "이익, 이익은 그것과 관련이 있으니 큰 강을 건너면 이익이 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "익, 리유유왕, 리섭대천.",
+        "gloss_en": "Benefit, benefit has something to do with it, benefit from crossing the great river."
       },
       "lines": [
         {
@@ -3683,7 +4261,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "리용為대작, 원길, 무구.",
+          "gloss_en": "Use it as a masterpiece, good luck and no blame."
         },
         {
           "line_no": 2,
@@ -3695,7 +4275,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "혹익지, 십붕지구불극위, 영정길. 왕용향우제, 길.",
+          "gloss_en": "Or it may be beneficial to him, if the tortoises of ten friends can overcome his disobedience, he will always be loyal and auspicious. It is auspicious for the king to enjoy it from the emperor."
         },
         {
           "line_no": 3,
@@ -3707,7 +4289,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "익지용흉사, 무구. 유부중항, 고공용규.",
+          "gloss_en": "Use evil things for good, and there is no blame. Youfu Zhonghang, tell the public to use Gui."
         },
         {
           "line_no": 4,
@@ -3719,7 +4303,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "중항, 고공종, 리용為의천국.",
+          "gloss_en": "Bank of China, reported to the public, used it to move to the country."
         },
         {
           "line_no": 5,
@@ -3731,7 +4317,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부혜심, 물문원길. 유부혜아덕.",
+          "gloss_en": "If you have a good heart, don't ask about Yuan Ji. There is blessing in my virtue."
         },
         {
           "line_no": 6,
@@ -3743,7 +4331,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "막익지, 혹격지, 립심물항, 흉.",
+          "gloss_en": "Don't help it, or attack it, don't stand firm, it will be evil."
         }
       ],
       "core_terms": [],
@@ -3759,7 +4349,9 @@
         "interpretive_ko": "왕궁에서 자란 위(魏)는 권세 있고 이름이 강하여 자기 마을에 불리하면 전쟁에 나가고 유리한 경우에는 그리로 가겠다고 말했다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "쾌, 양우왕정, 부호, 유려, 고자읍, 부리즉융, 리유유왕.",
+        "gloss_en": "Wei, raised in the king's court, with a powerful and powerful name, told his own town, if it was unfavorable, he would go to war, but if it was favorable, he would go there."
       },
       "lines": [
         {
@@ -3772,7 +4364,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "장우전지, 왕부승為린.",
+          "gloss_en": "It is stronger than the front toe, and it is stingy when it comes to victory."
         },
         {
           "line_no": 2,
@@ -3784,7 +4378,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "척호, 막야유융, 물휼.",
+          "gloss_en": "Be alert, don't be wary if there are troops at night."
         },
         {
           "line_no": 3,
@@ -3796,7 +4392,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "장우頄, 유흉. 군자쾌쾌독항, 우우야유, 유온, 무구.",
+          "gloss_en": "Stronger than a bridle, there is something fierce about it. A gentleman walks alone, and if he is wet in the rain, he may feel angry, but there is no fault."
         },
         {
           "line_no": 4,
@@ -3808,7 +4406,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "둔무부, 기항차차. 견양회망, 문언부신.",
+          "gloss_en": "The buttocks have no skin, and their lines are second and second. Leading the sheep regrets his death, but he doesn't believe it when he hears the words."
         },
         {
           "line_no": 5,
@@ -3820,7 +4420,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "莧륙쾌쾌중항, 무구.",
+          "gloss_en": "Amaranthus and Lu are walking in the middle of the righteousness, and there is no blame."
         },
         {
           "line_no": 6,
@@ -3832,7 +4434,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무호, 종유흉.",
+          "gloss_en": "Without a trumpet, there will always be danger."
         }
       ],
       "core_terms": [],
@@ -3848,7 +4452,9 @@
         "interpretive_ko": "강한 만남의 시기이니 섣부른 결합보다 경계와 원칙이 우선이다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "구, 녀장, 물용취녀.",
+        "gloss_en": "Jiao, the girl is strong, don't use it to get the girl."
       },
       "lines": [
         {
@@ -3861,7 +4467,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "계우금니, 정길, 유유왕, 견흉, 리시지촉.",
+          "gloss_en": "It is tied to Jin Zhi, which is chastity and good luck. If you are going somewhere, if you see bad luck, you will be hesitant."
         },
         {
           "line_no": 2,
@@ -3873,7 +4481,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "포유어, 무구, 부리빈.",
+          "gloss_en": "If there is fish in the package, there is no blame, but it is not good for guests."
         },
         {
           "line_no": 3,
@@ -3885,7 +4495,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "둔무부, 기항차차, 려, 무대구.",
+          "gloss_en": "The buttocks have no skin, their movements are sequential and severe, and there is no major fault."
         },
         {
           "line_no": 4,
@@ -3897,7 +4509,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "포무어, 기흉.",
+          "gloss_en": "If there is no fish in the package, it will cause trouble."
         },
         {
           "line_no": 5,
@@ -3909,7 +4523,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "이기포과, 함장, 유운자천.",
+          "gloss_en": "The melon wrapped with wolfberry contains a seal, which indicates that it has fallen from the sky."
         },
         {
           "line_no": 6,
@@ -3921,7 +4537,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "구기각, 린, 무구.",
+          "gloss_en": "There is no blame for being stingy and stingy."
         }
       ],
       "core_terms": [],
@@ -3937,7 +4555,9 @@
         "interpretive_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 바름해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "췌, 형. 왕가유묘, 리견대인, 형, 리정. 용대생길, 리유유왕.",
+        "gloss_en": "Cui, Heng. If the king has a temple, it will be beneficial to meet the adults, to be prosperous, and to be chaste. It is good luck to use a big animal to bring good fortune."
       },
       "lines": [
         {
@@ -3950,7 +4570,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부부종, 내난내췌, 야호, 일악為소, 물휼, 왕무구.",
+          "gloss_en": "If there is an end, there will be chaos and chaos. If you shout, you will smile when you hold it. Don't be sorry, and there will be no blame."
         },
         {
           "line_no": 2,
@@ -3962,7 +4584,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "인길, 무구, 부내리용약.",
+          "gloss_en": "There is no blame for bringing good luck, and Fu is the use of good fortune."
         },
         {
           "line_no": 3,
@@ -3974,7 +4598,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "췌여, 차여, 무유리, 왕무구, 소린.",
+          "gloss_en": "Cui is like, sigh is like, there is no benefit, there is no blame, it is stingy."
         },
         {
           "line_no": 4,
@@ -3986,7 +4612,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "대길, 무구.",
+          "gloss_en": "Good luck, no blame."
         },
         {
           "line_no": 5,
@@ -3998,7 +4626,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "췌유위, 무구. 비부, 원영정, 회망.",
+          "gloss_en": "There is no fault in the collection. Bandit Fu, Yuan Yongzhen, regretted his death."
         },
         {
           "line_no": 6,
@@ -4010,7 +4640,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "재자체이, 무구.",
+          "gloss_en": "There is no blame for crying."
         }
       ],
       "core_terms": [],
@@ -4026,7 +4658,9 @@
         "interpretive_ko": "승: 크게 형통하다. 대인을 뵈어도 근심하지 말라. 남쪽으로 나아가면 길하다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "승, 원형, 용견대인, 물휼. 남정길.",
+        "gloss_en": "Sheng, Yuanheng, use it to meet adults, don't show mercy. Good luck to the south."
       },
       "lines": [
         {
@@ -4039,7 +4673,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "윤승, 대길.",
+          "gloss_en": "Yunsheng, good luck."
         },
         {
           "line_no": 2,
@@ -4051,7 +4687,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부내리용약, 무구.",
+          "gloss_en": "Fu Nai makes use of the grain, and there is no fault."
         },
         {
           "line_no": 3,
@@ -4063,7 +4701,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "승허읍.",
+          "gloss_en": "Shengxuyi."
         },
         {
           "line_no": 4,
@@ -4075,7 +4715,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "왕용형우기산, 길무구.",
+          "gloss_en": "Wang Yongheng lived in Qishan, and it was auspicious and unforgivable."
         },
         {
           "line_no": 5,
@@ -4087,7 +4729,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길, 승계.",
+          "gloss_en": "Zhenji, promotion."
         },
         {
           "line_no": 6,
@@ -4099,7 +4743,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명승, 리우부식지정.",
+          "gloss_en": "Ming Sheng is conducive to unending chastity."
         }
       ],
       "core_terms": [],
@@ -4115,7 +4761,9 @@
         "interpretive_ko": "졸음, 번영, 바름은 상서롭고 허물이 없습니다. 믿거나 말거나.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "곤, 형, 정대인길, 무구. 유언부신.",
+        "gloss_en": "Sleepy, prosperous, chastity is auspicious, and there is no blame. Believe it or not."
       },
       "lines": [
         {
@@ -4128,7 +4776,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "둔곤우주목, 입우유곡, 삼세부견.",
+          "gloss_en": "The buttocks were trapped in a tree, fell into a deep valley, and disappeared at the age of three."
         },
         {
           "line_no": 2,
@@ -4140,7 +4790,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "곤우주식, 주불방내, 리용형사, 정흉, 무구.",
+          "gloss_en": "When he was trapped in food and drink, Zhu Fu came and used sacrifices to ward off evil without any blame."
         },
         {
           "line_no": 3,
@@ -4152,7 +4804,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "곤우석, 거우질려, 입우기궁, 부견기처, 흉.",
+          "gloss_en": "Trapped in rocks, clinging to thorns, entering his palace, not seeing his wife, it is bad luck."
         },
         {
           "line_no": 4,
@@ -4164,7 +4818,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "내서서, 곤우금거, 린, 유종.",
+          "gloss_en": "Come slowly, trapped in a golden chariot, stingy, have an end."
         },
         {
           "line_no": 5,
@@ -4176,7 +4832,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "의월, 곤우적불, 내서유설, 리용제사.",
+          "gloss_en": "It is said by Xu You that the sacrifices were made by being trapped in the scarlet curtains."
         },
         {
           "line_no": 6,
@@ -4188,7 +4846,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "곤우갈藟, 우臲卼, 왈동회, 유회, 정길.",
+          "gloss_en": "Trapped in Ge Shu, Yu Xian, said moving regrets, regrets, Zhengji."
         }
       ],
       "core_terms": [],
@@ -4204,7 +4864,9 @@
         "interpretive_ko": "글쎄요, 마을만 바꾸고 우물만 바꾸면 잃을 것도 없고 얻을 것도 없습니다. 우물을 오가는데도 우물을 파지 못하고 병을 잃어버리면 운이 좋지 않습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "정, 개읍부개정, 무상무득. 왕내정정, 흘지역미繘정, 리기瓶, 흉.",
+        "gloss_en": "Well, if you change the town but not the well, you will lose nothing and gain nothing. Going to and from wells, but still not digging into the well, and losing the bottle, it is unlucky."
       },
       "lines": [
         {
@@ -4217,7 +4879,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정니부식, 구정무금.",
+          "gloss_en": "There is no food in the well mud, and there are no birds in the old well."
         },
         {
           "line_no": 2,
@@ -4229,7 +4893,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정곡사부, 옹폐누.",
+          "gloss_en": "The wells and valleys are shot with trout, and the urn is leaking."
         },
         {
           "line_no": 3,
@@ -4241,7 +4907,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정설부식, 為아민측, 가용급, 왕명, 병수기복.",
+          "gloss_en": "If you don't eat from the well, it's out of pity for our people, so you can use it to drink water. The king will be enlightened and receive blessings from it."
         },
         {
           "line_no": 4,
@@ -4253,7 +4921,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정추, 무구.",
+          "gloss_en": "There is no fault in the well."
         },
         {
           "line_no": 5,
@@ -4265,7 +4935,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정렬, 한천식.",
+          "gloss_en": "The well is cold and the spring is cold."
         },
         {
           "line_no": 6,
@@ -4277,7 +4949,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정수물막, 유부원길.",
+          "gloss_en": "If the well is closed, there will be no curtain, and there will be fortune and good fortune."
         }
       ],
       "core_terms": [],
@@ -4293,7 +4967,9 @@
         "interpretive_ko": "혁명에서는 자신의 삶이 번영하고 원나라에서는 헨리 진이 자신의 죽음을 후회합니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "혁, 기일내부, 원형리정, 회망.",
+        "gloss_en": "In the revolution, one's own life is prosperous, and in the Yuan Dynasty, Henry Zhen regrets his death."
       },
       "lines": [
         {
@@ -4306,7 +4982,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "공용황우지혁.",
+          "gloss_en": "Gong uses scalper leather."
         },
         {
           "line_no": 2,
@@ -4318,7 +4996,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "기일내혁지, 정길, 무구.",
+          "gloss_en": "It is the day of the year when it is over, and it is auspicious, and there is no blame."
         },
         {
           "line_no": 3,
@@ -4330,7 +5010,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정흉, 정려, 혁언삼취, 유부.",
+          "gloss_en": "Conquer evil, be chaste and resolute, make revolution in three words, and be prosperous."
         },
         {
           "line_no": 4,
@@ -4342,7 +5024,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "회망, 유부개명, 길.",
+          "gloss_en": "If you regret your death, you may change your destiny, which is auspicious."
         },
         {
           "line_no": 5,
@@ -4354,7 +5038,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "대인호변, 미점유부.",
+          "gloss_en": "The great man changed his mind and did not possess Fu."
         },
         {
           "line_no": 6,
@@ -4366,7 +5052,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "군자표변, 소인혁면, 정흉, 거정길.",
+          "gloss_en": "A gentleman changes like a leopard, a villain changes his face, conquers evil, and is chaste and auspicious."
         }
       ],
       "core_terms": [],
@@ -4382,7 +5070,9 @@
         "interpretive_ko": "딩, 위안지, 헝.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "정, 원길, 형.",
+        "gloss_en": "Ding, Yuan Ji, Heng."
       },
       "lines": [
         {
@@ -4395,7 +5085,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정顛지, 리출부, 득첩이기자, 무구.",
+          "gloss_en": "If the tripod has a sharp toe, whether it can be used as a concubine or a son, there will be no blame."
         },
         {
           "line_no": 2,
@@ -4407,7 +5099,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정유실, 아구유질, 부아능즉, 길.",
+          "gloss_en": "The tripod is solid, and I have a hatred and illness. If I can't do it, it's auspicious."
         },
         {
           "line_no": 3,
@@ -4419,7 +5113,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정이혁, 기항새, 치고부식, 방우휴회, 종길.",
+          "gloss_en": "The tripod's ear leather is blocked, and the pheasant ointment cannot be eaten. Fang Yu will regret it, but it will be good in the end."
         },
         {
           "line_no": 4,
@@ -4431,7 +5127,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정절족, 복공餗, 기형악, 흉.",
+          "gloss_en": "The tripod breaks its legs and covers the male vessel. Its shape is rich and fierce."
         },
         {
           "line_no": 5,
@@ -4443,7 +5141,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정황이금현, 리정.",
+          "gloss_en": "The yellow ear of the tripod is golden, which is beneficial to chastity."
         },
         {
           "line_no": 6,
@@ -4455,7 +5155,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정옥현, 대길, 무부리.",
+          "gloss_en": "Ding Yuxuan, good luck and no disadvantages."
         }
       ],
       "core_terms": [],
@@ -4471,7 +5173,9 @@
         "interpretive_ko": "젠, 헝. 나는 충격에 휩싸여 말문이 막혔다. 수백 마일 동안 충격을 받아도 나는 결코 단검을 잃지 않을 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "진, 형. 진내虩虩, 소언아아. 진경백리, 부상비창.",
+        "gloss_en": "Zhen, Heng. The shock came to me, and I was speechless with laughter. Shocked for hundreds of miles, I will never lose my dagger."
       },
       "lines": [
         {
@@ -4484,7 +5188,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진내虩虩, 후소언아아, 길.",
+          "gloss_en": "The shock came to me, and I laughed and said hoarsely, good luck."
         },
         {
           "line_no": 2,
@@ -4496,7 +5202,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진내려, 억상배, 제우구능, 물축, 칠일득.",
+          "gloss_en": "The earthquake is so severe that hundreds of millions of shells are buried in Jiuling. Don't chase them away. They will be found in seven days."
         },
         {
           "line_no": 3,
@@ -4508,7 +5216,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진소소, 진항무생.",
+          "gloss_en": "Shocking Susu, shocking Xingwuyi."
         },
         {
           "line_no": 4,
@@ -4520,7 +5230,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진수니.",
+          "gloss_en": "The earthquake shook the mud."
         },
         {
           "line_no": 5,
@@ -4532,7 +5244,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진왕내려, 억무상, 유사.",
+          "gloss_en": "The earthquakes come and go fiercely, and there is no loss of hundreds of millions. There is something going on."
         },
         {
           "line_no": 6,
@@ -4544,7 +5258,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진삭삭, 시확확, 정흉. 진부우기궁, 우기린, 무구. 혼구유언.",
+          "gloss_en": "Shaking the rope, looking hale and hearty, threatening evil. It is not a shock to its bow, and it is not to blame for its neighbors. There are words in marriage."
         }
       ],
       "core_terms": [],
@@ -4560,7 +5276,9 @@
         "interpretive_ko": "겐, 뒤에 겐, 사람을 잡지 못해도, 법정에 걸어도, 사람을 보지 못해도 죄가 없습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "간, 간기배, 부획기신, 항기정, 부견기인, 무구.",
+        "gloss_en": "Gen, Gen on the back, if you don't catch the person, if you walk in the court, if you don't see the person, there is no blame."
       },
       "lines": [
         {
@@ -4573,7 +5291,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간기지, 무구, 리영정.",
+          "gloss_en": "Gen's toes are free from blame and benefit Yongzhen."
         },
         {
           "line_no": 2,
@@ -4585,7 +5305,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간기비, 부증기수, 기심부쾌.",
+          "gloss_en": "Gen Qifei, if he does not save his followers, his heart will not be happy."
         },
         {
           "line_no": 3,
@@ -4597,7 +5319,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간기한, 렬기인, 려훈심.",
+          "gloss_en": "Gen's limitations are listed, his virtues are listed, and his heart is sharpened."
         },
         {
           "line_no": 4,
@@ -4609,7 +5333,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간기신, 무구.",
+          "gloss_en": "Gen his body, no blame."
         },
         {
           "line_no": 5,
@@ -4621,7 +5347,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "간기보, 언유서, 회망.",
+          "gloss_en": "Gen Qi assists, speaks in an orderly manner, and regrets his death."
         },
         {
           "line_no": 6,
@@ -4633,7 +5361,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "돈간, 길.",
+          "gloss_en": "Dungen, Kyrgyzstan."
         }
       ],
       "core_terms": [],
@@ -4649,7 +5379,9 @@
         "interpretive_ko": "점차적으로 그 소녀는 행운을 빌어 그녀의 처녀성에 도움이 될 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "점, 녀귀길, 리정.",
+        "gloss_en": "Gradually, the girl will return to good luck and be beneficial to her virginity."
       },
       "lines": [
         {
@@ -4662,7 +5394,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "홍점우간, 소자려. 유언, 무구.",
+          "gloss_en": "Hongjian is good at doing things, but the boy is hard at work. There is no blame to be said."
         },
         {
           "line_no": 2,
@@ -4674,7 +5408,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "홍점우반, 飲식간간, 길.",
+          "gloss_en": "Hongjian is in the rock, eating and drinking is auspicious."
         },
         {
           "line_no": 3,
@@ -4686,7 +5422,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "홍점우륙, 부정부복, 부잉부육, 흉. 리어구.",
+          "gloss_en": "When Hongjian arrived in the land, his husband's battle was gone, his wife was infertile, and it was bad luck. Benefit from the enemy."
         },
         {
           "line_no": 4,
@@ -4698,7 +5436,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "홍점우목, 혹득기각, 무구.",
+          "gloss_en": "Hongjian was in the wood, and he might have obtained the jie, and there would be no fault."
         },
         {
           "line_no": 5,
@@ -4710,7 +5450,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "홍점우능, 부삼세부잉, 종막지승, 길.",
+          "gloss_en": "When Hongjian was in the mausoleum, his wife was infertile at the age of three, so she won the victory in the end, which is auspicious."
         },
         {
           "line_no": 6,
@@ -4722,7 +5464,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "홍점우규, 기우가용為의, 길.",
+          "gloss_en": "Hongjian is in Kui, and his feathers can be used as ritual instruments and good luck."
         }
       ],
       "core_terms": [],
@@ -4738,7 +5482,9 @@
         "interpretive_ko": "내 여동생에게 돌아가면 불운이 찾아오고 이익도 없을 것입니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "귀매, 정흉, 무유리.",
+        "gloss_en": "Returning to my sister will bring bad luck and no profit."
       },
       "lines": [
         {
@@ -4751,7 +5497,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "귀매이제, 파능리, 정길.",
+          "gloss_en": "Returning to my sister Yidi, she is lame and able to walk, which is auspicious."
         },
         {
           "line_no": 2,
@@ -4763,7 +5511,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "묘능시, 리유인지정.",
+          "gloss_en": "The scorpion can see, which can benefit people's chastity."
         },
         {
           "line_no": 3,
@@ -4775,7 +5525,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "귀매이수, 반귀이제.",
+          "gloss_en": "Return to my sister with a beard, but return to my sister with a beard."
         },
         {
           "line_no": 4,
@@ -4787,7 +5539,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "귀매건기, 지귀유시.",
+          "gloss_en": "There is a period of misunderstanding when returning to my sister, and there is a time when I return home late."
         },
         {
           "line_no": 5,
@@ -4799,7 +5553,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "제을귀매, 기군지몌, 부여기제지몌량, 월궤망, 길.",
+          "gloss_en": "Emperor Yi returns to his younger sister, and his king's sleeves are not as good as those of his concubines. Looking at the moon is auspicious."
         },
         {
           "line_no": 6,
@@ -4811,7 +5567,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "녀승광무실, 사규양무혈, 무유리.",
+          "gloss_en": "A woman's carrying of a basket is of no substance, and a scholar's shepherding of sheep is of no blood and profit."
         }
       ],
       "core_terms": [],
@@ -4827,7 +5585,9 @@
         "interpretive_ko": "펑, 헝, 왕은 거짓이니 걱정하지 마세요.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "봉, 형, 왕가지, 물우, 의일중.",
+        "gloss_en": "Feng, Heng, the king is false, don't worry, it's better to be in the middle of the day."
       },
       "lines": [
         {
@@ -4840,7 +5600,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "우기배주, 수순무구, 왕유尚.",
+          "gloss_en": "When you meet your spouse, you will have no fault even if you have a few days to go."
         },
         {
           "line_no": 2,
@@ -4852,7 +5614,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "봉기부, 일중견두, 왕득의질, 유부발야, 길.",
+          "gloss_en": "If it is abundant, you will see fights in the middle of the day, and you will get suspicious diseases. If you are prosperous, it will be auspicious."
         },
         {
           "line_no": 3,
@@ -4864,7 +5628,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "봉기패, 일중견매, 절기우굉, 무구.",
+          "gloss_en": "It is abundant, but when you see it in the middle of the day, you will break your right arm, and there is no fault."
         },
         {
           "line_no": 4,
@@ -4876,7 +5642,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "봉기부, 일중견두, 우기이주, 길.",
+          "gloss_en": "If it is abundant, it will be auspicious if you see a fight in the middle of the day and meet its barbarian master."
         },
         {
           "line_no": 5,
@@ -4888,7 +5656,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "내장, 유경예, 길.",
+          "gloss_en": "If you come to Zhang, you will have a good reputation, which is auspicious."
         },
         {
           "line_no": 6,
@@ -4900,7 +5670,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "봉기옥, 부기가, 규기호, 격기무인, 삼세부견, 흉.",
+          "gloss_en": "To enrich his house, to take care of his family, to peek into his door, but to find no one there, and to miss him when he is three years old, is bad luck."
         }
       ],
       "core_terms": [],
@@ -4916,7 +5688,9 @@
         "interpretive_ko": "루, 샤오헝, 루 젠지.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "려, 소형, 려정길.",
+        "gloss_en": "Lu, Xiaoheng, Lu Zhenji."
       },
       "lines": [
         {
@@ -4929,7 +5703,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "려쇄쇄, 사기소취재.",
+          "gloss_en": "The journey is trivial, and this is the disaster it causes."
         },
         {
           "line_no": 2,
@@ -4941,7 +5717,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "려즉차, 회기자, 득동부정.",
+          "gloss_en": "The journey is about to take place, and if you have the talent, you will be a virgin."
         },
         {
           "line_no": 3,
@@ -4953,7 +5731,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "려분기차, 상기동부, 정려.",
+          "gloss_en": "The second was the burning of the road, and the loss of his young servant, Zhenli."
         },
         {
           "line_no": 4,
@@ -4965,7 +5745,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "려우처, 득기자부, 아심부쾌.",
+          "gloss_en": "I am not happy when I travel to various places and get the ax I want."
         },
         {
           "line_no": 5,
@@ -4977,7 +5759,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "사치일시망, 종이예명.",
+          "gloss_en": "Shooting a pheasant kills you with one arrow, and you end up honoring your life."
         },
         {
           "line_no": 6,
@@ -4989,7 +5773,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "조분기소, 려인선소후호啕. 상우우역, 흉.",
+          "gloss_en": "When a bird burns its nest, the traveler first laughs and then cries. Losing an ox in Yi is bad luck."
         }
       ],
       "core_terms": [],
@@ -5005,7 +5791,9 @@
         "interpretive_ko": "은 미래와 어른들을 만나는 데 좋습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "손, 소형, 리유유왕, 리견대인.",
+        "gloss_en": "Xun, Xiaoheng, is good for your future and meeting adults."
       },
       "lines": [
         {
@@ -5018,7 +5806,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "진퇴, 리무인지정.",
+          "gloss_en": "Advance and retreat, benefiting the warrior's chastity."
         },
         {
           "line_no": 2,
@@ -5030,7 +5820,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "손재상하, 용사무분야, 길무구.",
+          "gloss_en": "Xun is under the bed, and his history is full of witches and misfortunes, but he has no fault."
         },
         {
           "line_no": 3,
@@ -5042,7 +5834,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "빈손, 린.",
+          "gloss_en": "Frequent Sunda, stingy."
         },
         {
           "line_no": 4,
@@ -5054,7 +5848,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "회망, 전획삼품.",
+          "gloss_en": "Regret for death, Tian won the third grade."
         },
         {
           "line_no": 5,
@@ -5066,7 +5862,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길회망, 무부리. 무초유종, 선경삼일, 후경삼일, 길.",
+          "gloss_en": "Zhenji regrets his death, and there is no disadvantage. There is no beginning but an end. The first is three days, and the second is three days. It is auspicious."
         },
         {
           "line_no": 6,
@@ -5078,7 +5876,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "손재상하, 상기자부, 정흉.",
+          "gloss_en": "Xun is under the bed, missing his axe, chaste and fierce."
         }
       ],
       "core_terms": [],
@@ -5094,7 +5894,9 @@
         "interpretive_ko": "듀이, 헨리, 리젠.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "태, 형, 리정.",
+        "gloss_en": "Dui, Henry, Li Zhen."
       },
       "lines": [
         {
@@ -5107,7 +5909,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "화태, 길.",
+          "gloss_en": "Hedui, Ji."
         },
         {
           "line_no": 2,
@@ -5119,7 +5923,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부태, 길, 회망.",
+          "gloss_en": "Fudui, Ji, regrets death."
         },
         {
           "line_no": 3,
@@ -5131,7 +5937,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "내태, 흉.",
+          "gloss_en": "Come to redeem, bad luck."
         },
         {
           "line_no": 4,
@@ -5143,7 +5951,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "상태, 미녕, 개질유희.",
+          "gloss_en": "Shangdui is not peaceful, and there is joy in the illness."
         },
         {
           "line_no": 5,
@@ -5155,7 +5965,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부우박, 유려.",
+          "gloss_en": "Fu is good at stripping, and he is powerful."
         },
         {
           "line_no": 6,
@@ -5167,7 +5979,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "인태.",
+          "gloss_en": "quote."
         }
       ],
       "core_terms": [],
@@ -5183,7 +5997,9 @@
         "interpretive_ko": "후안, 헝. 왕에게 절이 있으면 큰 강을 건너서 이익을 얻을 수 있고, 정직할 수도 있다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "환, 형. 왕가유묘, 리섭대천, 리정.",
+        "gloss_en": "Huan, Heng. If the king has a temple, he can benefit from crossing large rivers and be honest."
       },
       "lines": [
         {
@@ -5196,7 +6012,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "용증마장, 길.",
+          "gloss_en": "It is auspicious to use it to make the horse strong."
         },
         {
           "line_no": 2,
@@ -5208,7 +6026,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "환분기기, 회망.",
+          "gloss_en": "Huan rushed to his opportunity and regretted his death."
         },
         {
           "line_no": 3,
@@ -5220,7 +6040,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "환기궁, 무회.",
+          "gloss_en": "Huan his bow, no regrets."
         },
         {
           "line_no": 4,
@@ -5232,7 +6054,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "환기군, 원길. 환유구, 비이소사.",
+          "gloss_en": "Huan his group, Yuan Ji. There are hills in Huan, which is incredible."
         },
         {
           "line_no": 5,
@@ -5244,7 +6068,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "환한기대호, 환왕거, 무구.",
+          "gloss_en": "Huan Khan has his great name, and King Huan lives there, so there is no blame."
         },
         {
           "line_no": 6,
@@ -5256,7 +6082,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "환기혈, 거적출, 무구.",
+          "gloss_en": "If the blood is drained away, there will be no blame."
         }
       ],
       "core_terms": [],
@@ -5272,7 +6100,9 @@
         "interpretive_ko": "축제, 편. 그것은 쓰라린 축제이며 바름할 수 없습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "절, 형. 고절, 부가정.",
+        "gloss_en": "Festival, Hen. It is a bitter festival and cannot be chaste."
       },
       "lines": [
         {
@@ -5285,7 +6115,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부출호정, 무구.",
+          "gloss_en": "If you don't leave your home, you will be blameless."
         },
         {
           "line_no": 2,
@@ -5297,7 +6129,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부출문정, 흉.",
+          "gloss_en": "If you don't go to the courtyard, it will be bad luck."
         },
         {
           "line_no": 3,
@@ -5309,7 +6143,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부절야, 칙차야, 무구.",
+          "gloss_en": "If there is no restraint, then there will be no blame."
         },
         {
           "line_no": 4,
@@ -5321,7 +6157,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "안절, 형.",
+          "gloss_en": "Good luck, Heng."
         },
         {
           "line_no": 5,
@@ -5333,7 +6171,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "감절, 길. 왕유尚.",
+          "gloss_en": "Ganjie, Ji. There is always a way to go."
         },
         {
           "line_no": 6,
@@ -5345,7 +6185,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "고절, 정흉, 회망.",
+          "gloss_en": "Bitter festivals, chastity and evil, regret and death."
         }
       ],
       "core_terms": [],
@@ -5361,7 +6203,9 @@
         "interpretive_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 바름에 이롭습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "중부, 돈어길, 리섭대천, 리정.",
+        "gloss_en": "Zhongfu, dolphin and fish are auspicious, beneficial to crossing large rivers, beneficial to chastity."
       },
       "lines": [
         {
@@ -5374,7 +6218,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "우길, 유타부연.",
+          "gloss_en": "Yu Ji, without him, Yan would not be able to win."
         },
         {
           "line_no": 2,
@@ -5386,7 +6232,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "명학재음, 기자화지, 아유호작, 오여이미지.",
+          "gloss_en": "The crane is in the shade, and its son is in harmony with it. I have a good prince, and I will be with you."
         },
         {
           "line_no": 3,
@@ -5398,7 +6246,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "득적, 혹고혹파, 혹읍혹가.",
+          "gloss_en": "When the enemy is defeated, he may drum or strike, weep or sing."
         },
         {
           "line_no": 4,
@@ -5410,7 +6260,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "월궤망, 마필망, 무구.",
+          "gloss_en": "A few months later, if the horse dies, there is no blame."
         },
         {
           "line_no": 5,
@@ -5422,7 +6274,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부련여, 무구.",
+          "gloss_en": "There is no fault, no fault."
         },
         {
           "line_no": 6,
@@ -5434,7 +6288,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "한음등우천, 정흉.",
+          "gloss_en": "Han's sound ascends to the sky, which is pure and ominous."
         }
       ],
       "core_terms": [],
@@ -5450,7 +6306,9 @@
         "interpretive_ko": "리 정은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "소과, 형, 리정, 가소사, 부가대사. 비조유지음, 부의상의하, 대길.",
+        "gloss_en": "Xiaoguo, Henry, Li Zhen, can be a small matter, not a big one. The sound left by flying birds should not go up or down, which is good luck."
       },
       "lines": [
         {
@@ -5463,7 +6321,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "비조이흉.",
+          "gloss_en": "Flying birds are evil."
         },
         {
           "line_no": 2,
@@ -5475,7 +6335,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "과기조, 우기비, 부급기군, 우기신, 무구.",
+          "gloss_en": "If you pass by your ancestors, if you meet your concubines, if you are not as good as your lord, if you meet your ministers, there will be no blame."
         },
         {
           "line_no": 3,
@@ -5487,7 +6349,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "불과방지, 종혹장지, 흉.",
+          "gloss_en": "If you don't guard against it, follow it or kill it, it will be fierce."
         },
         {
           "line_no": 4,
@@ -5499,7 +6363,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "무구, 불과우지. 왕려필계, 물용영정.",
+          "gloss_en": "No blame, no fault of encounter. If you go hard, you must be careful, but don't use eternal chastity."
         },
         {
           "line_no": 5,
@@ -5511,7 +6377,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "밀운부우, 자아서교, 공익, 취피재혈.",
+          "gloss_en": "The clouds are dense and there is no rain. I will go to the western suburbs and take the boat to the cave."
         },
         {
           "line_no": 6,
@@ -5523,7 +6391,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "불우과지, 비조리지, 흉, 시위재생.",
+          "gloss_en": "If you encounter it, if the birds fly away from it, it will be fierce, which is called disaster."
         }
       ],
       "core_terms": [],
@@ -5539,7 +6409,9 @@
         "interpretive_ko": "경제적이고 번영하며 이익과 바름이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "既제, 형, 소리정, 초길종난.",
+        "gloss_en": "It is both economic and prosperous, with little profit and chastity, good fortune at first and chaos at the end."
       },
       "lines": [
         {
@@ -5552,7 +6424,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "예기륜, 유기미, 무구.",
+          "gloss_en": "Drag its wheel, wet its tail, no blame."
         },
         {
           "line_no": 2,
@@ -5564,7 +6438,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "부상기불, 물축, 칠일득.",
+          "gloss_en": "If a woman loses her husband, don't drive her away. She will get it in seven days."
         },
         {
           "line_no": 3,
@@ -5576,7 +6452,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "고종벌귀방, 삼년극지, 소인물용.",
+          "gloss_en": "Emperor Gaozong used this method to defeat ghosts and defeat them in three years. Do not use it on villains."
         },
         {
           "line_no": 4,
@@ -5588,7 +6466,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유유의袽, 종일계.",
+          "gloss_en": "Confucianism has its own robes and rules, and it must be disciplined all day long."
         },
         {
           "line_no": 5,
@@ -5600,7 +6480,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "동린살우, 부여서린지약제, 실수기복.",
+          "gloss_en": "The neighbor to the east kills the cow, which is not as good as the neighbor to the west to offer sacrifices, and is actually blessed by it."
         },
         {
           "line_no": 6,
@@ -5612,7 +6494,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유기수, 려.",
+          "gloss_en": "Moisten its head, severe."
         }
       ],
       "core_terms": [],
@@ -5628,7 +6512,9 @@
         "interpretive_ko": "이루어지지 않으면 번영할 것입니다. 작은 여우가 그렇게 할 것이고 꼬리를 적실 것입니다. 그것은 아무 유익이 없습니다.",
         "notes": [
           "auto-bootstrapped; review required"
-        ]
+        ],
+        "reading_ko": "미제, 형, 소호흘제, 유기미, 무유리.",
+        "gloss_en": "If it is not done, it will be prosperous. The little fox will be doing it, and it will wet its tail, which is of no benefit."
       },
       "lines": [
         {
@@ -5641,7 +6527,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유기미, 린.",
+          "gloss_en": "Moisten its tail, stingy."
         },
         {
           "line_no": 2,
@@ -5653,7 +6541,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "예기륜, 정길.",
+          "gloss_en": "Pulling its wheel is chaste and auspicious."
         },
         {
           "line_no": 3,
@@ -5665,7 +6555,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "미제, 정흉, 리섭대천.",
+          "gloss_en": "Before the rescue, the enemy will be conquered, and the great river will be benefited."
         },
         {
           "line_no": 4,
@@ -5677,7 +6569,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길, 회망, 진용벌귀방, 삼년유상우대국.",
+          "gloss_en": "Zhenji, regretted his death, used the method of attacking ghosts, and was rewarded by the great country in three years."
         },
         {
           "line_no": 5,
@@ -5689,7 +6583,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "정길, 무회, 군자지광, 유부, 길.",
+          "gloss_en": "Chastity and auspiciousness, no regrets, the light of a gentleman, prosperity and good luck."
         },
         {
           "line_no": 6,
@@ -5701,7 +6597,9 @@
           "notes": [
             "auto-bootstrapped; review required"
           ],
-          "ambiguities": []
+          "ambiguities": [],
+          "reading_ko": "유부우飲주, 무구, 유기수, 유부실시.",
+          "gloss_en": "If you are good at drinking alcohol, you will not blame yourself. If you wet your head, you will be wrong."
         }
       ],
       "core_terms": [],
