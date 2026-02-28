@@ -5,6 +5,7 @@ import { getCardForHexagram, getHexagramContent } from "@/lib/card-index";
 import { getPrimaryAxisById } from "@/lib/primary-axis-map";
 import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 import { getHexagramTrack } from "@/data/pro_tracks";
+import { getHexagramCorpus } from "@/data/hexagram_corpus";
 
 export function generateStaticParams() {
   return HEXAGRAMS.map((h) => ({ id: String(h.id) }));
@@ -53,6 +54,7 @@ export default async function HexagramCardDetailPage({
   const content = getHexagramContent(id);
   const primaryAxis = getPrimaryAxisById(id) ?? "work";
   const track = getHexagramTrack(id);
+  const corpus = getHexagramCorpus(id);
   const prevId = id > 1 ? id - 1 : 64;
   const nextId = id < 64 ? id + 1 : 1;
 
@@ -93,26 +95,34 @@ export default async function HexagramCardDetailPage({
         </div>
       </header>
 
-      {track && (
+      {(track || corpus.gua_text.original || corpus.gua_text.literal_ko || corpus.gua_text.interpretive_ko) && (
         <section className="rounded-xl border p-4 space-y-2">
           <h2 className="font-semibold">해석 (원문+현대)</h2>
-          <p className="text-sm"><b>원문:</b> {track.freePreview.classicalAnchor}</p>
-          <p className="text-sm"><b>해석:</b> {track.freePreview.plainMeaning}</p>
-          <p className="text-sm text-[var(--text-muted)]">{track.freePreview.modernTeaser}</p>
+          {corpus.gua_text.original ? <p className="text-sm"><b>원문:</b> {corpus.gua_text.original}</p> : null}
+          {corpus.gua_text.literal_ko ? <p className="text-sm"><b>직역:</b> {corpus.gua_text.literal_ko}</p> : null}
+          {corpus.gua_text.interpretive_ko ? (
+            <p className="text-sm text-[var(--text-muted)]"><b>의역:</b> {corpus.gua_text.interpretive_ko}</p>
+          ) : null}
         </section>
       )}
 
       <section className="rounded-xl border p-4">
         <h2 className="mb-3 font-semibold">6효 원문 + 보편 해석</h2>
         <ol className="space-y-2 text-sm">
-          {content.lineTexts.map((line, idx) => (
+          {(corpus.lines.length > 0 ? corpus.lines : content.lineTexts.map((line, idx) => ({
+            line_no: idx + 1,
+            original: toClassicalLineLabel(track?.linesKorean?.[idx], idx),
+            literal_ko: undefined as string | undefined,
+            interpretive_ko: line,
+          }))).map((row, idx) => (
             <li
               key={idx}
               className="rounded-lg bg-black/20 px-3 py-2 space-y-1 line-step-reveal"
               style={{ animationDelay: `${idx * 90}ms` }}
             >
-              <p><b>원문:</b> {toClassicalLineLabel(track?.linesKorean?.[idx], idx)}</p>
-              <p><b>해석:</b> {line}</p>
+              {row.original ? <p><b>원문:</b> {row.original}</p> : null}
+              {row.literal_ko ? <p><b>직역:</b> {row.literal_ko}</p> : null}
+              {row.interpretive_ko ? <p><b>해석:</b> {row.interpretive_ko}</p> : null}
             </li>
           ))}
         </ol>
