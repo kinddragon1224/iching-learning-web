@@ -28,6 +28,12 @@ function findHexIdByLines(target: number[]) {
   return null;
 }
 
+function findHexIdByLinesFlexible(target: number[]) {
+  const direct = findHexIdByLines(target);
+  if (direct) return direct;
+  return findHexIdByLines([...target].reverse());
+}
+
 function kstDateKey() {
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Seoul",
@@ -96,7 +102,7 @@ export default function DailyPage() {
         const lineNo = Math.floor(Math.random() * 6) + 1;
         const base = getHexagramContent(baseId).lines;
         const changed = flipLine(base, lineNo);
-        const changedId = findHexIdByLines(changed) ?? undefined;
+        const changedId = findHexIdByLinesFlexible(changed) ?? undefined;
         next = { baseId, lineNo, changedId };
       }
 
@@ -133,7 +139,10 @@ export default function DailyPage() {
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
-            onClick={() => setMode("lite")}
+            onClick={() => {
+              setMode("lite");
+              setDraw(null);
+            }}
             disabled={!canCast}
             className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "lite" ? "border-[var(--gold-line)]" : "border-white/20"}`}
           >
@@ -141,7 +150,10 @@ export default function DailyPage() {
           </button>
           <button
             type="button"
-            onClick={() => setMode("deep")}
+            onClick={() => {
+              setMode("deep");
+              setDraw(null);
+            }}
             disabled={!canCast}
             className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "deep" ? "border-[var(--gold-line)]" : "border-white/20"}`}
           >
