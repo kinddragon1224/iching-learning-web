@@ -457,18 +457,27 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 140px;
-  padding: 10px 16px;
+  min-width: 188px;
+  padding: 13px 20px;
   border-radius: 999px;
   border: 1px solid rgba(212, 178, 106, 0.75);
   background: linear-gradient(180deg, rgba(212, 178, 106, 0.24), rgba(14, 14, 20, 0.82));
   color: #f3e4be;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   letter-spacing: 0.01em;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 18px rgba(212, 178, 106, 0.24);
   backdrop-filter: blur(8px);
   animation: homeBottomTabPulse 2.8s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  .home-bottom-center-tab {
+    min-width: 160px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+  }
 }
 
 @keyframes homeBottomTabPulse {
