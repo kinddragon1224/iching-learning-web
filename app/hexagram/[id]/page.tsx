@@ -127,7 +127,7 @@ export default async function HexagramCardDetailPage({
 
             const matched = (row.original ?? "").match(/^(初九|初六|九二|六二|九三|六三|九四|六四|九五|六五|上九|上六)[,：:\s]*(.*)$/);
             const lineHanja = row.label_hanja ?? matched?.[1] ?? (row.original ?? "");
-            const lineOriginalBody = matched?.[2]?.trim() || "원문 준비 중";
+            const lineOriginalBody = matched?.[2]?.trim() || (row.original ?? "").trim();
 
             return (
               <li
@@ -135,7 +135,7 @@ export default async function HexagramCardDetailPage({
                 className="rounded-lg bg-black/20 px-3 py-2 space-y-1 line-step-reveal"
                 style={{ animationDelay: `${idx * 90}ms` }}
               >
-                <p><b>{lineHanja}</b> : {lineOriginalBody}</p>
+                <p><b>{lineHanja}</b>{lineOriginalBody ? ` : ${lineOriginalBody}` : ""}</p>
                 <p><b>{lineLabel}</b> {koReading}</p>
                 <p><b>보편 해석:</b> {plainMeaning}</p>
                 <p className="text-[var(--text-muted)]"><b>현대 해석:</b> {modernMeaning}</p>
