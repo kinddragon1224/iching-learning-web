@@ -1357,99 +1357,99 @@
     {
       "id": 14,
       "gua_text": {
-        "original": "大有，元亨。",
-        "literal_ko": "대유, 위안헝.",
-        "interpretive_ko": "대유, 위안헝.",
+        "original": "大有 元亨",
+        "reading_ko": "대유 원형",
+        "literal_ko": "대유는 크게 형통하다.",
+        "interpretive_ko": "큰 소유와 성과의 때일수록 관리와 책임이 함께 가야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "대유, 원형.",
-        "gloss_en": "Dayou, Yuanheng."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "無交害，匪咎，艱則無咎。",
-          "literal_ko": "피해가 없다면 허물도 없을 것입니다. 어려움이 있어도 허물할 것이 없습니다.",
-          "interpretive_ko": "피해가 없다면 허물도 없을 것입니다. 어려움이 있어도 허물할 것이 없습니다.",
+          "label_ko": "초구",
+          "original": "无交害 匪咎 艱則无咎",
+          "reading_ko": "무교해 비구 간즉무구",
+          "literal_ko": "해로운 교섭이 없으니 허물이 아니다. 어렵게 여기면 허물이 없다.",
+          "interpretive_ko": "초기 성공기에 경계심을 유지하면 큰 실수를 막을 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무교해, 비구, 간칙무구.",
-          "gloss_en": "If there is no harm, there will be no blame. If there is difficulty, there will be no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "大車以載，有攸往，無咎。",
-          "literal_ko": "큰 수레는 그것을 운반할 수 있으며, 거기에 가는 것에 대한 허물 없음.",
-          "interpretive_ko": "큰 수레는 그것을 운반할 수 있으며, 거기에 가는 것에 대한 허물 없음.",
+          "label_ko": "구이",
+          "original": "大車以載 有攸往 无咎",
+          "reading_ko": "대거이재 유유왕 무구",
+          "literal_ko": "큰 수레로 실어 나르니 갈 바가 있고 허물이 없다.",
+          "interpretive_ko": "역량이 커진 만큼 실행 규모를 키워도 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "대거이재, 유유왕, 무구.",
-          "gloss_en": "A large cart can carry it, and there is no blame for going there."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "公用亨于天子，小人弗克。",
-          "literal_ko": "황제에서는 대중이 번영하고 악당은 후케입니다.",
-          "interpretive_ko": "황제에서는 대중이 번영하고 악당은 후케입니다.",
+          "label_ko": "구삼",
+          "original": "公用亨于天子 小人弗克",
+          "reading_ko": "공용형우천자 소인불극",
+          "literal_ko": "공이 천자에게 제향하니, 소인은 감당하지 못한다.",
+          "interpretive_ko": "큰 일은 큰 그릇이 맡아야 한다. 역할의 격이 중요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "공용형우천자, 소인불극.",
-          "gloss_en": "The public is prosperous in the emperor, and the villain is Fuke."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "匪其彭，無咎。",
-          "literal_ko": "다른 사람을 강탈하는 것에 대한 책임은 없습니다.",
-          "interpretive_ko": "다른 사람을 강탈하는 것에 대한 책임은 없습니다.",
+          "label_ko": "구사",
+          "original": "匪其彭 无咎",
+          "reading_ko": "비기팽 무구",
+          "literal_ko": "그 성대함을 자랑하지 않으면 허물이 없다.",
+          "interpretive_ko": "성과 과시는 관계 리스크를 키운다. 절제가 안전하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "비기팽, 무구.",
-          "gloss_en": "There is no blame for robbing others."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "厥孚交如，威如，吉。",
-          "literal_ko": "부 구, 웨이 루, 길.",
-          "interpretive_ko": "부 구, 웨이 루, 길.",
+          "label_ko": "육오",
+          "original": "厥孚交如 威如 吉",
+          "reading_ko": "궐부교여 위여 길",
+          "literal_ko": "그 믿음이 서로 사귀고 위엄이 있으니 길하다.",
+          "interpretive_ko": "신뢰와 권위의 균형이 리더십의 핵심이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "궐부교여, 위여, 길.",
-          "gloss_en": "Jue Fu Jiao Ru, Wei Ru, Ji."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "自天佑之，吉無不利。",
-          "literal_ko": "하나님께서 당신을 축복하시기 때문에 모든 것이 좋을 수도 있고 나쁠 수도 있습니다.",
-          "interpretive_ko": "하나님께서 당신을 축복하시기 때문에 모든 것이 좋을 수도 있고 나쁠 수도 있습니다.",
+          "label_ko": "상구",
+          "original": "自天祐之 吉无不利",
+          "reading_ko": "자천우지 길무불리",
+          "literal_ko": "하늘이 돕으니 길하여 이롭지 않음이 없다.",
+          "interpretive_ko": "원칙을 지킨 성과는 외부 지원까지 불러온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "자천우지, 길무부리.",
-          "gloss_en": "Since God bless you, everything will be good and bad."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -1460,99 +1460,99 @@
     {
       "id": 15,
       "gua_text": {
-        "original": "謙，亨，君子有終。",
-        "literal_ko": "겸손, 번영, 신사는 결국 죽습니다.",
-        "interpretive_ko": "겸손, 번영, 신사는 결국 죽습니다.",
+        "original": "謙 亨 君子有終",
+        "reading_ko": "겸 형 군자유종",
+        "literal_ko": "겸은 형통하니 군자가 마침을 둔다.",
+        "interpretive_ko": "겸손은 단기 미덕이 아니라 끝까지 가는 실행력이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "겸, 형, 군자유종.",
-        "gloss_en": "Modesty, prosperity, a gentleman will eventually die."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "謙謙君子，用涉大川，吉。",
-          "literal_ko": "겸손한 군자라면 큰 강을 건너는 것이 복된 일이다.",
-          "interpretive_ko": "겸손한 군자라면 큰 강을 건너는 것이 복된 일이다.",
+          "label_ko": "초육",
+          "original": "謙謙君子 用涉大川 吉",
+          "reading_ko": "겸겸군자 용섭대천 길",
+          "literal_ko": "겸손하고 또 겸손한 군자이니 큰 내를 건너도 길하다.",
+          "interpretive_ko": "낮춤의 태도가 큰 도전에서 오히려 추진력이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "겸겸군자, 용섭대천, 길.",
-          "gloss_en": "If you are a humble gentleman, it is auspicious to cross the great river."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "鳴謙，貞吉。",
-          "literal_ko": "밍첸, 젠지.",
-          "interpretive_ko": "밍첸, 젠지.",
+          "label_ko": "육이",
+          "original": "鳴謙 貞吉",
+          "reading_ko": "명겸 정길",
+          "literal_ko": "겸손이 드러나니 바르게 길하다.",
+          "interpretive_ko": "겸손은 숨김이 아니라 일관된 태도로 드러난다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명겸, 정길.",
-          "gloss_en": "Ming Qian, Zhenji."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "勞謙君子，有終吉。",
-          "literal_ko": "열심히 일하는 군자는 결국 행운을 얻게 될 것입니다.",
-          "interpretive_ko": "열심히 일하는 군자는 결국 행운을 얻게 될 것입니다.",
+          "label_ko": "구삼",
+          "original": "勞謙君子 有終吉",
+          "reading_ko": "노겸군자 유종길",
+          "literal_ko": "수고로운 겸손의 군자이니 마침내 길하다.",
+          "interpretive_ko": "고된 과정에서도 공을 내세우지 않으면 결국 신뢰를 얻는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "노겸군자, 유종길.",
-          "gloss_en": "A gentleman who works hard will have good luck in the end."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "無不利，撝謙。",
-          "literal_ko": "단점이 없고 겸손합니다.",
-          "interpretive_ko": "단점이 없고 겸손합니다.",
+          "label_ko": "육사",
+          "original": "无不利 撝謙",
+          "reading_ko": "무불리 휘겸",
+          "literal_ko": "이롭지 않음이 없으니 겸손을 펼친다.",
+          "interpretive_ko": "겸손이 조직의 마찰을 줄여 전방위로 이익을 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무부리, 휘겸.",
-          "gloss_en": "No disadvantages, humble."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "不富，以其鄰，利用侵伐，無不利。",
-          "literal_ko": "부자가 아니면 이웃을 이용하고 착취해도 불이로움이 없다.",
-          "interpretive_ko": "부자가 아니면 이웃을 이용하고 착취해도 불이로움이 없다.",
+          "label_ko": "육오",
+          "original": "不富以其鄰 利用侵伐 无不利",
+          "reading_ko": "불부이기린 이용침벌 무불리",
+          "literal_ko": "이웃의 부를 의지하지 말고 침벌을 쓰는 데 이롭고, 이롭지 않음이 없다.",
+          "interpretive_ko": "핵심 원칙을 해치는 요소엔 단호한 조치가 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부부, 이기린, 리용침벌, 무부리.",
-          "gloss_en": "If you are not rich, you will have no disadvantage if you take advantage of your neighbors and exploit them."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "鳴謙，利用行師，征邑國。",
-          "literal_ko": "겸손을 밝히면 군대를 써서 읍과 나라를 바로잡을 수 있다.",
-          "interpretive_ko": "마지막에는 겸손을 원칙으로 삼아 질서를 회복해야 한다.",
+          "label_ko": "상육",
+          "original": "鳴謙 利用行師 征邑國",
+          "reading_ko": "명겸 이용행사 정읍국",
+          "literal_ko": "겸손을 드러내니 군사를 쓰고 읍과 나라를 바로잡음이 이롭다.",
+          "interpretive_ko": "마지막 단계에선 겸손을 기준으로 질서를 정돈해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명겸, 리용항사, 정읍국.",
-          "gloss_en": "Ming Qian used his army to conquer the country."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -1563,99 +1563,99 @@
     {
       "id": 16,
       "gua_text": {
-        "original": "豫，利建侯行師。",
-        "literal_ko": "리 건후는 군대에 갔다.",
-        "interpretive_ko": "리 건후는 군대에 갔다.",
+        "original": "豫 利建侯行師",
+        "reading_ko": "예 이건후행사",
+        "literal_ko": "예는 제후를 세우고 군사를 움직이는 데 이롭다.",
+        "interpretive_ko": "의욕이 올라가는 시기에는 실행 조직을 미리 갖추는 것이 중요하다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "서, 리건후항사.",
-        "gloss_en": "Yu, Li Jianhou went to the army."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "鳴豫，凶。",
-          "literal_ko": "밍유, 치열해요.",
-          "interpretive_ko": "밍유, 치열해요.",
+          "label_ko": "초육",
+          "original": "鳴豫 凶",
+          "reading_ko": "명예 흉",
+          "literal_ko": "들뜬 기쁨을 떠벌리면 흉하다.",
+          "interpretive_ko": "초기 흥분을 과시하면 리듬이 빨리 무너진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명서, 흉.",
-          "gloss_en": "Ming Yu, fierce."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "介于石，不終日，貞吉。",
-          "literal_ko": "돌 사이에는 결코 영원히 지속되지 않으며 바름하고 상서로운 것이 될 것입니다.",
-          "interpretive_ko": "돌 사이에는 결코 영원히 지속되지 않으며 바름하고 상서로운 것이 될 것입니다.",
+          "label_ko": "육이",
+          "original": "介于石 不終日 貞吉",
+          "reading_ko": "개우석 부종일 정길",
+          "literal_ko": "돌처럼 절개가 있어 하루를 마치기 전에도 바르게 길하다.",
+          "interpretive_ko": "결정 기준이 명확하면 빠른 판단도 흔들리지 않는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "개우석, 부종일, 정길.",
-          "gloss_en": "Between the stone, it will never last forever, and it will be chaste and auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "盱豫，悔。遲有悔。",
-          "literal_ko": "쉬유, 후회해. 후회하기에는 너무 늦었습니다.",
-          "interpretive_ko": "쉬유, 후회해. 후회하기에는 너무 늦었습니다.",
+          "label_ko": "육삼",
+          "original": "盱豫 悔 遲有悔",
+          "reading_ko": "우예 회 지유회",
+          "literal_ko": "우러러 기뻐하면 뉘우침이 있고, 늦으면 또 뉘우침이 있다.",
+          "interpretive_ko": "눈치만 보며 미루면 후회가 겹친다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "우서, 회. 지유회.",
-          "gloss_en": "Xuyu, regret. Too late to regret."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "由豫，大有得。勿疑朋盍簪。",
-          "literal_ko": "유씨에게 큰 이득이 있다. 친구의 머리핀을 의심하지 마세요.",
-          "interpretive_ko": "유씨에게 큰 이득이 있다. 친구의 머리핀을 의심하지 마세요.",
+          "label_ko": "구사",
+          "original": "由豫 大有得 勿疑 朋盍簪",
+          "reading_ko": "유예 대유득 물의 붕합잠",
+          "literal_ko": "예로 말미암아 크게 얻는다. 의심하지 말라. 벗이 비녀를 모으듯 모인다.",
+          "interpretive_ko": "핵심 리더의 확신이 팀 결집을 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유서, 대유득. 물의붕합잠.",
-          "gloss_en": "From Yu, there is great gain. Don't doubt your friend's hairpin."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "貞疾，恆不死。",
-          "literal_ko": "아프면 절대 죽지 않습니다.",
-          "interpretive_ko": "아프면 절대 죽지 않습니다.",
+          "label_ko": "육오",
+          "original": "貞疾 恒不死",
+          "reading_ko": "정질 항불사",
+          "literal_ko": "바르게 병들었으나 오래도록 죽지 않는다.",
+          "interpretive_ko": "리더가 약해도 시스템이 버티면 조직은 유지된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정질, 항부사.",
-          "gloss_en": "If you are sick, you will never die."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "冥豫，成有渝，無咎。",
-          "literal_ko": "민규, 성공은 충칭이니까 탓할 게 없어.",
-          "interpretive_ko": "민규, 성공은 충칭이니까 탓할 게 없어.",
+          "label_ko": "상육",
+          "original": "冥豫 成有渝 无咎",
+          "reading_ko": "명예 성유유 무구",
+          "literal_ko": "어두운 기쁨이 이루어져도 바꿈이 있으면 허물이 없다.",
+          "interpretive_ko": "늦게라도 방향을 바꾸면 회복 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명서, 성유투, 무구.",
-          "gloss_en": "Mingyu, success has Chongqing, no blame."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -1666,99 +1666,99 @@
     {
       "id": 17,
       "gua_text": {
-        "original": "隨，元亨，利貞，無咎。",
-        "literal_ko": "원형이정.은 허물이 아닙니다.",
-        "interpretive_ko": "원형이정.은 허물이 아닙니다.",
+        "original": "隨 元亨利貞 无咎",
+        "reading_ko": "수 원형리정 무구",
+        "literal_ko": "수는 크게 형통하고 바름이 이로우며 허물이 없다.",
+        "interpretive_ko": "흐름을 따르되 기준을 잃지 않을 때 협업이 살아난다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "수, 원형, 리정, 무구.",
-        "gloss_en": "Sui, Yuanheng, Li Zhen, no blame."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "官有渝，貞吉。出門交有功。",
-          "literal_ko": "관리는 바름과 행운을 상징하는 충칭을 가지고 있습니다. 나가서 공덕을 쌓으십시오.",
-          "interpretive_ko": "관리는 바름과 행운을 상징하는 충칭을 가지고 있습니다. 나가서 공덕을 쌓으십시오.",
+          "label_ko": "초구",
+          "original": "官有渝 貞吉 出門交有功",
+          "reading_ko": "관유유 정길 출문교유공",
+          "literal_ko": "관직에 변동이 있어도 바르게 하면 길하다. 문을 나가 교류하면 공이 있다.",
+          "interpretive_ko": "역할 변화기엔 외부와의 연결이 성과를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "관유투, 정길. 출문교유공.",
-          "gloss_en": "The official has Chongqing, which is chastity and good luck. Go out and make meritorious service."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "系小子，失丈夫。",
-          "literal_ko": "소년이라면 남편을 잃게 될 것입니다.",
-          "interpretive_ko": "소년이라면 남편을 잃게 될 것입니다.",
+          "label_ko": "육이",
+          "original": "係小子 失丈夫",
+          "reading_ko": "계소자 실장부",
+          "literal_ko": "어린 자를 매면 장부를 잃는다.",
+          "interpretive_ko": "작은 이익에 묶이면 큰 기회를 놓친다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "계소자, 실장부.",
-          "gloss_en": "If you are a boy, you will lose your husband."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "系丈夫，失小子。隨有求得，利居貞。",
-          "literal_ko": "남편이에요. 저는 아들을 잃었어요. 무엇이든 구한다면 바름을 유지하는 것이 유익할 것입니다.",
-          "interpretive_ko": "남편이에요. 저는 아들을 잃었어요. 무엇이든 구한다면 바름을 유지하는 것이 유익할 것입니다.",
+          "label_ko": "육삼",
+          "original": "係丈夫 失小子 隨有求得 利居貞",
+          "reading_ko": "계장부 실소자 수유구득 이거정",
+          "literal_ko": "장부를 매면 소자를 잃는다. 따름에 구함이 있으면 얻고, 바르게 머무름이 이롭다.",
+          "interpretive_ko": "핵심 파트너를 선택하면 잡음은 줄고 성과는 선명해진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "계장부, 실소자. 수유구득, 리거정.",
-          "gloss_en": "It's my husband, I lost my son. If you seek for anything, it will be beneficial to stay in chastity."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "隨有獲，貞凶。有孚在道，以明，何咎？",
-          "literal_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 허물해야 합니까?",
-          "interpretive_ko": "이득, 바름, 악이 있을 것입니다. 도(道)에 행운이 있고 그것을 이해한다면 왜 그것을 허물해야 합니까?",
+          "label_ko": "구사",
+          "original": "隨有獲 貞凶 有孚在道 以明 何咎",
+          "reading_ko": "수유획 정흉 유부재도 이명 하기구",
+          "literal_ko": "따라 얻음이 있어도 바르게만 밀면 흉하다. 도에 믿음이 있고 밝히면 무슨 허물이 있으랴.",
+          "interpretive_ko": "성과가 나도 독주하면 위험하다. 투명한 기준이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "수유획, 정흉. 유부재도, 이명, 하구?",
-          "gloss_en": "There will be gains, chastity and evil. If you have good luck in the Tao and understand it, why should you blame it?"
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "孚于嘉，吉。",
-          "literal_ko": "푸유지아, 지.",
-          "interpretive_ko": "푸유지아, 지.",
+          "label_ko": "구오",
+          "original": "孚于嘉 吉",
+          "reading_ko": "부우가 길",
+          "literal_ko": "좋은 것에 믿음을 두면 길하다.",
+          "interpretive_ko": "좋은 가치에 신뢰를 두면 결정의 질이 올라간다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부우가, 길.",
-          "gloss_en": "Fu Yu Jia, Ji."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "拘系之，乃從維之。王用亨于西山。",
-          "literal_ko": "굳게 붙들어 매고 단단히 묶는다. 왕이 서산에서 제사를 드린다.",
-          "interpretive_ko": "굳게 붙들어 매고 단단히 묶는다. 왕이 서산에서 제사를 드린다.",
+          "label_ko": "상육",
+          "original": "拘係之 乃從維之 王用亨于西山",
+          "reading_ko": "구계지 내종유지 왕용형우서산",
+          "literal_ko": "굳게 매고 이어 묶는다. 왕이 서산에서 제향한다.",
+          "interpretive_ko": "마지막에는 규범을 단단히 세워 질서를 완성한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "구계지, 내종유지. 왕용형우서산.",
-          "gloss_en": "To restrain it is to maintain it. Wang Yongheng was in Xishan."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
