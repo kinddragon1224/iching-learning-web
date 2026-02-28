@@ -74,7 +74,7 @@ export default function StudioPage() {
         </div>
       </section>
 
-      <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
+      <section className="paper-panel rounded-xl p-4 space-y-3 text-sm studio-fade-in">
         <p className="text-xs text-[var(--text-muted)]">현재 문제</p>
         <h2 className="text-xl font-semibold">이 괘의 이름은?</h2>
         <div className="flex justify-center py-2">
@@ -83,20 +83,35 @@ export default function StudioPage() {
         <div className="grid gap-2 sm:grid-cols-2">
           {options.map((id) => {
             const h = HEXAGRAMS.find((x) => x.id === id)!;
-            const active = selected === id;
+            const isSelected = selected === id;
+            const isAnswer = id === currentId;
+            const disabled = quizState !== "idle";
+
+            const resultClass =
+              quizState === "idle"
+                ? isSelected
+                  ? "border-[var(--gold-line)]"
+                  : "border-white/20"
+                : isAnswer
+                  ? "studio-answer-correct"
+                  : isSelected
+                    ? "studio-answer-wrong"
+                    : "border-white/20 opacity-80";
+
             return (
               <button
                 key={id}
                 onClick={() => handleAnswer(id)}
-                className={`rounded-lg border px-3 py-2 text-left ${active ? "border-[var(--gold-line)]" : "border-white/20"}`}
+                disabled={disabled}
+                className={`studio-answer-btn rounded-lg border px-3 py-2 text-left ${resultClass}`}
               >
                 {h.nameKo}
               </button>
             );
           })}
         </div>
-        {quizState === "correct" && <p className="text-emerald-300">정답! {hex.nameKo}</p>}
-        {quizState === "wrong" && <p className="text-amber-300">아쉽지만 괜찮아. 정답은 {hex.nameKo}</p>}
+        {quizState === "correct" && <p className="text-emerald-300 studio-pop-in">정답! {hex.nameKo}</p>}
+        {quizState === "wrong" && <p className="text-amber-300 studio-shake">아쉽지만 괜찮아. 정답은 {hex.nameKo}</p>}
         <div>
           <Link href={`/hexagram/${hex.id}`} className="inline-flex rounded-lg border border-white/30 px-3 py-1.5 text-xs hover:bg-white/5">
             이 괘 상세 페이지 보기

@@ -223,6 +223,74 @@ h3 {
   100% { transform: translateY(0px) translateX(0px); opacity: 0.65; }
 }
 
+.studio-answer-btn {
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease, opacity 180ms ease;
+}
+
+.studio-answer-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.studio-answer-correct {
+  border-color: rgba(90, 201, 155, 0.82);
+  background: rgba(90, 201, 155, 0.16);
+  box-shadow: 0 0 0 1px rgba(90, 201, 155, 0.28), 0 0 18px rgba(90, 201, 155, 0.2);
+  animation: studioPulse 340ms ease-out;
+}
+
+.studio-answer-wrong {
+  border-color: rgba(246, 183, 95, 0.82);
+  background: rgba(246, 183, 95, 0.14);
+  animation: studioShake 280ms ease-in-out;
+}
+
+.studio-pop-in {
+  animation: studioPopIn 240ms ease-out;
+}
+
+.studio-shake {
+  animation: studioShake 280ms ease-in-out;
+}
+
+.studio-fade-in {
+  animation: studioFadeIn 300ms ease-out;
+}
+
+@keyframes studioPulse {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+@keyframes studioShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+}
+
+@keyframes studioPopIn {
+  from { opacity: 0; transform: translateY(3px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes studioFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-answer-btn,
+  .studio-answer-correct,
+  .studio-answer-wrong,
+  .studio-pop-in,
+  .studio-shake,
+  .studio-fade-in {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 .home-hero-bg {
   position: relative;
   overflow: hidden;
