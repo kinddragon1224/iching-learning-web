@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { HEXAGRAMS } from "@/data/hexagrams";
+import { getHexagramContent } from "@/lib/card-index";
+import { HexagramLinesOverlay } from "@/components/HexagramLinesOverlay";
 
 type QuizState = "idle" | "correct" | "wrong";
 
@@ -27,6 +29,7 @@ export default function StudioPage() {
   const [lineNo, setLineNo] = useState(1);
 
   const hex = useMemo(() => HEXAGRAMS.find((h) => h.id === currentId) ?? HEXAGRAMS[0], [currentId]);
+  const hexContent = useMemo(() => getHexagramContent(currentId), [currentId]);
   const options = useMemo(() => makeOptions(currentId), [currentId]);
 
   const [seenHex, setSeenHex] = useState<Set<number>>(new Set());
@@ -71,6 +74,9 @@ export default function StudioPage() {
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
         <p className="text-xs text-[var(--text-muted)]">현재 문제</p>
         <h2 className="text-xl font-semibold">#{hex.id} 이 괘의 이름은?</h2>
+        <div className="flex justify-center py-2">
+          <HexagramLinesOverlay lines={hexContent.lines} size="small" styleVariant="gold" />
+        </div>
         <div className="grid gap-2 sm:grid-cols-2">
           {options.map((id) => {
             const h = HEXAGRAMS.find((x) => x.id === id)!;
@@ -93,6 +99,7 @@ export default function StudioPage() {
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
         <h2 className="font-semibold">원문 상황 vs 내 상황 대조</h2>
         <p className="text-[var(--text-muted)]"><b>원문 상황(요약)</b>: {hex.summary}</p>
+        <p className="text-xs text-[var(--text-muted)]"><b>효 패턴</b>: {hexContent.lines.join("")}</p>
 
         <label className="block">
           <p className="mb-1 text-xs text-[var(--text-muted)]">이 괘를 보고 떠오른 느낌</p>
