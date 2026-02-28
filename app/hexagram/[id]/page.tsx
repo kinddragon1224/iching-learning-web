@@ -97,35 +97,46 @@ export default async function HexagramCardDetailPage({
 
       {(track || corpus.gua_text.original) && (
         <section className="rounded-xl border p-4 space-y-2">
-          <h2 className="font-semibold">해석 (원문+현대)</h2>
-          {corpus.gua_text.original ? <p className="text-sm"><b>원문(한자):</b> {corpus.gua_text.original}</p> : null}
-          {corpus.gua_text.reading_ko ? <p className="text-sm"><b>읽기(한글):</b> {corpus.gua_text.reading_ko}</p> : null}
-          <p className="text-sm"><b>해석:</b> {track?.freePreview.plainMeaning ?? content.summary}</p>
-          <p className="text-sm text-[var(--text-muted)]">{track?.freePreview.modernTeaser ?? content.summary}</p>
-          <p className="text-xs text-[var(--text-muted)]">EN: {hex.nameEn}</p>
+          <h2 className="font-semibold">괘사</h2>
+          {corpus.gua_text.original ? <p className="text-sm"><b>원문:</b> {corpus.gua_text.original}</p> : null}
+          <p className="text-sm"><b>Ko:</b> {corpus.gua_text.reading_ko ?? card.full_name ?? card.short_name}</p>
+          <p className="text-sm"><b>En:</b> {corpus.gua_text.gloss_en ?? hex.nameEn}</p>
+          <p className="text-sm"><b>보편 해석:</b> {track?.freePreview.plainMeaning ?? content.summary}</p>
+          <p className="text-sm text-[var(--text-muted)]"><b>현대 해석:</b> {track?.freePreview.modernTeaser ?? content.summary}</p>
         </section>
       )}
 
       <section className="rounded-xl border p-4">
-        <h2 className="mb-3 font-semibold">6효 원문(한자) + 읽기(한글) + 해석</h2>
+        <h2 className="mb-3 font-semibold">6효 (원문 · Ko/En · 보편/현대 해석)</h2>
         <ol className="space-y-2 text-sm">
           {(corpus.lines.length > 0 ? corpus.lines : content.lineTexts.map((line, idx) => ({
             line_no: idx + 1,
             original: toClassicalLineLabel(track?.linesKorean?.[idx], idx),
             reading_ko: undefined as string | undefined,
+            gloss_en: undefined as string | undefined,
             label_ko: track?.linesKorean?.[idx],
+            literal_ko: undefined as string | undefined,
+            interpretive_ko: undefined as string | undefined,
           }))).map((row, idx) => {
-            const safeInterpretive = content.lineTexts[idx];
-            const readingKo = row.reading_ko ?? row.label_ko ?? track?.linesKorean?.[idx] ?? `${idx + 1}효`;
+            const lineLabel = row.label_ko ?? track?.linesKorean?.[idx] ?? `${idx + 1}효`;
+            const koReading = row.reading_ko ?? row.original ?? lineLabel;
+            const enReading = row.gloss_en ?? `Line ${idx + 1}`;
+            const plainMeaning = row.literal_ko ?? content.lineTexts[idx];
+            const modernMeaning = row.interpretive_ko && row.interpretive_ko !== row.literal_ko
+              ? row.interpretive_ko
+              : content.lineTexts[idx];
+
             return (
               <li
                 key={idx}
                 className="rounded-lg bg-black/20 px-3 py-2 space-y-1 line-step-reveal"
                 style={{ animationDelay: `${idx * 90}ms` }}
               >
-                {row.original ? <p><b>원문(한자):</b> {row.original}</p> : null}
-                <p><b>읽기(한글):</b> {readingKo}</p>
-                {safeInterpretive ? <p><b>해석:</b> {safeInterpretive}</p> : null}
+                <p><b>{lineLabel}:</b> {row.original ?? "원문 준비 중"}</p>
+                <p><b>Ko:</b> {koReading}</p>
+                <p><b>En:</b> {enReading}</p>
+                <p><b>보편 해석:</b> {plainMeaning}</p>
+                <p className="text-[var(--text-muted)]"><b>현대 해석:</b> {modernMeaning}</p>
               </li>
             );
           })}
