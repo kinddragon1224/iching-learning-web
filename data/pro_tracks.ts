@@ -19,7 +19,7 @@ export type HexagramTrack = {
 export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   {
     id: 1,
-    title: "乾(건)",
+    title: "중천건",
     freePreview: {
       classicalAnchor: "元亨利貞",
       plainMeaning: "크게 시작하고 형통하되 바름을 지킬 때 이롭다.",
@@ -34,7 +34,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 2,
-    title: "坤(곤)",
+    title: "중지곤",
     freePreview: {
       classicalAnchor: "元亨 利牝馬之貞",
       plainMeaning: "크게 형통하니 유순하고 지속적인 바름이 이롭다.",
@@ -49,7 +49,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 54,
-    title: "雷澤歸妹(뇌택귀매)",
+    title: "뇌택귀매",
     freePreview: {
       classicalAnchor: "歸妹 征凶 无攸利",
       plainMeaning: "성급한 결합은 흉하니 이로울 바가 없다.",
@@ -64,7 +64,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 9,
-    title: "風天小畜(풍천소축)",
+    title: "풍천소축",
     freePreview: {
       classicalAnchor: "小畜 亨",
       plainMeaning: "작게 모으며 형통을 만든다.",
@@ -79,7 +79,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 10,
-    title: "天澤履(천택리)",
+    title: "천택리",
     freePreview: {
       classicalAnchor: "履虎尾 不咥人 亨",
       plainMeaning: "위태로운 자리라도 질서를 지키면 형통하다.",
@@ -94,7 +94,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 11,
-    title: "地天泰(지천태)",
+    title: "지천태",
     freePreview: {
       classicalAnchor: "泰 小往大來 吉亨",
       plainMeaning: "작은 것이 물러나고 큰 것이 와서 길하고 형통하다.",
@@ -109,7 +109,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 12,
-    title: "天地否(천지비)",
+    title: "천지비",
     freePreview: {
       classicalAnchor: "否之匪人 不利君子貞 大往小來",
       plainMeaning: "막힘의 때에는 바름을 지키고 무리한 확장을 피해야 한다.",
@@ -124,7 +124,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 29,
-    title: "坎爲水(중수감)",
+    title: "중수감",
     freePreview: {
       classicalAnchor: "習坎 有孚 維心亨 行有尚",
       plainMeaning: "위험의 반복 속에서도 중심을 지키면 통과한다.",
@@ -139,7 +139,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 30,
-    title: "離爲火(중화리)",
+    title: "중화리",
     freePreview: {
       classicalAnchor: "離 利貞 亨",
       plainMeaning: "밝게 비추고 바름을 지키면 형통하다.",
@@ -154,7 +154,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 63,
-    title: "水火既濟(수화기제)",
+    title: "수화기제",
     freePreview: {
       classicalAnchor: "既濟 亨 小利貞",
       plainMeaning: "일단 이루었으나 유지와 점검이 더 중요하다.",
@@ -169,7 +169,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 64,
-    title: "火水未濟(화수미제)",
+    title: "화수미제",
     freePreview: {
       classicalAnchor: "未濟 亨 小狐汔濟 濡其尾 无攸利",
       plainMeaning: "거의 다 왔어도 마지막 방심이 화를 부른다.",
@@ -184,7 +184,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 3,
-    title: "水雷屯(수뢰둔)",
+    title: "수뢰둔",
     freePreview: {
       classicalAnchor: "屯 元亨利貞 勿用有攸往",
       plainMeaning: "시작은 길하나 혼란기엔 무리한 전진을 삼가야 한다.",
@@ -199,7 +199,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 4,
-    title: "山水蒙(산수몽)",
+    title: "산수몽",
     freePreview: {
       classicalAnchor: "蒙 亨 匪我求童蒙 童蒙求我",
       plainMeaning: "배움의 때에는 묻고 익히는 자세가 형통을 만든다.",
@@ -214,7 +214,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 5,
-    title: "水天需(수천수)",
+    title: "수천수",
     freePreview: {
       classicalAnchor: "需 有孚 光亨 貞吉",
       plainMeaning: "기다림 속 신뢰를 지키면 결국 길하다.",
@@ -229,7 +229,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 6,
-    title: "天水訟(천수송)",
+    title: "천수송",
     freePreview: {
       classicalAnchor: "訟 有孚 窒 惕",
       plainMeaning: "다툼의 때엔 신중히 경계하고 바름을 지켜야 한다.",
@@ -244,7 +244,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 7,
-    title: "地水師(지수사)",
+    title: "지수사",
     freePreview: {
       classicalAnchor: "師 貞 丈人 吉",
       plainMeaning: "조직은 바른 규율과 성숙한 리더십이 길하다.",
@@ -259,7 +259,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 8,
-    title: "水地比(수지비)",
+    title: "수지비",
     freePreview: {
       classicalAnchor: "比 吉 原筮 元永貞",
       plainMeaning: "함께함은 길하나 바른 기준으로 모여야 한다.",
@@ -274,7 +274,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 13,
-    title: "天火同人(천화동인)",
+    title: "천화동인",
     freePreview: {
       classicalAnchor: "同人 于野 亨",
       plainMeaning: "뜻을 함께하면 형통하다.",
@@ -289,7 +289,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 14,
-    title: "火天大有(화천대유)",
+    title: "화천대유",
     freePreview: {
       classicalAnchor: "大有 元亨",
       plainMeaning: "크게 소유한 때는 책임 있게 운용해야 형통하다.",
@@ -304,7 +304,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 15,
-    title: "地山謙(지산겸)",
+    title: "지산겸",
     freePreview: {
       classicalAnchor: "謙 亨 君子有終",
       plainMeaning: "겸손은 형통하며 끝을 좋게 만든다.",
@@ -319,7 +319,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 16,
-    title: "雷地豫(뇌지예)",
+    title: "뇌지예",
     freePreview: {
       classicalAnchor: "豫 利建侯行師",
       plainMeaning: "기세가 오를 때 준비된 움직임이 이롭다.",
@@ -334,7 +334,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 51,
-    title: "震爲雷(중뢰진)",
+    title: "중뢰진",
     freePreview: {
       classicalAnchor: "震 亨 震來虩虩",
       plainMeaning: "충격 속에서도 중심을 잡으면 형통하다.",
@@ -349,7 +349,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 52,
-    title: "艮爲山(중산간)",
+    title: "중산간",
     freePreview: {
       classicalAnchor: "艮 其背 不獲其身",
       plainMeaning: "멈춰야 할 때 멈추면 허물을 줄인다.",
@@ -364,7 +364,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 57,
-    title: "巽爲風(중풍손)",
+    title: "중풍손",
     freePreview: {
       classicalAnchor: "巽 小亨 利有攸往",
       plainMeaning: "작게 스며들어도 방향이 맞으면 형통하다.",
@@ -379,7 +379,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 58,
-    title: "兌爲澤(중택태)",
+    title: "중택태",
     freePreview: {
       classicalAnchor: "兌 亨 利貞",
       plainMeaning: "기쁨의 소통이 형통을 만들되 바름이 필요하다.",
@@ -394,7 +394,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 17,
-    title: "澤雷隨(택뢰수)",
+    title: "택뢰수",
     freePreview: {
       classicalAnchor: "隨 元亨利貞",
       plainMeaning: "따름의 도를 바르게 지키면 형통하다.",
@@ -409,7 +409,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 18,
-    title: "山風蠱(산풍고)",
+    title: "산풍고",
     freePreview: {
       classicalAnchor: "蠱 元亨",
       plainMeaning: "무너진 것을 바로잡으면 형통하다.",
@@ -424,7 +424,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 19,
-    title: "地澤臨(지택림)",
+    title: "지택림",
     freePreview: {
       classicalAnchor: "臨 元亨利貞",
       plainMeaning: "다가가 돌보는 리더십이 길하다.",
@@ -439,7 +439,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 20,
-    title: "風地觀(풍지관)",
+    title: "풍지관",
     freePreview: {
       classicalAnchor: "觀 盥而不薦",
       plainMeaning: "겉치레보다 내실을 살피는 관찰이 중요하다.",
@@ -454,7 +454,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 21,
-    title: "火雷噬嗑(화뢰서합)",
+    title: "화뢰서합",
     freePreview: {
       classicalAnchor: "噬嗑 亨 利用獄",
       plainMeaning: "막힌 것을 깨물어 해결하면 형통하다.",
@@ -469,7 +469,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 22,
-    title: "山火賁(산화비)",
+    title: "산화비",
     freePreview: {
       classicalAnchor: "賁 亨",
       plainMeaning: "아름다움은 본질을 살릴 때 의미가 있다.",
@@ -484,7 +484,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 23,
-    title: "山地剝(산지박)",
+    title: "산지박",
     freePreview: {
       classicalAnchor: "剝 不利有攸往",
       plainMeaning: "깎여 나가는 때엔 무리한 전진이 불리하다.",
@@ -499,7 +499,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 24,
-    title: "地雷復(지뢰복)",
+    title: "지뢰복",
     freePreview: {
       classicalAnchor: "復 亨",
       plainMeaning: "되돌아옴의 길은 회복과 재시작을 뜻한다.",
@@ -514,7 +514,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 25,
-    title: "天雷无妄(천뢰무망)",
+    title: "천뢰무망",
     freePreview: {
       classicalAnchor: "无妄 元亨利貞",
       plainMeaning: "꾸밈없이 바르면 형통하다.",
@@ -529,7 +529,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 26,
-    title: "山天大畜(산천대축)",
+    title: "산천대축",
     freePreview: {
       classicalAnchor: "大畜 利貞",
       plainMeaning: "크게 쌓아 두는 인내가 이롭다.",
@@ -544,7 +544,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 27,
-    title: "山雷頤(산뢰이)",
+    title: "산뢰이",
     freePreview: {
       classicalAnchor: "頤 貞吉",
       plainMeaning: "기름의 도를 바르게 지키면 길하다.",
@@ -559,7 +559,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 28,
-    title: "澤風大過(택풍대과)",
+    title: "택풍대과",
     freePreview: {
       classicalAnchor: "大過 棟橈",
       plainMeaning: "지나침의 때엔 구조 보강이 먼저다.",
@@ -574,7 +574,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 31,
-    title: "澤山咸(택산함)",
+    title: "택산함",
     freePreview: {
       classicalAnchor: "咸 亨",
       plainMeaning: "감응이 통하면 형통하다.",
@@ -589,7 +589,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 32,
-    title: "雷風恒(뇌풍항)",
+    title: "뇌풍항",
     freePreview: {
       classicalAnchor: "恒 亨 无咎",
       plainMeaning: "지속의 도를 지키면 허물이 없다.",
@@ -604,7 +604,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 33,
-    title: "天山遯(천산둔)",
+    title: "천산둔",
     freePreview: {
       classicalAnchor: "遯 亨",
       plainMeaning: "물러남의 지혜가 형통을 지킨다.",
@@ -619,7 +619,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 34,
-    title: "大壯(대장)",
+    title: "뇌천대장",
     freePreview: {
       classicalAnchor: "大壯 利貞",
       plainMeaning: "크게 강성한 때일수록 바름을 지켜야 이롭다.",
@@ -634,7 +634,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 35,
-    title: "晉(진)",
+    title: "화지진",
     freePreview: {
       classicalAnchor: "晉 康侯用錫馬蕃庶 晝日三接",
       plainMeaning: "나아감의 때에는 공을 드러내고 신뢰를 쌓아야 길하다.",
@@ -649,7 +649,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 36,
-    title: "明夷(명이)",
+    title: "지화명이",
     freePreview: {
       classicalAnchor: "明夷 利艱貞",
       plainMeaning: "빛이 상한 때에는 내면의 바름을 지키는 것이 이롭다.",
@@ -664,7 +664,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 37,
-    title: "家人(가인)",
+    title: "풍화가인",
     freePreview: {
       classicalAnchor: "家人 利女貞",
       plainMeaning: "집과 조직은 각자의 역할과 바름이 설 때 안정된다.",
@@ -679,7 +679,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 38,
-    title: "睽(규)",
+    title: "화택규",
     freePreview: {
       classicalAnchor: "睽 小事吉",
       plainMeaning: "어긋남의 때에는 작은 일부터 맞추면 길하다.",
@@ -694,7 +694,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 39,
-    title: "蹇(건)",
+    title: "수산건",
     freePreview: {
       classicalAnchor: "蹇 利西南 不利東北 利見大人 貞吉",
       plainMeaning: "막힘의 때에는 우회와 도움을 구하는 것이 이롭다.",
@@ -709,7 +709,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 40,
-    title: "解(해)",
+    title: "뇌수해",
     freePreview: {
       classicalAnchor: "解 利西南 无所往 其來復吉 有攸往 夙吉",
       plainMeaning: "풀림의 때에는 긴장을 풀고 빠르게 제자리로 복귀하면 길하다.",
@@ -724,7 +724,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 41,
-    title: "損(손)",
+    title: "산택손",
     freePreview: {
       classicalAnchor: "損 有孚 元吉 无咎 可貞 利有攸往",
       plainMeaning: "덜어냄은 신의를 지키며 본질을 살릴 때 길하다.",
@@ -739,7 +739,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 42,
-    title: "益(익)",
+    title: "풍뢰익",
     freePreview: {
       classicalAnchor: "益 利有攸往 利涉大川",
       plainMeaning: "보탬의 때에는 바른 방향으로 나아가면 큰일도 건널 수 있다.",
@@ -754,7 +754,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 43,
-    title: "夬(쾌)",
+    title: "택천쾌",
     freePreview: {
       classicalAnchor: "夬 揚于王庭 孚號 有厲 告自邑 不利即戎 利有攸往",
       plainMeaning: "결단의 때에는 분명히 알리되 성급한 충돌은 피해야 한다.",
@@ -769,7 +769,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 44,
-    title: "姤(구)",
+    title: "천풍구",
     freePreview: {
       classicalAnchor: "姤 女壯 勿用取女",
       plainMeaning: "강한 만남의 때에는 경계를 세우고 섣부른 결합을 피해야 한다.",
@@ -784,7 +784,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 45,
-    title: "萃(췌)",
+    title: "택지췌",
     freePreview: {
       classicalAnchor: "萃 亨 王假有廟 利見大人 亨 利貞",
       plainMeaning: "모임의 때에는 목적과 바름이 있을 때 형통하다.",
@@ -799,7 +799,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 46,
-    title: "升(승)",
+    title: "지풍승",
     freePreview: {
       classicalAnchor: "升 元亨 用見大人 勿恤 南征吉",
       plainMeaning: "오름의 때에는 꾸준히 나아가면 형통하다.",
@@ -814,7 +814,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 47,
-    title: "困(곤)",
+    title: "택수곤",
     freePreview: {
       classicalAnchor: "困 亨 貞 大人吉 无咎 有言不信",
       plainMeaning: "곤궁의 때에도 바름을 지키면 결국 길하다.",
@@ -829,7 +829,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 48,
-    title: "井(정)",
+    title: "수풍정",
     freePreview: {
       classicalAnchor: "井 改邑不改井 无喪无得 往來井井",
       plainMeaning: "근본 자원은 바뀌지 않으니 잘 정비해 함께 써야 한다.",
@@ -844,7 +844,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 49,
-    title: "革(혁)",
+    title: "택화혁",
     freePreview: {
       classicalAnchor: "革 己日乃孚 元亨利貞 悔亡",
       plainMeaning: "변혁은 때를 맞춰 바르게 단행하면 후회가 없다.",
@@ -859,7 +859,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 50,
-    title: "鼎(정)",
+    title: "화풍정",
     freePreview: {
       classicalAnchor: "鼎 元吉 亨",
       plainMeaning: "솥처럼 가치를 조리해 새 질서를 세우면 길하다.",
@@ -874,7 +874,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 53,
-    title: "漸(점)",
+    title: "풍산점",
     freePreview: {
       classicalAnchor: "漸 女歸吉 利貞",
       plainMeaning: "점진적 전개는 순서를 지킬 때 길하다.",
@@ -889,7 +889,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 55,
-    title: "豐(풍)",
+    title: "뇌화풍",
     freePreview: {
       classicalAnchor: "豐 亨 王假之 勿憂 宜日中",
       plainMeaning: "풍성한 때에는 밝게 다스리면 형통하다.",
@@ -904,7 +904,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 56,
-    title: "旅(려)",
+    title: "화산려",
     freePreview: {
       classicalAnchor: "旅 小亨 旅貞吉",
       plainMeaning: "나그네의 때에는 작게 형통하니 바름이 길하다.",
@@ -919,7 +919,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 59,
-    title: "渙(환)",
+    title: "풍수환",
     freePreview: {
       classicalAnchor: "渙 亨 王假有廟 利涉大川 利貞",
       plainMeaning: "흩어짐의 때에는 중심을 모아 건너면 형통하다.",
@@ -934,7 +934,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 60,
-    title: "節(절)",
+    title: "수택절",
     freePreview: {
       classicalAnchor: "節 亨 苦節不可貞",
       plainMeaning: "절제는 형통하나 지나친 절제는 오래가지 못한다.",
@@ -949,7 +949,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 61,
-    title: "中孚(중부)",
+    title: "풍택중부",
     freePreview: {
       classicalAnchor: "中孚 豚魚吉 利涉大川 利貞",
       plainMeaning: "내면의 신의가 있으면 작은 것에서도 길함이 생긴다.",
@@ -964,7 +964,7 @@ export const HEXAGRAM_TRACKS: HexagramTrack[] = [
   },
   {
     id: 62,
-    title: "小過(소과)",
+    title: "뇌산소과",
     freePreview: {
       classicalAnchor: "小過 亨 利貞 可小事 不可大事",
       plainMeaning: "작은 지나침의 때에는 작은 일은 길하나 큰일은 불리하다.",

@@ -1,6 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BAGUA_ITEMS, getBaguaBySlug } from "@/data/bagua";
+import { HEXAGRAMS } from "@/data/hexagrams";
+import { getCardForHexagram } from "@/lib/card-index";
+
+const TRIGRAM_KEY: Record<string, string> = {
+  geon: "천",
+  gon: "지",
+  jin: "뢰",
+  son: "풍",
+  gam: "수",
+  ri: "화",
+  gan: "산",
+  tae: "택",
+};
 
 export function generateStaticParams() {
   return BAGUA_ITEMS.map((item) => ({ slug: item.slug }));
@@ -10,6 +23,16 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
   const { slug } = await params;
   const item = getBaguaBySlug(slug);
   if (!item) return notFound();
+
+  const key = TRIGRAM_KEY[slug] ?? "";
+  const relatedUpper = HEXAGRAMS.filter((h) => {
+    const pair = getCardForHexagram(h.id).trigram_pair ?? "";
+    return pair.startsWith(key);
+  });
+  const relatedLower = HEXAGRAMS.filter((h) => {
+    const pair = getCardForHexagram(h.id).trigram_pair ?? "";
+    return pair.endsWith(key);
+  });
 
   return (
     <main className="mx-auto max-w-3xl space-y-6 p-6 pt-24">
@@ -27,13 +50,37 @@ export default async function BaguaDetailPage({ params }: { params: Promise<{ sl
       </section>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
-        <h2 className="font-semibold">무료 해석</h2>
+        <h2 className="font-semibold">핵심 해석</h2>
         <p>{item.freeSummary}</p>
       </section>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-2">
         <h2 className="font-semibold">설괘전 본문 적용</h2>
         <p>{item.seolgwaBody}</p>
+      </section>
+
+      <section className="paper-panel rounded-xl p-4 text-sm space-y-3">
+        <h2 className="font-semibold">이 괘가 포함된 64괘 구조</h2>
+        <div>
+          <p className="mb-2 text-xs text-[var(--text-muted)]">상괘(위)로 쓰인 경우</p>
+          <div className="flex flex-wrap gap-2 text-xs">
+            {relatedUpper.map((h) => (
+              <Link key={`u-${h.id}`} href={`/hexagram/${h.id}`} className="rounded-full border px-2 py-1">
+                #{h.id} {h.nameKo.split("(")[0]}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="mb-2 text-xs text-[var(--text-muted)]">하괘(아래)로 쓰인 경우</p>
+          <div className="flex flex-wrap gap-2 text-xs">
+            {relatedLower.map((h) => (
+              <Link key={`l-${h.id}`} href={`/hexagram/${h.id}`} className="rounded-full border px-2 py-1">
+                #{h.id} {h.nameKo.split("(")[0]}
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="paper-panel rounded-xl p-4 text-sm space-y-3">
