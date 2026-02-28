@@ -95,16 +95,12 @@ export default async function HexagramCardDetailPage({
         </div>
       </header>
 
-      {(track || corpus.gua_text.original || corpus.gua_text.literal_ko || corpus.gua_text.interpretive_ko) && (
+      {(track || corpus.gua_text.original) && (
         <section className="rounded-xl border p-4 space-y-2">
           <h2 className="font-semibold">해석 (원문+현대)</h2>
           {corpus.gua_text.original ? <p className="text-sm"><b>원문:</b> {corpus.gua_text.original}</p> : null}
-          {corpus.gua_text.literal_ko ? <p className="text-sm"><b>직역:</b> {corpus.gua_text.literal_ko}</p> : null}
-          <p className="text-sm text-[var(--text-muted)]"><b>의역:</b> {
-            corpus.gua_text.interpretive_ko && corpus.gua_text.interpretive_ko !== corpus.gua_text.literal_ko
-              ? corpus.gua_text.interpretive_ko
-              : (track?.freePreview.modernTeaser ?? track?.freePreview.plainMeaning ?? content.summary)
-          }</p>
+          <p className="text-sm"><b>해석:</b> {track?.freePreview.plainMeaning ?? content.summary}</p>
+          <p className="text-sm text-[var(--text-muted)]">{track?.freePreview.modernTeaser ?? content.summary}</p>
         </section>
       )}
 
@@ -114,12 +110,8 @@ export default async function HexagramCardDetailPage({
           {(corpus.lines.length > 0 ? corpus.lines : content.lineTexts.map((line, idx) => ({
             line_no: idx + 1,
             original: toClassicalLineLabel(track?.linesKorean?.[idx], idx),
-            literal_ko: undefined as string | undefined,
-            interpretive_ko: line,
           }))).map((row, idx) => {
-            const safeInterpretive = row.interpretive_ko && row.interpretive_ko !== row.literal_ko
-              ? row.interpretive_ko
-              : content.lineTexts[idx];
+            const safeInterpretive = content.lineTexts[idx];
             return (
               <li
                 key={idx}
@@ -127,7 +119,6 @@ export default async function HexagramCardDetailPage({
                 style={{ animationDelay: `${idx * 90}ms` }}
               >
                 {row.original ? <p><b>원문:</b> {row.original}</p> : null}
-                {row.literal_ko ? <p><b>직역:</b> {row.literal_ko}</p> : null}
                 {safeInterpretive ? <p><b>해석:</b> {safeInterpretive}</p> : null}
               </li>
             );
