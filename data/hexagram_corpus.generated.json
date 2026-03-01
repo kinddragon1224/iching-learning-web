@@ -1769,99 +1769,99 @@
     {
       "id": 18,
       "gua_text": {
-        "original": "蠱，元亨，利涉大川。先甲三日，后甲三日。",
-        "literal_ko": "고 원형은 대천의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
-        "interpretive_ko": "고 원형은 대천의 이로움을 받았습니다. 첫 번째는 3일, 두 번째는 3일입니다.",
+        "original": "蠱 元亨 利涉大川 先甲三日 後甲三日",
+        "reading_ko": "고 원형 리섭대천 선갑삼일 후갑삼일",
+        "literal_ko": "고는 크게 형통하니 큰 내를 건넘이 이롭다. 갑일의 앞 삼일과 뒤 삼일을 살핀다.",
+        "interpretive_ko": "낡고 썩은 문제를 고치는 국면이다. 착수 전후 점검이 성패를 좌우한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "고, 원형, 리섭대천. 선갑삼일, 후갑삼일.",
-        "gloss_en": "Gu, Yuanheng, benefited from Dachuan. The first one is three days, the second one is three days."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "干父之蠱，有子，考無咎，厲，終吉。",
-          "literal_ko": "대부의 독, 아들이 있으면 시험에 흠이 없고 심하면 잘 끝난다.",
-          "interpretive_ko": "대부의 독, 아들이 있으면 시험에 흠이 없고 심하면 잘 끝난다.",
+          "label_ko": "초육",
+          "original": "幹父之蠱 有子 考无咎 厲終吉",
+          "reading_ko": "간부지고 유자 고무구 려종길",
+          "literal_ko": "아버지의 고를 바로잡는다. 아들이 있으면 아버지는 허물이 없다. 위태로우나 마침내 길하다.",
+          "interpretive_ko": "이전 세대의 문제를 정리하는 일은 어렵지만 끝내 가치가 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간부지고, 유자, 고무구, 려, 종길.",
-          "gloss_en": "The godfather's poison, if there is a son, there will be no fault in the test, if it is severe, it will end well."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "干母之蠱，不可貞。",
-          "literal_ko": "대모의 독은 바름할 수 없습니다.",
-          "interpretive_ko": "대모의 독은 바름할 수 없습니다.",
+          "label_ko": "구이",
+          "original": "幹母之蠱 不可貞",
+          "reading_ko": "간모지고 불가정",
+          "literal_ko": "어머니의 고를 바로잡으나 곧게만 해서는 안 된다.",
+          "interpretive_ko": "관계가 얽힌 문제는 원칙만으로 밀지 말고 유연함이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간모지고, 부가정.",
-          "gloss_en": "The godmother's poison cannot be chaste."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "干父之蠱，小有晦，無大咎。",
-          "literal_ko": "대부의 독은 작고 모호하지만 큰 잘못은 아니다.",
-          "interpretive_ko": "대부의 독은 작고 모호하지만 큰 잘못은 아니다.",
+          "label_ko": "구삼",
+          "original": "幹父之蠱 小有悔 无大咎",
+          "reading_ko": "간부지고 소유회 무대구",
+          "literal_ko": "아버지의 고를 바로잡으니 작은 뉘우침은 있으나 큰 허물은 없다.",
+          "interpretive_ko": "수습 과정의 작은 마찰은 감수하되 핵심 손실은 막아야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간부지고, 소유회, 무대구.",
-          "gloss_en": "The godfather's poison is small and obscure, but not a big fault."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "裕父之蠱，往見吝。",
-          "literal_ko": "부자 아버지의 독은 인색함이다.",
-          "interpretive_ko": "부자 아버지의 독은 인색함이다.",
+          "label_ko": "육사",
+          "original": "裕父之蠱 往見吝",
+          "reading_ko": "유부지고 왕견린",
+          "literal_ko": "아버지의 고를 너그럽게 두면, 가면 인색함을 본다.",
+          "interpretive_ko": "문제를 방치하면 시간이 갈수록 처리 비용이 커진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유부지고, 왕견린.",
-          "gloss_en": "The poison of rich father is stinginess."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "干父之蠱，用譽。",
-          "literal_ko": "대부의 비결은 평판을 이용하는 것입니다.",
-          "interpretive_ko": "대부의 비결은 평판을 이용하는 것입니다.",
+          "label_ko": "육오",
+          "original": "幹父之蠱 用譽",
+          "reading_ko": "간부지고 용예",
+          "literal_ko": "아버지의 고를 바로잡아 명예를 쓴다.",
+          "interpretive_ko": "정면 수습이 결국 조직의 신뢰를 회복한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간부지고, 용예.",
-          "gloss_en": "The godfather's trick is to use reputation."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "不事王侯，高尚其事。",
-          "literal_ko": "왕자에게 아무 짓도 하지 말고 고귀하게 행동하세요.",
-          "interpretive_ko": "왕자에게 아무 짓도 하지 말고 고귀하게 행동하세요.",
+          "label_ko": "상구",
+          "original": "不事王侯 高尚其事",
+          "reading_ko": "불사왕후 고상기사",
+          "literal_ko": "왕후를 섬기지 않고 그 일을 높게 여긴다.",
+          "interpretive_ko": "마지막에는 외형 성과보다 원칙과 품격을 지키는 선택이 중요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부사왕후, 고尚기사.",
-          "gloss_en": "Don't do anything to the prince, do it noble."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -1872,99 +1872,99 @@
     {
       "id": 19,
       "gua_text": {
-        "original": "臨，元亨，利貞。至于八月有凶。",
-        "literal_ko": "린, 위안헝, 리젠. 8월은 운이 좋지 않을 것입니다.",
-        "interpretive_ko": "린, 위안헝, 리젠. 8월은 운이 좋지 않을 것입니다.",
+        "original": "臨 元亨利貞 至于八月有凶",
+        "reading_ko": "림 원형리정 지우팔월유흉",
+        "literal_ko": "림은 크게 형통하고 바름이 이롭다. 팔월에 이르면 흉함이 있다.",
+        "interpretive_ko": "접근과 확장의 때지만, 후반 하강 국면을 미리 대비해야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "림, 원형, 리정. 지우팔월유흉.",
-        "gloss_en": "Lin, Yuanheng, Li Zhen. As for August, it will be unlucky."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "咸臨，貞吉。",
-          "literal_ko": "시안린, 젠지.",
-          "interpretive_ko": "시안린, 젠지.",
+          "label_ko": "초구",
+          "original": "咸臨 貞吉",
+          "reading_ko": "함림 정길",
+          "literal_ko": "감응하며 임하니 바르게 길하다.",
+          "interpretive_ko": "현장과 감응하는 리더십이 출발점이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함림, 정길.",
-          "gloss_en": "Xianlin, Zhenji."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "咸臨，吉無不利。",
-          "literal_ko": "시안이 오면 상서롭고 불이로움이 없다.",
-          "interpretive_ko": "시안이 오면 상서롭고 불이로움이 없다.",
+          "label_ko": "구이",
+          "original": "咸臨 吉无不利",
+          "reading_ko": "함림 길무불리",
+          "literal_ko": "감응하며 임하니 길하여 이롭지 않음이 없다.",
+          "interpretive_ko": "공감 기반 소통은 전방위 성과를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함림, 길무부리.",
-          "gloss_en": "When Xian comes, it is auspicious and has no disadvantages."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "甘臨，無攸利。既憂之，無咎。",
-          "literal_ko": "이로움이 없다. 근심을 거두면 책임은 없습니다.",
-          "interpretive_ko": "이로움이 없다. 근심을 거두면 책임은 없습니다.",
+          "label_ko": "육삼",
+          "original": "甘臨 无攸利 既憂之 无咎",
+          "reading_ko": "감림 무유리 기우지 무구",
+          "literal_ko": "달콤하게 임하면 이로움이 없다. 이미 근심하면 허물이 없다.",
+          "interpretive_ko": "인기영합식 접근은 실패한다. 위험 인식이 회복의 시작이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "감림, 무유리. 既우지, 무구.",
-          "gloss_en": "Ganlin, no profit. If you are worried about it, there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "至臨，無咎。",
-          "literal_ko": "그것이 오면 허물이 없습니다.",
-          "interpretive_ko": "그것이 오면 허물이 없습니다.",
+          "label_ko": "육사",
+          "original": "至臨 无咎",
+          "reading_ko": "지림 무구",
+          "literal_ko": "지극히 임하면 허물이 없다.",
+          "interpretive_ko": "깊이 있는 현장 접근은 문제를 줄인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "지림, 무구.",
-          "gloss_en": "When it comes, there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "知臨，大君之宜，吉。",
-          "literal_ko": "왕이 오신다는 것을 아는 것은 길함이다.",
-          "interpretive_ko": "왕이 오신다는 것을 아는 것은 길함이다.",
+          "label_ko": "육오",
+          "original": "知臨 大君之宜 吉",
+          "reading_ko": "지림 대군지의 길",
+          "literal_ko": "앎으로 임하니 대군에게 마땅하여 길하다.",
+          "interpretive_ko": "분별 있는 개입이 리더의 적정 거리다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "지림, 대군지의, 길.",
-          "gloss_en": "Knowing that the king is coming is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "敦臨，吉，無咎。",
-          "literal_ko": "돈독히 임하면 길하고 허물이 없다.",
-          "interpretive_ko": "끝까지 성실히 임하면 큰 허물 없이 마무리된다.",
+          "label_ko": "상육",
+          "original": "敦臨 吉无咎",
+          "reading_ko": "돈림 길무구",
+          "literal_ko": "돈독히 임하니 길하고 허물이 없다.",
+          "interpretive_ko": "끝까지 성실한 태도가 마무리 품질을 결정한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "돈림, 길, 무구.",
-          "gloss_en": "Dunlin, auspicious, no fault."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -1975,99 +1975,99 @@
     {
       "id": 20,
       "gua_text": {
-        "original": "觀，盥而不荐，有孚顒若。",
-        "literal_ko": "관: 손을 씻되 제물을 올리지는 않는다. 정성과 공경이 드러난다.",
-        "interpretive_ko": "관: 손을 씻되 제물을 올리지는 않는다. 정성과 공경이 드러난다.",
+        "original": "觀 盥而不薦 有孚顒若",
+        "reading_ko": "관 관이불천 유부옹약",
+        "literal_ko": "관은 손을 씻되 제물을 올리지는 않는다. 믿음이 있어 우러러보게 된다.",
+        "interpretive_ko": "보여주기보다 내면 정성과 태도의 일관성이 신뢰를 만든다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "관, 관이부천, 유부옹야.",
-        "gloss_en": "View, wash but not recommend, there is Fu Yongruo."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "童觀，小人無咎，君子吝。",
-          "literal_ko": "소인은 죄가 없으나 군자는 인색하다는 것이 어린아이의 견해이다.",
-          "interpretive_ko": "소인은 죄가 없으나 군자는 인색하다는 것이 어린아이의 견해이다.",
+          "label_ko": "초육",
+          "original": "童觀 小人无咎 君子吝",
+          "reading_ko": "동관 소인무구 군자린",
+          "literal_ko": "아이의 관찰이다. 소인에게는 허물이 없으나 군자에게는 인색하다.",
+          "interpretive_ko": "피상적 관찰은 초보 단계에선 괜찮지만 리더에겐 부족하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "동관, 소인무구, 군자린.",
-          "gloss_en": "A child's view is that a villain has no fault, but a gentleman is stingy."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "窺觀，利女貞。",
-          "literal_ko": "엿보는 것, 이로움을 누리십시오.",
-          "interpretive_ko": "엿보는 것, 이로움을 누리십시오.",
+          "label_ko": "육이",
+          "original": "闚觀 利女貞",
+          "reading_ko": "규관 이여정",
+          "literal_ko": "엿보는 관찰이니 여인의 바름이 이롭다.",
+          "interpretive_ko": "부분 정보로 판단할 땐 조심스럽고 절제된 태도가 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "규관, 리녀정.",
-          "gloss_en": "Peeping, benefit privet."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "觀我生，進退。",
-          "literal_ko": "내 삶을 관찰하고 전진하고 후퇴하십시오.",
-          "interpretive_ko": "내 삶을 관찰하고 전진하고 후퇴하십시오.",
+          "label_ko": "육삼",
+          "original": "觀我生 進退",
+          "reading_ko": "관아생 진퇴",
+          "literal_ko": "내 삶을 살펴 나아가고 물러남을 정한다.",
+          "interpretive_ko": "자기 점검이 의사결정의 품질을 높인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "관아생, 진퇴.",
-          "gloss_en": "Observe my life, advance and retreat."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "觀國之光，利用賓于王。",
-          "literal_ko": "나라의 빛을 관찰하고 왕의 손님으로 활용하십시오.",
-          "interpretive_ko": "나라의 빛을 관찰하고 왕의 손님으로 활용하십시오.",
+          "label_ko": "육사",
+          "original": "觀國之光 利用賓于王",
+          "reading_ko": "관국지광 이용빈우왕",
+          "literal_ko": "나라의 빛을 보니 왕의 빈객으로 쓰임이 이롭다.",
+          "interpretive_ko": "큰 흐름을 읽는 사람에게 중요한 역할이 온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "관국지광, 리용빈우왕.",
-          "gloss_en": "Observe the light of the country and make use of it as a guest to the king."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "觀我生，君子無咎。",
-          "literal_ko": "내 인생을 보면 신사에게는 잘못이 없습니다.",
-          "interpretive_ko": "내 인생을 보면 신사에게는 잘못이 없습니다.",
+          "label_ko": "구오",
+          "original": "觀我生 君子无咎",
+          "reading_ko": "관아생 군자무구",
+          "literal_ko": "내 삶을 살피면 군자는 허물이 없다.",
+          "interpretive_ko": "리더는 외부보다 자기 통치부터 점검해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "관아생, 군자무구.",
-          "gloss_en": "Looking at my life, a gentleman has no fault."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "觀其生，君子無咎。",
-          "literal_ko": "그의 삶을 보면 군자는 잘못이 없습니다.",
-          "interpretive_ko": "그의 삶을 보면 군자는 잘못이 없습니다.",
+          "label_ko": "상구",
+          "original": "觀其生 君子无咎",
+          "reading_ko": "관기생 군자무구",
+          "literal_ko": "그 삶을 살피면 군자는 허물이 없다.",
+          "interpretive_ko": "끝에서는 타인과 구조를 함께 관찰하는 넓은 시야가 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "관기생, 군자무구.",
-          "gloss_en": "Looking at his life, a gentleman has no fault."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2078,99 +2078,99 @@
     {
       "id": 21,
       "gua_text": {
-        "original": "噬嗑，亨。利用獄。",
-        "literal_ko": "먹고, 기다려라. 감옥을 이용하세요.",
-        "interpretive_ko": "먹고, 기다려라. 감옥을 이용하세요.",
+        "original": "噬嗑 亨 利用獄",
+        "reading_ko": "서합 형 이용옥",
+        "literal_ko": "서합은 형통하니 옥사를 씀에 이롭다.",
+        "interpretive_ko": "막힌 문제는 규범과 집행으로 뚫어야 흐름이 회복된다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "서합, 형. 리용옥.",
-        "gloss_en": "Eat, hang. Use prison."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "履校滅趾，無咎。",
-          "literal_ko": "학교에 가서 발가락을 없애면 허물이 없습니다.",
-          "interpretive_ko": "학교에 가서 발가락을 없애면 허물이 없습니다.",
+          "label_ko": "초구",
+          "original": "屨校滅趾 无咎",
+          "reading_ko": "이교멸지 무구",
+          "literal_ko": "형구를 신어 발가락이 다치나 허물이 없다.",
+          "interpretive_ko": "초기 제재는 불편해도 큰 사고를 막는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "리교멸지, 무구.",
-          "gloss_en": "If you go to school and get rid of your toes, there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "噬膚滅鼻，無咎。",
-          "literal_ko": "그것은 피부를 물고 코를 파괴하는데, 그것은 허물이 아닙니다.",
-          "interpretive_ko": "그것은 피부를 물고 코를 파괴하는데, 그것은 허물이 아닙니다.",
+          "label_ko": "육이",
+          "original": "噬膚 滅鼻 无咎",
+          "reading_ko": "서부 멸비 무구",
+          "literal_ko": "살을 씹어 코가 상하나 허물이 없다.",
+          "interpretive_ko": "고통스러운 조치라도 필요한 수술은 감수해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "서부멸비, 무구.",
-          "gloss_en": "It bites the skin and destroys the nose, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "噬臘肉，遇毒。小吝，無咎。",
-          "literal_ko": "베이컨을 먹고 독을 만난다. 약간의 인색함은 허물할 것이 아닙니다.",
-          "interpretive_ko": "베이컨을 먹고 독을 만난다. 약간의 인색함은 허물할 것이 아닙니다.",
+          "label_ko": "육삼",
+          "original": "噬腊肉 遇毒 小吝 无咎",
+          "reading_ko": "서석육 우독 소린 무구",
+          "literal_ko": "말린 고기를 씹다 독을 만나 작은 인색함이 있으나 허물은 없다.",
+          "interpretive_ko": "중간 저항은 생기지만 원칙 집행을 멈출 이유는 아니다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "서납육, 우독. 소린, 무구.",
-          "gloss_en": "Eat bacon and encounter poison. A little stinginess is nothing to blame."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "噬乾胏，得金矢，利艱貞，吉。",
-          "literal_ko": "줄기를 물면 고난과 바름에 유익하고 상서로운 황금 화살을 얻습니다.",
-          "interpretive_ko": "줄기를 물면 고난과 바름에 유익하고 상서로운 황금 화살을 얻습니다.",
+          "label_ko": "구사",
+          "original": "噬乾胏 得金矢 利艱貞 吉",
+          "reading_ko": "서건자 득금시 이간정 길",
+          "literal_ko": "마른 고기를 씹어 금화살을 얻으니 어렵게 바름을 지키면 길하다.",
+          "interpretive_ko": "어려운 사건일수록 근거를 확보하며 밀어야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "서건胏, 득금시, 리간정, 길.",
-          "gloss_en": "Bite the stem and get a golden arrow, which is beneficial to hardship and chastity, and is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "噬乾肉，得黃金，貞厲，無咎。",
-          "literal_ko": "말린 고기를 먹으면 금을 얻을 것이고, 순수하고 강해질 것이며, 죄가 없을 것이다.",
-          "interpretive_ko": "말린 고기를 먹으면 금을 얻을 것이고, 순수하고 강해질 것이며, 죄가 없을 것이다.",
+          "label_ko": "육오",
+          "original": "噬乾肉 得黃金 貞厲 无咎",
+          "reading_ko": "서건육 득황금 정려 무구",
+          "literal_ko": "마른 고기를 씹어 황금을 얻으니 바르게 해도 위태롭지만 허물은 없다.",
+          "interpretive_ko": "핵심 성과를 얻는 단계에서도 경계는 풀지 말아야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "서건육, 득황금, 정려, 무구.",
-          "gloss_en": "Eat dried meat and you will get gold, you will be pure and strong, and you will have no guilt."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "何校滅耳，凶。",
-          "literal_ko": "허샤오의 귀가 망가진 것은 나쁜 일이다.",
-          "interpretive_ko": "허샤오의 귀가 망가진 것은 나쁜 일이다.",
+          "label_ko": "상구",
+          "original": "何校滅耳 凶",
+          "reading_ko": "하교멸이 흉",
+          "literal_ko": "형구를 메어 귀가 상하니 흉하다.",
+          "interpretive_ko": "끝까지 고집하면 처벌이 본격화된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "하교멸이, 흉.",
-          "gloss_en": "He Xiao's ears are destroyed, which is bad."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
