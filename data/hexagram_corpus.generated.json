@@ -3417,99 +3417,99 @@
     {
       "id": 34,
       "gua_text": {
-        "original": "大壯，利貞。",
-        "literal_ko": "크고 강하며 바름에 유익합니다.",
-        "interpretive_ko": "크고 강하며 바름에 유익합니다.",
+        "original": "大壯 利貞",
+        "reading_ko": "대장 이정",
+        "literal_ko": "대장은 바름이 이롭다.",
+        "interpretive_ko": "강한 추진력이 생기는 때다. 힘이 클수록 기준과 절제가 필수다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "대장, 리정.",
-        "gloss_en": "Big and strong, beneficial to chastity."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "壯于趾，征凶，有孚。",
-          "literal_ko": "발가락보다 강하여 악을 물리치고 번영을 가져온다.",
-          "interpretive_ko": "발가락보다 강하여 악을 물리치고 번영을 가져온다.",
+          "label_ko": "초구",
+          "original": "壯于趾 征凶 有孚",
+          "reading_ko": "장우지 정흉 유부",
+          "literal_ko": "발끝의 강함이니 나아가면 흉하다. 믿음이 있어야 한다.",
+          "interpretive_ko": "초기 과속은 실패를 부른다. 출발 전 신뢰 기반부터 세워야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "장우지, 정흉, 유부.",
-          "gloss_en": "Stronger than the toes, it conquers evil and brings prosperity."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "貞吉。",
-          "literal_ko": "사다키.",
-          "interpretive_ko": "사다키.",
+          "label_ko": "구이",
+          "original": "貞吉",
+          "reading_ko": "정길",
+          "literal_ko": "바르게 하면 길하다.",
+          "interpretive_ko": "중간 단계의 정직한 운영이 전체를 살린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정길.",
-          "gloss_en": "Sadaki."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。",
-          "literal_ko": "악당은 힘을 사용해야 하고, 신사는 무자비함과 바름을 사용해야 합니다. 숫양이 영주에게 닿으면 뿔이 부러진다.",
-          "interpretive_ko": "악당은 힘을 사용해야 하고, 신사는 무자비함과 바름을 사용해야 합니다. 숫양이 영주에게 닿으면 뿔이 부러진다.",
+          "label_ko": "구삼",
+          "original": "小人用壯 君子用罔 貞厲 羝羊觸藩 羸其角",
+          "reading_ko": "소인용장 군자용망 정려 저양촉번 리기각",
+          "literal_ko": "소인은 강함을 쓰고 군자는 그물을 쓴다. 바르게 해도 위태롭다. 숫양이 울타리를 들이받아 뿔이 얽힌다.",
+          "interpretive_ko": "무식한 정면 돌파는 스스로를 묶는다. 우회 전략이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "소인용장, 군자용망, 정려. 저양촉번, 리기각.",
-          "gloss_en": "A villain should use strength, a gentleman should use ruthlessness and chastity. If a ram touches the feudal lord, its horn will be broken."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "貞吉悔亡，藩決不羸，壯于大輿之輹。",
-          "literal_ko": "진기는 자신의 죽음을 후회하고, 가신은 결코 실패하지 않을 것이며, 일반 대중의 지지보다 더 강해질 것이다.",
-          "interpretive_ko": "진기는 자신의 죽음을 후회하고, 가신은 결코 실패하지 않을 것이며, 일반 대중의 지지보다 더 강해질 것이다.",
+          "label_ko": "구사",
+          "original": "貞吉 悔亡 藩決不羸 壯于大輿之輹",
+          "reading_ko": "정길 회망 번결불리 장우대여지복",
+          "literal_ko": "바르게 길하면 뉘우침이 사라진다. 울타리가 열려도 얽히지 않고 큰 수레의 멍에가 튼튼하다.",
+          "interpretive_ko": "구조를 강화하면 확장해도 붕괴하지 않는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정길회망, 번결부리, 장우대여지복.",
-          "gloss_en": "Zhenji regrets his death, and the vassal will never fail, and he will be stronger than the support of the general public."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "喪羊于易，無悔。",
-          "literal_ko": "이순신에서는 양을 잃어도 후회가 없습니다.",
-          "interpretive_ko": "이순신에서는 양을 잃어도 후회가 없습니다.",
+          "label_ko": "육오",
+          "original": "喪羊于易 无悔",
+          "reading_ko": "상양우이 무회",
+          "literal_ko": "쉬운 길에서 양을 잃어도 뉘우침이 없다.",
+          "interpretive_ko": "작은 손실을 감수하면 큰 위험을 피할 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "상양우역, 무회.",
-          "gloss_en": "Losing a sheep in Yi has no regrets."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "羝羊觸藩，不能退，不能遂，無攸利，艱則吉。",
-          "literal_ko": "양이 봉신의 가신에게 닿으면 후퇴하거나 성공할 수 없으며 이익도 없습니다. 어려움은 좋습니다.",
-          "interpretive_ko": "양이 봉신의 가신에게 닿으면 후퇴하거나 성공할 수 없으며 이익도 없습니다. 어려움은 좋습니다.",
+          "label_ko": "상육",
+          "original": "羝羊觸藩 不能退 不能遂 无攸利 艱則吉",
+          "reading_ko": "저양촉번 불능퇴 불능수 무유리 간즉길",
+          "literal_ko": "숫양이 울타리를 들이받아 물러나지도 나아가지도 못하니 이로움이 없다. 어렵게 하면 길하다.",
+          "interpretive_ko": "교착 국면에선 힘을 빼고 난관 대응 모드로 전환해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "저양촉번, 부능퇴, 부능수, 무유리, 간칙길.",
-          "gloss_en": "If the sheep touches the feudal vassal, they cannot retreat or succeed, and there is no profit. Difficulties are good."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3520,99 +3520,99 @@
     {
       "id": 35,
       "gua_text": {
-        "original": "晉，康侯用錫馬蕃庶，晝日三接。",
-        "literal_ko": "진나라 때 강후가 양철말을 이용해 서민들에게 먹이를 주었고, 하루에 세 번씩 양철말을 받았다.",
-        "interpretive_ko": "진나라 때 강후가 양철말을 이용해 서민들에게 먹이를 주었고, 하루에 세 번씩 양철말을 받았다.",
+        "original": "晉 康侯用錫馬蕃庶 晝日三接",
+        "reading_ko": "진 강후용석마번서 주일삼접",
+        "literal_ko": "진은 강후가 말을 많이 하사받고 하루에 세 번 접견한다.",
+        "interpretive_ko": "진보의 시기에는 성과가 빠르게 보상된다. 다만 리듬 관리가 필요하다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "진, 강후용석마번서, 주일삼접.",
-        "gloss_en": "In the Jin Dynasty, the Marquis of Kang used tin horses to feed the common people, and received them three times a day."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "晉如，摧如，貞吉。罔孚，裕，無咎。",
-          "literal_ko": "진루, 데루, 젠지. 푸, 유, 허물하지 마세요.",
-          "interpretive_ko": "진루, 데루, 젠지. 푸, 유, 허물하지 마세요.",
+          "label_ko": "초육",
+          "original": "晉如摧如 貞吉 罔孚 裕无咎",
+          "reading_ko": "진여최여 정길 망부 유무구",
+          "literal_ko": "나아가나 꺾인다. 바르게 하면 길하다. 믿음이 없어도 너그러우면 허물이 없다.",
+          "interpretive_ko": "초기 저항은 자연스럽다. 여유를 유지하면 반등한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진여, 최여, 정길. 망부, 유, 무구.",
-          "gloss_en": "Jinru, Deru, Zhenji. Fu, Yu, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "晉如，愁如，貞吉。受茲介福于其王母。",
-          "literal_ko": "진보하되 근심이 있더라도 바르게 지키면 길하다. 왕모의 큰 복을 받는다.",
-          "interpretive_ko": "진보하되 근심이 있더라도 바르게 지키면 길하다. 왕모의 큰 복을 받는다.",
+          "label_ko": "육이",
+          "original": "晉如愁如 貞吉 受茲介福 于其王母",
+          "reading_ko": "진여수여 정길 수자개복 우기왕모",
+          "literal_ko": "나아가며 근심하나 바르게 길하다. 그 왕모에게서 큰 복을 받는다.",
+          "interpretive_ko": "불안한 전진기엔 상위 신뢰가 큰 버팀목이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진여, 수여, 정길. 수자개복우기왕모.",
-          "gloss_en": "Jin is like, worry is like, chastity is good. I am blessed by his Queen Mother."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "眾允，悔亡。",
-          "literal_ko": "모두가 그의 죽음에 동의하고 후회합니다.",
-          "interpretive_ko": "모두가 그의 죽음에 동의하고 후회합니다.",
+          "label_ko": "육삼",
+          "original": "眾允 悔亡",
+          "reading_ko": "중윤 회망",
+          "literal_ko": "무리가 믿어주면 뉘우침이 사라진다.",
+          "interpretive_ko": "팀의 합의가 생기면 시행착오 비용이 급감한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "중윤, 회망.",
-          "gloss_en": "Everyone agrees and regrets his death."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "晉如碩鼠，貞厲。",
-          "literal_ko": "진은 쥐같고 바름하고 사나워요.",
-          "interpretive_ko": "진은 쥐같고 바름하고 사나워요.",
+          "label_ko": "구사",
+          "original": "晉如鼫鼠 貞厲",
+          "reading_ko": "진여석서 정려",
+          "literal_ko": "나아감이 큰쥐 같으니 바르게 해도 위태롭다.",
+          "interpretive_ko": "탐욕적 확장은 신뢰를 잃고 리스크를 키운다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진여석서, 정려.",
-          "gloss_en": "Jin is like a rat, chaste and fierce."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "悔亡，失得勿恤，往吉，無不利。",
-          "literal_ko": "죽음을 후회하고, 득실을 불쌍히 여기지 말고, 행운이 가득하고 불이익이 없도록 하세요.",
-          "interpretive_ko": "죽음을 후회하고, 득실을 불쌍히 여기지 말고, 행운이 가득하고 불이익이 없도록 하세요.",
+          "label_ko": "육오",
+          "original": "悔亡 失得勿恤 往吉无不利",
+          "reading_ko": "회망 실득물휼 왕길무불리",
+          "literal_ko": "뉘우침이 사라진다. 잃고 얻음을 근심하지 말면 나아가 길하고 이롭지 않음이 없다.",
+          "interpretive_ko": "손익 집착을 줄이면 전략 판단이 선명해진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "회망, 실득물휼, 왕길, 무부리.",
-          "gloss_en": "Regret your death, don’t pity your gains and losses, go to good luck and have no disadvantages."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "晉其角，維用伐邑，厲，吉，無咎，貞吝。",
-          "literal_ko": "위 은 도시를 정복하고 리, 길, 길, 정은 인색합니다.",
-          "interpretive_ko": "위 은 도시를 정복하고 리, 길, 길, 정은 인색합니다.",
+          "label_ko": "상구",
+          "original": "晉其角 維用伐邑 厲吉无咎 貞吝",
+          "reading_ko": "진기각 유용벌읍 려길무구 정린",
+          "literal_ko": "뿔처럼 치고 나가 읍을 치는 데 쓴다. 위태로우나 길하고 허물이 없다. 바르게 해도 인색하다.",
+          "interpretive_ko": "마지막 강공은 제한적 목표에만 써야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진기각, 유용벌읍, 려, 길, 무구, 정린.",
-          "gloss_en": "Jin Qijiao, Wei Yong conquered the city, Li, Ji, Wu Ji, Zhen stingy."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3623,99 +3623,99 @@
     {
       "id": 36,
       "gua_text": {
-        "original": "明夷，利艱貞。",
-        "literal_ko": "이익, 고난 및 바름.",
-        "interpretive_ko": "이익, 고난 및 바름.",
+        "original": "明夷 利艱貞",
+        "reading_ko": "명이 이간정",
+        "literal_ko": "명이는 어려움을 견디며 바름을 지키는 것이 이롭다.",
+        "interpretive_ko": "빛이 가려진 시기다. 드러내기보다 보호와 인내가 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "명이, 리간정.",
-        "gloss_en": "Mingyi, benefit, hardship and chastity."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "明夷于飛，垂其翼。君子于行，三日不食。有攸往，主人有言。",
-          "literal_ko": "밍이는 날고 있고 그의 날개는 늘어져 있다. 어떤 신사가 3일 동안 아무것도 먹지 않고 일을 하고 있습니다. 여행이 있는 곳에는 스승이 할 말이 있다.",
-          "interpretive_ko": "밍이는 날고 있고 그의 날개는 늘어져 있다. 어떤 신사가 3일 동안 아무것도 먹지 않고 일을 하고 있습니다. 여행이 있는 곳에는 스승이 할 말이 있다.",
+          "label_ko": "초구",
+          "original": "明夷于飛 垂其翼 君子于行 三日不食 有攸往 主人有言",
+          "reading_ko": "명이우비 수기익 군자우행 삼일불식 유유왕 주인유언",
+          "literal_ko": "빛이 상해 날다가 날개를 드리운다. 군자가 길을 떠나 사흘 굶어도 갈 바가 있으면 주인이 말이 있다.",
+          "interpretive_ko": "위기 이탈은 손실을 감수하더라도 원칙을 지키기 위한 선택일 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명이우비, 수기익. 군자우항, 삼일부식. 유유왕, 주인유언.",
-          "gloss_en": "Ming Yi is flying, and his wings are hanging down. A gentleman goes about his business without eating for three days. Where there is a journey, the master has something to say."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "明夷，夷于左股，用拯馬壯，吉。",
-          "literal_ko": "민이 이( 이)는 왼쪽 허벅지에 있으며 말을 강하게 만드는데 사용되는데 길함이다.",
-          "interpretive_ko": "민이 이( 이)는 왼쪽 허벅지에 있으며 말을 강하게 만드는데 사용되는데 길함이다.",
+          "label_ko": "육이",
+          "original": "明夷 夷于左股 用拯馬壯 吉",
+          "reading_ko": "명이 이우좌고 용증마장 길",
+          "literal_ko": "빛이 상해 왼 넓적다리를 다치니, 구원할 말을 강하게 쓰면 길하다.",
+          "interpretive_ko": "피해를 인정하고 복구 자원을 즉시 투입해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명이, 이우좌고, 용증마장, 길.",
-          "gloss_en": "Mingyi, Yi is in the left thigh, and it is used to make the horse strong, which is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "明夷于南狩，得其大首，不可疾貞。",
-          "literal_ko": "명이는 남쪽에서 사냥을 하다가 머리가 커서 빠르지 못했다.",
-          "interpretive_ko": "명이는 남쪽에서 사냥을 하다가 머리가 커서 빠르지 못했다.",
+          "label_ko": "구삼",
+          "original": "明夷于南狩 得其大首 不可疾貞",
+          "reading_ko": "명이우남수 득기대수 불가질정",
+          "literal_ko": "남쪽 사냥에서 큰 우두머리를 얻으나 급히 바르게 하려 해선 안 된다.",
+          "interpretive_ko": "큰 성과 후에는 속도보다 정착이 먼저다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명이우남수, 득기대수, 부가질정.",
-          "gloss_en": "The Ming Yi hunted in the south and got the big head, so they couldn't be quick."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "入于左腹，獲明夷之心，于出門庭。",
-          "literal_ko": "좌복부에 들어가 바깥뜰에 있는 명이의 심장을 얻는다.",
-          "interpretive_ko": "좌복부에 들어가 바깥뜰에 있는 명이의 심장을 얻는다.",
+          "label_ko": "육사",
+          "original": "入于左腹 獲明夷之心 于出門庭",
+          "reading_ko": "입우좌복 획명이지심 우출문정",
+          "literal_ko": "왼 배에 들어가 명이의 마음을 얻고 문뜰을 나간다.",
+          "interpretive_ko": "내부 원인을 파악하면 탈출 경로가 보인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "입우좌복, 획명이지심, 우출문정.",
-          "gloss_en": "It enters the left abdomen and obtains the heart of Ming Yi, which is located in the outer court."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "箕子之明夷，利貞。",
-          "literal_ko": "의 이는 정에게 유익합니다.",
-          "interpretive_ko": "의 이는 정에게 유익합니다.",
+          "label_ko": "육오",
+          "original": "箕子之明夷 利貞",
+          "reading_ko": "기자지명이 이정",
+          "literal_ko": "기자의 명이니 바름이 이롭다.",
+          "interpretive_ko": "어두운 시대에도 기준을 지키는 인내가 가치다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "기자지명이, 리정.",
-          "gloss_en": "Jizi's Ming Yi is beneficial to Zhen."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "不明晦，初登于天，后入于地。",
-          "literal_ko": "불분명하며 먼저 하늘로 올라간 다음 땅으로 들어갑니다.",
-          "interpretive_ko": "불분명하며 먼저 하늘로 올라간 다음 땅으로 들어갑니다.",
+          "label_ko": "상육",
+          "original": "不明晦 初登于天 後入于地",
+          "reading_ko": "불명회 초등우천 후입우지",
+          "literal_ko": "밝지 못해 어두우니 처음엔 하늘에 올랐다가 뒤엔 땅에 들어간다.",
+          "interpretive_ko": "오만한 정점은 급락으로 끝난다. 끝에서 겸손이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부명회, 초등우천, 후입우지.",
-          "gloss_en": "It is unclear, it first ascends to the sky, and then enters the earth."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3726,99 +3726,99 @@
     {
       "id": 37,
       "gua_text": {
-        "original": "家人，利女貞。",
-        "literal_ko": "가족, 이로움을 누리세요.",
-        "interpretive_ko": "가족, 이로움을 누리세요.",
+        "original": "家人 利女貞",
+        "reading_ko": "가인 이여정",
+        "literal_ko": "가인은 여인의 바름이 이롭다.",
+        "interpretive_ko": "가정/조직은 역할과 규칙이 서야 안정된다. 관계 운영의 원칙이 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "가인, 리녀정.",
-        "gloss_en": "Family, benefit privet."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "閑有家，悔亡。",
-          "literal_ko": "나는 여가 시간에 집이 있고 나의 죽음을 후회합니다.",
-          "interpretive_ko": "나는 여가 시간에 집이 있고 나의 죽음을 후회합니다.",
+          "label_ko": "초구",
+          "original": "閑有家 悔亡",
+          "reading_ko": "한유가 회망",
+          "literal_ko": "집안에 규범이 있으면 뉘우침이 사라진다.",
+          "interpretive_ko": "초기 규칙 세팅이 장기 갈등 비용을 줄인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "한유가, 회망.",
-          "gloss_en": "I have a home in my spare time and regret my death."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "無攸遂，在中饋，貞吉。",
-          "literal_ko": "유스이 없이, 먹이를 주고 있는 와중에 젠지.",
-          "interpretive_ko": "유스이 없이, 먹이를 주고 있는 와중에 젠지.",
+          "label_ko": "육이",
+          "original": "无攸遂 在中饋 貞吉",
+          "reading_ko": "무유수 재중궤 정길",
+          "literal_ko": "함부로 이루려 하지 말고 안의 밥상을 맡으면 바르게 길하다.",
+          "interpretive_ko": "보이지 않는 운영 역할이 조직을 지탱한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무유수, 재중궤, 정길.",
-          "gloss_en": "Without Yousui, in the middle of the feeding, Zhenji."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "家人嗃嗃，悔厲吉。婦子嘻嘻，終吝。",
-          "literal_ko": "가족들은 갉아먹고 후회한다. 여자는 늘 인색해요.",
-          "interpretive_ko": "가족들은 갉아먹고 후회한다. 여자는 늘 인색해요.",
+          "label_ko": "구삼",
+          "original": "家人嗃嗃 悔厲吉 婦子嘻嘻 終吝",
+          "reading_ko": "가인혁혁 회려길 부자희희 종린",
+          "literal_ko": "집안을 엄하게 다스리면 뉘우침과 위태로움이 있어도 길하다. 부인과 자식이 웃기만 하면 끝내 인색하다.",
+          "interpretive_ko": "방임과 과잉통제 사이의 균형이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "가인학학, 회려길. 부자희희, 종린.",
-          "gloss_en": "The family gnaws and regrets. The woman is always stingy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "富家，大吉。",
-          "literal_ko": "부자 가족, 행운을 빕니다.",
-          "interpretive_ko": "부자 가족, 행운을 빕니다.",
+          "label_ko": "육사",
+          "original": "富家 大吉",
+          "reading_ko": "부가 대길",
+          "literal_ko": "집안을 부유하게 하면 크게 길하다.",
+          "interpretive_ko": "자원 기반을 튼튼히 하면 관계도 안정된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부가, 대길.",
-          "gloss_en": "Rich family, good luck."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "王假有家，勿恤吉。",
-          "literal_ko": "왕에게 가족이 있다면 걱정하지 마세요.",
-          "interpretive_ko": "왕에게 가족이 있다면 걱정하지 마세요.",
+          "label_ko": "구오",
+          "original": "王假有家 勿恤 吉",
+          "reading_ko": "왕가유가 물휼 길",
+          "literal_ko": "왕이 집안을 돌보니 근심하지 말라. 길하다.",
+          "interpretive_ko": "리더의 관심과 돌봄이 조직 신뢰를 높인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕가유가, 물휼길.",
-          "gloss_en": "If the king has a family, don't worry about it."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "有孚威如，終吉。",
-          "literal_ko": "후웨이루가 있다면 결국에는 길함이 될 것입니다.",
-          "interpretive_ko": "후웨이루가 있다면 결국에는 길함이 될 것입니다.",
+          "label_ko": "상구",
+          "original": "有孚威如 終吉",
+          "reading_ko": "유부위여 종길",
+          "literal_ko": "믿음과 위엄이 있으면 마침내 길하다.",
+          "interpretive_ko": "끝에서는 신뢰와 권위의 균형이 성패를 가른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유부위여, 종길.",
-          "gloss_en": "If there is Fuweiru, it will be auspicious in the end."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
