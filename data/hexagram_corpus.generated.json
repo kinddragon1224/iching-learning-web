@@ -2181,99 +2181,99 @@
     {
       "id": 22,
       "gua_text": {
-        "original": "賁，亨。小利有所往。",
-        "literal_ko": "비, 헝. 작은 이익은 어딘가로 이동합니다.",
-        "interpretive_ko": "비, 헝. 작은 이익은 어딘가로 이동합니다.",
+        "original": "賁 亨 小利有攸往",
+        "reading_ko": "비 형 소리유유왕",
+        "literal_ko": "비는 형통하니 조금은 가는 바가 이롭다.",
+        "interpretive_ko": "꾸밈은 본질을 살릴 때 힘이 있다. 과한 확장은 피하고 정밀하게 나아가야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "분, 형. 소리유소왕.",
-        "gloss_en": "Bi, Heng. Small profits go somewhere."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "賁其趾，舍車而徒。",
-          "literal_ko": "발가락을 구부리고 수레를 버리고 떠나십시오.",
-          "interpretive_ko": "발가락을 구부리고 수레를 버리고 떠나십시오.",
+          "label_ko": "초구",
+          "original": "賁其趾 舍車而徒",
+          "reading_ko": "비기지 사차이도",
+          "literal_ko": "발끝을 꾸미고 수레를 버리고 걷는다.",
+          "interpretive_ko": "외형보다 실질을 택하는 선택이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "분기지, 사거이도.",
-          "gloss_en": "Bend his toes, abandon the cart and walk away."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "賁其須。",
-          "literal_ko": "수염을 구부리세요.",
-          "interpretive_ko": "수염을 구부리세요.",
+          "label_ko": "육이",
+          "original": "賁其須",
+          "reading_ko": "비기수",
+          "literal_ko": "수염을 꾸민다.",
+          "interpretive_ko": "작은 디테일을 다듬는 일이 전체 인상을 좌우한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "분기수.",
-          "gloss_en": "Bend his whiskers."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "賁如濡如，永貞吉。",
-          "literal_ko": "촉촉한 것처럼 온유하고, 영원히 바름하고 상서롭습니다.",
-          "interpretive_ko": "촉촉한 것처럼 온유하고, 영원히 바름하고 상서롭습니다.",
+          "label_ko": "구삼",
+          "original": "賁如濡如 永貞吉",
+          "reading_ko": "비여유여 영정길",
+          "literal_ko": "꾸밈이 윤택하니 오래도록 바르게 하면 길하다.",
+          "interpretive_ko": "일회성 포장이 아니라 지속 가능한 품질이 핵심이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "분여유여, 영정길.",
-          "gloss_en": "Be as gentle as moist, and be everlastingly chaste and auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "賁如皤如，白馬翰如，匪寇婚媾。",
-          "literal_ko": "벤은 보 같고, 백마는 한 같고, 도적은 결혼한다.",
-          "interpretive_ko": "벤은 보 같고, 백마는 한 같고, 도적은 결혼한다.",
+          "label_ko": "육사",
+          "original": "賁如皤如 白馬翰如 匪寇婚媾",
+          "reading_ko": "비여파여 백마한여 비구혼구",
+          "literal_ko": "꾸밈이 희고 빛나며 흰 말이 달려온다. 도적이 아니라 혼인을 청한다.",
+          "interpretive_ko": "위협처럼 보이던 변화가 협력 제안일 수 있으니 성급히 적대하지 말라.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "분여파여, 백마한여, 비구혼구.",
-          "gloss_en": "Ben is like Bo, white horse is like Han, bandits are getting married."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "賁于丘園，束帛戔戔，吝，終吉。",
-          "literal_ko": "의 은 실크와 실크를 묶고 인색하며 마침내 운이 좋습니다.",
-          "interpretive_ko": "의 은 실크와 실크를 묶고 인색하며 마침내 운이 좋습니다.",
+          "label_ko": "육오",
+          "original": "賁于丘園 束帛戔戔 吝 終吉",
+          "reading_ko": "비우구원 속백잔잔 린 종길",
+          "literal_ko": "동산과 밭을 꾸미니 비단 묶음이 작아 인색하나 마침내 길하다.",
+          "interpretive_ko": "자원이 적어도 진정성 있는 완성은 결국 인정받는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "분우구원, 속백잔잔, 린, 종길.",
-          "gloss_en": "Ben in Qiuyuan, bundle silk and silk, be stingy, and finally be lucky."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "白賁，無咎。",
-          "literal_ko": "바이 벤, 잘못은 없어.",
-          "interpretive_ko": "바이 벤, 잘못은 없어.",
+          "label_ko": "상구",
+          "original": "白賁 无咎",
+          "reading_ko": "백비 무구",
+          "literal_ko": "희게 꾸미니 허물이 없다.",
+          "interpretive_ko": "마지막은 화려함보다 담백함이 정답이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "백분, 무구.",
-          "gloss_en": "Bai Ben, no fault."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2284,99 +2284,99 @@
     {
       "id": 23,
       "gua_text": {
-        "original": "剝，不利有攸往。",
-        "literal_ko": "껍질을 벗기면 불리합니다.",
-        "interpretive_ko": "껍질을 벗기면 불리합니다.",
+        "original": "剝 不利有攸往",
+        "reading_ko": "박 불리유유왕",
+        "literal_ko": "박은 가는 바가 이롭지 않다.",
+        "interpretive_ko": "벗겨지고 무너지는 시기다. 확장보다 보존과 축소가 우선이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "박, 부리유유왕.",
-        "gloss_en": "If you peel it off, it will be unfavorable."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "剝床以足，蔑貞凶。",
-          "literal_ko": "침대를 벗겨내는 것만으로도 바름과 악을 경멸하기에 충분합니다.",
-          "interpretive_ko": "침대를 벗겨내는 것만으로도 바름과 악을 경멸하기에 충분합니다.",
+          "label_ko": "초육",
+          "original": "剝牀以足 蔑貞凶",
+          "reading_ko": "박상이족 멸정흉",
+          "literal_ko": "평상이 발부터 벗겨지니 바름이 무너져 흉하다.",
+          "interpretive_ko": "붕괴는 말단에서 시작된다. 초기 징후를 놓치지 말아야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "박상이족, 멸정흉.",
-          "gloss_en": "Peeling off the bed is enough to despise chastity and evil."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "剝床以辨，蔑貞凶。",
-          "literal_ko": "바름과 악을 식별하고 경멸하기 위해 침대를 벗겨냅니다.",
-          "interpretive_ko": "바름과 악을 식별하고 경멸하기 위해 침대를 벗겨냅니다.",
+          "label_ko": "육이",
+          "original": "剝牀以辨 蔑貞凶",
+          "reading_ko": "박상이변 멸정흉",
+          "literal_ko": "평상이 가장자리부터 벗겨지니 바름이 무너져 흉하다.",
+          "interpretive_ko": "주변부 균열을 방치하면 중심도 곧 무너진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "박상이변, 멸정흉.",
-          "gloss_en": "Peeling off the bed to identify, despise chastity and evil."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "剝之，無咎。",
-          "literal_ko": "껍질을 벗겨보세요. 허물 없음.",
-          "interpretive_ko": "껍질을 벗겨보세요. 허물 없음.",
+          "label_ko": "육삼",
+          "original": "剝之 无咎",
+          "reading_ko": "박지 무구",
+          "literal_ko": "벗겨내니 허물이 없다.",
+          "interpretive_ko": "불필요한 것을 정리하는 고통은 장기적으로 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "박지, 무구.",
-          "gloss_en": "Peel it off, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "剝床以膚，凶。",
-          "literal_ko": "침대를 피부로 벗기는 것은 불운입니다.",
-          "interpretive_ko": "침대를 피부로 벗기는 것은 불운입니다.",
+          "label_ko": "육사",
+          "original": "剝牀以膚 凶",
+          "reading_ko": "박상이부 흉",
+          "literal_ko": "평상이 살갗까지 벗겨지니 흉하다.",
+          "interpretive_ko": "손상이 핵심까지 번졌다면 강한 구조조정이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "박상이부, 흉.",
-          "gloss_en": "Stripping the bed with skin is bad luck."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "貫魚，以宮人寵，無不利。",
-          "literal_ko": "궁궐 사람들의 총애를 받는 데에는 불이로움이 없다.",
-          "interpretive_ko": "궁궐 사람들의 총애를 받는 데에는 불이로움이 없다.",
+          "label_ko": "육오",
+          "original": "貫魚 以宮人寵 无不利",
+          "reading_ko": "관어 이궁인총 무불리",
+          "literal_ko": "물고기를 꿰듯 질서를 세워 궁인을 거느리면 이롭지 않음이 없다.",
+          "interpretive_ko": "질서 재정비가 위기 후 회복의 발판이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "관어, 이궁인총, 무부리.",
-          "gloss_en": "There is no disadvantage in being favored by people in the palace."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "碩果不食，君子得輿，小人剝廬。",
-          "literal_ko": "과일을 먹지 않으면 신사는 대중의 지지를 얻지만 악당은 그의 오두막을 빼앗길 것입니다.",
-          "interpretive_ko": "과일을 먹지 않으면 신사는 대중의 지지를 얻지만 악당은 그의 오두막을 빼앗길 것입니다.",
+          "label_ko": "상구",
+          "original": "碩果不食 君子得輿 小人剝廬",
+          "reading_ko": "석과불식 군자득여 소인박려",
+          "literal_ko": "큰 과실은 먹지 않는다. 군자는 수레를 얻고 소인은 집을 벗긴다.",
+          "interpretive_ko": "핵심 자산을 지킨 쪽이 다음 국면의 주도권을 얻는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "석과부식, 군자득여, 소인박려.",
-          "gloss_en": "If you don't eat the fruit, the gentleman will gain public support, but the villain will strip him of his hut."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2387,99 +2387,99 @@
     {
       "id": 24,
       "gua_text": {
-        "original": "復，亨。出入無疾，朋來無咎。反復其道，七日來復，利有攸往。",
-        "literal_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 허물이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
-        "interpretive_ko": "푸, 헝. 들어오고 나가는 데 문제가 없고 친구가 와도 허물이 없을 것이다. 이 방법을 반복하고 7일 후에 다시 오면 성공할 것입니다.",
+        "original": "復 亨 出入无疾 朋來无咎 反復其道 七日來復 利有攸往",
+        "reading_ko": "복 형 출입무질 붕래무구 반복기도 칠일래복 리유유왕",
+        "literal_ko": "복은 형통하다. 나가고 들어옴에 병이 없고 벗이 와도 허물이 없다. 그 도가 되돌아와 칠일에 다시 돌아오니 가는 바가 이롭다.",
+        "interpretive_ko": "회복의 리듬이 시작되는 때다. 재시작 타이밍을 놓치지 말아야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "복, 형. 출입무질, 붕내무구. 반복기도, 칠일내복, 리유유왕.",
-        "gloss_en": "Fu, Heng. There will be no trouble in going in and out, and there will be no blame when friends come. Repeat the method, come back in seven days, and you will be successful."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "不復遠，無只悔，元吉。",
-          "literal_ko": "멀지 않은 곳, 후회하지 않는 곳, 행운을 빕니다.",
-          "interpretive_ko": "멀지 않은 곳, 후회하지 않는 곳, 행운을 빕니다.",
+          "label_ko": "초구",
+          "original": "不遠復 无祗悔 元吉",
+          "reading_ko": "불원복 무지회 원길",
+          "literal_ko": "멀리 가지 않고 돌아오니 크게 길하다.",
+          "interpretive_ko": "이탈이 짧을수록 회복 비용이 작다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부복원, 무지회, 원길.",
-          "gloss_en": "Not far away, no regrets, good luck."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "休復，吉。",
-          "literal_ko": "휴식과 회복, 행운을 빕니다.",
-          "interpretive_ko": "휴식과 회복, 행운을 빕니다.",
+          "label_ko": "육이",
+          "original": "休復 吉",
+          "reading_ko": "휴복 길",
+          "literal_ko": "쉬며 돌아오니 길하다.",
+          "interpretive_ko": "회복기에는 속도보다 리듬이 중요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "휴복, 길.",
-          "gloss_en": "Rest and recovery, good luck."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "頻復，厲，無咎。",
-          "literal_ko": "자주, 심각하고, 흠잡을 데가 없습니다.",
-          "interpretive_ko": "자주, 심각하고, 흠잡을 데가 없습니다.",
+          "label_ko": "육삼",
+          "original": "頻復 厲无咎",
+          "reading_ko": "빈복 려무구",
+          "literal_ko": "자주 되돌아오니 위태로우나 허물은 없다.",
+          "interpretive_ko": "반복 실수라도 복귀 습관이 있으면 무너지진 않는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "빈복, 려, 무구.",
-          "gloss_en": "Frequent, severe, blameless."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "中行獨復。",
-          "literal_ko": "는 독립을 되찾았습니다.",
-          "interpretive_ko": "는 독립을 되찾았습니다.",
+          "label_ko": "육사",
+          "original": "中行獨復",
+          "reading_ko": "중행독복",
+          "literal_ko": "중도를 가며 홀로 돌아온다.",
+          "interpretive_ko": "주변이 흔들려도 기준을 지키는 단독 복귀가 필요할 때가 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "중항독복.",
-          "gloss_en": "BOC regained its independence."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "敦復，無悔。",
-          "literal_ko": "솔직하게 말하고 후회하지 마세요.",
-          "interpretive_ko": "솔직하게 말하고 후회하지 마세요.",
+          "label_ko": "육오",
+          "original": "敦復 无悔",
+          "reading_ko": "돈복 무회",
+          "literal_ko": "돈독히 돌아오니 뉘우침이 없다.",
+          "interpretive_ko": "꾸준한 회복 루틴이 후회를 지운다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "돈복, 무회.",
-          "gloss_en": "Be honest and have no regrets."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "迷復，凶，有災眚。用行師，終有大敗，以其國君凶。至于十年不克征。",
-          "literal_ko": "혼란스럽고 사납고 재난에 취약합니다. 전문가를 이용하면 결국 패배하게 되고, 나라는 불행해질 것입니다. 10년간의 무적도.",
-          "interpretive_ko": "혼란스럽고 사납고 재난에 취약합니다. 전문가를 이용하면 결국 패배하게 되고, 나라는 불행해질 것입니다. 10년간의 무적도.",
+          "label_ko": "상육",
+          "original": "迷復 凶 有災眚 用行師 終有大敗 以其國君 凶 至于十年不克征",
+          "reading_ko": "미복 흉 유재생 용행사 종유대패 이기국군 흉 지우십년불극정",
+          "literal_ko": "돌아옴을 잃으면 흉하고 재앙이 있다. 군사를 움직이면 끝내 크게 패하고, 나라의 임금에게도 흉하여 십년 동안 정벌하지 못한다.",
+          "interpretive_ko": "복귀 타이밍을 놓친 고집은 장기 침체를 부른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "미복, 흉, 유재생. 용항사, 종유대패, 이기국군흉. 지우십년부극정.",
-          "gloss_en": "Confused, fierce, and prone to disaster. If you use an expert, you will eventually be defeated, and your country will be unlucky. As for the ten years of invincibility."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2490,99 +2490,99 @@
     {
       "id": 25,
       "gua_text": {
-        "original": "無妄，元亨，利貞。其匪正有眚，不利有攸往。",
-        "literal_ko": "우우, 위안헝, 리젠. 깡패에게는 밝은 미래가 있지만 불리한 깡패에게는 위험한 미래가 있습니다.",
-        "interpretive_ko": "우우, 위안헝, 리젠. 깡패에게는 밝은 미래가 있지만 불리한 깡패에게는 위험한 미래가 있습니다.",
+        "original": "无妄 元亨利貞 其匪正有眚 不利有攸往",
+        "reading_ko": "무망 원형리정 기비정유생 불리유유왕",
+        "literal_ko": "무망은 크게 형통하고 바름이 이롭다. 바르지 않으면 재앙이 있고 가는 바가 이롭지 않다.",
+        "interpretive_ko": "억지 계산 없이 정직한 실행이 길을 연다. 잔꾀는 즉시 리스크가 된다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "무망, 원형, 리정. 기비정유생, 부리유유왕.",
-        "gloss_en": "Wuwu, Yuanheng, Li Zhen. The gangsters have a bright future, but the unfavorable ones have a dangerous future."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "無妄往，吉。",
-          "literal_ko": "성급하게 가지 마세요. 행운을 빕니다.",
-          "interpretive_ko": "성급하게 가지 마세요. 행운을 빕니다.",
+          "label_ko": "초구",
+          "original": "无妄 往吉",
+          "reading_ko": "무망 왕길",
+          "literal_ko": "무망으로 나아가면 길하다.",
+          "interpretive_ko": "정직한 출발이 가장 빠른 길이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무망왕, 길.",
-          "gloss_en": "Don't go rashly, good luck."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "不耕獲，不菑畬，則利有攸往。",
-          "literal_ko": "농작물을 가꾸지 않고 농사를 짓지 않는다면 밝은 미래가 있을 것입니다.",
-          "interpretive_ko": "농작물을 가꾸지 않고 농사를 짓지 않는다면 밝은 미래가 있을 것입니다.",
+          "label_ko": "육이",
+          "original": "不耕穫 不菑畬 則利有攸往",
+          "reading_ko": "불경확 부재여 즉리유유왕",
+          "literal_ko": "밭 갈지 않아도 거두고, 개간하지 않아도 밭이 있으니 가는 바가 이롭다.",
+          "interpretive_ko": "과도한 계산 없이도 때가 맞으면 성과가 따른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부경획, 부치畬, 칙리유유왕.",
-          "gloss_en": "If you don't cultivate crops and don't cultivate crops, you will have a bright future."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "無妄之災，或系之牛，行人之得，邑人之災。",
-          "literal_ko": "황소와 보행자로 인해 예상치 못한 재난이 발생할 수도 있고, 마을 사람들에게 재난이 발생할 수도 있습니다.",
-          "interpretive_ko": "황소와 보행자로 인해 예상치 못한 재난이 발생할 수도 있고, 마을 사람들에게 재난이 발생할 수도 있습니다.",
+          "label_ko": "육삼",
+          "original": "无妄之災 或繫之牛 行人之得 邑人之災",
+          "reading_ko": "무망지재 혹계지우 행인지득 읍인지재",
+          "literal_ko": "무망의 재앙이니 혹 소를 매어두었는데 지나가는 이가 얻고 읍 사람이 재앙을 당한다.",
+          "interpretive_ko": "내 잘못이 아니어도 외부 변수로 손실이 올 수 있다. 대비가 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무망지재, 혹계지우, 항인지득, 읍인지재.",
-          "gloss_en": "Unexpected disasters may be caused by oxen, pedestrians, and disasters for the people of the town."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "可貞，無咎。",
-          "literal_ko": "바름하고 흠이 없습니다.",
-          "interpretive_ko": "바름하고 흠이 없습니다.",
+          "label_ko": "구사",
+          "original": "可貞 无咎",
+          "reading_ko": "가정 무구",
+          "literal_ko": "바르게 할 수 있으면 허물이 없다.",
+          "interpretive_ko": "중간 단계에선 원칙 재확인이 핵심이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "가정, 무구.",
-          "gloss_en": "Chaste, blameless."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "無妄之疾，勿藥有喜。",
-          "literal_ko": "불합리한 질병이 없다면 기뻐서 약을 복용하지 마십시오.",
-          "interpretive_ko": "불합리한 질병이 없다면 기뻐서 약을 복용하지 마십시오.",
+          "label_ko": "구오",
+          "original": "无妄之疾 勿藥有喜",
+          "reading_ko": "무망지질 물약유희",
+          "literal_ko": "무망의 병이니 약을 쓰지 않아도 기쁨이 있다.",
+          "interpretive_ko": "불필요한 개입을 줄이면 자연 회복이 빠를 때가 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무망지질, 물약유희.",
-          "gloss_en": "If there is no unreasonable disease, don’t take the medicine for joy."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "無妄行，有眚，無攸利。",
-          "literal_ko": "경솔한 행동도 없고, 야망도 없고, 이익도 없습니다.",
-          "interpretive_ko": "경솔한 행동도 없고, 야망도 없고, 이익도 없습니다.",
+          "label_ko": "상구",
+          "original": "无妄 行有眚 无攸利",
+          "reading_ko": "무망 행유생 무유리",
+          "literal_ko": "무망이라도 억지로 행하면 재앙이 있어 이로움이 없다.",
+          "interpretive_ko": "좋은 원칙도 타이밍을 거스르면 손해가 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무망항, 유생, 무유리.",
-          "gloss_en": "There is no rash action, no ambition, no profit."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
