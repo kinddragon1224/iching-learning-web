@@ -4241,99 +4241,99 @@
     {
       "id": 42,
       "gua_text": {
-        "original": "益，利有攸往，利涉大川。",
-        "literal_ko": "이익, 이익은 그것과 관련이 있으니 큰 강을 건너면 이익이 있습니다.",
-        "interpretive_ko": "이익, 이익은 그것과 관련이 있으니 큰 강을 건너면 이익이 있습니다.",
+        "original": "益 利有攸往 利涉大川",
+        "reading_ko": "익 리유유왕 리섭대천",
+        "literal_ko": "익은 가는 바가 이롭고 큰 내를 건넘이 이롭다.",
+        "interpretive_ko": "증가의 시기다. 올바른 배분과 실행이 있으면 성장 폭이 커진다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "익, 리유유왕, 리섭대천.",
-        "gloss_en": "Benefit, benefit has something to do with it, benefit from crossing the great river."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "利用為大作，元吉，無咎。",
-          "literal_ko": "걸작으로 사용하세요. 행운을 빕니다. 허물 없음.",
-          "interpretive_ko": "걸작으로 사용하세요. 행운을 빕니다. 허물 없음.",
+          "label_ko": "초구",
+          "original": "利用為大作 元吉 无咎",
+          "reading_ko": "이용위대작 원길 무구",
+          "literal_ko": "큰 일을 하는 데 쓰면 크게 길하고 허물이 없다.",
+          "interpretive_ko": "초기 상승 에너지는 대형 과제의 시동에 쓰는 것이 효율적이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "리용為대작, 원길, 무구.",
-          "gloss_en": "Use it as a masterpiece, good luck and no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。",
-          "literal_ko": "또는 그에게 유익할 수도 있습니다. 열 친구의 거북이가 그의 불순종을 극복할 수 있다면 그는 항상 충성스럽고 상서로울 것입니다. 왕이 황제로부터 향유하는 것은 길함이다.",
-          "interpretive_ko": "또는 그에게 유익할 수도 있습니다. 열 친구의 거북이가 그의 불순종을 극복할 수 있다면 그는 항상 충성스럽고 상서로울 것입니다. 왕이 황제로부터 향유하는 것은 길함이다.",
+          "label_ko": "육이",
+          "original": "或益之 十朋之龜 弗克違 永貞吉 王用享于帝 吉",
+          "reading_ko": "혹익지 십붕지구 불극위 영정길 왕용향우제 길",
+          "literal_ko": "혹 더해주니 열 벗의 거북이라도 거스를 수 없다. 오래 바르게 하면 길하고 왕이 제향해도 길하다.",
+          "interpretive_ko": "정당한 증분은 다수 합의를 얻고 제도적 승인으로 이어진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "혹익지, 십붕지구불극위, 영정길. 왕용향우제, 길.",
-          "gloss_en": "Or it may be beneficial to him, if the tortoises of ten friends can overcome his disobedience, he will always be loyal and auspicious. It is auspicious for the king to enjoy it from the emperor."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "益之用凶事，無咎。有孚中行，告公用圭。",
-          "literal_ko": "악한 것을 선을 위해 사용하면 허물이 없습니다. 유부, 대중에게 를 사용하라고 말하세요.",
-          "interpretive_ko": "악한 것을 선을 위해 사용하면 허물이 없습니다. 유부, 대중에게 를 사용하라고 말하세요.",
+          "label_ko": "육삼",
+          "original": "益之用凶事 无咎 有孚中行 告公用圭",
+          "reading_ko": "익지용흉사 무구 유부중행 고공용규",
+          "literal_ko": "흉한 일을 처리하는 데 더하면 허물이 없다. 믿음으로 중도를 행해 공에게 옥홀로 고한다.",
+          "interpretive_ko": "위기 대응 자원 증액은 정당하며, 투명 보고가 필수다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "익지용흉사, 무구. 유부중항, 고공용규.",
-          "gloss_en": "Use evil things for good, and there is no blame. Youfu Zhonghang, tell the public to use Gui."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "中行，告公從，利用為依遷國。",
-          "literal_ko": "대중에게 보고된 중국은행은 이를 이용해 국내로 이전했다.",
-          "interpretive_ko": "대중에게 보고된 중국은행은 이를 이용해 국내로 이전했다.",
+          "label_ko": "육사",
+          "original": "中行 告公從 利用為依遷國",
+          "reading_ko": "중행 고공종 이용위의천국",
+          "literal_ko": "중도를 행해 공에게 고하면 따른다. 의지해 나라를 옮기는 데 이롭다.",
+          "interpretive_ko": "구조 전환은 중도적 설득과 합의로 추진해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "중항, 고공종, 리용為의천국.",
-          "gloss_en": "Bank of China, reported to the public, used it to move to the country."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "有孚惠心，勿問元吉。有孚惠我德。",
-          "literal_ko": "마음이 좋으면 길에 대해 묻지 마세요. 나의 미덕에는 축복이 있습니다.",
-          "interpretive_ko": "마음이 좋으면 길에 대해 묻지 마세요. 나의 미덕에는 축복이 있습니다.",
+          "label_ko": "구오",
+          "original": "有孚惠心 勿問元吉 有孚惠我德",
+          "reading_ko": "유부혜심 물문원길 유부혜아덕",
+          "literal_ko": "믿음 있고 은혜로운 마음이면 묻지 않아도 크게 길하다. 믿음이 내 덕을 은혜롭게 한다.",
+          "interpretive_ko": "신뢰 기반 리더십은 설명 이전에 결과를 증명한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유부혜심, 물문원길. 유부혜아덕.",
-          "gloss_en": "If you have a good heart, don't ask about Yuan Ji. There is blessing in my virtue."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "莫益之，或擊之，立心勿恆，凶。",
-          "literal_ko": "돕지도 말고 공격하지도 말고 굳게 서지 말라. 그것은 악한 일이 될 것이다.",
-          "interpretive_ko": "돕지도 말고 공격하지도 말고 굳게 서지 말라. 그것은 악한 일이 될 것이다.",
+          "label_ko": "상구",
+          "original": "莫益之 或擊之 立心勿恒 凶",
+          "reading_ko": "막익지 혹격지 입심물항 흉",
+          "literal_ko": "더해주는 이가 없고 혹 치니, 마음을 세워도 항구하지 않으면 흉하다.",
+          "interpretive_ko": "상승의 끝에서 내적 기준이 흔들리면 급락한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "막익지, 혹격지, 립심물항, 흉.",
-          "gloss_en": "Don't help it, or attack it, don't stand firm, it will be evil."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -4344,99 +4344,99 @@
     {
       "id": 43,
       "gua_text": {
-        "original": "夬，揚于王庭，孚號，有厲，告自邑，不利即戎，利有攸往。",
-        "literal_ko": "왕궁에서 자란 위(魏)는 권세 있고 이름이 강하여 자기 마을에 불리하면 전쟁에 나가고 유리한 경우에는 그리로 가겠다고 말했다.",
-        "interpretive_ko": "왕궁에서 자란 위(魏)는 권세 있고 이름이 강하여 자기 마을에 불리하면 전쟁에 나가고 유리한 경우에는 그리로 가겠다고 말했다.",
+        "original": "夬 揚于王庭 孚號 有厲 告自邑 不利即戎 利有攸往",
+        "reading_ko": "쾌 양우왕정 부호 유려 고자읍 불리즉융 리유유왕",
+        "literal_ko": "쾌는 왕정에서 드러내고 믿음으로 호소하되 위태로움이 있다. 읍에서 고하고 군사로 곧장 나아감은 이롭지 않다. 가는 바는 이롭다.",
+        "interpretive_ko": "결단의 때일수록 공개 기준과 절차를 세우고 성급한 충돌은 피해야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "쾌, 양우왕정, 부호, 유려, 고자읍, 부리즉융, 리유유왕.",
-        "gloss_en": "Wei, raised in the king's court, with a powerful and powerful name, told his own town, if it was unfavorable, he would go to war, but if it was favorable, he would go there."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "壯于前趾，往不勝為吝。",
-          "literal_ko": "앞발보다 힘이 세고, 승리에 있어서는 인색하다.",
-          "interpretive_ko": "앞발보다 힘이 세고, 승리에 있어서는 인색하다.",
+          "label_ko": "초구",
+          "original": "壯于前趾 往不勝為咎",
+          "reading_ko": "장우전지 왕불승위구",
+          "literal_ko": "앞발가락이 강해 나아가 이기지 못하면 허물이 된다.",
+          "interpretive_ko": "초기 과감함이 준비를 앞서면 실패 책임이 커진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "장우전지, 왕부승為린.",
-          "gloss_en": "It is stronger than the front toe, and it is stingy when it comes to victory."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "惕號，莫夜有戎，勿恤。",
-          "literal_ko": "밤에 군대가 있으면 조심하세요.",
-          "interpretive_ko": "밤에 군대가 있으면 조심하세요.",
+          "label_ko": "구이",
+          "original": "惕號 莫夜有戎 勿恤",
+          "reading_ko": "척호 막야유융 물휼",
+          "literal_ko": "두려워 외치니 밤에 적이 있어도 근심하지 말라.",
+          "interpretive_ko": "경계 태세를 유지하면 야간 변수도 통제 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "척호, 막야유융, 물휼.",
-          "gloss_en": "Be alert, don't be wary if there are troops at night."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "壯于頄，有凶。君子夬夬獨行，遇雨若濡，有慍，無咎。",
-          "literal_ko": "굴레보다 강하고 맹렬한 뭔가가 있습니다. 군자는 혼자 걷다가 비에 젖으면 화를 낼지 모르지만 잘못은 없습니다.",
-          "interpretive_ko": "굴레보다 강하고 맹렬한 뭔가가 있습니다. 군자는 혼자 걷다가 비에 젖으면 화를 낼지 모르지만 잘못은 없습니다.",
+          "label_ko": "구삼",
+          "original": "壯于頄 有凶 君子夬夬 獨行遇雨 若濡 有慍 无咎",
+          "reading_ko": "장우구 유흉 군자쾌쾌 독행우우 약유 유온 무구",
+          "literal_ko": "광대뼈에 강함이 있어 흉하다. 군자는 결단 또 결단하여 홀로 가다 비를 만나 젖고 성냄이 있어도 허물이 없다.",
+          "interpretive_ko": "강한 결단은 마찰을 수반하나 원칙을 지키면 치명상은 피한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "장우頄, 유흉. 군자쾌쾌독항, 우우야유, 유온, 무구.",
-          "gloss_en": "Stronger than a bridle, there is something fierce about it. A gentleman walks alone, and if he is wet in the rain, he may feel angry, but there is no fault."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "臀無膚，其行次且。牽羊悔亡，聞言不信。",
-          "literal_ko": "엉덩이에는 피부가 없으며 그 라인은 두 번째와 두 번째입니다. 양을 이끄는 사람은 자신의 죽음을 후회하지만 그 말을 듣고도 믿지 않습니다.",
-          "interpretive_ko": "엉덩이에는 피부가 없으며 그 라인은 두 번째와 두 번째입니다. 양을 이끄는 사람은 자신의 죽음을 후회하지만 그 말을 듣고도 믿지 않습니다.",
+          "label_ko": "구사",
+          "original": "臀无膚 其行次且 牽羊悔亡 聞言不信",
+          "reading_ko": "둔무부 기행차저 견양회망 문언불신",
+          "literal_ko": "둔부에 살이 없어 걷기 어렵다. 양을 끌면 뉘우침이 사라지나 말을 들어도 믿지 않는다.",
+          "interpretive_ko": "실행력이 떨어질 땐 단순한 행동 루틴이 회복에 도움이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "둔무부, 기항차차. 견양회망, 문언부신.",
-          "gloss_en": "The buttocks have no skin, and their lines are second and second. Leading the sheep regrets his death, but he doesn't believe it when he hears the words."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "莧陸夬夬中行，無咎。",
-          "literal_ko": "아마란서스와 루는 정의의 한가운데를 걷고 있으며, 허물 없음.",
-          "interpretive_ko": "아마란서스와 루는 정의의 한가운데를 걷고 있으며, 허물 없음.",
+          "label_ko": "구오",
+          "original": "莧陸夬夬 中行无咎",
+          "reading_ko": "현륙쾌쾌 중행무구",
+          "literal_ko": "비름풀을 베듯 결단 또 결단하되 중도를 행하면 허물이 없다.",
+          "interpretive_ko": "강한 조치도 중도 기준 안에서 집행해야 부작용이 줄어든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "莧륙쾌쾌중항, 무구.",
-          "gloss_en": "Amaranthus and Lu are walking in the middle of the righteousness, and there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "無號，終有凶。",
-          "literal_ko": "나팔이 없으면 항상 위험이 따릅니다.",
-          "interpretive_ko": "나팔이 없으면 항상 위험이 따릅니다.",
+          "label_ko": "상육",
+          "original": "无號 終有凶",
+          "reading_ko": "무호 종유흉",
+          "literal_ko": "호소하지 않으면 끝내 흉하다.",
+          "interpretive_ko": "마지막엔 침묵이 리스크다. 공개 커뮤니케이션이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무호, 종유흉.",
-          "gloss_en": "Without a trumpet, there will always be danger."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -4447,99 +4447,99 @@
     {
       "id": 44,
       "gua_text": {
-        "original": "姤，女壯，勿用取女。",
-        "literal_ko": "구: 여인이 강성하니 취하지 말라.",
-        "interpretive_ko": "강한 만남의 시기이니 섣부른 결합보다 경계와 원칙이 우선이다.",
+        "original": "姤 女壯 勿用取女",
+        "reading_ko": "구 여장 물용취녀",
+        "literal_ko": "구는 여자가 강성하니 여인을 취하지 말라.",
+        "interpretive_ko": "강한 만남의 시기다. 섣부른 결합보다 경계와 조건 점검이 먼저다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "구, 녀장, 물용취녀.",
-        "gloss_en": "Jiao, the girl is strong, don't use it to get the girl."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "系于金柅，貞吉，有攸往，見凶，羸豕踟躅。",
-          "literal_ko": "바름과 행운을 상징하는 진즈( 와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
-          "interpretive_ko": "바름과 행운을 상징하는 진즈( 와 연결되어 있습니다. 어딘가에 갈 때 불운을 보면 주저하게 될 것입니다.",
+          "label_ko": "초육",
+          "original": "繫于金柅 貞吉 有攸往 見凶 羸豕孚蹢躅",
+          "reading_ko": "계우금니 정길 유유왕 견흉 리시부척촉",
+          "literal_ko": "쇠말뚝에 매면 바르게 길하다. 가는 바가 있으면 흉함을 보고, 여윈 돼지가 믿음 없이 서성인다.",
+          "interpretive_ko": "초기 유혹은 강하게 고정해야 사고를 막는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "계우금니, 정길, 유유왕, 견흉, 리시지촉.",
-          "gloss_en": "It is tied to Jin Zhi, which is chastity and good luck. If you are going somewhere, if you see bad luck, you will be hesitant."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "包有魚，無咎，不利賓。",
-          "literal_ko": "패키지에 생선이 들어 있으면 허물은 없지만 손님에게는 좋지 않습니다.",
-          "interpretive_ko": "패키지에 생선이 들어 있으면 허물은 없지만 손님에게는 좋지 않습니다.",
+          "label_ko": "구이",
+          "original": "包有魚 无咎 不利賓",
+          "reading_ko": "포유어 무구 불리빈",
+          "literal_ko": "주머니에 물고기가 있어 허물은 없으나 손님 맞이에 이롭지 않다.",
+          "interpretive_ko": "내부 자원은 있으나 외부 확장 타이밍은 아니다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "포유어, 무구, 부리빈.",
-          "gloss_en": "If there is fish in the package, there is no blame, but it is not good for guests."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "臀無膚，其行次且，厲，無大咎。",
-          "literal_ko": "엉덩이에는 피부가 없고, 움직임이 순차적이고 격렬하며, 큰 결점은 없다.",
-          "interpretive_ko": "엉덩이에는 피부가 없고, 움직임이 순차적이고 격렬하며, 큰 결점은 없다.",
+          "label_ko": "구삼",
+          "original": "臀无膚 其行次且 厲 无大咎",
+          "reading_ko": "둔무부 기행차저 려 무대구",
+          "literal_ko": "둔부에 살이 없어 걷기 어렵고 위태로우나 큰 허물은 없다.",
+          "interpretive_ko": "움직임이 둔한 구간에서는 피해 최소화가 목표다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "둔무부, 기항차차, 려, 무대구.",
-          "gloss_en": "The buttocks have no skin, their movements are sequential and severe, and there is no major fault."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "包無魚，起凶。",
-          "literal_ko": "패키지에 생선이 없으면 문제가 발생할 수 있습니다.",
-          "interpretive_ko": "패키지에 생선이 없으면 문제가 발생할 수 있습니다.",
+          "label_ko": "구사",
+          "original": "包无魚 起凶",
+          "reading_ko": "포무어 기흉",
+          "literal_ko": "주머니에 물고기가 없으면 흉함이 일어난다.",
+          "interpretive_ko": "핵심 자원이 비면 작은 자극도 위기로 번진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "포무어, 기흉.",
-          "gloss_en": "If there is no fish in the package, it will cause trouble."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "以杞包瓜，含章，有隕自天。",
-          "literal_ko": "구기자 열매로 포장된 수박에는 봉인이 붙어 있는데 이는 하늘에서 떨어졌음을 나타냅니다.",
-          "interpretive_ko": "구기자 열매로 포장된 수박에는 봉인이 붙어 있는데 이는 하늘에서 떨어졌음을 나타냅니다.",
+          "label_ko": "구오",
+          "original": "以杞包瓜 含章 有隕自天",
+          "reading_ko": "이기포과 함장 유운자천",
+          "literal_ko": "기나무 잎으로 참외를 싸듯 빛남을 머금으면 하늘에서 떨어짐이 있다.",
+          "interpretive_ko": "겉을 감추고 내실을 지키면 예상 밖 기회가 온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "이기포과, 함장, 유운자천.",
-          "gloss_en": "The melon wrapped with wolfberry contains a seal, which indicates that it has fallen from the sky."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "姤其角，吝，無咎。",
-          "literal_ko": "인색하고 인색한 것에 대한 허물 없음.",
-          "interpretive_ko": "인색하고 인색한 것에 대한 허물 없음.",
+          "label_ko": "상구",
+          "original": "姤其角 吝 无咎",
+          "reading_ko": "구기각 린 무구",
+          "literal_ko": "만남의 뿔이니 인색하나 허물은 없다.",
+          "interpretive_ko": "끝의 충돌은 불편해도 치명적 손상은 피할 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "구기각, 린, 무구.",
-          "gloss_en": "There is no blame for being stingy and stingy."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -4550,99 +4550,99 @@
     {
       "id": 45,
       "gua_text": {
-        "original": "萃，亨。王假有廟，利見大人，亨，利貞。用大牲吉，利有攸往。",
-        "literal_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 바름해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
-        "interpretive_ko": "추이, 헝. 왕이 절을 가지면 어른들을 만나고, 번영하고, 바름해지는 데에 이로움이 있을 것입니다. 행운을 불러오기 위해 큰 동물을 이용하는 것은 행운입니다.",
+        "original": "萃 亨 王假有廟 利見大人 亨 利貞 用大牲吉 利有攸往",
+        "reading_ko": "췌 형 왕가유묘 이견대인 형 이정 용대생길 리유유왕",
+        "literal_ko": "췌는 형통하다. 왕이 사당에 이르고 대인을 보는 것이 이롭다. 바르게 하고 큰 제물을 쓰면 길하며 가는 바가 이롭다.",
+        "interpretive_ko": "집결의 시기다. 목적과 규범을 세우면 모인 힘이 성과로 바뀐다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "췌, 형. 왕가유묘, 리견대인, 형, 리정. 용대생길, 리유유왕.",
-        "gloss_en": "Cui, Heng. If the king has a temple, it will be beneficial to meet the adults, to be prosperous, and to be chaste. It is good luck to use a big animal to bring good fortune."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "有孚不終，乃亂乃萃，若號，一握為笑，勿恤，往無咎。",
-          "literal_ko": "끝이 있으면 혼돈과 혼돈이 있을 것입니다. 소리치면 안으면 미소가 지어집니다. 미안해하지 마십시오. 허물은 없을 것입니다.",
-          "interpretive_ko": "끝이 있으면 혼돈과 혼돈이 있을 것입니다. 소리치면 안으면 미소가 지어집니다. 미안해하지 마십시오. 허물은 없을 것입니다.",
+          "label_ko": "초육",
+          "original": "有孚不終 乃亂乃萃 若號 一握為笑 勿恤 往无咎",
+          "reading_ko": "유부불종 내란내췌 약호 일악위소 물휼 왕무구",
+          "literal_ko": "믿음이 끝까지 가지 않으면 어지럽다 모이고, 부르면 한 번 손을 잡고 웃으니 근심 말고 가면 허물이 없다.",
+          "interpretive_ko": "초기 신뢰가 흔들려도 빠른 재결집으로 회복 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유부부종, 내난내췌, 야호, 일악為소, 물휼, 왕무구.",
-          "gloss_en": "If there is an end, there will be chaos and chaos. If you shout, you will smile when you hold it. Don't be sorry, and there will be no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "引吉，無咎，孚乃利用禴。",
-          "literal_ko": "행운을 가져다주는 데는 허물이 없으며 푸는 행운을 사용하는 것입니다.",
-          "interpretive_ko": "행운을 가져다주는 데는 허물이 없으며 푸는 행운을 사용하는 것입니다.",
+          "label_ko": "육이",
+          "original": "引吉 无咎 孚乃利用禴",
+          "reading_ko": "인길 무구 부내이용약",
+          "literal_ko": "이끌면 길하고 허물이 없다. 믿음이 있으면 간소한 제사도 이롭다.",
+          "interpretive_ko": "소규모라도 진정성 있는 결속이 효과적이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "인길, 무구, 부내리용약.",
-          "gloss_en": "There is no blame for bringing good luck, and Fu is the use of good fortune."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "萃如，嗟如，無攸利，往無咎，小吝。",
-          "literal_ko": "는 마치 한숨과 같고 이익도없고 허물도없고 인색합니다.",
-          "interpretive_ko": "는 마치 한숨과 같고 이익도없고 허물도없고 인색합니다.",
+          "label_ko": "육삼",
+          "original": "萃如嗟如 无攸利 往无咎 小吝",
+          "reading_ko": "췌여차여 무유리 왕무구 소린",
+          "literal_ko": "모이되 탄식하니 이로움이 없다. 가면 허물은 없으나 조금 인색하다.",
+          "interpretive_ko": "불만이 누적된 집결은 정렬 비용이 든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "췌여, 차여, 무유리, 왕무구, 소린.",
-          "gloss_en": "Cui is like, sigh is like, there is no benefit, there is no blame, it is stingy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "大吉，無咎。",
-          "literal_ko": "행운을 빕니다. 허물 없음.",
-          "interpretive_ko": "행운을 빕니다. 허물 없음.",
+          "label_ko": "구사",
+          "original": "大吉 无咎",
+          "reading_ko": "대길 무구",
+          "literal_ko": "크게 길하고 허물이 없다.",
+          "interpretive_ko": "중심이 잡히면 집결은 강한 실행력으로 전환된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "대길, 무구.",
-          "gloss_en": "Good luck, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "萃有位，無咎。匪孚，元永貞，悔亡。",
-          "literal_ko": "모임의 중심에 서면 허물은 없다. 믿음이 아직 완전하지 않다면 크게 바르게 지켜야 후회가 없어진다.",
-          "interpretive_ko": "모임의 중심에 서면 허물은 없다. 믿음이 아직 완전하지 않다면 크게 바르게 지켜야 후회가 없어진다.",
+          "label_ko": "구오",
+          "original": "萃有位 无咎 匪孚 元永貞 悔亡",
+          "reading_ko": "췌유위 무구 비부 원영정 회망",
+          "literal_ko": "모임에 자리가 있어 허물이 없다. 믿음이 부족하면 크게 오래 바르게 하여 뉘우침을 없앤다.",
+          "interpretive_ko": "리더십은 자리보다 신뢰 보강이 핵심이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "췌유위, 무구. 비부, 원영정, 회망.",
-          "gloss_en": "There is no fault in the collection. Bandit Fu, Yuan Yongzhen, regretted his death."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "齎咨涕洟，無咎。",
-          "literal_ko": "울어도 죄가 없습니다.",
-          "interpretive_ko": "울어도 죄가 없습니다.",
+          "label_ko": "상육",
+          "original": "齎咨涕洟 无咎",
+          "reading_ko": "자자체이 무구",
+          "literal_ko": "탄식하고 눈물 콧물이 나도 허물이 없다.",
+          "interpretive_ko": "마지막 감정 소모를 통과하면 큰 붕괴는 피할 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "재자체이, 무구.",
-          "gloss_en": "There is no blame for crying."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
