@@ -5889,99 +5889,99 @@
     {
       "id": 58,
       "gua_text": {
-        "original": "兌，亨，利貞。",
-        "literal_ko": "듀이, 헨리, 리젠.",
-        "interpretive_ko": "듀이, 헨리, 리젠.",
+        "original": "兌 亨 利貞",
+        "reading_ko": "태 형 이정",
+        "literal_ko": "태는 형통하고 바름이 이롭다.",
+        "interpretive_ko": "기쁨과 소통의 시기다. 즐거움도 기준 위에서 운영해야 오래간다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "태, 형, 리정.",
-        "gloss_en": "Dui, Henry, Li Zhen."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "和兌，吉。",
-          "literal_ko": "헤디, 지.",
-          "interpretive_ko": "헤디, 지.",
+          "label_ko": "초구",
+          "original": "和兌 吉",
+          "reading_ko": "화태 길",
+          "literal_ko": "화합하는 기쁨이니 길하다.",
+          "interpretive_ko": "초기의 온화한 소통이 관계의 기초를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "화태, 길.",
-          "gloss_en": "Hedui, Ji."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "孚兌，吉，悔亡。",
-          "literal_ko": "지푸두이는 죽음을 후회한다.",
-          "interpretive_ko": "지푸두이는 죽음을 후회한다.",
+          "label_ko": "구이",
+          "original": "孚兌 吉 悔亡",
+          "reading_ko": "부태 길 회망",
+          "literal_ko": "믿음의 기쁨이니 길하고 뉘우침이 사라진다.",
+          "interpretive_ko": "신뢰 기반 대화는 오해 비용을 빠르게 줄인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부태, 길, 회망.",
-          "gloss_en": "Fudui, Ji, regrets death."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "來兌，凶。",
-          "literal_ko": "구속하러 오세요, 불운을 빕니다.",
-          "interpretive_ko": "구속하러 오세요, 불운을 빕니다.",
+          "label_ko": "육삼",
+          "original": "來兌 凶",
+          "reading_ko": "래태 흉",
+          "literal_ko": "다가와 기쁨만 취하면 흉하다.",
+          "interpretive_ko": "즉흥적 쾌락 추구는 구조를 무너뜨린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "내태, 흉.",
-          "gloss_en": "Come to redeem, bad luck."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "商兌，未寧，介疾有喜。",
-          "literal_ko": "는 평화롭지 않으며 질병에는 기쁨이 있습니다.",
-          "interpretive_ko": "는 평화롭지 않으며 질병에는 기쁨이 있습니다.",
+          "label_ko": "구사",
+          "original": "商兌 未寧 介疾有喜",
+          "reading_ko": "상태 미녕 개질유희",
+          "literal_ko": "따져보는 기쁨이라 아직 편안치 않으나 병폐를 막으면 기쁨이 있다.",
+          "interpretive_ko": "갈등 조정의 불편을 통과해야 건강한 합의가 나온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "상태, 미녕, 개질유희.",
-          "gloss_en": "Shangdui is not peaceful, and there is joy in the illness."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "孚于剝，有厲。",
-          "literal_ko": "푸는 스트리핑에 능숙하고 강력합니다.",
-          "interpretive_ko": "푸는 스트리핑에 능숙하고 강력합니다.",
+          "label_ko": "구오",
+          "original": "孚于剝 有厲",
+          "reading_ko": "부우박 유려",
+          "literal_ko": "벗겨짐에 믿음을 두면 위태롭다.",
+          "interpretive_ko": "파괴적 의견에 과신하면 시스템이 흔들린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부우박, 유려.",
-          "gloss_en": "Fu is good at stripping, and he is powerful."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "引兌。",
-          "literal_ko": "인용하다.",
-          "interpretive_ko": "인용하다.",
+          "label_ko": "상육",
+          "original": "引兌",
+          "reading_ko": "인태",
+          "literal_ko": "끌어당기는 기쁨이다.",
+          "interpretive_ko": "마지막엔 말의 유혹보다 내용의 진정성을 점검해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "인태.",
-          "gloss_en": "quote."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5992,99 +5992,99 @@
     {
       "id": 59,
       "gua_text": {
-        "original": "渙，亨。王假有廟，利涉大川，利貞。",
-        "literal_ko": "후안, 헝. 왕에게 절이 있으면 큰 강을 건너서 이익을 얻을 수 있고, 정직할 수도 있다.",
-        "interpretive_ko": "후안, 헝. 왕에게 절이 있으면 큰 강을 건너서 이익을 얻을 수 있고, 정직할 수도 있다.",
+        "original": "渙 亨 王假有廟 利涉大川 利貞",
+        "reading_ko": "환 형 왕가유묘 리섭대천 이정",
+        "literal_ko": "환은 형통하다. 왕이 사당에 이르고 큰 내를 건넘이 이로우며 바름이 이롭다.",
+        "interpretive_ko": "흩어진 에너지를 다시 모으는 시기다. 중심 가치 재집결이 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "환, 형. 왕가유묘, 리섭대천, 리정.",
-        "gloss_en": "Huan, Heng. If the king has a temple, he can benefit from crossing large rivers and be honest."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "用拯馬壯，吉。",
-          "literal_ko": "말을 강하게 만드는 데 사용하는 것은 길함입니다.",
-          "interpretive_ko": "말을 강하게 만드는 데 사용하는 것은 길함입니다.",
+          "label_ko": "초육",
+          "original": "用拯馬壯 吉",
+          "reading_ko": "용증마장 길",
+          "literal_ko": "구원할 말을 강하게 쓰면 길하다.",
+          "interpretive_ko": "초기에는 신속한 구조 조치가 효과적이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "용증마장, 길.",
-          "gloss_en": "It is auspicious to use it to make the horse strong."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "渙奔其機，悔亡。",
-          "literal_ko": "은 기회를 놓치지 않고 자신의 죽음을 후회했습니다.",
-          "interpretive_ko": "은 기회를 놓치지 않고 자신의 죽음을 후회했습니다.",
+          "label_ko": "구이",
+          "original": "渙奔其机 悔亡",
+          "reading_ko": "환분기기 회망",
+          "literal_ko": "흩어짐에 급히 의지할 곳으로 달려가면 뉘우침이 사라진다.",
+          "interpretive_ko": "분산이 시작되면 즉시 기준점으로 복귀해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "환분기기, 회망.",
-          "gloss_en": "Huan rushed to his opportunity and regretted his death."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "渙其躬，無悔。",
-          "literal_ko": "그의 활을, 후회하지 않습니다.",
-          "interpretive_ko": "그의 활을, 후회하지 않습니다.",
+          "label_ko": "육삼",
+          "original": "渙其躬 无悔",
+          "reading_ko": "환기궁 무회",
+          "literal_ko": "자기 몸의 흩어짐을 풀면 뉘우침이 없다.",
+          "interpretive_ko": "외부 수습 전에 자기 정렬이 먼저다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "환기궁, 무회.",
-          "gloss_en": "Huan his bow, no regrets."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "渙其群，元吉。渙有丘，匪夷所思。",
-          "literal_ko": "의 그룹, 길. 에는 언덕이 있는데 정말 놀랍습니다.",
-          "interpretive_ko": "의 그룹, 길. 에는 언덕이 있는데 정말 놀랍습니다.",
+          "label_ko": "육사",
+          "original": "渙其群 元吉 渙有丘 匪夷所思",
+          "reading_ko": "환기군 원길 환유구 비이소사",
+          "literal_ko": "무리를 흩어 정리하면 크게 길하다. 흩어짐에 언덕 같은 중심이 있으니 보통 생각이 아니다.",
+          "interpretive_ko": "팀 재편과 핵심 거점 확보가 반전 포인트다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "환기군, 원길. 환유구, 비이소사.",
-          "gloss_en": "Huan his group, Yuan Ji. There are hills in Huan, which is incredible."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "渙汗其大號，渙王居，無咎。",
-          "literal_ko": "환칸(桓港)은 큰 이름을 갖고 있고, 환왕(桓王)이 거기 살고 있으니 죄가 없느니라.",
-          "interpretive_ko": "환칸(桓港)은 큰 이름을 갖고 있고, 환왕(桓王)이 거기 살고 있으니 죄가 없느니라.",
+          "label_ko": "구오",
+          "original": "渙汗其大號 渙王居 无咎",
+          "reading_ko": "환한기대호 환왕거 무구",
+          "literal_ko": "큰 명령이 땀처럼 퍼지고 왕의 거처도 흩어져 허물이 없다.",
+          "interpretive_ko": "리더의 공개 메시지가 분산된 조직을 다시 묶는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "환한기대호, 환왕거, 무구.",
-          "gloss_en": "Huan Khan has his great name, and King Huan lives there, so there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "渙其血，去逖出，無咎。",
-          "literal_ko": "피를 빼면 죄가 없습니다.",
-          "interpretive_ko": "피를 빼면 죄가 없습니다.",
+          "label_ko": "상구",
+          "original": "渙其血 去逖出 无咎",
+          "reading_ko": "환기혈 거척출 무구",
+          "literal_ko": "피흘림의 흩어짐을 멀리 보내면 허물이 없다.",
+          "interpretive_ko": "끝에서는 갈등의 잔여 독성을 제거해야 완전 회복된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "환기혈, 거적출, 무구.",
-          "gloss_en": "If the blood is drained away, there will be no blame."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -6095,99 +6095,99 @@
     {
       "id": 60,
       "gua_text": {
-        "original": "節，亨。苦節，不可貞。",
-        "literal_ko": "축제, 편. 그것은 쓰라린 축제이며 바름할 수 없습니다.",
-        "interpretive_ko": "축제, 편. 그것은 쓰라린 축제이며 바름할 수 없습니다.",
+        "original": "節 亨 苦節不可貞",
+        "reading_ko": "절 형 고절불가정",
+        "literal_ko": "절은 형통하나 괴로운 절제는 바르게 지속할 수 없다.",
+        "interpretive_ko": "한계 설정은 필요하지만 과도한 통제는 지속성을 해친다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "절, 형. 고절, 부가정.",
-        "gloss_en": "Festival, Hen. It is a bitter festival and cannot be chaste."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "不出戶庭，無咎。",
-          "literal_ko": "집을 떠나지 않으면 죄가 없을 것입니다.",
-          "interpretive_ko": "집을 떠나지 않으면 죄가 없을 것입니다.",
+          "label_ko": "초구",
+          "original": "不出戶庭 无咎",
+          "reading_ko": "불출호정 무구",
+          "literal_ko": "문과 뜰을 나서지 않으면 허물이 없다.",
+          "interpretive_ko": "초기엔 범위를 좁혀 리스크를 관리하는 것이 유리하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부출호정, 무구.",
-          "gloss_en": "If you don't leave your home, you will be blameless."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "不出門庭，凶。",
-          "literal_ko": "안뜰에 가지 않으면 불운이 될 것입니다.",
-          "interpretive_ko": "안뜰에 가지 않으면 불운이 될 것입니다.",
+          "label_ko": "구이",
+          "original": "不出門庭 凶",
+          "reading_ko": "불출문정 흉",
+          "literal_ko": "문과 뜰을 나서지 않으면 흉하다.",
+          "interpretive_ko": "필요한 타이밍의 행동까지 막으면 기회를 잃는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부출문정, 흉.",
-          "gloss_en": "If you don't go to the courtyard, it will be bad luck."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "不節若，則嗟若，無咎。",
-          "literal_ko": "구속이 없으면 허물도 없을 것입니다.",
-          "interpretive_ko": "구속이 없으면 허물도 없을 것입니다.",
+          "label_ko": "육삼",
+          "original": "不節若 則嗟若 无咎",
+          "reading_ko": "불절약 즉차약 무구",
+          "literal_ko": "절제하지 못하면 탄식하게 되나 허물은 없다.",
+          "interpretive_ko": "실패 인식이 생기면 재설정의 여지가 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부절야, 칙차야, 무구.",
-          "gloss_en": "If there is no restraint, then there will be no blame."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "安節，亨。",
-          "literal_ko": "길하다, 헝.",
-          "interpretive_ko": "길하다, 헝.",
+          "label_ko": "육사",
+          "original": "安節 亨",
+          "reading_ko": "안절 형",
+          "literal_ko": "편안한 절제는 형통하다.",
+          "interpretive_ko": "무리 없는 규칙이 가장 오래 지속된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "안절, 형.",
-          "gloss_en": "Good luck, Heng."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "甘節，吉。往有尚。",
-          "literal_ko": "간지에, 지. 갈 길은 항상 있습니다.",
-          "interpretive_ko": "간지에, 지. 갈 길은 항상 있습니다.",
+          "label_ko": "구오",
+          "original": "甘節 吉 往有尚",
+          "reading_ko": "감절 길 왕유상",
+          "literal_ko": "달콤한 절제는 길하고 나아가면 숭상됨이 있다.",
+          "interpretive_ko": "구성원이 체감하는 합리적 규칙은 성과를 높인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "감절, 길. 왕유尚.",
-          "gloss_en": "Ganjie, Ji. There is always a way to go."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "苦節，貞凶，悔亡。",
-          "literal_ko": "쓰라린 축제, 바름과 악, 후회와 죽음.",
-          "interpretive_ko": "쓰라린 축제, 바름과 악, 후회와 죽음.",
+          "label_ko": "상육",
+          "original": "苦節 貞凶 悔亡",
+          "reading_ko": "고절 정흉 회망",
+          "literal_ko": "괴로운 절제는 바르게 해도 흉하나 뉘우침은 사라진다.",
+          "interpretive_ko": "끝에서 과한 규율을 풀면 장기 후회를 줄일 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "고절, 정흉, 회망.",
-          "gloss_en": "Bitter festivals, chastity and evil, regret and death."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -6198,99 +6198,99 @@
     {
       "id": 61,
       "gua_text": {
-        "original": "中孚，豚魚吉，利涉大川，利貞。",
-        "literal_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 바름에 이롭습니다.",
-        "interpretive_ko": "중복, 돌고래, 물고기는 상서롭고 큰 강을 건너는 데 이롭고 바름에 이롭습니다.",
+        "original": "中孚 豚魚吉 利涉大川 利貞",
+        "reading_ko": "중부 돈어길 리섭대천 이정",
+        "literal_ko": "중부는 돼지와 물고기도 길하며 큰 내를 건넘이 이롭고 바름이 이롭다.",
+        "interpretive_ko": "내면의 진실성이 통하는 시기다. 신뢰가 큰 과제의 연료가 된다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "중부, 돈어길, 리섭대천, 리정.",
-        "gloss_en": "Zhongfu, dolphin and fish are auspicious, beneficial to crossing large rivers, beneficial to chastity."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "虞吉，有他不燕。",
-          "literal_ko": "유지가 없었다면 얀은 이길 수 없었을 것이다.",
-          "interpretive_ko": "유지가 없었다면 얀은 이길 수 없었을 것이다.",
+          "label_ko": "초구",
+          "original": "虞吉 有它不燕",
+          "reading_ko": "우길 유타불연",
+          "literal_ko": "헤아려 경계하면 길하다. 다른 마음이 있으면 편안치 않다.",
+          "interpretive_ko": "신뢰의 시작은 일관된 의도에서 나온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "우길, 유타부연.",
-          "gloss_en": "Yu Ji, without him, Yan would not be able to win."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "鳴鶴在陰，其子和之，我有好爵，吾與爾靡之。",
-          "literal_ko": "학이 그늘에 있고 그 아들이 그와 조화를 이루고 있다. 나에겐 좋은 왕자가 있으니 당신과 함께 있을 거예요.",
-          "interpretive_ko": "학이 그늘에 있고 그 아들이 그와 조화를 이루고 있다. 나에겐 좋은 왕자가 있으니 당신과 함께 있을 거예요.",
+          "label_ko": "구이",
+          "original": "鳴鶴在陰 其子和之 我有好爵 吾與爾靡之",
+          "reading_ko": "명학재음 기자화지 아유호작 오여이미지",
+          "literal_ko": "우는 학이 그늘에 있으니 새끼가 화답한다. 내가 좋은 술잔이 있으니 너와 함께 나누겠다.",
+          "interpretive_ko": "진실한 신호는 멀리 있어도 응답을 부른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "명학재음, 기자화지, 아유호작, 오여이미지.",
-          "gloss_en": "The crane is in the shade, and its son is in harmony with it. I have a good prince, and I will be with you."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "得敵，或鼓或罷，或泣或歌。",
-          "literal_ko": "적이 패배하면 그는 북을 치거나 때릴 수도 있고, 울거나 노래할 수도 있습니다.",
-          "interpretive_ko": "적이 패배하면 그는 북을 치거나 때릴 수도 있고, 울거나 노래할 수도 있습니다.",
+          "label_ko": "육삼",
+          "original": "得敵 或鼓或罷 或泣或歌",
+          "reading_ko": "득적 혹고혹파 혹읍혹가",
+          "literal_ko": "적을 얻어 혹은 북치고 혹은 그치며 혹은 울고 혹은 노래한다.",
+          "interpretive_ko": "관계 긴장은 감정의 진폭을 키운다. 리듬 관리가 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "득적, 혹고혹파, 혹읍혹가.",
-          "gloss_en": "When the enemy is defeated, he may drum or strike, weep or sing."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "月几望，馬匹亡，無咎。",
-          "literal_ko": "몇 달 뒤에 말이 죽더라도 책임은 없습니다.",
-          "interpretive_ko": "몇 달 뒤에 말이 죽더라도 책임은 없습니다.",
+          "label_ko": "육사",
+          "original": "月幾望 馬匹亡 无咎",
+          "reading_ko": "월기망 마필망 무구",
+          "literal_ko": "달이 거의 차고 짝말을 잃어도 허물이 없다.",
+          "interpretive_ko": "완전 직전의 결손은 치명상이 아닐 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "월궤망, 마필망, 무구.",
-          "gloss_en": "A few months later, if the horse dies, there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "有孚攣如，無咎。",
-          "literal_ko": "잘못도 없고 잘못도 없습니다.",
-          "interpretive_ko": "잘못도 없고 잘못도 없습니다.",
+          "label_ko": "구오",
+          "original": "有孚攣如 无咎",
+          "reading_ko": "유부련여 무구",
+          "literal_ko": "믿음으로 단단히 맺이면 허물이 없다.",
+          "interpretive_ko": "중심 신뢰를 고정하면 외부 변동을 견딘다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유부련여, 무구.",
-          "gloss_en": "There is no fault, no fault."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "翰音登于天，貞凶。",
-          "literal_ko": "한의 소리는 순수하고 불길한 소리로 하늘을 찌른다.",
-          "interpretive_ko": "한의 소리는 순수하고 불길한 소리로 하늘을 찌른다.",
+          "label_ko": "상구",
+          "original": "翰音登于天 貞凶",
+          "reading_ko": "한음등우천 정흉",
+          "literal_ko": "날개 소리가 하늘에 오르면 바르게 해도 흉하다.",
+          "interpretive_ko": "끝의 과장된 선언은 신뢰를 해칠 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "한음등우천, 정흉.",
-          "gloss_en": "Han's sound ascends to the sky, which is pure and ominous."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
