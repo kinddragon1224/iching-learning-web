@@ -2593,99 +2593,99 @@
     {
       "id": 26,
       "gua_text": {
-        "original": "大畜，利貞。不家食吉，利涉大川。",
-        "literal_ko": "바름에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
-        "interpretive_ko": "바름에 유익한 큰 동물. 가족이 운이 좋지 않으면 강에 도움이 될 것입니다.",
+        "original": "大畜 利貞 不家食吉 利涉大川",
+        "reading_ko": "대축 이정 불가식길 리섭대천",
+        "literal_ko": "대축은 바름이 이롭다. 집에서만 먹지 않으면 길하고 큰 내를 건넘이 이롭다.",
+        "interpretive_ko": "축적의 힘을 밖으로 연결해야 성장으로 전환된다. 준비된 확장이 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "대축, 리정. 부가식길, 리섭대천.",
-        "gloss_en": "Big animals, beneficial to chastity. If the family is not lucky, it will benefit the river."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "有厲，利已。",
-          "literal_ko": "흉하면 자신에게 이익이 될 것입니다.",
-          "interpretive_ko": "흉하면 자신에게 이익이 될 것입니다.",
+          "label_ko": "초구",
+          "original": "有厲利已",
+          "reading_ko": "유려이이",
+          "literal_ko": "위태로움이 있으니 그침이 이롭다.",
+          "interpretive_ko": "초기 과속 신호가 보이면 멈춤이 정답이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유려, 리이.",
-          "gloss_en": "If you are fierce, you will benefit yourself."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "輿說輻。",
-          "literal_ko": "여론이 퍼진다.",
-          "interpretive_ko": "여론이 퍼진다.",
+          "label_ko": "구이",
+          "original": "輿說輹",
+          "reading_ko": "여탈복",
+          "literal_ko": "수레의 멍에가 풀린다.",
+          "interpretive_ko": "추진 장치가 풀렸다면 억지 전진보다 재정비가 먼저다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "여설복.",
-          "gloss_en": "Public opinion spreads."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "良馬逐，利艱貞。曰閑輿衛，利有攸往。",
-          "literal_ko": "좋은 말은 서로 쫓아다니며 어렵고 바름한 것이 장점이다. 자유롭게 지키면 거기에 가면 유익이 있을 것이라고 합니다.",
-          "interpretive_ko": "좋은 말은 서로 쫓아다니며 어렵고 바름한 것이 장점이다. 자유롭게 지키면 거기에 가면 유익이 있을 것이라고 합니다.",
+          "label_ko": "구삼",
+          "original": "良馬逐 利艱貞 曰閑輿衛 利有攸往",
+          "reading_ko": "양마축 이간정 왈한여위 리유유왕",
+          "literal_ko": "좋은 말이 달린다. 어렵게 바름을 지키는 것이 이롭다. 수레와 호위를 익히면 가는 바가 이롭다.",
+          "interpretive_ko": "역량이 올라와도 훈련과 안전장치를 갖춰야 확장이 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "량마축, 리간정. 왈한여위, 리유유왕.",
-          "gloss_en": "Good horses chase each other, and the advantages are difficult and chaste. It is said that you are free to guard, and you will go there with benefit."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "童豕之牿，元吉。",
-          "literal_ko": "어린이돼지 퇴치는 길함이다.",
-          "interpretive_ko": "어린이돼지 퇴치는 길함이다.",
+          "label_ko": "육사",
+          "original": "童牛之牿 元吉",
+          "reading_ko": "동우지고 원길",
+          "literal_ko": "어린 소의 뿔에 가로목을 대니 크게 길하다.",
+          "interpretive_ko": "초기에 제어 장치를 두면 큰 리스크를 예방한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "동시지牿, 원길.",
-          "gloss_en": "The eradication of children's pigs is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "豶豕之牙，吉。",
-          "literal_ko": "돼지의 송곳니는 상서롭습니다.",
-          "interpretive_ko": "돼지의 송곳니는 상서롭습니다.",
+          "label_ko": "육오",
+          "original": "豶豕之牙 吉",
+          "reading_ko": "분시지가 길",
+          "literal_ko": "거세한 돼지의 이빨이니 길하다.",
+          "interpretive_ko": "위험 요소를 미리 약화하면 운영이 안정된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "豶시지아, 길.",
-          "gloss_en": "The fang of a pig is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "何天之衢，亨。",
-          "literal_ko": "의 도로는 번영합니다.",
-          "interpretive_ko": "의 도로는 번영합니다.",
+          "label_ko": "상구",
+          "original": "何天之衢 亨",
+          "reading_ko": "하천지구 형",
+          "literal_ko": "하늘의 큰 길이 트이니 형통하다.",
+          "interpretive_ko": "충분한 축적 뒤에는 큰 무대가 열린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "하천지구, 형.",
-          "gloss_en": "Hetian's thoroughfare is prosperous."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2696,99 +2696,99 @@
     {
       "id": 27,
       "gua_text": {
-        "original": "頤，貞吉。觀頤，自求口實。",
-        "literal_ko": "이, 젠지. 이를 지켜보고 자신의 입에서 진실을 찾으십시오.",
-        "interpretive_ko": "이, 젠지. 이를 지켜보고 자신의 입에서 진실을 찾으십시오.",
+        "original": "頤 貞吉 觀頤 自求口實",
+        "reading_ko": "이 정길 관이 자구구실",
+        "literal_ko": "이는 바르게 하면 길하다. 기름을 살피고 스스로 입의 양식을 구한다.",
+        "interpretive_ko": "무엇을 먹고 말하는지가 삶의 질과 성과를 결정한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "이, 정길. 관이, 자구구실.",
-        "gloss_en": "Yi, Zhenji. Watch Yi and seek truth from your own mouth."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "舍爾靈龜，觀我朵頤，凶。",
-          "literal_ko": "내가 잔치를 벌이는 모습을 지켜보고 있는 순전한 영혼 거북이는 사납습니다.",
-          "interpretive_ko": "내가 잔치를 벌이는 모습을 지켜보고 있는 순전한 영혼 거북이는 사납습니다.",
+          "label_ko": "초구",
+          "original": "舍爾靈龜 觀我朵頤 凶",
+          "reading_ko": "사이령구 관아타이 흉",
+          "literal_ko": "너의 신령한 거북을 버리고 나의 턱놀림만 바라보니 흉하다.",
+          "interpretive_ko": "자기 기준을 버리고 남의 반응만 좇으면 무너진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "사이령구, 관아朵이, 흉.",
-          "gloss_en": "Sheer spirit turtle, watching me feast, is fierce."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "顛頤，拂經，于丘頤，征凶。",
-          "literal_ko": "편이는 경전을 닦고, 추이를 공격하고, 악인을 공격한다.",
-          "interpretive_ko": "편이는 경전을 닦고, 추이를 공격하고, 악인을 공격한다.",
+          "label_ko": "육이",
+          "original": "顛頤 拂經 于丘頤 征凶",
+          "reading_ko": "전이 불경 우구이 정흉",
+          "literal_ko": "거꾸로 기르고 떳떳함을 거슬러 언덕에서 기르니 나아가면 흉하다.",
+          "interpretive_ko": "순서와 원칙을 어긴 공급은 장기적으로 파탄 난다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "顛이, 불경, 우구이, 정흉.",
-          "gloss_en": "Bian Yi, brushing the scriptures, and attacking Qiu Yi, attacking the evil."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "拂頤，貞凶，十年勿用，無攸利。",
-          "literal_ko": "복의(富伯), 바름함과 악함은 10년 동안 사용하지 않으면 유익하지 않습니다.",
-          "interpretive_ko": "복의(富伯), 바름함과 악함은 10년 동안 사용하지 않으면 유익하지 않습니다.",
+          "label_ko": "육삼",
+          "original": "拂頤 貞凶 十年勿用 无攸利",
+          "reading_ko": "불이 정흉 십년물용 무유리",
+          "literal_ko": "기름을 거스르면 바르게 해도 흉하다. 십년 동안 쓰지 말라. 이로움이 없다.",
+          "interpretive_ko": "기초가 틀어진 시스템은 장기간 리셋이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "불이, 정흉, 십년물용, 무유리.",
-          "gloss_en": "Fu Yi, chastity and evil, do not use it for ten years, it will not be beneficial."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "顛頤吉，虎視眈眈，其欲逐逐，無咎。",
-          "literal_ko": "이지를 보면 호랑이는 간절한 눈빛으로 당신을 바라보고 있고, 당신을 쫓아내고 싶어하니 허물 없음.",
-          "interpretive_ko": "이지를 보면 호랑이는 간절한 눈빛으로 당신을 바라보고 있고, 당신을 쫓아내고 싶어하니 허물 없음.",
+          "label_ko": "육사",
+          "original": "顛頤吉 虎視眈眈 其欲逐逐 无咎",
+          "reading_ko": "전이길 호시탐탐 기욕축축 무구",
+          "literal_ko": "거꾸로 기르나 길하다. 호랑이가 노려보듯 욕구를 좇아도 허물이 없다.",
+          "interpretive_ko": "강한 집중은 목표가 분명할 때 성과로 전환된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "顛이길, 호시탐탐, 기욕축축, 무구.",
-          "gloss_en": "When you look at Yiji, the tiger looks at you with eager eyes, and he wants to chase you away, so there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "拂經，居貞吉，不可涉大川。",
-          "literal_ko": "경전을 닦으면 진지에 살게 되고 큰 강을 건너지 못할 것이다.",
-          "interpretive_ko": "경전을 닦으면 진지에 살게 되고 큰 강을 건너지 못할 것이다.",
+          "label_ko": "육오",
+          "original": "拂經 居貞吉 不可涉大川",
+          "reading_ko": "불경 거정길 불가섭대천",
+          "literal_ko": "떳떳함을 거슬렀으나 머물러 바르게 하면 길하다. 큰 내를 건너선 안 된다.",
+          "interpretive_ko": "회복 국면에서는 대형 도전보다 안정화가 우선이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "불경, 거정길, 부가섭대천.",
-          "gloss_en": "If you brush the scriptures, you will live in Zhenji, and you will not be able to cross the big rivers."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "由頤，厲，吉，利涉大川。",
-          "literal_ko": "이, 리, 지, 리에서 큰 강을 건넌다.",
-          "interpretive_ko": "이, 리, 지, 리에서 큰 강을 건넌다.",
+          "label_ko": "상구",
+          "original": "由頤 厲吉 利涉大川",
+          "reading_ko": "유이 려길 리섭대천",
+          "literal_ko": "기름으로 말미암아 위태로우나 길하다. 큰 내를 건넘이 이롭다.",
+          "interpretive_ko": "양육 체계가 성숙하면 큰 과제도 감당할 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유이, 려, 길, 리섭대천.",
-          "gloss_en": "From Yi, Li, Ji, Li crosses the great river."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2799,99 +2799,99 @@
     {
       "id": 28,
       "gua_text": {
-        "original": "大過，棟橈，利有攸往，亨。",
-        "literal_ko": "큰 실수라면 일이 번창하고 번창할 것입니다.",
-        "interpretive_ko": "큰 실수라면 일이 번창하고 번창할 것입니다.",
+        "original": "大過 棟橈 利有攸往 亨",
+        "reading_ko": "대과 동요 리유유왕 형",
+        "literal_ko": "대과는 들보가 휠 정도다. 가는 바가 이롭고 형통하다.",
+        "interpretive_ko": "과부하 국면이다. 구조 보강과 결단이 동시에 필요하다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "대과, 동요, 리유유왕, 형.",
-        "gloss_en": "If it's a big mistake, it will be prosperous and prosperous."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "藉用白茅，無咎。",
-          "literal_ko": "를 빌리는 것에 대한 책임은 없습니다.",
-          "interpretive_ko": "를 빌리는 것에 대한 책임은 없습니다.",
+          "label_ko": "초육",
+          "original": "藉用白茅 无咎",
+          "reading_ko": "자용백모 무구",
+          "literal_ko": "흰 띠풀을 깔아 씀에 허물이 없다.",
+          "interpretive_ko": "작은 안전장치가 큰 사고를 막는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "자용백모, 무구.",
-          "gloss_en": "There is no blame for borrowing Imperata baicalensis."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "枯楊生稊，老夫得其女妻，無不利。",
-          "literal_ko": "시든 포플러는 야생작물을 낳고, 여처를 구하는데 불이로움이 없다.",
-          "interpretive_ko": "시든 포플러는 야생작물을 낳고, 여처를 구하는데 불이로움이 없다.",
+          "label_ko": "구이",
+          "original": "枯楊生稊 老夫得其女妻 无不利",
+          "reading_ko": "고양생제 노부득기여처 무불리",
+          "literal_ko": "마른 버드나무에 새싹이 나고 늙은 남자가 젊은 아내를 얻으니 이롭지 않음이 없다.",
+          "interpretive_ko": "낡은 구조에서도 새 결합이 생기면 회복 가능성이 열린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "고양생제, 노부득기녀처, 무부리.",
-          "gloss_en": "Withered poplars give birth to wild crops, and I have no disadvantages in getting my female wife."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "棟橈，凶。",
-          "literal_ko": "동루야, 치열해.",
-          "interpretive_ko": "동루야, 치열해.",
+          "label_ko": "구삼",
+          "original": "棟橈 凶",
+          "reading_ko": "동요 흉",
+          "literal_ko": "들보가 휘니 흉하다.",
+          "interpretive_ko": "핵심 구조 손상은 즉시 위험 신호다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "동요, 흉.",
-          "gloss_en": "Dongru, fierce."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "棟隆，吉。有它吝。",
-          "literal_ko": "동롱, 지. 인색하다.",
-          "interpretive_ko": "동롱, 지. 인색하다.",
+          "label_ko": "구사",
+          "original": "棟隆 吉 有它吝",
+          "reading_ko": "동륭 길 유타린",
+          "literal_ko": "들보가 솟아오르면 길하나, 다른 것이 있으면 인색하다.",
+          "interpretive_ko": "주요 구조를 세우면 살지만 주변 변수 관리를 놓치면 다시 흔들린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "동륭, 길. 유它린.",
-          "gloss_en": "Donglong, Ji. It's stingy."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "枯楊生華，老婦得其士夫，無咎無譽。",
-          "literal_ko": "시든 미루나무는 꽃을 피우고, 노파는 아무런 허물도 명예도 없이 학자 남편을 맞이한다.",
-          "interpretive_ko": "시든 미루나무는 꽃을 피우고, 노파는 아무런 허물도 명예도 없이 학자 남편을 맞이한다.",
+          "label_ko": "구오",
+          "original": "枯楊生華 老婦得士夫 无咎无譽",
+          "reading_ko": "고양생화 노부득사부 무구무예",
+          "literal_ko": "마른 버드나무에 꽃이 피고 늙은 여인이 젊은 남편을 얻으니 허물도 칭찬도 없다.",
+          "interpretive_ko": "형식적 성과보다 실질적 지속가능성을 점검해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "고양생화, 노부득기사부, 무구무예.",
-          "gloss_en": "Withered poplars give birth to flowers, and the old woman gets her scholar husband, with no blame or honor."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "過涉滅頂，凶，無咎。",
-          "literal_ko": "과도한 개입은 죽음, 불운, 허물 없음으로 이어질 것입니다.",
-          "interpretive_ko": "과도한 개입은 죽음, 불운, 허물 없음으로 이어질 것입니다.",
+          "label_ko": "상육",
+          "original": "過涉滅頂 凶 无咎",
+          "reading_ko": "과섭멸정 흉 무구",
+          "literal_ko": "지나치게 건너다 머리까지 잠기니 흉하나 허물은 없다.",
+          "interpretive_ko": "과감한 시도라도 리스크를 알았다면 교훈을 남긴다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "과섭멸정, 흉, 무구.",
-          "gloss_en": "Excessive involvement will lead to death, bad luck, no blame."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -2902,99 +2902,99 @@
     {
       "id": 29,
       "gua_text": {
-        "original": "坎，習坎，有孚，維心亨，行有尚。",
-        "literal_ko": "칸아, 칸에게 배워서, 번영하고, 건강한 마음을 유지하고, 행실을 잘 지키라.",
-        "interpretive_ko": "칸아, 칸에게 배워서, 번영하고, 건강한 마음을 유지하고, 행실을 잘 지키라.",
+        "original": "坎 習坎 有孚 維心亨 行有尚",
+        "reading_ko": "감 습감 유부 유심형 행유상",
+        "literal_ko": "감은 거듭되는 감함이다. 믿음이 있으면 마음으로 형통하고 행함에 숭상됨이 있다.",
+        "interpretive_ko": "위험이 반복되는 때일수록 중심 신념과 루틴이 생존 전략이 된다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "감, 습감, 유부, 유심형, 항유尚.",
-        "gloss_en": "Kan, learn from Kan, be prosperous, maintain a healthy mind, and conduct well."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "習坎，入于坎窞，凶。",
-          "literal_ko": "능선에 익숙해지고 능선에 들어서니 치열하다.",
-          "interpretive_ko": "능선에 익숙해지고 능선에 들어서니 치열하다.",
+          "label_ko": "초육",
+          "original": "習坎 入于坎窞 凶",
+          "reading_ko": "습감 입우감담 흉",
+          "literal_ko": "거듭 감함에 빠져 깊은 구덩이로 드니 흉하다.",
+          "interpretive_ko": "초기 대응 실패는 위험의 중첩을 부른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "습감, 입우감窞, 흉.",
-          "gloss_en": "Getting used to the ridge, entering the ridge, it is fierce."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "坎有險，求小得。",
-          "literal_ko": "위험이 있으므로 작은 이익을 추구하십시오.",
-          "interpretive_ko": "위험이 있으므로 작은 이익을 추구하십시오.",
+          "label_ko": "구이",
+          "original": "坎有險 求小得",
+          "reading_ko": "감유험 구소득",
+          "literal_ko": "감에 험함이 있으니 작은 것을 구해 얻는다.",
+          "interpretive_ko": "위기 구간에선 소규모 성과를 우선 확보해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "감유험, 구소득.",
-          "gloss_en": "There are dangers, so seek small gains."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "來之坎坎，險且枕，入于坎窞，勿用。",
-          "literal_ko": "감함이 거듭되니 험하고 또 험하다. 베개에 기대어 잠시 쉬어라.",
-          "interpretive_ko": "위험이 연속되는 구간이니 무리한 전진보다 잠시 멈춰 리듬을 회복하라.",
+          "label_ko": "육삼",
+          "original": "來之坎坎 險且枕 入于坎窞 勿用",
+          "reading_ko": "래지감감 험차침 입우감담 물용",
+          "literal_ko": "오고 가도 감함이니 험하고 또 험하다. 구덩이에 드니 쓰지 말라.",
+          "interpretive_ko": "연쇄 위험 구간에서는 행동을 줄이고 생존 모드로 전환해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "내지감감, 험차침, 입우감窞, 물용.",
-          "gloss_en": "When it comes to bumpy roads, be prepared to use it as a pillow. If you encounter rough terrain, don’t use it."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "樽酒簋貳，用缶，納約自牖，終無咎。",
-          "literal_ko": "두 개의 기스가 있는 병 와인, 간소한 예로 약속을 받아들이고 자신을 구하면 결국 허물은 없을 것입니다.",
-          "interpretive_ko": "두 개의 기스가 있는 병 와인, 간소한 예로 약속을 받아들이고 자신을 구하면 결국 허물은 없을 것입니다.",
+          "label_ko": "육사",
+          "original": "樽酒簋貳 用缶 納約自牖 終无咎",
+          "reading_ko": "준주궤이 용부 납약자유 종무구",
+          "literal_ko": "술 한 동이와 그릇 둘, 질그릇을 써서 창으로 약속을 들이면 끝내 허물이 없다.",
+          "interpretive_ko": "위기엔 간소하고 진실한 소통이 신뢰를 살린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "준주궤이, 용부, 납약자유, 종무구.",
-          "gloss_en": "Bottle wine with two guis, use the gui, accept the promise, and save yourself, there will be no blame in the end."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "坎不盈，祇既平，無咎。",
-          "literal_ko": "장애물은 가득 차지는 않지만 평탄하고 허물이 없습니다.",
-          "interpretive_ko": "장애물은 가득 차지는 않지만 평탄하고 허물이 없습니다.",
+          "label_ko": "구오",
+          "original": "坎不盈 祇既平 无咎",
+          "reading_ko": "감불영 지기평 무구",
+          "literal_ko": "감이 넘치지 않고 이미 평평해지면 허물이 없다.",
+          "interpretive_ko": "위기 관리의 목표는 과잉 성과가 아니라 안정 회복이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "감부영, 기既평, 무구.",
-          "gloss_en": "The hurdle is not full, but it is flat, and there is no fault."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "係用徽纆，置于叢棘，三歲不得，凶。",
-          "literal_ko": "회희와 묶어서 가시덤불 위에 올려놓았다. 3세까지 이르지 못하게 하면 불운이다.",
-          "interpretive_ko": "회희와 묶어서 가시덤불 위에 올려놓았다. 3세까지 이르지 못하게 하면 불운이다.",
+          "label_ko": "상육",
+          "original": "係用徽纆 寘于叢棘 三歲不得 凶",
+          "reading_ko": "계용휘묵 치우총극 삼세부득 흉",
+          "literal_ko": "밧줄로 묶여 가시덤불에 던져져 삼 년 얻지 못하니 흉하다.",
+          "interpretive_ko": "통제 실패를 방치하면 장기 침체로 굳어진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "계용휘纆, 치우총극, 삼세부득, 흉.",
-          "gloss_en": "It is tied with Huixi and placed on a bush of thorns. If it is not allowed to reach the age of three, it is unlucky."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
