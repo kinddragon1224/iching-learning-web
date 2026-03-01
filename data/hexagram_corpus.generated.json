@@ -3005,99 +3005,99 @@
     {
       "id": 30,
       "gua_text": {
-        "original": "離，利貞，亨。畜牝牛吉。",
-        "literal_ko": "리: 바름을 지키면 형통하다. 암소를 기르면 길하다.",
-        "interpretive_ko": "밝음을 잃지 않고 기준을 지키면 형통하다. 유순하고 지속적인 태도가 길함을 만든다.",
+        "original": "離 利貞 亨 畜牝牛吉",
+        "reading_ko": "리 이정 형 축빈우길",
+        "literal_ko": "리는 바르게 함이 이롭고 형통하다. 암소를 기르면 길하다.",
+        "interpretive_ko": "밝음과 분별의 때다. 유순하고 지속적인 태도로 기준을 지키면 길하다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "리, 리정, 형. 축빈우길.",
-        "gloss_en": "Li, Li Zhen, Heng. The animal is auspicious."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "履錯然，敬之無咎。",
-          "literal_ko": "잘못된 발을 밟아도 책임이 없습니다.",
-          "interpretive_ko": "잘못된 발을 밟아도 책임이 없습니다.",
+          "label_ko": "초구",
+          "original": "履錯然 敬之无咎",
+          "reading_ko": "리착연 경지무구",
+          "literal_ko": "밟음이 어지러우니 공경히 하면 허물이 없다.",
+          "interpretive_ko": "초기 혼선은 태도와 긴장 관리로 줄일 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "리착연, 경지무구.",
-          "gloss_en": "If you step on the wrong foot, there is no blame for it."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "黃離，元吉。",
-          "literal_ko": "황리, 위안지.",
-          "interpretive_ko": "황리, 위안지.",
+          "label_ko": "육이",
+          "original": "黃離 元吉",
+          "reading_ko": "황리 원길",
+          "literal_ko": "누런 밝음이니 크게 길하다.",
+          "interpretive_ko": "중용의 밝음이 가장 안정적인 판단을 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "황리, 원길.",
-          "gloss_en": "Huangli, Yuanji."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "日昃之離，不鼓缶而歌，則大耋之嗟，凶。",
-          "literal_ko": "해가 지고 북과 푸우를 치지 않고 노래를 부르면 노인이 한숨을 쉬며 사납게 될 것이다.",
-          "interpretive_ko": "해가 지고 북과 푸우를 치지 않고 노래를 부르면 노인이 한숨을 쉬며 사납게 될 것이다.",
+          "label_ko": "구삼",
+          "original": "日昃之離 不鼓缶而歌 則大耋之嗟 凶",
+          "reading_ko": "일측지리 불고부이가 즉대질지차 흉",
+          "literal_ko": "해가 기운 때의 밝음에 질그릇 두드려 노래하지 않으면 늙은이의 탄식이 있어 흉하다.",
+          "interpretive_ko": "하강 국면을 인정하지 않으면 피로와 비관이 커진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "일측지리, 부고부이가, 칙대耋지차, 흉.",
-          "gloss_en": "When the sun is gone, if you sing without drumming and fou, the old man will sigh and be fierce."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "突如其來如，焚如，死如，棄如。",
-          "literal_ko": "갑자기 튀어나온 듯, 타는 듯, 죽어가는 듯, 버림받은 듯.",
-          "interpretive_ko": "갑자기 튀어나온 듯, 타는 듯, 죽어가는 듯, 버림받은 듯.",
+          "label_ko": "구사",
+          "original": "突如其來如 焚如 死如 棄如",
+          "reading_ko": "돌여기래여 분여 사여 기여",
+          "literal_ko": "갑자기 와서 타고 죽고 버려진다.",
+          "interpretive_ko": "급작스런 과열은 순식간에 소진으로 바뀐다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "돌여기내여, 분여, 사여, 기여.",
-          "gloss_en": "Like coming out of the blue, like burning, like dying, like abandoning."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "出涕沱若，戚嗟若，吉。",
-          "literal_ko": "눈물을 흘리고 한숨을 쉬는 것은 길함입니다.",
-          "interpretive_ko": "눈물을 흘리고 한숨을 쉬는 것은 길함입니다.",
+          "label_ko": "육오",
+          "original": "出涕沱若 戚嗟若 吉",
+          "reading_ko": "출체타약 척차약 길",
+          "literal_ko": "눈물이 흐르고 근심해 탄식하니 길하다.",
+          "interpretive_ko": "위기 인식과 애도는 회복의 시작이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "출체타야, 척차야, 길.",
-          "gloss_en": "It is auspicious to shed tears and sigh."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "王用出征，有嘉折首，獲其匪丑，無咎。",
-          "literal_ko": "왕용이 원정을 나갔을 때 착한 사람이면 머리를 잃었고, 못생긴 도적에게 붙잡혔으니 죄가 없다.",
-          "interpretive_ko": "왕용이 원정을 나갔을 때 착한 사람이면 머리를 잃었고, 못생긴 도적에게 붙잡혔으니 죄가 없다.",
+          "label_ko": "상구",
+          "original": "王用出征 有嘉折首 獲匪其醜 无咎",
+          "reading_ko": "왕용출정 유가절수 획비기추 무구",
+          "literal_ko": "왕이 출정해 우두머리를 꺾고 무리를 잡으니 허물이 없다.",
+          "interpretive_ko": "마지막엔 핵심 문제를 정확히 겨냥해야 정리가 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕용출정, 유가절수, 획기비축, 무구.",
-          "gloss_en": "When Wang Yong went on an expedition, he lost his head if he was a good person, and he was captured by a bandit who was ugly, so he had no fault."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3108,99 +3108,99 @@
     {
       "id": 31,
       "gua_text": {
-        "original": "咸，亨，利貞。取女吉。",
-        "literal_ko": "시안, 헨리, 리젠. 여성에게 행운을 빕니다.",
-        "interpretive_ko": "시안, 헨리, 리젠. 여성에게 행운을 빕니다.",
+        "original": "咸 亨 利貞 取女吉",
+        "reading_ko": "함 형 이정 취녀길",
+        "literal_ko": "함은 형통하고 바름이 이로우며 여인을 맞이하면 길하다.",
+        "interpretive_ko": "감응과 결합의 시기다. 마음의 움직임을 원칙과 함께 다뤄야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "함, 형, 리정. 취녀길.",
-        "gloss_en": "Xian, Henry, Li Zhen. Good luck to women."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "咸其拇。",
-          "literal_ko": "짠 엄지손가락.",
-          "interpretive_ko": "짠 엄지손가락.",
+          "label_ko": "초육",
+          "original": "咸其拇",
+          "reading_ko": "함기무",
+          "literal_ko": "엄지발가락이 감응한다.",
+          "interpretive_ko": "작은 신호에서 변화가 시작된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함기무.",
-          "gloss_en": "Salty thumb."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "咸其腓，凶，居吉。",
-          "literal_ko": "는 불운하고 길함입니다.",
-          "interpretive_ko": "는 불운하고 길함입니다.",
+          "label_ko": "육이",
+          "original": "咸其腓 凶 居吉",
+          "reading_ko": "함기비 흉 거길",
+          "literal_ko": "장딴지가 감응하면 흉하고, 머무르면 길하다.",
+          "interpretive_ko": "충동적 반응보다 멈춤이 안전하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함기비, 흉, 거길.",
-          "gloss_en": "Xian Qifei is unlucky and auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "咸其股，執其隨，往吝。",
-          "literal_ko": "주식에 소금을 뿌리고, 붙잡고, 인색해지세요.",
-          "interpretive_ko": "주식에 소금을 뿌리고, 붙잡고, 인색해지세요.",
+          "label_ko": "구삼",
+          "original": "咸其股 執其隨 往吝",
+          "reading_ko": "함기고 집기수 왕린",
+          "literal_ko": "넓적다리가 감응해 따름을 붙잡고 나아가면 인색하다.",
+          "interpretive_ko": "집착이 섞인 추종은 관계를 경직시킨다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함기고, 집기수, 왕린.",
-          "gloss_en": "Salt your stock, hold on to it, and be stingy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "貞吉悔亡，憧憧往來，朋從爾思。",
-          "literal_ko": "정길는 자신의 죽음을 후회하고 교류를 갈망하며 친구들은 당신을 따르고 당신에 대해 생각합니다.",
-          "interpretive_ko": "정길는 자신의 죽음을 후회하고 교류를 갈망하며 친구들은 당신을 따르고 당신에 대해 생각합니다.",
+          "label_ko": "구사",
+          "original": "貞吉 悔亡 憧憧往來 朋從爾思",
+          "reading_ko": "정길 회망 동동왕래 붕종이사",
+          "literal_ko": "바르게 길하면 뉘우침이 사라진다. 오가며 흔들려도 벗이 네 생각을 따른다.",
+          "interpretive_ko": "중심을 지키면 관계의 동요도 정렬된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정길회망, 동동왕내, 붕종이사.",
-          "gloss_en": "Zhenji regrets his death, longs for exchanges, and friends follow you and think about you."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "咸其脢，無悔。",
-          "literal_ko": "재킷에 소금을 뿌리고 후회하지 마세요.",
-          "interpretive_ko": "재킷에 소금을 뿌리고 후회하지 마세요.",
+          "label_ko": "구오",
+          "original": "咸其脢 无悔",
+          "reading_ko": "함기매 무회",
+          "literal_ko": "등심이 감응하니 뉘우침이 없다.",
+          "interpretive_ko": "깊은 중심에서의 감응은 후회를 남기지 않는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함기脢, 무회.",
-          "gloss_en": "Salt your jacket and have no regrets."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "咸其輔、頰、舌。",
-          "literal_ko": "보조, 뺨, 혀에 짠맛이 있습니다.",
-          "interpretive_ko": "보조, 뺨, 혀에 짠맛이 있습니다.",
+          "label_ko": "상육",
+          "original": "咸其輔頰舌",
+          "reading_ko": "함기보협설",
+          "literal_ko": "입가와 뺨과 혀가 감응한다.",
+          "interpretive_ko": "말의 감응은 강하지만 가벼우면 쉽게 소모된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "함기보, 협, 설.",
-          "gloss_en": "Salty for its auxiliary, cheek, and tongue."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3211,99 +3211,99 @@
     {
       "id": 32,
       "gua_text": {
-        "original": "恆，亨，無咎，利貞，利有攸往。",
-        "literal_ko": "형(興)은 형통하고 흠이 없고 바름하고 유익하며 형통하다.",
-        "interpretive_ko": "형(興)은 형통하고 흠이 없고 바름하고 유익하며 형통하다.",
+        "original": "恒 亨 无咎 利貞 利有攸往",
+        "reading_ko": "항 형 무구 이정 리유유왕",
+        "literal_ko": "항은 형통하고 허물이 없으며 바름이 이롭고 가는 바가 이롭다.",
+        "interpretive_ko": "지속의 힘은 반복 가능한 구조에서 나온다. 루틴이 성과를 만든다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "항, 형, 무구, 리정, 리유유왕.",
-        "gloss_en": "Heng, prosperous, blameless, chaste, beneficial and prosperous."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "浚恆，貞凶，無攸利。",
-          "literal_ko": "형, 바름과 불운, 이로움이 없다.",
-          "interpretive_ko": "형, 바름과 불운, 이로움이 없다.",
+          "label_ko": "초육",
+          "original": "浚恒 貞凶 无攸利",
+          "reading_ko": "준항 정흉 무유리",
+          "literal_ko": "깊게 파는 지속은 바르게 해도 흉하고 이로움이 없다.",
+          "interpretive_ko": "처음부터 과한 강도로 버티면 지속이 깨진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "준항, 정흉, 무유리.",
-          "gloss_en": "Jun Heng, chastity and bad luck, no profit."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "悔亡。",
-          "literal_ko": "죽음을 후회합니다.",
-          "interpretive_ko": "죽음을 후회합니다.",
+          "label_ko": "구이",
+          "original": "悔亡",
+          "reading_ko": "회망",
+          "literal_ko": "뉘우침이 사라진다.",
+          "interpretive_ko": "리듬이 맞으면 시행착오는 빠르게 정리된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "회망.",
-          "gloss_en": "Regret death."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "不恆其德，或承之羞，貞吝。",
-          "literal_ko": "덕을 지키지 않으면 부끄러워하고 인색해질 수 있습니다.",
-          "interpretive_ko": "덕을 지키지 않으면 부끄러워하고 인색해질 수 있습니다.",
+          "label_ko": "구삼",
+          "original": "不恒其德 或承之羞 貞吝",
+          "reading_ko": "불항기덕 혹승지수 정린",
+          "literal_ko": "덕을 지속하지 못하면 혹 수치를 받는다. 바르게 해도 인색하다.",
+          "interpretive_ko": "일관성 없는 태도는 신뢰를 갉아먹는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부항기덕, 혹승지수, 정린.",
-          "gloss_en": "If you don't persist in your virtue, you may be ashamed and stingy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "田無禽。",
-          "literal_ko": "들판에는 새가 없습니다.",
-          "interpretive_ko": "들판에는 새가 없습니다.",
+          "label_ko": "구사",
+          "original": "田无禽",
+          "reading_ko": "전무금",
+          "literal_ko": "밭에 짐승이 없다.",
+          "interpretive_ko": "지속은 했지만 목표가 틀리면 성과가 없다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "전무금.",
-          "gloss_en": "There are no birds in the field."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "恆其德，貞婦人吉，夫子凶。",
-          "literal_ko": "덕을 지키면 바름한 여자는 복을 받고 남편은 불행하게 된다.",
-          "interpretive_ko": "덕을 지키면 바름한 여자는 복을 받고 남편은 불행하게 된다.",
+          "label_ko": "육오",
+          "original": "恒其德 貞 婦人吉 夫子凶",
+          "reading_ko": "항기덕 정 부인길 부자흉",
+          "literal_ko": "덕을 지속하며 바르게 하면 부인은 길하고 대장부는 흉하다.",
+          "interpretive_ko": "같은 규칙도 역할과 맥락에 따라 결과가 달라진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "항기덕, 정부인길, 부자흉.",
-          "gloss_en": "If you keep your virtue, a chaste woman will be lucky, and a husband will be unlucky."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "振恆，凶。",
-          "literal_ko": "흉하다.",
-          "interpretive_ko": "흉하다.",
+          "label_ko": "상육",
+          "original": "振恒 凶",
+          "reading_ko": "진항 흉",
+          "literal_ko": "흔들리는 지속은 흉하다.",
+          "interpretive_ko": "끝에서 리듬이 흔들리면 누적 성과가 무너진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진항, 흉.",
-          "gloss_en": "Zhenheng, fierce."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3314,99 +3314,99 @@
     {
       "id": 33,
       "gua_text": {
-        "original": "遯，亨，小利貞。",
-        "literal_ko": "탈출, 형, 정.",
-        "interpretive_ko": "탈출, 형, 정.",
+        "original": "遯 亨 小利貞",
+        "reading_ko": "둔 형 소이정",
+        "literal_ko": "둔은 형통하니 작게 바르게 함이 이롭다.",
+        "interpretive_ko": "전략적 후퇴의 시기다. 작게 지키며 핵심을 보존해야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "둔, 형, 소리정.",
-        "gloss_en": "Escape, Heng, Xiaoli Zhen."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "遯尾，厲，勿用有攸往。",
-          "literal_ko": "꼬리를 피하고, 날카롭게 행동하고, 사용하지 않으면 거기로 갈 것입니다.",
-          "interpretive_ko": "꼬리를 피하고, 날카롭게 행동하고, 사용하지 않으면 거기로 갈 것입니다.",
+          "label_ko": "초육",
+          "original": "遯尾 厲 勿用有攸往",
+          "reading_ko": "둔미 려 물용유유왕",
+          "literal_ko": "물러남의 꼬리니 위태롭다. 가는 바를 두지 말라.",
+          "interpretive_ko": "후퇴가 늦었으면 추가 행동보다 손실 차단이 먼저다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "둔미, 려, 물용유유왕.",
-          "gloss_en": "Escape the tail, be sharp, don't use it, you will go there."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "執之用黃牛之革，莫之勝說。",
-          "literal_ko": "고집스럽게 황소 가죽을 사용하면 묵지가 이긴다.",
-          "interpretive_ko": "고집스럽게 황소 가죽을 사용하면 묵지가 이긴다.",
+          "label_ko": "육이",
+          "original": "執之用黃牛之革 莫之勝說",
+          "reading_ko": "집지용황우지혁 막지승설",
+          "literal_ko": "누런 소가죽으로 붙잡으니 벗어나지 못한다.",
+          "interpretive_ko": "중요 원칙은 단단히 묶어 이탈을 막아야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "집지용황우지혁, 막지승설.",
-          "gloss_en": "If you insist on using the leather of an ox, Mo Zhi wins."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "系遯，有疾厲，畜臣妾吉。",
-          "literal_ko": "도피할 일이 있으면 병이 심하고 짐승과 신하와 첩에게 복이 있을 것입니다.",
-          "interpretive_ko": "도피할 일이 있으면 병이 심하고 짐승과 신하와 첩에게 복이 있을 것입니다.",
+          "label_ko": "구삼",
+          "original": "係遯 有疾厲 畜臣妾吉",
+          "reading_ko": "계둔 유질려 축신첩길",
+          "literal_ko": "매인 후퇴이니 병과 위태로움이 있다. 신하와 첩을 기르면 길하다.",
+          "interpretive_ko": "중간단계 후퇴는 내부 운영 안정화에 집중해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "계둔, 유질려, 축신첩길.",
-          "gloss_en": "If it is due to escape, there will be severe illness, animals, ministers and concubines will be auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "好遯，君子吉，小人否。",
-          "literal_ko": "좋은 탈출은 신사에게는 좋지만 악당에게는 좋지 않습니다.",
-          "interpretive_ko": "좋은 탈출은 신사에게는 좋지만 악당에게는 좋지 않습니다.",
+          "label_ko": "구사",
+          "original": "好遯 君子吉 小人否",
+          "reading_ko": "호둔 군자길 소인비",
+          "literal_ko": "좋게 물러나면 군자는 길하고 소인은 막힌다.",
+          "interpretive_ko": "품위 있는 철수는 장기적으로 자산이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "호둔, 군자길, 소인부.",
-          "gloss_en": "A good escape is good for a gentleman, but bad for a villain."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "嘉遯，貞吉。",
-          "literal_ko": "지아둔, 젠지.",
-          "interpretive_ko": "지아둔, 젠지.",
+          "label_ko": "구오",
+          "original": "嘉遯 貞吉",
+          "reading_ko": "가둔 정길",
+          "literal_ko": "아름다운 물러남이니 바르게 길하다.",
+          "interpretive_ko": "리더의 질서 있는 후퇴가 팀을 살린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "가둔, 정길.",
-          "gloss_en": "Jia Dun, Zhen Ji."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "肥遯，無不利。",
-          "literal_ko": "지방탈출에는 불이로움이 없다.",
-          "interpretive_ko": "지방탈출에는 불이로움이 없다.",
+          "label_ko": "상구",
+          "original": "肥遯 无不利",
+          "reading_ko": "비둔 무불리",
+          "literal_ko": "넉넉한 물러남이니 이롭지 않음이 없다.",
+          "interpretive_ko": "완결된 철수는 다음 도약의 기반이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "비둔, 무부리.",
-          "gloss_en": "There is no disadvantage in fat escape."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
