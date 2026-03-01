@@ -11,6 +11,11 @@ export default function CorpusStatusPage() {
   const rows = ((corpus as { hexagrams?: Row[] }).hexagrams ?? []).slice().sort((a, b) => a.id - b.id);
   const doneGua = rows.filter((r) => r.gua_text?.original || r.gua_text?.literal_ko || r.gua_text?.interpretive_ko).length;
   const doneLines = rows.filter((r) => (r.lines ?? []).length >= 6).length;
+  const reviewed = rows.filter((r) => {
+    const allLineReviewed = (r.lines ?? []).every((l) => ((l as unknown as { notes?: string[] }).notes?.[0] ?? "").startsWith("manual-reviewed"));
+    const gNote = ((r.gua_text as unknown as { notes?: string[] })?.notes?.[0] ?? "");
+    return allLineReviewed && gNote.startsWith("manual-reviewed");
+  }).length;
 
   return (
     <main className="mx-auto max-w-5xl space-y-6 p-6 pt-24">
@@ -21,7 +26,7 @@ export default function CorpusStatusPage() {
       </header>
 
       <section className="paper-panel rounded-xl p-4 text-sm">
-        <div className="grid gap-3 sm:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-4">
           <div className="rounded-lg border border-white/20 p-3">
             <p className="text-xs text-[var(--text-muted)]">괘사 반영</p>
             <p className="text-xl font-semibold">{doneGua} / 64</p>
@@ -31,9 +36,31 @@ export default function CorpusStatusPage() {
             <p className="text-xl font-semibold">{doneLines} / 64</p>
           </div>
           <div className="rounded-lg border border-white/20 p-3">
+            <p className="text-xs text-[var(--text-muted)]">수동 교정 완료</p>
+            <p className="text-xl font-semibold">{reviewed} / 64</p>
+          </div>
+          <div className="rounded-lg border border-white/20 p-3">
             <p className="text-xs text-[var(--text-muted)]">데이터 로우</p>
             <p className="text-xl font-semibold">{rows.length}</p>
           </div>
+        </div>
+      </section>
+
+      <section className="paper-panel rounded-xl p-4 text-xs">
+        <p className="text-[var(--text-muted)] mb-2">미교정 괘 빠른 이동</p>
+        <div className="flex flex-wrap gap-2">
+          {rows
+            .filter((r) => {
+              const allLineReviewed = (r.lines ?? []).every((l) => ((l as unknown as { notes?: string[] }).notes?.[0] ?? "").startsWith("manual-reviewed"));
+              const gNote = ((r.gua_text as unknown as { notes?: string[] })?.notes?.[0] ?? "");
+              return !(allLineReviewed && gNote.startsWith("manual-reviewed"));
+            })
+            .map((r) => (
+              <Link key={`pending-${r.id}`} href={`/hexagram/${r.id}`} className="rounded-full border border-amber-300/40 px-2 py-1">
+                #{r.id}
+              </Link>
+            ))}
+          {reviewed === 64 ? <span className="text-emerald-300">전량 교정 완료</span> : null}
         </div>
       </section>
 
@@ -46,6 +73,7 @@ export default function CorpusStatusPage() {
               <th className="py-2">직역</th>
               <th className="py-2">의역</th>
               <th className="py-2">효사 개수</th>
+              <th className="py-2">수동교정</th>
             </tr>
           </thead>
           <tbody>
@@ -56,6 +84,7 @@ export default function CorpusStatusPage() {
                 <td className="py-2">{r.gua_text?.literal_ko ? "✅" : "-"}</td>
                 <td className="py-2">{r.gua_text?.interpretive_ko ? "✅" : "-"}</td>
                 <td className="py-2">{(r.lines ?? []).length}</td>
+                <td className="py-2">{(((r.gua_text as unknown as { notes?: string[] })?.notes?.[0] ?? "").startsWith("manual-reviewed") && (r.lines ?? []).every((l) => ((l as unknown as { notes?: string[] }).notes?.[0] ?? "").startsWith("manual-reviewed"))) ? "✅" : "-"}</td>
               </tr>
             ))}
           </tbody>
