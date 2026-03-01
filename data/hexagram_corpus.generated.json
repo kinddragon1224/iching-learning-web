@@ -6301,99 +6301,99 @@
     {
       "id": 62,
       "gua_text": {
-        "original": "小過，亨，利貞，可小事，不可大事。飛鳥遺之音，不宜上宜下，大吉。",
-        "literal_ko": "리 정은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
-        "interpretive_ko": "리 정은 큰 문제가 아닌 작은 문제일 수 있습니다. 날아다니는 새가 남긴 소리는 위아래로 올라가지 않아야 하는데, 이는 행운을 빕니다.",
+        "original": "小過 亨 利貞 可小事 不可大事 飛鳥遺之音 不宜上 宜下 大吉",
+        "reading_ko": "소과 형 이정 가소사 불가대사 비조이지음 불의상 의하 대길",
+        "literal_ko": "소과는 형통하고 바름이 이롭다. 작은 일은 가능하나 큰 일은 불가하다. 나는 새의 소리가 남기듯 위로 오름은 마땅치 않고 아래가 마땅하니 크게 길하다.",
+        "interpretive_ko": "정밀 조정의 시기다. 과감한 도약보다 작은 수정과 하향 안정이 정답이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "소과, 형, 리정, 가소사, 부가대사. 비조유지음, 부의상의하, 대길.",
-        "gloss_en": "Xiaoguo, Henry, Li Zhen, can be a small matter, not a big one. The sound left by flying birds should not go up or down, which is good luck."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "飛鳥以凶。",
-          "literal_ko": "날아다니는 새는 사악하다.",
-          "interpretive_ko": "날아다니는 새는 사악하다.",
+          "label_ko": "초육",
+          "original": "飛鳥以凶",
+          "reading_ko": "비조이흉",
+          "literal_ko": "나는 새로써 흉하다.",
+          "interpretive_ko": "초반 과속은 즉시 리스크로 돌아온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "비조이흉.",
-          "gloss_en": "Flying birds are evil."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "過其祖，遇其妣，不及其君，遇其臣，無咎。",
-          "literal_ko": "네가 네 조상을 지나쳐도, 네 첩들을 만나도, 네가 네 주만큼 좋지 못하더라도, 네 신하를 만나도 죄가 없을 것이니라.",
-          "interpretive_ko": "네가 네 조상을 지나쳐도, 네 첩들을 만나도, 네가 네 주만큼 좋지 못하더라도, 네 신하를 만나도 죄가 없을 것이니라.",
+          "label_ko": "육이",
+          "original": "過其祖 遇其妣 不及其君 遇其臣 无咎",
+          "reading_ko": "과기조 우기비 불급기군 우기신 무구",
+          "literal_ko": "조상을 지나 어머니를 만나고 군주에 미치지 못해 신하를 만나니 허물이 없다.",
+          "interpretive_ko": "목표를 낮춰 현실적 접점을 택하면 손실을 줄인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "과기조, 우기비, 부급기군, 우기신, 무구.",
-          "gloss_en": "If you pass by your ancestors, if you meet your concubines, if you are not as good as your lord, if you meet your ministers, there will be no blame."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "弗過防之，從或戕之，凶。",
-          "literal_ko": "경계하지 않고 따라가거나 죽이면 맹렬해질 것입니다.",
-          "interpretive_ko": "경계하지 않고 따라가거나 죽이면 맹렬해질 것입니다.",
+          "label_ko": "구삼",
+          "original": "弗過防之 從或戕之 凶",
+          "reading_ko": "불과방지 종혹장지 흉",
+          "literal_ko": "지나치지 않게 막지 않으면 따르다 혹 해침을 당해 흉하다.",
+          "interpretive_ko": "예방 통제를 놓치면 작은 문제도 치명타가 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "불과방지, 종혹장지, 흉.",
-          "gloss_en": "If you don't guard against it, follow it or kill it, it will be fierce."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "無咎，弗過遇之。往厲必戒，勿用永貞。",
-          "literal_ko": "허물은 없으나 지나침을 경계하라. 굳게 밀어붙이지 말라.",
-          "interpretive_ko": "작은 조정이 필요한 때이니 무리한 고집을 버리고 신중히 다듬어야 한다.",
+          "label_ko": "구사",
+          "original": "无咎 弗過遇之 往厲必戒 勿用永貞",
+          "reading_ko": "무구 불과우지 왕려필계 물용영정",
+          "literal_ko": "허물은 없다. 지나치지 않고 만나며, 나아가면 위태로우니 반드시 경계하라. 오래 고집해선 안 된다.",
+          "interpretive_ko": "지속적 미세 조정이 필요하며, 고집은 오히려 위험을 키운다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무구, 불과우지. 왕려필계, 물용영정.",
-          "gloss_en": "No blame, no fault of encounter. If you go hard, you must be careful, but don't use eternal chastity."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "密云不雨，自我西郊，公弋，取彼在穴。",
-          "literal_ko": "구름이 짙게 끼어 있고 비는 내리지 않습니다. 나는 서쪽 교외로 가서 배를 타고 동굴로 갈 것입니다.",
-          "interpretive_ko": "구름이 짙게 끼어 있고 비는 내리지 않습니다. 나는 서쪽 교외로 가서 배를 타고 동굴로 갈 것입니다.",
+          "label_ko": "육오",
+          "original": "密雲不雨 自我西郊 公弋取彼在穴",
+          "reading_ko": "밀운불우 자아서교 공익취피재혈",
+          "literal_ko": "빽빽한 구름에 비는 오지 않고 서쪽 들에서, 공이 활쏘아 굴 속의 것을 취한다.",
+          "interpretive_ko": "환경이 답답할 때는 정밀 타깃 실행이 해법이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "밀운부우, 자아서교, 공익, 취피재혈.",
-          "gloss_en": "The clouds are dense and there is no rain. I will go to the western suburbs and take the boat to the cave."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "弗遇過之，飛鳥離之，凶，是謂災眚。",
-          "literal_ko": "만일 그것을 만나거나 새들이 그것을 피하여 날아가면 맹렬한 일이 일어날 것인데 이를 재앙이라 일컫느니라.",
-          "interpretive_ko": "만일 그것을 만나거나 새들이 그것을 피하여 날아가면 맹렬한 일이 일어날 것인데 이를 재앙이라 일컫느니라.",
+          "label_ko": "상육",
+          "original": "弗遇過之 飛鳥離之 凶 是謂災眚",
+          "reading_ko": "불우과지 비조리지 흉 시위재생",
+          "literal_ko": "만나지 못하고 지나치며 나는 새가 떠나니 흉하다. 이를 재앙이라 한다.",
+          "interpretive_ko": "끝에서 타이밍을 놓치면 작은 오차가 큰 재난으로 번진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "불우과지, 비조리지, 흉, 시위재생.",
-          "gloss_en": "If you encounter it, if the birds fly away from it, it will be fierce, which is called disaster."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -6404,99 +6404,99 @@
     {
       "id": 63,
       "gua_text": {
-        "original": "既濟，亨，小利貞，初吉終亂。",
-        "literal_ko": "경제적이고 번영하며 이익과 바름이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
-        "interpretive_ko": "경제적이고 번영하며 이익과 바름이 적고 처음에는 행운이 따르지만 마지막에는 혼란이 있습니다.",
+        "original": "既濟 亨小 利貞 初吉終亂",
+        "reading_ko": "기제 형소 이정 초길종란",
+        "literal_ko": "기제는 작은 형통이 있고 바름이 이롭다. 처음은 길하나 끝은 어지럽다.",
+        "interpretive_ko": "완성 직후가 가장 위험하다. 유지관리 체계를 즉시 가동해야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "既제, 형, 소리정, 초길종난.",
-        "gloss_en": "It is both economic and prosperous, with little profit and chastity, good fortune at first and chaos at the end."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "曳其輪，濡其尾，無咎。",
-          "literal_ko": "바퀴를 끌고, 꼬리를 적시고, 허물하지 마세요.",
-          "interpretive_ko": "바퀴를 끌고, 꼬리를 적시고, 허물하지 마세요.",
+          "label_ko": "초구",
+          "original": "曳其輪 濡其尾 无咎",
+          "reading_ko": "예기륜 유기미 무구",
+          "literal_ko": "수레 바퀴를 끌고 꼬리를 적시나 허물이 없다.",
+          "interpretive_ko": "마무리 단계의 불편은 감수하되 큰 실수만 피하면 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "예기륜, 유기미, 무구.",
-          "gloss_en": "Drag its wheel, wet its tail, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "婦喪其茀，勿逐，七日得。",
-          "literal_ko": "여자가 남편을 잃더라도 쫓아내지 마십시오. 그녀는 7일 안에 그것을 얻을 것이다.",
-          "interpretive_ko": "여자가 남편을 잃더라도 쫓아내지 마십시오. 그녀는 7일 안에 그것을 얻을 것이다.",
+          "label_ko": "육이",
+          "original": "婦喪其茀 勿逐 七日得",
+          "reading_ko": "부상기불 물축 칠일득",
+          "literal_ko": "여인이 가리개를 잃어도 쫓지 말면 칠일에 얻는다.",
+          "interpretive_ko": "작은 손실은 즉각 추격보다 냉정한 복구가 낫다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부상기불, 물축, 칠일득.",
-          "gloss_en": "If a woman loses her husband, don't drive her away. She will get it in seven days."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "高宗伐鬼方，三年克之，小人勿用。",
-          "literal_ko": "고종황제는 이 방법으로 귀신을 물리치고 3년 만에 귀신을 물리쳤습니다. 악당에게는 사용하지 마세요.",
-          "interpretive_ko": "고종황제는 이 방법으로 귀신을 물리치고 3년 만에 귀신을 물리쳤습니다. 악당에게는 사용하지 마세요.",
+          "label_ko": "구삼",
+          "original": "高宗伐鬼方 三年克之 小人勿用",
+          "reading_ko": "고종벌귀방 삼년극지 소인물용",
+          "literal_ko": "고종이 귀방을 쳐 삼 년 만에 이기니 소인은 쓰지 말라.",
+          "interpretive_ko": "장기 프로젝트는 인재 선별이 성패를 좌우한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "고종벌귀방, 삼년극지, 소인물용.",
-          "gloss_en": "Emperor Gaozong used this method to defeat ghosts and defeat them in three years. Do not use it on villains."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "儒有衣袽，終日戒。",
-          "literal_ko": "유교에는 그 나름의 예복과 규율이 있으며, 하루 종일 규율을 지켜야 합니다.",
-          "interpretive_ko": "유교에는 그 나름의 예복과 규율이 있으며, 하루 종일 규율을 지켜야 합니다.",
+          "label_ko": "육사",
+          "original": "繻有衣袽 終日戒",
+          "reading_ko": "유유의여 종일계",
+          "literal_ko": "비단옷에도 누더기가 있으니 종일 경계하라.",
+          "interpretive_ko": "완성품도 취약점이 있다. 상시 점검이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유유의袽, 종일계.",
-          "gloss_en": "Confucianism has its own robes and rules, and it must be disciplined all day long."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "東鄰殺牛，不如西鄰之禴祭，實受其福。",
-          "literal_ko": "동쪽 이웃이 제사를 드리는 서쪽 이웃보다 좋지 못한 소를 죽여 그로 말미암아 축복을 받는도다.",
-          "interpretive_ko": "동쪽 이웃이 제사를 드리는 서쪽 이웃보다 좋지 못한 소를 죽여 그로 말미암아 축복을 받는도다.",
+          "label_ko": "구오",
+          "original": "東鄰殺牛 不如西鄰之禴祭 實受其福",
+          "reading_ko": "동린살우 불여서린지약제 실수기복",
+          "literal_ko": "동쪽 이웃이 소를 잡는 것보다 서쪽 이웃의 간소한 제사가 더 낫고 실제 복을 받는다.",
+          "interpretive_ko": "규모보다 진정성과 정합성이 결과를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "동린살우, 부여서린지약제, 실수기복.",
-          "gloss_en": "The neighbor to the east kills the cow, which is not as good as the neighbor to the west to offer sacrifices, and is actually blessed by it."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "濡其首，厲。",
-          "literal_ko": "머리를 적셔, 심각하다.",
-          "interpretive_ko": "머리를 적셔, 심각하다.",
+          "label_ko": "상육",
+          "original": "濡其首 厲",
+          "reading_ko": "유기수 려",
+          "literal_ko": "머리를 적시니 위태롭다.",
+          "interpretive_ko": "마지막 방심 하나가 전체 완성도를 무너뜨린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유기수, 려.",
-          "gloss_en": "Moisten its head, severe."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -6507,99 +6507,99 @@
     {
       "id": 64,
       "gua_text": {
-        "original": "未濟，亨，小狐汔濟，濡其尾，無攸利。",
-        "literal_ko": "이루어지지 않으면 번영할 것입니다. 작은 여우가 그렇게 할 것이고 꼬리를 적실 것입니다. 그것은 아무 유익이 없습니다.",
-        "interpretive_ko": "이루어지지 않으면 번영할 것입니다. 작은 여우가 그렇게 할 것이고 꼬리를 적실 것입니다. 그것은 아무 유익이 없습니다.",
+        "original": "未濟 亨 小狐汔濟 濡其尾 无攸利",
+        "reading_ko": "미제 형 소호흘제 유기미 무유리",
+        "literal_ko": "미제는 형통하다. 어린 여우가 거의 건너다 꼬리를 적시니 이로움이 없다.",
+        "interpretive_ko": "완료 직전의 방심을 경계해야 한다. 끝맺음 품질이 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "미제, 형, 소호흘제, 유기미, 무유리.",
-        "gloss_en": "If it is not done, it will be prosperous. The little fox will be doing it, and it will wet its tail, which is of no benefit."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "濡其尾，吝。",
-          "literal_ko": "꼬리를 적시고 인색합니다.",
-          "interpretive_ko": "꼬리를 적시고 인색합니다.",
+          "label_ko": "초육",
+          "original": "濡其尾 吝",
+          "reading_ko": "유기미 린",
+          "literal_ko": "꼬리를 적시니 인색하다.",
+          "interpretive_ko": "초기 마무리 실패는 사소해 보여도 비용이 크다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유기미, 린.",
-          "gloss_en": "Moisten its tail, stingy."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "曳其輪，貞吉。",
-          "literal_ko": "바퀴를 당기는 것은 바름하고 길함입니다.",
-          "interpretive_ko": "바퀴를 당기는 것은 바름하고 길함입니다.",
+          "label_ko": "구이",
+          "original": "曳其輪 貞吉",
+          "reading_ko": "예기륜 정길",
+          "literal_ko": "수레 바퀴를 끌며 바르게 하면 길하다.",
+          "interpretive_ko": "속도를 늦추고 절차를 지키면 완성도가 오른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "예기륜, 정길.",
-          "gloss_en": "Pulling its wheel is chaste and auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "未濟，征凶，利涉大川。",
-          "literal_ko": "구원하시기 전에 원수가 정복되고 큰 강이 유익을 얻으리라.",
-          "interpretive_ko": "구원하시기 전에 원수가 정복되고 큰 강이 유익을 얻으리라.",
+          "label_ko": "육삼",
+          "original": "未濟 征凶 利涉大川",
+          "reading_ko": "미제 정흉 리섭대천",
+          "literal_ko": "미제에서 나아가면 흉하나 큰 내를 건넘은 이롭다.",
+          "interpretive_ko": "무리한 전진은 위험하지만, 큰 구조 전환은 오히려 필요할 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "미제, 정흉, 리섭대천.",
-          "gloss_en": "Before the rescue, the enemy will be conquered, and the great river will be benefited."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "貞吉，悔亡，震用伐鬼方，三年有賞于大國。",
-          "literal_ko": "진기는 자신의 죽음을 후회하고 귀신을 공격하는 방법을 사용하여 3년 만에 대국의 보상을 받았다.",
-          "interpretive_ko": "진기는 자신의 죽음을 후회하고 귀신을 공격하는 방법을 사용하여 3년 만에 대국의 보상을 받았다.",
+          "label_ko": "구사",
+          "original": "貞吉 悔亡 震用伐鬼方 三年有賞于大國",
+          "reading_ko": "정길 회망 진용벌귀방 삼년유상우대국",
+          "literal_ko": "바르게 길하고 뉘우침이 사라진다. 진이 귀방을 쳐 삼 년 뒤 대국에서 상을 받는다.",
+          "interpretive_ko": "완성 직전엔 중장기 집행력이 최종 평가를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정길, 회망, 진용벌귀방, 삼년유상우대국.",
-          "gloss_en": "Zhenji, regretted his death, used the method of attacking ghosts, and was rewarded by the great country in three years."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "貞吉，無悔，君子之光，有孚，吉。",
-          "literal_ko": "바름과 상서로움, 후회 없음, 신사의 빛, 번영과 행운.",
-          "interpretive_ko": "바름과 상서로움, 후회 없음, 신사의 빛, 번영과 행운.",
+          "label_ko": "육오",
+          "original": "貞吉 无悔 君子之光 有孚 吉",
+          "reading_ko": "정길 무회 군자지광 유부 길",
+          "literal_ko": "바르게 길하고 후회가 없다. 군자의 빛이 믿음을 얻어 길하다.",
+          "interpretive_ko": "마무리 단계의 투명성과 품격이 신뢰를 완성한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정길, 무회, 군자지광, 유부, 길.",
-          "gloss_en": "Chastity and auspiciousness, no regrets, the light of a gentleman, prosperity and good luck."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "有孚于飲酒，無咎，濡其首，有孚失是。",
-          "literal_ko": "술을 잘 마시면 자책하지 않습니다. 머리를 적시면 틀릴 것입니다.",
-          "interpretive_ko": "술을 잘 마시면 자책하지 않습니다. 머리를 적시면 틀릴 것입니다.",
+          "label_ko": "상구",
+          "original": "有孚于飲酒 无咎 濡其首 有孚失是",
+          "reading_ko": "유부우음주 무구 유기수 유부실시",
+          "literal_ko": "술 마심에도 믿음이 있으면 허물이 없다. 머리를 적시면 믿음을 잃는다.",
+          "interpretive_ko": "끝의 여유는 좋지만 선을 넘으면 신뢰를 잃는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "유부우飲주, 무구, 유기수, 유부실시.",
-          "gloss_en": "If you are good at drinking alcohol, you will not blame yourself. If you wet your head, you will be wrong."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
