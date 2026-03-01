@@ -5065,99 +5065,99 @@
     {
       "id": 50,
       "gua_text": {
-        "original": "鼎，元吉，亨。",
-        "literal_ko": "딩, 위안지, 헝.",
-        "interpretive_ko": "딩, 위안지, 헝.",
+        "original": "鼎 元吉 亨",
+        "reading_ko": "정 원길 형",
+        "literal_ko": "정은 크게 길하고 형통하다.",
+        "interpretive_ko": "가치를 새롭게 조리해 내는 전환의 시기다. 그릇과 운영이 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "정, 원길, 형.",
-        "gloss_en": "Ding, Yuan Ji, Heng."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "鼎顛趾，利出否，得妾以其子，無咎。",
-          "literal_ko": "삼각대의 발가락이 뾰족하면 첩으로 사용해도, 아들로 사용해도 문제가 없습니다.",
-          "interpretive_ko": "삼각대의 발가락이 뾰족하면 첩으로 사용해도, 아들로 사용해도 문제가 없습니다.",
+          "label_ko": "초육",
+          "original": "鼎顛趾 利出否 得妾以其子 无咎",
+          "reading_ko": "정전지 이출부 득첩이기자 무구",
+          "literal_ko": "솥이 발이 뒤집히니 찌꺼기를 내보냄이 이롭다. 첩을 얻어 그 아들을 얻어도 허물이 없다.",
+          "interpretive_ko": "초기 정리는 어수선해 보여도 불순물을 빼내는 과정이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정顛지, 리출부, 득첩이기자, 무구.",
-          "gloss_en": "If the tripod has a sharp toe, whether it can be used as a concubine or a son, there will be no blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "鼎有實，我仇有疾，不我能即，吉。",
-          "literal_ko": "삼각대가 단단해서 미움과 병이 있습니다. 내가 할 수 없다면 길함이다.",
-          "interpretive_ko": "삼각대가 단단해서 미움과 병이 있습니다. 내가 할 수 없다면 길함이다.",
+          "label_ko": "구이",
+          "original": "鼎有實 我仇有疾 不我能即 吉",
+          "reading_ko": "정유실 아구유질 불아능즉 길",
+          "literal_ko": "솥에 실한 것이 있고 내 원수는 병이 있어 나아오지 못하니 길하다.",
+          "interpretive_ko": "내실이 있으면 외부 공격은 자연히 약해진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정유실, 아구유질, 부아능즉, 길.",
-          "gloss_en": "The tripod is solid, and I have a hatred and illness. If I can't do it, it's auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。",
-          "literal_ko": "삼각대의 귀 가죽이 막혀 꿩 연고를 먹을 수 없습니다. 는 후회하겠지만 결국에는 좋을 것입니다.",
-          "interpretive_ko": "삼각대의 귀 가죽이 막혀 꿩 연고를 먹을 수 없습니다. 는 후회하겠지만 결국에는 좋을 것입니다.",
+          "label_ko": "구삼",
+          "original": "鼎耳革 其行塞 雉膏不食 方雨虧悔 終吉",
+          "reading_ko": "정이혁 기행색 치고불식 방우휴회 종길",
+          "literal_ko": "솥의 귀가 바뀌어 행함이 막히고 꿩기름을 먹지 못하나, 비가 오면 뉘우침이 줄어 마침내 길하다.",
+          "interpretive_ko": "운영 병목은 일시적일 수 있다. 환경 변화가 오면 다시 흐른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정이혁, 기항새, 치고부식, 방우휴회, 종길.",
-          "gloss_en": "The tripod's ear leather is blocked, and the pheasant ointment cannot be eaten. Fang Yu will regret it, but it will be good in the end."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "鼎折足，覆公餗，其形渥，凶。",
-          "literal_ko": "삼각대는 다리를 부러 뜨리고 수컷 혈관을 덮습니다. 그 모양은 풍부하고 흉하다.",
-          "interpretive_ko": "삼각대는 다리를 부러 뜨리고 수컷 혈관을 덮습니다. 그 모양은 풍부하고 흉하다.",
+          "label_ko": "구사",
+          "original": "鼎折足 覆公餗 其形渥 凶",
+          "reading_ko": "정절족 복공속 기형악 흉",
+          "literal_ko": "솥 다리가 부러져 공의 음식을 엎고 몸이 젖어 흉하다.",
+          "interpretive_ko": "핵심 인프라 붕괴는 곧바로 신뢰 손실로 이어진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정절족, 복공餗, 기형악, 흉.",
-          "gloss_en": "The tripod breaks its legs and covers the male vessel. Its shape is rich and fierce."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "鼎黃耳金鉉，利貞。",
-          "literal_ko": "삼각대의 노란색 귀는 금색으로 바름에 유익합니다.",
-          "interpretive_ko": "삼각대의 노란색 귀는 금색으로 바름에 유익합니다.",
+          "label_ko": "육오",
+          "original": "鼎黃耳金鉉 利貞",
+          "reading_ko": "정황이금현 이정",
+          "literal_ko": "솥의 누런 귀와 금 고리니 바름이 이롭다.",
+          "interpretive_ko": "좋은 시스템과 인재 연결이 운영 품질을 끌어올린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정황이금현, 리정.",
-          "gloss_en": "The yellow ear of the tripod is golden, which is beneficial to chastity."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "鼎玉鉉，大吉，無不利。",
-          "literal_ko": "행운을 빌며 해로움이 없다.",
-          "interpretive_ko": "행운을 빌며 해로움이 없다.",
+          "label_ko": "상구",
+          "original": "鼎玉鉉 大吉 无不利",
+          "reading_ko": "정옥현 대길 무불리",
+          "literal_ko": "솥의 옥 고리니 크게 길하여 이롭지 않음이 없다.",
+          "interpretive_ko": "성숙한 운영 체계는 확장해도 안정성을 유지한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정옥현, 대길, 무부리.",
-          "gloss_en": "Ding Yuxuan, good luck and no disadvantages."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5168,99 +5168,99 @@
     {
       "id": 51,
       "gua_text": {
-        "original": "震，亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。",
-        "literal_ko": "젠, 헝. 나는 충격에 휩싸여 말문이 막혔다. 수백 마일 동안 충격을 받아도 나는 결코 단검을 잃지 않을 것입니다.",
-        "interpretive_ko": "젠, 헝. 나는 충격에 휩싸여 말문이 막혔다. 수백 마일 동안 충격을 받아도 나는 결코 단검을 잃지 않을 것입니다.",
+        "original": "震 亨 震來虩虩 笑言啞啞 震驚百里 不喪匕鬯",
+        "reading_ko": "진 형 진래혁혁 소언아아 진경백리 불상비창",
+        "literal_ko": "진은 형통하다. 우레가 와 두려워 떨다가도 웃고 말이 나온다. 백 리를 놀라게 해도 제사용 술그릇은 잃지 않는다.",
+        "interpretive_ko": "충격은 피할 수 없지만 중심을 지키면 시스템은 무너지지 않는다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "진, 형. 진내虩虩, 소언아아. 진경백리, 부상비창.",
-        "gloss_en": "Zhen, Heng. The shock came to me, and I was speechless with laughter. Shocked for hundreds of miles, I will never lose my dagger."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "震來虩虩，后笑言啞啞，吉。",
-          "literal_ko": "나는 충격을 받았고, 나는 웃으며 쉰 목소리로 행운을 빕니다라고 말했다.",
-          "interpretive_ko": "나는 충격을 받았고, 나는 웃으며 쉰 목소리로 행운을 빕니다라고 말했다.",
+          "label_ko": "초구",
+          "original": "震來虩虩 後笑言啞啞 吉",
+          "reading_ko": "진래혁혁 후소언아아 길",
+          "literal_ko": "우레가 와 두려워 떨다가 뒤에 웃고 말하니 길하다.",
+          "interpretive_ko": "초기 공포를 통과하면 회복 탄력이 생긴다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진내虩虩, 후소언아아, 길.",
-          "gloss_en": "The shock came to me, and I laughed and said hoarsely, good luck."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "震來厲，億喪貝，躋于九陵，勿逐，七日得。",
-          "literal_ko": "지진이 너무 심해서 주링에는 수억 개의 포탄이 묻혀있습니다. 그들을 쫓아내지 마십시오. 그들은 7일 안에 발견될 것입니다.",
-          "interpretive_ko": "지진이 너무 심해서 주링에는 수억 개의 포탄이 묻혀있습니다. 그들을 쫓아내지 마십시오. 그들은 7일 안에 발견될 것입니다.",
+          "label_ko": "육이",
+          "original": "震來厲 億喪貝 躋于九陵 勿逐 七日得",
+          "reading_ko": "진래려 억상패 제우구릉 물축 칠일득",
+          "literal_ko": "우레가 와 위태로워 재물을 잃고 높은 언덕에 오른다. 쫓지 말면 칠일에 얻는다.",
+          "interpretive_ko": "충격 직후 손실 추격을 멈추고 안전지대로 이동해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진내려, 억상배, 제우구능, 물축, 칠일득.",
-          "gloss_en": "The earthquake is so severe that hundreds of millions of shells are buried in Jiuling. Don't chase them away. They will be found in seven days."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "震蘇蘇，震行無眚。",
-          "literal_ko": "충격적인 수수, 충격적인",
-          "interpretive_ko": "충격적인 수수, 충격적인",
+          "label_ko": "육삼",
+          "original": "震蘇蘇 震行无眚",
+          "reading_ko": "진소소 진행무생",
+          "literal_ko": "우레에 떨리나 행하면 재앙이 없다.",
+          "interpretive_ko": "불안이 있어도 최소 실행을 유지하면 무너지지 않는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진소소, 진항무생.",
-          "gloss_en": "Shocking Susu, shocking Xingwuyi."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "震遂泥。",
-          "literal_ko": "지진으로 진흙이 흔들렸다.",
-          "interpretive_ko": "지진으로 진흙이 흔들렸다.",
+          "label_ko": "구사",
+          "original": "震遂泥",
+          "reading_ko": "진수니",
+          "literal_ko": "우레에 빠져 진흙에 빠진다.",
+          "interpretive_ko": "충격 이후 판단 지연은 수렁을 깊게 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진수니.",
-          "gloss_en": "The earthquake shook the mud."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "震往來厲，億無喪，有事。",
-          "literal_ko": "지진은 맹렬하게 왔다 갔다 하며, 수억의 손실은 없습니다. 무슨 일이 일어나고 있습니다.",
-          "interpretive_ko": "지진은 맹렬하게 왔다 갔다 하며, 수억의 손실은 없습니다. 무슨 일이 일어나고 있습니다.",
+          "label_ko": "육오",
+          "original": "震往來厲 億无喪 有事",
+          "reading_ko": "진왕래려 억무상 유사",
+          "literal_ko": "우레가 오가며 위태로우나 크게 잃음은 없고 일이 있다.",
+          "interpretive_ko": "반복 충격기엔 손실 최소화와 운영 지속이 목표다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진왕내려, 억무상, 유사.",
-          "gloss_en": "The earthquakes come and go fiercely, and there is no loss of hundreds of millions. There is something going on."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "震索索，視矍矍，征凶。震不于其躬，于其鄰，無咎。婚媾有言。",
-          "literal_ko": "밧줄을 흔들고, 건강하고 왕성한 표정을 짓고, 악을 위협합니다. 그것은 활에 충격을 주지 않으며 이웃을 허물하지도 않습니다. 결혼에도 말이 있다.",
-          "interpretive_ko": "밧줄을 흔들고, 건강하고 왕성한 표정을 짓고, 악을 위협합니다. 그것은 활에 충격을 주지 않으며 이웃을 허물하지도 않습니다. 결혼에도 말이 있다.",
+          "label_ko": "상육",
+          "original": "震索索 視矍矍 征凶 震不于其躬 于其鄰 无咎 婚媾有言",
+          "reading_ko": "진색색 시확확 정흉 진불우기궁 우기린 무구 혼구유언",
+          "literal_ko": "우레에 오싹하고 눈이 휘둥그레하니 나아가면 흉하다. 우레가 내 몸이 아닌 이웃에 있으면 허물은 없으나 혼인에 말이 있다.",
+          "interpretive_ko": "끝에서는 과민 반응을 줄이고 주변 리스크 전이를 관리해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진삭삭, 시확확, 정흉. 진부우기궁, 우기린, 무구. 혼구유언.",
-          "gloss_en": "Shaking the rope, looking hale and hearty, threatening evil. It is not a shock to its bow, and it is not to blame for its neighbors. There are words in marriage."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5271,99 +5271,99 @@
     {
       "id": 52,
       "gua_text": {
-        "original": "艮，艮其背，不獲其身，行其庭，不見其人，無咎。",
-        "literal_ko": "겐, 뒤에 겐, 사람을 잡지 못해도, 법정에 걸어도, 사람을 보지 못해도 죄가 없습니다.",
-        "interpretive_ko": "겐, 뒤에 겐, 사람을 잡지 못해도, 법정에 걸어도, 사람을 보지 못해도 죄가 없습니다.",
+        "original": "艮 艮其背 不獲其身 行其庭 不見其人 无咎",
+        "reading_ko": "간 간기배 불획기신 행기정 불견기인 무구",
+        "literal_ko": "간은 등을 멈추어 몸을 얻지 못한다. 뜰을 거닐어도 사람을 보지 못하니 허물이 없다.",
+        "interpretive_ko": "멈춤의 시기다. 외부 자극을 줄여 중심을 회복해야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "간, 간기배, 부획기신, 항기정, 부견기인, 무구.",
-        "gloss_en": "Gen, Gen on the back, if you don't catch the person, if you walk in the court, if you don't see the person, there is no blame."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "艮其趾，無咎，利永貞。",
-          "literal_ko": "의 발가락은 허물에서 자유롭고 에게 이익이됩니다.",
-          "interpretive_ko": "의 발가락은 허물에서 자유롭고 에게 이익이됩니다.",
+          "label_ko": "초육",
+          "original": "艮其趾 无咎 利永貞",
+          "reading_ko": "간기지 무구 이영정",
+          "literal_ko": "발가락을 멈추면 허물이 없고 오래 바르게 함이 이롭다.",
+          "interpretive_ko": "작은 행동부터 멈추면 큰 과열을 막을 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간기지, 무구, 리영정.",
-          "gloss_en": "Gen's toes are free from blame and benefit Yongzhen."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "艮其腓，不拯其隨，其心不快。",
-          "literal_ko": "장군이 추종자들을 구하지 않으면 그의 마음은 행복하지 않을 것입니다.",
-          "interpretive_ko": "장군이 추종자들을 구하지 않으면 그의 마음은 행복하지 않을 것입니다.",
+          "label_ko": "육이",
+          "original": "艮其腓 不拯其隨 其心不快",
+          "reading_ko": "간기비 불증기수 기심불쾌",
+          "literal_ko": "장딴지를 멈추고 따르는 이를 구하지 못하니 마음이 불쾌하다.",
+          "interpretive_ko": "혼자 멈춰도 팀 리듬이 안 맞으면 스트레스가 커진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간기비, 부증기수, 기심부쾌.",
-          "gloss_en": "Gen Qifei, if he does not save his followers, his heart will not be happy."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "艮其限，列其夤，厲薰心。",
-          "literal_ko": "의 한계가 나열되고, 그의 미덕이 나열되고, 그의 마음이 날카로워집니다.",
-          "interpretive_ko": "의 한계가 나열되고, 그의 미덕이 나열되고, 그의 마음이 날카로워집니다.",
+          "label_ko": "구삼",
+          "original": "艮其限 列其夤 厲薰心",
+          "reading_ko": "간기한 열기인 려훈심",
+          "literal_ko": "허리를 멈추니 옆구리가 찢기듯 위태로워 마음을 태운다.",
+          "interpretive_ko": "억지 정지는 내부 압력만 키울 수 있어 조절이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간기한, 렬기인, 려훈심.",
-          "gloss_en": "Gen's limitations are listed, his virtues are listed, and his heart is sharpened."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "艮其身，無咎。",
-          "literal_ko": "그의 몸은 책임이 없습니다.",
-          "interpretive_ko": "그의 몸은 책임이 없습니다.",
+          "label_ko": "육사",
+          "original": "艮其身 无咎",
+          "reading_ko": "간기신 무구",
+          "literal_ko": "몸을 멈추면 허물이 없다.",
+          "interpretive_ko": "전체 속도를 낮추는 결단이 사고를 예방한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간기신, 무구.",
-          "gloss_en": "Gen his body, no blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "艮其輔，言有序，悔亡。",
-          "literal_ko": "는 돕고, 질서있게 말하고, 그의 죽음을 후회합니다.",
-          "interpretive_ko": "는 돕고, 질서있게 말하고, 그의 죽음을 후회합니다.",
+          "label_ko": "육오",
+          "original": "艮其輔 言有序 悔亡",
+          "reading_ko": "간기보 언유서 회망",
+          "literal_ko": "입가를 멈추니 말에 차례가 있어 뉘우침이 사라진다.",
+          "interpretive_ko": "말의 절제가 관계 리스크를 줄인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "간기보, 언유서, 회망.",
-          "gloss_en": "Gen Qi assists, speaks in an orderly manner, and regrets his death."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "敦艮，吉。",
-          "literal_ko": "키르기스스탄 둔겐.",
-          "interpretive_ko": "키르기스스탄 둔겐.",
+          "label_ko": "상구",
+          "original": "敦艮 吉",
+          "reading_ko": "돈간 길",
+          "literal_ko": "돈독히 멈추면 길하다.",
+          "interpretive_ko": "끝의 안정화는 깊고 꾸준한 멈춤에서 완성된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "돈간, 길.",
-          "gloss_en": "Dungen, Kyrgyzstan."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5374,99 +5374,99 @@
     {
       "id": 53,
       "gua_text": {
-        "original": "漸，女歸吉，利貞。",
-        "literal_ko": "점차적으로 그 소녀는 행운을 빌어 그녀의 처녀성에 도움이 될 것입니다.",
-        "interpretive_ko": "점차적으로 그 소녀는 행운을 빌어 그녀의 처녀성에 도움이 될 것입니다.",
+        "original": "漸 女歸吉 利貞",
+        "reading_ko": "점 여귀길 이정",
+        "literal_ko": "점은 여자가 시집감이 길하고 바름이 이롭다.",
+        "interpretive_ko": "점진적 전개의 시기다. 순서를 지키는 느린 성장 전략이 맞다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "점, 녀귀길, 리정.",
-        "gloss_en": "Gradually, the girl will return to good luck and be beneficial to her virginity."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "鴻漸于干，小子厲。有言，無咎。",
-          "literal_ko": "홍지안은 일을 잘하는데 소년은 일을 열심히 한다. 허물 없음.",
-          "interpretive_ko": "홍지안은 일을 잘하는데 소년은 일을 열심히 한다. 허물 없음.",
+          "label_ko": "초육",
+          "original": "鴻漸于干 小子厲 有言 无咎",
+          "reading_ko": "홍점우간 소자려 유언 무구",
+          "literal_ko": "기러기가 물가로 점차 간다. 어린 자가 위태로워 말이 있으나 허물이 없다.",
+          "interpretive_ko": "초기엔 잡음이 있어도 방향이 맞으면 괜찮다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "홍점우간, 소자려. 유언, 무구.",
-          "gloss_en": "Hongjian is good at doing things, but the boy is hard at work. There is no blame to be said."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "鴻漸于磐，飲食衎衎，吉。",
-          "literal_ko": "기러기가 바위에 이르니 먹고 마심이 편안하여 길하다.",
-          "interpretive_ko": "점진적 전개 속에서 중간 안착점을 확보하면 안정적으로 전진할 수 있다.",
+          "label_ko": "육이",
+          "original": "鴻漸于磐 飲食衎衎 吉",
+          "reading_ko": "홍점우반 음식간간 길",
+          "literal_ko": "기러기가 바위로 점차 가니 먹고 마심이 즐거워 길하다.",
+          "interpretive_ko": "중간 안착 지점을 확보하면 성장의 안정감이 생긴다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "홍점우반, 飲식간간, 길.",
-          "gloss_en": "Hongjian is in the rock, eating and drinking is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "鴻漸于陸，夫征不復，婦孕不育，凶。利御寇。",
-          "literal_ko": "홍건이 땅에 도착했을 때 남편의 전투는 사라졌고 아내는 불임이며 불운했습니다. 적으로부터 이익을 얻으십시오.",
-          "interpretive_ko": "홍건이 땅에 도착했을 때 남편의 전투는 사라졌고 아내는 불임이며 불운했습니다. 적으로부터 이익을 얻으십시오.",
+          "label_ko": "구삼",
+          "original": "鴻漸于陸 夫征不復 婦孕不育 凶 利禦寇",
+          "reading_ko": "홍점우륙 부정불복 부잉불육 흉 이어구",
+          "literal_ko": "기러기가 육지로 점차 가니 남편은 가서 돌아오지 않고 아내는 잉태해도 기르지 못해 흉하다. 도적을 막는 데 이롭다.",
+          "interpretive_ko": "순서를 무시한 확장은 관계와 결과를 동시에 해친다. 방어가 우선이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "홍점우륙, 부정부복, 부잉부육, 흉. 리어구.",
-          "gloss_en": "When Hongjian arrived in the land, his husband's battle was gone, his wife was infertile, and it was bad luck. Benefit from the enemy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "鴻漸于木，或得其桷，無咎。",
-          "literal_ko": "은 숲 속에 있었고 그가 를 얻었을 수도 있고 잘못이 없을 것입니다.",
-          "interpretive_ko": "은 숲 속에 있었고 그가 를 얻었을 수도 있고 잘못이 없을 것입니다.",
+          "label_ko": "육사",
+          "original": "鴻漸于木 或得其桷 无咎",
+          "reading_ko": "홍점우목 혹득기각 무구",
+          "literal_ko": "기러기가 나무로 점차 가서 혹 들보를 얻으니 허물이 없다.",
+          "interpretive_ko": "조건이 맞는 발판을 찾으면 무리 없이 다음 단계로 간다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "홍점우목, 혹득기각, 무구.",
-          "gloss_en": "Hongjian was in the wood, and he might have obtained the jie, and there would be no fault."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "鴻漸于陵，婦三歲不孕，終莫之勝，吉。",
-          "literal_ko": "홍건이 능에 있을 때 그의 아내는 세 살 때 불임이었기 때문에 결국 승리를 거두었으니 이는 길함이다.",
-          "interpretive_ko": "홍건이 능에 있을 때 그의 아내는 세 살 때 불임이었기 때문에 결국 승리를 거두었으니 이는 길함이다.",
+          "label_ko": "구오",
+          "original": "鴻漸于陵 婦三歲不孕 終莫之勝 吉",
+          "reading_ko": "홍점우릉 부삼세불잉 종막지승 길",
+          "literal_ko": "기러기가 언덕으로 점차 가니 아내가 삼 년 잉태하지 못하나 끝내 이기지 못해 길하다.",
+          "interpretive_ko": "지연이 길어도 방향이 맞으면 결국 성과가 온다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "홍점우능, 부삼세부잉, 종막지승, 길.",
-          "gloss_en": "When Hongjian was in the mausoleum, his wife was infertile at the age of three, so she won the victory in the end, which is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "鴻漸于逵，其羽可用為儀，吉。",
-          "literal_ko": "은 에 있으며 그의 깃털은 의식 도구와 행운으로 사용될 수 있습니다.",
-          "interpretive_ko": "은 에 있으며 그의 깃털은 의식 도구와 행운으로 사용될 수 있습니다.",
+          "label_ko": "상구",
+          "original": "鴻漸于陸 其羽可用為儀 吉",
+          "reading_ko": "홍점우륙 기우가용위의 길",
+          "literal_ko": "기러기가 육지로 점차 가니 그 깃은 의례에 쓸 만해 길하다.",
+          "interpretive_ko": "완성 단계에선 과정의 품질이 표준이 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "홍점우규, 기우가용為의, 길.",
-          "gloss_en": "Hongjian is in Kui, and his feathers can be used as ritual instruments and good luck."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
