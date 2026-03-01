@@ -5477,99 +5477,99 @@
     {
       "id": 54,
       "gua_text": {
-        "original": "歸妹，征凶，無攸利。",
-        "literal_ko": "내 여동생에게 돌아가면 불운이 찾아오고 이익도 없을 것입니다.",
-        "interpretive_ko": "내 여동생에게 돌아가면 불운이 찾아오고 이익도 없을 것입니다.",
+        "original": "歸妹 征凶 无攸利",
+        "reading_ko": "귀매 정흉 무유리",
+        "literal_ko": "귀매는 나아가면 흉하고 이로움이 없다.",
+        "interpretive_ko": "조건 미정 상태의 결합은 위험하다. 구조를 갖추기 전 성급한 실행을 피해야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "귀매, 정흉, 무유리.",
-        "gloss_en": "Returning to my sister will bring bad luck and no profit."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "歸妹以娣，跛能履，征吉。",
-          "literal_ko": "내 여동생 이디(에게 돌아오자 그녀는 절뚝거리고 걸을 수 있게 되었는데, 이는 길함이다.",
-          "interpretive_ko": "내 여동생 이디(에게 돌아오자 그녀는 절뚝거리고 걸을 수 있게 되었는데, 이는 길함이다.",
+          "label_ko": "초구",
+          "original": "歸妹以娣 跛能履 征吉",
+          "reading_ko": "귀매이제 파능리 정길",
+          "literal_ko": "여동생 신분으로 시집가니 절름발이라도 걸을 수 있어 나아가면 길하다.",
+          "interpretive_ko": "완전하지 않은 시작이라도 역할을 명확히 하면 성과를 낼 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "귀매이제, 파능리, 정길.",
-          "gloss_en": "Returning to my sister Yidi, she is lame and able to walk, which is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "眇能視，利幽人之貞。",
-          "literal_ko": "전갈은 사람들의 바름에 도움이 될 수 있는 것을 볼 수 있습니다.",
-          "interpretive_ko": "전갈은 사람들의 바름에 도움이 될 수 있는 것을 볼 수 있습니다.",
+          "label_ko": "구이",
+          "original": "眇能視 利幽人之貞",
+          "reading_ko": "묘능시 이유인지정",
+          "literal_ko": "애꾸라도 볼 수 있으니 숨어 사는 이의 바름이 이롭다.",
+          "interpretive_ko": "제약이 있어도 내실 있는 기준을 지키면 지속 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "묘능시, 리유인지정.",
-          "gloss_en": "The scorpion can see, which can benefit people's chastity."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "歸妹以須，反歸以娣。",
-          "literal_ko": "수염을 기른 ​​내 동생에게 돌아가되, 수염을 기른 ​​내 동생에게 돌아가라.",
-          "interpretive_ko": "수염을 기른 ​​내 동생에게 돌아가되, 수염을 기른 ​​내 동생에게 돌아가라.",
+          "label_ko": "육삼",
+          "original": "歸妹以須 反歸以娣",
+          "reading_ko": "귀매이수 반귀이제",
+          "literal_ko": "기다림으로 시집가고 도리어 여동생 신분으로 돌아간다.",
+          "interpretive_ko": "조건이 맞지 않는 결합은 재조정이 필요하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "귀매이수, 반귀이제.",
-          "gloss_en": "Return to my sister with a beard, but return to my sister with a beard."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "歸妹愆期，遲歸有時。",
-          "literal_ko": "언니에게 돌아갈 때 오해를 받는 시기도 있고, 집에 늦게 돌아올 때가 있다.",
-          "interpretive_ko": "언니에게 돌아갈 때 오해를 받는 시기도 있고, 집에 늦게 돌아올 때가 있다.",
+          "label_ko": "구사",
+          "original": "歸妹愆期 遲歸有時",
+          "reading_ko": "귀매건기 지귀유시",
+          "literal_ko": "귀매가 시기를 어겨 늦게 시집가도 때가 있다.",
+          "interpretive_ko": "지연은 실패가 아니다. 맞는 타이밍을 기다리면 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "귀매건기, 지귀유시.",
-          "gloss_en": "There is a period of misunderstanding when returning to my sister, and there is a time when I return home late."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "帝乙歸妹，其君之袂，不如其娣之袂良，月几望，吉。",
-          "literal_ko": "이순신 황제는 여동생에게로 돌아가고, 왕의 소매는 후궁의 소매만큼 좋지 않습니다. 달을 바라보는 것은 길함이다.",
-          "interpretive_ko": "이순신 황제는 여동생에게로 돌아가고, 왕의 소매는 후궁의 소매만큼 좋지 않습니다. 달을 바라보는 것은 길함이다.",
+          "label_ko": "육오",
+          "original": "帝乙歸妹 其君之袂 不如其娣之袂良 月幾望 吉",
+          "reading_ko": "제을귀매 기군지몌 불여기제지몌량 월기망 길",
+          "literal_ko": "제을이 누이를 시집보내니 군주의 소매가 여동생 소매만 못하나 달이 거의 찼으니 길하다.",
+          "interpretive_ko": "외형 격보다 실질 품질이 관계의 성패를 가른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "제을귀매, 기군지몌, 부여기제지몌량, 월궤망, 길.",
-          "gloss_en": "Emperor Yi returns to his younger sister, and his king's sleeves are not as good as those of his concubines. Looking at the moon is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "女承筐無實，士刲羊無血，無攸利。",
-          "literal_ko": "여자가 광주리를 나르는 것은 헛된 일이고, 학자가 양을 치는 것은 피와 유익이 없습니다.",
-          "interpretive_ko": "여자가 광주리를 나르는 것은 헛된 일이고, 학자가 양을 치는 것은 피와 유익이 없습니다.",
+          "label_ko": "상육",
+          "original": "女承筐无實 士刲羊无血 无攸利",
+          "reading_ko": "여승광무실 사규양무혈 무유리",
+          "literal_ko": "여자가 광주리를 받들어도 실함이 없고 선비가 양을 찔러도 피가 없으니 이로움이 없다.",
+          "interpretive_ko": "형식만 남고 내용이 비면 결과도 비어 버린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "녀승광무실, 사규양무혈, 무유리.",
-          "gloss_en": "A woman's carrying of a basket is of no substance, and a scholar's shepherding of sheep is of no blood and profit."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5580,99 +5580,99 @@
     {
       "id": 55,
       "gua_text": {
-        "original": "丰，亨，王假之，勿憂，宜日中。",
-        "literal_ko": "펑, 헝, 왕은 거짓이니 걱정하지 마세요.",
-        "interpretive_ko": "펑, 헝, 왕은 거짓이니 걱정하지 마세요.",
+        "original": "豐 亨 王假之 勿憂 宜日中",
+        "reading_ko": "풍 형 왕가지 물우 의일중",
+        "literal_ko": "풍은 형통하니 왕이 이른다. 근심하지 말고 한낮처럼 밝게 하라.",
+        "interpretive_ko": "풍성한 시기일수록 명료한 운영과 균형 잡힌 관리가 필요하다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "봉, 형, 왕가지, 물우, 의일중.",
-        "gloss_en": "Feng, Heng, the king is false, don't worry, it's better to be in the middle of the day."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "遇其配主，雖旬無咎，往有尚。",
-          "literal_ko": "배우자를 만나면 며칠이 남더라도 아무 잘못이 없습니다.",
-          "interpretive_ko": "배우자를 만나면 며칠이 남더라도 아무 잘못이 없습니다.",
+          "label_ko": "초구",
+          "original": "遇其配主 雖旬无咎 往有尚",
+          "reading_ko": "우기배주 수순무구 왕유상",
+          "literal_ko": "짝이 되는 주인을 만나 열흘이 지나도 허물이 없고 가면 숭상됨이 있다.",
+          "interpretive_ko": "초기 파트너 정렬이 잘 되면 실행 품질이 빠르게 오른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "우기배주, 수순무구, 왕유尚.",
-          "gloss_en": "When you meet your spouse, you will have no fault even if you have a few days to go."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "丰其蔀，日中見斗，往得疑疾，有孚發若，吉。",
-          "literal_ko": "풍성하나 가려져 투쟁을 보니, 믿음을 두고 나아가면 길하다.",
-          "interpretive_ko": "자원이 많아도 혼선이 생길 수 있으니 신뢰와 중심을 지키면 길하다.",
+          "label_ko": "육이",
+          "original": "豐其蔀 日中見斗 往得疑疾 有孚發若 吉",
+          "reading_ko": "풍기부 일중견두 왕득의질 유부발약 길",
+          "literal_ko": "가림막이 풍성해 한낮에 북두를 본다. 가면 의심과 병을 얻으나 믿음으로 드러내면 길하다.",
+          "interpretive_ko": "정보 과잉으로 시야가 가려질 때, 투명한 소통이 돌파구다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "봉기부, 일중견두, 왕득의질, 유부발야, 길.",
-          "gloss_en": "If it is abundant, you will see fights in the middle of the day, and you will get suspicious diseases. If you are prosperous, it will be auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "丰其沛，日中見昧，折其右肱，無咎。",
-          "literal_ko": "풍성하지만 잘 보면 오른팔이 부러져도 흠이 없습니다.",
-          "interpretive_ko": "풍성하지만 잘 보면 오른팔이 부러져도 흠이 없습니다.",
+          "label_ko": "구삼",
+          "original": "豐其沛 日中見沬 折其右肱 无咎",
+          "reading_ko": "풍기패 일중견말 절기우굉 무구",
+          "literal_ko": "휘장이 풍성해 한낮에 작은 별을 보고 오른팔을 꺾어도 허물이 없다.",
+          "interpretive_ko": "부분 손실을 감수해도 핵심을 지키면 전체는 살린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "봉기패, 일중견매, 절기우굉, 무구.",
-          "gloss_en": "It is abundant, but when you see it in the middle of the day, you will break your right arm, and there is no fault."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "丰其蔀，日中見斗，遇其夷主，吉。",
-          "literal_ko": "풍부하다면 한낮에 싸움을 보고 그 야만인 주인을 만나면 길한 일이 될 것입니다.",
-          "interpretive_ko": "풍부하다면 한낮에 싸움을 보고 그 야만인 주인을 만나면 길한 일이 될 것입니다.",
+          "label_ko": "구사",
+          "original": "豐其蔀 日中見斗 遇其夷主 吉",
+          "reading_ko": "풍기부 일중견두 우기이주 길",
+          "literal_ko": "가림막이 풍성해 한낮에 북두를 보나 동등한 주인을 만나 길하다.",
+          "interpretive_ko": "혼선 국면에서도 수평 협력이 이루어지면 안정된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "봉기부, 일중견두, 우기이주, 길.",
-          "gloss_en": "If it is abundant, it will be auspicious if you see a fight in the middle of the day and meet its barbarian master."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "來章，有慶譽，吉。",
-          "literal_ko": "장(張)에 오면 좋은 평판을 얻을 수 있어 길함이다.",
-          "interpretive_ko": "장(張)에 오면 좋은 평판을 얻을 수 있어 길함이다.",
+          "label_ko": "육오",
+          "original": "來章 有慶譽 吉",
+          "reading_ko": "래장 유경예 길",
+          "literal_ko": "밝음이 오니 경사와 명예가 있어 길하다.",
+          "interpretive_ko": "정돈된 성과가 조직의 명성을 높인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "내장, 유경예, 길.",
-          "gloss_en": "If you come to Zhang, you will have a good reputation, which is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "丰其屋，蔀其家，窺其戶，闃其無人，三歲不見，凶。",
-          "literal_ko": "집을 부유하게 하고, 가족을 부양하고, 문을 들여다봐도 아무도 없고, 세 살 때 그를 그리워하는 것은 불운이다.",
-          "interpretive_ko": "집을 부유하게 하고, 가족을 부양하고, 문을 들여다봐도 아무도 없고, 세 살 때 그를 그리워하는 것은 불운이다.",
+          "label_ko": "상육",
+          "original": "豐其屋 蔀其家 闚其戶 闃其无人 三歲不覿 凶",
+          "reading_ko": "풍기옥 부기가 규기호 격기무인 삼세불적 흉",
+          "literal_ko": "집은 풍성하나 가림막으로 집을 덮어 문을 엿보아도 사람이 없다. 삼 년 보지 못하니 흉하다.",
+          "interpretive_ko": "외형 과잉은 내부 공동화를 부른다. 결국 고립으로 끝난다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "봉기옥, 부기가, 규기호, 격기무인, 삼세부견, 흉.",
-          "gloss_en": "To enrich his house, to take care of his family, to peek into his door, but to find no one there, and to miss him when he is three years old, is bad luck."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5683,99 +5683,99 @@
     {
       "id": 56,
       "gua_text": {
-        "original": "旅，小亨，旅貞吉。",
-        "literal_ko": "루, 샤오헝, 루 젠지.",
-        "interpretive_ko": "루, 샤오헝, 루 젠지.",
+        "original": "旅 小亨 旅貞吉",
+        "reading_ko": "려 소형 여정길",
+        "literal_ko": "려는 조금 형통하니, 나그네의 바름이 길하다.",
+        "interpretive_ko": "임시 국면에선 큰 욕심보다 원칙 있는 적응이 성과를 만든다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "려, 소형, 려정길.",
-        "gloss_en": "Lu, Xiaoheng, Lu Zhenji."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "旅瑣瑣，斯其所取災。",
-          "literal_ko": "여행은 사소한 것이며 이것이 재앙을 초래합니다.",
-          "interpretive_ko": "여행은 사소한 것이며 이것이 재앙을 초래합니다.",
+          "label_ko": "초육",
+          "original": "旅瑣瑣 斯其所取災",
+          "reading_ko": "려쇄쇄 사기소취재",
+          "literal_ko": "나그네가 자질구레하면 그것이 재앙을 부른다.",
+          "interpretive_ko": "사소한 집착이 이동기 리스크를 키운다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "려쇄쇄, 사기소취재.",
-          "gloss_en": "The journey is trivial, and this is the disaster it causes."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "旅即次，懷其資，得童仆貞。",
-          "literal_ko": "여행이 곧 일어날 것이며, 재능이 있다면 처녀가 될 것입니다.",
-          "interpretive_ko": "여행이 곧 일어날 것이며, 재능이 있다면 처녀가 될 것입니다.",
+          "label_ko": "육이",
+          "original": "旅即次 懷其資 得童僕貞",
+          "reading_ko": "려즉차 회기자 득동복정",
+          "literal_ko": "나그네가 여관에 들고 재물을 품으며 동복의 바름을 얻는다.",
+          "interpretive_ko": "임시 거점과 기본 자원 확보가 안정의 핵심이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "려즉차, 회기자, 득동부정.",
-          "gloss_en": "The journey is about to take place, and if you have the talent, you will be a virgin."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "旅焚其次，喪其童仆，貞厲。",
-          "literal_ko": "두 번째는 도로가 불타고 그의 젊은 종인 를 잃은 것입니다.",
-          "interpretive_ko": "두 번째는 도로가 불타고 그의 젊은 종인 를 잃은 것입니다.",
+          "label_ko": "구삼",
+          "original": "旅焚其次 喪其童僕 貞厲",
+          "reading_ko": "려분기차 상기동복 정려",
+          "literal_ko": "나그네가 묵을 곳을 태우고 동복을 잃으니 바르게 해도 위태롭다.",
+          "interpretive_ko": "거점 관리 실패는 즉시 실행력 저하로 이어진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "려분기차, 상기동부, 정려.",
-          "gloss_en": "The second was the burning of the road, and the loss of his young servant, Zhenli."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "旅于處，得其資斧，我心不快。",
-          "literal_ko": "여러 곳을 여행하다가 원하는 도끼를 얻게 되면 기분이 좋지 않습니다.",
-          "interpretive_ko": "여러 곳을 여행하다가 원하는 도끼를 얻게 되면 기분이 좋지 않습니다.",
+          "label_ko": "구사",
+          "original": "旅于處 得其資斧 我心不快",
+          "reading_ko": "려우처 득기자부 아심불쾌",
+          "literal_ko": "나그네가 머물 곳을 얻고 재물과 도끼를 얻어도 마음이 즐겁지 않다.",
+          "interpretive_ko": "자원은 있어도 소속감 부재가 지속 스트레스를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "려우처, 득기자부, 아심부쾌.",
-          "gloss_en": "I am not happy when I travel to various places and get the ax I want."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "射雉一矢亡，終以譽命。",
-          "literal_ko": "꿩을 쏘면 화살 한 발에 죽고, 결국 목숨을 기리는 셈이 된다.",
-          "interpretive_ko": "꿩을 쏘면 화살 한 발에 죽고, 결국 목숨을 기리는 셈이 된다.",
+          "label_ko": "육오",
+          "original": "射雉 一矢亡 終以譽命",
+          "reading_ko": "사지 일시설 종이예명",
+          "literal_ko": "꿩을 쏘아 한 화살을 잃으나 끝내 명예와 명을 얻는다.",
+          "interpretive_ko": "작은 비용을 치르더라도 핵심 성과를 얻으면 투자 가치가 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "사치일시망, 종이예명.",
-          "gloss_en": "Shooting a pheasant kills you with one arrow, and you end up honoring your life."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "鳥焚其巢，旅人先笑后號啕。喪牛于易，凶。",
-          "literal_ko": "새가 둥지를 불태울 때 여행자는 먼저 웃고 그다음에는 운다. 이순신에서 소를 잃는 것은 불운이다.",
-          "interpretive_ko": "새가 둥지를 불태울 때 여행자는 먼저 웃고 그다음에는 운다. 이순신에서 소를 잃는 것은 불운이다.",
+          "label_ko": "상구",
+          "original": "鳥焚其巢 旅人先笑後號咷 喪牛于易 凶",
+          "reading_ko": "조분기소 여인선소후호도 상우우이 흉",
+          "literal_ko": "새가 그 둥지를 태우고 나그네는 먼저 웃다 뒤에 통곡한다. 쉬운 곳에서 소를 잃으니 흉하다.",
+          "interpretive_ko": "끝의 방심이 누적 성과를 한 번에 무너뜨린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "조분기소, 려인선소후호啕. 상우우역, 흉.",
-          "gloss_en": "When a bird burns its nest, the traveler first laughs and then cries. Losing an ox in Yi is bad luck."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -5786,99 +5786,99 @@
     {
       "id": 57,
       "gua_text": {
-        "original": "巽，小亨，利有攸往，利見大人。",
-        "literal_ko": "은 미래와 어른들을 만나는 데 좋습니다.",
-        "interpretive_ko": "은 미래와 어른들을 만나는 데 좋습니다.",
+        "original": "巽 小亨 利有攸往 利見大人",
+        "reading_ko": "손 소형 리유유왕 이견대인",
+        "literal_ko": "손은 조금 형통하니 가는 바가 이롭고 대인을 보는 것이 이롭다.",
+        "interpretive_ko": "부드러운 침투의 시기다. 작은 반복 개선이 큰 전환을 만든다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "손, 소형, 리유유왕, 리견대인.",
-        "gloss_en": "Xun, Xiaoheng, is good for your future and meeting adults."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "進退，利武人之貞。",
-          "literal_ko": "전진하고 후퇴하여 전사의 바름을 이롭게 합니다.",
-          "interpretive_ko": "전진하고 후퇴하여 전사의 바름을 이롭게 합니다.",
+          "label_ko": "초육",
+          "original": "進退 利武人之貞",
+          "reading_ko": "진퇴 이무인지정",
+          "literal_ko": "나아가고 물러남에 무인의 바름이 이롭다.",
+          "interpretive_ko": "초기엔 전진·후퇴 리듬을 정확히 조절해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "진퇴, 리무인지정.",
-          "gloss_en": "Advance and retreat, benefiting the warrior's chastity."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "巽在床下，用史巫紛若，吉無咎。",
-          "literal_ko": "은 침대 밑에 있고 그의 역사는 마녀와 불행으로 가득 차 있지만 그에게는 잘못이 없습니다.",
-          "interpretive_ko": "은 침대 밑에 있고 그의 역사는 마녀와 불행으로 가득 차 있지만 그에게는 잘못이 없습니다.",
+          "label_ko": "구이",
+          "original": "巽在牀下 用史巫紛若 吉 无咎",
+          "reading_ko": "손재상하 용사무분약 길 무구",
+          "literal_ko": "손이 평상 아래에 있어 사관·무당을 어지럽게 써도 길하고 허물이 없다.",
+          "interpretive_ko": "보이지 않는 층위의 정보 수집이 효과를 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "손재상하, 용사무분야, 길무구.",
-          "gloss_en": "Xun is under the bed, and his history is full of witches and misfortunes, but he has no fault."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "頻巽，吝。",
-          "literal_ko": "잦은 순다, 인색함.",
-          "interpretive_ko": "잦은 순다, 인색함.",
+          "label_ko": "구삼",
+          "original": "頻巽 吝",
+          "reading_ko": "빈손 린",
+          "literal_ko": "자주 손하면 인색하다.",
+          "interpretive_ko": "과도한 수정 반복은 피로와 비효율을 만든다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "빈손, 린.",
-          "gloss_en": "Frequent Sunda, stingy."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "悔亡，田獲三品。",
-          "literal_ko": "죽음을 후회하며 은 3학년을 받았습니다.",
-          "interpretive_ko": "죽음을 후회하며 은 3학년을 받았습니다.",
+          "label_ko": "육사",
+          "original": "悔亡 田獲三品",
+          "reading_ko": "회망 전획삼품",
+          "literal_ko": "뉘우침이 사라지고 사냥해 세 품목을 얻는다.",
+          "interpretive_ko": "개선의 축적이 실질 성과로 전환되는 지점이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "회망, 전획삼품.",
-          "gloss_en": "Regret for death, Tian won the third grade."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "貞吉悔亡，無不利。無初有終，先庚三日，后庚三日，吉。",
-          "literal_ko": "바르게 하면 길하고 후회가 없다. 시작이 없고 마침이 있다. 경계 전후 사흘을 살피면 길하다.",
-          "interpretive_ko": "정밀 점검을 거친 실행이 길하다. 전후 맥락을 충분히 살피는 절차가 필요하다.",
+          "label_ko": "구오",
+          "original": "貞吉 悔亡 无不利 无初有終 先庚三日 後庚三日 吉",
+          "reading_ko": "정길 회망 무불리 무초유종 선경삼일 후경삼일 길",
+          "literal_ko": "바르게 길하고 뉘우침이 사라지며 이롭지 않음이 없다. 처음은 없어도 끝이 있고 경일 전후 삼일을 살피면 길하다.",
+          "interpretive_ko": "전후 맥락 점검이 완성도를 높인다. 절차 기반 개선이 정답이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "정길회망, 무부리. 무초유종, 선경삼일, 후경삼일, 길.",
-          "gloss_en": "Zhenji regrets his death, and there is no disadvantage. There is no beginning but an end. The first is three days, and the second is three days. It is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "巽在床下，喪其資斧，貞凶。",
-          "literal_ko": "은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
-          "interpretive_ko": "은 침대 밑에서 도끼를 놓치고 바름하고 맹렬합니다.",
+          "label_ko": "상구",
+          "original": "巽在牀下 喪其資斧 貞凶",
+          "reading_ko": "손재상하 상기자부 정흉",
+          "literal_ko": "손이 평상 아래에 있어 재물과 도끼를 잃으니 바르게 해도 흉하다.",
+          "interpretive_ko": "끝에서 과도한 침투는 핵심 자원 손실로 이어질 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "손재상하, 상기자부, 정흉.",
-          "gloss_en": "Xun is under the bed, missing his axe, chaste and fierce."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
