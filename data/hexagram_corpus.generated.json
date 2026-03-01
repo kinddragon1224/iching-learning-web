@@ -3829,99 +3829,99 @@
     {
       "id": 38,
       "gua_text": {
-        "original": "睽，小事吉。",
-        "literal_ko": "보세요, 작은 일이 상서롭습니다.",
-        "interpretive_ko": "보세요, 작은 일이 상서롭습니다.",
+        "original": "睽 小事吉",
+        "reading_ko": "규 소사길",
+        "literal_ko": "규는 작은 일이 길하다.",
+        "interpretive_ko": "어긋남의 시기에는 큰 통합보다 작은 합의부터 쌓아야 한다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "규, 소사길.",
-        "gloss_en": "Look, small things are auspicious."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "悔亡，喪馬勿逐，自復。見惡人無咎。",
-          "literal_ko": "죽음을 후회하세요. 잃어버린 말을 쫓아내지 마세요. 말은 저절로 회복될 것입니다. 악한 사람들을 허물하지 말고 보십시오.",
-          "interpretive_ko": "죽음을 후회하세요. 잃어버린 말을 쫓아내지 마세요. 말은 저절로 회복될 것입니다. 악한 사람들을 허물하지 말고 보십시오.",
+          "label_ko": "초구",
+          "original": "悔亡 喪馬勿逐 自復 見惡人无咎",
+          "reading_ko": "회망 상마물축 자복 견악인무구",
+          "literal_ko": "뉘우침이 사라진다. 말을 잃어도 쫓지 말면 스스로 돌아온다. 미운 사람을 보아도 허물이 없다.",
+          "interpretive_ko": "관계 갈등에선 즉각 추격보다 여지를 두는 대응이 효과적이다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "회망, 상마물축, 자복. 견악인무구.",
-          "gloss_en": "Regret your death, don’t drive away the lost horse, it will recover on its own. See evil people without blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "遇主于巷，無咎。",
-          "literal_ko": "골목에서 주인을 만나면 죄가 없습니다.",
-          "interpretive_ko": "골목에서 주인을 만나면 죄가 없습니다.",
+          "label_ko": "구이",
+          "original": "遇主于巷 无咎",
+          "reading_ko": "우주우항 무구",
+          "literal_ko": "골목에서 주인을 만나니 허물이 없다.",
+          "interpretive_ko": "공식 채널이 막혀도 비공식 접점이 돌파구가 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "우주우항, 무구.",
-          "gloss_en": "If you meet the master in an alley, there is no blame."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "見輿曳，其牛掣，其人天且劓，無初有終。",
-          "literal_ko": "마차가 끌고, 소가 끌고, 사람과 하늘이 움직이는 것을 보면 시작도 끝도 없습니다.",
-          "interpretive_ko": "마차가 끌고, 소가 끌고, 사람과 하늘이 움직이는 것을 보면 시작도 끝도 없습니다.",
+          "label_ko": "육삼",
+          "original": "見輿曳 其牛掣 其人天且劓 无初有終",
+          "reading_ko": "견여예 기우체 기인천차의 무초유종",
+          "literal_ko": "수레가 끌리고 소가 막히며 사람이 이마와 코를 다친 듯하나, 처음은 없어도 끝은 있다.",
+          "interpretive_ko": "초반 충돌이 커도 끝까지 조율하면 수습 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "견여예, 기우掣, 기인천차의, 무초유종.",
-          "gloss_en": "Seeing the carriage dragging, the oxen pulling, the people and the sky moving, there is no beginning or end."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "睽孤，遇元夫，交孚，厲，無咎。",
-          "literal_ko": "수곡은 남편 원을 만났을 때 복, 리를 만났고 아무 잘못도 없었다.",
-          "interpretive_ko": "수곡은 남편 원을 만났을 때 복, 리를 만났고 아무 잘못도 없었다.",
+          "label_ko": "구사",
+          "original": "睽孤 遇元夫 交孚 厲无咎",
+          "reading_ko": "규고 우원부 교부 려무구",
+          "literal_ko": "어긋나 홀로 있으나 훌륭한 사람을 만나 믿음으로 사귀면 위태로워도 허물이 없다.",
+          "interpretive_ko": "고립 국면에서 신뢰 가능한 파트너 한 명이 판을 바꾼다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "규고, 우원부, 교부, 려, 무구.",
-          "gloss_en": "Suigu, when he met his husband Yuan, he met Fu, Li, and had no fault."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "悔亡，厥宗噬膚，往何咎。",
-          "literal_ko": "죽음을 후회하며 은 피부를 물었습니다. 무슨 허물이 있으랴",
-          "interpretive_ko": "죽음을 후회하며 은 피부를 물었습니다. 무슨 허물이 있으랴",
+          "label_ko": "육오",
+          "original": "悔亡 厥宗噬膚 往何咎",
+          "reading_ko": "회망 궐종서부 왕하기구",
+          "literal_ko": "뉘우침이 사라진다. 그 무리가 살을 깨물듯 맞물리니 가면 무슨 허물이 있으랴.",
+          "interpretive_ko": "핵심 이해관계가 맞물리면 실행으로 옮겨도 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "회망, 궐종서부, 왕하구.",
-          "gloss_en": "Regret for death, Jue Zong bites the skin, what's the blame?"
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "睽孤，見豕負涂，載鬼一車，先張之弧，后說之弧，匪寇婚媾，往遇雨則吉。",
-          "literal_ko": "외롭던 자가 돼지와 귀신을 실은 수레를 보아도, 끝내 비를 만나면 길하다.",
-          "interpretive_ko": "처음에는 오해와 경계가 커도, 진실한 만남으로 풀리면 길함에 이른다.",
+          "label_ko": "상구",
+          "original": "睽孤 見豕負塗 載鬼一車 先張之弧 後說之弧 匪寇婚媾 往遇雨則吉",
+          "reading_ko": "규고 견시부도 재귀일거 선장지호 후설지호 비구혼구 왕우우즉길",
+          "literal_ko": "어긋나 홀로 있어 돼지가 진흙을 이고 귀신을 한 수레에 실은 듯 보인다. 먼저 활을 당겼다가 뒤에 푼다. 도적이 아니라 혼인을 청함이니 가서 비를 만나면 길하다.",
+          "interpretive_ko": "오해가 극대화된 상황도 긴장을 풀고 확인하면 협력으로 전환될 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "규고, 견시부도, 재귀일거, 선장지호, 후설지호, 비구혼구, 왕우우칙길.",
-          "gloss_en": "Gui Gu, seeing a pig carrying Tu, carrying ghosts in a cart, first draw the arc, and then tell the arc, bandits and bandits are getting married, and if they go to meet the rain, it will be auspicious."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -3932,99 +3932,99 @@
     {
       "id": 39,
       "gua_text": {
-        "original": "蹇，利西南，不利東北。利見大人。貞吉。",
-        "literal_ko": "건은 남서쪽에는 이롭지만 동북에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
-        "interpretive_ko": "건은 남서쪽에는 이롭지만 동북에는 해롭다. 어른들을 볼 수 있는 이점이 있습니다. 사다키.",
+        "original": "蹇 利西南 不利東北 利見大人 貞吉",
+        "reading_ko": "건 이서남 불리동북 이견대인 정길",
+        "literal_ko": "건은 서남이 이롭고 동북은 이롭지 않다. 대인을 보는 것이 이롭고 바르게 하면 길하다.",
+        "interpretive_ko": "막힘의 때에는 방향 전환과 조력자 확보가 핵심이다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "건, 리서남, 부리동배. 리견대인. 정길.",
-        "gloss_en": "Jian is beneficial to the southwest, but detrimental to the northeast. Benefit to see the adults. Sadaki."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "往蹇，來譽。",
-          "literal_ko": "지안에게 가서 찬양하러 오세요.",
-          "interpretive_ko": "지안에게 가서 찬양하러 오세요.",
+          "label_ko": "초육",
+          "original": "往蹇 來譽",
+          "reading_ko": "왕건 래예",
+          "literal_ko": "가면 막히고 돌아오면 칭찬을 얻는다.",
+          "interpretive_ko": "무리한 전진보다 복귀 판단이 더 높은 평가를 받는다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕건, 내예.",
-          "gloss_en": "Go to Jian, come to praise."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "육이",
           "label_hanja": "六二",
-          "original": "王臣蹇蹇，匪躬之故。",
-          "literal_ko": "왕과 신하들이 간견인 이유는 도적이 절을 하기 때문이다.",
-          "interpretive_ko": "왕과 신하들이 간견인 이유는 도적이 절을 하기 때문이다.",
+          "label_ko": "육이",
+          "original": "王臣蹇蹇 匪躬之故",
+          "reading_ko": "왕신건건 비궁지고",
+          "literal_ko": "왕의 신하가 거듭 막히는 것은 사사로운 까닭이 아니다.",
+          "interpretive_ko": "공적 책임으로 감당하는 난관은 개인 탓으로 돌리면 안 된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕신건건, 비궁지고.",
-          "gloss_en": "The reason why the king and his ministers are jianjian is because the bandit bows."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "구삼",
           "label_hanja": "九三",
-          "original": "往蹇來反。",
-          "literal_ko": "앞뒤로 이동하십시오.",
-          "interpretive_ko": "앞뒤로 이동하십시오.",
+          "label_ko": "구삼",
+          "original": "往蹇 來反",
+          "reading_ko": "왕건 래반",
+          "literal_ko": "가면 막히고 돌아오면 되돌아온다.",
+          "interpretive_ko": "진행이 막히면 즉시 회귀해 전략을 재편해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕건내반.",
-          "gloss_en": "Go back and forth."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "往蹇來連。",
-          "literal_ko": "앞뒤로 이동하십시오.",
-          "interpretive_ko": "앞뒤로 이동하십시오.",
+          "label_ko": "육사",
+          "original": "往蹇 來連",
+          "reading_ko": "왕건 래련",
+          "literal_ko": "가면 막히고 돌아오면 연결된다.",
+          "interpretive_ko": "후퇴를 통해 오히려 지원망이 형성될 수 있다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕건내련.",
-          "gloss_en": "Go back and forth."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "구오",
           "label_hanja": "九五",
-          "original": "大蹇朋來。",
-          "literal_ko": "빅지안 친구들이 옵니다.",
-          "interpretive_ko": "빅지안 친구들이 옵니다.",
+          "label_ko": "구오",
+          "original": "大蹇 朋來",
+          "reading_ko": "대건 붕래",
+          "literal_ko": "큰 막힘에 벗이 온다.",
+          "interpretive_ko": "대형 위기에서 연합과 지원이 본격화된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "대건붕내.",
-          "gloss_en": "Big Jian friends are coming."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "往蹇來碩，吉。利見大人。",
-          "literal_ko": "가면 막히고 돌아오면 얻는다. 대인을 봄이 이롭다.",
-          "interpretive_ko": "억지 전진보다 방향을 바꾸고 조력자를 만나야 해법이 열린다.",
+          "label_ko": "상육",
+          "original": "往蹇 來碩 吉 利見大人",
+          "reading_ko": "왕건 래석 길 이견대인",
+          "literal_ko": "가면 막히고 돌아오면 크게 얻는다. 길하고 대인을 봄이 이롭다.",
+          "interpretive_ko": "마지막은 회귀와 조력자 결합으로 반전이 가능하다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "왕건내석, 길. 리견대인.",
-          "gloss_en": "If you go to Jian to get a big fortune, it is auspicious. Benefit to see the adults."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -4035,99 +4035,99 @@
     {
       "id": 40,
       "gua_text": {
-        "original": "解，利西南。無所往，其來復吉。有攸往，夙吉。",
-        "literal_ko": "해: 남서가 이롭다. 갈 곳이 없으면 돌아옴이 길하고, 갈 곳이 있으면 일찍 가는 것이 길하다.",
-        "interpretive_ko": "풀림의 때에는 긴장을 완화하고 제자리로 복귀하라. 새로 움직일 때는 빠르게 착수하는 것이 좋다.",
+        "original": "解 利西南 无所往 其來復吉 有攸往 夙吉",
+        "reading_ko": "해 이서남 무소왕 기래복길 유유왕 숙길",
+        "literal_ko": "해는 서남이 이롭다. 갈 곳이 없으면 돌아옴이 길하고, 갈 곳이 있으면 일찍 가는 것이 길하다.",
+        "interpretive_ko": "해소 국면에서는 신속한 복귀와 빠른 실행이 성과를 높인다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "해, 리서남. 무소왕, 기내복길. 유유왕, 숙길.",
-        "gloss_en": "Solution, benefit the southwest. There is nowhere to go, and good luck will come when it comes. If you are going somewhere, it is auspicious."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초육",
           "label_hanja": "初六",
-          "original": "無咎。",
-          "literal_ko": "허물하지 마세요.",
-          "interpretive_ko": "허물하지 마세요.",
+          "label_ko": "초육",
+          "original": "无咎",
+          "reading_ko": "무구",
+          "literal_ko": "허물이 없다.",
+          "interpretive_ko": "초기 해소는 최소 손실로 시작된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "무구.",
-          "gloss_en": "No blame."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "田獲三狐，得黃矢，貞吉。",
-          "literal_ko": "들판에는 여우 세 마리와 상서로운 노란색 화살이 있습니다.",
-          "interpretive_ko": "들판에는 여우 세 마리와 상서로운 노란색 화살이 있습니다.",
+          "label_ko": "구이",
+          "original": "田獲三狐 得黃矢 貞吉",
+          "reading_ko": "전획삼호 득황시 정길",
+          "literal_ko": "사냥해 여우 셋을 얻고 누런 화살을 얻으니 바르게 길하다.",
+          "interpretive_ko": "문제의 핵심 원인들을 잡아내면 회복 속도가 빨라진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "전획삼호, 득황시, 정길.",
-          "gloss_en": "The field has three foxes and a yellow arrow, which is auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "負且乘，致寇至，貞吝。",
-          "literal_ko": "짐을 지고 수레를 타니 도적을 불러들인다. 바름을 지켜도 인색하다.",
-          "interpretive_ko": "짐을 지고 수레를 타니 도적을 불러들인다. 바름을 지켜도 인색하다.",
+          "label_ko": "육삼",
+          "original": "負且乘 致寇至 貞吝",
+          "reading_ko": "부차승 치구지 정린",
+          "literal_ko": "짐을 지고 수레를 타면 도적을 불러온다. 바르게 해도 인색하다.",
+          "interpretive_ko": "역량 이상의 포지션은 리스크를 스스로 초청한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "부차승, 치구지, 정린.",
-          "gloss_en": "If it is negative and multiplied, it will lead to bandits and stinginess."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "구사",
           "label_hanja": "九四",
-          "original": "解而拇，朋至斯孚。",
-          "literal_ko": "엄지발가락의 매임을 풀면 벗이 와서 함께한다.",
-          "interpretive_ko": "엄지발가락의 매임을 풀면 벗이 와서 함께한다.",
+          "label_ko": "구사",
+          "original": "解而拇 朋至斯孚",
+          "reading_ko": "해이모 붕지사부",
+          "literal_ko": "엄지발가락의 매임을 풀면 벗이 와서 믿게 된다.",
+          "interpretive_ko": "작은 결박을 풀어야 협업 신뢰가 회복된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "해이무, 붕지사부.",
-          "gloss_en": "Understanding and thumbing, friends come to Sifu."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "君子維有解，吉。有孚于小人。",
-          "literal_ko": "신사는 상서로운 해결책을 가지고 있습니다. 악당의 축복을 받으세요.",
-          "interpretive_ko": "신사는 상서로운 해결책을 가지고 있습니다. 악당의 축복을 받으세요.",
+          "label_ko": "육오",
+          "original": "君子維有解 吉 有孚于小人",
+          "reading_ko": "군자유유해 길 유부우소인",
+          "literal_ko": "군자가 해소를 이루면 길하고 소인에게도 믿음을 얻는다.",
+          "interpretive_ko": "리더의 정리 능력은 반대편까지 설득한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "군자유유해, 길. 유부우소인.",
-          "gloss_en": "A gentleman has a solution, which is auspicious. Be blessed by the villain."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상육",
           "label_hanja": "上六",
-          "original": "公用射隼于高墉之上，獲之，無不利。",
-          "literal_ko": "높은 산에서 매를 쏘면 잡는 데 아무런 불이로움이 없다.",
-          "interpretive_ko": "높은 산에서 매를 쏘면 잡는 데 아무런 불이로움이 없다.",
+          "label_ko": "상육",
+          "original": "公用射隼于高墉之上 獲之 无不利",
+          "reading_ko": "공용사준우고용지상 획지 무불리",
+          "literal_ko": "공이 높은 성벽 위의 매를 쏘아 얻으니 이롭지 않음이 없다.",
+          "interpretive_ko": "마지막엔 핵심 방해요소를 정확히 제거해야 완전 해소된다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "공용사준우고용지상, 획지, 무부리.",
-          "gloss_en": "If you shoot a falcon on a high mountain, there will be no disadvantage in catching it."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
@@ -4138,99 +4138,99 @@
     {
       "id": 41,
       "gua_text": {
-        "original": "損，有孚，元吉，無咎，可貞，利有攸往。曷之用二簋，可用享。",
-        "literal_ko": "상실이란 행운, 행운, 허물 없음, 바름, 행운을 의미합니다. 두 개의 를 사용하여 즐길 수 있습니다.",
-        "interpretive_ko": "상실이란 행운, 행운, 허물 없음, 바름, 행운을 의미합니다. 두 개의 를 사용하여 즐길 수 있습니다.",
+        "original": "損 有孚 元吉 无咎 可貞 利有攸往 曷之用 二簋可用享",
+        "reading_ko": "손 유부 원길 무구 가정 리유유왕 갈지용 이궤가용향",
+        "literal_ko": "손은 믿음이 있으면 크게 길하고 허물이 없다. 바르게 할 수 있으며 가는 바가 이롭다. 무엇으로 쓰는가, 두 그릇으로도 제향할 수 있다.",
+        "interpretive_ko": "줄임의 핵심은 본질을 남기는 선택이다. 과잉을 덜어야 흐름이 산다.",
+        "gloss_en": "",
         "notes": [
-          "auto-bootstrapped; review required"
-        ],
-        "reading_ko": "손, 유부, 원길, 무구, 가정, 리유유왕. 갈지용이궤, 가용향.",
-        "gloss_en": "Loss means good fortune, good fortune, no blame, chastity, and good fortune. You can enjoy it by using two Gui."
+          "manual-reviewed-v2"
+        ]
       },
       "lines": [
         {
           "line_no": 1,
-          "label_ko": "초구",
           "label_hanja": "初九",
-          "original": "已事遄往，無咎，酌損之。",
-          "literal_ko": "이미 일어난 일이고, 그에 대한 책임은 없습니다. 피해를 생각해 봅시다.",
-          "interpretive_ko": "이미 일어난 일이고, 그에 대한 책임은 없습니다. 피해를 생각해 봅시다.",
+          "label_ko": "초구",
+          "original": "已事遄往 无咎 酌損之",
+          "reading_ko": "이사천왕 무구 작손지",
+          "literal_ko": "일을 마치면 빨리 가니 허물이 없다. 헤아려 덜어라.",
+          "interpretive_ko": "불필요한 일정을 즉시 정리하면 전체 효율이 오른다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "이사遄왕, 무구, 작손지.",
-          "gloss_en": "Things have already happened, and there is no blame for them. Let’s consider the damage."
+          "ambiguities": []
         },
         {
           "line_no": 2,
-          "label_ko": "구이",
           "label_hanja": "九二",
-          "original": "利貞，征凶，弗損益之。",
-          "literal_ko": "그것은 바름에 유익하고, 악을 정복하며, 얻거나 잃는 데 사용될 수 없습니다.",
-          "interpretive_ko": "그것은 바름에 유익하고, 악을 정복하며, 얻거나 잃는 데 사용될 수 없습니다.",
+          "label_ko": "구이",
+          "original": "利貞 征凶 弗損益之",
+          "reading_ko": "이정 정흉 불손익지",
+          "literal_ko": "바름이 이롭다. 나아가면 흉하니 덜지 말고 더해라.",
+          "interpretive_ko": "무조건 축소가 답은 아니다. 필요한 곳엔 오히려 보강해야 한다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "리정, 정흉, 불손익지.",
-          "gloss_en": "It is beneficial to chastity, it conquers evil, and it cannot be used to gain or lose."
+          "ambiguities": []
         },
         {
           "line_no": 3,
-          "label_ko": "육삼",
           "label_hanja": "六三",
-          "original": "三人行，則損一人。一人行，則得其友。",
-          "literal_ko": "세 사람이 함께 여행하면 한 사람이 피해를 입게 됩니다. 혼자 가면 친구를 찾을 수 있습니다.",
-          "interpretive_ko": "세 사람이 함께 여행하면 한 사람이 피해를 입게 됩니다. 혼자 가면 친구를 찾을 수 있습니다.",
+          "label_ko": "육삼",
+          "original": "三人行 則損一人 一人行 則得其友",
+          "reading_ko": "삼인행 즉손일인 일인행 즉득기우",
+          "literal_ko": "세 사람이 가면 한 사람을 덜고, 한 사람이 가면 벗을 얻는다.",
+          "interpretive_ko": "구성 최적화가 협업 밀도를 높인다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "삼인항, 칙손일인. 일인항, 칙득기우.",
-          "gloss_en": "If three people travel together, one person will be harmed. If you go alone, you will find friends."
+          "ambiguities": []
         },
         {
           "line_no": 4,
-          "label_ko": "육사",
           "label_hanja": "六四",
-          "original": "損其疾，使遄有喜，無咎。",
-          "literal_ko": "그의 질병을 치료하고 그를 행복하게 해주고 허물받지 않게 해주세요.",
-          "interpretive_ko": "그의 질병을 치료하고 그를 행복하게 해주고 허물받지 않게 해주세요.",
+          "label_ko": "육사",
+          "original": "損其疾 使遄有喜 无咎",
+          "reading_ko": "손기질 사천유희 무구",
+          "literal_ko": "그 병폐를 덜어 빠르게 하면 기쁨이 있고 허물이 없다.",
+          "interpretive_ko": "병목 제거는 빠르게 할수록 회복 효과가 크다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "손기질, 사遄유희, 무구.",
-          "gloss_en": "Damage his disease, make him happy and free from blame."
+          "ambiguities": []
         },
         {
           "line_no": 5,
-          "label_ko": "육오",
           "label_hanja": "六五",
-          "original": "或益之，十朋之龜弗克違，元吉。",
-          "literal_ko": "아니면 이익이 될 수도 있고, 열 친구의 거북이가 위반을 극복하면 길함이 될 수도 있습니다.",
-          "interpretive_ko": "아니면 이익이 될 수도 있고, 열 친구의 거북이가 위반을 극복하면 길함이 될 수도 있습니다.",
+          "label_ko": "육오",
+          "original": "或益之 十朋之龜 弗克違 元吉",
+          "reading_ko": "혹익지 십붕지구 불극위 원길",
+          "literal_ko": "혹 더해주니 열 벗의 거북이라도 거스를 수 없다. 크게 길하다.",
+          "interpretive_ko": "핵심에 대한 지원은 다수의 동의를 얻어 큰 성과로 이어진다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "혹익지, 십붕지구불극위, 원길.",
-          "gloss_en": "Or it may be beneficial, if the tortoise of ten friends can overcome the violation, it will be auspicious."
+          "ambiguities": []
         },
         {
           "line_no": 6,
-          "label_ko": "상구",
           "label_hanja": "上九",
-          "original": "弗損，益之，無咎，貞吉，利有攸往。得臣無家。",
-          "literal_ko": "손실이 없으면 이익이 있을 것입니다. 허물은 없을 것입니다. 바름하고 길함이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
-          "interpretive_ko": "손실이 없으면 이익이 있을 것입니다. 허물은 없을 것입니다. 바름하고 길함이 될 것이며, 그 이익은 장래에 있을 것입니다. 장관은 집이 없습니다.",
+          "label_ko": "상구",
+          "original": "弗損益之 无咎 貞吉 利有攸往 得臣无家",
+          "reading_ko": "불손익지 무구 정길 리유유왕 득신무가",
+          "literal_ko": "덜지 않고 더해주니 허물이 없고 바르게 길하다. 가는 바가 이롭고 신하를 얻되 사사로운 집은 없다.",
+          "interpretive_ko": "끝에서는 공적 기준의 재배분이 조직을 살린다.",
+          "gloss_en": "",
           "notes": [
-            "auto-bootstrapped; review required"
+            "manual-reviewed-v2"
           ],
-          "ambiguities": [],
-          "reading_ko": "불손, 익지, 무구, 정길, 리유유왕. 득신무가.",
-          "gloss_en": "If there is no loss, there will be benefit. There will be no blame. It will be chaste and auspicious, and the benefit will be destined to the future. The minister has no home."
+          "ambiguities": []
         }
       ],
       "core_terms": [],
