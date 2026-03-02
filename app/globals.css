@@ -485,29 +485,6 @@ h3 {
   50% { box-shadow: 0 10px 28px rgba(0,0,0,0.5), 0 0 24px rgba(212,178,106,0.38); }
 }
 
-.star-office-lite {
-  border: 1px solid rgba(212, 178, 106, 0.3);
-  background: linear-gradient(180deg, rgba(212,178,106,0.08), rgba(8,10,16,0.65));
-}
-
-.star-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  display: inline-block;
-  background: #d4b26a;
-  box-shadow: 0 0 10px rgba(212,178,106,0.45);
-  animation: starDotPulse 1.8s ease-in-out infinite;
-}
-
-.star-dot-2 { animation-delay: 0.25s; }
-.star-dot-3 { animation-delay: 0.5s; }
-
-@keyframes starDotPulse {
-  0%, 100% { transform: scale(0.85); opacity: 0.45; }
-  50% { transform: scale(1.1); opacity: 1; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .studio-answer-btn,
   .studio-answer-correct,

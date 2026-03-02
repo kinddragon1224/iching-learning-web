@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import StarOfficeLite from "@/components/StarOfficeLite";
 
 export default function Home() {
   return (
@@ -22,11 +21,7 @@ export default function Home() {
         <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙해지면 64괘로 확장해보세요.</p>
       </header>
 
-      <section className="relative z-10 mt-8">
-        <StarOfficeLite />
-      </section>
-
-      <section className="relative z-10 mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+      <section className="relative z-10 mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
         <Link href="/principles" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
           <p className="text-xs text-[var(--text-muted)]">첫걸음</p>
           <h2 className="mt-1 text-xl font-semibold">역의 기본 원리</h2>
