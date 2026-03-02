@@ -18,16 +18,26 @@ export default function TopNav() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-[100] px-3 pt-2">
-      <div className="mx-auto flex max-w-4xl items-center gap-2 rounded-xl border border-white/20 bg-black/65 p-2 backdrop-blur" ref={wrapRef}>
-        <Link href="/" className="shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white" onClick={() => setOpen(false)}>
+      <div className="mx-auto flex max-w-4xl items-center gap-2 rounded-2xl border border-[rgba(212,178,106,0.35)] bg-black/70 p-2.5 shadow-[0_6px_24px_rgba(0,0,0,0.4)] backdrop-blur" ref={wrapRef}>
+        <Link href="/" className="shrink-0 rounded-lg border border-white/25 bg-black/55 px-3.5 py-2 text-xs font-medium text-white" onClick={() => setOpen(false)}>
           홈
         </Link>
+
+        <div className="mx-1 hidden h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(212,178,106,0.55)] to-transparent sm:block" />
+        <p className="hidden sm:block text-xs text-[var(--text-muted)]">易 · I Ching</p>
+        <div className="mx-1 hidden h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(212,178,106,0.55)] to-transparent sm:block" />
+
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="ml-auto shrink-0 rounded border border-white/30 bg-black/55 px-3 py-1.5 text-xs text-white"
+          className="ml-auto shrink-0 rounded-lg border border-white/25 bg-black/55 px-3.5 py-2 text-xs font-medium text-white"
+          aria-expanded={open}
+          aria-label="메뉴 열기"
         >
-          메뉴
+          <span className="inline-flex items-center gap-1.5">
+            <span aria-hidden>{open ? "✕" : "☰"}</span>
+            메뉴
+          </span>
         </button>
 
         {open && (
