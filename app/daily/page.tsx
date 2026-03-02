@@ -55,6 +55,7 @@ export default function DailyPage() {
   const [controlNo, setControlNo] = useState("");
   const [ifThen, setIfThen] = useState("");
   const [savedCount, setSavedCount] = useState(0);
+  const [fitState, setFitState] = useState<"idle" | "fit" | "misfit">("idle");
 
   const questionInputRef = useRef<HTMLInputElement | null>(null);
   const todayKey = kstDateKey();
@@ -85,6 +86,15 @@ export default function DailyPage() {
     return flipLine(baseLines, draw.lineNo);
   }, [draw, baseLines]);
 
+  const authorityMessage = useMemo(() => {
+    if (!baseHex) return null;
+    return {
+      risk: `${baseHex.nameKo}: 오늘의 핵심 리스크는 "과속/혼선"이야.`,
+      action: "지금 당장 해야 할 1가지는 \"실행 전에 기준 1개를 명확히 쓰기\"",
+      alt: "만약 지금 해석이 어긋난다면, 핵심 이슈를 1문장으로 다시 고정해: \"내가 통제 가능한 1개는 무엇인가?\"",
+    };
+  }, [baseHex]);
+
   const doCast = () => {
     if (isCasting) return;
     setIsCasting(true);
@@ -101,6 +111,7 @@ export default function DailyPage() {
         next = { baseId, lineNo, changedId };
       }
       setDraw(next);
+      setFitState("idle");
       setIsCasting(false);
     }, 1200);
   };
@@ -195,6 +206,22 @@ export default function DailyPage() {
               {changedHex ? <p className="text-center font-semibold">변괘 #{changedHex.id} {changedHex.nameKo}</p> : null}
             </div>
           )}
+        </section>
+      )}
+
+      {draw && baseHex && !isCasting && authorityMessage && (
+        <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
+          <h2 className="font-semibold">즉시 판독 (권위형)</h2>
+          <p>{authorityMessage.risk}</p>
+          <p className="text-[var(--gold-soft)]">{authorityMessage.action}</p>
+
+          <div className="flex items-center gap-2 text-xs">
+            <span className="text-[var(--text-muted)]">지금 해석이 맞나?</span>
+            <button onClick={() => setFitState("fit")} className={`rounded border px-2 py-1 ${fitState === "fit" ? "border-emerald-400" : "border-white/25"}`}>맞아</button>
+            <button onClick={() => setFitState("misfit")} className={`rounded border px-2 py-1 ${fitState === "misfit" ? "border-amber-300" : "border-white/25"}`}>아니야</button>
+          </div>
+
+          {fitState === "misfit" ? <p className="text-xs text-amber-200">{authorityMessage.alt}</p> : null}
         </section>
       )}
 
