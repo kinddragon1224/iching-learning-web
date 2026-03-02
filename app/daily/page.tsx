@@ -164,7 +164,7 @@ export default function DailyPage() {
       setSavedCount((c) => c + 1);
       alert("오늘 성찰 기록 저장 완료.");
     } catch {
-      alert("저장 중 오류가 발생했어.");
+      alert("저장 중 오류가 발생했습니다.");
     }
   };
 
@@ -174,14 +174,14 @@ export default function DailyPage() {
         <p className="text-sm text-[var(--text-muted)]">오늘의 물음</p>
         <h1 className="text-3xl font-bold">3분 성찰 플로우</h1>
         <p className="mt-2 text-sm text-[var(--text-muted)]">
-          예언이 아니라 의사결정을 정렬하는 도구야. 오늘은 짧게 1회만 정리하고 끝내자.
+          예언이 아니라 의사결정을 정렬하는 도구입니다. 오늘은 짧게 1회만 정리해보세요.
         </p>
         <p className="mt-1 text-xs text-[var(--text-muted)]">오늘 저장: {savedCount}회</p>
       </header>
 
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm daily-glow-panel">
         <div className="rounded-lg border border-white/15 bg-black/20 p-3 text-xs text-[var(--text-muted)]">
-          <p><b>왜 이 플로우인가?</b> 불안 해소를 ‘재추첨’이 아니라 ‘행동 1개’로 바꾸기 위해서야.</p>
+          <p><b>왜 이 플로우인가?</b> 불안 해소를 ‘재추첨’이 아니라 ‘행동 1개’로 전환하기 위해서입니다.</p>
           <p className="mt-1">순서: 질문 → 괘상 → 통제 가능/불가 → If-Then 1줄 → 저장 후 종료</p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -236,9 +236,9 @@ export default function DailyPage() {
           <p className="text-[var(--gold-soft)]">{authorityMessage.action}</p>
 
           <div className="flex items-center gap-2 text-xs">
-            <span className="text-[var(--text-muted)]">지금 해석이 맞나?</span>
-            <button onClick={() => setFitState("fit")} className={`rounded border px-2 py-1 ${fitState === "fit" ? "border-emerald-400" : "border-white/25"}`}>맞아</button>
-            <button onClick={() => setFitState("misfit")} className={`rounded border px-2 py-1 ${fitState === "misfit" ? "border-amber-300" : "border-white/25"}`}>아니야</button>
+            <span className="text-[var(--text-muted)]">지금 해석이 맞습니까?</span>
+            <button onClick={() => setFitState("fit")} className={`rounded border px-2 py-1 ${fitState === "fit" ? "border-emerald-400" : "border-white/25"}`}>맞습니다</button>
+            <button onClick={() => setFitState("misfit")} className={`rounded border px-2 py-1 ${fitState === "misfit" ? "border-amber-300" : "border-white/25"}`}>아닙니다</button>
           </div>
 
           {fitState === "misfit" ? <p className="text-xs text-amber-200">{authorityMessage.alt}</p> : null}

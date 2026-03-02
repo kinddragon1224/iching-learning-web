@@ -154,7 +154,7 @@ export default function SavedPage() {
         </div>
 
         {reflectionWeekly.length === 0 ? (
-          <p className="mt-2 text-[var(--text-muted)]">아직 성찰 기록이 없어. /daily에서 If-Then 1줄까지 저장해봐.</p>
+          <p className="mt-2 text-[var(--text-muted)]">아직 성찰 기록이 없습니다. /daily에서 If-Then 1줄까지 저장해보세요.</p>
         ) : (
           <ul className="mt-2 space-y-2 text-xs">
             {reflectionWeekly.slice(0, 7).map((r, idx) => (
