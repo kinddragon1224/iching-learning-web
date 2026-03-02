@@ -47,35 +47,31 @@ export default function DailyPage() {
   const [mode, setMode] = useState<"lite" | "deep">("lite");
   const [question, setQuestion] = useState("");
   const [draw, setDraw] = useState<Draw | null>(null);
-  const [castedDate, setCastedDate] = useState<string | null>(null);
   const [isCasting, setIsCasting] = useState(false);
-  const questionInputRef = useRef<HTMLInputElement | null>(null);
 
+  // reflective flow (first 3 minutes)
+  const [lossText, setLossText] = useState("");
+  const [controlYes, setControlYes] = useState("");
+  const [controlNo, setControlNo] = useState("");
+  const [ifThen, setIfThen] = useState("");
+  const [savedCount, setSavedCount] = useState(0);
+
+  const questionInputRef = useRef<HTMLInputElement | null>(null);
   const todayKey = kstDateKey();
-  const canCast = true;
+
+  useEffect(() => {
+    const t = window.setTimeout(() => questionInputRef.current?.focus(), 120);
+    return () => window.clearTimeout(t);
+  }, []);
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem("daily_cast_v1");
-      if (!raw) return;
-      const parsed = JSON.parse(raw) as { date: string; mode: "lite" | "deep"; question: string; draw: Draw };
-      if (parsed?.date === todayKey && parsed?.draw) {
-        setDraw(parsed.draw);
-        setMode(parsed.mode ?? "lite");
-        setQuestion(parsed.question ?? "");
-        setCastedDate(parsed.date);
-      }
+      const rows = JSON.parse(localStorage.getItem("daily_reflections_v1") || "[]") as Array<{ date: string }>;
+      setSavedCount(rows.filter((r) => r.date === todayKey).length);
     } catch {
-      // noop
+      setSavedCount(0);
     }
   }, [todayKey]);
-
-  useEffect(() => {
-    const t = window.setTimeout(() => {
-      questionInputRef.current?.focus();
-    }, 120);
-    return () => window.clearTimeout(t);
-  }, []);
 
   const baseHex = useMemo(() => (draw ? HEXAGRAMS.find((h) => h.id === draw.baseId) ?? null : null), [draw]);
   const changedHex = useMemo(
@@ -90,8 +86,7 @@ export default function DailyPage() {
   }, [draw, baseLines]);
 
   const doCast = () => {
-    if (!canCast || isCasting) return;
-
+    if (isCasting) return;
     setIsCasting(true);
     window.setTimeout(() => {
       const baseId = randId();
@@ -105,95 +100,72 @@ export default function DailyPage() {
         const changedId = findHexIdByLinesFlexible(changed) ?? undefined;
         next = { baseId, lineNo, changedId };
       }
-
       setDraw(next);
-      setCastedDate(todayKey);
-      try {
-        localStorage.setItem(
-          "daily_cast_v1",
-          JSON.stringify({
-            date: todayKey,
-            mode,
-            question,
-            draw: next,
-          })
-        );
-      } catch {
-        // noop
-      }
       setIsCasting(false);
-    }, 1400);
+    }, 1200);
+  };
+
+  const saveReflection = () => {
+    if (!draw || !baseHex) return;
+    if (!controlYes.trim() || !ifThen.trim()) {
+      alert("통제 가능한 것 1개와 If-Then 1줄은 꼭 입력해줘.");
+      return;
+    }
+    const payload = {
+      date: todayKey,
+      hexId: baseHex.id,
+      hexName: baseHex.nameKo,
+      mode,
+      question,
+      lossText,
+      controlYes,
+      controlNo,
+      ifThen,
+      createdAt: new Date().toISOString(),
+    };
+    try {
+      const rows = JSON.parse(localStorage.getItem("daily_reflections_v1") || "[]");
+      rows.unshift(payload);
+      localStorage.setItem("daily_reflections_v1", JSON.stringify(rows));
+      setSavedCount((c) => c + 1);
+      alert("오늘 성찰 기록 저장 완료.");
+    } catch {
+      alert("저장 중 오류가 발생했어.");
+    }
   };
 
   return (
     <main className="mx-auto max-w-4xl space-y-6 p-6 pt-24 daily-cast-enter">
       <header>
         <p className="text-sm text-[var(--text-muted)]">오늘의 물음</p>
-        <h1 className="text-3xl font-bold">Daily Casting · 라이트/딥</h1>
+        <h1 className="text-3xl font-bold">3분 성찰 플로우</h1>
         <p className="mt-2 text-sm text-[var(--text-muted)]">
-          점술이 아니라 분별을 돕는 성찰 도구야. 결정은 기도·양심·공동체 지혜와 함께 해.
+          예언이 아니라 의사결정을 정렬하는 도구야. 오늘은 짧게 1회만 정리하고 끝내자.
         </p>
+        <p className="mt-1 text-xs text-[var(--text-muted)]">오늘 저장: {savedCount}회</p>
       </header>
 
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm daily-glow-panel">
         <div className="flex flex-wrap gap-2">
-          <button
-            type="button"
-            onClick={() => {
-              setMode("lite");
-              setDraw(null);
-            }}
-            disabled={!canCast}
-            className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "lite" ? "border-[var(--gold-line)]" : "border-white/20"}`}
-          >
-            Lite (하루 1괘)
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setMode("deep");
-              setDraw(null);
-            }}
-            disabled={!canCast}
-            className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "deep" ? "border-[var(--gold-line)]" : "border-white/20"}`}
-          >
-            Deep (본괘 + 변효)
-          </button>
+          <button type="button" onClick={() => setMode("lite")} className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "lite" ? "border-[var(--gold-line)]" : "border-white/20"}`}>Lite</button>
+          <button type="button" onClick={() => setMode("deep")} className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "deep" ? "border-[var(--gold-line)]" : "border-white/20"}`}>Deep</button>
         </div>
 
         <label className="block">
           <p className="mb-1 text-xs text-[var(--text-muted)]">오늘의 질문 (선택)</p>
           <input
             ref={questionInputRef}
-            autoFocus
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            disabled={!canCast}
-            placeholder="예: 오늘 내가 붙들어야 할 태도는 무엇인가?"
+            placeholder="예: 오늘 내가 붙들어야 할 태도는?"
             className="w-full rounded-lg border border-white/20 bg-transparent px-3 py-2"
           />
         </label>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <button
-            onClick={doCast}
-            disabled={!canCast || isCasting}
-            className="daily-cast-btn rounded-lg px-4 py-2 text-sm font-semibold text-black disabled:opacity-60"
-          >
-            {isCasting ? "괘상 정렬 중..." : canCast ? "오늘의 괘상 뽑기" : "오늘은 이미 뽑았어"}
-          </button>
-          {!canCast && <p className="text-xs text-[var(--text-muted)]">내일(자정 KST 이후) 다시 뽑을 수 있어.</p>}
-        </div>
+        <button onClick={doCast} disabled={isCasting} className="daily-cast-btn rounded-lg px-4 py-2 text-sm font-semibold text-black disabled:opacity-60">
+          {isCasting ? "정렬 중..." : "오늘의 괘상 뽑기"}
+        </button>
       </section>
-
-      {isCasting && (
-        <section className="paper-panel rounded-xl p-6 text-center space-y-3 daily-cast-chamber">
-          <p className="text-xs text-[var(--text-muted)]">하늘의 뜻을 구하는 중...</p>
-          <div className="mx-auto w-fit">
-            <div className="daily-bars" />
-          </div>
-        </section>
-      )}
 
       {draw && baseHex && !isCasting && (
         <section className="grid gap-4 md:grid-cols-2">
@@ -204,11 +176,6 @@ export default function DailyPage() {
             </div>
             <p className="text-center font-semibold">#{baseHex.id} {baseHex.nameKo}</p>
             {question ? <p className="text-xs text-[var(--text-muted)]">질문: {question}</p> : null}
-            <div className="pt-1">
-              <Link href={`/hexagram/${baseHex.id}`} className="rounded-lg border border-white/30 px-3 py-1.5 text-xs">
-                본괘 상세 보기
-              </Link>
-            </div>
           </div>
 
           {mode === "deep" && (
@@ -218,18 +185,36 @@ export default function DailyPage() {
               <div className="flex justify-center py-2">
                 <HexagramLinesOverlay lines={changedLines ?? baseLines} size="small" styleVariant="gold" />
               </div>
-              {changedHex ? (
-                <>
-                  <p className="text-center font-semibold">변괘 #{changedHex.id} {changedHex.nameKo}</p>
-                  <Link href={`/hexagram/${changedHex.id}`} className="rounded-lg border border-white/30 px-3 py-1.5 text-xs">
-                    변괘 상세 보기
-                  </Link>
-                </>
-              ) : (
-                <p className="text-xs text-[var(--text-muted)]">변괘 매핑 준비 중</p>
-              )}
+              {changedHex ? <p className="text-center font-semibold">변괘 #{changedHex.id} {changedHex.nameKo}</p> : null}
             </div>
           )}
+        </section>
+      )}
+
+      {draw && baseHex && !isCasting && (
+        <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
+          <h2 className="font-semibold">3분 성찰 체크</h2>
+          <label className="block">
+            <p className="mb-1 text-xs text-[var(--text-muted)]">1) 이번 선택에서 잃기 싫은 것 1개</p>
+            <input value={lossText} onChange={(e) => setLossText(e.target.value)} className="w-full rounded-lg border border-white/20 bg-transparent px-3 py-2" />
+          </label>
+          <label className="block">
+            <p className="mb-1 text-xs text-[var(--text-muted)]">2) 통제 가능한 것 1개 (필수)</p>
+            <input value={controlYes} onChange={(e) => setControlYes(e.target.value)} className="w-full rounded-lg border border-white/20 bg-transparent px-3 py-2" />
+          </label>
+          <label className="block">
+            <p className="mb-1 text-xs text-[var(--text-muted)]">3) 통제 불가능한 것 1개 (선택)</p>
+            <input value={controlNo} onChange={(e) => setControlNo(e.target.value)} className="w-full rounded-lg border border-white/20 bg-transparent px-3 py-2" />
+          </label>
+          <label className="block">
+            <p className="mb-1 text-xs text-[var(--text-muted)]">4) If-Then 실행 1줄 (필수)</p>
+            <input value={ifThen} onChange={(e) => setIfThen(e.target.value)} placeholder="만약 (상황) 이면, (행동) 하겠다." className="w-full rounded-lg border border-white/20 bg-transparent px-3 py-2" />
+          </label>
+
+          <div className="flex flex-wrap gap-2">
+            <button onClick={saveReflection} className="rounded-lg bg-[var(--gold-line)] px-3 py-2 text-xs font-semibold text-black">성찰 저장하고 종료</button>
+            <Link href="/saved" className="rounded-lg border border-white/30 px-3 py-2 text-xs">저장 목록 보기</Link>
+          </div>
         </section>
       )}
 
