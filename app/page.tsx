@@ -21,15 +21,7 @@ export default function Home() {
         <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙해지면 64괘로 확장해보세요.</p>
       </header>
 
-      <section className="relative z-10 mt-8">
-        <Link href="/daily" className="block rounded-2xl border border-[rgba(212,178,106,0.65)] bg-[rgba(212,178,106,0.14)] p-5 shadow-[0_0_24px_rgba(212,178,106,0.18)] panel-hover">
-          <p className="text-xs text-[var(--text-muted)]">오늘의 루틴</p>
-          <h2 className="mt-1 text-2xl font-semibold text-[#f3e4be]">오늘의 물음 바로 시작</h2>
-          <p className="mt-2 text-sm text-[var(--text-muted)]">하루 성찰 1회, 괘상/효사 기반으로 빠르게 들어가기</p>
-        </Link>
-      </section>
-
-      <section className="relative z-10 mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+      <section className="relative z-10 mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
         <Link href="/principles" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
           <p className="text-xs text-[var(--text-muted)]">첫걸음</p>
           <h2 className="mt-1 text-xl font-semibold">역의 기본 원리</h2>
