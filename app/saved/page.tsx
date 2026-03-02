@@ -65,6 +65,40 @@ export default function SavedPage() {
     return recent;
   }, [reflections]);
 
+  const reflectionInsight = useMemo(() => {
+    if (reflectionWeekly.length === 0) {
+      return {
+        topHex: "-",
+        topIfThen: "-",
+        risk: "기록이 없어 패턴을 분석할 수 없어.",
+        nextAction: "오늘 /daily에서 1회 기록부터 시작",
+      };
+    }
+
+    const hexCount = new Map<string, number>();
+    const ifThenHead = new Map<string, number>();
+
+    reflectionWeekly.forEach((r) => {
+      const hexKey = `#${r.hexId} ${r.hexName}`;
+      hexCount.set(hexKey, (hexCount.get(hexKey) ?? 0) + 1);
+
+      const head = (r.ifThen || "").slice(0, 18);
+      if (head) ifThenHead.set(head, (ifThenHead.get(head) ?? 0) + 1);
+    });
+
+    const topHex = [...hexCount.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "-";
+    const topIfThen = [...ifThenHead.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "-";
+
+    const noControl = reflectionWeekly.filter((r) => !(r.controlYes || "").trim()).length;
+    const risk = noControl > 0
+      ? "통제 가능한 것 입력이 비어 있는 기록이 있어 실행 전환이 약해질 수 있어."
+      : "통제 가능한 것 입력은 안정적이야. 이제 If-Then을 더 구체화하면 좋아.";
+
+    const nextAction = `이번 주 핵심 패턴(${topHex}) 기준으로 If-Then 1줄을 24시간 행동으로 줄여 실행해.`;
+
+    return { topHex, topIfThen, risk, nextAction };
+  }, [reflectionWeekly]);
+
   const exportText = useMemo(() => {
     const recent3 = weekly.recent.slice(0, 3);
     return [
@@ -102,11 +136,28 @@ export default function SavedPage() {
       <section className="paper-panel rounded-xl p-4 text-sm">
         <p className="font-semibold">오늘의 물음 성찰 기록</p>
         <p className="mt-2 text-[var(--text-muted)]">최근 7일 기록: <b>{reflectionWeekly.length}</b>개</p>
+
+        <div className="mt-3 grid gap-2 sm:grid-cols-2 text-xs">
+          <div className="rounded-lg border border-white/15 p-2">
+            <p className="text-[var(--text-muted)]">자주 등장한 괘</p>
+            <p className="mt-1 font-medium">{reflectionInsight.topHex}</p>
+          </div>
+          <div className="rounded-lg border border-white/15 p-2">
+            <p className="text-[var(--text-muted)]">자주 쓰는 If-Then 패턴</p>
+            <p className="mt-1 font-medium">{reflectionInsight.topIfThen}</p>
+          </div>
+        </div>
+
+        <div className="mt-2 rounded-lg border border-amber-300/25 bg-amber-200/5 p-2 text-xs">
+          <p><b>리스크:</b> {reflectionInsight.risk}</p>
+          <p className="mt-1"><b>다음 행동 1개:</b> {reflectionInsight.nextAction}</p>
+        </div>
+
         {reflectionWeekly.length === 0 ? (
           <p className="mt-2 text-[var(--text-muted)]">아직 성찰 기록이 없어. /daily에서 If-Then 1줄까지 저장해봐.</p>
         ) : (
           <ul className="mt-2 space-y-2 text-xs">
-            {reflectionWeekly.slice(0, 5).map((r, idx) => (
+            {reflectionWeekly.slice(0, 7).map((r, idx) => (
               <li key={`${r.createdAt}-${idx}`} className="rounded border border-white/15 px-2 py-2">
                 <p><b>{r.date}</b> · #{r.hexId} {r.hexName} · {r.mode.toUpperCase()}</p>
                 {r.question ? <p className="text-[var(--text-muted)]">질문: {r.question}</p> : null}
