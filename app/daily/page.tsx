@@ -88,12 +88,32 @@ export default function DailyPage() {
 
   const authorityMessage = useMemo(() => {
     if (!baseHex) return null;
+
+    const q = (question || "").toLowerCase();
+    const isBuild = /개발|만들|출시|서비스|프로덕트|build|launch/.test(q);
+    const isMoney = /돈|수익|매출|가격|결제|monet|revenue/.test(q);
+    const isRelation = /관계|팀|협업|사람|고객|파트너/.test(q);
+
+    let risk = "지금은 해석을 많이 늘리기보다, 핵심 가설 1개를 검증 없이 밀어붙이는 게 리스크야.";
+    let action = "오늘 당장 해야 할 1가지는 \"다음 24시간에 검증할 사용자 행동 지표 1개를 정하기\"";
+
+    if (isBuild) {
+      risk = "지금 리스크는 \"기능을 더 붙이는 것\"보다 \"사용자 첫 3분 이탈\"을 못 잡는 거야.";
+      action = "오늘 당장 해야 할 1가지는 \"첫 화면에서 CTA 하나만 남기고 완료율 측정\"";
+    } else if (isMoney) {
+      risk = "지금 리스크는 가치보다 가격/과금 타이밍을 먼저 제시해 신뢰를 잃는 거야.";
+      action = "오늘 당장 해야 할 1가지는 \"무료 구간에서 즉시 효용 1개를 먼저 체감시키기\"";
+    } else if (isRelation) {
+      risk = "지금 리스크는 메시지 불일치로 팀/사용자 기대치가 어긋나는 거야.";
+      action = "오늘 당장 해야 할 1가지는 \"핵심 문장 1개(우리는 무엇을 돕는가) 통일\"";
+    }
+
     return {
-      risk: `${baseHex.nameKo}: 오늘의 핵심 리스크는 "과속/혼선"이야.`,
-      action: "지금 당장 해야 할 1가지는 \"실행 전에 기준 1개를 명확히 쓰기\"",
-      alt: "만약 지금 해석이 어긋난다면, 핵심 이슈를 1문장으로 다시 고정해: \"내가 통제 가능한 1개는 무엇인가?\"",
+      risk: `${baseHex.nameKo}: ${risk}`,
+      action,
+      alt: "어긋난다면 해석을 버리지 말고 질문을 좁혀: \"오늘 내가 통제 가능한 1개\"로 다시 고정해.",
     };
-  }, [baseHex]);
+  }, [baseHex, question]);
 
   const doCast = () => {
     if (isCasting) return;
