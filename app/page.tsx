@@ -21,7 +21,18 @@ export default function Home() {
         <p className="text-sm text-[var(--text-muted)] home-fade-up-delay">처음이라면 8괘부터, 익숙해지면 64괘로 확장해보세요.</p>
       </header>
 
-      <section className="relative z-10 mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+      <section className="relative z-10 mt-8 grid gap-3 md:grid-cols-2">
+        <Link href="/principles" className="paper-panel rounded-xl p-4 panel-hover">
+          <p className="text-xs text-[var(--text-muted)]">처음이라면</p>
+          <p className="mt-1 font-semibold">1분 온보딩: 기본 원리부터 시작</p>
+        </Link>
+        <Link href="/daily" className="paper-panel rounded-xl p-4 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
+          <p className="text-xs text-[var(--text-muted)]">바로 시작</p>
+          <p className="mt-1 font-semibold text-[#f3e4be]">오늘의 물음 3분 성찰</p>
+        </Link>
+      </section>
+
+      <section className="relative z-10 mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
         <Link href="/principles" className="paper-panel rounded-2xl p-5 panel-hover ring-1 ring-[rgba(212,178,106,0.45)]">
           <p className="text-xs text-[var(--text-muted)]">첫걸음</p>
           <h2 className="mt-1 text-xl font-semibold">역의 기본 원리</h2>
@@ -52,12 +63,6 @@ export default function Home() {
           <p className="mt-2 text-sm text-[var(--text-muted)]">랜덤 괘 퀴즈와 느낌 기록으로 64괘/384효 패턴을 익혀보세요.</p>
         </Link>
       </section>
-
-      <div className="home-bottom-center-tab-wrap" aria-hidden={false}>
-        <Link href="/daily" className="home-bottom-center-tab">
-          오늘의 물음
-        </Link>
-      </div>
     </main>
   );
 }

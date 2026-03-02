@@ -19,13 +19,33 @@ const FILTERS: Array<{ key: "all" | Axis; label: string }> = [
   { key: "time", label: "시간" },
 ];
 
+type DailyReflection = {
+  date: string;
+  hexId: number;
+  hexName: string;
+  mode: "lite" | "deep";
+  question?: string;
+  lossText?: string;
+  controlYes: string;
+  controlNo?: string;
+  ifThen: string;
+  createdAt: string;
+};
+
 export default function SavedPage() {
   const [items, setItems] = useState<ActionRecord[]>([]);
+  const [reflections, setReflections] = useState<DailyReflection[]>([]);
   const [filter, setFilter] = useState<"all" | Axis>("all");
   const [active, setActive] = useState<ActionRecord | null>(null);
 
   useEffect(() => {
     setItems(loadActions());
+    try {
+      const raw = localStorage.getItem("daily_reflections_v1");
+      setReflections(raw ? (JSON.parse(raw) as DailyReflection[]) : []);
+    } catch {
+      setReflections([]);
+    }
   }, []);
 
   const weekly = useMemo(() => buildWeeklyReport(items), [items]);
@@ -33,6 +53,17 @@ export default function SavedPage() {
     () => (filter === "all" ? items : items.filter((r) => r.question_axis === filter)),
     [items, filter]
   );
+
+  const reflectionWeekly = useMemo(() => {
+    const end = new Date();
+    const start = new Date(end);
+    start.setDate(end.getDate() - 6);
+    const recent = reflections.filter((r) => {
+      const d = new Date(`${r.date}T00:00:00`);
+      return d >= new Date(start.toDateString()) && d <= new Date(end.toDateString());
+    });
+    return recent;
+  }, [reflections]);
 
   const exportText = useMemo(() => {
     const recent3 = weekly.recent.slice(0, 3);
@@ -66,6 +97,25 @@ export default function SavedPage() {
         >
           내보내기(복사)
         </button>
+      </section>
+
+      <section className="paper-panel rounded-xl p-4 text-sm">
+        <p className="font-semibold">오늘의 물음 성찰 기록</p>
+        <p className="mt-2 text-[var(--text-muted)]">최근 7일 기록: <b>{reflectionWeekly.length}</b>개</p>
+        {reflectionWeekly.length === 0 ? (
+          <p className="mt-2 text-[var(--text-muted)]">아직 성찰 기록이 없어. /daily에서 If-Then 1줄까지 저장해봐.</p>
+        ) : (
+          <ul className="mt-2 space-y-2 text-xs">
+            {reflectionWeekly.slice(0, 5).map((r, idx) => (
+              <li key={`${r.createdAt}-${idx}`} className="rounded border border-white/15 px-2 py-2">
+                <p><b>{r.date}</b> · #{r.hexId} {r.hexName} · {r.mode.toUpperCase()}</p>
+                {r.question ? <p className="text-[var(--text-muted)]">질문: {r.question}</p> : null}
+                <p>통제 가능: {r.controlYes}</p>
+                <p className="text-[var(--text-muted)]">If-Then: {r.ifThen}</p>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
 
       {items.length === 0 ? (
