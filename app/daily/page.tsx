@@ -105,6 +105,9 @@ export default function DailyPage() {
     }, 1200);
   };
 
+  const completionCount = [lossText, controlYes, ifThen].filter((v) => v.trim().length > 0).length;
+  const completionPct = Math.round((completionCount / 3) * 100);
+
   const saveReflection = () => {
     if (!draw || !baseHex) return;
     if (!controlYes.trim() || !ifThen.trim()) {
@@ -146,6 +149,10 @@ export default function DailyPage() {
       </header>
 
       <section className="paper-panel rounded-xl p-4 space-y-3 text-sm daily-glow-panel">
+        <div className="rounded-lg border border-white/15 bg-black/20 p-3 text-xs text-[var(--text-muted)]">
+          <p><b>왜 이 플로우인가?</b> 불안 해소를 ‘재추첨’이 아니라 ‘행동 1개’로 바꾸기 위해서야.</p>
+          <p className="mt-1">순서: 질문 → 괘상 → 통제 가능/불가 → If-Then 1줄 → 저장 후 종료</p>
+        </div>
         <div className="flex flex-wrap gap-2">
           <button type="button" onClick={() => setMode("lite")} className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "lite" ? "border-[var(--gold-line)]" : "border-white/20"}`}>Lite</button>
           <button type="button" onClick={() => setMode("deep")} className={`rounded-lg border px-3 py-1.5 text-xs ${mode === "deep" ? "border-[var(--gold-line)]" : "border-white/20"}`}>Deep</button>
@@ -194,6 +201,15 @@ export default function DailyPage() {
       {draw && baseHex && !isCasting && (
         <section className="paper-panel rounded-xl p-4 space-y-3 text-sm">
           <h2 className="font-semibold">3분 성찰 체크</h2>
+          <div className="rounded-lg border border-white/15 p-2">
+            <div className="flex items-center justify-between text-xs text-[var(--text-muted)]">
+              <span>성찰 완료도</span>
+              <span>{completionPct}%</span>
+            </div>
+            <div className="mt-1 h-2 overflow-hidden rounded-full bg-white/10">
+              <div className="h-full bg-[var(--gold-line)] transition-all" style={{ width: `${completionPct}%` }} />
+            </div>
+          </div>
           <label className="block">
             <p className="mb-1 text-xs text-[var(--text-muted)]">1) 이번 선택에서 잃기 싫은 것 1개</p>
             <input value={lossText} onChange={(e) => setLossText(e.target.value)} className="w-full rounded-lg border border-white/20 bg-transparent px-3 py-2" />
@@ -214,6 +230,7 @@ export default function DailyPage() {
           <div className="flex flex-wrap gap-2">
             <button onClick={saveReflection} className="rounded-lg bg-[var(--gold-line)] px-3 py-2 text-xs font-semibold text-black">성찰 저장하고 종료</button>
             <Link href="/saved" className="rounded-lg border border-white/30 px-3 py-2 text-xs">저장 목록 보기</Link>
+            <Link href="/" className="rounded-lg border border-white/30 px-3 py-2 text-xs">오늘은 여기까지</Link>
           </div>
         </section>
       )}
