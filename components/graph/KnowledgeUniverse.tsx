@@ -164,21 +164,15 @@ function makeWaveSplitTexture() {
 
   const amp = 20;
   const freq = 4;
-  const gap = 24; // 태극기처럼 가운데 물결 간격 확장
 
   for (let x = 0; x < w; x++) {
     const yMid = h / 2 + Math.sin((x / w) * Math.PI * 2 * freq) * amp;
-    const yTop = Math.max(0, yMid - gap / 2);
-    const yBottom = Math.min(h, yMid + gap / 2);
 
     ctx.fillStyle = "#e85b66";
-    ctx.fillRect(x, 0, 1, yTop);
-
-    ctx.fillStyle = "#f1f3f8";
-    ctx.fillRect(x, yTop, 1, Math.max(1, yBottom - yTop));
+    ctx.fillRect(x, 0, 1, yMid);
 
     ctx.fillStyle = "#4b7dff";
-    ctx.fillRect(x, yBottom, 1, h - yBottom);
+    ctx.fillRect(x, yMid, 1, h - yMid);
   }
 
   const t = new THREE.CanvasTexture(c);
