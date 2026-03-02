@@ -23,13 +23,9 @@ export default function TopNav() {
           홈
         </Link>
 
-        <div className="mx-1 hidden flex-1 items-center justify-end sm:flex">
-          <span className="text-[rgba(212,178,106,0.65)] tracking-[0.45em]">〰 〰 〰</span>
-        </div>
+        <div className="mx-1 hidden h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(212,178,106,0.55)] to-transparent sm:block" />
         <p className="hidden sm:block text-xs text-[var(--text-muted)]">易 · I Ching</p>
-        <div className="mx-1 hidden flex-1 items-center justify-start sm:flex">
-          <span className="text-[rgba(212,178,106,0.65)] tracking-[0.45em]">〰 〰 〰</span>
-        </div>
+        <div className="mx-1 hidden h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(212,178,106,0.55)] to-transparent sm:block" />
 
         <button
           type="button"
